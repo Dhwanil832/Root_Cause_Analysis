@@ -1,0 +1,1499 @@
+{
+  "case_id": "R3-16515",
+  "status": "pass",
+  "check_count": 225,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "unique_document_revisions",
+      "status": "pass",
+      "detail": 13
+    },
+    {
+      "check": "payload_path:payloads/B0/default_references/R3-D01_area_directory.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B0/default_references/R3-D01_area_directory.md",
+      "status": "pass",
+      "detail": "a7b0f4bf92bb7b73ecf1ad1e1c7b257147b186d1881f8eab8190a6b013670188"
+    },
+    {
+      "check": "metadata:payloads/B0/default_references/R3-D01_area_directory.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B0/default_references/R3-D01_area_directory.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B0/default_references/R3-D01_area_directory.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B0/default_references/R3-D02_work_record_practice.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B0/default_references/R3-D02_work_record_practice.md",
+      "status": "pass",
+      "detail": "cfe43d333b49f915b6a433ca0d5f7001e4def0f17bc41423ad4dbe4ec85c6bec"
+    },
+    {
+      "check": "metadata:payloads/B0/default_references/R3-D02_work_record_practice.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B0/default_references/R3-D02_work_record_practice.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B0/default_references/R3-D02_work_record_practice.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B0/incident_description.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B0/incident_description.md",
+      "status": "pass",
+      "detail": "d2ea9dffa825bb50d9d6e3a863077171aad1dee46ec6ed184b0457017c255354"
+    },
+    {
+      "check": "metadata:payloads/B0/incident_description.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B0/incident_description.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B0/incident_description.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B0/starter_documents/R3-D03_scene_record.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B0/starter_documents/R3-D03_scene_record.md",
+      "status": "pass",
+      "detail": "506b1dc0dd1e0f295afd0224664cc07099d83cf8499191cf0e64ccfa198976d7"
+    },
+    {
+      "check": "metadata:payloads/B0/starter_documents/R3-D03_scene_record.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B0/starter_documents/R3-D03_scene_record.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B0/starter_documents/R3-D03_scene_record.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B0/starter_documents/R3-D04_shift_extract.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B0/starter_documents/R3-D04_shift_extract.md",
+      "status": "pass",
+      "detail": "ce4f32f5811e0c1774d25e57a70726ab34a665592a53eac6513b37f7c54f23b2"
+    },
+    {
+      "check": "metadata:payloads/B0/starter_documents/R3-D04_shift_extract.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B0/starter_documents/R3-D04_shift_extract.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B0/starter_documents/R3-D04_shift_extract.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B0/starter_documents/R3-D05_desk_message_r1.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B0/starter_documents/R3-D05_desk_message_r1.md",
+      "status": "pass",
+      "detail": "943e85812c80122e4eeeafc48b3ca9f56b47dee2764c73caa0687a5b0dcce131"
+    },
+    {
+      "check": "metadata:payloads/B0/starter_documents/R3-D05_desk_message_r1.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B0/starter_documents/R3-D05_desk_message_r1.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B0/starter_documents/R3-D05_desk_message_r1.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B1/R3-D06_position_review.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B1/R3-D06_position_review.md",
+      "status": "pass",
+      "detail": "eb383018aa282f0e9e160bf74a2216b4762e792d2659db4499249a98aeed902a"
+    },
+    {
+      "check": "metadata:payloads/B1/R3-D06_position_review.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B1/R3-D06_position_review.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B1/R3-D06_position_review.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B1/R3-D07_assembly_survey.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B1/R3-D07_assembly_survey.md",
+      "status": "pass",
+      "detail": "03e757534ae9a2dd244b644b8a8ea86bb00314da67bdb64c121d0cea79083d58"
+    },
+    {
+      "check": "metadata:payloads/B1/R3-D07_assembly_survey.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B1/R3-D07_assembly_survey.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B1/R3-D07_assembly_survey.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B1/R3-D08_witness_note.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B1/R3-D08_witness_note.md",
+      "status": "pass",
+      "detail": "042872d6484f05b0c37bdc9feaba6e13b2a9ed55cd2ee2b6f4f27c800a863552"
+    },
+    {
+      "check": "metadata:payloads/B1/R3-D08_witness_note.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B1/R3-D08_witness_note.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B1/R3-D08_witness_note.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B2/R3-D05_desk_message_r2.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B2/R3-D05_desk_message_r2.md",
+      "status": "pass",
+      "detail": "a51f758e6d4b40532185eac3b78e6dc6b0fc4d79372b3dbbfa88af471a7b86af"
+    },
+    {
+      "check": "metadata:payloads/B2/R3-D05_desk_message_r2.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B2/R3-D05_desk_message_r2.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B2/R3-D05_desk_message_r2.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B2/R3-D09_circuit_trace.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B2/R3-D09_circuit_trace.md",
+      "status": "pass",
+      "detail": "d55530eefaa9dffbcc5faf6a8c3bd2116fc5af6bea1b9d7ac58a57100dcf8eaf"
+    },
+    {
+      "check": "metadata:payloads/B2/R3-D09_circuit_trace.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B2/R3-D09_circuit_trace.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B2/R3-D09_circuit_trace.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B2/R3-D10_component_observation.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B2/R3-D10_component_observation.md",
+      "status": "pass",
+      "detail": "27ab6a8e4c1ac342b14d920059d1f1d108013a2196a7f8dfce61868ba1fe7d99"
+    },
+    {
+      "check": "metadata:payloads/B2/R3-D10_component_observation.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B2/R3-D10_component_observation.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B2/R3-D10_component_observation.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "payload_path:payloads/B2/R3-D11_task_file_review.md",
+      "status": "pass",
+      "detail": "Must be an existing payload file, not operator material."
+    },
+    {
+      "check": "hash:payloads/B2/R3-D11_task_file_review.md",
+      "status": "pass",
+      "detail": "ce9175170ed45012a484dc890084dd8e9e720f23a55a017c27cc19828d97f167"
+    },
+    {
+      "check": "metadata:payloads/B2/R3-D11_task_file_review.md",
+      "status": "pass",
+      "detail": "Header identity and revision"
+    },
+    {
+      "check": "complete_body:payloads/B2/R3-D11_task_file_review.md",
+      "status": "pass",
+      "detail": "Basic completeness and placeholder scan; not semantic adequacy"
+    },
+    {
+      "check": "no_private_markers:payloads/B2/R3-D11_task_file_review.md",
+      "status": "pass",
+      "detail": "Known private-file, target/need-ID and standalone stage-marker scan; B17 is an asset, not release B1"
+    },
+    {
+      "check": "all_payloads_in_manifest",
+      "status": "pass",
+      "detail": 13
+    },
+    {
+      "check": "lineage:B0",
+      "status": "pass",
+      "detail": "Declared stage order and parent"
+    },
+    {
+      "check": "eligible_additions:B0",
+      "status": "pass",
+      "detail": "Only newly eligible revisions"
+    },
+    {
+      "check": "withdrawals_exist:B0",
+      "status": "pass",
+      "detail": "Cannot withdraw an unreleased revision"
+    },
+    {
+      "check": "cumulative_set:B0",
+      "status": "pass",
+      "detail": 6
+    },
+    {
+      "check": "no_future_active:B0",
+      "status": "pass",
+      "detail": "Release-time isolation in manifest, not live runtime access control"
+    },
+    {
+      "check": "lineage:B1",
+      "status": "pass",
+      "detail": "Declared stage order and parent"
+    },
+    {
+      "check": "eligible_additions:B1",
+      "status": "pass",
+      "detail": "Only newly eligible revisions"
+    },
+    {
+      "check": "withdrawals_exist:B1",
+      "status": "pass",
+      "detail": "Cannot withdraw an unreleased revision"
+    },
+    {
+      "check": "cumulative_set:B1",
+      "status": "pass",
+      "detail": 9
+    },
+    {
+      "check": "no_future_active:B1",
+      "status": "pass",
+      "detail": "Release-time isolation in manifest, not live runtime access control"
+    },
+    {
+      "check": "lineage:B2",
+      "status": "pass",
+      "detail": "Declared stage order and parent"
+    },
+    {
+      "check": "eligible_additions:B2",
+      "status": "pass",
+      "detail": "Only newly eligible revisions"
+    },
+    {
+      "check": "withdrawals_exist:B2",
+      "status": "pass",
+      "detail": "Cannot withdraw an unreleased revision"
+    },
+    {
+      "check": "supersession:B2",
+      "status": "pass",
+      "detail": [
+        [
+          "R3-D05",
+          1
+        ],
+        [
+          "R3-D05",
+          2
+        ]
+      ]
+    },
+    {
+      "check": "cumulative_set:B2",
+      "status": "pass",
+      "detail": 12
+    },
+    {
+      "check": "no_future_active:B2",
+      "status": "pass",
+      "detail": "Release-time isolation in manifest, not live runtime access control"
+    },
+    {
+      "check": "all_documents_scheduled",
+      "status": "pass",
+      "detail": 13
+    },
+    {
+      "check": "unique_need:RN01",
+      "status": "pass",
+      "detail": "RN01"
+    },
+    {
+      "check": "subpart_coverage:RN01",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN01",
+      "status": "pass",
+      "detail": [
+        "R3-I00",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN01:R3-I00",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN01:R3-I00",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "unique_need:RN02",
+      "status": "pass",
+      "detail": "RN02"
+    },
+    {
+      "check": "subpart_coverage:RN02",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN02",
+      "status": "pass",
+      "detail": [
+        "R3-D04",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN02:R3-D04",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN02:R3-D04",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_source_available:RN02",
+      "status": "pass",
+      "detail": [
+        "R3-D04",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN02:R3-D04",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN02:R3-D04",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_source_available:RN02",
+      "status": "pass",
+      "detail": [
+        "R3-D04",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN02:R3-D04",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN02:R3-D04",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "unique_need:RN03",
+      "status": "pass",
+      "detail": "RN03"
+    },
+    {
+      "check": "subpart_coverage:RN03",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN03",
+      "status": "pass",
+      "detail": [
+        "R3-D03",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN03:R3-D03",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN03:R3-D03",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "unique_need:RN04",
+      "status": "pass",
+      "detail": "RN04"
+    },
+    {
+      "check": "subpart_coverage:RN04",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN04",
+      "status": "pass",
+      "detail": [
+        "R3-D04",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN04:R3-D04",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_section:RN04:R3-D04",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_source_available:RN04",
+      "status": "pass",
+      "detail": [
+        "R3-D05",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN04:R3-D05",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN04:R3-D05",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "unique_need:RN05",
+      "status": "pass",
+      "detail": "RN05"
+    },
+    {
+      "check": "subpart_coverage:RN05",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN05",
+      "status": "pass",
+      "detail": [
+        "R3-D06",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN05:R3-D06",
+      "status": "pass",
+      "detail": "S1/P2"
+    },
+    {
+      "check": "answer_section:RN05:R3-D06",
+      "status": "pass",
+      "detail": "S1/P2"
+    },
+    {
+      "check": "answer_source_available:RN05",
+      "status": "pass",
+      "detail": [
+        "R3-D06",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN05:R3-D06",
+      "status": "pass",
+      "detail": "S1/P3"
+    },
+    {
+      "check": "answer_section:RN05:R3-D06",
+      "status": "pass",
+      "detail": "S1/P3"
+    },
+    {
+      "check": "unique_need:RN06",
+      "status": "pass",
+      "detail": "RN06"
+    },
+    {
+      "check": "subpart_coverage:RN06",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN06",
+      "status": "pass",
+      "detail": [
+        "R3-D07",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN06:R3-D07",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_section:RN06:R3-D07",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_source_available:RN06",
+      "status": "pass",
+      "detail": [
+        "R3-D07",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN06:R3-D07",
+      "status": "pass",
+      "detail": "S3"
+    },
+    {
+      "check": "answer_section:RN06:R3-D07",
+      "status": "pass",
+      "detail": "S3"
+    },
+    {
+      "check": "unique_need:RN07",
+      "status": "pass",
+      "detail": "RN07"
+    },
+    {
+      "check": "subpart_coverage:RN07",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN07",
+      "status": "pass",
+      "detail": [
+        "R3-D03",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN07:R3-D03",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN07:R3-D03",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_source_available:RN07",
+      "status": "pass",
+      "detail": [
+        "R3-D08",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN07:R3-D08",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN07:R3-D08",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "unique_need:RN08",
+      "status": "pass",
+      "detail": "RN08"
+    },
+    {
+      "check": "subpart_coverage:RN08",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN08",
+      "status": "pass",
+      "detail": [
+        "R3-D09",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN08:R3-D09",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN08:R3-D09",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_source_available:RN08",
+      "status": "pass",
+      "detail": [
+        "R3-D10",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN08:R3-D10",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN08:R3-D10",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "unique_need:RN09",
+      "status": "pass",
+      "detail": "RN09"
+    },
+    {
+      "check": "subpart_coverage:RN09",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN09",
+      "status": "pass",
+      "detail": [
+        "R3-D02",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN09:R3-D02",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_section:RN09:R3-D02",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_source_available:RN09",
+      "status": "pass",
+      "detail": [
+        "R3-D11",
+        1
+      ]
+    },
+    {
+      "check": "exact_quote:RN09:R3-D11",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_section:RN09:R3-D11",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "unique_need:RN10",
+      "status": "pass",
+      "detail": "RN10"
+    },
+    {
+      "check": "subpart_coverage:RN10",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "answer_source_available:RN10",
+      "status": "pass",
+      "detail": [
+        "R3-D05",
+        2
+      ]
+    },
+    {
+      "check": "exact_quote:RN10:R3-D05",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_section:RN10:R3-D05",
+      "status": "pass",
+      "detail": "S1"
+    },
+    {
+      "check": "answer_source_available:RN10",
+      "status": "pass",
+      "detail": [
+        "R3-D05",
+        2
+      ]
+    },
+    {
+      "check": "exact_quote:RN10:R3-D05",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "answer_section:RN10:R3-D05",
+      "status": "pass",
+      "detail": "S2"
+    },
+    {
+      "check": "unique_need:RN11",
+      "status": "pass",
+      "detail": "RN11"
+    },
+    {
+      "check": "subpart_coverage:RN11",
+      "status": "pass",
+      "detail": "Every subpart has explicit coverage"
+    },
+    {
+      "check": "target_contract:RT01",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT01",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-I00",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D03",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S1"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT01",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-I00",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT01",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D03",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT01",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D04",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_contract:RT02",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT02",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D01",
+          "revision": 1,
+          "locator": "S2"
+        },
+        {
+          "document_id": "R3-D03",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S2"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT02",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D01",
+        "revision": 1,
+        "locator": "S2"
+      }
+    },
+    {
+      "check": "target_section:RT02",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D03",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT02",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D04",
+        "revision": 1,
+        "locator": "S2"
+      }
+    },
+    {
+      "check": "target_contract:RT03",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT03",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S2"
+        },
+        {
+          "document_id": "R3-D05",
+          "revision": 1,
+          "locator": "S1"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT03",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D04",
+        "revision": 1,
+        "locator": "S2"
+      }
+    },
+    {
+      "check": "target_section:RT03",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D05",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_contract:RT04",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT04",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D03",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D06",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D07",
+          "revision": 1,
+          "locator": "S1–S2"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT04",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D03",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT04",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D06",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT04",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D07",
+        "revision": 1,
+        "locator": "S1–S2"
+      }
+    },
+    {
+      "check": "target_contract:RT05",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT05",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D05",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D06",
+          "revision": 1,
+          "locator": "S1"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT05",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D05",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT05",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D06",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_contract:RT06",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT06",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D07",
+          "revision": 1,
+          "locator": "S3"
+        },
+        {
+          "document_id": "R3-D08",
+          "revision": 1,
+          "locator": "S1–S2"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT06",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D07",
+        "revision": 1,
+        "locator": "S3"
+      }
+    },
+    {
+      "check": "target_section:RT06",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D08",
+        "revision": 1,
+        "locator": "S1–S2"
+      }
+    },
+    {
+      "check": "target_contract:RT07",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT07",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D09",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D10",
+          "revision": 1,
+          "locator": "S1–S2"
+        },
+        {
+          "document_id": "R3-D06",
+          "revision": 1,
+          "locator": "S1"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT07",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D09",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT07",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D10",
+        "revision": 1,
+        "locator": "S1–S2"
+      }
+    },
+    {
+      "check": "target_section:RT07",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D06",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_contract:RT08",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT08",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D02",
+          "revision": 1,
+          "locator": "S2"
+        },
+        {
+          "document_id": "R3-D11",
+          "revision": 1,
+          "locator": "S1–S2"
+        },
+        {
+          "document_id": "R3-D07",
+          "revision": 1,
+          "locator": "S3"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT08",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D02",
+        "revision": 1,
+        "locator": "S2"
+      }
+    },
+    {
+      "check": "target_section:RT08",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D11",
+        "revision": 1,
+        "locator": "S1–S2"
+      }
+    },
+    {
+      "check": "target_section:RT08",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D07",
+        "revision": 1,
+        "locator": "S3"
+      }
+    },
+    {
+      "check": "target_contract:RT09",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT09",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D05",
+          "revision": 2,
+          "locator": "S1–S2"
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S2"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT09",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D05",
+        "revision": 2,
+        "locator": "S1–S2"
+      }
+    },
+    {
+      "check": "target_section:RT09",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D04",
+        "revision": 1,
+        "locator": "S2"
+      }
+    },
+    {
+      "check": "target_contract:RT10",
+      "status": "pass",
+      "detail": "Required fields and uniqueness"
+    },
+    {
+      "check": "target_bundle_available:RT10",
+      "status": "pass",
+      "detail": [
+        {
+          "document_id": "R3-D02",
+          "revision": 1,
+          "locator": "S1–S2"
+        },
+        {
+          "document_id": "R3-D07",
+          "revision": 1,
+          "locator": "S2–S3"
+        },
+        {
+          "document_id": "R3-D09",
+          "revision": 1,
+          "locator": "S1"
+        },
+        {
+          "document_id": "R3-D03",
+          "revision": 1,
+          "locator": "S2"
+        }
+      ]
+    },
+    {
+      "check": "target_section:RT10",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D02",
+        "revision": 1,
+        "locator": "S1–S2"
+      }
+    },
+    {
+      "check": "target_section:RT10",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D07",
+        "revision": 1,
+        "locator": "S2–S3"
+      }
+    },
+    {
+      "check": "target_section:RT10",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D09",
+        "revision": 1,
+        "locator": "S1"
+      }
+    },
+    {
+      "check": "target_section:RT10",
+      "status": "pass",
+      "detail": {
+        "document_id": "R3-D03",
+        "revision": 1,
+        "locator": "S2"
+      }
+    },
+    {
+      "check": "required_private:normalized_row.json",
+      "status": "pass",
+      "detail": "normalized_row.json"
+    },
+    {
+      "check": "required_private:source_and_synthesis_ledger.md",
+      "status": "pass",
+      "detail": "source_and_synthesis_ledger.md"
+    },
+    {
+      "check": "required_private:fixed_scenario.md",
+      "status": "pass",
+      "detail": "fixed_scenario.md"
+    },
+    {
+      "check": "required_private:entity_register.md",
+      "status": "pass",
+      "detail": "entity_register.md"
+    },
+    {
+      "check": "required_private:timeline.md",
+      "status": "pass",
+      "detail": "timeline.md"
+    },
+    {
+      "check": "required_private:causal_reference.md",
+      "status": "pass",
+      "detail": "causal_reference.md"
+    },
+    {
+      "check": "required_private:evidence_design.md",
+      "status": "pass",
+      "detail": "evidence_design.md"
+    },
+    {
+      "check": "required_private:release_expectations.md",
+      "status": "pass",
+      "detail": "release_expectations.md"
+    },
+    {
+      "check": "required_private:answer_bank.json",
+      "status": "pass",
+      "detail": "answer_bank.json"
+    },
+    {
+      "check": "required_private:answer_agent_instructions.md",
+      "status": "pass",
+      "detail": "answer_agent_instructions.md"
+    },
+    {
+      "check": "required_private:evaluation_targets.json",
+      "status": "pass",
+      "detail": "evaluation_targets.json"
+    },
+    {
+      "check": "required_private:run_protocol.md",
+      "status": "pass",
+      "detail": "run_protocol.md"
+    },
+    {
+      "check": "required_private:validation_report.md",
+      "status": "pass",
+      "detail": "validation_report.md"
+    },
+    {
+      "check": "all_operator_files_excluded",
+      "status": "pass",
+      "detail": [
+        "package_manifest.json",
+        "README_OPERATOR_ONLY.md",
+        "private/release_expectations.md",
+        "private/evaluation_targets.json",
+        "private/normalized_row.json",
+        "private/entity_register.md",
+        "private/source_and_synthesis_ledger.md",
+        "private/causal_reference.md",
+        "private/timeline.md",
+        "private/answer_bank.json",
+        "private/run_protocol.md",
+        "private/evidence_design.md",
+        "private/validation_report.md",
+        "private/answer_agent_instructions.md",
+        "private/fixed_scenario.md",
+        "run_records/recording_template.md"
+      ]
+    },
+    {
+      "check": "historical_workbook_unchanged",
+      "status": "pass",
+      "detail": "bd900c0ff1f6736143a64dfecd3e9c1a0ee7eb8ac32f62a74f8bba830df689f1"
+    }
+  ],
+  "sizes": [
+    {
+      "release": "B0",
+      "added_documents": 6,
+      "added_words": 975,
+      "added_bytes": 6177,
+      "active_documents": 6,
+      "active_words": 975
+    },
+    {
+      "release": "B1",
+      "added_documents": 3,
+      "added_words": 614,
+      "added_bytes": 3751,
+      "active_documents": 9,
+      "active_words": 1589
+    },
+    {
+      "release": "B2",
+      "added_documents": 4,
+      "added_words": 593,
+      "added_bytes": 3890,
+      "active_documents": 12,
+      "active_words": 2092
+    }
+  ],
+  "document_revisions": 13,
+  "answer_needs": 11,
+  "semantic_targets": 10,
+  "scope": "Structural integrity only; no model run, entailment judgment or independent engineering approval."
+}

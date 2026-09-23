@@ -1,0 +1,7 @@
+{"at":"2026-09-15T04:09:48.914Z","phase":"creating-fresh-incident","status":"running"}
+{"at":"2026-09-15T04:09:49.035Z","phase":"initial-causal-analysis"}
+{"at":"2026-09-15T04:33:56.567Z","phase":"version-committed","committedVersions":1,"lastError":null}
+{"at":"2026-09-15T04:33:56.587Z","phase":"storyteller-answering","baseVersion":1,"pendingQuestions":16}
+{"at":"2026-09-15T04:36:54.507Z","phase":"applying-story-batch","baseVersion":1,"storyRoundId":"32db597b-5b27-4d38-b39a-fb64a93d821a","answerCount":16}
+{"at":"2026-09-15T04:49:10.825Z","phase":"request-failed","lastError":"Error: Output contract: Use an empty coveredByCandidateKey for keep candidate bq-hhq8mg.; Use an empty coveredByCandidateKey for keep candidate bq-ws1sje.; Use an empty coveredByCandidateKey for keep candidate bq-1oj29hu.; Use an empty coveredByCandidateKey for keep candidate bq-gifup5.","requestAttempt":1}
+{"at":"2026-09-15T04:49:10.974Z","phase":"stopped","status":"failed","error":"Error: Output contract: Use an empty coveredByCandidateKey for keep candidate bq-hhq8mg.; Use an empty coveredByCandidateKey for keep candidate bq-ws1sje.; Use an empty coveredByCandidateKey for keep candidate bq-1oj29hu.; Use an empty coveredByCandidateKey for keep candidate bq-gifup5.","finishedAt":"2026-09-15T04:49:10.974Z"}

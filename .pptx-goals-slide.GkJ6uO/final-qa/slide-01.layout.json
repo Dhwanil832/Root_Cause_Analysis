@@ -1,0 +1,2181 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/y90nupkv",
+    "id": "y90nupkv",
+    "slide": 1,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "BASE",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Aptos Display"
+      },
+      "minorFont": {
+        "latinTypeface": "Aptos"
+      }
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "BASE",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "backgroundColor": "#F7F9FC",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "Shape 0",
+          "bbox": [
+            0,
+            693.12,
+            1279.97,
+            0
+          ],
+          "geometry": "line",
+          "lineColor": "#D7DEE9",
+          "lineWidth": 1.33
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/3",
+          "id": "3",
+          "name": "Text 1",
+          "bbox": [
+            40.32,
+            697.92,
+            211.2,
+            17.28
+          ],
+          "geometry": "rect",
+          "text": "RCA kickoff maps",
+          "textPreview": "RCA kickoff maps",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "RCA kickoff maps",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "RCA kickoff maps",
+                  "fontSize": 10,
+                  "typeface": "Aptos",
+                  "color": "#607089"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/547294r6",
+      "id": "2",
+      "name": "Shape 0",
+      "bbox": [
+        0,
+        0,
+        1279.97,
+        11.52
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3yl0zql",
+      "id": "3",
+      "name": "Text 1",
+      "bbox": [
+        43.2,
+        30.72,
+        1008,
+        40.32
+      ],
+      "geometry": "rect",
+      "text": "What each category should establish",
+      "textPreview": "What each category should establish",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "What each category should establish"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "What each category should establish",
+          "runs": [
+            {
+              "index": 1,
+              "text": "What each category should establish",
+              "fontSize": 30.67,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qp4be9c",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        1082.88,
+        28.8,
+        148.8,
+        32.64
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#E7F4F8",
+      "lineColor": "#CFEAF2",
+      "lineWidth": 0.67
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65g3298r",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        1082.88,
+        36.96,
+        148.8,
+        11.52
+      ],
+      "geometry": "rect",
+      "text": "Overview",
+      "textPreview": "Overview",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Overview"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Overview",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Overview",
+              "fontSize": 10,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fu94fe98",
+      "id": "8",
+      "name": "Shape 5",
+      "bbox": [
+        22.08,
+        109.44,
+        4.8,
+        571.2
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ozmd8r65",
+      "id": "25",
+      "name": "Slide Number Placeholder 0",
+      "bbox": [
+        1176,
+        697.92,
+        83.99,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "1",
+      "textPreview": "1",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/4nilkzmd",
+      "id": "26",
+      "bbox": [
+        43.2,
+        109.44,
+        1193.28,
+        571.25
+      ],
+      "text": "Category | Core facts to establish | Tangential links to explore\nHuman involvement | Roles, exposure, actions, task intent, competence | Information, workload, PPE, supervision, system constraints\nElectrical incident | Asset or circuit, energy state, work, abnormal evidence, protection | Exposure path, temporary setup, environment, isolation\nEquipment or tool | Function, expected state, actual condition, changes, failure behavior | Maintenance, guards, interfaces, human contact, stored energy\nMobile equipment / vehicle | Vehicle, task, motion, route, controls, operating status | Visibility, separation, ground conditions, communication\nCrane / lifting / suspended load | Load, lift method, rigging, support, position, control | Exclusion zone, signals, inspection, weather, gravity energy\nRail / locomotive | Movement, equipment, route, authority, switching, braking | Track condition, signals, visibility, communication, interfaces\nStored / released / gravity energy | Energy source, magnitude, state, restraint, release path | Isolation, pressure, balance, position, line of fire\nIsolation / LOTO | Energy sources, boundaries, steps, verification, actual status | Stored energy, shared systems, handoffs, changes, deviations\nMaintenance / outage / non-routine work | Scope, sequence, non-normal configuration, changes, work status | Simultaneous work, temporary states, handoffs, restoration\nProcess or material | Material, process state, parameters, containment, release | Reaction, contamination, temperature, pressure, handling, exposure\nWork environment | Location, access, layout, physical conditions, immediate hazards | Lighting, weather, height, atmosphere, congestion, housekeeping\nProcedure / planning | Required method, scope, hazards considered, planned versus actual work | Document quality, feasibility, permits, change control, authorization\nCommunication / supervision | Who knew what, instructions, handoffs, decisions, oversight | Language, conflicting cues, stop-work, contractor coordination\nAnimal / wildlife / insect | Species, presence, contact route, timing, immediate effect | Attractants, habitat, barriers, season, reporting and response\nOther / novel condition | Unclassified condition, observable facts, possible mechanism, impact | Rare interactions, changed assumptions, external factors, expert needs",
+      "textPreview": "Category | Core facts to establish | Tangential links to explore | Human involvement | Roles, exposure, actions, task intent, competence ...",
+      "rows": 16,
+      "cols": 3,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            43.2,
+            109.44,
+            245,
+            32
+          ],
+          "text": "Category",
+          "textPreview": "Category",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Category",
+              "resolvedTextStyle": {
+                "fontSize": 11.2,
+                "typeface": "Aptos",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Category",
+                  "fontSize": 11.2,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            288.2,
+            109.44,
+            466,
+            32
+          ],
+          "text": "Core facts to establish",
+          "textPreview": "Core facts to establish",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Core facts to establish",
+              "resolvedTextStyle": {
+                "fontSize": 11.2,
+                "typeface": "Aptos",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Core facts to establish",
+                  "fontSize": 11.2,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            754.2,
+            109.44,
+            482.28,
+            32
+          ],
+          "text": "Tangential links to explore",
+          "textPreview": "Tangential links to explore",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Tangential links to explore",
+              "resolvedTextStyle": {
+                "fontSize": 11.2,
+                "typeface": "Aptos",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Tangential links to explore",
+                  "fontSize": 11.2,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            43.2,
+            141.44,
+            245,
+            35.95
+          ],
+          "text": "Human involvement",
+          "textPreview": "Human involvement",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Human involvement",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Human involvement",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            288.2,
+            141.44,
+            466,
+            35.95
+          ],
+          "text": "Roles, exposure, actions, task intent, competence",
+          "textPreview": "Roles, exposure, actions, task intent, competence",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Roles, exposure, actions, task intent, competence",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Roles, exposure, actions, task intent, competence",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            754.2,
+            141.44,
+            482.28,
+            35.95
+          ],
+          "text": "Information, workload, PPE, supervision, system constraints",
+          "textPreview": "Information, workload, PPE, supervision, system constraints",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Information, workload, PPE, supervision, system constraints",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Information, workload, PPE, supervision, system constraints",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            43.2,
+            177.39,
+            245,
+            35.95
+          ],
+          "text": "Electrical incident",
+          "textPreview": "Electrical incident",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Electrical incident",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Electrical incident",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            288.2,
+            177.39,
+            466,
+            35.95
+          ],
+          "text": "Asset or circuit, energy state, work, abnormal evidence, protection",
+          "textPreview": "Asset or circuit, energy state, work, abnormal evidence, protection",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Asset or circuit, energy state, work, abnormal evidence, protection",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Asset or circuit, energy state, work, abnormal evidence, protection",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            754.2,
+            177.39,
+            482.28,
+            35.95
+          ],
+          "text": "Exposure path, temporary setup, environment, isolation",
+          "textPreview": "Exposure path, temporary setup, environment, isolation",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Exposure path, temporary setup, environment, isolation",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Exposure path, temporary setup, environment, isolation",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            43.2,
+            213.34,
+            245,
+            35.95
+          ],
+          "text": "Equipment or tool",
+          "textPreview": "Equipment or tool",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Equipment or tool",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Equipment or tool",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            288.2,
+            213.34,
+            466,
+            35.95
+          ],
+          "text": "Function, expected state, actual condition, changes, failure behavior",
+          "textPreview": "Function, expected state, actual condition, changes, failure behavior",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Function, expected state, actual condition, changes, failure behavior",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Function, expected state, actual condition, changes, failure behavior",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            754.2,
+            213.34,
+            482.28,
+            35.95
+          ],
+          "text": "Maintenance, guards, interfaces, human contact, stored energy",
+          "textPreview": "Maintenance, guards, interfaces, human contact, stored energy",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Maintenance, guards, interfaces, human contact, stored energy",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Maintenance, guards, interfaces, human contact, stored energy",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            43.2,
+            249.29,
+            245,
+            35.95
+          ],
+          "text": "Mobile equipment / vehicle",
+          "textPreview": "Mobile equipment / vehicle",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Mobile equipment / vehicle",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Mobile equipment / vehicle",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            288.2,
+            249.29,
+            466,
+            35.95
+          ],
+          "text": "Vehicle, task, motion, route, controls, operating status",
+          "textPreview": "Vehicle, task, motion, route, controls, operating status",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Vehicle, task, motion, route, controls, operating status",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Vehicle, task, motion, route, controls, operating status",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 5,
+          "column": 3,
+          "bbox": [
+            754.2,
+            249.29,
+            482.28,
+            35.95
+          ],
+          "text": "Visibility, separation, ground conditions, communication",
+          "textPreview": "Visibility, separation, ground conditions, communication",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Visibility, separation, ground conditions, communication",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Visibility, separation, ground conditions, communication",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            43.2,
+            285.24,
+            245,
+            35.95
+          ],
+          "text": "Crane / lifting / suspended load",
+          "textPreview": "Crane / lifting / suspended load",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Crane / lifting / suspended load",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Crane / lifting / suspended load",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            288.2,
+            285.24,
+            466,
+            35.95
+          ],
+          "text": "Load, lift method, rigging, support, position, control",
+          "textPreview": "Load, lift method, rigging, support, position, control",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Load, lift method, rigging, support, position, control",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Load, lift method, rigging, support, position, control",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 6,
+          "column": 3,
+          "bbox": [
+            754.2,
+            285.24,
+            482.28,
+            35.95
+          ],
+          "text": "Exclusion zone, signals, inspection, weather, gravity energy",
+          "textPreview": "Exclusion zone, signals, inspection, weather, gravity energy",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Exclusion zone, signals, inspection, weather, gravity energy",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Exclusion zone, signals, inspection, weather, gravity energy",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            43.2,
+            321.19,
+            245,
+            35.95
+          ],
+          "text": "Rail / locomotive",
+          "textPreview": "Rail / locomotive",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Rail / locomotive",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Rail / locomotive",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            288.2,
+            321.19,
+            466,
+            35.95
+          ],
+          "text": "Movement, equipment, route, authority, switching, braking",
+          "textPreview": "Movement, equipment, route, authority, switching, braking",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Movement, equipment, route, authority, switching, braking",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Movement, equipment, route, authority, switching, braking",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "row": 7,
+          "column": 3,
+          "bbox": [
+            754.2,
+            321.19,
+            482.28,
+            35.95
+          ],
+          "text": "Track condition, signals, visibility, communication, interfaces",
+          "textPreview": "Track condition, signals, visibility, communication, interfaces",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Track condition, signals, visibility, communication, interfaces",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Track condition, signals, visibility, communication, interfaces",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            43.2,
+            357.14,
+            245,
+            35.95
+          ],
+          "text": "Stored / released / gravity energy",
+          "textPreview": "Stored / released / gravity energy",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Stored / released / gravity energy",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Stored / released / gravity energy",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            288.2,
+            357.14,
+            466,
+            35.95
+          ],
+          "text": "Energy source, magnitude, state, restraint, release path",
+          "textPreview": "Energy source, magnitude, state, restraint, release path",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Energy source, magnitude, state, restraint, release path",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Energy source, magnitude, state, restraint, release path",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "row": 8,
+          "column": 3,
+          "bbox": [
+            754.2,
+            357.14,
+            482.28,
+            35.95
+          ],
+          "text": "Isolation, pressure, balance, position, line of fire",
+          "textPreview": "Isolation, pressure, balance, position, line of fire",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Isolation, pressure, balance, position, line of fire",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Isolation, pressure, balance, position, line of fire",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 25,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            43.2,
+            393.09,
+            245,
+            35.95
+          ],
+          "text": "Isolation / LOTO",
+          "textPreview": "Isolation / LOTO",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Isolation / LOTO",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Isolation / LOTO",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            288.2,
+            393.09,
+            466,
+            35.95
+          ],
+          "text": "Energy sources, boundaries, steps, verification, actual status",
+          "textPreview": "Energy sources, boundaries, steps, verification, actual status",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Energy sources, boundaries, steps, verification, actual status",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Energy sources, boundaries, steps, verification, actual status",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "row": 9,
+          "column": 3,
+          "bbox": [
+            754.2,
+            393.09,
+            482.28,
+            35.95
+          ],
+          "text": "Stored energy, shared systems, handoffs, changes, deviations",
+          "textPreview": "Stored energy, shared systems, handoffs, changes, deviations",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Stored energy, shared systems, handoffs, changes, deviations",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Stored energy, shared systems, handoffs, changes, deviations",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 28,
+          "row": 10,
+          "column": 1,
+          "bbox": [
+            43.2,
+            429.04,
+            245,
+            35.95
+          ],
+          "text": "Maintenance / outage / non-routine work",
+          "textPreview": "Maintenance / outage / non-routine work",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Maintenance / outage / non-routine work",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Maintenance / outage / non-routine work",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 29,
+          "row": 10,
+          "column": 2,
+          "bbox": [
+            288.2,
+            429.04,
+            466,
+            35.95
+          ],
+          "text": "Scope, sequence, non-normal configuration, changes, work status",
+          "textPreview": "Scope, sequence, non-normal configuration, changes, work status",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Scope, sequence, non-normal configuration, changes, work status",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Scope, sequence, non-normal configuration, changes, work status",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 30,
+          "row": 10,
+          "column": 3,
+          "bbox": [
+            754.2,
+            429.04,
+            482.28,
+            35.95
+          ],
+          "text": "Simultaneous work, temporary states, handoffs, restoration",
+          "textPreview": "Simultaneous work, temporary states, handoffs, restoration",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Simultaneous work, temporary states, handoffs, restoration",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Simultaneous work, temporary states, handoffs, restoration",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 31,
+          "row": 11,
+          "column": 1,
+          "bbox": [
+            43.2,
+            464.99,
+            245,
+            35.95
+          ],
+          "text": "Process or material",
+          "textPreview": "Process or material",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Process or material",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Process or material",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 32,
+          "row": 11,
+          "column": 2,
+          "bbox": [
+            288.2,
+            464.99,
+            466,
+            35.95
+          ],
+          "text": "Material, process state, parameters, containment, release",
+          "textPreview": "Material, process state, parameters, containment, release",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Material, process state, parameters, containment, release",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Material, process state, parameters, containment, release",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 33,
+          "row": 11,
+          "column": 3,
+          "bbox": [
+            754.2,
+            464.99,
+            482.28,
+            35.95
+          ],
+          "text": "Reaction, contamination, temperature, pressure, handling, exposure",
+          "textPreview": "Reaction, contamination, temperature, pressure, handling, exposure",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Reaction, contamination, temperature, pressure, handling, exposure",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Reaction, contamination, temperature, pressure, handling, exposure",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 34,
+          "row": 12,
+          "column": 1,
+          "bbox": [
+            43.2,
+            500.94,
+            245,
+            35.95
+          ],
+          "text": "Work environment",
+          "textPreview": "Work environment",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Work environment",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Work environment",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 35,
+          "row": 12,
+          "column": 2,
+          "bbox": [
+            288.2,
+            500.94,
+            466,
+            35.95
+          ],
+          "text": "Location, access, layout, physical conditions, immediate hazards",
+          "textPreview": "Location, access, layout, physical conditions, immediate hazards",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Location, access, layout, physical conditions, immediate hazards",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Location, access, layout, physical conditions, immediate hazards",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 36,
+          "row": 12,
+          "column": 3,
+          "bbox": [
+            754.2,
+            500.94,
+            482.28,
+            35.95
+          ],
+          "text": "Lighting, weather, height, atmosphere, congestion, housekeeping",
+          "textPreview": "Lighting, weather, height, atmosphere, congestion, housekeeping",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Lighting, weather, height, atmosphere, congestion, housekeeping",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Lighting, weather, height, atmosphere, congestion, housekeeping",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 37,
+          "row": 13,
+          "column": 1,
+          "bbox": [
+            43.2,
+            536.89,
+            245,
+            35.95
+          ],
+          "text": "Procedure / planning",
+          "textPreview": "Procedure / planning",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Procedure / planning",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Procedure / planning",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 38,
+          "row": 13,
+          "column": 2,
+          "bbox": [
+            288.2,
+            536.89,
+            466,
+            35.95
+          ],
+          "text": "Required method, scope, hazards considered, planned versus actual work",
+          "textPreview": "Required method, scope, hazards considered, planned versus actual work",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Required method, scope, hazards considered, planned versus actual work",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Required method, scope, hazards considered, planned versus actual work",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 39,
+          "row": 13,
+          "column": 3,
+          "bbox": [
+            754.2,
+            536.89,
+            482.28,
+            35.95
+          ],
+          "text": "Document quality, feasibility, permits, change control, authorization",
+          "textPreview": "Document quality, feasibility, permits, change control, authorization",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Document quality, feasibility, permits, change control, authorization",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Document quality, feasibility, permits, change control, authorization",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 40,
+          "row": 14,
+          "column": 1,
+          "bbox": [
+            43.2,
+            572.84,
+            245,
+            35.95
+          ],
+          "text": "Communication / supervision",
+          "textPreview": "Communication / supervision",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Communication / supervision",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Communication / supervision",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 41,
+          "row": 14,
+          "column": 2,
+          "bbox": [
+            288.2,
+            572.84,
+            466,
+            35.95
+          ],
+          "text": "Who knew what, instructions, handoffs, decisions, oversight",
+          "textPreview": "Who knew what, instructions, handoffs, decisions, oversight",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Who knew what, instructions, handoffs, decisions, oversight",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Who knew what, instructions, handoffs, decisions, oversight",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 42,
+          "row": 14,
+          "column": 3,
+          "bbox": [
+            754.2,
+            572.84,
+            482.28,
+            35.95
+          ],
+          "text": "Language, conflicting cues, stop-work, contractor coordination",
+          "textPreview": "Language, conflicting cues, stop-work, contractor coordination",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Language, conflicting cues, stop-work, contractor coordination",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Language, conflicting cues, stop-work, contractor coordination",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 43,
+          "row": 15,
+          "column": 1,
+          "bbox": [
+            43.2,
+            608.79,
+            245,
+            35.95
+          ],
+          "text": "Animal / wildlife / insect",
+          "textPreview": "Animal / wildlife / insect",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Animal / wildlife / insect",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Animal / wildlife / insect",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 44,
+          "row": 15,
+          "column": 2,
+          "bbox": [
+            288.2,
+            608.79,
+            466,
+            35.95
+          ],
+          "text": "Species, presence, contact route, timing, immediate effect",
+          "textPreview": "Species, presence, contact route, timing, immediate effect",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Species, presence, contact route, timing, immediate effect",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Species, presence, contact route, timing, immediate effect",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 45,
+          "row": 15,
+          "column": 3,
+          "bbox": [
+            754.2,
+            608.79,
+            482.28,
+            35.95
+          ],
+          "text": "Attractants, habitat, barriers, season, reporting and response",
+          "textPreview": "Attractants, habitat, barriers, season, reporting and response",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Attractants, habitat, barriers, season, reporting and response",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Attractants, habitat, barriers, season, reporting and response",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 46,
+          "row": 16,
+          "column": 1,
+          "bbox": [
+            43.2,
+            644.74,
+            245,
+            35.95
+          ],
+          "text": "Other / novel condition",
+          "textPreview": "Other / novel condition",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Other / novel condition",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Other / novel condition",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 47,
+          "row": 16,
+          "column": 2,
+          "bbox": [
+            288.2,
+            644.74,
+            466,
+            35.95
+          ],
+          "text": "Unclassified condition, observable facts, possible mechanism, impact",
+          "textPreview": "Unclassified condition, observable facts, possible mechanism, impact",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Unclassified condition, observable facts, possible mechanism, impact",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Unclassified condition, observable facts, possible mechanism, impact",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 48,
+          "row": 16,
+          "column": 3,
+          "bbox": [
+            754.2,
+            644.74,
+            482.28,
+            35.95
+          ],
+          "text": "Rare interactions, changed assumptions, external factors, expert needs",
+          "textPreview": "Rare interactions, changed assumptions, external factors, expert needs",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Rare interactions, changed assumptions, external factors, expert needs",
+              "resolvedTextStyle": {
+                "fontSize": 9.8,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Rare interactions, changed assumptions, external factors, expert needs",
+                  "fontSize": 9.8,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

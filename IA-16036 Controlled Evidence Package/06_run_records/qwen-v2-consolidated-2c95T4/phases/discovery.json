@@ -1,0 +1,1642 @@
+{
+  "calls": 10,
+  "reused": 10,
+  "candidates": [
+    {
+      "type": "condition",
+      "label": "Utilities air gallery serves RHOB process area; local indication P-R normally shows normal pressure band.",
+      "detail": "The Utilities air gallery distributes instrument air to the RHOB process area. The receiving header H-R at RHOB has a local indication point P-R that typically displays within a normal operating range (above 5.0 bar).",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6"
+      ],
+      "specialistIds": [],
+      "key": "n-1675uru"
+    },
+    {
+      "type": "condition",
+      "label": "Alarm AL-44 activates when P-R pressure drops below 4.5 bar and clears above 5.0 bar.",
+      "detail": "The RHOB PLC low-pressure input from point P-R (AL-44) is configured to trigger a 'COMP FAULT' indication if the measured pressure falls below 4.5 bar, and it resets when pressure rises above 5.0 bar.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c"
+      ],
+      "specialistIds": [],
+      "key": "n-gybvj2"
+    },
+    {
+      "type": "condition",
+      "label": "At 10:00 AM, P-R pressure dropped from ~6.8 bar to below alarm thresholds (<4.5 bar).",
+      "detail": "RHOB operations detected an instrument-air low-pressure indication at the receiving header (P-R), dropping from approximately 6.8 bar to a value that triggered the AL-44 alarm.",
+      "status": "supported",
+      "sourceIds": [
+        "claim-12ce684"
+      ],
+      "specialistIds": [],
+      "key": "n-ax2alr"
+    },
+    {
+      "type": "condition",
+      "label": "Work package WO-527-E field execution record was blank at folder issue.",
+      "detail": "The work package cover indicates the temporary instruction attachment field and the field execution record (WO-527-E) were both left blank when issued, meaning no specific instructions or updated drawings were attached to guide boundary preparation.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078"
+      ],
+      "specialistIds": [],
+      "key": "n-q7dwrs"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance acceptance signature was not yet signed at notification time.",
+      "detail": "The work package cover explicitly states that the maintenance acceptance signature field had not been filled in when the incident occurred, indicating the boundary preparation phase was incomplete or unverified by receiving operations.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078"
+      ],
+      "specialistIds": [],
+      "key": "n-1q7qtf5"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence confirms whether crew saw recent changes or used a different version of the equipment-location sheet.",
+      "detail": "The training extract does not state which configuration drawing the crew (U-A/U-B) viewed, nor is there any record that either person received a briefing on recent service-routing changes affecting the instrument-air system.",
+      "status": "unknown",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33"
+      ],
+      "specialistIds": [],
+      "key": "n-1b1mn9d"
+    },
+    {
+      "type": "condition",
+      "label": "No documented confirmation of understanding regarding root cause assessment or response steps.",
+      "detail": "The provided evidence does not contain any record showing that the crew understood how to assess a low-pressure alarm, what immediate actions were required beyond pausing work, or who was responsible for restoring service safely.",
+      "status": "unknown",
+      "sourceIds": [
+        "claim-1abjb6"
+      ],
+      "specialistIds": [],
+      "key": "n-5fesl6"
+    },
+    {
+      "type": "condition",
+      "label": "Shift log records 'boundary preparation in progress' but does not identify point of interruption or valve states.",
+      "detail": "The shift entry at 09:48 notes that the crew was at the gallery with boundary preparation underway, yet it provides no information about which valves were open/closed, whether isolation procedures had been completed, or where exactly in the distribution system the pressure loss originated.",
+      "status": "unknown",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d"
+      ],
+      "specialistIds": [],
+      "key": "n-1qpkyz6"
+    },
+    {
+      "type": "condition",
+      "label": "Personnel U-A and U-B held current operating qualifications at shift start.",
+      "detail": "Both crew members were listed with 'Current Utilities operating qualification' and energy-control authorization, confirming they met the baseline competency requirements for their assigned tasks.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33"
+      ],
+      "specialistIds": [],
+      "key": "n-t9cpzc"
+    },
+    {
+      "type": "condition",
+      "label": "Utilities acknowledged the alarm at approximately 10:02 AM and paused work.",
+      "detail": "Upon receiving notification of the low-pressure indication, Utilities operations formally acknowledged the issue around 10:02 AM and immediately halted all maintenance activities pending further review.",
+      "status": "supported",
+      "sourceIds": [
+        "claim-x9yg85"
+      ],
+      "specialistIds": [],
+      "key": "n-w71b49"
+    },
+    {
+      "type": "condition",
+      "label": "Work was paused and air supply restored by approximately 10:07 AM.",
+      "detail": "By about 10:07 AM, the local indication at RHOB returned to normal band levels. The incident description notes that work had been paused earlier but does not specify whether full restoration of service or just a temporary pressure recovery occurred before maintenance was deferred until later (by 10:20).",
+      "status": "supported",
+      "sourceIds": [
+        "claim-17vesa8"
+      ],
+      "specialistIds": [],
+      "key": "n-v2w4tg"
+    },
+    {
+      "type": "condition",
+      "label": "The alarm AL-44 (COMP FAULT) was triggered by the low-pressure input from P-R.",
+      "detail": "Passage p5 explicitly notes that evidence does not establish what specific equipment or process condition caused the indication at RHOB P-R, and passage p13 confirms entries do not identify the point of interruption. While passages support an alarm occurred (p2), they lack entailed cause attribution to 'low-pressure input from P-R' specifically versus other potential causes.",
+      "status": "unknown",
+      "sourceIds": [
+        "claim-1fhjudf"
+      ],
+      "specialistIds": [],
+      "key": "n-baeffs"
+    },
+    {
+      "type": "condition",
+      "label": "Utilities air gallery serves RHOB process area; local indication P-R normally shows normal pressure band (~6.8–6.9 bar).",
+      "detail": "P-U (upstream) remained stable at 6.8–6.9 bar while P-R dropped, indicating the disturbance was localized to the distribution path or receiving station.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1ihsteu"
+    },
+    {
+      "type": "condition",
+      "label": "Alarm AL-44 is a PLC low-pressure input from P-R; active below 4.5 bar and clears above 5.0 bar.",
+      "detail": "The alarm logic threshold explains why the event triggered at ~10:00 when pressure fell to 5.8 bar (below 6.9 but still within normal band) then dropped further, crossing the <4.5 trigger point by 10:00:32.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-ily57r"
+    },
+    {
+      "type": "condition",
+      "label": "The pressure and alarm extract supplies sampled values, not a continuous waveform.",
+      "detail": "Sampling intervals (~30–40 seconds) mean the exact moment of interruption is inferred from discrete drops (6.8→5.8 at 10:00:11), introducing uncertainty about whether an upstream valve closed or a leak occurred between samples.",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1ry5vzu"
+    },
+    {
+      "type": "condition",
+      "label": "Area directory does not establish valve positions or pressure availability at any given time.",
+      "detail": "The directory is a location index only; it cannot confirm whether valves were open/closed during the event, leaving the physical cause of P-R drop unverified by this document alone.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-ao9o66"
+    },
+    {
+      "type": "condition",
+      "label": "Shift log records 'boundary preparation in progress' but does not identify point of interruption or valve states.",
+      "detail": "The shift log confirms work was paused at 10:02 due to an air-low indication, yet it lacks details on whether the Utilities crew had isolated a specific line or if RHOB observed a leak before pausing.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-gw70kw"
+    },
+    {
+      "type": "condition",
+      "label": "No engineering disposition or temporary instruction was attached for changes to instrument-air service affecting RHOB between 2024-03-01 and May 20, 2024.",
+      "detail": "Per IA-D03 Section 3.6, an approved change record is required before using a modified arrangement on a maintenance boundary. Absence of such documentation suggests either no change occurred or one was used without formal approval (unknown).",
+      "status": "unknown",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-gkf844"
+    },
+    {
+      "type": "condition",
+      "label": "Daily briefing topic line reads '1SC dryer work and RHOB service coordination' but contains no valve-by-valve content.",
+      "detail": "The crew may not have received explicit instruction on current valve states or recent routing changes, contributing to uncertainty about the system configuration during boundary preparation.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-3ykejq"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence of documented confirmation between Utilities and RHOB that the air-low alarm was understood.",
+      "detail": "While communication occurred (RHOB requested attendance at 10:02), there is no record confirming whether both parties agreed on the cause or immediate corrective action before pausing work.",
+      "status": "unknown",
+      "sourceIds": [
+        "q-8irrr9"
+      ],
+      "specialistIds": [],
+      "key": "n-1bvxd32"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence of breakdown in communication between Utilities and RHOB regarding the air-low indication.",
+      "detail": "RHOB notified Utilities at 10:02; work paused. Pressure restored by ~10:07. Timing suggests response was adequate, though root cause remained unresolved until restoration.",
+      "status": "unknown",
+      "sourceIds": [
+        "q-isvv2m"
+      ],
+      "specialistIds": [],
+      "key": "n-sqwzjg"
+    },
+    {
+      "type": "condition",
+      "label": "Potential unrecorded service-routing change or undocumented valve state created a unique hazard scenario.",
+      "detail": "Hypothesis: An unauthorized valve closure upstream of P-R (e.g., M-101/M-102) could have isolated RHOB without updating records. Requires verification against engineering drawings and work orders.",
+      "status": "unknown",
+      "sourceIds": [
+        "0ff450fe-49da-4c67-8b42-35449fdad35c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-11gg5pk"
+    },
+    {
+      "type": "condition",
+      "label": "Potential service-routing change affecting RHOB boundary between 2024-03-01 and May 20, 2024.",
+      "detail": "Hypothesis: A routing modification occurred without formal disposition (per IA-D03 Section 3.6), potentially altering pressure distribution to RHOB.",
+      "status": "unknown",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-i3yme8"
+    },
+    {
+      "type": "condition",
+      "label": "Crew U-A/U-B collected WO-527 work folder and lock equipment at 09:35; boundary preparation in progress by 09:48.",
+      "detail": "Standard pre-maintenance steps were followed, but the absence of a verified system configuration check (e.g., valve status confirmation) before starting work may have contributed to vulnerability when pressure dropped.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-hvg9dh"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance receiver M-A had boundary acceptance pending at shift start.",
+      "detail": "Per IA-D02, 'maintenance released' refers to work-boundary acceptance. Pending status implies the Utilities crew retained control until formal release, which may have affected response dynamics during the event.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1evg1rq"
+    },
+    {
+      "type": "condition",
+      "label": "Alarm AL-44 display text 'COMP FAULT' retained from earlier template; mapped to receiving-header pressure condition per PR-12.",
+      "detail": "The label does not reflect the actual cause (pressure loss vs. compressor fault), potentially delaying troubleshooting if operators assumed a mechanical failure rather than investigating supply-side issues first.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-7pw6aq"
+    },
+    {
+      "type": "condition",
+      "label": "C-11 RUN is a running-status bit; not a local flow proof.",
+      "detail": "The 'RUN' indicator remained active despite pressure loss, confirming the compressor motor was energized but unable to maintain header pressure. This rules out immediate mechanical seizure as the primary cause of P-R drop.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-rmrljn"
+    },
+    {
+      "type": "condition",
+      "label": "Pressure values are bar gauge; point register needed to interpret location and scope.",
+      "detail": "P-U (upstream) stability vs. P-R drop confirms the issue was downstream of H-U, likely in the distribution path between North gallery and RHOB receiving header.",
+      "status": "supported",
+      "sourceIds": [
+        "d838e866-dc34-4814-8dad-3b97d0353f05#1"
+      ],
+      "specialistIds": [],
+      "key": "n-pblplk"
+    },
+    {
+      "type": "condition",
+      "label": "Handwritten records are approximate unless stated otherwise.",
+      "detail": "Shift log entries like 'About 10:07' lack precise timestamps, introducing uncertainty about exact restoration time and response duration.",
+      "status": "supported",
+      "sourceIds": [
+        "d838e866-dc34-4814-8dad-3b97d0353f05#1"
+      ],
+      "specialistIds": [],
+      "key": "n-hc09al"
+    },
+    {
+      "type": "condition",
+      "label": "RHOB process area receives instrument air from Utilities gallery via receiving header H-R.",
+      "detail": "Normal operation involves pressure monitoring at P-R (receiving station) and upstream P-U. Alarm AL-44 monitors low-pressure condition below 4.5 bar.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-aag550"
+    },
+    {
+      "type": "condition",
+      "label": "Pressure extract IA-P01 provides sampled values only (not continuous) and excludes data from all locations or valve states.",
+      "detail": "Export covers P-U, P-R, C-11 RUN but lacks full waveform coverage. Cannot confirm simultaneous events at other points like North gallery without additional evidence.",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1sd8vsk"
+    },
+    {
+      "type": "condition",
+      "label": "Point register IA-P02 does not establish state of any distribution valve.",
+      "detail": "Register maps signals (P-U, P-R, C-11 RUN, AL-44) but explicitly states it cannot prove supply disturbance appearance in sample export or valve positions.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-177jnpq"
+    },
+    {
+      "type": "condition",
+      "label": "Area directory IA-D01 does not establish valve positions or pressure availability at any given time.",
+      "detail": "Directory serves as location index only. Does not confirm operational state of valves M-101/M-102 or other distribution points during incident window.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1w3niil"
+    },
+    {
+      "type": "condition",
+      "label": "Shift log IA-S01 records 'boundary preparation in progress' but does not identify point of interruption or valve states.",
+      "detail": "Log entries note work folder collection, gallery presence, and air-low indication request. No specific timestamp for pressure drop origin recorded.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-17qciec"
+    },
+    {
+      "type": "condition",
+      "label": "Work package cover indicates temporary instruction attachment field was blank at issue time.",
+      "detail": "Blank field recorded in work folder. Does not establish whether procedure revision or temporary instruction existed prior to incident.",
+      "status": "unknown",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078"
+      ],
+      "specialistIds": [],
+      "key": "n-oigq1p"
+    },
+    {
+      "type": "condition",
+      "label": "Crew U-A/U-B collected WO-527 work folder and lock equipment at 09:35; boundary preparation ongoing by 09:48.",
+      "detail": "Maintenance receiver M-A assigned but acceptance pending. No evidence of formal energy-control procedure revision or temporary instruction attachment verified in packet.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-3thrsy"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence of documented confirmation between Utilities and RHOB that air-low alarm was understood.",
+      "detail": "Shift log shows request for attendance at 09:48 but no record confirming shared understanding of AL-44 meaning or response protocol before incident.",
+      "status": "unknown",
+      "sourceIds": [
+        "q-8irrr9"
+      ],
+      "specialistIds": [],
+      "key": "n-1lde5sa"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence of breakdown in communication between Utilities and RHOB regarding air-low indication.",
+      "detail": "RHOB requested attendance; Utilities paused work. No record indicates failure to communicate, but lack of explicit confirmation leaves uncertainty about coordination adequacy.",
+      "status": "unknown",
+      "sourceIds": [
+        "q-isvv2m"
+      ],
+      "specialistIds": [],
+      "key": "n-jg4jvc"
+    },
+    {
+      "type": "condition",
+      "label": "Origin of pressure loss (source, distribution system, or equipment) is unknown.",
+      "detail": "Incident description explicitly states initial notification does not establish whether interruption began at air source, within distribution system, or at receiving equipment. Evidence supports this gap.",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "specialistIds": [],
+      "key": "n-11kmdda"
+    },
+    {
+      "type": "condition",
+      "label": "C-11 RUN bit is a running-status contact, not proof of compressor operation.",
+      "detail": "Point register defines C-11 RUN as auxiliary contact for motor status. Does not confirm active compression or flow during incident window.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-zh84rl"
+    },
+    {
+      "type": "condition",
+      "label": "Available evidence does not establish whether simultaneous low-pressure event occurred at other downstream points such as North gallery.",
+      "detail": "Pressure extract samples only P-U and P-R. Sampling limitations prevent confirmation of events elsewhere without additional data from North gallery or similar locations.",
+      "status": "unknown",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1e02r6x"
+    },
+    {
+      "type": "condition",
+      "label": "Available evidence does not establish whether local indication P-R reading was recorded at 09:45 AM.",
+      "detail": "Pressure extract samples start at 09:54. No record of specific numeric measurement for P-R at 09:45 in provided text.",
+      "status": "unknown",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1k72jwr"
+    },
+    {
+      "type": "condition",
+      "label": "Available evidence does not establish what specific equipment or process condition caused the air-low indication at RHOB P-R.",
+      "detail": "Shift entries note supply complaints but do not identify point of interruption. Evidence explicitly states cause unknown based on provided text.",
+      "status": "unknown",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-8pkzru"
+    },
+    {
+      "type": "event",
+      "label": "Utilities acknowledged receipt and paused work at ~10:02 AM.",
+      "detail": "Shift log records Utilities entry stating 'Work paused. RHOB service issue under review.' Alarm AL-44 occurred 10:00:32, acknowledged 10:03:14.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1qy43nt"
+    },
+    {
+      "type": "event",
+      "label": "Pressure restored to normal levels around 10:06 AM.",
+      "detail": "Shift log notes 'About 10:07' local indication returned to normal band. Pressure extract shows P-R at 6.8 bar by 10:06:50.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-8fwh2r"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance deferred; work folder retained for review.",
+      "detail": "Utilities entry at 10:20 states 'Maintenance deferred. Work folder retained for review.' Indicates incident prevented planned maintenance execution.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-ufqg50"
+    },
+    {
+      "type": "condition",
+      "label": "Upstream pressure P-U remained stable at ~6.9 bar during the event.",
+      "detail": "Pressure readings show no drop upstream of the distribution routes, indicating a localized issue downstream or within RHOB path rather than source failure.",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-j8rnx"
+    },
+    {
+      "type": "condition",
+      "label": "Local indication P-R normally shows normal pressure band in RHOB service station.",
+      "detail": "The area directory defines the receiving header H-R and indication P-R as part of the RHOB operations scope, with a defined 'normal record custodian'.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1htojh2"
+    },
+    {
+      "type": "condition",
+      "label": "Area directory is a location index and does not establish valve positions or pressure availability at any given time.",
+      "detail": "The document explicitly states it is an index, not a current piping diagram. It cannot confirm whether valves were open/closed during the event.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-tv90rc"
+    },
+    {
+      "type": "condition",
+      "label": "Work package WO-527-E field execution record was blank at folder issue.",
+      "detail": "The work-package cover explicitly states the field execution record (WO-527-E) was blank when issued, meaning no initial valve-by-valve status or isolation checklist was recorded before the event.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-11ll4eq"
+    },
+    {
+      "type": "condition",
+      "label": "Crew U-A/U-B held current operating qualifications and energy-control authorization at shift start.",
+      "detail": "Assignment extract confirms both crew members had valid Utilities operating qualification and energy-control authorization recorded for the shift.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1m3lip6"
+    },
+    {
+      "type": "condition",
+      "label": "Shift log records 'boundary preparation in progress' but does not identify point of interruption or valve states.",
+      "detail": "The shift log entry at 09:48 notes boundary preparation was underway, yet provides no detail on which valves were open/closed or where the pressure drop originated.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1pmr9gx"
+    },
+    {
+      "type": "condition",
+      "label": "Alarm AL-44 mapped to P-R pressure, not compressor status; 'COMP FAULT' label is a legacy display artifact.",
+      "detail": "Point register confirms AL-44 maps to RHOB PLC low-pressure input from P-R. The alarm text retained an older template label unrelated to the actual trip contact C-11.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1rshp0p"
+    },
+    {
+      "type": "condition",
+      "label": "Pressure drop occurred only at P-R (RHOB receiving header) while upstream P-U remained normal (~6.9 bar), indicating a localized issue downstream of the North gallery or within the RHOB distribution path.",
+      "detail": "Numeric samples show pressure dropping from 6.8 to below 4.1 bar at P-R, with no corresponding drop in P-U readings, supporting a localized failure rather than upstream source loss.",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-18ljag6"
+    },
+    {
+      "type": "condition",
+      "label": "The specific communication medium (radio, phone, face-to-face) is not explicitly stated in the provided evidence.",
+      "detail": "No record specifies how RHOB communicated with Utilities; this gap limits understanding of response latency or potential miscommunication risks.",
+      "status": "supported",
+      "sourceIds": [
+        "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:bq-1fanm2w"
+      ],
+      "specialistIds": [],
+      "key": "n-1oedffs"
+    },
+    {
+      "type": "condition",
+      "label": "Environmental conditions such as noise or distance affecting message clarity are not documented in the provided evidence.",
+      "detail": "No documentation exists regarding ambient noise, distance between teams, or other environmental factors that could have impacted communication reliability during the event.",
+      "status": "supported",
+      "sourceIds": [
+        "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:bq-1fanm2w"
+      ],
+      "specialistIds": [],
+      "key": "n-1x7dd07"
+    },
+    {
+      "type": "condition",
+      "label": "The alarm's occurrence time, acknowledgment time and export time may differ.",
+      "detail": "Record conventions state these times can vary; the 10:00 AM indication does not necessarily reflect when Utilities acknowledged or responded to the issue.",
+      "status": "supported",
+      "sourceIds": [
+        "d838e866-dc34-4814-8dad-3b97d0353f05#1"
+      ],
+      "specialistIds": [],
+      "key": "n-13isny6"
+    },
+    {
+      "type": "condition",
+      "label": "An empty form field records no value; the reason it is empty requires other evidence.",
+      "detail": "The blank WO-527-E record indicates missing data, but does not inherently prove negligence or procedural failure without further context on why fields were left unfilled.",
+      "status": "supported",
+      "sourceIds": [
+        "d838e866-dc34-4814-8dad-3b97d0353f05#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1nupisc"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance acceptance signature was not yet signed at notification time.",
+      "detail": "The work-package cover notes the maintenance acceptance signature field was unsigned, indicating boundary release had not been formally completed when the alarm occurred.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-85pdam"
+    },
+    {
+      "type": "condition",
+      "label": "The training extract does not state which configuration drawing the crew saw or whether either person received a recent change briefing.",
+      "detail": "No record confirms if U-A/U-B reviewed updated drawings or briefings related to valve states, isolation procedures, or system changes prior to starting work.",
+      "status": "unknown",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1oeohee"
+    },
+    {
+      "type": "condition",
+      "label": "No interview concerning fatigue, workload or individual intent is included in this extract.",
+      "detail": "Absence of interviews precludes assessment of human factors such as stress, distraction, or decision-making context during the event window.",
+      "status": "unknown",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-zt9vpk"
+    },
+    {
+      "type": "condition",
+      "label": "The desk entries do not log every field operation.",
+      "detail": "Shift logs omit granular operational details, limiting ability to reconstruct exact sequence of actions leading up to the pressure drop.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-rga8k8"
+    },
+    {
+      "type": "condition",
+      "label": "'Normal band' is the operator's entry, not a captured numeric measurement.",
+      "detail": "Operator entries describing 'normal band' are subjective assessments rather than instrumented data points; they cannot confirm actual pressure values without supporting records.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1jn9d4s"
+    },
+    {
+      "type": "condition",
+      "label": "The area directory (IA-D01) is a location index and does not establish valve positions or pressure availability at any given time.",
+      "detail": "Passage p6 notes the register does not establish distribution valve states. Passage p1 describes IA-D01 as a location index with no valve-by-valve content.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-x3ngwa"
+    },
+    {
+      "type": "condition",
+      "label": "The work package cover (IA-S02) indicates the temporary instruction attachment field was blank at issue time.",
+      "detail": "Passage p14 explicitly states that the temporary instruction attachment field was blank at folder issue time for WO-527. This does not prove whether a service-routing change had occurred or been properly documented, but it is recorded as missing in this instance.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-109kb97"
+    },
+    {
+      "type": "condition",
+      "label": "No documented confirmation of understanding regarding root cause assessment or appropriate response steps is present in the provided evidence.",
+      "detail": "Passage p14 and incident description lack explicit records confirming comprehension of causes or actions taken beyond pausing work. No interview data on intent is included.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1cqfb1k"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence confirms whether crew U-A/U-B saw recent changes or used a different version of the equipment-location sheet.",
+      "detail": "Passage p2 states that training extract does not indicate which configuration drawing was seen or whether a recent change briefing occurred. No interview data on intent is included.",
+      "status": "partially-supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-13979pa"
+    },
+    {
+      "type": "condition",
+      "label": "The incident description does not establish whether the interruption originated upstream, downstream, or within the distribution network.",
+      "detail": "Passage p5 indicates that initial notification does not establish origin of pressure drop on P-R. Only values dropping at 10:00 are shown without source identification.",
+      "status": "partially-supported",
+      "sourceIds": [
+        "incident-description#structuredIncident.summary"
+      ],
+      "specialistIds": [],
+      "key": "n-x2152q"
+    },
+    {
+      "type": "condition",
+      "label": "No line opening was authorized at the time of acknowledgment.",
+      "detail": "Passages p4 and p12 explicitly state that no line opening was authorized at the time of acknowledgment.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-6lcr51"
+    },
+    {
+      "type": "condition",
+      "label": "RHOB reported an 'air-low' indication and requested Utilities attendance at ~10:00 AM.",
+      "detail": "Passage p4 supports the air-low indication at 10:00. Passage p5 mentions local controls showing supply complaints which implies a need for attention, though exact timing alignment between report and specific alarm state has uncertainty regarding whether 'air-low' refers strictly to AL-44 trigger or just observed P-R trend.",
+      "status": "partially-supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1wzbnxb"
+    },
+    {
+      "type": "condition",
+      "label": "Utilities acknowledged receipt of the issue at ~10:02 AM and paused work.",
+      "detail": "Passages p4 and p12 confirm that Utilities acknowledged receipt of the issue at approximately 10:02 AM, which aligns with claim. Work was paused upon acknowledgment.",
+      "status": "supported",
+      "sourceIds": [
+        "kb:communication-supervision"
+      ],
+      "specialistIds": [],
+      "key": "n-6748yt"
+    },
+    {
+      "type": "condition",
+      "label": "The Utilities air gallery serves RHOB process area; local indication P-R normally shows normal pressure band.",
+      "detail": "Passage p1 describes IA-D01 as a location index. Passage yu76gn supports that the air gallery serves RHOB and local indication P-R normally shows normal pressure band, though this is inferred from context rather than explicit measurement in provided excerpts.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6"
+      ],
+      "specialistIds": [],
+      "key": "n-vjrnwk"
+    },
+    {
+      "type": "condition",
+      "label": "No engineering disposition or temporary instruction was attached for changes to instrument-air service affecting RHOB between 2024-03-01 and May 20, 2024.",
+      "detail": "Passage p10 (Section 3.6) states that draft preparation alone does not satisfy distribution; affected ECP must be revised or have approved temporary instruction attached. However, no evidence confirms a service-routing change actually occurred for this specific case prior to incident. Claim remains proposed rule without confirmation of application here.",
+      "status": "unknown",
+      "sourceIds": [
+        "0ff450fe-49da-4c67-8b42-35449fdad35c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-128uhnw"
+    },
+    {
+      "type": "condition",
+      "label": "The work package cover indicates the temporary instruction attachment field was blank at issue time.",
+      "detail": "Passage p2 notes training extract does not state which configuration drawing was seen or whether recent change briefing occurred, supporting that a blank attachment field alone cannot prove service-routing status. This is recorded as unknown regarding actual routing changes.",
+      "status": "unknown",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-a7k5he"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence confirms whether U-A/U-B used a different version or saw recent changes.",
+      "detail": "Passage p2 explicitly states that training extract does not indicate which configuration drawing was seen or whether recent change briefing occurred, and no interview data on intent is included. This directly supports inference about lack of evidence regarding version usage or awareness.",
+      "status": "partially-supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-xb6jf4"
+    },
+    {
+      "type": "condition",
+      "label": "The Utilities air gallery serves the RHOB process area and distributes instrument air to it.",
+      "detail": "Established by service directory IA-D01. The interruption at RHOB implies a supply-side issue or isolation affecting this distribution path.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-q6vu7r"
+    },
+    {
+      "type": "condition",
+      "label": "The area directory (IA-D01) is a location index and does not establish valve positions or pressure availability at any given time.",
+      "detail": "Passage p7 explicitly states the directory's limitation. This creates an evidence gap regarding physical barrier state during the incident.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-ai1z7r"
+    },
+    {
+      "type": "condition",
+      "label": "The work package cover (IA-S02) indicates the temporary instruction attachment field was blank at issue time.",
+      "detail": "Recorded in IA-S02. This suggests a potential procedural gap if an unrecorded change occurred, but does not confirm one did occur without further evidence of routing changes or valve states.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-nrva0b"
+    },
+    {
+      "type": "condition",
+      "label": "When a service-routing change affects an existing maintenance boundary, the affected ECP must be revised or have an approved temporary instruction attached.",
+      "detail": "Requirement from IA-D03 Section 3.2 and 3.6. The blank attachment field combined with unknown routing status creates a procedural vulnerability if a change existed but was not documented/revised.",
+      "status": "supported",
+      "sourceIds": [
+        "0ff450fe-49da-4c67-8b42-35449fdad35c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-vay2a6"
+    },
+    {
+      "type": "condition",
+      "label": "The point register (IA-P02) maps signals but does not establish the state of any distribution valve or prove that every supply disturbance would appear in the selected sample export.",
+      "detail": "Passage p8 states this limitation. The air-low indication at P-R is recorded, but the physical cause (valve position vs upstream outage) remains unknown from current records.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1qdd5sx"
+    },
+    {
+      "type": "condition",
+      "label": "Crew U-A/U-B was at the gallery with boundary preparation in progress; maintenance release pending.",
+      "detail": "Shift log entry at 09:48. The crew had not yet accepted the work boundary when the air loss occurred, meaning they were likely unaware of any potential supply changes or valve states affecting their area.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-2jjl7x"
+    },
+    {
+      "type": "condition",
+      "label": "RHOB is a local area name used in these records; it is not an individual compressor identifier.",
+      "detail": "Clarifies that the air loss affected the entire RHOB service station/receiving header, not just one piece of equipment. This broadens the scope of potential upstream causes.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1gwdti9"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence currently establishes whether the interruption began at the air source, within the distribution system, or at the receiving equipment.",
+      "detail": "Explicitly stated in incident description and supported by point register limitations. This is a critical unknown requiring investigation into upstream records (e.g., maintenance logs for other areas, utility outage reports).",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1e9h80u"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence currently establishes whether field valves were open contrary to procedure or if an unrecorded service-routing change occurred.",
+      "detail": "Supported by directory limitations and blank attachment fields. This represents a significant investigative gap regarding physical barriers vs procedural controls.",
+      "status": "unknown",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-zwzrhw"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence currently establishes whether external factors (third-party work, utility outage) affected the supply.",
+      "detail": "Supported by lack of records in current packet. Requires investigation into cross-functional coordination logs or third-party work permits if applicable to this area.",
+      "status": "unknown",
+      "sourceIds": [],
+      "specialistIds": [],
+      "key": "n-1st54eg"
+    },
+    {
+      "type": "condition",
+      "label": "Crew U-A/U-B held current Utilities operating qualification and energy-control authorization at shift start.",
+      "detail": "Recorded in assignment extract (IA-S03). Does not confirm what they observed or did on the job.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1",
+        "claim-1a6reg3"
+      ],
+      "specialistIds": [],
+      "key": "n-ju6kxg"
+    },
+    {
+      "type": "condition",
+      "label": "Work package cover (IA-S02) indicates the temporary instruction attachment field was blank at issue time.",
+      "detail": "Blank field suggests no approved temporary instruction attached to support boundary preparation before acceptance signature.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1",
+        "claim-gyysd1"
+      ],
+      "specialistIds": [],
+      "key": "n-kv06wr"
+    },
+    {
+      "type": "condition",
+      "label": "Field execution record (WO-527-E) was blank at folder issue.",
+      "detail": "Blank field implies no recorded boundary verification or valve-state documentation before the interruption occurred.",
+      "status": "unknown",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1",
+        "claim-gyysd1"
+      ],
+      "specialistIds": [],
+      "key": "n-psg5d8"
+    },
+    {
+      "type": "condition",
+      "label": "Area directory (IA-D01) states it is a location index and does not establish valve positions or pressure availability at any specific time.",
+      "detail": "Directory cannot be used to confirm whether valves were open/closed or if air was available when the interruption occurred.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1",
+        "claim-ivbspk"
+      ],
+      "specialistIds": [],
+      "key": "n-rww7lb"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence confirms whether crew saw recent changes or used a different version of the equipment-location sheet (DW-1SC-17 Revision A).",
+      "detail": "Training extract does not state which configuration drawing was seen; no record that a change briefing occurred.",
+      "status": "unknown",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1",
+        "claim-2x4nrr"
+      ],
+      "specialistIds": [],
+      "key": "n-1gqu80"
+    },
+    {
+      "type": "condition",
+      "label": "Shift log records 'boundary preparation in progress' at 09:48 but does not identify point of interruption or valve states.",
+      "detail": "Log entry confirms work stage (preparation) and pending release, but provides no physical evidence of where/when the air failed.",
+      "status": "partially-supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1",
+        "claim-7262ne"
+      ],
+      "specialistIds": [],
+      "key": "n-1imw4n6"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance acceptance signature was not yet signed at notification time.",
+      "detail": "Signature field is a work-stage record; its absence does not prove valve state but indicates boundary release had not been formally accepted before the event.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1",
+        "claim-gyysd1"
+      ],
+      "specialistIds": [],
+      "key": "n-14civod"
+    },
+    {
+      "type": "condition",
+      "label": "RHOB PLC low-pressure input (AL-44) active below 4.5 bar; clears above 5.0 bar.",
+      "detail": "Alarm logic defines the threshold for 'air-low' indication but does not identify which physical point or valve caused the drop.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1wubguy"
+    },
+    {
+      "type": "condition",
+      "label": "Point register maps AL-44 to receiving-header pressure condition, not compressor trip contact.",
+      "detail": "Alarm text 'COMP FAULT' is a legacy template; actual signal mapped to header pressure drop at RHOB station.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1bta5hn"
+    },
+    {
+      "type": "condition",
+      "label": "Work scope was planned maintenance and inspection of 1SC dryer group D-101; receiving operation RHOB instrument-air service.",
+      "detail": "Defines the system boundary under preparation but does not specify which valves or isolation points were intended to be secured before air loss.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-mh84z4"
+    },
+    {
+      "type": "condition",
+      "label": "Daily work briefing (2024-05-20) listed topic '1SC dryer work and RHOB service coordination' with no valve-by-valve content.",
+      "detail": "Briefing confirmed assignment but did not document specific isolation steps or verify boundary integrity before air loss.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1q47r99"
+    },
+    {
+      "type": "condition",
+      "label": "Work folder retained for review after interruption; maintenance deferred.",
+      "detail": "Indicates the event was treated as an unplanned deviation requiring investigation before work could resume or be re-planned.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-u13nnj"
+    },
+    {
+      "type": "condition",
+      "label": "Local controls showing supply complaints at RHOB; request for Utilities attendance.",
+      "detail": "Operator observation of abnormal condition triggered the notification but did not identify root cause or location within distribution network.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-b27yce"
+    },
+    {
+      "type": "condition",
+      "label": "No line opening authorized at 10:02.",
+      "detail": "Work paused without formal isolation authorization; suggests boundary release had not been completed when air failed.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1ll2v21"
+    },
+    {
+      "type": "condition",
+      "label": "Shift log does not identify the point at which air supply was interrupted.",
+      "detail": "Log entries lack granularity to determine whether failure occurred upstream, downstream, or within distribution network.",
+      "status": "partially-supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1",
+        "claim-gyysd1"
+      ],
+      "specialistIds": [],
+      "key": "n-6s8tyz"
+    },
+    {
+      "type": "condition",
+      "label": "'Normal band' is operator's entry, not a captured numeric measurement.",
+      "detail": "Restoration of indication at 10:07 does not quantify pressure recovery or confirm system integrity beyond alarm reset.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1g2cait"
+    },
+    {
+      "type": "condition",
+      "label": "Synthetic evaluation record; times and entries reconstructed for exercise.",
+      "detail": "Evidence packet explicitly states records are synthetic; treat as model-reviewed claims subject to verification against original sources if available.",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "specialistIds": [],
+      "key": "n-1n5lq96"
+    },
+    {
+      "type": "condition",
+      "label": "Utilities air gallery serves RHOB process area; local indication P-R normally shows normal pressure band.",
+      "detail": "The service directory defines the Utilities air gallery as serving the RHOB process area, with a receiving header H-R and indication P-R at that station. Normal operation implies P-R is within its expected range unless an alarm triggers.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1xhygz5"
+    },
+    {
+      "type": "condition",
+      "label": "The area directory is a location index and does not establish valve positions or pressure availability at any given time.",
+      "detail": "IA-D01 explicitly states it is an index, not a current piping diagram. It cannot confirm which valves were open/closed or what pressures existed when the alarm occurred.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-18cy7rb"
+    },
+    {
+      "type": "condition",
+      "label": "The point register maps AL-44 to receiving-header pressure P-R; it does not prove every supply disturbance appears in the sample export.",
+      "detail": "IA-P02 states PR-12 maps AL-44 to H-R (P-R) and that this mapping is for instrumentation only. It also notes the register does not establish valve state or guarantee all disturbances are logged.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-14tzgyz"
+    },
+    {
+      "type": "condition",
+      "label": "The work package cover indicates the temporary instruction attachment field was blank at issue time.",
+      "detail": "IA-S02 shows WO-527-E (field execution record) is 'Blank at folder issue' and the Temporary instruction attachment field is also blank. This does not prove a service-routing change occurred or that documentation requirements were met, only that fields are empty on this copy.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-uk8heo"
+    },
+    {
+      "type": "condition",
+      "label": "No line opening was authorized at the time of notification.",
+      "detail": "IA-S01 log entry at 10:02 explicitly states 'No line opening authorized.' This indicates a procedural control (isolation/authorization) remained in place, but does not explain why pressure dropped.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1rpd0or"
+    },
+    {
+      "type": "condition",
+      "label": "The initial notification does not establish whether the interruption began at the air source, within distribution system, or at receiving equipment.",
+      "detail": "IA-S01 and incident-description both state that supporting records are pending to identify the interrupting point. The log entries themselves do not specify origin (source vs line vs receiver).",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description#1",
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-103qgaw"
+    },
+    {
+      "type": "condition",
+      "label": "Desk entries do not log every field operation and do not identify the point at which air supply was interrupted.",
+      "detail": "IA-S01 explicitly notes that desk entries are limited reconstructions, approximate unless stated otherwise, and lack granularity to pinpoint where in the system pressure failed.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-149o6vz"
+    },
+    {
+      "type": "condition",
+      "label": "Handwritten records are approximate unless stated otherwise; alarm occurrence time may differ from acknowledgment/export times.",
+      "detail": "IA-D02 conventions state that hand-written entries (like the 10:00/10:07 timestamps) are approximations and do not automatically establish other statuses or precise timing of physical events.",
+      "status": "supported",
+      "sourceIds": [
+        "d838e866-dc34-4814-8dad-3b97d0353f05#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1dh0j78"
+    },
+    {
+      "type": "condition",
+      "label": "A maintenance work order being scheduled is not a record that the boundary has been released.",
+      "detail": "IA-D01 states that scheduling WO-527 does not mean the maintenance release (boundary acceptance) occurred. The signature field on IA-S02 was 'not yet signed' at notification time, indicating incomplete administrative closure of the work stage.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1x05929"
+    },
+    {
+      "type": "condition",
+      "label": "Draft preparation alone does not satisfy distribution requirements for changed arrangements.",
+      "detail": "IA-D03 Section 3.6 states that a drawing redline or draft is insufficient; the affected ECP must be revised/issued OR an approved temporary instruction attached. The blank field on IA-S02 suggests this requirement may not have been met, but evidence does not confirm whether any change occurred.",
+      "status": "supported",
+      "sourceIds": [
+        "0ff450fe-49da-4c67-8b42-35449fdad35c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-18qtamm"
+    },
+    {
+      "type": "condition",
+      "label": "The daily briefing attendance sheet lists U-A and U-B but contains no valve-by-valve content.",
+      "detail": "IA-S03 shows the briefing topic line mentions coordination, yet lacks specific operational details (e.g., which valves to isolate). This may indicate insufficient task-specific information was communicated or documented for the crew.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1wlpxtv"
+    },
+    {
+      "type": "condition",
+      "label": "The training extract does not state which configuration drawing the crew saw or whether either person received a recent change briefing.",
+      "detail": "IA-S03 explicitly notes that no interview covers fatigue/workload/intent, and the training extract lacks details on drawings seen or briefings received. This creates uncertainty about crew situational awareness regarding system changes.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-15cnyr7"
+    },
+    {
+      "type": "condition",
+      "label": "Competence and authorization records define tasks for which a person is qualified; they do not record what that person actually observed or did on a particular job.",
+      "detail": "IA-D03 Section 5.3 clarifies that qualification records (like those in IA-S03) show eligibility, not actual performance or observations during the incident. This limits inference about crew actions from authorization status alone.",
+      "status": "supported",
+      "sourceIds": [
+        "0ff450fe-49da-4c67-8b42-35449fdad35c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1y1wc8"
+    },
+    {
+      "type": "condition",
+      "label": "An empty form field records no value; the reason it is empty requires other evidence.",
+      "detail": "IA-D02 states that a blank field (like WO-527-E or temporary instruction attachment) means 'no value' was recorded, but does not prove absence of action. The cause of emptiness must be investigated separately.",
+      "status": "supported",
+      "sourceIds": [
+        "d838e866-dc34-4814-8dad-3b97d0353f05#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1g9ltls"
+    },
+    {
+      "type": "condition",
+      "label": "A command, a field-position observation and a proved internal valve condition are different records.",
+      "detail": "IA-D02 distinguishes these record types. The incident evidence contains commands (requests for attendance) but lacks direct observations of valve states or proven conditions at the time of failure.",
+      "status": "supported",
+      "sourceIds": [
+        "d838e866-dc34-4814-8dad-3b97d0353f05#1"
+      ],
+      "specialistIds": [],
+      "key": "n-14v88js"
+    },
+    {
+      "type": "condition",
+      "label": "The 1SC gallery and RHOB instrument-air station are separate operating locations.",
+      "detail": "IA-D01 defines these as distinct. This implies the air loss could originate in either location or at their interface, complicating origin identification without additional data.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-gc2yt8"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance receives the work boundary only after its release.",
+      "detail": "IA-D01 states that Utilities prepares the maintenance boundary, and Maintenance (M-A) accepts it later. At 10:00 AM, M-A's signature was not yet obtained per IA-S02, suggesting incomplete handover of control or information.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-z74g2j"
+    },
+    {
+      "type": "condition",
+      "label": "Utilities air gallery serves RHOB process area and distributes instrument air to the receiving header H-R.",
+      "detail": "The directory identifies RHOB as a local area name for records, not an individual compressor. The gallery supplies 1SC dryer group D-101 and routes air to RHOB.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-opw2ln"
+    },
+    {
+      "type": "condition",
+      "label": "Local indication P-R at RHOB receiving header H-R normally shows normal pressure band.",
+      "detail": "The point register maps AL-44 to the receiving-header pressure condition. Normal operation implies a 'normal band' reading before 10:00 AM (6.8 bar).",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1",
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-112qszd"
+    },
+    {
+      "type": "condition",
+      "label": "Pressure upstream of distribution routes (P-U) remained stable at 6.9 bar during the event window.",
+      "detail": "Measurements show P-U was constant at 6.8–6.9 bar from 09:54 to 10:08, indicating supply pressure did not drop significantly upstream of RHOB.",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1myxjth"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance acceptance signature was not yet signed at notification time.",
+      "detail": "The work package cover explicitly states 'Maintenance acceptance signature: not yet signed' when the incident occurred, meaning formal boundary release had not been granted.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-2jmrrk"
+    },
+    {
+      "type": "condition",
+      "label": "No line opening was authorized at the time of interruption.",
+      "detail": "Shift log entry at 10:02 AM explicitly records 'No line opening authorized' while work was paused and issue under review.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-16kxawb"
+    },
+    {
+      "type": "condition",
+      "label": "Area directory does not establish valve positions or pressure availability at any given time.",
+      "detail": "The area and service directory is a location index only; it explicitly states it 'does not establish valve positions or the pressure available at any given time.'",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1lq9li6"
+    },
+    {
+      "type": "condition",
+      "label": "Desk entries do not log every field operation or identify the point of interruption.",
+      "detail": "The shift log excerpt states 'desk entries do not log every field operation' and explicitly notes they 'do not identify the point at which the air supply was interrupted.'",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1cs3s92"
+    },
+    {
+      "type": "condition",
+      "label": "No documented confirmation of understanding regarding root cause assessment or response steps is present.",
+      "detail": "Evidence shows no interview concerning fatigue, workload, intent, or discussion confirming how the interruption was handled beyond pausing work.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1rww984"
+    },
+    {
+      "type": "event",
+      "label": "RHOB reported an 'air-low' indication and requested Utilities attendance at ~10:00 AM.",
+      "detail": "Shift log records RHOB entry stating 'Air-low indication. Local controls showing supply complaints. Requested Utilities attendance.'",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1qw8yiu"
+    },
+    {
+      "type": "event",
+      "label": "Utilities acknowledged receipt of the issue at ~10:02 AM and paused work.",
+      "detail": "Shift log records Utilities entry stating 'Work paused. RHOB service issue under review.' following RHOB's request for attendance.",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1rcac42"
+    },
+    {
+      "type": "event",
+      "label": "Local indication P-R dropped from 6.8 bar to below alarm threshold (5.0 bar) between 10:00 and 10:03 AM.",
+      "detail": "Pressure samples show P-R at 6.8 bar at 09:54, dropping to 5.8 bar at 10:00:11, then 4.1 bar at 10:00:40 (below AL-44 alarm threshold of 4.5 bar).",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-58uu1f"
+    },
+    {
+      "type": "event",
+      "label": "Alarm AL-44 triggered at 10:00:32 and was acknowledged by Utilities.",
+      "detail": "Pressure samples show P-R below alarm threshold starting at 10:00:11. Alarm journal shows occurrence time of 10:00:32, acknowledgment at 10:03:14.",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1gfn1mr"
+    },
+    {
+      "type": "event",
+      "label": "Normal pressure returned at ~10:07 AM after alarm cleared.",
+      "detail": "Pressure samples show P-R returning to 6.0 bar by 10:06:20 and normal band (6.8 bar) by 10:06:50. RHOB requested retention of records at this time.",
+      "status": "supported",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-m7dkz5"
+    },
+    {
+      "type": "condition",
+      "label": "Crew U-A/U-B had current Utilities operating qualification and energy-control authorization.",
+      "detail": "Assignment extract lists both operators with 'Current Utilities operating qualification and energy-control authorization' at shift start.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-214tfo"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance receiver M-A had boundary acceptance pending.",
+      "detail": "Assignment extract lists M-A with 'boundary acceptance pending' status at shift start, consistent with work package cover noting signature not yet signed.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-w5i4id"
+    },
+    {
+      "type": "condition",
+      "label": "Work folder WO-527-E was blank at issue time.",
+      "detail": "Work package cover attachment index shows 'WO-527-E: Blank at folder issue' for the field execution record, indicating no pre-filled isolation steps or valve states were documented on handover.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-g659zd"
+    },
+    {
+      "type": "condition",
+      "label": "Daily work briefing topic line read '1SC dryer work and RHOB service coordination'.",
+      "detail": "Assignment extract notes the daily briefing attendance sheet contains no valve-by-valve content, only a general topic line.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-7cbf4"
+    },
+    {
+      "type": "condition",
+      "label": "Crew U-A/U-B held current operating qualifications at shift start.",
+      "detail": "Personnel codes are fictional; no actual employee records reproduced. Qualification status is recorded but not observed performance on the job.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1hmiwux"
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance acceptance signature was not yet signed at notification time.",
+      "detail": "Work-boundary release pending; maintenance receiver M-A had not accepted the boundary when air loss occurred.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1ktiwpt"
+    },
+    {
+      "type": "condition",
+      "label": "Temporary instruction attachment field was blank at issue time.",
+      "detail": "No temporary instruction attached to work package cover; ECP-1SC-04 revision 3 issued but no approved temp instruction for this specific boundary change or routing update.",
+      "status": "supported",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-srvaw4"
+    },
+    {
+      "type": "condition",
+      "label": "Area directory (IA-D01) does not establish valve positions or pressure availability at any given time.",
+      "detail": "Directory is a location index only; cannot confirm if valves were open/closed or which path was active when loss occurred.",
+      "status": "supported",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-lzsmwx"
+    },
+    {
+      "type": "condition",
+      "label": "Daily work briefing contained no valve-by-valve content.",
+      "detail": "Briefing topic line read '1SC dryer work and RHOB service coordination' but did not list specific valves or routing changes affecting the boundary.",
+      "status": "supported",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-xuyu0f"
+    },
+    {
+      "type": "condition",
+      "label": "No evidence crew received recent change briefing or saw specific configuration drawing used.",
+      "detail": "Training extract does not state which configuration drawing the crew saw; no interview concerning fatigue, workload or individual intent included.",
+      "status": "unknown",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-u3hp7x"
+    },
+    {
+      "type": "condition",
+      "label": "Point register maps signals but does not establish state of any distribution valve.",
+      "detail": "Register IA-P02 shows P-U and P-R points, AL-44 alarm mapping; explicitly states it does not prove every supply disturbance appears in selected sample export or identify intermediate valves.",
+      "status": "supported",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-2ovw8p"
+    },
+    {
+      "type": "condition",
+      "label": "RHOB requested Utilities attendance at 10:00; work paused by 10:02.",
+      "detail": "Shift log shows RHOB entry 'Air-low indication... Requested Utilities attendance' followed by Utilities entry 'Work paused. RHOB service issue under review.'",
+      "status": "supported",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1ubp9xd"
+    },
+    {
+      "type": "condition",
+      "label": "Local indication P-R normally shows normal pressure band; upstream P-U remained stable at 6.9 bar.",
+      "detail": "Shift log notes morning check showed local air indication in normal band; point register excerpt implies P-U stability while P-R dropped, though exact values not captured continuously.",
+      "status": "unknown",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1e6bh8z"
+    },
+    {
+      "type": "condition",
+      "label": "Potential unrecorded service-routing change or undocumented valve state created a unique hazard scenario.",
+      "detail": "Hypothesis that an unrecorded routing change occurred; no evidence confirms such event actually happened. Absence of record does not prove occurrence.",
+      "status": "unknown",
+      "sourceIds": [
+        "0ff450fe-49da-4c67-8b42-35a449fdad35c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-se46ow"
+    },
+    {
+      "type": "condition",
+      "label": "Communication breakdown between Utilities and RHOB may have contributed to delayed response.",
+      "detail": "Hypothesis that coordination was impaired; evidence shows request at 10:00 and pause by 10:02, but no record indicates delay beyond normal steps or communication failure.",
+      "status": "unknown",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1e5ou0"
+    },
+    {
+      "type": "condition",
+      "label": "Transient nature of air pressure loss suggests possible upstream or distribution system issue rather than equipment failure at receiving end.",
+      "detail": "Hypothesis based on transient event; records do not establish where interruption began (source vs. distribution). Transient nature alone does not support this inference without additional evidence.",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description#1"
+      ],
+      "specialistIds": [],
+      "key": "n-6vnnqh"
+    }
+  ]
+}

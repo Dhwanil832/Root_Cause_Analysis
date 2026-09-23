@@ -1,0 +1,684 @@
+{
+  "schema_version": "1.0",
+  "case_id": "IA-16036",
+  "operator_private": true,
+  "release_policy": "fixed_batches_cumulative",
+  "answer_statuses": [
+    "answered",
+    "partial",
+    "conflicting",
+    "not_established",
+    "unavailable"
+  ],
+  "notes": [
+    "Need IDs are private semantic retrieval aids, not app question IDs.",
+    "Filter entries by released stage and resolve corrected source revisions before use.",
+    "When older sources are superseded, use an updated eligible entry or explicitly historical source context; never silently treat the withdrawn inference as current.",
+    "Unavailable answers do not reveal a future-record inventory."
+  ],
+  "entries": [
+    {
+      "need_id": "AN01",
+      "information_need": "Which service and upstream measurement were affected?",
+      "example_phrasings": [
+        "Where did pressure fall?",
+        "Did the entire supply fail?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "locations",
+          "information_need": "Tap locations"
+        },
+        {
+          "subpart_id": "pattern",
+          "information_need": "Listed pressure pattern"
+        },
+        {
+          "subpart_id": "continuous",
+          "information_need": "Every transient"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [
+        {
+          "document_id": "IA-D01",
+          "revision": 1,
+          "locator": "S2",
+          "exact_excerpt": "P-U senses pressure at H-U. P-R senses pressure at H-R."
+        },
+        {
+          "document_id": "IA-D04",
+          "revision": 1,
+          "locator": "S1/T4",
+          "exact_excerpt": "| T4 | 10:03:00 | 7.0 | 2.0 |"
+        },
+        {
+          "document_id": "IA-D04",
+          "revision": 1,
+          "locator": "S1/T7",
+          "exact_excerpt": "| T7 | 10:07:00 | 7.0 | 6.8 |"
+        }
+      ],
+      "factual_answer": "RHOB H-R pressure fell and recovered; listed H-U samples remain 7.0 bar gauge. Values between rows are not supplied.",
+      "coverage": [
+        {
+          "subpart_id": "locations",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "pattern",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "continuous",
+          "status": "partial",
+          "qualification": "Only selected samples available at this stage."
+        }
+      ],
+      "does_not_establish": [
+        "Not all short upstream transients excluded."
+      ],
+      "related_domains": [
+        "process",
+        "equipment"
+      ]
+    },
+    {
+      "need_id": "AN02",
+      "information_need": "Which instruction was issued and was it adequate?",
+      "example_phrasings": [
+        "What procedure did they have?",
+        "Was it current?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "issue",
+          "information_need": "Packet identity"
+        },
+        {
+          "subpart_id": "content",
+          "information_need": "Field applicability of content"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [
+        {
+          "document_id": "IA-D03",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Instruction included | ECP-1SC revision 3 |"
+        }
+      ],
+      "factual_answer": "WO527 included ECP-1SC revision 3. The cover alone cannot establish applicability or completeness.",
+      "coverage": [
+        {
+          "subpart_id": "issue",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "content",
+          "status": "not_established",
+          "qualification": "Cover identifies revision, not full content or adequacy."
+        }
+      ],
+      "does_not_establish": [
+        "Possession is not adequacy or compliance."
+      ],
+      "related_domains": [
+        "planning",
+        "human"
+      ]
+    },
+    {
+      "need_id": "AN03",
+      "information_need": "Does the initial alarm prove a compressor trip?",
+      "example_phrasings": [
+        "Did a compressor trip?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "alarm",
+          "information_need": "Alarm occurrence and label"
+        },
+        {
+          "subpart_id": "trip",
+          "information_need": "Actual compressor trip"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [
+        {
+          "document_id": "IA-D05",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "AL44 became active at 10:00:32 with display text “COMP FAULT.”"
+        },
+        {
+          "document_id": "IA-D05",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "The writer had not checked the compressor event journal or the input mapped to AL44."
+        }
+      ],
+      "factual_answer": "The label and alarm are recorded; the trip is an unchecked desk interpretation.",
+      "coverage": [
+        {
+          "subpart_id": "alarm",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "trip",
+          "status": "not_established",
+          "qualification": "Desk had not checked input mapping or journal."
+        }
+      ],
+      "does_not_establish": [
+        "Acknowledgment is not recovery or trip confirmation."
+      ],
+      "related_domains": [
+        "equipment",
+        "communication"
+      ]
+    },
+    {
+      "need_id": "AN04",
+      "information_need": "How are the air routes connected?",
+      "example_phrasings": [
+        "Does opening either bypass valve supply RHOB?",
+        "Show the path."
+      ],
+      "subparts": [
+        {
+          "subpart_id": "normal",
+          "information_need": "Normal route"
+        },
+        {
+          "subpart_id": "bypass",
+          "information_need": "Bypass series relationship"
+        },
+        {
+          "subpart_id": "state",
+          "information_need": "Incident-time state from this trace"
+        }
+      ],
+      "eligible_from_release": "B1",
+      "sources": [
+        {
+          "document_id": "IA-D06",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Normal branch | H-U → M101 → D101 → M102 → H-R |"
+        },
+        {
+          "document_id": "IA-D06",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| B17 branch | H-U → V201 → plain connecting spool → V202 → H-R |"
+        }
+      ],
+      "factual_answer": "Normal and B17 routes join the same upstream/downstream headers. V201 and V202 are in series in B17. Incident states require the separate field sequence.",
+      "coverage": [
+        {
+          "subpart_id": "normal",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "bypass",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "state",
+          "status": "not_established",
+          "qualification": "Trace alone supplies no historical positions."
+        }
+      ],
+      "does_not_establish": [
+        "No parallel alternative through V201 alone."
+      ],
+      "related_domains": [
+        "equipment",
+        "process"
+      ]
+    },
+    {
+      "need_id": "AN05",
+      "information_need": "Which valves changed during interruption and restoration?",
+      "example_phrasings": [
+        "What exactly restored the flow?",
+        "Which valve was still shut and why?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "before",
+          "information_need": "Opening V201 and closing M101"
+        },
+        {
+          "subpart_id": "second",
+          "information_need": "V202 seen closed then opened"
+        },
+        {
+          "subpart_id": "recovery",
+          "information_need": "M101 state at restoration"
+        },
+        {
+          "subpart_id": "intent",
+          "information_need": "Reason for initial omission"
+        }
+      ],
+      "eligible_from_release": "B1",
+      "sources": [
+        {
+          "document_id": "IA-D07",
+          "revision": 1,
+          "locator": "S1/A1",
+          "exact_excerpt": "| A1 | 09:56:00 | V201 moved to open | OP-1 action, OP-2 observed |"
+        },
+        {
+          "document_id": "IA-D07",
+          "revision": 1,
+          "locator": "S1/A2",
+          "exact_excerpt": "| A2 | 10:00:03 | M101 moved to closed; M102 remained open | OP-1 action, OP-2 observed |"
+        },
+        {
+          "document_id": "IA-D07",
+          "revision": 1,
+          "locator": "S1/A3",
+          "exact_excerpt": "| A3 | 10:05:40 | V202 handle observed at closed | OP-2 observation |"
+        },
+        {
+          "document_id": "IA-D07",
+          "revision": 1,
+          "locator": "S1/A4",
+          "exact_excerpt": "| A4 | 10:06:18 | V202 moved to open; M101 remained closed | OP-1 action, OP-2 observed |"
+        }
+      ],
+      "factual_answer": "V201 opened first; M101 then closed. V202 was later seen closed and opened while M101 remained closed. The note gives no reason for the earlier non-operation.",
+      "coverage": [
+        {
+          "subpart_id": "before",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "second",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "recovery",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "intent",
+          "status": "unavailable",
+          "qualification": "No reason recorded."
+        }
+      ],
+      "does_not_establish": [
+        "Do not change V201 open to closed, reopen M101, or infer intent."
+      ],
+      "related_domains": [
+        "human",
+        "isolation",
+        "equipment"
+      ]
+    },
+    {
+      "need_id": "AN06",
+      "information_need": "What actually drives AL44?",
+      "example_phrasings": [
+        "Is COMP FAULT really a compressor status?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "input",
+          "information_need": "Input and threshold"
+        },
+        {
+          "subpart_id": "trip",
+          "information_need": "Separate trip occurrence"
+        }
+      ],
+      "eligible_from_release": "B1",
+      "sources": [
+        {
+          "document_id": "IA-D08",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Input | P-R low-pressure comparison at H-R |"
+        },
+        {
+          "document_id": "IA-D08",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Activation threshold | P-R below 5.0 bar gauge |"
+        },
+        {
+          "document_id": "IA-D08",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Compressor trip contact in this logic | None |"
+        }
+      ],
+      "factual_answer": "AL44 uses low P-R, below 5.0 bar gauge, with no compressor trip contact in that logic.",
+      "coverage": [
+        {
+          "subpart_id": "input",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "trip",
+          "status": "not_established",
+          "qualification": "Mapping alone does not establish separate controller history."
+        }
+      ],
+      "does_not_establish": [
+        "Mapping is not itself proof no separate trip occurred."
+      ],
+      "related_domains": [
+        "equipment",
+        "communication"
+      ]
+    },
+    {
+      "need_id": "AN07",
+      "information_need": "Did the installed branch match the issued packet?",
+      "example_phrasings": [
+        "Was the new line in the procedure they received?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "installation",
+          "information_need": "B17 installation date"
+        },
+        {
+          "subpart_id": "issued",
+          "information_need": "Revision 3 content"
+        },
+        {
+          "subpart_id": "draft",
+          "information_need": "Revision 4-D distribution"
+        }
+      ],
+      "eligible_from_release": "B2",
+      "sources": [
+        {
+          "document_id": "IA-D09",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Field completion | 2024-05-16 |"
+        },
+        {
+          "document_id": "IA-D10",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| 3 | Approved and issued | Lists M101, D101 and M102; no B17, V201 or V202 entry | Yes, issued at 09:31 |"
+        },
+        {
+          "document_id": "IA-D10",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| 4-D | Draft dated 2024-05-17; approval and effective date blank | Adds B17 and both V201/V202 identities | No |"
+        }
+      ],
+      "factual_answer": "Installed B17 predates the job. Issued rev3 omits it. Rev4-D includes identities but remained unissued and outside WO527.",
+      "coverage": [
+        {
+          "subpart_id": "installation",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "issued",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "draft",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        }
+      ],
+      "does_not_establish": [
+        "Not proof crew ignored an issued updated instruction or never heard about branch."
+      ],
+      "related_domains": [
+        "planning",
+        "communication"
+      ]
+    },
+    {
+      "need_id": "AN08",
+      "information_need": "What happened in change-to-instruction routing?",
+      "example_phrasings": [
+        "Why was no ECP task created?",
+        "Why was the field set No?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "rule",
+          "information_need": "Routing condition"
+        },
+        {
+          "subpart_id": "selection",
+          "information_need": "Recorded impact value and task"
+        },
+        {
+          "subpart_id": "why",
+          "information_need": "Reason for classification"
+        }
+      ],
+      "eligible_from_release": "B2",
+      "sources": [
+        {
+          "document_id": "IA-D02",
+          "revision": 1,
+          "locator": "S2",
+          "exact_excerpt": "In the change register, work-package impact = Yes creates an ECP review/distribution task."
+        },
+        {
+          "document_id": "IA-D09",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Work-package impact | No |"
+        },
+        {
+          "document_id": "IA-D09",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| ECP review/distribution task | No task generated under CH218 |"
+        },
+        {
+          "document_id": "IA-D09",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "| Reason for impact selection | Not entered |"
+        }
+      ],
+      "factual_answer": "CH218 is marked No for work-package impact and generated no ECP task; the routing rule creates it for Yes. Reason for selection is absent.",
+      "coverage": [
+        {
+          "subpart_id": "rule",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "selection",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "why",
+          "status": "unavailable",
+          "qualification": "Reason not entered."
+        }
+      ],
+      "does_not_establish": [
+        "No complete organization-wide failure or personal motive."
+      ],
+      "related_domains": [
+        "planning",
+        "supervision"
+      ]
+    },
+    {
+      "need_id": "AN09",
+      "information_need": "What compressor status is supported by a continuous event record?",
+      "example_phrasings": [
+        "Could a trip have occurred between the sampled pressures?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "interval",
+          "information_need": "Trip-channel result"
+        },
+        {
+          "subpart_id": "health",
+          "information_need": "All equipment health"
+        }
+      ],
+      "eligible_from_release": "B2",
+      "sources": [
+        {
+          "document_id": "IA-D11",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "The reviewed event channel was recording throughout 09:50–10:10 with no indicated recorder gap."
+        },
+        {
+          "document_id": "IA-D11",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "No compressor trip, stop or restart entry appears in that interval."
+        }
+      ],
+      "factual_answer": "Reviewed continuous channel contains no compressor trip/stop/restart in 09:50–10:10.",
+      "coverage": [
+        {
+          "subpart_id": "interval",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "health",
+          "status": "unavailable",
+          "qualification": "Journal does not assess all compressor conditions."
+        }
+      ],
+      "does_not_establish": [
+        "Not all possible compressor defects excluded."
+      ],
+      "related_domains": [
+        "equipment"
+      ]
+    },
+    {
+      "need_id": "AN10",
+      "information_need": "What is corrected in the desk message?",
+      "example_phrasings": [
+        "What from the first message can we still use?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "correction",
+          "information_need": "Trip interpretation"
+        },
+        {
+          "subpart_id": "retention",
+          "information_need": "Alarm observation"
+        }
+      ],
+      "eligible_from_release": "B2",
+      "sources": [
+        {
+          "document_id": "IA-D05",
+          "revision": 2,
+          "locator": "S1",
+          "exact_excerpt": "I withdraw the trip interpretation for that interval."
+        },
+        {
+          "document_id": "IA-D05",
+          "revision": 2,
+          "locator": "S2",
+          "exact_excerpt": "AL44's activation at 10:00:32, its displayed text and acknowledgment at 10:03:14 remain recorded."
+        }
+      ],
+      "factual_answer": "Rev2 withdraws the trip interpretation, preserving the alarm and acknowledgment.",
+      "coverage": [
+        {
+          "subpart_id": "correction",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "retention",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        }
+      ],
+      "does_not_establish": [
+        "Does not retract measured pressure loss."
+      ],
+      "related_domains": [
+        "communication"
+      ]
+    },
+    {
+      "need_id": "AN11",
+      "information_need": "What are consequences, motives or quantitative flow properties?",
+      "example_phrasings": [
+        "Why did the person do it?",
+        "What was the loss or flow rate?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "loss",
+          "information_need": "Quantified loss/injury"
+        },
+        {
+          "subpart_id": "intent",
+          "information_need": "Crew motive or competence"
+        },
+        {
+          "subpart_id": "flow",
+          "information_need": "Flow, receiver volume, time constant"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [],
+      "factual_answer": "These details are not established in the permitted record set.",
+      "coverage": [
+        {
+          "subpart_id": "loss",
+          "status": "unavailable",
+          "qualification": "No complete consequence assessment supplied."
+        },
+        {
+          "subpart_id": "intent",
+          "status": "unavailable",
+          "qualification": "Actions do not establish motive."
+        },
+        {
+          "subpart_id": "flow",
+          "status": "unavailable",
+          "qualification": "Not measured in supplied records."
+        }
+      ],
+      "does_not_establish": [
+        "Do not invent damages, negligence or numeric flow."
+      ],
+      "related_domains": [
+        "human",
+        "process"
+      ]
+    }
+  ]
+}

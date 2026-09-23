@@ -1,0 +1,32 @@
+[
+  {
+    "id": "transfer-01",
+    "statement": "At 16:20 the chamber was empty, and its inspection field was unsigned.",
+    "sources": ["Chamber C return-to-service sheet, 16:20. Inspector signature: [blank].\nThe sheet records the signature state, not the chamber contents. Internal inspection results are in a separate enclosure not supplied with this extract."]
+  },
+  {
+    "id": "transfer-02",
+    "statement": "The tank level was 1.2 metres at 14:00 and 0.8 metres at 14:30.",
+    "sources": ["Tank T ultrasonic sensor, verified against a manual dip before the test.\n14:00: 1.2 m.\nDrain valve opened at 14:05.\n14:30: 0.8 m.\nThese are successive readings during the recorded drain test."]
+  },
+  {
+    "id": "transfer-03",
+    "statement": "The inlet gate was fully closed when the transfer began at 07:10.",
+    "sources": ["Operator account, inlet gate G, transfer start 07:10: I saw the gate fully closed as the transfer began.", "Observer account, same inlet gate G, same transfer start 07:10: I saw a gap of approximately 40 mm; the gate was not fully closed.\nNo video or position trace is available to reconcile the accounts."]
+  },
+  {
+    "id": "transfer-04",
+    "statement": "Shift 3 violated rule V because no supervisor signed the release.",
+    "sources": ["Rule V: release must be authorized by either the shift supervisor OR a currently appointed release controller. One authorization is sufficient.", "Appointment register: Mina Shah is the appointed release controller for Shift 3, effective all week.", "Shift 3 release: Mina Shah signed as release controller at 18:05 before work began. Supervisor signature: blank."]
+  },
+  {
+    "id": "transfer-05",
+    "statement": "The supplied excerpt contains no entry for a protective-cover check.",
+    "sources": ["Complete supplied excerpt, entries 1–4:\n1. Crew arrived 06:00.\n2. Protective cover checked 06:05, satisfactory.\n3. Tools issued 06:10.\n4. Work began 06:15.\nEnd of supplied excerpt."]
+  },
+  {
+    "id": "transfer-06",
+    "statement": "The inspection report records the gate as fully closed at 07:10.",
+    "sources": ["Inspection report, gate G at 07:10: fully closed.", "Independent witness, gate G at the same 07:10 transfer start: the gate was visibly open.\nThe discrepancy has not been resolved."]
+  }
+]

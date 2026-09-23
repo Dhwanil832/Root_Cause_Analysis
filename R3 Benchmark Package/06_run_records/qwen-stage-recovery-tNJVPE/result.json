@@ -1,0 +1,27 @@
+{
+  "purpose": "Focused live stage regression; not a four-version investigation or RCA-quality score",
+  "model": "ollama:qwen3.5:latest",
+  "promptVersion": "try4.2.0-stage-recovery",
+  "startedAt": "2026-09-15T03:12:33.105Z",
+  "inputSha256": "51b388c55328044df47e8cba96dd5c3f4a2088aaf5b4653d14acf124e7e5dbf3",
+  "candidateCount": 26,
+  "status": "passed",
+  "broker": {
+    "retained": 11,
+    "skipped": 15,
+    "batches": 7,
+    "durationMs": 250294,
+    "validation": "valid"
+  },
+  "causal": {
+    "focalNodeId": "node-1a4cas8",
+    "nodes": 11,
+    "edges": 7,
+    "validation": "repaired",
+    "durationMs": 490378
+  },
+  "completedAt": "2026-09-15T03:25:56.966Z",
+  "commitContractProblems": [],
+  "incidentCreated": false,
+  "historicalSnapshotUnchanged": true
+}

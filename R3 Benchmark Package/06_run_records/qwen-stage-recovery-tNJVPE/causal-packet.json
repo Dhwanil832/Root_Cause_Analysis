@@ -1,0 +1,1855 @@
+{
+  "structuredIncident": {
+    "summary": "The R3 exit carrier beam fell from the yoke into the mill pit at approximately 1:03 PM on October 14, 2024 (Turn 2). The incident occurred during an outage preparation phase where work rolls and backup rolls had been removed. Key contextual facts include that the top backup roll balance was left isolated in a raised position and B hydraulics were shut off/bled prior to this shift's event. No team members were present in the pit at the time of impact, though witnesses observed it from outside.",
+    "focalEvent": "R3 exit carrier beam falls from yoke into mill pit",
+    "actualImpact": "Falling object (SIFp) with potential for death; no injuries reported as team was absent. Equipment damage not apparent on the link or keeper, though a small window liner fell.",
+    "potentialImpact": "Severe injury or fatality to personnel in the pit if present at time of failure; structural integrity loss requiring immediate area isolation (red-flagged).",
+    "normalState": "Operational roughing mill with carrier beam installed on yoke. Standard configuration includes work rolls and backup roll balances supporting system geometry.",
+    "eventState": "Outage preparation state: Work rolls removed, top/bottom backup rolls removed, R3 top backup roll balance isolated in raised position, B hydraulics shut off/bled. Beam fell from this specific configuration.",
+    "entities": [
+      {
+        "type": "equipment",
+        "name": "R3 Exit Carrier Beam Assembly",
+        "description": "Beam and link found intact with keeper installed after fall.",
+        "status": "rejected",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "entity-1l6sbwt"
+      },
+      {
+        "type": "equipment",
+        "name": "Yoke (R3 Stand)",
+        "description": "Upper support location where the carrier beam link rests; no apparent damage.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "entity-1628a8z"
+      },
+      {
+        "type": "equipment",
+        "name": "Top Backup Roll Balance",
+        "description": "Left isolated in raised position on previous shift. Retention mechanism (hydraulic vs mechanical) is unknown.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "64c1c3ba-63e2-4a10-8767-088d76228e61"
+        ],
+        "id": "entity-nvatn7"
+      },
+      {
+        "type": "equipment",
+        "name": "B Hydraulic System",
+        "description": "Shut off and bled on previous shift for work. Potential energy source or support mechanism.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "64c1c3ba-63e2-4a10-8767-088d76228e61"
+        ],
+        "id": "entity-2toxpf"
+      },
+      {
+        "type": "location",
+        "name": "R3 Mill Pit",
+        "description": "Location where beam landed on sled and scaffold platform. No personnel present at time of fall.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "entity-o8jr96"
+      },
+      {
+        "type": "location",
+        "name": "R3 Roughing Mill Stand (Yoke Area)",
+        "description": "Location where the beam fell from. Witnessed by contractors walking beside stand.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "835b0452-e105-449a-b30b-2a1136746535"
+        ],
+        "id": "entity-3hbic"
+      },
+      {
+        "type": "person",
+        "name": "Contractor Employees (Witnesses)",
+        "description": "Two employees walking beside the mill stand who witnessed the fall.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "entity-1o6thry"
+      }
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Previous Shift (Prior to Incident)",
+        "sequence": 1,
+        "description": "Work rolls and top/bottom backup rolls removed in preparation for outage work.",
+        "kind": "event",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "69533d78-f570-4068-8fef-e3d881095983"
+        ],
+        "id": "event-1vwo0e8"
+      },
+      {
+        "timeLabel": "Previous Shift (Prior to Incident)",
+        "sequence": 2,
+        "description": "R3 top backup roll balance left isolated in raised position.",
+        "kind": "event",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "69533d78-f570-4068-8fef-e3d881095983"
+        ],
+        "id": "event-118elxq"
+      },
+      {
+        "timeLabel": "Previous Shift (Prior to Incident)",
+        "sequence": 3,
+        "description": "B hydraulics shut off and bled for work on that system.",
+        "kind": "event",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "64c1c3ba-63e2-4a10-8767-088d76228e61"
+        ],
+        "id": "event-q3kgpo"
+      },
+      {
+        "timeLabel": "Turn 2 (Incident Shift)",
+        "sequence": 4,
+        "description": "At approximately 1:03 PM on October 14, 2024, R3 exit carrier beam fell from yoke into mill pit.",
+        "kind": "event",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-zfmjgq"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 5,
+        "description": "Area red-flagged for investigation; beam and link found intact.",
+        "kind": "event",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-vmihiu"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 6,
+        "description": "Small mill window liner fell with the beam.",
+        "kind": "event",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-1y1dd3t"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 7,
+        "description": "No crane lifts involving this equipment were in progress.",
+        "kind": "condition",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-8loybl"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 8,
+        "description": "No team members present in pit at time of fall.",
+        "kind": "condition",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-jdkjad"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 9,
+        "description": "Two contractor employees witnessed the event from outside.",
+        "kind": "observation",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-1f26vgo"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 10,
+        "description": "Several contractor employees had worked in the pit throughout the morning.",
+        "kind": "condition",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-145dm06"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 11,
+        "description": "Keeper still installed on recovered assembly; no damage apparent.",
+        "kind": "observation",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-3v4e3b"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 12,
+        "description": "No crane lifts involving this equipment occurred prior to fall.",
+        "kind": "condition",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-1i9o0b7"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 13,
+        "description": "Small mill window liner fell with the beam.",
+        "kind": "observation",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-13ztasl"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 14,
+        "description": "No team members were in the pit at time of fall.",
+        "kind": "condition",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-17rxtzv"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 15,
+        "description": "Two contractor employees walking beside mill stand witnessed the fall.",
+        "kind": "observation",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-ryysp4"
+      },
+      {
+        "timeLabel": "Turn 2 (Post-Event)",
+        "sequence": 16,
+        "description": "Area red-flagged for investigation.",
+        "kind": "event",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "id": "event-ebow0e"
+      }
+    ],
+    "conditions": [
+      "Outage preparation state: Work rolls and backup rolls removed.",
+      "Top backup roll balance isolated in raised position (mechanical vs hydraulic retention unknown).",
+      "B hydraulics shut off and bled on previous shift.",
+      "No crane lifts involving this equipment were in progress or had occurred prior."
+    ],
+    "unknowns": [
+      "Mechanism by which beam detached from yoke (e.g., gravity load vs. hydraulic release).",
+      "Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.",
+      "Specific sequence of tasks performed during Turn 2 prior to the fall.",
+      "Status of any temporary supports used for the removed rolls/balance.",
+      "Verification records confirming energy isolation and zero-energy state.",
+      "Mechanism by which beam detached from yoke (gravity load, hydraulic release, mechanical failure).",
+      "Status of any temporary supports used for removed rolls/balance."
+    ]
+  },
+  "specialistKnowledgeBases": [
+    {
+      "tagId": "stored-energy",
+      "label": "Stored, released, or gravity energy",
+      "summary": "The investigation focuses on how stored hydraulic pressure and/or gravitational potential energy were managed during outage preparation. The beam fell after 'B hydraulics' were bled while a backup roll balance remained raised, suggesting either loss of hydraulic support or failure to mechanically lock the assembly before depressurization.",
+      "findings": [
+        {
+          "statement": "The R3 exit carrier beam was in an unstable configuration (raised) with work rolls removed and hydraulics bled prior to the fall.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "incident-description",
+            "64c1c3ba-63e2-4a10-8767-088d76228e61"
+          ],
+          "id": "finding-3vigcu"
+        },
+        {
+          "statement": "The retention mechanism for the raised top backup roll balance is unknown; it may rely on hydraulic pressure or a mechanical lock that failed.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "R3-DEF-002"
+          ],
+          "id": "finding-sm1pnp"
+        },
+        {
+          "statement": "'B hydraulics' were shut off and bled, which could have released tension on the carrier assembly if hydraulic pressure was supporting it.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "R3-DEF-002"
+          ],
+          "id": "finding-1kyxsta"
+        },
+        {
+          "statement": "No mechanical lock or secondary restraint is confirmed to exist for this configuration based on current evidence.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-START-001",
+            "R3-START-002"
+          ],
+          "id": "finding-1idgse7"
+        },
+        {
+          "id": "claim-1nzp4e8",
+          "statement": "'B hydraulics' were shut off and bled for work on that system, removing pressure.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "R3-DEF-002"
+          ]
+        },
+        {
+          "id": "claim-2x712b",
+          "statement": "The retention mechanism for the raised top backup roll balance is unknown; it may rely on hydraulic pressure or a mechanical lock that failed.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-1nn52f",
+          "statement": "It is unknown if a mechanical lockout was applied or verified as zero-energy before work began.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:procedure-planning"
+          ]
+        }
+      ],
+      "questionIds": [
+        "q-2f332p",
+        "q-1d2qhmg",
+        "q-r8tggc",
+        "q-9ss5j5"
+      ],
+      "handoffs": [
+        {
+          "tagId": "equipment-tool",
+          "reason": "Need mechanical drawings and schematics to confirm retention mechanisms, load paths, and hydraulic circuit boundaries."
+        },
+        {
+          "tagId": "process-material",
+          "reason": "Require access to LOTO records (EV-005) and shift logs (EV-006) to verify procedural compliance during outage preparation."
+        }
+      ],
+      "updatedAt": "2026-09-14T15:55:16.474Z"
+    },
+    {
+      "tagId": "maintenance-outage",
+      "label": "Maintenance, outage, or non-routine work",
+      "summary": "The investigation focuses on why the R3 exit carrier beam fell from a yoke during an outage preparation phase where rolls were removed and hydraulics bled. The primary causal branch involves whether the 'isolated' top backup roll balance relied solely on hydraulic pressure (which was bled) or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+      "findings": [
+        {
+          "statement": "The R3 exit carrier beam fell from the yoke into the mill pit during an outage preparation phase where work rolls had been removed.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "incident-description",
+            "R3-START-001"
+          ],
+          "testNeeded": "None; this is a confirmed event fact.",
+          "id": "finding-9imypj"
+        },
+        {
+          "id": "claim-g63swz",
+          "statement": "The beam fell after 'B hydraulics' were bled while a backup roll balance remained raised, suggesting either loss of hydraulic support or failure to mechanically lock the assembly before depressurization.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-1h6w5h4",
+          "statement": "'B hydraulics' were shut off and bled, which could have released tension on the carrier assembly if hydraulic pressure was supporting it.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-r91ivt",
+          "statement": "Top backup roll balance left isolated in raised position; retention mechanism (hydraulic vs mechanical) is unknown.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-immgig",
+          "statement": "The investigation focuses on why the R3 exit carrier beam fell from a yoke during an outage preparation phase where rolls were removed and hydraulics bled. The primary causal branch involves whether the 'isolated' top backup roll balance relied solely on hydraulic pressure (which was bled) or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:maintenance-outage"
+          ]
+        },
+        {
+          "id": "claim-15hiy8y",
+          "statement": "The top backup roll balance was left isolated in a raised position after roll removal.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-START-002",
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-12yuhbj",
+          "statement": "B hydraulics were shut off and bled for work on that system.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-START-002",
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-16prvz4",
+          "statement": "No mechanical lock or secondary restraint is confirmed to exist for this configuration based on current evidence.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-1rvlrr3",
+          "statement": "The investigation focuses on whether the 'isolated' top backup roll balance relied solely on hydraulic pressure or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:maintenance-outage"
+          ]
+        },
+        {
+          "id": "claim-ckze0n",
+          "statement": "The status of any temporary supports is listed as unknown.",
+          "type": "hypothesis",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-iki7qm",
+          "statement": "Evidence ID EV-007 (Outage work scope and task sequence) exists but is marked as 'Request' status, meaning its contents are not available in the current packet.",
+          "type": "hypothesis",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-START-003"
+          ]
+        },
+        {
+          "id": "claim-1cwu8as",
+          "statement": "The incident description and specialist knowledge bases do not contain site photos, logs, or work scope documentation showing the installation (or lack thereof) of cribbing or stands.",
+          "type": "hypothesis",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "questionIds": [
+        "q-e3igp9",
+        "q-18u8ru1",
+        "q-ukuog3",
+        "q-18sjud"
+      ],
+      "handoffs": [],
+      "updatedAt": "2026-09-14T15:55:59.147Z"
+    },
+    {
+      "tagId": "isolation-loto",
+      "label": "Isolation / LOTO involvement",
+      "summary": "The investigation focuses on verifying whether 'B hydraulics' isolation (bleeding) was sufficient to prevent movement of the R3 exit carrier beam, and if a mechanical lock existed for the raised top backup roll balance.",
+      "findings": [
+        {
+          "id": "claim-vaw8d8",
+          "statement": "The top backup roll balance was left isolated in a raised position after roll removal. May define mechanical position and gravitational potential during outage work.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-DEF-002"
+          ]
+        },
+        {
+          "id": "claim-1l0jkc6",
+          "statement": "The investigation focuses on verifying whether 'B hydraulics' isolation (bleeding) was sufficient to prevent movement of the R3 exit carrier beam, and if a mechanical lock existed for the raised top backup roll balance.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:isolation-loto"
+          ]
+        },
+        {
+          "id": "claim-31q6bx",
+          "statement": "The retention mechanism for the raised top backup roll balance is unknown; it may rely on hydraulic pressure or a mechanical lock that failed.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-4oygf4",
+          "statement": "The investigation focuses on why the R3 exit carrier beam fell from a yoke during an outage preparation phase where rolls were removed and hydraulics bled. The primary causal branch involves whether the 'isolated' top backup roll balance relied solely on hydraulic pressure (which was bled) or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-10l2hbb",
+          "statement": "The evidence lists 'Status of any temporary supports' as an unknown. If no support was used and hydraulics were bled, gravity could cause failure.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-qoqd4f",
+          "statement": "The investigation focuses on procedural gaps regarding energy isolation and load securing during outage preparation. B hydraulics were shut off and bled prior to the incident, but it is unknown if a mechanical lockout was applied or verified as zero-energy before work began.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-1ye219f",
+          "statement": "The investigation focuses on how stored hydraulic pressure and/or gravitational potential energy were managed during outage preparation. The beam fell after 'B hydraulics' were bled while a backup roll balance remained raised, suggesting either loss of hydraulic support or failure to mechanically lock the assembly before depressurization.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-1tli1o6",
+          "statement": "The investigation focuses on verifying whether 'B hydraulics' isolation (bleeding) was sufficient to prevent movement of the R3 exit carrier beam, and if a mechanical lock existed for the raised top backup roll balance.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-13cm9yw",
+          "statement": "The investigation focuses on why the R3 exit carrier beam detached from its yoke during an outage preparation phase where work rolls were removed and hydraulics bled.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "questionIds": [
+        "q-tgnqmy",
+        "q-1pl6i7e",
+        "q-16qnd7a",
+        "q-tzvlnb",
+        "q-url3gv",
+        "q-oakyhy"
+      ],
+      "handoffs": [
+        {
+          "tagId": "equipment-tool",
+          "reason": "Need mechanical assembly drawing (EV-004) to determine if a lock is required when hydraulics are bled."
+        },
+        {
+          "tagId": "process-material",
+          "reason": "Need Energy Control Plan/LOTO records (EV-005) and Shift turnover log (EV-006) to verify isolation steps, verification, and handoff communication."
+        }
+      ],
+      "updatedAt": "2026-09-14T15:56:54.881Z"
+    },
+    {
+      "tagId": "equipment-tool",
+      "label": "Equipment or tool involvement",
+      "summary": "The investigation focuses on why the R3 exit carrier beam detached from its yoke during an outage preparation phase where work rolls were removed and hydraulics bled.",
+      "findings": [
+        {
+          "statement": "The incident occurred in a non-standard configuration: Work rolls and backup rolls had been removed, leaving only the top backup roll balance isolated in a raised position with B hydraulics shut off/bled.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "incident-description",
+            "64c1c3ba-63e2-4a10-8767-088d76228e61"
+          ],
+          "testNeeded": "Verify if this configuration is a known stable state or requires specific temporary supports.",
+          "id": "finding-15w3u2o"
+        },
+        {
+          "statement": "The B hydraulic system was shut off and bled prior to the incident.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "incident-description",
+            "64c1c3ba-63e2-4a10-8767-088d76228e61"
+          ],
+          "testNeeded": "Determine if bleeding the hydraulics was intended to release tension or simply depressurize, and whether this action removed a critical support load.",
+          "id": "finding-1vfr3d7"
+        },
+        {
+          "statement": "The top backup roll balance remained isolated in a raised position.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "testNeeded": "Determine if the retention mechanism for this 'isolated' state is mechanical (lock) or hydraulic pressure, and whether bleeding compromised it.",
+          "id": "finding-1kq4lxs"
+        },
+        {
+          "statement": "The recovered carrier beam assembly showed no apparent damage to the link or keeper.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "testNeeded": "Assess if lack of visible damage rules out structural failure, fatigue fracture, or improper seating as causes.",
+          "id": "finding-6zmpjn"
+        },
+        {
+          "statement": "No crane lifts involving this equipment were in progress.",
+          "type": "finding",
+          "status": "verified",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "testNeeded": "Confirm that dynamic loading from lifting was not the trigger for failure.",
+          "id": "finding-117nzjv"
+        },
+        {
+          "id": "claim-1fcz2b7",
+          "statement": "The R3 exit carrier beam fell from the yoke into the mill pit at approximately 1:03 PM on October 14, 2024.",
+          "type": "finding",
+          "status": "supported",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-js7vxz",
+          "statement": "The top backup roll balance was left isolated in a raised position.",
+          "type": "finding",
+          "status": "supported",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-1c3jxyf",
+          "statement": "B hydraulics were shut off and bled prior to the incident.",
+          "type": "finding",
+          "status": "supported",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-kg4soa",
+          "statement": "The beam and link were found intact after the fall.",
+          "type": "finding",
+          "status": "supported",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-6i8tot",
+          "statement": "A small window liner fell with the beam.",
+          "type": "finding",
+          "status": "supported",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-w8d3a8",
+          "statement": "The mechanism by which the beam detached from the yoke is unknown.",
+          "type": "hypothesis",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-1a3vpvu",
+          "statement": "Whether the 'isolated in raised position' state relied on a mechanical lock or hydraulic pressure is unknown.",
+          "type": "hypothesis",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ]
+        },
+        {
+          "id": "claim-g63swz",
+          "statement": "The beam fell after 'B hydraulics' were bled while a backup roll balance remained raised, suggesting either loss of hydraulic support or failure to mechanically lock the assembly before depressurization.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-1h6w5h4",
+          "statement": "'B hydraulics' were shut off and bled, which could have released tension on the carrier assembly if hydraulic pressure was supporting it.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-15hiy8y",
+          "statement": "The top backup roll balance was left isolated in a raised position after roll removal.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-START-002",
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-l6wn5l",
+          "statement": "The investigation requires determining if temporary supports for removed work rolls or balance were used per procedure.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "questionIds": [
+        "q-9ksck6",
+        "q-1ow646c",
+        "q-qrinsp",
+        "q-g8epu4"
+      ],
+      "handoffs": [],
+      "updatedAt": "2026-09-14T15:57:43.523Z"
+    },
+    {
+      "tagId": "procedure-planning",
+      "label": "Procedure / planning involvement",
+      "summary": "The investigation focuses on procedural gaps regarding energy isolation and load securing during outage preparation.",
+      "findings": [
+        {
+          "statement": "B hydraulics were shut off and bled prior to the incident, but it is unknown if a mechanical lockout was applied or verified as zero-energy before work began.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "64c1c3ba-63e2-4a10-8767-088d76228e61"
+          ],
+          "testNeeded": "Verify LOTO records (EV-005) and system schematics to confirm if bleeding alone was sufficient for isolation.",
+          "id": "finding-gdskcn"
+        },
+        {
+          "statement": "The top backup roll balance remained isolated in a raised position without confirmed mechanical retention.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "testNeeded": "Determine the design intent of 'isolated' for this specific component (hydraulic vs. mechanical) via engineering drawings or maintenance manuals.",
+          "id": "finding-13foyl2"
+        },
+        {
+          "statement": "The carrier beam fell from a configuration where work rolls and backup rolls were removed, suggesting potential reliance on hydraulic pressure that was subsequently released.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "testNeeded": "Review outage preparation procedures to confirm if securing the suspended load (beam) is required when supporting elements are removed.",
+          "id": "finding-gsg3mb"
+        },
+        {
+          "id": "claim-immgig",
+          "statement": "The investigation focuses on why the R3 exit carrier beam fell from a yoke during an outage preparation phase where rolls were removed and hydraulics bled. The primary causal branch involves whether the 'isolated' top backup roll balance relied solely on hydraulic pressure (which was bled) or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:maintenance-outage"
+          ]
+        },
+        {
+          "id": "claim-15hiy8y",
+          "statement": "The top backup roll balance was left isolated in a raised position after roll removal.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-START-002",
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-12yuhbj",
+          "statement": "B hydraulics were shut off and bled for work on that system.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-START-002",
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-16prvz4",
+          "statement": "No mechanical lock or secondary restraint is confirmed to exist for this configuration based on current evidence.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:stored-energy"
+          ]
+        },
+        {
+          "id": "claim-1rvlrr3",
+          "statement": "The investigation focuses on whether the 'isolated' top backup roll balance relied solely on hydraulic pressure or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:maintenance-outage"
+          ]
+        },
+        {
+          "id": "claim-16cj7hq",
+          "statement": "No document explicitly titled 'Outage Preparation Procedure' or containing explicit requirements for mechanical securing of suspended loads (e.g., chocking, blocking) was found within the retrieved sources.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "claim-fwp2vi",
+          "statement": "The evidence packet contains a 'R3_Outage_Roles_and_Records_Guide' (R3-DEF-003) which maps roles to records but does not contain the specific procedural text regarding mechanical securing requirements.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-DEF-003"
+          ]
+        },
+        {
+          "id": "claim-tcr1gm",
+          "statement": "The evidence packet contains a 'R3_Roll_Balance_System_Primer' (R3-DEF-002) which describes system states but does not contain explicit procedural requirements for mechanical securing.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "R3-DEF-002"
+          ]
+        },
+        {
+          "id": "claim-1je0pw0",
+          "statement": "Specialist knowledge bases confirm the incident occurred during an outage preparation phase where hydraulics were bled and a backup roll balance remained raised, but do not cite the specific written procedure requiring mechanical securing.",
+          "type": "finding",
+          "status": "unknown",
+          "sourceIds": [
+            "kb:maintenance-outage",
+            "kb:procedure-planning"
+          ]
+        }
+      ],
+      "questionIds": [
+        "q-czy36u",
+        "q-1q1m1gv",
+        "q-lyij17",
+        "q-usmt3u"
+      ],
+      "handoffs": [],
+      "updatedAt": "2026-09-14T15:58:28.794Z"
+    }
+  ],
+  "evidenceClaims": [
+    {
+      "text": "The R3 exit carrier beam fell from the yoke into the mill pit at approximately 1:03 PM on October 14, 2024.",
+      "kind": "direct-observation",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "event-zfmjgq",
+      "routedTo": [
+        "equipment-tool",
+        "process-material",
+        "human"
+      ],
+      "id": "claim-1fcz2b7"
+    },
+    {
+      "text": "Work rolls and backup rolls had been removed prior to the incident.",
+      "kind": "testimony",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "event-1vwo0e8",
+      "routedTo": [
+        "process-material"
+      ],
+      "id": "claim-117cegd"
+    },
+    {
+      "text": "The top backup roll balance was left isolated in a raised position.",
+      "kind": "testimony",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "event-118elxq",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "id": "claim-js7vxz"
+    },
+    {
+      "text": "B hydraulics were shut off and bled prior to the incident.",
+      "kind": "testimony",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "event-q3kgpo",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "id": "claim-1c3jxyf"
+    },
+    {
+      "text": "No team members were present in the pit at the time of impact.",
+      "kind": "testimony",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "event-jdkjad",
+      "routedTo": [
+        "human"
+      ],
+      "id": "claim-1u5yj7i"
+    },
+    {
+      "text": "The beam and link were found intact after the fall.",
+      "kind": "direct-observation",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "event-3v4e3b",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "id": "claim-kg4soa"
+    },
+    {
+      "text": "A small window liner fell with the beam.",
+      "kind": "direct-observation",
+      "status": "supported",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "event-13ztasl",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "id": "claim-6i8tot"
+    },
+    {
+      "text": "The mechanism by which the beam detached from the yoke is unknown.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "unknown-1",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "id": "claim-w8d3a8"
+    },
+    {
+      "text": "Whether the 'isolated in raised position' state relied on a mechanical lock or hydraulic pressure is unknown.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "unknown-2",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "id": "claim-1a3vpvu"
+    },
+    {
+      "text": "The specific sequence of tasks performed during Turn 2 prior to the fall is unknown.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "unknown-3",
+      "routedTo": [
+        "process-material"
+      ],
+      "id": "claim-27jvfh"
+    },
+    {
+      "text": "The status of any temporary supports used for removed rolls/balance is unknown.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "unknown-4",
+      "routedTo": [
+        "process-material"
+      ],
+      "id": "claim-pypmti"
+    },
+    {
+      "text": "Verification records confirming energy isolation and zero-energy state are missing from the current evidence set.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "questionId": "unknown-5",
+      "routedTo": [
+        "process-material"
+      ],
+      "id": "claim-1i6kfvw"
+    },
+    {
+      "text": "The beam fell after 'B hydraulics' were bled while a backup roll balance remained raised, suggesting either loss of hydraulic support or failure to mechanically lock the assembly before depressurization.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "maintenance-outage",
+        "equipment-tool"
+      ],
+      "id": "claim-g63swz",
+      "questionId": "bq-1adc8hy"
+    },
+    {
+      "text": "'B hydraulics' were shut off and bled, which could have released tension on the carrier assembly if hydraulic pressure was supporting it.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "maintenance-outage",
+        "equipment-tool"
+      ],
+      "id": "claim-1h6w5h4",
+      "questionId": "bq-1adc8hy"
+    },
+    {
+      "text": "Top backup roll balance left isolated in raised position; retention mechanism (hydraulic vs mechanical) is unknown.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "id": "claim-r91ivt",
+      "questionId": "bq-1hgiq84"
+    },
+    {
+      "text": "The investigation focuses on why the R3 exit carrier beam fell from a yoke during an outage preparation phase where rolls were removed and hydraulics bled. The primary causal branch involves whether the 'isolated' top backup roll balance relied solely on hydraulic pressure (which was bled) or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:maintenance-outage"
+      ],
+      "routedTo": [
+        "maintenance-outage",
+        "procedure-planning"
+      ],
+      "id": "claim-immgig",
+      "questionId": "bq-rt3ptu"
+    },
+    {
+      "text": "'B hydraulics' were shut off and bled for work on that system, removing pressure.",
+      "kind": "testimony",
+      "status": "verified",
+      "sourceIds": [
+        "R3-DEF-002"
+      ],
+      "routedTo": [
+        "stored-energy"
+      ],
+      "id": "claim-1nzp4e8",
+      "questionId": "q-2f332p"
+    },
+    {
+      "text": "The retention mechanism for the raised top backup roll balance is unknown; it may rely on hydraulic pressure or a mechanical lock that failed.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:stored-energy"
+      ],
+      "routedTo": [
+        "stored-energy"
+      ],
+      "id": "claim-2x712b",
+      "questionId": "q-2f332p"
+    },
+    {
+      "text": "It is unknown if a mechanical lockout was applied or verified as zero-energy before work began.",
+      "kind": "testimony",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:procedure-planning"
+      ],
+      "routedTo": [
+        "stored-energy"
+      ],
+      "id": "claim-1nn52f",
+      "questionId": "q-2f332p"
+    },
+    {
+      "text": "The top backup roll balance was left isolated in a raised position after roll removal.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "R3-START-002",
+        "kb:stored-energy"
+      ],
+      "routedTo": [
+        "maintenance-outage",
+        "procedure-planning",
+        "equipment-tool"
+      ],
+      "id": "claim-15hiy8y",
+      "questionId": "q-r8tggc"
+    },
+    {
+      "text": "B hydraulics were shut off and bled for work on that system.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "R3-START-002",
+        "kb:stored-energy"
+      ],
+      "routedTo": [
+        "maintenance-outage",
+        "procedure-planning"
+      ],
+      "id": "claim-12yuhbj",
+      "questionId": "q-r8tggc"
+    },
+    {
+      "text": "No mechanical lock or secondary restraint is confirmed to exist for this configuration based on current evidence.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:stored-energy"
+      ],
+      "routedTo": [
+        "maintenance-outage",
+        "procedure-planning"
+      ],
+      "id": "claim-16prvz4",
+      "questionId": "q-r8tggc"
+    },
+    {
+      "text": "The investigation focuses on whether the 'isolated' top backup roll balance relied solely on hydraulic pressure or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:maintenance-outage"
+      ],
+      "routedTo": [
+        "maintenance-outage",
+        "procedure-planning"
+      ],
+      "id": "claim-1rvlrr3",
+      "questionId": "q-r8tggc"
+    },
+    {
+      "text": "The status of any temporary supports is listed as unknown.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "id": "claim-ckze0n",
+      "questionId": "q-18u8ru1"
+    },
+    {
+      "text": "Evidence ID EV-007 (Outage work scope and task sequence) exists but is marked as 'Request' status, meaning its contents are not available in the current packet.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [
+        "R3-START-003"
+      ],
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "id": "claim-iki7qm",
+      "questionId": "q-18u8ru1"
+    },
+    {
+      "text": "The incident description and specialist knowledge bases do not contain site photos, logs, or work scope documentation showing the installation (or lack thereof) of cribbing or stands.",
+      "kind": "inference",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "id": "claim-1cwu8as",
+      "questionId": "q-18u8ru1"
+    },
+    {
+      "text": "The top backup roll balance was left isolated in a raised position after roll removal. May define mechanical position and gravitational potential during outage work.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "R3-DEF-002"
+      ],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-vaw8d8",
+      "questionId": "q-tgnqmy"
+    },
+    {
+      "text": "The investigation focuses on verifying whether 'B hydraulics' isolation (bleeding) was sufficient to prevent movement of the R3 exit carrier beam, and if a mechanical lock existed for the raised top backup roll balance.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:isolation-loto"
+      ],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-1l0jkc6",
+      "questionId": "q-tgnqmy"
+    },
+    {
+      "text": "The retention mechanism for the raised top backup roll balance is unknown; it may rely on hydraulic pressure or a mechanical lock that failed.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:stored-energy"
+      ],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-31q6bx",
+      "questionId": "q-tgnqmy"
+    },
+    {
+      "text": "The investigation focuses on why the R3 exit carrier beam fell from a yoke during an outage preparation phase where rolls were removed and hydraulics bled. The primary causal branch involves whether the 'isolated' top backup roll balance relied solely on hydraulic pressure (which was bled) or if a mechanical lock existed, and whether temporary supports for the raised component were installed per procedure.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-4oygf4",
+      "questionId": "q-16qnd7a"
+    },
+    {
+      "text": "The evidence lists 'Status of any temporary supports' as an unknown. If no support was used and hydraulics were bled, gravity could cause failure.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-10l2hbb",
+      "questionId": "q-16qnd7a"
+    },
+    {
+      "text": "The investigation focuses on procedural gaps regarding energy isolation and load securing during outage preparation. B hydraulics were shut off and bled prior to the incident, but it is unknown if a mechanical lockout was applied or verified as zero-energy before work began.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-qoqd4f",
+      "questionId": "q-16qnd7a"
+    },
+    {
+      "text": "The investigation focuses on how stored hydraulic pressure and/or gravitational potential energy were managed during outage preparation. The beam fell after 'B hydraulics' were bled while a backup roll balance remained raised, suggesting either loss of hydraulic support or failure to mechanically lock the assembly before depressurization.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-1ye219f",
+      "questionId": "q-16qnd7a"
+    },
+    {
+      "text": "The investigation focuses on verifying whether 'B hydraulics' isolation (bleeding) was sufficient to prevent movement of the R3 exit carrier beam, and if a mechanical lock existed for the raised top backup roll balance.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-1tli1o6",
+      "questionId": "q-16qnd7a"
+    },
+    {
+      "text": "The investigation focuses on why the R3 exit carrier beam detached from its yoke during an outage preparation phase where work rolls were removed and hydraulics bled.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "id": "claim-13cm9yw",
+      "questionId": "q-16qnd7a"
+    },
+    {
+      "text": "The investigation requires determining if temporary supports for removed work rolls or balance were used per procedure.",
+      "kind": "hearsay",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "id": "claim-l6wn5l",
+      "questionId": "q-1ow646c"
+    },
+    {
+      "text": "No document explicitly titled 'Outage Preparation Procedure' or containing explicit requirements for mechanical securing of suspended loads (e.g., chocking, blocking) was found within the retrieved sources.",
+      "kind": "documented-requirement",
+      "status": "unknown",
+      "sourceIds": [],
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "id": "claim-16cj7hq",
+      "questionId": "q-1q1m1gv"
+    },
+    {
+      "text": "The evidence packet contains a 'R3_Outage_Roles_and_Records_Guide' (R3-DEF-003) which maps roles to records but does not contain the specific procedural text regarding mechanical securing requirements.",
+      "kind": "documented-requirement",
+      "status": "unknown",
+      "sourceIds": [
+        "R3-DEF-003"
+      ],
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "id": "claim-fwp2vi",
+      "questionId": "q-1q1m1gv"
+    },
+    {
+      "text": "The evidence packet contains a 'R3_Roll_Balance_System_Primer' (R3-DEF-002) which describes system states but does not contain explicit procedural requirements for mechanical securing.",
+      "kind": "documented-requirement",
+      "status": "unknown",
+      "sourceIds": [
+        "R3-DEF-002"
+      ],
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "id": "claim-tcr1gm",
+      "questionId": "q-1q1m1gv"
+    },
+    {
+      "text": "Specialist knowledge bases confirm the incident occurred during an outage preparation phase where hydraulics were bled and a backup roll balance remained raised, but do not cite the specific written procedure requiring mechanical securing.",
+      "kind": "documented-requirement",
+      "status": "unknown",
+      "sourceIds": [
+        "kb:maintenance-outage",
+        "kb:procedure-planning"
+      ],
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "id": "claim-1je0pw0",
+      "questionId": "q-1q1m1gv"
+    }
+  ],
+  "conflicts": [],
+  "sourceAssessments": [
+    {
+      "sourceId": "c671091a-7741-4461-aba2-8fa6d5bbf39a#1",
+      "documentId": "c671091a-7741-4461-aba2-8fa6d5bbf39a",
+      "label": "PARTNER_REFERENCE_Confined_Space_Standard.pdf · representative section",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "general-guidance",
+      "revisionStatus": "current",
+      "reliability": "low",
+      "supports": [
+        "Existence of a formal Confined Space Safety Standard (CCS_HSS_STD_004.2) effective 11-3-2023."
+      ],
+      "cautions": [
+        "Excerpt is only the Table of Contents; no specific procedural requirements for energy isolation or fall protection are visible in this segment.",
+        "Document explicitly states it is a 'Printed Copy' and refers to an electronic SharePoint site, implying potential version lag if not cross-referenced."
+      ],
+      "limitations": [
+        "Cannot establish whether the standard was followed; only that one exists."
+      ],
+      "id": "source-assessment-zq9nx7"
+    },
+    {
+      "sourceId": "bedef97c-0ff9-4ff1-80a4-6757f87ce42e#1",
+      "documentId": "bedef97c-0ff9-4ff1-80a4-6757f87ce42e",
+      "label": "PARTNER_REFERENCE_Energy_Isolation_Standard_text_copy.txt · representative section",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "general-guidance",
+      "revisionStatus": "current",
+      "reliability": "low",
+      "supports": [
+        "Existence of an Energy Isolation Safety Standard (CCS HSS STD 001.0) effective 2022-09-01."
+      ],
+      "cautions": [
+        "Excerpt is only the cover page; no specific isolation steps, verification methods, or LOTO requirements are visible.",
+        "Text indicates this copy may be invalid if printed and refers to an original controlled PDF for layout/approvals."
+      ],
+      "limitations": [
+        "Cannot confirm if 'B hydraulics' were isolated per the standard's specific procedures (e.g., mechanical lockout vs. just bleeding)."
+      ],
+      "id": "source-assessment-36wgx3"
+    },
+    {
+      "sourceId": "a04da8b1-19ee-4708-acff-aaad4b2e84e7#1",
+      "documentId": "a04da8b1-19ee-4708-acff-aaad4b2e84e7",
+      "label": "PARTNER_REFERENCE_Fall_Protection_Standard.pdf · representative section",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "general-guidance",
+      "revisionStatus": "current",
+      "reliability": "low",
+      "supports": [
+        "Existence of a Fall Prevention & Protection Standard (CCS_HSS_STD_005.2) effective 11-3-2023."
+      ],
+      "cautions": [
+        "Excerpt is only the Table of Contents; no specific requirements for securing suspended loads or yoke configurations are visible.",
+        "Cannot determine if fall protection was required specifically for 'outage preparation' states involving removed rolls."
+      ],
+      "limitations": [
+        "Does not prove that temporary supports were used, nor does it define the retention mechanism (hydraulic vs mechanical) for the balance."
+      ],
+      "id": "source-assessment-1le76s1"
+    },
+    {
+      "sourceId": "f3378070-59ee-4c17-8702-4b85ff4f8404#1",
+      "documentId": "f3378070-59ee-4c17-8702-4b85ff4f8404",
+      "label": "PARTNER_REFERENCE_Overhead_Crane_Safety.pdf · representative section",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "general-guidance",
+      "revisionStatus": "current",
+      "reliability": "low",
+      "supports": [
+        "Existence of an Overhead Crane Safety Standard (CCS_HSS_STD_002.2) effective 9-22-2023."
+      ],
+      "cautions": [
+        "Excerpt is only the Table of Contents; no specific operational limits or load securing requirements are visible.",
+        "Incident timeline states 'No crane lifts involving this equipment were in progress,' making direct applicability to the *cause* low, though general safety culture context exists."
+      ],
+      "limitations": [
+        "Cannot establish if a mechanical lock was applied during non-crane lifting outage work based on this text alone."
+      ],
+      "id": "source-assessment-qlfcxj"
+    },
+    {
+      "sourceId": "cc1a2b99-1195-46b3-8e86-f11072f550e1#1",
+      "documentId": "cc1a2b99-1195-46b3-8e86-f11072f550e1",
+      "label": "PARTNER_REFERENCE_Safety_Handbook.pdf · representative section",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "general-guidance",
+      "revisionStatus": "current",
+      "reliability": "low",
+      "supports": [
+        "Existence of a general Safety Handbook (CCS_HSS_MAN_001.1) effective 11-14-2022."
+      ],
+      "cautions": [
+        "Excerpt is only the cover page; no specific procedural details regarding R3 stand operations or roll removal are visible.",
+        "Generic handbook unlikely to contain equipment-specific retention mechanisms for carrier beams."
+      ],
+      "limitations": [
+        "Insufficient to determine if 'B hydraulics' bleeding was a known hazard or standard practice without further engineering data."
+      ],
+      "id": "source-assessment-7tnw2f"
+    },
+    {
+      "sourceId": "R3-DEF-001",
+      "documentId": "835b0452-e105-449a-b30b-2a1136746535",
+      "label": "R3_Area_Orientation.pdf · R3-DEF-001",
+      "authority": "controlled",
+      "directness": "first-hand",
+      "applicability": "similar-equipment",
+      "revisionStatus": "current",
+      "reliability": "high",
+      "supports": [
+        "Defines spatial context: R3 Roughing Mill Stand, Yoke Area, Exit Carrier Beam location, and Mill Pit.",
+        "Confirms the beam fell from the yoke area into the pit where a sled/platform exists."
+      ],
+      "cautions": [
+        "Document explicitly states it is 'Synthetic / controlled' and 'Simplified cross-section - not to scale.'",
+        "Does not provide engineering drawings showing load paths, hydraulic connections, or mechanical locking points.",
+        "Cannot confirm the specific mechanism (hydraulic vs. gravity) of retention based solely on this orientation map."
+      ],
+      "limitations": [
+        "Lacks detail on whether temporary supports were installed; relies on external testimony for that fact."
+      ],
+      "id": "source-assessment-7dkjvj"
+    },
+    {
+      "sourceId": "R3-DEF-002",
+      "documentId": "64c1c3ba-63e2-4a10-8767-088d76228e61",
+      "label": "R3_Roll_Balance_System_Primer.pdf · R3-DEF-002",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "similar-equipment",
+      "revisionStatus": "current",
+      "reliability": "medium",
+      "supports": [
+        "Identifies 'Top backup roll balance' as a bounded component left isolated in raised position.",
+        "Notes that the B hydraulic system was shut off and bled, suggesting pressure removal may alter support/restraint."
+      ],
+      "cautions": [
+        "Document explicitly avoids asserting unverified design details (e.g., specific circuit boundaries).",
+        "States 'Historical source fact' for these conditions but does not prove the *mechanism* of retention.",
+        "Does not confirm if a mechanical lock existed alongside hydraulic pressure."
+      ],
+      "limitations": [
+        "Cannot determine if bleeding the hydraulics was intended to release tension or simply depressurize without system schematics (EV-004/EV-005)."
+      ],
+      "id": "source-assessment-uxznnl"
+    },
+    {
+      "sourceId": "R3-DEF-003",
+      "documentId": "22b5d050-a0cb-4e24-a4fb-fddeabefb756",
+      "label": "R3_Outage_Roles_and_Records_Guide.pdf · R3-DEF-003",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "general-guidance",
+      "revisionStatus": "current",
+      "reliability": "high",
+      "supports": [
+        "Maps roles to evidence: Area/Shift Manager (work status, turnover), Maintenance Planner (sequence, config deviations), Energy-isolation lead (locks, verification).",
+        "Identifies required records: Shift log, Work order/ECP/LOTO group box sheet, Zero-energy verification."
+      ],
+      "cautions": [
+        "Generic role names for a synthetic test case; actual personnel names are unknown.",
+        "Does not contain the *content* of those logs or LOTO sheets themselves, only tells us where to find them."
+      ],
+      "limitations": [
+        "Cannot verify if these records were actually created or signed off without accessing EV-004 through EV-007."
+      ],
+      "id": "source-assessment-o3ec79"
+    },
+    {
+      "sourceId": "R3-START-001",
+      "documentId": "12cb0899-fb9c-404c-bd4f-794d0e7bb7be",
+      "label": "Preliminary_Incident_Notification_16515.pdf · R3-START-001",
+      "authority": "controlled",
+      "directness": "first-hand",
+      "applicability": "direct-r3",
+      "revisionStatus": "current",
+      "reliability": "high",
+      "supports": [
+        "Confirms incident date/time (10/14/2024, ~1:03 PM), location (R3 Roughing Mill R3 Stand), and event type (falling object).",
+        "States 'No team members were in the pit' at time of fall.",
+        "Categorizes as Non-routine maintenance / SIFp."
+      ],
+      "cautions": [
+        "Preliminary report; may lack technical detail on *why* it fell (mechanism).",
+        "Does not explicitly state if LOTO was performed, only that hydraulics were 'shut off and bled' per other sources."
+      ],
+      "limitations": [
+        "Relies on witness observation for the fall event; no video or sensor data cited in this segment."
+      ],
+      "id": "source-assessment-y5flle"
+    },
+    {
+      "sourceId": "R3-START-002",
+      "documentId": "69533d78-f570-4068-8fef-e3d881095983",
+      "label": "Initial_Scene_Sketch_and_Timeline.pdf · R3-START-002",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "similar-equipment",
+      "revisionStatus": "current",
+      "reliability": "medium",
+      "supports": [
+        "Reconfirms sequence: Rolls removed -> Balance left raised -> Hydraulics isolated -> Beam falls.",
+        "Notes 'Unobserved interval' between isolation and fall."
+      ],
+      "cautions": [
+        "Explicitly states exact distances are not asserted; cross-section is synthetic/not to scale.",
+        "'Known sequence from preliminary reporting' implies potential gaps in the unobserved interval that need investigation."
+      ],
+      "limitations": [
+        "Does not explain *why* the balance remained raised or if a lock was applied during the 'unobserved interval'."
+      ],
+      "id": "source-assessment-1n0h33n"
+    },
+    {
+      "sourceId": "R3-START-003",
+      "documentId": "fd67d2db-6552-46d0-b245-8b5803ce88a2",
+      "label": "Initial_Evidence_Register.pdf · R3-START-003",
+      "authority": "controlled",
+      "directness": "derived-summary",
+      "applicability": "general-guidance",
+      "revisionStatus": "current",
+      "reliability": "high",
+      "supports": [
+        "Lists missing evidence items: Mechanical assembly drawing (EV-004), Energy Control Plan/LOTO records (EV-005), Shift turnover log (EV-006), Outage work scope (EV-007).",
+        "Identifies who holds this knowledge (Planner, Maintenance Lead, Area Manager)."
+      ],
+      "cautions": [
+        "Starter inventory; does not contain the actual data for these missing items.",
+        "Relies on downstream agents to retrieve EV-004 through EV-007."
+      ],
+      "limitations": [
+        "Cannot resolve root cause without obtaining the referenced records (EV-004, EV-005)."
+      ],
+      "id": "source-assessment-to2ueg"
+    }
+  ],
+  "adjudicationConflicts": [],
+  "questions": [
+    {
+      "id": "bq-1adc8hy",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "routedTo": [
+        "maintenance-outage",
+        "equipment-tool",
+        "isolation-loto",
+        "procedure-planning"
+      ],
+      "text": "Does the R3 carrier beam assembly rely on active hydraulic pressure from system 'B' (or another source) for retention when not mechanically locked?",
+      "intent": "determine-if-hydraulic-pressure-was-required-to-hold-the-beam-or-balance-in-plac",
+      "rationale": "If yes, shutting off and bleeding B hydraulics creates an immediate failure mode. If no, this is a non-factor.",
+      "evidenceNeeded": [
+        "R3 carrier beam assembly drawing",
+        "Maintenance practice documentation"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "determine-if-hydraulic-pressure-was-required-to-hold-the-beam-or-balance-in-plac",
+      "decisionUnlocked": "If yes, shutting off and bleeding B hydraulics creates an immediate failure mode. If no, this is a non-factor."
+    },
+    {
+      "id": "bq-1hgiq84",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "routedTo": [
+        "maintenance-outage",
+        "stored-energy",
+        "isolation-loto",
+        "equipment-tool"
+      ],
+      "text": "Was the top backup roll balance physically locked/secured against gravity after being lifted, or did it rely solely on hydraulic pressure?",
+      "intent": "verify-if-the-isolated-in-raised-position-state-was-mechanically-secured-or-left",
+      "rationale": "If unsecured and reliant on hydraulics that were bled/shut off previously, this explains the fall. If mechanically secured, another cause is needed.",
+      "evidenceNeeded": [
+        "Mechanical technician field notes",
+        "Outage work scope sequence"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-if-the-isolated-in-raised-position-state-was-mechanically-secured-or-left",
+      "decisionUnlocked": "If unsecured and reliant on hydraulics that were bled/shut off previously, this explains the fall. If mechanically secured, another cause is needed."
+    },
+    {
+      "id": "bq-rt3ptu",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "routedTo": [
+        "maintenance-outage",
+        "stored-energy",
+        "isolation-loto",
+        "equipment-tool"
+      ],
+      "text": "Were temporary mechanical supports (cribbing, stands) used to hold the top backup roll balance or carrier beam link during outage work?",
+      "intent": "confirm-whether-any-temporary-supports-were-installed-for-the-removed-components",
+      "rationale": "Absence of such supports combined with hydraulic shutdown could lead to uncontrolled descent. Presence suggests procedural compliance but potential failure in support design.",
+      "evidenceNeeded": [
+        "Mechanical technician removal sequence notes",
+        "Inspection records"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "confirm-whether-any-temporary-supports-were-installed-for-the-removed-components",
+      "decisionUnlocked": "Absence of such supports combined with hydraulic shutdown could lead to uncontrolled descent. Presence suggests procedural compliance but potential failure in support design."
+    },
+    {
+      "id": "bq-13a5gvm",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "routedTo": [
+        "maintenance-outage",
+        "stored-energy",
+        "isolation-loto",
+        "procedure-planning"
+      ],
+      "text": "Was a formal energy-isolation verification (zero-energy check) performed on the system supporting or adjacent to the carrier beam link?",
+      "intent": "establish-if-the-isolated-status-of-the-top-backup-roll-balance-was-verified-as-",
+      "rationale": "If isolation was incomplete or misinterpreted, residual pressure could have caused movement. If complete but design relies on hydraulics for retention, this highlights a design flaw.",
+      "evidenceNeeded": [
+        "ECP/LOTO group box sheet",
+        "Zero-energy verification record"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "establish-if-the-isolated-status-of-the-top-backup-roll-balance-was-verified-as-",
+      "decisionUnlocked": "If isolation was incomplete or misinterpreted, residual pressure could have caused movement. If complete but design relies on hydraulics for retention, this highlights a design flaw."
+    },
+    {
+      "id": "q-9ss5j5",
+      "tagId": "stored-energy",
+      "proposedBy": "stored-energy",
+      "routedTo": [
+        "stored-energy"
+      ],
+      "text": "What specific structural members or connections supported the carrier beam when work rolls were removed?",
+      "intent": "assess-gravity-load-path",
+      "rationale": "Understanding load paths helps determine if gravity alone was sufficient to cause failure once hydraulic support vanished.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing (EV-004)",
+        "Engineering review of yoke design"
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "assess-gravity-load-path",
+      "decisionUnlocked": "Understanding load paths helps determine if gravity alone was sufficient to cause failure once hydraulic support vanished."
+    },
+    {
+      "id": "q-18sjud",
+      "tagId": "maintenance-outage",
+      "proposedBy": "maintenance-outage",
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "text": "Did the previous shift explicitly communicate to the current team that a mechanical lock was required or already applied before leaving the balance in a raised position?",
+      "intent": "assess-shift-handoff-completeness",
+      "rationale": "The timeline mentions an 'Unobserved interval' between isolation and fall. A communication gap during handover could explain why no one verified the state of the beam.",
+      "evidenceNeeded": [
+        "Shift turnover log (EV-006), Witness statements from previous shift crew."
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "assess-shift-handoff-completeness",
+      "decisionUnlocked": "The timeline mentions an 'Unobserved interval' between isolation and fall. A communication gap during handover could explain why no one verified the state of the beam."
+    },
+    {
+      "id": "q-url3gv",
+      "tagId": "isolation-loto",
+      "proposedBy": "isolation-loto",
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "text": "Did the previous shift explicitly communicate to Turn 2 that the Top Backup Roll Balance was left in a raised position and isolated, including any specific warnings about residual energy?",
+      "intent": "verify-shift-turnover-communication",
+      "rationale": "The 'unobserved interval' suggests potential communication gaps. If Turn 2 assumed isolation without verification based on incomplete handoff info.",
+      "evidenceNeeded": [
+        "Shift turnover log (EV-006)",
+        "Area/Shift Manager notes"
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "verify-shift-turnover-communication",
+      "decisionUnlocked": "The 'unobserved interval' suggests potential communication gaps. If Turn 2 assumed isolation without verification based on incomplete handoff info."
+    },
+    {
+      "id": "q-qrinsp",
+      "tagId": "equipment-tool",
+      "proposedBy": "equipment-tool",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "text": "What specific tasks were performed in the 'unobserved interval' between bleeding the B hydraulics and the beam falling at 1:03 PM?",
+      "intent": "verify-the-sequence-and-timing-between-isolation-and-failure",
+      "rationale": "Identifies if a subsequent action (e.g., removing a pin, shifting weight) triggered the release or if it was an uncontrolled decay over time.",
+      "evidenceNeeded": [
+        "Shift turnover log (EV-006).",
+        "Witness statements regarding activities in that specific timeframe."
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "verify-the-sequence-and-timing-between-isolation-and-failure",
+      "decisionUnlocked": "Identifies if a subsequent action (e.g., removing a pin, shifting weight) triggered the release or if it was an uncontrolled decay over time."
+    },
+    {
+      "id": "q-g8epu4",
+      "tagId": "equipment-tool",
+      "proposedBy": "equipment-tool",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "text": "Has the R3 exit carrier beam assembly or its yoke interface been modified, repaired, or subjected to unusual loads in recent months that could have contributed to a latent defect?",
+      "intent": "assess-equipment-history-and-condition",
+      "rationale": "Rules out or identifies historical wear/tear as a contributing factor despite lack of visible damage at failure.",
+      "evidenceNeeded": [
+        "Maintenance history for the carrier beam assembly and keeper."
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "assess-equipment-history-and-condition",
+      "decisionUnlocked": "Rules out or identifies historical wear/tear as a contributing factor despite lack of visible damage at failure."
+    },
+    {
+      "id": "q-1q1m1gv",
+      "tagId": "procedure-planning",
+      "proposedBy": "procedure-planning",
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "text": "Does the applicable outage preparation procedure explicitly require mechanical securing (e.g., chocking, blocking) of suspended loads like the carrier beam when supporting rolls are removed?",
+      "intent": "determine-load-securing-requirements-and-procedure-existence",
+      "rationale": "If no such requirement exists in writing but is implied by safety standards, there may be a gap between 'work-as-imagined' and 'work-as-done'. If it does exist, its absence indicates non-compliance.",
+      "evidenceNeeded": [
+        "Outage preparation procedure document",
+        "R3 Roll Balance System Primer (EV-002)",
+        "Maintenance manuals for R3 stand"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "determine-load-securing-requirements-and-procedure-existence",
+      "decisionUnlocked": "If no such requirement exists in writing but is implied by safety standards, there may be a gap between 'work-as-imagined' and 'work-as-done'. If it does exist, its absence indicates non-compliance."
+    },
+    {
+      "id": "q-usmt3u",
+      "tagId": "procedure-planning",
+      "proposedBy": "procedure-planning",
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "text": "Was the removal of work rolls and backup roll balances a standard routine task, or did it require specific authorization/assessment for leaving components in an unstable configuration?",
+      "intent": "identify-scope-change-or-deviation-authorization",
+      "rationale": "If this was non-routine without proper assessment (JSHA), it points to inadequate risk evaluation.",
+      "evidenceNeeded": [
+        "Work order details",
+        "Shift log showing work scope approval"
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "identify-scope-change-or-deviation-authorization",
+      "decisionUnlocked": "If this was non-routine without proper assessment (JSHA), it points to inadequate risk evaluation."
+    }
+  ],
+  "previousBoard": null
+}

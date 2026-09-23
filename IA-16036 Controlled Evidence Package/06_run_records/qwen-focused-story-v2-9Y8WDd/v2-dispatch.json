@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-16T23:23:32.363Z",
+  "incidentId": "b7c62bf9-604c-4312-9520-7b63b20b7363",
+  "trackId": "eebd569e-92a1-4b41-87c3-3f4953cfb2a6",
+  "url": "http://127.0.0.1:3008/incident/b7c62bf9-604c-4312-9520-7b63b20b7363",
+  "storyRoundId": "323756f5-dbe1-4650-9121-d583b3f97d77",
+  "storyAnswers": 4,
+  "sourceDocuments": 8,
+  "newlyReleased": [
+    {
+      "recordId": "IA-P01",
+      "documentId": "fcd254db-75b3-4a9d-abec-44c5b6a9b34e",
+      "sha256": "9b9a6662b5de2efa0e77e12ede0b50129a711702a3fcfa5937d3400058090db4"
+    },
+    {
+      "recordId": "IA-P02",
+      "documentId": "da0260c0-7d49-43e8-b074-da2a14c7d59c",
+      "sha256": "349b5acaab1b017446e6ca63646d535897cf382b67102f6877a3befd716e7cda"
+    }
+  ],
+  "frozenInputSha256": "3063995853451d8caedd005735af82f454372b91364731ef149bea77445e958d",
+  "strictCausal": true
+}

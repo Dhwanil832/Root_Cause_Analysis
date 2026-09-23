@@ -1,0 +1,7 @@
+{
+  "purpose": "Focused verification-ID contract check using the saved draft and reconstructed saved first-cycle evidence; not a full RCA run",
+  "model": "ollama:qwen3.5:latest",
+  "promptVersion": "try4.2.2-verification-contract",
+  "sourceSha256": "2ed8406beaad1055242e8bbc0d35b6b2db7265a006e924c517f3d098b078dca3",
+  "startedAt": "2026-09-15T15:32:00.175Z"
+}

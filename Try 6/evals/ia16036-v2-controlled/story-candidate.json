@@ -1,0 +1,105 @@
+{
+  "at": "2026-09-20T18:42:54.191Z",
+  "round": {
+    "id": "c5bdbc70-37bd-42f3-9acc-00912637f096",
+    "scenario_id": "1dc27d0e-546b-4f63-8e3e-00d01f2a0c70",
+    "base_version": 1,
+    "status": "ready",
+    "error": "",
+    "result_version": null,
+    "created_at": "2026-09-20T18:39:39.829Z",
+    "updated_at": "2026-09-20T18:42:37.841Z",
+    "questions": [
+      {
+        "id": "e7f325e3-4bfc-49c7-af57-54661b16b3b6",
+        "text": "Request the current piping diagram for 1SC instrument-air service and point register mapping to confirm whether P-U and P-R are on the same header branch.",
+        "sourceIds": [
+          "IA-I01",
+          "IA-D01",
+          "IA-D02",
+          "IA-D03",
+          "IA-S01",
+          "IA-S02",
+          "IA-S03",
+          "IA-P01",
+          "IA-P02",
+          "IA-P03",
+          "IA-C01",
+          "IA-P04",
+          "IA-P05"
+        ]
+      },
+      {
+        "id": "00af67c6-51bd-4b01-9435-364973e59a91",
+        "text": "Obtain the daily work briefing content for WO-527, including any valve-by-valve checklist or temporary instruction attachment.",
+        "sourceIds": [
+          "IA-I01",
+          "IA-D01",
+          "IA-D02",
+          "IA-D03",
+          "IA-S01",
+          "IA-S02",
+          "IA-S03",
+          "IA-P01",
+          "IA-P02",
+          "IA-P03",
+          "IA-C01",
+          "IA-P04",
+          "IA-P05"
+        ]
+      }
+    ],
+    "output": {
+      "output": {
+        "answers": [
+          {
+            "questionId": "00af67c6-51bd-4b01-9435-364973e59a91",
+            "status": "answered",
+            "answer": "The daily work briefing for WO-527 was issued on 2024-05-20 and covered assignment and coordination. The available evidence does not establish the content of any attached valve-by-valve checklist or temporary instruction attachment, as the temporary instruction field is recorded as blank and no such document appears in the supplied work-package index.",
+            "citations": [
+              {
+                "sourceId": "IA-S02",
+                "quote": "# WO-527 work-package cover and attachment index\n\nRecord ID: IA-S02 | Issued copy: 2024-05-20 09:31\n\nThis is an administrative excerpt, not an executable isolation procedure.\n\nWork scope: planned maintenance and inspection of 1SC dryer group D-101. Receiving operation: RHOB instrument-air service. Crew assignment: U-A and U-B. Work boundary: preparation only at time of initial notification.\n\n| Attachment | Revision/status shown on supplied copy | Purpose |\n| --- | --- | --- |\n| ECP-1SC-04 | Revision 3, issued 2024-03-04 | Work-boundary document |\n| DW-1SC-17 | Revision A | Referenced equipment-location sheet |\n| WO-527-E | Blank at folder issue | Field execution record |\n| Daily work briefing | 2024-05-20 | Assignment and coordination |\n\nTemporary instruction attachment field: blank.\n\nMaintenance acceptance signature: not yet signed at notification time. The signature field is a work-stage record; it is not evidence that any particular field valve was open or closed.\n"
+              },
+              {
+                "sourceId": "IA-S03",
+                "quote": "# Assignment and authorization extract\n\nRecord ID: IA-S03 | Retrieved: 2024-05-20 15:00\n\n| Person code | Assigned role on WO-527 | Recorded qualification at shift start |\n| --- | --- | --- |\n| U-A | Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| U-B | Second Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| M-A | Maintenance receiver | Current dryer-maintenance qualification; boundary acceptance pending |\n\nThe daily briefing attendance sheet lists U-A and U-B. Its topic line reads “1SC dryer work and RHOB service coordination.” It contains no valve-by-valve content. The training extract does not state which configuration drawing the crew saw or whether either person received a recent change briefing.\n\nNo interview concerning fatigue, workload or individual intent is included in this extract.\n"
+              }
+            ],
+            "limitation": "The daily briefing attendance sheet lists U-A and U-B but contains no valve-by-valve content. The temporary instruction attachment field is blank. No other supporting documents for a checklist or temporary instruction are available in the released set."
+          },
+          {
+            "questionId": "e7f325e3-4bfc-49c7-af57-54661b16b3b6",
+            "status": "answered",
+            "answer": "The available evidence does not establish whether P-U and P-R are on the same header branch. The Utilities area and service directory describes separate operating locations (the 1SC gallery and RHOB instrument-air station) but explicitly states it is not a current piping diagram and does not establish valve positions or connectivity between headers. The point register maps P-U to the site header H-U and P-R to the RHOB receiving header H-R, but this mapping of signals does not prove that the physical distribution paths share a common branch or are isolated from one another.",
+            "citations": [
+              {
+                "sourceId": "IA-D01",
+                "quote": "# Utilities area and service directory\n\nRecord ID: IA-D01 | Revision: 2 | Effective: 2024-04-01\n\n## Service areas\n\nThe Utilities air gallery serves the 1SC dryer group and distributes instrument air to the RHOB process area. RHOB is the local area name used in these records; it is not an individual compressor identifier. The 1SC gallery and RHOB instrument-air station are separate operating locations.\n\n| Location | Equipment/service | Normal record custodian |\n| --- | --- | --- |\n| North gallery | Site air-header connection, local indication P-U | Utilities operations |\n| Dryer aisle | Dryer group D-101 and main-route valves M-101/M-102 | Utilities maintenance |\n| East service rack | Auxiliary line installation area | Projects and Utilities |\n| RHOB service station | Receiving header H-R and indication P-R | RHOB operations |\n\n## Roles\n\nUtilities prepares the maintenance boundary. RHOB operations observes the receiving process. Maintenance receives the work boundary only after its release. A maintenance work order being scheduled is not a record that the boundary has been released.\n\nThis directory is a location index. It is not a current piping diagram and does not establish valve positions or the pressure available at any given time.\n"
+              },
+              {
+                "sourceId": "IA-P02",
+                "quote": "# Utilities point register extract\n\nRecord ID: IA-P02 | Configuration revision: PR-12 | Effective: 2024-05-01\n\n| Point | Location/input | Description and scope |\n| --- | --- | --- |\n| P-U | Site header H-U, north gallery | Pressure upstream of the 1SC distribution routes |\n| P-R | RHOB receiving header H-R | Pressure at the RHOB instrument-air receiving station |\n| C-11 RUN | C-11 starter auxiliary contact | Common-header compressor motor running indication; not a local flow proof |\n| AL-44 | RHOB PLC low-pressure input from P-R | Active below 4.5 bar; clears above 5.0 bar |\n\nAL-44 display text was retained as “COMP FAULT” from an earlier operator-screen template. PR-12 maps it to the receiving-header pressure condition, not to C-11's trip contact.\n\nThis register maps signals. It does not establish the state of any distribution valve or prove that every supply disturbance would appear in the selected sample export.\n"
+              }
+            ],
+            "limitation": "The Utilities area and service directory is not a current piping diagram. The point register maps signals but does not establish the physical state of distribution valves or connectivity between headers."
+          }
+        ]
+      },
+      "jobs": [
+        {
+          "questionId": "00af67c6-51bd-4b01-9435-364973e59a91",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "questionId": "e7f325e3-4bfc-49c7-af57-54661b16b3b6",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "failures": []
+    }
+  },
+  "outputSha256": "4cdf266bab359dd48ea422251723b90d06a201b9ad0c1f9e73486da2166ad1ea"
+}

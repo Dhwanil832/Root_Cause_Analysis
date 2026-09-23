@@ -1,0 +1,8 @@
+{
+  "status": "stopped_no_retry",
+  "incidentId": "b7c62bf9-604c-4312-9520-7b63b20b7363",
+  "trackId": "eebd569e-92a1-4b41-87c3-3f4953cfb2a6",
+  "error": "Error: /api/tracks/eebd569e-92a1-4b41-87c3-3f4953cfb2a6/initialize: Output contract: Claim claim-1gqp40y: citations must be exact contiguous passages from a supplied source.; Claim claim-1a6reg3: full support needs exact citations and all five checks satisfied.",
+  "cause": null,
+  "at": "2026-09-16T18:43:04.379Z"
+}

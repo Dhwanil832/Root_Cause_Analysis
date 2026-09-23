@@ -1,0 +1,433 @@
+{
+  "schema_version": "1.0",
+  "case_id": "IA-16036",
+  "package_version": "1.0.0",
+  "package_status": "prepared_for_pilot",
+  "generation_provenance": {
+    "guide": "Try 7/SYNTHETIC_EVIDENCE_PACKAGE_GENERATION_GUIDE.md",
+    "guide_version": "1.0",
+    "author": "Codex",
+    "model_identity": null,
+    "model_configuration": null,
+    "generation_date": "2026-09-22",
+    "random_seed": null,
+    "substantive_operator_edits": [
+      "User requested these two cases; no additional scenario edits supplied."
+    ]
+  },
+  "historical_anchor": {
+    "incident_id": 16036,
+    "incident_title": "MEUUtil Loss of instrument air to 4SP-RHOB",
+    "incident_date": "5/20/2024",
+    "workbook_sheet": "NearMissSafetyData",
+    "source_row": 573,
+    "recorded_finding": "Safety Systems - Job procedures (including lockouts) ==> ECP was not updated to reflect 1SC air system bypass line"
+  },
+  "scenario_basis": "historical-row-derived synthetic reconstruction",
+  "design_deviations": [
+    "This is a new three-release derivative of the existing IA-16036 development case. It reuses stable synthetic asset conventions but regroups earlier B0–B3 material into B0–B2. It is not an exact replay of the current app run or a new held-out incident."
+  ],
+  "experimental_split": "development_pilot_same_incident_derivative",
+  "release_policy": "fixed_batches_cumulative",
+  "stage_order": [
+    "B0",
+    "B1",
+    "B2"
+  ],
+  "provenance_notice": "README_OPERATOR_ONLY.md",
+  "documents": [
+    {
+      "document_id": "IA-D01",
+      "revision": 1,
+      "path": "payloads/B0/default_references/IA-D01_service_directory.md",
+      "display_name": "Utilities service directory",
+      "scope": "default_reference",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "9a7d3a3deac84f2b47af032bc6596402d157a21bd8bf1c91c8e73ea0dea78ccd"
+    },
+    {
+      "document_id": "IA-D02",
+      "revision": 1,
+      "path": "payloads/B0/default_references/IA-D02_work_package_practice.md",
+      "display_name": "Utilities work-package record practice",
+      "scope": "default_reference",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "830c37e34aedf35b8c0f26694b188eff7a6c17b5b7b319c142bc80383a83afda"
+    },
+    {
+      "document_id": "IA-I00",
+      "revision": 1,
+      "path": "payloads/B0/incident_description.md",
+      "display_name": "Instrument-air service notification",
+      "scope": "incident_description",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "1aec7e7ad86824a7ef85481f310582c918499e5cdf7e30287170d41ba3503d21"
+    },
+    {
+      "document_id": "IA-D03",
+      "revision": 1,
+      "path": "payloads/B0/starter_documents/IA-D03_packet_cover.md",
+      "display_name": "WO527 packet cover",
+      "scope": "starter_document",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "98298554eb66bd80b8d9a5da1a9464c460a72551f18e39690c2be19d43baff07"
+    },
+    {
+      "document_id": "IA-D04",
+      "revision": 1,
+      "path": "payloads/B0/starter_documents/IA-D04_pressure_extract.md",
+      "display_name": "Utilities pressure trend extract",
+      "scope": "starter_document",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "a084d2f2772a67513678187906bad03f65f8fb7c3863c83c3bfeb22c3e3a0a8b"
+    },
+    {
+      "document_id": "IA-D05",
+      "revision": 1,
+      "path": "payloads/B0/starter_documents/IA-D05_desk_message_r1.md",
+      "display_name": "Utilities desk message",
+      "scope": "starter_document",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "adff8247b8115435566f6e2a5628cc10e8434a297ce83ce4b292a2c4c6a522ed"
+    },
+    {
+      "document_id": "IA-D06",
+      "revision": 1,
+      "path": "payloads/B1/IA-D06_line_trace.md",
+      "display_name": "1SC line identification extract",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B1",
+      "supersedes": [],
+      "sha256": "cf68aa05ce5593872f40fdf90abab146864273f88907d7512002d06b7c0cca4a"
+    },
+    {
+      "document_id": "IA-D07",
+      "revision": 1,
+      "path": "payloads/B1/IA-D07_field_sequence.md",
+      "display_name": "WO527 field sequence note",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B1",
+      "supersedes": [],
+      "sha256": "caca572a513b4c7c1c7a11cc211e28138b6f654cd9b8701f5fcf9694c6f9bd45"
+    },
+    {
+      "document_id": "IA-D08",
+      "revision": 1,
+      "path": "payloads/B1/IA-D08_signal_register.md",
+      "display_name": "Utilities indication register extract",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B1",
+      "supersedes": [],
+      "sha256": "2f70e49ebfb3952532ccb1213fc6cc7ca362ffa3898071add1a773963b0efdd1"
+    },
+    {
+      "document_id": "IA-D05",
+      "revision": 2,
+      "path": "payloads/B2/IA-D05_desk_message_r2.md",
+      "display_name": "Utilities desk message",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [
+        {
+          "document_id": "IA-D05",
+          "revision": 1
+        }
+      ],
+      "sha256": "0d1387e30f9d489fe2d4c53b80eb6e06bd88eb54881714941b2e12b3b7ddc33c"
+    },
+    {
+      "document_id": "IA-D09",
+      "revision": 1,
+      "path": "payloads/B2/IA-D09_change_register.md",
+      "display_name": "CH218 routing history",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [],
+      "sha256": "4bb4d3fbc87e2d6e64c41bbaacede80b1ffee0fd6d9f32428b0aef472052a64c"
+    },
+    {
+      "document_id": "IA-D10",
+      "revision": 1,
+      "path": "payloads/B2/IA-D10_issue_history.md",
+      "display_name": "ECP-1SC revision and distribution extract",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [],
+      "sha256": "f9855ae614944dc8020b96870dde6f9f62d8cfb10ccb26ff689e4a4c2dca8fae"
+    },
+    {
+      "document_id": "IA-D11",
+      "revision": 1,
+      "path": "payloads/B2/IA-D11_controller_journal.md",
+      "display_name": "Utilities controller journal review",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [],
+      "sha256": "30270b3b8916ff68e55e6726b2bd6c6afece6e5bdc337c2103bf6123fa66740a"
+    }
+  ],
+  "releases": [
+    {
+      "release_id": "B0",
+      "expected_parent_version": null,
+      "resulting_version": 1,
+      "additions": [
+        {
+          "document_id": "IA-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D05",
+          "revision": 1
+        }
+      ],
+      "withdrawals": [],
+      "supersessions": [],
+      "cumulative_active_sources": [
+        {
+          "document_id": "IA-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D05",
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "release_id": "B1",
+      "expected_parent_version": 1,
+      "resulting_version": 2,
+      "additions": [
+        {
+          "document_id": "IA-D06",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D07",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D08",
+          "revision": 1
+        }
+      ],
+      "withdrawals": [],
+      "supersessions": [],
+      "cumulative_active_sources": [
+        {
+          "document_id": "IA-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D05",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D06",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D07",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D08",
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "release_id": "B2",
+      "expected_parent_version": 2,
+      "resulting_version": 3,
+      "additions": [
+        {
+          "document_id": "IA-D05",
+          "revision": 2
+        },
+        {
+          "document_id": "IA-D09",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D10",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D11",
+          "revision": 1
+        }
+      ],
+      "withdrawals": [
+        {
+          "document_id": "IA-D05",
+          "revision": 1
+        }
+      ],
+      "supersessions": [
+        {
+          "old_source": {
+            "document_id": "IA-D05",
+            "revision": 1
+          },
+          "new_source": {
+            "document_id": "IA-D05",
+            "revision": 2
+          }
+        }
+      ],
+      "cumulative_active_sources": [
+        {
+          "document_id": "IA-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D06",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D07",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D08",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D05",
+          "revision": 2
+        },
+        {
+          "document_id": "IA-D09",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D10",
+          "revision": 1
+        },
+        {
+          "document_id": "IA-D11",
+          "revision": 1
+        }
+      ]
+    }
+  ],
+  "private_paths": [
+    "private/"
+  ],
+  "never_upload": [
+    "README_OPERATOR_ONLY.md",
+    "package_manifest.json",
+    "private/",
+    "run_records/"
+  ],
+  "external_never_upload": [
+    "../README_OPERATOR_ONLY.md",
+    "../package_tools.py",
+    "source workbook",
+    "source partner RCA PDF",
+    "generation guide",
+    "other model tracks and authoring conversation"
+  ],
+  "validation": {
+    "status": "structural_checks_passed",
+    "hash_status": "computed_sha256_final_payload_bytes",
+    "checks_performed": [
+      "JSON parsing, required private files and complete document inventory.",
+      "Unique document/revision identities, payload headers and actual SHA-256 hashes.",
+      "Cumulative release/parent lineage, eligibility, withdrawals and revision supersession.",
+      "All answer-bank verbatim excerpts found and stage-eligible; section headings resolved.",
+      "All target evidence bundles available at declared stage; required target fields present.",
+      "Known private marker/placeholder scan and operator-file exclusion coverage.",
+      "Original workbook byte hash unchanged.",
+      "Three cumulative export views checked for each case; hashes, revision membership and exclusion of operator files passed.",
+      "Exporter refuses an already-existing destination."
+    ],
+    "outstanding_issues": [
+      "Independent technical/semantic review not performed.",
+      "No app ingestion or RCA run performed.",
+      "Live access isolation and answer routing not exercised.",
+      "Semantic targets unassessed; no evaluator or weights chosen."
+    ],
+    "report": "private/validation_report.md",
+    "executed_check_count": 247,
+    "export_views_tested": [
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "semantic_assessment": "not_performed",
+    "independent_technical_review": "not_performed"
+  }
+}

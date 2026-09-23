@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "completedAt": "2026-09-15T19:30:53.208Z",
+  "causal": {
+    "focalNodeId": "node-1r49pf8",
+    "nodes": 13,
+    "edges": 13,
+    "attempts": 1,
+    "validation": "valid",
+    "durationMs": 153382
+  },
+  "verification": {
+    "attempts": 1,
+    "validation": "valid",
+    "durationMs": 63907,
+    "verifiedNodes": 1,
+    "verifiedEdges": 0,
+    "findings": 7
+  },
+  "commitContractProblems": [],
+  "originalSnapshotUnchanged": true,
+  "incidentCreated": false
+}

@@ -1,0 +1,1042 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/vaxsvy10",
+    "id": "vaxsvy10",
+    "slide": 15,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "BASE",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Aptos Display"
+      },
+      "minorFont": {
+        "latinTypeface": "Aptos"
+      }
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "BASE",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "backgroundColor": "#F7F9FC",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "Shape 0",
+          "bbox": [
+            0,
+            693.12,
+            1279.97,
+            0
+          ],
+          "geometry": "line",
+          "lineColor": "#D7DEE9",
+          "lineWidth": 1.33
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/3",
+          "id": "3",
+          "name": "Text 1",
+          "bbox": [
+            40.32,
+            697.92,
+            211.2,
+            17.28
+          ],
+          "geometry": "rect",
+          "text": "RCA kickoff maps",
+          "textPreview": "RCA kickoff maps",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "RCA kickoff maps",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "RCA kickoff maps",
+                  "fontSize": 10,
+                  "typeface": "Aptos",
+                  "color": "#607089"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/547mhg3m",
+      "id": "2",
+      "name": "Shape 0",
+      "bbox": [
+        0,
+        0,
+        1279.97,
+        11.52
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3y5ov21",
+      "id": "3",
+      "name": "Text 1",
+      "bbox": [
+        43.2,
+        30.72,
+        1008,
+        40.32
+      ],
+      "geometry": "rect",
+      "text": "Other / novel condition",
+      "textPreview": "Other / novel condition",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Other / novel condition"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Other / novel condition",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Other / novel condition",
+              "fontSize": 30.67,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/76p4jqls",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        1082.88,
+        28.8,
+        148.8,
+        32.64
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#E7F4F8",
+      "lineColor": "#CFEAF2",
+      "lineWidth": 0.67
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65gnqlk7",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        1082.88,
+        36.96,
+        148.8,
+        11.52
+      ],
+      "geometry": "rect",
+      "text": "Table 15/15",
+      "textPreview": "Table 15/15",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Table 15/15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Table 15/15",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Table 15/15",
+              "fontSize": 10,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/cfq9kjip",
+      "id": "26",
+      "name": "Table 0",
+      "bbox": [
+        43.2,
+        109.44,
+        1193.28,
+        571.2
+      ],
+      "text": "Initial question | Potential direction it opens\nWhat condition or subject is not represented by the existing tags? | Precise definition of the potentially novel direction; prevents Other from becoming a general uncertainty bucket\nWhat facts show that it is materially connected to the event? | Evidence of relevance, temporal connection, mechanism, exposure, consequence; screens out interesting but immaterial details\nWhich existing tag is closest, and why is it insufficient? | Taxonomy boundary, possible reassignment, overlap, hidden distinction, need for a genuinely separate investigative path\nWhat distinct investigation questions does this condition require? | Unique mechanism, evidence source, subject-matter expertise, control family, causal branch not covered elsewhere\nIs it genuinely novel, or is only the wording or specific object unusual? | Synonym resolution, site terminology, unusual equipment still covered by Equipment/tool, avoid unnecessary new tags\nHas the same theme appeared in other incidents under different language? | Recurrence, historical pattern, taxonomy normalization, broader category, trend analysis\nWhat evidence could confirm or screen out this direction quickly? | Discriminating test, record, expert review, inspection, measurement, interview, rapid reassignment\nShould the condition remain a case-specific note or be proposed for taxonomy review? | One-off condition, recurring gap, new permanent tag candidate, governance and taxonomy-change decision",
+      "textPreview": "Initial question | Potential direction it opens | What condition or subject is not represented by the existing tags? | Precise definition...",
+      "rows": 9,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            43.2,
+            109.44,
+            494.4,
+            34.56
+          ],
+          "text": "Initial question",
+          "textPreview": "Initial question",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Initial question",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Initial question",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            537.6,
+            109.44,
+            698.88,
+            34.56
+          ],
+          "text": "Potential direction it opens",
+          "textPreview": "Potential direction it opens",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Potential direction it opens",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Potential direction it opens",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            43.2,
+            144,
+            494.4,
+            67.08
+          ],
+          "text": "What condition or subject is not represented by the existing tags?",
+          "textPreview": "What condition or subject is not represented by the existing tags?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What condition or subject is not represented by the existing tags?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What condition or subject is not represented by the existing tags?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            537.6,
+            144,
+            698.88,
+            67.08
+          ],
+          "text": "Precise definition of the potentially novel direction; prevents Other from becoming a general uncertainty bucket",
+          "textPreview": "Precise definition of the potentially novel direction; prevents Other from becoming a general uncertainty bucket",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Precise definition of the potentially novel direction; prevents Other from becoming a general uncertainty bucket",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Precise definition of the potentially novel direction; prevents Other from becoming a general uncertainty bucket",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            43.2,
+            211.08,
+            494.4,
+            67.08
+          ],
+          "text": "What facts show that it is materially connected to the event?",
+          "textPreview": "What facts show that it is materially connected to the event?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What facts show that it is materially connected to the event?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What facts show that it is materially connected to the event?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            537.6,
+            211.08,
+            698.88,
+            67.08
+          ],
+          "text": "Evidence of relevance, temporal connection, mechanism, exposure, consequence; screens out interesting but immaterial details",
+          "textPreview": "Evidence of relevance, temporal connection, mechanism, exposure, consequence; screens out interesting but immaterial details",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Evidence of relevance, temporal connection, mechanism, exposure, consequence; screens out interesting but immaterial details",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Evidence of relevance, temporal connection, mechanism, exposure, consequence; screens out interesting but immaterial details",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            43.2,
+            278.16,
+            494.4,
+            67.08
+          ],
+          "text": "Which existing tag is closest, and why is it insufficient?",
+          "textPreview": "Which existing tag is closest, and why is it insufficient?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Which existing tag is closest, and why is it insufficient?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Which existing tag is closest, and why is it insufficient?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            537.6,
+            278.16,
+            698.88,
+            67.08
+          ],
+          "text": "Taxonomy boundary, possible reassignment, overlap, hidden distinction, need for a genuinely separate investigative path",
+          "textPreview": "Taxonomy boundary, possible reassignment, overlap, hidden distinction, need for a genuinely separate investigative path",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Taxonomy boundary, possible reassignment, overlap, hidden distinction, need for a genuinely separate investigative path",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Taxonomy boundary, possible reassignment, overlap, hidden distinction, need for a genuinely separate investigative path",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            43.2,
+            345.24,
+            494.4,
+            67.08
+          ],
+          "text": "What distinct investigation questions does this condition require?",
+          "textPreview": "What distinct investigation questions does this condition require?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What distinct investigation questions does this condition require?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What distinct investigation questions does this condition require?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            537.6,
+            345.24,
+            698.88,
+            67.08
+          ],
+          "text": "Unique mechanism, evidence source, subject-matter expertise, control family, causal branch not covered elsewhere",
+          "textPreview": "Unique mechanism, evidence source, subject-matter expertise, control family, causal branch not covered elsewhere",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Unique mechanism, evidence source, subject-matter expertise, control family, causal branch not covered elsewhere",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Unique mechanism, evidence source, subject-matter expertise, control family, causal branch not covered elsewhere",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            43.2,
+            412.32,
+            494.4,
+            67.08
+          ],
+          "text": "Is it genuinely novel, or is only the wording or specific object unusual?",
+          "textPreview": "Is it genuinely novel, or is only the wording or specific object unusual?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Is it genuinely novel, or is only the wording or specific object unusual?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Is it genuinely novel, or is only the wording or specific object unusual?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            537.6,
+            412.32,
+            698.88,
+            67.08
+          ],
+          "text": "Synonym resolution, site terminology, unusual equipment still covered by Equipment/tool, avoid unnecessary new tags",
+          "textPreview": "Synonym resolution, site terminology, unusual equipment still covered by Equipment/tool, avoid unnecessary new tags",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Synonym resolution, site terminology, unusual equipment still covered by Equipment/tool, avoid unnecessary new tags",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Synonym resolution, site terminology, unusual equipment still covered by Equipment/tool, avoid unnecessary new tags",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            43.2,
+            479.4,
+            494.4,
+            67.08
+          ],
+          "text": "Has the same theme appeared in other incidents under different language?",
+          "textPreview": "Has the same theme appeared in other incidents under different language?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Has the same theme appeared in other incidents under different language?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Has the same theme appeared in other incidents under different language?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            537.6,
+            479.4,
+            698.88,
+            67.08
+          ],
+          "text": "Recurrence, historical pattern, taxonomy normalization, broader category, trend analysis",
+          "textPreview": "Recurrence, historical pattern, taxonomy normalization, broader category, trend analysis",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Recurrence, historical pattern, taxonomy normalization, broader category, trend analysis",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Recurrence, historical pattern, taxonomy normalization, broader category, trend analysis",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            43.2,
+            546.48,
+            494.4,
+            67.08
+          ],
+          "text": "What evidence could confirm or screen out this direction quickly?",
+          "textPreview": "What evidence could confirm or screen out this direction quickly?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What evidence could confirm or screen out this direction quickly?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What evidence could confirm or screen out this direction quickly?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            537.6,
+            546.48,
+            698.88,
+            67.08
+          ],
+          "text": "Discriminating test, record, expert review, inspection, measurement, interview, rapid reassignment",
+          "textPreview": "Discriminating test, record, expert review, inspection, measurement, interview, rapid reassignment",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Discriminating test, record, expert review, inspection, measurement, interview, rapid reassignment",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Discriminating test, record, expert review, inspection, measurement, interview, rapid reassignment",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            43.2,
+            613.56,
+            494.4,
+            67.08
+          ],
+          "text": "Should the condition remain a case-specific note or be proposed for taxonomy review?",
+          "textPreview": "Should the condition remain a case-specific note or be proposed for taxonomy review?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Should the condition remain a case-specific note or be proposed for taxonomy review?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Should the condition remain a case-specific note or be proposed for taxonomy review?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            537.6,
+            613.56,
+            698.88,
+            67.08
+          ],
+          "text": "One-off condition, recurring gap, new permanent tag candidate, governance and taxonomy-change decision",
+          "textPreview": "One-off condition, recurring gap, new permanent tag candidate, governance and taxonomy-change decision",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "One-off condition, recurring gap, new permanent tag candidate, governance and taxonomy-change decision",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "One-off condition, recurring gap, new permanent tag candidate, governance and taxonomy-change decision",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/na5476l8",
+      "id": "8",
+      "name": "Shape 5",
+      "bbox": [
+        22.08,
+        109.44,
+        4.8,
+        571.2
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7ah4nm5",
+      "id": "25",
+      "name": "Slide Number Placeholder 0",
+      "bbox": [
+        1176,
+        697.92,
+        83.99,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "15",
+      "textPreview": "15",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "15",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "15"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

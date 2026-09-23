@@ -1,0 +1,1042 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/07wihi",
+    "id": "07wihi",
+    "slide": 9,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "BASE",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Aptos Display"
+      },
+      "minorFont": {
+        "latinTypeface": "Aptos"
+      }
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "BASE",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "backgroundColor": "#F7F9FC",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "Shape 0",
+          "bbox": [
+            0,
+            693.12,
+            1279.97,
+            0
+          ],
+          "geometry": "line",
+          "lineColor": "#D7DEE9",
+          "lineWidth": 1.33
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/3",
+          "id": "3",
+          "name": "Text 1",
+          "bbox": [
+            40.32,
+            697.92,
+            211.2,
+            17.28
+          ],
+          "geometry": "rect",
+          "text": "RCA kickoff maps",
+          "textPreview": "RCA kickoff maps",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "RCA kickoff maps",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "RCA kickoff maps",
+                  "fontSize": 10,
+                  "typeface": "Aptos",
+                  "color": "#607089"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ja9g329o",
+      "id": "2",
+      "name": "Shape 0",
+      "bbox": [
+        0,
+        0,
+        1279.97,
+        11.52
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y90zax83",
+      "id": "3",
+      "name": "Text 1",
+      "bbox": [
+        43.2,
+        30.72,
+        1008,
+        40.32
+      ],
+      "geometry": "rect",
+      "text": "Isolation / LOTO involvement",
+      "textPreview": "Isolation / LOTO involvement",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Isolation / LOTO involvement"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Isolation / LOTO involvement",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Isolation / LOTO involvement",
+              "fontSize": 30.67,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x8ry1sri",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        1082.88,
+        28.8,
+        148.8,
+        32.64
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#E7F4F8",
+      "lineColor": "#CFEAF2",
+      "lineWidth": 0.67
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7ih8nqx",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        1082.88,
+        36.96,
+        148.8,
+        11.52
+      ],
+      "geometry": "rect",
+      "text": "Table 8/15",
+      "textPreview": "Table 8/15",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Table 8/15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Table 8/15",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Table 8/15",
+              "fontSize": 10,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/e58zax0z",
+      "id": "26",
+      "name": "Table 0",
+      "bbox": [
+        43.2,
+        109.44,
+        1193.28,
+        571.2
+      ],
+      "text": "Initial question | Potential direction it opens\nWhat equipment or system was being isolated, and for what work? | Isolation scope, affected equipment, maintenance boundary, task dependency, wrong or incomplete equipment identification\nWhat hazardous-energy sources and boundaries were identified? | Electrical, hydraulic, pneumatic, gravity, thermal, chemical, mechanical, stored or secondary energy; boundary completeness\nWhat isolation points, locks, tags, blocks, blanks, disconnects, or valves were used? | Correct isolation point, missing device, ineffective valve, wrong disconnect, absent block, lock or tag application\nHow was zero energy or the intended safe state verified? | Tryout, meter test, pressure check, visual verification, drain or bleed, test-before-touch, assumed rather than verified state\nWhat stored, residual, induced, gravity, or secondary energy remained possible? | Accumulator pressure, trapped fluid, elevated load, induced voltage, spring force, thermal energy, backfeed\nWho established, controlled, changed, or relied on the isolation? | Authorized employee, affected employee, contractor, supervisor, system owner, authority, handoff and reliance\nWere group, contractor, shift-change, testing, temporary-energization, or restoration conditions involved? | Group lockbox, transfer, turnover, exception, test energization, lock removal, startup and restoration sequence\nWhat evidence confirms the isolation state at each important point in the event sequence? | LOTO sheet, lockbox log, switching record, photographs, meter readings, valve position, witness statement, timestamped state",
+      "textPreview": "Initial question | Potential direction it opens | What equipment or system was being isolated, and for what work? | Isolation scope, affe...",
+      "rows": 9,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            43.2,
+            109.44,
+            494.4,
+            34.56
+          ],
+          "text": "Initial question",
+          "textPreview": "Initial question",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Initial question",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Initial question",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            537.6,
+            109.44,
+            698.88,
+            34.56
+          ],
+          "text": "Potential direction it opens",
+          "textPreview": "Potential direction it opens",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Potential direction it opens",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Potential direction it opens",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            43.2,
+            144,
+            494.4,
+            67.08
+          ],
+          "text": "What equipment or system was being isolated, and for what work?",
+          "textPreview": "What equipment or system was being isolated, and for what work?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What equipment or system was being isolated, and for what work?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What equipment or system was being isolated, and for what work?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            537.6,
+            144,
+            698.88,
+            67.08
+          ],
+          "text": "Isolation scope, affected equipment, maintenance boundary, task dependency, wrong or incomplete equipment identification",
+          "textPreview": "Isolation scope, affected equipment, maintenance boundary, task dependency, wrong or incomplete equipment identification",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Isolation scope, affected equipment, maintenance boundary, task dependency, wrong or incomplete equipment identification",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Isolation scope, affected equipment, maintenance boundary, task dependency, wrong or incomplete equipment identification",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            43.2,
+            211.08,
+            494.4,
+            67.08
+          ],
+          "text": "What hazardous-energy sources and boundaries were identified?",
+          "textPreview": "What hazardous-energy sources and boundaries were identified?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What hazardous-energy sources and boundaries were identified?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What hazardous-energy sources and boundaries were identified?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            537.6,
+            211.08,
+            698.88,
+            67.08
+          ],
+          "text": "Electrical, hydraulic, pneumatic, gravity, thermal, chemical, mechanical, stored or secondary energy; boundary completeness",
+          "textPreview": "Electrical, hydraulic, pneumatic, gravity, thermal, chemical, mechanical, stored or secondary energy; boundary completeness",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Electrical, hydraulic, pneumatic, gravity, thermal, chemical, mechanical, stored or secondary energy; boundary completeness",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Electrical, hydraulic, pneumatic, gravity, thermal, chemical, mechanical, stored or secondary energy; boundary completeness",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            43.2,
+            278.16,
+            494.4,
+            67.08
+          ],
+          "text": "What isolation points, locks, tags, blocks, blanks, disconnects, or valves were used?",
+          "textPreview": "What isolation points, locks, tags, blocks, blanks, disconnects, or valves were used?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What isolation points, locks, tags, blocks, blanks, disconnects, or valves were used?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What isolation points, locks, tags, blocks, blanks, disconnects, or valves were used?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            537.6,
+            278.16,
+            698.88,
+            67.08
+          ],
+          "text": "Correct isolation point, missing device, ineffective valve, wrong disconnect, absent block, lock or tag application",
+          "textPreview": "Correct isolation point, missing device, ineffective valve, wrong disconnect, absent block, lock or tag application",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Correct isolation point, missing device, ineffective valve, wrong disconnect, absent block, lock or tag application",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Correct isolation point, missing device, ineffective valve, wrong disconnect, absent block, lock or tag application",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            43.2,
+            345.24,
+            494.4,
+            67.08
+          ],
+          "text": "How was zero energy or the intended safe state verified?",
+          "textPreview": "How was zero energy or the intended safe state verified?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "How was zero energy or the intended safe state verified?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "How was zero energy or the intended safe state verified?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            537.6,
+            345.24,
+            698.88,
+            67.08
+          ],
+          "text": "Tryout, meter test, pressure check, visual verification, drain or bleed, test-before-touch, assumed rather than verified state",
+          "textPreview": "Tryout, meter test, pressure check, visual verification, drain or bleed, test-before-touch, assumed rather than verified state",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Tryout, meter test, pressure check, visual verification, drain or bleed, test-before-touch, assumed rather than verified state",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Tryout, meter test, pressure check, visual verification, drain or bleed, test-before-touch, assumed rather than verified state",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            43.2,
+            412.32,
+            494.4,
+            67.08
+          ],
+          "text": "What stored, residual, induced, gravity, or secondary energy remained possible?",
+          "textPreview": "What stored, residual, induced, gravity, or secondary energy remained possible?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What stored, residual, induced, gravity, or secondary energy remained possible?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What stored, residual, induced, gravity, or secondary energy remained possible?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            537.6,
+            412.32,
+            698.88,
+            67.08
+          ],
+          "text": "Accumulator pressure, trapped fluid, elevated load, induced voltage, spring force, thermal energy, backfeed",
+          "textPreview": "Accumulator pressure, trapped fluid, elevated load, induced voltage, spring force, thermal energy, backfeed",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Accumulator pressure, trapped fluid, elevated load, induced voltage, spring force, thermal energy, backfeed",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Accumulator pressure, trapped fluid, elevated load, induced voltage, spring force, thermal energy, backfeed",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            43.2,
+            479.4,
+            494.4,
+            67.08
+          ],
+          "text": "Who established, controlled, changed, or relied on the isolation?",
+          "textPreview": "Who established, controlled, changed, or relied on the isolation?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Who established, controlled, changed, or relied on the isolation?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Who established, controlled, changed, or relied on the isolation?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            537.6,
+            479.4,
+            698.88,
+            67.08
+          ],
+          "text": "Authorized employee, affected employee, contractor, supervisor, system owner, authority, handoff and reliance",
+          "textPreview": "Authorized employee, affected employee, contractor, supervisor, system owner, authority, handoff and reliance",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Authorized employee, affected employee, contractor, supervisor, system owner, authority, handoff and reliance",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Authorized employee, affected employee, contractor, supervisor, system owner, authority, handoff and reliance",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            43.2,
+            546.48,
+            494.4,
+            67.08
+          ],
+          "text": "Were group, contractor, shift-change, testing, temporary-energization, or restoration conditions involved?",
+          "textPreview": "Were group, contractor, shift-change, testing, temporary-energization, or restoration conditions involved?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Were group, contractor, shift-change, testing, temporary-energization, or restoration conditions involved?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Were group, contractor, shift-change, testing, temporary-energization, or restoration conditions involved?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            537.6,
+            546.48,
+            698.88,
+            67.08
+          ],
+          "text": "Group lockbox, transfer, turnover, exception, test energization, lock removal, startup and restoration sequence",
+          "textPreview": "Group lockbox, transfer, turnover, exception, test energization, lock removal, startup and restoration sequence",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Group lockbox, transfer, turnover, exception, test energization, lock removal, startup and restoration sequence",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Group lockbox, transfer, turnover, exception, test energization, lock removal, startup and restoration sequence",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            43.2,
+            613.56,
+            494.4,
+            67.08
+          ],
+          "text": "What evidence confirms the isolation state at each important point in the event sequence?",
+          "textPreview": "What evidence confirms the isolation state at each important point in the event sequence?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What evidence confirms the isolation state at each important point in the event sequence?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What evidence confirms the isolation state at each important point in the event sequence?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            537.6,
+            613.56,
+            698.88,
+            67.08
+          ],
+          "text": "LOTO sheet, lockbox log, switching record, photographs, meter readings, valve position, witness statement, timestamped state",
+          "textPreview": "LOTO sheet, lockbox log, switching record, photographs, meter readings, valve position, witness statement, timestamped state",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "LOTO sheet, lockbox log, switching record, photographs, meter readings, valve position, witness statement, timestamped state",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "LOTO sheet, lockbox log, switching record, photographs, meter readings, valve position, witness statement, timestamped state",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94ryxsr6",
+      "id": "8",
+      "name": "Shape 5",
+      "bbox": [
+        22.08,
+        109.44,
+        4.8,
+        571.2
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e5sv2583",
+      "id": "25",
+      "name": "Slide Number Placeholder 0",
+      "bbox": [
+        1176,
+        697.92,
+        83.99,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "9",
+      "textPreview": "9",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "9"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "9",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "9"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

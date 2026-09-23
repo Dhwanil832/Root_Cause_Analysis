@@ -1,0 +1,38 @@
+{
+  "app": "Try 5",
+  "title": "IA-16036 · Clean-input B0+B1 · Qwen · 2026-09-20T01:14:32.289Z",
+  "description": "# Instrument-air interruption during maintenance preparation\n\nRecord ID: IA-I01\n\nAt approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored. No injury is reported.\n\nThe initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment. Supporting records will be provided as the investigation develops.\n",
+  "modelName": "qwen3.5:latest",
+  "originalIncidentId": "e99d24d6-753c-427a-9304-cdbd6726090f",
+  "originalTrackId": "3ef34107-57cc-4426-a284-aa600f37ce1a",
+  "kind": "controlled-revision",
+  "note": "V1 is the operator-frozen partial checkpoint, not a completed original investigation. V2 is a real same-track evidence revision using four source-grounded answers and three B2 documents with the selected-answers-v1 scheduling policy. V2 execution: running. The original unrestricted queue was not resumed.",
+  "href": "/incident/e99d24d6-753c-427a-9304-cdbd6726090f",
+  "dataUrl": "/history/featured-causal-boards.json",
+  "versions": [
+    {
+      "number": 1,
+      "label": "V1 · Frozen partial checkpoint",
+      "subtitle": "Operator-frozen partial checkpoint; original investigation unfinished",
+      "createdAt": "2026-09-20T01:14:32.500Z",
+      "status": "partial",
+      "sourcePath": "Try 5/evals/clean-input-v2-controlled-2026-09-21/v1-frozen.json",
+      "sourceSha256": "d4df6bed1f8f7e6a6942d6260a91c75073b7141d16cf854fa55b9cd611ac5ff2",
+      "sourceRecordId": "4866969b-2dea-41ed-9b45-acb2de6fba9c",
+      "nodes": 32,
+      "edges": 8
+    },
+    {
+      "number": 2,
+      "label": "V2 · running",
+      "subtitle": "Controlled evidence release: four answers + IA-P04 / IA-P05 / IA-P06; scoped partial continuation",
+      "createdAt": "2026-09-22T03:25:13.562Z",
+      "status": "running",
+      "sourcePath": "Try 5/evals/clean-input-v2-controlled-2026-09-21/v2-latest.json",
+      "sourceSha256": "f1fa334e2c85a48dfb569b9efa03809ccd443d1cfb7209a8899b12b824cb0c15",
+      "sourceRecordId": "ac4a4d08-d40f-4f07-a806-2051c0f0808a",
+      "nodes": 42,
+      "edges": 9
+    }
+  ]
+}

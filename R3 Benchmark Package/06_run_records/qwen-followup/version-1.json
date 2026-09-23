@@ -1,0 +1,2478 @@
+{
+  "id": "585bba91-6a74-4426-8ef2-8684f7ee73a6",
+  "number": 1,
+  "trigger": "Initial account with 24 starter document(s)",
+  "createdAt": "2026-09-08T22:17:13.007Z",
+  "analysis": {
+    "status": "contradictions-unresolved",
+    "structuredIncident": {
+      "summary": "The R3 exit carrier beam fell from the yoke into the mill pit at approximately 1:03 PM on October 14, 2024 (Turn 2). The incident occurred during an outage configuration where work rolls and backup rolls had been removed. Evidence indicates that while hydraulic systems were isolated and bled, a raised top backup roll balance remained in place without independent mechanical restraint or verification of its support condition after pressure removal. Video review suggests the beam was wedged against mill components before falling once relative movement cleared an interference point. Witness accounts describe visible rotation prior to impact but do not confirm crane involvement; operational logs contradict reports of active crane lifts during the event interval.",
+      "focalEvent": "R3 exit carrier beam falls from yoke into R3 mill pit",
+      "actualImpact": "Beam and link landed on sled and scaffold platform. No injuries reported as no team members were in the pit at the time.",
+      "potentialImpact": "Falling object hazard with potential for severe injury or fatality if personnel had been present below; damage to equipment (sled, scaffold) observed.",
+      "normalState": "During normal operation, carrier beam is supported by installed work and backup rolls. The yoke pocket retains the link assembly under load conditions defined by roll configuration.",
+      "eventState": "Work rolls removed; top and bottom backup rolls removed for outage scope. Top backup roll balance left isolated in raised position. B hydraulics shut off and bled. Carrier beam remained attached to link with keeper installed but appeared displaced relative to yoke centerline prior to fall.",
+      "entities": [
+        {
+          "type": "equipment",
+          "name": "R3 Exit Carrier Beam Assembly",
+          "description": "Heavy component (approx. 8,500 lbs) consisting of the carrier beam and link arm with a keeper installed.",
+          "status": "rejected",
+          "sourceIds": [
+            "incident-description",
+            "d6550cb9-11d6-47d9-a538-f0e1d99f489f"
+          ],
+          "id": "entity-1l6sbwt"
+        },
+        {
+          "type": "equipment",
+          "name": "Yoke (R3 Roughing Mill Stand)",
+          "description": "Upper support structure containing the open pocket where the link rests.",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "01_Mechanical_Assembly_and_Retention_Record.pdf"
+          ],
+          "id": "entity-t1yhf2"
+        },
+        {
+          "type": "equipment",
+          "name": "Top Backup Roll Balance (R3)",
+          "description": "Hydraulic cylinder assembly capable of occupying a raised position.",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "d0d0c922-3e3e-4a8a-b3c9-63b4d1507dc3"
+          ],
+          "id": "entity-c3x7uz"
+        },
+        {
+          "type": "equipment",
+          "name": "B Hydraulic System (R3)",
+          "description": "System supplying the top backup roll balance.",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "f5e83f96-cf54-4b66-9545-683f5eea1f4c"
+          ],
+          "id": "entity-1jm769n"
+        },
+        {
+          "type": "equipment",
+          "name": "Keeper (Link Retention Device)",
+          "description": "Component installed on the link arm to retain it in the yoke.",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "01_Mechanical_Assembly_and_Retention_Record.pdf"
+          ],
+          "id": "entity-5e5zzi"
+        },
+        {
+          "type": "location",
+          "name": "R3 Mill Pit",
+          "description": "Area below the mill stand where the beam landed.",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "id": "entity-o8jr96"
+        },
+        {
+          "type": "person",
+          "name": "Contractor Employees (Witnesses)",
+          "description": "Two individuals walking beside the stand who witnessed the fall.",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description",
+            "07_Witness_Statement_Packet.pdf"
+          ],
+          "id": "entity-1o6thry"
+        }
+      ],
+      "timeline": [
+        {
+          "timeLabel": "Previous Shift (Turn 1)",
+          "sequence": 1,
+          "description": "Work rolls and top/bottom backup rolls removed for outage work.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "id": "event-em0hv4"
+        },
+        {
+          "timeLabel": "Previous Shift",
+          "sequence": 2,
+          "description": "Top backup roll balance left isolated in raised position; B hydraulics shut off and bled.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "id": "event-1qlk171"
+        },
+        {
+          "timeLabel": "Previous Shift (Turn 1)",
+          "sequence": 3,
+          "description": "Hydraulic isolation valve reported to have slow bleed-through; cylinder fluid could move back through feed after shutdown.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "f5e83f96-cf54-4b66-9545-683f5eea1f4c"
+          ],
+          "id": "event-rrniu9"
+        },
+        {
+          "timeLabel": "Previous Shift (Turn 1)",
+          "sequence": 4,
+          "description": "Lockout verification record shows mechanical block ID field blank for gravity control.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "52f485b3-052e-44ee-8f84-63c152e8cb17"
+          ],
+          "id": "event-1matuhf"
+        },
+        {
+          "timeLabel": "Previous Shift (Turn 1)",
+          "sequence": 5,
+          "description": "Yoke moved downward gradually over approximately two hours; carrier beam remained wedged against mill spreader/posts.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "4c287777-3168-4385-8d49-0f7a960f1d1b"
+          ],
+          "id": "event-1qxvw6a"
+        },
+        {
+          "timeLabel": "Previous Shift (Turn 1)",
+          "sequence": 6,
+          "description": "Relative movement displaced carrier beam and link arm away from mill centerline.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "4c287777-3168-4385-8d49-0f7a960f1d1b"
+          ],
+          "id": "event-1w4on1i"
+        },
+        {
+          "timeLabel": "Previous Shift (Turn 1)",
+          "sequence": 7,
+          "description": "Link-arm stop cleared cylinder lifting point or yoke.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "4c287777-3168-4385-8d49-0f7a960f1d1b"
+          ],
+          "id": "event-ab2gjf"
+        },
+        {
+          "timeLabel": "Approximately 1:03 PM, October 14 (Turn 2)",
+          "sequence": 8,
+          "description": "Carrier beam fell from yoke into mill pit.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "id": "event-1eh2zoi"
+        },
+        {
+          "timeLabel": "Approximately 1:03 PM",
+          "sequence": 9,
+          "description": "Beam landed on sled and scaffold platform; small window liner fell with it.",
+          "kind": "event",
+          "status": "unknown",
+          "sourceIds": [
+            "incident-description"
+          ],
+          "id": "event-169s7bq"
+        }
+      ],
+      "conditions": [
+        "Configuration change: Work rolls removed.",
+        "Energy state: B hydraulics isolated, bled (0 psi gauge reading).",
+        "Gravity source active: Top backup roll balance left in raised position without documented independent mechanical restraint.",
+        "Mechanical condition: Carrier beam and link recovered intact with keeper installed; no gross fracture observed on yoke or components.",
+        "Spatial relationship: Beam appeared wedged against mill spreader/posts prior to fall, then displaced off-center allowing the stop to clear the lifting point."
+      ],
+      "unknowns": [
+        "Exact mechanical clearance between raised balance assembly and mill spreader/posts under zero-hydraulic pressure conditions.",
+        "Whether the keeper alone was sufficient to retain the link against gravity once wedging ceased, given off-center displacement observed in video interpretation.",
+        "Specific verification method used (if any) for 'raised position' support after hydraulic isolation; record shows blank field for mechanical block ID.",
+        "Rate of fluid bleed-through or pressure decay on isolated branch without historian data.",
+        "Whether the handwritten turnover note regarding keeper inspection was acted upon and verified by a competent authority before Turn 2 work began.",
+        "Exact mechanical clearance between raised balance assembly and mill spreader under zero-hydraulic pressure conditions.",
+        "Whether keeper alone was sufficient to retain link against gravity once wedging ceased given observed displacement.",
+        "Specific verification method used for 'raised position' support after hydraulic isolation; record shows blank field for mechanical block ID.",
+        "Whether handwritten turnover note regarding keeper inspection was acted upon and verified before Turn 2 work began."
+      ]
+    },
+    "facts": [
+      "Incident occurred at Indiana Harbor, R3 Roughing Mill Stand (Turn 2).",
+      "Beam fell intact; keeper and pin recovered on assembly.",
+      "No gross damage or fracture observed on beam, link, yoke pocket post-event.",
+      "Hydraulic system B was isolated and bled prior to event.",
+      "Top backup roll balance remained raised without documented independent mechanical restraint (block/crib).",
+      "Video shows gradual downward movement of the yoke over two hours preceding fall; beam did not move with yoke while wedged, then fell after link-arm stop cleared lifting point.",
+      "Witnesses observed lower end rotate and drop but saw no crane hook or person touching it."
+    ],
+    "unknowns": [
+      "Exact mechanical clearance between raised balance assembly and mill spreader/posts under zero-hydraulic pressure conditions.",
+      "Whether the keeper alone was sufficient to retain the link against gravity once wedging ceased, given off-center displacement observed in video interpretation.",
+      "Specific verification method used (if any) for 'raised position' support after hydraulic isolation; record shows blank field for mechanical block ID.",
+      "Rate of fluid bleed-through or pressure decay on isolated branch without historian data.",
+      "Whether the handwritten turnover note regarding keeper inspection was acted upon and verified by a competent authority before Turn 2 work began.",
+      "Exact mechanical clearance between raised balance assembly and mill spreader under zero-hydraulic pressure conditions.",
+      "Whether keeper alone was sufficient to retain link against gravity once wedging ceased given observed displacement.",
+      "Specific verification method used for 'raised position' support after hydraulic isolation; record shows blank field for mechanical block ID.",
+      "Whether handwritten turnover note regarding keeper inspection was acted upon and verified before Turn 2 work began.",
+      "Was a rated mechanical block or independent support physically installed in the yoke pocket to hold the raised balance cylinder after hydraulic isolation?",
+      "What is the specific requirement in R3 Outage Procedure or JSHA regarding retaining a top backup roll balance when hydraulics are bled and work rolls are removed?",
+      "Does the Keeper design specification allow it to retain the link arm against gravity when the beam is off-center or displaced from the yoke centerline, as observed in video review?",
+      "Does the equipment manual or maintenance history define the top backup roll balance cylinder/piston design such that it relies on hydraulic pressure to maintain position, making mechanical wedging unreliable once fluid is bled?",
+      "Was the handwritten turnover note regarding keeper inspection acted upon and verified by a competent authority before Turn 2 work began, or was it merely noted without verification?",
+      "Was there a formal, signed verification record for the keeper installation prior to bleeding hydraulics? If not, why was reliance placed on an anonymous handwritten note?",
+      "Was there an engineering assessment establishing that 'wedging' provided a reliable barrier against gravity load? If not, why was this assumption accepted as sufficient?",
+      "Did a mechanical block physically exist on the gravity control point when hydraulics were isolated? If yes, why was it not recorded in the LOTO field?",
+      "Was there an engineering evaluation determining that the installed keeper could withstand the specific off-center loading conditions present during this event?",
+      "Operational log (R3-EV-010) contradicts the hearsay email and witness speculation regarding a crane bump; evidence supports rejection of crane involvement as cause.",
+      "The blank mechanical block ID field and the unverified nature of the anonymous note indicate that independent positive control was not documented or verified before Turn 2.",
+      "Operational log (R3-EV-010) shows no commanded crane travel or lift tickets for R3 bay during the event interval. Witness statement packet (R3-EV-09) explicitly states witnesses did not see a crane hook, rigging, or person touching it. The email rumor (R3-CH-003) is hearsay with unknown origin and time; logs contradict the claim.",
+      "Turnover log (R3-EV-006) notes a 'turnover note' regarding keeper check but does not confirm verification. Anonymous handwritten note (R3-CH-002) lacks author, time, or chain of custody; cannot be treated as authoritative evidence that the keeper was verified.",
+      "Re-run source adjudication in smaller batches before treating the evidence review as complete."
+    ],
+    "baselineQuestions": [
+      {
+        "id": "bq-1povwco",
+        "tagId": "baseline",
+        "proposedBy": "incident-understanding",
+        "routedTo": [
+          "maintenance-outage",
+          "stored-energy"
+        ],
+        "text": "Does the R3 outage task-specific procedure require a rated mechanical block or positive restraint to be installed on any component capable of drifting downward after hydraulic isolation and bleed?",
+        "intent": "determine-if-an-independent-mechanical-restraint-block-crib-or-pin-was-required-",
+        "rationale": "The lockout verification record shows 'Mechanical block ID field is blank' for gravity control. Confirming whether this was an omission, non-compliance, or procedural gap will determine if a procedure failure contributed.",
+        "evidenceNeeded": [
+          "R3 Outage Work Scope and Sequence (Step 2 hold point signature)",
+          "Energy Control Plan R3 configuration",
+          "Task-specific LOTO review findings"
+        ],
+        "priority": "high",
+        "status": "open"
+      }
+    ],
+    "tags": [
+      {
+        "id": "equipment-tool",
+        "rationale": "The incident involves a heavy carrier beam assembly, yoke, backup roll balance cylinder, and keeper mechanism failing to retain the load. The structural integrity of these components (specifically whether the link was wedged or if mechanical restraint failed) is central to understanding why gravity caused failure.",
+        "evidence": [
+          "R3 Exit Carrier Beam Assembly fell",
+          "Top Backup Roll Balance left in raised position",
+          "Keeper installed but beam displaced"
+        ],
+        "unknowns": [
+          "Exact mechanical clearance between components under zero pressure",
+          "Whether keeper alone was sufficient against gravity once wedging ceased"
+        ],
+        "confidence": 0.95,
+        "label": "Equipment or tool involvement"
+      },
+      {
+        "id": "stored-energy",
+        "rationale": "The failure mechanism is explicitly driven by gravitational potential energy stored in the raised top backup roll balance cylinder assembly after hydraulic isolation and bleeding.",
+        "evidence": [
+          "Top backup roll balance left isolated in raised position",
+          "B hydraulics shut off and bled (0 psi gauge reading)",
+          "Gravity source active"
+        ],
+        "unknowns": [
+          "Rate of fluid bleed-through or pressure decay on isolated branch without historian data"
+        ],
+        "confidence": 0.92,
+        "label": "Stored, released, or gravity energy"
+      },
+      {
+        "id": "isolation-loto",
+        "rationale": "The incident occurred during an outage configuration where hydraulic systems were bled and isolation valves manipulated. The lockout verification record shows a blank field for mechanical block ID, indicating a potential failure in verifying that gravity loads (the raised balance) were mechanically secured before pressure removal.",
+        "evidence": [
+          "B hydraulics shut off and bled",
+          "Lockout verification record shows mechanical block ID field blank for gravity control"
+        ],
+        "unknowns": [
+          "Whether the handwritten turnover note regarding keeper inspection was acted upon and verified by a competent authority before Turn 2 work began."
+        ],
+        "confidence": 0.85,
+        "label": "Isolation / LOTO involvement"
+      },
+      {
+        "id": "procedure-planning",
+        "rationale": "The sequence of removing rolls, bleeding hydraulics, leaving the balance raised without documented independent mechanical restraint suggests a deviation from or ambiguity in standard outage procedures regarding gravity load retention.",
+        "evidence": [
+          "Work rolls and backup rolls removed for outage work",
+          "Top backup roll balance left isolated... without documented independent mechanical restraint"
+        ],
+        "unknowns": [
+          "Specific verification method used (if any) for 'raised position' support after hydraulic isolation"
+        ],
+        "confidence": 0.8,
+        "label": "Procedure / planning involvement"
+      },
+      {
+        "id": "maintenance-outage",
+        "rationale": "The incident occurred during a scheduled outage where work rolls and backup rolls were removed, creating an abnormal configuration that exposed the system to gravity hazards not present in normal operation.",
+        "evidence": [
+          "Work rolls and top/bottom backup rolls removed for outage scope"
+        ],
+        "unknowns": [],
+        "confidence": 0.98,
+        "label": "Maintenance, outage, or non-routine work"
+      },
+      {
+        "id": "communication-supervision",
+        "rationale": "Witnesses reported visible rotation but no crane involvement, while logs contradict reports of active lifts; there is also a discrepancy between the blank lockout record and potential handwritten turnover notes regarding keeper inspection.",
+        "evidence": [
+          "Two contractor employees walking beside the mill stand witnessed the fall",
+          "Operational logs contradict reports of active crane lifts during the event interval"
+        ],
+        "unknowns": [],
+        "confidence": 0.75,
+        "label": "Communication / supervision involvement"
+      }
+    ],
+    "specialistKnowledgeBases": [
+      {
+        "tagId": "equipment-tool",
+        "label": "Equipment or tool involvement",
+        "summary": "The investigation focuses on verifying whether a mechanical restraint (lockout/tagout) was physically applied to the Top Backup Roll Balance after hydraulic isolation, and determining if the 'Keeper' device alone could withstand gravity once the beam's wedging condition changed. Evidence indicates a blank field for mechanical block ID in lockout records and missing independent verification signatures.",
+        "findings": [
+          {
+            "statement": "The Top Backup Roll Balance was left in a raised position with hydraulics isolated but without documented physical restraint (mechanical block).",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "R3-EV-005"
+            ],
+            "testNeeded": "Physical inspection of the yoke pocket and balance cylinder for existing mechanical blocks or rated restraints.",
+            "id": "finding-x85agk"
+          },
+          {
+            "statement": "The carrier beam was displaced off-center, clearing a stop that previously prevented downward movement.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "testNeeded": "Review video footage to confirm the sequence of displacement and clearance.",
+            "id": "finding-1mkpxzs"
+          },
+          {
+            "statement": "The 'Keeper' device was installed but its sufficiency against gravity after wedging ceased is unverified.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "testNeeded": "Engineering analysis of the Keeper's load rating versus the weight of the beam assembly.",
+            "id": "finding-96qe7l"
+          }
+        ],
+        "questionIds": [
+          "q-1dxfke6"
+        ],
+        "handoffs": [
+          {
+            "tagId": "procedure-planning",
+            "reason": "Determine if the procedure for 'raised position' support after hydraulic isolation requires a mandatory mechanical block or alternative verification method."
+          },
+          {
+            "tagId": "equipment-tool",
+            "reason": "Evaluate engineering capacity of the Keeper device to retain load without wedging assistance under zero-hydraulic pressure conditions."
+          }
+        ],
+        "updatedAt": "2026-09-08T22:23:35.384Z"
+      },
+      {
+        "tagId": "stored-energy",
+        "label": "Stored, released, or gravity energy",
+        "summary": "The incident was caused by unverified gravitational potential energy stored in a raised top backup roll balance cylinder after hydraulic isolation and bleeding. The lockout verification record lacked documentation of an independent mechanical restraint for gravity control, and the blank field suggests no physical block or rated restraint ID was recorded. Witness accounts indicate relative movement cleared interference points before failure; video review shows rotation but does not confirm crane involvement (contradicted by logs). Unknowns include exact fluid bleed-through rates under zero pressure conditions without historian data.",
+        "findings": [
+          {
+            "statement": "Gravitational potential energy was stored in the raised top backup roll balance cylinder assembly after hydraulic isolation and bleeding.",
+            "type": "hypothesis",
+            "status": "supported",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "testNeeded": "Confirm whether a mechanical block or rated restraint ID exists physically on site despite blank record field.",
+            "id": "finding-1cxraco"
+          },
+          {
+            "statement": "The lockout verification process failed to document an independent verifier signature for gravity control.",
+            "type": "hypothesis",
+            "status": "supported",
+            "sourceIds": [
+              "R3-EV-005"
+            ],
+            "testNeeded": "Review physical inspection logs (R3-EV-017) or witness testimony regarding mechanical restraint status.",
+            "id": "finding-fwbe6j"
+          },
+          {
+            "statement": "Relative movement displaced the carrier beam and link arm away from mill centerline, clearing interference points.",
+            "type": "hypothesis",
+            "status": "supported",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "testNeeded": "Analyze video footage to determine sequence of events leading to fall.",
+            "id": "finding-f4vae7"
+          }
+        ],
+        "questionIds": [
+          "q-154rjh2",
+          "q-1y7obgs",
+          "q-ncwrxu"
+        ],
+        "handoffs": [],
+        "updatedAt": "2026-09-08T22:24:23.551Z"
+      },
+      {
+        "tagId": "isolation-loto",
+        "label": "Isolation / LOTO involvement",
+        "summary": "The investigation focuses on verifying whether a mechanical restraint (block) was physically applied to the Top Backup Roll Balance after hydraulic isolation, as indicated by a blank field in the Lockout Verification Record. The team must determine if gravity loads were secured before pressure removal and assess the sufficiency of the 'keeper' device once wedging ceased.",
+        "findings": [
+          {
+            "statement": "The Lockout Verification Record (R3-EV-005) indicates a blank field for mechanical block ID regarding gravity control, suggesting no documented independent restraint was applied to the raised Top Backup Roll Balance before hydraulic bleeding.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "incident-description",
+              "executed-lockout-verification-record"
+            ],
+            "testNeeded": "Physical inspection of isolation points and verification logs.",
+            "id": "finding-fbadh2"
+          }
+        ],
+        "questionIds": [
+          "q-ufbrkj"
+        ],
+        "handoffs": [
+          {
+            "tagId": "isolation-loto",
+            "reason": "The blank mechanical block ID field in the verification record directly implicates a potential failure to secure gravity loads, requiring physical confirmation of isolation points."
+          },
+          {
+            "tagId": "equipment-tool",
+            "reason": "Verification of whether the 'keeper' device is rated and designed to retain the link arm against gravity once wedging ceases requires equipment-specific data not currently available in this packet."
+          }
+        ],
+        "updatedAt": "2026-09-08T22:24:59.897Z"
+      },
+      {
+        "tagId": "procedure-planning",
+        "label": "Procedure / planning involvement",
+        "summary": "The investigation focuses on procedural gaps regarding gravity load retention after hydraulic isolation during an outage configuration.",
+        "findings": [
+          {
+            "statement": "Lockout verification record indicates a blank field for mechanical block ID, suggesting no independent restraint was documented or verified despite the presence of a raised top backup roll balance.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "R3-EV-005",
+              "incident-description"
+            ],
+            "testNeeded": "Physical inspection log (R3-EV-017) to confirm if any restraint existed but was undocumented.",
+            "id": "finding-1mbdgox"
+          },
+          {
+            "id": "claim-v3w0s6",
+            "statement": "The investigation focuses on verifying whether a mechanical restraint (block/rated device) was physically installed...",
+            "type": "finding",
+            "status": "unknown",
+            "sourceIds": [
+              "kb:maintenance-outage",
+              "kb:stored-energy"
+            ]
+          }
+        ],
+        "questionIds": [
+          "q-1420x5z",
+          "q-vl4yn7",
+          "q-cnxu29",
+          "q-1lnvmg6"
+        ],
+        "handoffs": [],
+        "updatedAt": "2026-09-08T22:25:42.773Z"
+      },
+      {
+        "tagId": "maintenance-outage",
+        "label": "Maintenance, outage, or non-routine work",
+        "summary": "The investigation focuses on verifying whether a mechanical restraint (block/rated device) was physically installed to support the raised Top Backup Roll Balance after hydraulic isolation, and confirming if the Keeper alone could retain the link once wedging ceased.",
+        "findings": [
+          {
+            "statement": "Hydraulic system B was isolated and bled with a gauge reading of 0 psi; however, records indicate potential slow bleed-through capability in this specific cylinder assembly.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "f5e83f96-cf54-4b66-9545-683f5eea1f4c",
+              "R3-EV-005"
+            ],
+            "testNeeded": "None; record is contemporaneous.",
+            "id": "finding-1a3fc0t"
+          },
+          {
+            "statement": "The Lockout Verification Record (source-assessment-60vmby) contains a blank field for 'Mechanical block or rated restraint ID' and lacks an independent verifier signature.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "R3-EV-005"
+            ],
+            "testNeeded": "None; record is contemporaneous.",
+            "id": "finding-kpekuv"
+          },
+          {
+            "statement": "The Top Backup Roll Balance remained in a raised position without documented independent mechanical restraint during the outage interval.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "R3-EV-005"
+            ],
+            "testNeeded": "None; record is contemporaneous.",
+            "id": "finding-1k70zgu"
+          },
+          {
+            "statement": "The carrier beam was wedged against mill components prior to falling, and relative movement eventually cleared the interference point.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "4c287777-3168-4385-8d49-0f7a960f1d1b"
+            ],
+            "testNeeded": "None; video and log evidence supports this sequence.",
+            "id": "finding-h2gxjq"
+          },
+          {
+            "statement": "Witnesses did not observe a crane hook, rigging, or person touching the beam during the fall interval.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "R3-CH-003"
+            ],
+            "testNeeded": "None; witness testimony corroborated by logs.",
+            "id": "finding-13ajjmg"
+          },
+          {
+            "id": "claim-1fqnce4",
+            "statement": "The keeper retains that pin. Explains why beam, link, and keeper could be recovered together.",
+            "type": "finding",
+            "status": "unknown",
+            "sourceIds": [
+              "R3-EV-003"
+            ]
+          },
+          {
+            "id": "claim-1cjkwa9",
+            "statement": "The investigation identified off-center displacement of the carrier beam and link arm as the path by which the link-arm stop could clear the yoke.",
+            "type": "finding",
+            "status": "unknown",
+            "sourceIds": [
+              "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5#1"
+            ]
+          },
+          {
+            "id": "claim-1odwa33",
+            "statement": "The keeper is not a positiv",
+            "type": "finding",
+            "status": "unknown",
+            "sourceIds": [
+              "R3-EV-003"
+            ]
+          },
+          {
+            "id": "claim-80c1ny",
+            "statement": "Turnover note: keep personnel clear below upper balance components until day-turn",
+            "type": "finding",
+            "status": "unknown",
+            "sourceIds": [
+              "R3-EV-006"
+            ]
+          }
+        ],
+        "questionIds": [
+          "q-10slvit",
+          "q-myo76q",
+          "q-q1e6i3",
+          "q-1y3tago"
+        ],
+        "handoffs": [],
+        "updatedAt": "2026-09-08T22:26:43.125Z"
+      },
+      {
+        "tagId": "communication-supervision",
+        "label": "Communication / supervision involvement",
+        "summary": "The investigation focuses on communication gaps regarding mechanical restraint verification and authority boundaries during a shift handoff where hydraulic isolation was assumed to provide sufficient support for a raised backup roll balance.",
+        "findings": [
+          {
+            "statement": "Lockout/Tagout (LOTO) record indicates the top backup roll balance position as 'Raised' but leaves the field for mechanical block or restraint ID blank, suggesting no independent physical verification of gravity control was documented at that moment.",
+            "type": "finding",
+            "status": "supported",
+            "sourceIds": [
+              "R3-EV-005",
+              "incident-description"
+            ],
+            "testNeeded": "Physical inspection log (R3-EV-017) or witness testimony confirming whether a mechanical restraint existed and was verified.",
+            "id": "finding-1tazn9k"
+          }
+        ],
+        "questionIds": [
+          "q-9x3bsy"
+        ],
+        "handoffs": [],
+        "updatedAt": "2026-09-08T22:27:14.557Z"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q-1dxfke6",
+        "tagId": "equipment-tool",
+        "proposedBy": "equipment-tool",
+        "routedTo": [
+          "equipment-tool",
+          "maintenance-outage",
+          "stored-energy"
+        ],
+        "text": "Was a rated mechanical block or independent support physically installed in the yoke pocket to hold the raised balance cylinder after hydraulic isolation?",
+        "intent": "verify-physical-presence-of-mechanical-restraint-on-top-backup-roll-balance",
+        "rationale": "The lockout record shows a blank field for 'Mechanical block ID' and no verifier signature. Confirming physical presence is essential to determine if gravity control was actually achieved.",
+        "evidenceNeeded": [
+          "Physical inspection of yoke pocket",
+          "Maintenance logs showing installation history"
+        ],
+        "causalBranch": "verify-physical-presence-of-mechanical-restraint-on-top-backup-roll-balance",
+        "decisionUnlocked": "The lockout record shows a blank field for 'Mechanical block ID' and no verifier signature. Confirming physical presence is essential to determine if gravity control was actually achieved.",
+        "priority": "high",
+        "status": "open"
+      },
+      {
+        "id": "q-vl4yn7",
+        "tagId": "procedure-planning",
+        "proposedBy": "procedure-planning",
+        "routedTo": [
+          "procedure-planning"
+        ],
+        "text": "What is the specific requirement in R3 Outage Procedure or JSHA regarding retaining a top backup roll balance when hydraulics are bled and work rolls are removed?",
+        "intent": "determine-if-standard-procedure-requires-independent-restraint-for-raised-balanc",
+        "rationale": "If the procedure explicitly mandates an independent mechanical block, the blank field constitutes a direct procedural violation. If it does not mandate one but relies on 'wedging', we must investigate why wedging was assumed sufficient.",
+        "evidenceNeeded": [
+          "R3 Outage Procedure Document",
+          "JSHA for R3 Stand"
+        ],
+        "causalBranch": "determine-if-standard-procedure-requires-independent-restraint-for-raised-balanc",
+        "decisionUnlocked": "If the procedure explicitly mandates an independent mechanical block, the blank field constitutes a direct procedural violation. If it does not mandate one but relies on 'wedging', we must investigate why wedging was assumed sufficient.",
+        "priority": "high",
+        "status": "open"
+      },
+      {
+        "id": "q-myo76q",
+        "tagId": "maintenance-outage",
+        "proposedBy": "maintenance-outage",
+        "routedTo": [
+          "maintenance-outage"
+        ],
+        "text": "Does the Keeper design specification allow it to retain the link arm against gravity when the beam is off-center or displaced from the yoke centerline, as observed in video review?",
+        "intent": "verify-keeper-sufficiency-under-displacement",
+        "rationale": "The incident description notes the keeper was installed but the beam appeared displaced. If the keeper relies on a centered load path for retention, displacement could render it ineffective even if mechanically intact.",
+        "evidenceNeeded": [
+          "Mechanical Assembly and Retention Record (01_Mechanical_Assembly_and_Retention_Record.pdf)",
+          "Keeper design drawings or test reports",
+          "Engineering analysis of off-center loading scenarios"
+        ],
+        "causalBranch": "verify-keeper-sufficiency-under-displacement",
+        "decisionUnlocked": "The incident description notes the keeper was installed but the beam appeared displaced. If the keeper relies on a centered load path for retention, displacement could render it ineffective even if mechanically intact.",
+        "priority": "high",
+        "status": "open"
+      },
+      {
+        "id": "q-cnxu29",
+        "tagId": "procedure-planning",
+        "proposedBy": "procedure-planning",
+        "routedTo": [
+          "procedure-planning"
+        ],
+        "text": "Does the equipment manual or maintenance history define the top backup roll balance cylinder/piston design such that it relies on hydraulic pressure to maintain position, making mechanical wedging unreliable once fluid is bled?",
+        "intent": "assess-the-validity-of-wedging-as-a-retention-strategy-under-zero-pressure",
+        "rationale": "The timeline shows gradual yoke movement and eventual fall. If the component was designed for pressurized support only, leaving it 'wedged' without a block would be an inherent design/operational hazard.",
+        "evidenceNeeded": [
+          "Top Backup Roll Balance Assembly Drawing",
+          "Maintenance Manual"
+        ],
+        "causalBranch": "assess-the-validity-of-wedging-as-a-retention-strategy-under-zero-pressure",
+        "decisionUnlocked": "The timeline shows gradual yoke movement and eventual fall. If the component was designed for pressurized support only, leaving it 'wedged' without a block would be an inherent design/operational hazard.",
+        "priority": "medium",
+        "status": "open"
+      },
+      {
+        "id": "q-q1e6i3",
+        "tagId": "maintenance-outage",
+        "proposedBy": "maintenance-outage",
+        "routedTo": [
+          "maintenance-outage"
+        ],
+        "text": "Was the handwritten turnover note regarding keeper inspection acted upon and verified by a competent authority before Turn 2 work began, or was it merely noted without verification?",
+        "intent": "verify-turnover-note-actionability",
+        "rationale": "The adjudication conflict highlights that an anonymous handwritten note lacks chain of custody. We need to determine if there is formal evidence (signature, log entry) confirming the keeper check occurred.",
+        "evidenceNeeded": [
+          "Turnover log R3-EV-006",
+          "Witness statements from Turn 2 crew"
+        ],
+        "causalBranch": "verify-turnover-note-actionability",
+        "decisionUnlocked": "The adjudication conflict highlights that an anonymous handwritten note lacks chain of custody. We need to determine if there is formal evidence (signature, log entry) confirming the keeper check occurred.",
+        "priority": "medium",
+        "status": "open"
+      },
+      {
+        "id": "vq-pt59ss",
+        "tagId": "causal-verification",
+        "proposedBy": "causal-verification",
+        "routedTo": [],
+        "text": "Was there a formal, signed verification record for the keeper installation prior to bleeding hydraulics? If not, why was reliance placed on an anonymous handwritten note?",
+        "intent": "verify-edge-1rka871",
+        "rationale": "Causal edge attributes failure to an unverified handwritten note rather than documented procedure or physical verification.",
+        "evidenceNeeded": [
+          "Turnover log R3-EV-006 and any associated witness statements regarding the specific keeper check performed before Turn 2 work; evidence of who verified what and when."
+        ],
+        "priority": "high",
+        "status": "open",
+        "causalBranch": "verify-edge-1rka871",
+        "decisionUnlocked": "Causal edge attributes failure to an unverified handwritten note rather than documented procedure or physical verification."
+      },
+      {
+        "id": "vq-1i8u738",
+        "tagId": "causal-verification",
+        "proposedBy": "causal-verification",
+        "routedTo": [],
+        "text": "Was there an engineering assessment establishing that 'wedging' provided a reliable barrier against gravity load? If not, why was this assumption accepted as sufficient?",
+        "intent": "verify-edge-1vpqpxp",
+        "rationale": "Causal edge assumes wedging sufficed as a barrier condition without evidence of its reliability or rating.",
+        "evidenceNeeded": [
+          "Engineering analysis comparing Keeper rating to off-center displacement forces; inspection logs confirming whether the beam was actually wedged at the time hydraulics were bled."
+        ],
+        "priority": "high",
+        "status": "open",
+        "causalBranch": "verify-edge-1vpqpxp",
+        "decisionUnlocked": "Causal edge assumes wedging sufficed as a barrier condition without evidence of its reliability or rating."
+      },
+      {
+        "id": "vq-wdjxrs",
+        "tagId": "causal-verification",
+        "proposedBy": "causal-verification",
+        "routedTo": [],
+        "text": "Did a mechanical block physically exist on the gravity control point when hydraulics were isolated? If yes, why was it not recorded in the LOTO field?",
+        "intent": "verify-edge-8x77km",
+        "rationale": "Causal edge links blank LOTO field to failure without confirming whether a physical block existed but went undocumented.",
+        "evidenceNeeded": [
+          "Physical inspection log R3-EV-017 or equivalent contemporaneous record showing actual presence/absence of mechanical restraint at the time hydraulics were bled."
+        ],
+        "priority": "high",
+        "status": "open",
+        "causalBranch": "verify-edge-8x77km",
+        "decisionUnlocked": "Causal edge links blank LOTO field to failure without confirming whether a physical block existed but went undocumented."
+      },
+      {
+        "id": "vq-dt8j96",
+        "tagId": "causal-verification",
+        "proposedBy": "causal-verification",
+        "routedTo": [],
+        "text": "Was there an engineering evaluation determining that the installed keeper could withstand the specific off-center loading conditions present during this event?",
+        "intent": "verify-node-b0hs7c",
+        "rationale": "Node status is 'unknown' because sufficiency of keeper under off-center load has never been verified.",
+        "evidenceNeeded": [
+          "Engineering analysis or test data showing Keeper capacity relative to expected displacement forces; physical inspection confirming whether the beam was wedged at failure time."
+        ],
+        "priority": "high",
+        "status": "open",
+        "causalBranch": "verify-node-b0hs7c",
+        "decisionUnlocked": "Node status is 'unknown' because sufficiency of keeper under off-center load has never been verified."
+      }
+    ],
+    "skippedQuestions": [
+      {
+        "id": "covered-1tkcdqq",
+        "proposedBy": "stored-energy",
+        "text": "Was a physical mechanical block or rated restraint installed on the top backup roll balance cylinder assembly after hydraulic isolation and bleeding, despite the blank field in the lockout verification record?",
+        "intent": "verify-mechanical-restraint-status",
+        "coveredByQuestionId": "q-1dxfke6",
+        "coveredByTagId": "equipment-tool",
+        "reason": "Both questions seek to verify if a physical mechanical block was installed. q-1dxfke6 is the canonical version."
+      },
+      {
+        "id": "covered-1cph9pq",
+        "proposedBy": "isolation-loto",
+        "text": "Was a physical mechanical block or rated restraint actually installed on the Top Backup Roll Balance cylinder to prevent gravity descent, despite the blank field in the Lockout Verification Record?",
+        "intent": "verify-mechanical-restraint-status",
+        "coveredByQuestionId": "q-1dxfke6",
+        "coveredByTagId": "equipment-tool",
+        "reason": "Both questions verify if a physical restraint was installed despite the blank field. q-1dxfke6 is the canonical version."
+      },
+      {
+        "id": "covered-jm7x7n",
+        "proposedBy": "procedure-planning",
+        "text": "Does the physical lockout verification record or field sign-off sheet contain a specific entry, signature, or photo evidence confirming that an independent mechanical block or rated restraint was installed on the top backup roll balance before hydraulic isolation?",
+        "intent": "verify-existence-of-physical-mechanical-restraint-vs-procedural-omission",
+        "coveredByQuestionId": "q-vl4yn7",
+        "coveredByTagId": "procedure-planning",
+        "reason": "Both questions verify if a physical restraint was installed vs procedural omission. q-vl4yn7 is the canonical version."
+      },
+      {
+        "id": "covered-bjabgp",
+        "proposedBy": "procedure-planning",
+        "text": "Was the keeper installed on the link arm intended to serve as a secondary retention for gravity loads, or is it only rated/verified for normal operation with work rolls in place?",
+        "intent": "clarify-the-status-of-the-keeper-device-during-outage-configuration",
+        "coveredByQuestionId": "q-myo76q",
+        "coveredByTagId": "maintenance-outage",
+        "reason": "Both questions clarify the status of the keeper device during outage configuration. q-1lnvmg6 asks about intended use while q-myo76q specifically addresses off-center displacement scenarios."
+      },
+      {
+        "id": "covered-ew4hkv",
+        "proposedBy": "maintenance-outage",
+        "text": "Was a physical mechanical block or rated restraint actually installed on the Top Backup Roll Balance cylinder to support its raised position after hydraulic isolation, and if so, where is it documented in shift logs or inspection records?",
+        "intent": "verify-mechanical-restraint-status",
+        "coveredByQuestionId": "q-1dxfke6",
+        "coveredByTagId": "equipment-tool",
+        "reason": "Both questions verify if a physical restraint was installed. q-1dxfke6 is the canonical version."
+      },
+      {
+        "id": "covered-1a86v8w",
+        "proposedBy": "communication-supervision",
+        "text": "Did the Turn 2 crew physically inspect for an independent mechanical block on the top backup roll balance before beginning work, or did they rely solely on the 'Raised' status noted in the LOTO record?",
+        "intent": "verify-mechanical-restraint-status",
+        "coveredByQuestionId": "q-myo76q",
+        "coveredByTagId": "maintenance-outage",
+        "reason": "Both questions verify if a physical restraint was installed. q-1dxfke6 is the canonical version."
+      },
+      {
+        "id": "rejected-question-238uqn",
+        "proposedBy": "causal-verification",
+        "text": "Does the mechanical design drawing for R3 show an inherent stop preventing off-center displacement? If yes, provide evidence that it was present and functional during the event interval.",
+        "intent": "verify-edge-aob1wz",
+        "coveredByQuestionId": "vq-1ufnfqn",
+        "coveredByTagId": "causal-verification",
+        "reason": "Rejected by the quality gate because this is not a clear grammatical question."
+      },
+      {
+        "id": "covered-tiveuw",
+        "proposedBy": "causal-analysis",
+        "text": "Was a rated mechanical block or independent support physically installed in the yoke pocket to hold the raised balance cylinder after hydraulic isolation?",
+        "intent": "verify-physical-presence-of-mechanical-restraint-on-top-backup-roll-balance",
+        "coveredByQuestionId": "q-1dxfke6",
+        "coveredByTagId": "equipment-tool",
+        "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+      },
+      {
+        "id": "covered-13b6x67",
+        "proposedBy": "causal-analysis",
+        "text": "What is the specific requirement in R3 Outage Procedure or JSHA regarding retaining a top backup roll balance when hydraulics are bled and work rolls are removed?",
+        "intent": "determine-if-standard-procedure-requires-independent-restraint-for-raised-balanc",
+        "coveredByQuestionId": "q-vl4yn7",
+        "coveredByTagId": "procedure-planning",
+        "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+      },
+      {
+        "id": "covered-opxkcz",
+        "proposedBy": "causal-analysis",
+        "text": "Does the Keeper design specification allow it to retain the link arm against gravity when the beam is off-center or displaced from the yoke centerline, as observed in video review?",
+        "intent": "verify-keeper-sufficiency-under-displacement",
+        "coveredByQuestionId": "q-myo76q",
+        "coveredByTagId": "maintenance-outage",
+        "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+      },
+      {
+        "id": "covered-1ftc9h8",
+        "proposedBy": "causal-analysis",
+        "text": "Does the equipment manual define the top backup roll balance cylinder/piston design such that it relies on hydraulic pressure to maintain position, making mechanical wedging unreliable once fluid is bled?",
+        "intent": "assess-the-validity-of-wedging-as-a-retention-strategy-under-zero-pressure",
+        "coveredByQuestionId": "q-cnxu29",
+        "coveredByTagId": "procedure-planning",
+        "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+      },
+      {
+        "id": "covered-rdqoqi",
+        "proposedBy": "causal-analysis",
+        "text": "Was the handwritten turnover note regarding keeper inspection acted upon and verified by a competent authority before Turn 2 work began, or was it merely noted without verification?",
+        "intent": "verify-turnover-note-actionability",
+        "coveredByQuestionId": "q-q1e6i3",
+        "coveredByTagId": "maintenance-outage",
+        "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+      }
+    ],
+    "answers": [],
+    "documentIntelligence": [
+      {
+        "documentId": "c671091a-7741-4461-aba2-8fa6d5bbf39a",
+        "title": "PARTNER_REFERENCE_Confined_Space_Standard.pdf",
+        "fileName": "PARTNER_REFERENCE_Confined_Space_Standard.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.255Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "bedef97c-0ff9-4ff1-80a4-6757f87ce42e",
+        "title": "PARTNER_REFERENCE_Energy_Isolation_Standard_text_copy.txt",
+        "fileName": "PARTNER_REFERENCE_Energy_Isolation_Standard_text_copy.txt",
+        "contentType": "text/plain",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.255Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "a04da8b1-19ee-4708-acff-aaad4b2e84e7",
+        "title": "PARTNER_REFERENCE_Fall_Protection_Standard.pdf",
+        "fileName": "PARTNER_REFERENCE_Fall_Protection_Standard.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.255Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "f3378070-59ee-4c17-8702-4b85ff4f8404",
+        "title": "PARTNER_REFERENCE_Overhead_Crane_Safety.pdf",
+        "fileName": "PARTNER_REFERENCE_Overhead_Crane_Safety.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.255Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "cc1a2b99-1195-46b3-8e86-f11072f550e1",
+        "title": "PARTNER_REFERENCE_Safety_Handbook.pdf",
+        "fileName": "PARTNER_REFERENCE_Safety_Handbook.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.255Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "835b0452-e105-449a-b30b-2a1136746535",
+        "title": "R3_Area_Orientation.pdf",
+        "fileName": "R3_Area_Orientation.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "22b5d050-a0cb-4e24-a4fb-fddeabefb756",
+        "title": "R3_Outage_Roles_and_Records_Guide.pdf",
+        "fileName": "R3_Outage_Roles_and_Records_Guide.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "64c1c3ba-63e2-4a10-8767-088d76228e61",
+        "title": "R3_Roll_Balance_System_Primer.pdf",
+        "fileName": "R3_Roll_Balance_System_Primer.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "d6550cb9-11d6-47d9-a538-f0e1d99f489f",
+        "title": "Initial_Evidence_Register.pdf",
+        "fileName": "Initial_Evidence_Register.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "ab10970a-5ae2-45ed-a509-682b348d15a8",
+        "title": "Initial_Scene_Sketch_and_Timeline.pdf",
+        "fileName": "Initial_Scene_Sketch_and_Timeline.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "47f9b7de-0572-4fc4-981c-988ba5e95e4c",
+        "title": "Preliminary_Incident_Notification_16515.pdf",
+        "fileName": "Preliminary_Incident_Notification_16515.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "d0d0c922-3e3e-4a8a-b3c9-63b4d1507dc3",
+        "title": "GTDE-01_configuration_and_travel_observation.md",
+        "fileName": "GTDE-01_configuration_and_travel_observation.md",
+        "contentType": "text/markdown",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "4c287777-3168-4385-8d49-0f7a960f1d1b",
+        "title": "GTDE-02_extended_video_review.md",
+        "fileName": "GTDE-02_extended_video_review.md",
+        "contentType": "text/markdown",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "f5e83f96-cf54-4b66-9545-683f5eea1f4c",
+        "title": "GTDE-03_hydraulic_isolation_followup.md",
+        "fileName": "GTDE-03_hydraulic_isolation_followup.md",
+        "contentType": "text/markdown",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5",
+        "title": "GTDE-04_mechanical_design_and_retention_review.md",
+        "fileName": "GTDE-04_mechanical_design_and_retention_review.md",
+        "contentType": "text/markdown",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "5ca223b3-3f7f-4b63-85d2-6e4c56aa2a9c",
+        "title": "GTDE-05_task_loto_review.md",
+        "fileName": "GTDE-05_task_loto_review.md",
+        "contentType": "text/markdown",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "939b63ca-3c60-467d-b294-7901a06510fd",
+        "title": "GTDE-06_measurement_and_condition_summary.md",
+        "fileName": "GTDE-06_measurement_and_condition_summary.md",
+        "contentType": "text/markdown",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "33e72c4f-2208-4083-a842-a85998150aa4",
+        "title": "01_Superseded_Similar_Stand_Drawing_Note.pdf",
+        "fileName": "01_Superseded_Similar_Stand_Drawing_Note.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "ec62a183-dcd6-4a5a-87ce-23798398355f",
+        "title": "02_Anonymous_Turnover_Note.pdf",
+        "fileName": "02_Anonymous_Turnover_Note.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "638ba6e1-8fc6-4a0a-bfd4-72fc44c8f752",
+        "title": "03_Unverified_Crane_Rumor_Email.pdf",
+        "fileName": "03_Unverified_Crane_Rumor_Email.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "765984bd-6f9c-4960-ac9a-81a5a8eda379",
+        "title": "01_Mechanical_Assembly_and_Retention_Record.pdf",
+        "fileName": "01_Mechanical_Assembly_and_Retention_Record.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "a3387037-dc3e-4ac0-a6be-a3f9a6e61e63",
+        "title": "02_Energy_Control_Plan.pdf",
+        "fileName": "02_Energy_Control_Plan.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "e9a42d6f-26d6-4ae4-9333-fbedaa087069",
+        "title": "03_Lockout_Verification_Record.pdf",
+        "fileName": "03_Lockout_Verification_Record.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "52f485b3-052e-44ee-8f84-63c152e8cb17",
+        "title": "04_Shift_Turnover_Log.pdf",
+        "fileName": "04_Shift_Turnover_Log.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "47628223-f5e8-4c4c-b110-e537304fe934",
+        "title": "05_Outage_Work_Scope_and_Sequence.pdf",
+        "fileName": "05_Outage_Work_Scope_and_Sequence.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "fbdfae4d-1252-4752-8702-cd062e468cea",
+        "title": "06_JJHAC_JSHA_Record.pdf",
+        "fileName": "06_JJHAC_JSHA_Record.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "b8d57a5e-db36-42d0-bb7f-ca908b9aaead",
+        "title": "07_Witness_Statement_Packet.pdf",
+        "fileName": "07_Witness_Statement_Packet.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "66b78607-a641-4655-b0c2-61d51752d84b",
+        "title": "08_Crane_Activity_Log.pdf",
+        "fileName": "08_Crane_Activity_Log.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "cf65ab90-10af-4604-b48e-4b0b7f3b3f5d",
+        "title": "09_Hydraulic_Status_and_Bleed_Verification.pdf",
+        "fileName": "09_Hydraulic_Status_and_Bleed_Verification.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "6c518081-a51b-4b6a-ab6c-905d7be42baf",
+        "title": "10_Scene_Photo_Index_and_Measurement_Log.pdf",
+        "fileName": "10_Scene_Photo_Index_and_Measurement_Log.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "528deeb2-6e77-4c8f-a062-f1ced34f2c7b",
+        "title": "11_Post_Event_Mechanical_Inspection.pdf",
+        "fileName": "11_Post_Event_Mechanical_Inspection.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      },
+      {
+        "documentId": "574758e7-6cbb-46e0-aca0-5bdbee8cad7f",
+        "title": "15_Video_Review_Log.pdf",
+        "fileName": "15_Video_Review_Log.pdf",
+        "contentType": "application/pdf",
+        "mode": "embedded-text",
+        "documentType": "machine-readable document",
+        "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+        "observations": [],
+        "limitations": [],
+        "processedAt": "2026-09-08T22:17:14.256Z",
+        "engine": "deterministic:document-extraction",
+        "validation": "fallback"
+      }
+    ],
+    "sourceAssessments": [
+      {
+        "sourceId": "R3-EV-005",
+        "documentId": "e9a42d6f-26d6-4ae4-9333-fbedaa087069",
+        "label": "Executed Lockout Verification Record",
+        "authority": "controlled",
+        "directness": "contemporaneous-record",
+        "applicability": "direct-r3",
+        "revisionStatus": "current",
+        "reliability": "high",
+        "supports": [
+          "B hydraulic isolation was verified (valve shut, lock applied).",
+          "Hydraulic bleed path opened and gauge read 0 psi.",
+          "Top backup roll balance position noted as 'Raised'."
+        ],
+        "cautions": [
+          "The field for 'Mechanical block or rated restraint ID' is blank.",
+          "No independent verifier signature present on the gravity control entry."
+        ],
+        "limitations": [
+          "Record proves what was written, not necessarily verified physically if signatures are missing; requires corroboration from physical inspection logs (R3-EV-017) or witness testimony regarding mechanical restraint status."
+        ],
+        "id": "source-assessment-60vmby"
+      }
+    ],
+    "adjudicationConflicts": [
+      {
+        "summary": "Crane involvement claim vs. operational logs",
+        "sourceIds": [
+          "R3-CH-003",
+          "R3-EV-010"
+        ],
+        "resolutionNeeded": "Operational log (R3-EV-010) shows no commanded crane travel or lift tickets for R3 bay during the event interval. Witness statement packet (R3-EV-09) explicitly states witnesses did not see a crane hook, rigging, or person touching it. The email rumor (R3-CH-003) is hearsay with unknown origin and time; logs contradict the claim.",
+        "id": "adjudication-conflict-bah50f"
+      },
+      {
+        "summary": "Keeper inspection note validity",
+        "sourceIds": [
+          "R3-EV-006",
+          "R3-CH-002"
+        ],
+        "resolutionNeeded": "Turnover log (R3-EV-006) notes a 'turnover note' regarding keeper check but does not confirm verification. Anonymous handwritten note (R3-CH-002) lacks author, time, or chain of custody; cannot be treated as authoritative evidence that the keeper was verified.",
+        "id": "adjudication-conflict-a7qbj5"
+      },
+      {
+        "id": "adjudication-conflict-1sqvibj",
+        "summary": "The model did not adjudicate 31 of 32 supplied evidence segments.",
+        "sourceIds": [
+          "c671091a-7741-4461-aba2-8fa6d5bbf39a#1",
+          "bedef97c-0ff9-4ff1-80a4-6757f87ce42e#1",
+          "a04da8b1-19ee-4708-acff-aaad4b2e84e7#1",
+          "f3378070-59ee-4c17-8702-4b85ff4f8404#1",
+          "cc1a2b99-1195-46b3-8e86-f11072f550e1#1",
+          "R3-DEF-001",
+          "R3-DEF-003",
+          "R3-DEF-002"
+        ],
+        "resolutionNeeded": "Re-run source adjudication in smaller batches before treating the evidence review as complete."
+      }
+    ],
+    "evidenceClaims": [
+      {
+        "text": "The R3 exit carrier beam fell from the yoke into the mill pit at approximately 1:03 PM on October 14, 2024.",
+        "kind": "direct-observation",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "routedTo": [],
+        "id": "claim-1sb3iv3"
+      },
+      {
+        "text": "Work rolls and backup rolls had been removed prior to the event.",
+        "kind": "testimony",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description",
+          "GTDE-01_configuration_and_travel_observation.md"
+        ],
+        "routedTo": [],
+        "id": "claim-mw0yae"
+      },
+      {
+        "text": "The top backup roll balance was left in a raised position after hydraulic isolation.",
+        "kind": "testimony",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description",
+          "GTDE-01_configuration_and_travel_observation.md"
+        ],
+        "routedTo": [],
+        "id": "claim-12sjidm"
+      },
+      {
+        "text": "The B hydraulic system was shut off and bled (gauge read 0 psi).",
+        "kind": "measurement",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description",
+          "R3-EV-011"
+        ],
+        "routedTo": [],
+        "id": "claim-10j1u8a"
+      },
+      {
+        "text": "The top backup roll balance remained in a raised position without an independent mechanical restraint or verified support condition after pressure removal.",
+        "kind": "inference",
+        "status": "partially-supported",
+        "sourceIds": [
+          "incident-description",
+          "R3-EV-005"
+        ],
+        "routedTo": [],
+        "id": "claim-uvz5fq"
+      },
+      {
+        "text": "The carrier beam was wedged against mill components before falling once relative movement cleared an interference point.",
+        "kind": "inference",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description",
+          "GTDE-02_extended_video_review.md"
+        ],
+        "routedTo": [],
+        "id": "claim-56i6g2"
+      },
+      {
+        "text": "Witnesses observed visible rotation of the beam prior to impact but did not see a crane.",
+        "kind": "testimony",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description",
+          "R3-EV-009"
+        ],
+        "routedTo": [],
+        "id": "claim-172v3bc"
+      },
+      {
+        "text": "Operational logs show no commanded crane travel or lift tickets for R3 bay during the event interval.",
+        "kind": "record",
+        "status": "supported",
+        "sourceIds": [
+          "R3-EV-010"
+        ],
+        "routedTo": [],
+        "id": "claim-1jq04mz"
+      },
+      {
+        "text": "The lockout verification record shows the mechanical block ID field blank for gravity control.",
+        "kind": "record",
+        "status": "supported",
+        "sourceIds": [
+          "R3-EV-005"
+        ],
+        "routedTo": [],
+        "id": "claim-rgm13h"
+      },
+      {
+        "text": "The yoke moved downward gradually over approximately two hours prior to the fall.",
+        "kind": "inference",
+        "status": "supported",
+        "sourceIds": [
+          "GTDE-02_extended_video_review.md"
+        ],
+        "routedTo": [],
+        "id": "claim-qjmurz"
+      },
+      {
+        "text": "The keeper remained installed on the link assembly after recovery.",
+        "kind": "direct-observation",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description",
+          "R3-EV-012"
+        ],
+        "routedTo": [],
+        "id": "claim-1m582og"
+      },
+      {
+        "text": "No gross fracture was observed on the yoke or carrier beam components.",
+        "kind": "direct-observation",
+        "status": "supported",
+        "sourceIds": [
+          "incident-description",
+          "R3-EV-012"
+        ],
+        "routedTo": [],
+        "id": "claim-1sevr7"
+      },
+      {
+        "text": "A handwritten turnover note regarding keeper inspection exists but lacks author, time, or chain of custody.",
+        "kind": "record",
+        "status": "supported",
+        "sourceIds": [
+          "R3-EV-006",
+          "R3-CH-002"
+        ],
+        "routedTo": [],
+        "id": "claim-1j7o9k7"
+      },
+      {
+        "text": "The B hydraulic isolation valve was reported to have slow bleed-through.",
+        "kind": "testimony",
+        "status": "supported",
+        "sourceIds": [
+          "GTDE-03_hydraulic_isolation_followup.md"
+        ],
+        "routedTo": [],
+        "id": "claim-1m39amn"
+      },
+      {
+        "text": "The design of the system did not include a carrier-beam stop to prevent wedging on mill spreader/posts when backup rolls are absent.",
+        "kind": "expert-interpretation",
+        "status": "supported",
+        "sourceIds": [
+          "GTDE-04_mechanical_design_and_retention_review.md"
+        ],
+        "routedTo": [],
+        "id": "claim-8c4q0"
+      },
+      {
+        "text": "The keeper retains that pin. Explains why beam, link, and keeper could be recovered together.",
+        "kind": "testimony",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-EV-003"
+        ],
+        "routedTo": [
+          "maintenance-outage"
+        ],
+        "id": "claim-1fqnce4",
+        "questionId": "q-myo76q"
+      },
+      {
+        "text": "The investigation identified off-center displacement of the carrier beam and link arm as the path by which the link-arm stop could clear the yoke.",
+        "kind": "testimony",
+        "status": "unknown",
+        "sourceIds": [
+          "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5#1"
+        ],
+        "routedTo": [
+          "maintenance-outage"
+        ],
+        "id": "claim-1cjkwa9",
+        "questionId": "q-myo76q"
+      },
+      {
+        "text": "The keeper is not a positiv",
+        "kind": "testimony",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-EV-003"
+        ],
+        "routedTo": [
+          "maintenance-outage"
+        ],
+        "id": "claim-1odwa33",
+        "questionId": "q-myo76q"
+      },
+      {
+        "text": "The investigation focuses on verifying whether a mechanical restraint (block/rated device) was physically installed...",
+        "kind": "hearsay",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage",
+          "kb:stored-energy"
+        ],
+        "routedTo": [
+          "procedure-planning"
+        ],
+        "id": "claim-v3w0s6",
+        "questionId": "q-cnxu29"
+      },
+      {
+        "text": "Turnover note: keep personnel clear below upper balance components until day-turn",
+        "kind": "expert-interpretation",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-EV-006"
+        ],
+        "routedTo": [
+          "maintenance-outage"
+        ],
+        "id": "claim-80c1ny",
+        "questionId": "q-q1e6i3"
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "conflict-ofujmo",
+        "summary": "Witness claim of crane involvement vs. operational logs showing no R3 lift activity.",
+        "claimIds": [
+          "claim-1sb3iv3",
+          "claim-rgm13h"
+        ],
+        "status": "open",
+        "resolutionNeeded": "Operational log (R3-EV-010) contradicts the hearsay email and witness speculation regarding a crane bump; evidence supports rejection of crane involvement as cause."
+      },
+      {
+        "id": "conflict-1hxvxw2",
+        "summary": "Validity of anonymous handwritten turnover note vs. lack of verification in official shift log.",
+        "claimIds": [
+          "claim-qjmurz",
+          "claim-1m582og"
+        ],
+        "status": "open",
+        "resolutionNeeded": "The blank mechanical block ID field and the unverified nature of the anonymous note indicate that independent positive control was not documented or verified before Turn 2."
+      }
+    ],
+    "answerFetches": [
+      {
+        "id": "fetch-1uurc4a",
+        "questionId": "q-1dxfke6",
+        "status": "not-found",
+        "answer": "No reliable evidence in this packet confirms whether a rated mechanical block or independent support was physically installed.",
+        "sourceIds": [
+          "R3-EV-005"
+        ],
+        "claimIds": [],
+        "userRequest": "Confirming physical presence is essential to determine if gravity control was actually achieved. The record shows a blank field for 'Mechanical block ID' and no verifier signature.",
+        "searched": [
+          "R3-EV-004",
+          "R3-EV-005",
+          "R3-EV-006"
+        ]
+      },
+      {
+        "id": "fetch-1cm9gtd",
+        "questionId": "q-vl4yn7",
+        "status": "partial",
+        "answer": "The provided evidence does not contain a specific requirement in the 'R3 Outage Procedure' or 'JSHA for R3 Stand'. The available documents are synthetic test records that show blank fields where such requirements should be documented, rather than containing the actual text of those procedures.",
+        "sourceIds": [
+          "R3-START-002",
+          "R3-EV-006",
+          "R3-EV-004",
+          "R3-EV-007"
+        ],
+        "claimIds": [],
+        "userRequest": "What is the specific requirement in R3 Outage Procedure or JSHA regarding retaining a top backup roll balance when hydraulics are bled and work rolls are removed?",
+        "searched": [
+          "R3-START-002",
+          "R3-EV-006",
+          "R3-EV-004",
+          "R3-EV-007"
+        ]
+      },
+      {
+        "id": "fetch-1ot40q6",
+        "questionId": "q-myo76q",
+        "status": "partial",
+        "answer": "The evidence does not confirm whether the Keeper design specification allows retention under off-center displacement.",
+        "sourceIds": [
+          "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5#1",
+          "R3-EV-003"
+        ],
+        "claimIds": [
+          "claim-1fqnce4",
+          "claim-1cjkwa9",
+          "claim-1odwa33"
+        ],
+        "userRequest": "Provide the Keeper design specification, test reports for off-center loading scenarios, or engineering analysis confirming if the keeper can retain a displaced link arm against gravity.",
+        "searched": [
+          "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5#1",
+          "R3-EV-003"
+        ]
+      },
+      {
+        "id": "fetch-uy0biw",
+        "questionId": "q-cnxu29",
+        "status": "not-found",
+        "answer": "The provided evidence packet does not contain a Top Backup Roll Balance Assembly Drawing, Maintenance Manual, or any technical specification defining whether the cylinder/piston design relies on hydraulic pressure to maintain position versus mechanical wedging.",
+        "sourceIds": [],
+        "claimIds": [
+          "claim-v3w0s6"
+        ],
+        "userRequest": "Provide the Top Backup Roll Balance Assembly Drawing or Maintenance Manual section describing cylinder support mechanics (hydraulic-only vs. mechanical-wedge) to determine if wedging is an unreliable retention strategy under zero pressure.",
+        "searched": [
+          "R3_Roll_Balance_System_Primer.pdf",
+          "02_Energy_Control_Plan.pdf",
+          "GTDE-05_task_loto_review.md",
+          "03_Lockout_Verification_Record.pdf"
+        ]
+      },
+      {
+        "id": "fetch-1c4clye",
+        "questionId": "q-q1e6i3",
+        "status": "not-found",
+        "answer": "The evidence packet does not contain formal verification (signature, log entry) confirming that a competent authority acted upon or verified the handwritten turnover note regarding keeper inspection before Turn 2 work began.",
+        "sourceIds": [
+          "R3-EV-006"
+        ],
+        "claimIds": [
+          "claim-80c1ny"
+        ],
+        "userRequest": "Provide the Turnover log R3-EV-006 with any annotations or signatures indicating verification of the handwritten note by a competent authority before Turn 2 work began, or provide witness statements from the Turn 2 crew confirming whether such verification occurred.",
+        "searched": [
+          "R3-EV-006"
+        ]
+      }
+    ],
+    "causalBoard": {
+      "maturity": "initial",
+      "focalNodeId": "",
+      "nodes": [
+        {
+          "id": "node-1w4nim1",
+          "type": "event",
+          "label": "R3 exit carrier beam falls from yoke into mill pit",
+          "detail": "Beam and link landed on sled/scaffold platform at ~1:03 PM.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-1sb3iv3",
+            "incident-description"
+          ],
+          "specialistIds": [],
+          "verified": false
+        },
+        {
+          "id": "node-uyklun",
+          "type": "event",
+          "label": "Relative movement cleared interference point (link-arm stop)",
+          "detail": "Yoke moved downward; beam displaced off-center, clearing the yoke/lifting point.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-56i6g2",
+            "finding-f4vae7"
+          ],
+          "specialistIds": [],
+          "verified": false
+        },
+        {
+          "id": "node-1k5n0mm",
+          "type": "event",
+          "label": "Top backup roll balance exerts gravity load on carrier beam/link",
+          "detail": "Balance remained in raised position after hydraulics bled (0 psi). No independent mechanical restraint documented.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-uvz5fq",
+            "finding-x85agk"
+          ],
+          "specialistIds": [],
+          "verified": false
+        },
+        {
+          "id": "node-b0hs7c",
+          "type": "event",
+          "label": "Keeper device failed to retain link arm against gravity after displacement",
+          "detail": "Beam fell despite keeper being installed. Sufficiency under off-center load is unverified.",
+          "status": "unknown",
+          "sourceIds": [
+            "claim-1m582og"
+          ],
+          "specialistIds": [],
+          "verified": false
+        },
+        {
+          "id": "node-hvua7u",
+          "type": "condition",
+          "label": "Blank field for mechanical block ID in LOTO record (R3-EV-005)",
+          "detail": "No independent verifier signature or physical restraint documented for gravity control.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-rgm13h"
+          ],
+          "specialistIds": [],
+          "verified": false
+        },
+        {
+          "id": "node-nmppwf",
+          "type": "condition",
+          "label": "Assumption that hydraulic isolation/wedging suffices for gravity control without block",
+          "detail": "Hydraulics bled; reliance on 'wedged' state rather than positive mechanical restraint.",
+          "status": "supported",
+          "sourceIds": [
+            "finding-1k70zgu"
+          ],
+          "specialistIds": [],
+          "verified": false
+        },
+        {
+          "id": "node-cxirv3",
+          "type": "condition",
+          "label": "System design lacks carrier-beam stop to prevent wedging on spreader/posts when backup rolls absent",
+          "detail": "Off-center displacement possible; no inherent mechanical feature prevents clearance of lifting point.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-8c4q0"
+          ],
+          "specialistIds": [],
+          "verified": false
+        },
+        {
+          "id": "node-1ctp7m8",
+          "type": "condition",
+          "label": "Anonymous handwritten turnover note lacks chain of custody/verification",
+          "detail": "Note regarding keeper inspection exists but is not authoritative evidence of verification.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-1j7o9k7"
+          ],
+          "specialistIds": [],
+          "verified": false
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge-1vpqpxp",
+          "from": "node-nmppwf",
+          "to": "node-b0hs7c",
+          "type": "caused",
+          "rationale": "Assuming wedging sufficed led to failure to install/verify mechanical block, leaving barrier dependent on unreliable condition.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-uvz5fq"
+          ],
+          "claimIds": [],
+          "counterfactual": "If a verified mechanical block had been installed and documented before bleeding hydraulics, the gravity load would have been arrested regardless of wedging loss.",
+          "competingExplanation": "Keeper alone was sufficient (unverified hypothesis).",
+          "evidenceGap": "Engineering analysis of Keeper rating vs. off-center displacement.",
+          "verified": false
+        },
+        {
+          "id": "edge-8x77km",
+          "from": "node-hvua7u",
+          "to": "node-b0hs7c",
+          "type": "caused",
+          "rationale": "Blank LOTO field indicates failure to secure gravity load with independent restraint.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-rgm13h"
+          ],
+          "claimIds": [],
+          "counterfactual": "If a mechanical block ID had been recorded and verified, the barrier would have existed independently of hydraulic pressure or wedging.",
+          "competingExplanation": "Block was physically present but undocumented (unverified).",
+          "evidenceGap": "Physical inspection log R3-EV-017.",
+          "verified": false
+        },
+        {
+          "id": "edge-aob1wz",
+          "from": "node-cxirv3",
+          "to": "node-uyklun",
+          "type": "caused",
+          "rationale": "Lack of inherent stop allowed beam to displace off-center when yoke moved, clearing the lifting point.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-8c4q0"
+          ],
+          "claimIds": [],
+          "counterfactual": "If a mechanical stop existed on the carrier beam or yoke pocket, displacement would not have cleared the interference point.",
+          "competingExplanation": "Stop exists but was bypassed by operator error (unverified).",
+          "evidenceGap": "Mechanical design drawings for R3 stand.",
+          "verified": false
+        },
+        {
+          "id": "edge-1597mcy",
+          "from": "node-uyklun",
+          "to": "node-1w4nim1",
+          "type": "caused",
+          "rationale": "Once interference point cleared, gravity load on raised balance caused beam to fall.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-56i6g2"
+          ],
+          "claimIds": [],
+          "counterfactual": "If barrier (block or verified keeper) had remained effective after displacement, the event would not have occurred.",
+          "competingExplanation": "Crane involvement caused fall.",
+          "evidenceGap": "Operational logs contradict crane claim; witness testimony supports no crane.",
+          "verified": false
+        },
+        {
+          "id": "edge-1rka871",
+          "from": "node-1ctp7m8",
+          "to": "node-b0hs7c",
+          "type": "caused",
+          "rationale": "Reliance on unverified handwritten note instead of formal verification contributed to barrier failure.",
+          "status": "supported",
+          "sourceIds": [
+            "claim-1j7o9k7"
+          ],
+          "claimIds": [],
+          "counterfactual": "If a competent authority had verified and documented the keeper check before Turn 2 work, the event might have been prevented or detected earlier.",
+          "competingExplanation": "Note was sufficient but undocumented (unverified).",
+          "evidenceGap": "Turnover log R3-EV-006 details.",
+          "verified": false
+        }
+      ],
+      "verificationFindings": [
+        {
+          "id": "verify-1whquz",
+          "targetId": "edge-aob1wz",
+          "severity": "blocking",
+          "issue": "Causal edge relies on unsupported design claim and unverified bypass hypothesis.",
+          "evidenceNeeded": "Mechanical design drawings for R3 stand to confirm absence of carrier-beam stop; physical inspection or witness testimony regarding whether a stop existed but was bypassed.",
+          "question": "Does the mechanical design drawing for R3 show an inherent stop preventing off-center displacement? If yes, provide evidence that it was present and functional during the event interval."
+        },
+        {
+          "id": "verify-1150pvx",
+          "targetId": "edge-1rka871",
+          "severity": "blocking",
+          "issue": "Causal edge attributes failure to an unverified handwritten note rather than documented procedure or physical verification.",
+          "evidenceNeeded": "Turnover log R3-EV-006 and any associated witness statements regarding the specific keeper check performed before Turn 2 work; evidence of who verified what and when.",
+          "question": "Was there a formal, signed verification record for the keeper installation prior to bleeding hydraulics? If not, why was reliance placed on an anonymous handwritten note?"
+        },
+        {
+          "id": "verify-y07u75",
+          "targetId": "edge-1vpqpxp",
+          "severity": "blocking",
+          "issue": "Causal edge assumes wedging sufficed as a barrier condition without evidence of its reliability or rating.",
+          "evidenceNeeded": "Engineering analysis comparing Keeper rating to off-center displacement forces; inspection logs confirming whether the beam was actually wedged at the time hydraulics were bled.",
+          "question": "Was there an engineering assessment establishing that 'wedging' provided a reliable barrier against gravity load? If not, why was this assumption accepted as sufficient?"
+        },
+        {
+          "id": "verify-r0k88z",
+          "targetId": "edge-8x77km",
+          "severity": "blocking",
+          "issue": "Causal edge links blank LOTO field to failure without confirming whether a physical block existed but went undocumented.",
+          "evidenceNeeded": "Physical inspection log R3-EV-017 or equivalent contemporaneous record showing actual presence/absence of mechanical restraint at the time hydraulics were bled.",
+          "question": "Did a mechanical block physically exist on the gravity control point when hydraulics were isolated? If yes, why was it not recorded in the LOTO field?"
+        },
+        {
+          "id": "verify-1jwhi0h",
+          "targetId": "node-b0hs7c",
+          "severity": "blocking",
+          "issue": "Node status is 'unknown' because sufficiency of keeper under off-center load has never been verified.",
+          "evidenceNeeded": "Engineering analysis or test data showing Keeper capacity relative to expected displacement forces; physical inspection confirming whether the beam was wedged at failure time.",
+          "question": "Was there an engineering evaluation determining that the installed keeper could withstand the specific off-center loading conditions present during this event?"
+        }
+      ]
+    },
+    "correctiveActions": [],
+    "humanDecisions": [],
+    "trace": [
+      {
+        "id": "52d1967d-a435-486d-a578-10b3649f8192",
+        "stage": "document-intelligence",
+        "summary": "Made embedded text from 32 preserved document(s) available without adding model interpretation.",
+        "evidence": [
+          "c671091a-7741-4461-aba2-8fa6d5bbf39a",
+          "bedef97c-0ff9-4ff1-80a4-6757f87ce42e",
+          "a04da8b1-19ee-4708-acff-aaad4b2e84e7",
+          "f3378070-59ee-4c17-8702-4b85ff4f8404",
+          "cc1a2b99-1195-46b3-8e86-f11072f550e1",
+          "835b0452-e105-449a-b30b-2a1136746535",
+          "22b5d050-a0cb-4e24-a4fb-fddeabefb756",
+          "64c1c3ba-63e2-4a10-8767-088d76228e61",
+          "d6550cb9-11d6-47d9-a538-f0e1d99f489f",
+          "ab10970a-5ae2-45ed-a509-682b348d15a8",
+          "47f9b7de-0572-4fc4-981c-988ba5e95e4c",
+          "d0d0c922-3e3e-4a8a-b3c9-63b4d1507dc3",
+          "4c287777-3168-4385-8d49-0f7a960f1d1b",
+          "f5e83f96-cf54-4b66-9545-683f5eea1f4c",
+          "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5",
+          "5ca223b3-3f7f-4b63-85d2-6e4c56aa2a9c",
+          "939b63ca-3c60-467d-b294-7901a06510fd",
+          "33e72c4f-2208-4083-a842-a85998150aa4",
+          "ec62a183-dcd6-4a5a-87ce-23798398355f",
+          "638ba6e1-8fc6-4a0a-bfd4-72fc44c8f752",
+          "765984bd-6f9c-4960-ac9a-81a5a8eda379",
+          "a3387037-dc3e-4ac0-a6be-a3f9a6e61e63",
+          "e9a42d6f-26d6-4ae4-9333-fbedaa087069",
+          "52f485b3-052e-44ee-8f84-63c152e8cb17",
+          "47628223-f5e8-4c4c-b110-e537304fe934",
+          "fbdfae4d-1252-4752-8702-cd062e468cea",
+          "b8d57a5e-db36-42d0-bb7f-ca908b9aaead",
+          "66b78607-a641-4655-b0c2-61d51752d84b",
+          "cf65ab90-10af-4604-b48e-4b0b7f3b3f5d",
+          "6c518081-a51b-4b6a-ab6c-905d7be42baf",
+          "528deeb2-6e77-4c8f-a062-f1ced34f2c7b",
+          "574758e7-6cbb-46e0-aca0-5bdbee8cad7f"
+        ],
+        "unknowns": [],
+        "alternatives": [],
+        "confidence": 1,
+        "promptVersion": "try4.0.0",
+        "engine": "deterministic:document-extraction",
+        "durationMs": 0,
+        "validation": "valid"
+      },
+      {
+        "id": "b3359ad5-ee4d-4dc2-8b5c-fd5860f2271a",
+        "stage": "incident-understanding",
+        "summary": "The investigation has established a configuration change (roll removal) combined with hydraulic isolation and bleed, leaving a raised gravity-loaded assembly without documented independent mechanical restraint. Video evidence supports an interference/wedging mechanism that allowed displacement before failure. Crane involvement is contradicted by logs but remains unproven for earlier contact; however, the primary causal chain appears rooted in energy-control gaps (gravity source not independently secured) and potential design/retention limitations under outage conditions.",
+        "evidence": [
+          "Incident narrative",
+          "Video review log (wedging/displacement sequence)",
+          "Lockout verification record (blank block ID field)",
+          "Energy Control Plan requirements for gravity sources",
+          "Witness statements (no crane observed at event time)"
+        ],
+        "unknowns": [
+          "Exact mechanical clearance and retention capacity under zero-pressure conditions.",
+          "Whether the raised balance was ever verified as 'secure' by a second party before Turn 2."
+        ],
+        "alternatives": [
+          "Crane contact earlier in shift caused displacement (contradicted by logs but not fully excluded for pre-1:03 PM interval).",
+          "Keeper failure due to wear or off-center loading under gravity alone.",
+          "Hydraulic bleed-through sufficient to allow yoke drift and loss of beam support."
+        ],
+        "confidence": 0.72,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 97050,
+        "validation": "valid"
+      },
+      {
+        "id": "0f9bf470-142c-4ceb-8bb1-f261210f8663",
+        "stage": "incident-structuring",
+        "summary": "The incident resulted from a configuration change (roll removal) combined with hydraulic isolation that left a gravity-loaded assembly unsupported. Video evidence indicates the beam became wedged, then displaced off-center as relative movement occurred between components or due to yoke drift, allowing retention stops to clear and causing failure.",
+        "evidence": [
+          "Incident narrative",
+          "Video review log showing displacement sequence",
+          "Lockout verification record (blank block ID field)",
+          "Witness statements contradicting crane involvement at event time"
+        ],
+        "unknowns": [
+          "Exact mechanical clearance under zero-pressure conditions.",
+          "Whether raised balance was verified as secure by a second party before Turn 2."
+        ],
+        "alternatives": [
+          "Crane contact earlier in shift caused displacement (contradicted by logs but not fully excluded for pre-1:03 PM interval).",
+          "Keeper failure due to wear or off-center loading under gravity alone.",
+          "Hydraulic bleed-through sufficient to allow yoke drift and loss of beam support."
+        ],
+        "confidence": 0.72,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 123034,
+        "validation": "valid"
+      },
+      {
+        "id": "a866ffc1-5220-450c-84e4-b9f1a1487a69",
+        "stage": "tagging",
+        "summary": "The investigation focuses on how gravity energy was uncontrolledly released from a raised hydraulic balance cylinder after isolation and bleeding during an outage configuration.",
+        "evidence": [
+          "Lockout verification record showing blank mechanical block ID",
+          "Timeline of roll removal, hydraulics bled, and beam falling",
+          "Witness accounts describing rotation prior to impact"
+        ],
+        "unknowns": [
+          "Exact mechanical clearance between raised balance assembly and mill spreader under zero-hydraulic pressure conditions.",
+          "Whether the keeper alone was sufficient to retain link against gravity once wedging ceased given observed displacement."
+        ],
+        "alternatives": [],
+        "confidence": 0.85,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 44486,
+        "validation": "valid"
+      },
+      {
+        "id": "3482e241-a5fd-4158-897c-7354bb0850f7",
+        "stage": "evidence-adjudication",
+        "summary": "The incident is best explained by a gravity-driven failure where hydraulic isolation removed support for a raised top backup roll balance. The lockout verification record (R3-EV-005) confirms hydraulics were bled but shows no documented mechanical restraint ID, indicating either omission or absence of independent positive control. Video interpretation (GTDE-02) suggests the beam was temporarily wedged against mill components; once relative movement cleared an interference point (off-center displacement), gravity caused failure despite the keeper being installed post-event. Crane involvement is refuted by logs and witness accounts.",
+        "evidence": [
+          "R3-EV-005",
+          "GTDE-02_extended_video_review.md",
+          "R3-EV-010",
+          "R3-EV-009"
+        ],
+        "unknowns": [
+          "Exact mechanical clearance between raised balance and mill spreader under zero pressure.",
+          "Whether the keeper alone could retain load once wedging ceased given off-center displacement."
+        ],
+        "alternatives": [
+          "Keeper failed due to wear or misalignment (not ruled out by post-event inspection which only noted 'no gross fracture').",
+          "Hydraulic bleed-through caused gradual pressure loss allowing yoke drift before beam fell."
+        ],
+        "confidence": 0.85,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 77432,
+        "validation": "valid"
+      },
+      {
+        "id": "c230e42c-9f9c-486d-ab3a-56b25723d2bf",
+        "stage": "equipment-tool",
+        "summary": "The investigation has identified a critical gap: lack of documented and verified mechanical restraint for gravity control. The next step is physical verification of whether any block was present despite the blank record, followed by engineering assessment of the Keeper's sufficiency.",
+        "evidence": [
+          "R3-EV-005 (Lockout Verification Record)",
+          "incident-description",
+          "timeline events"
+        ],
+        "unknowns": [
+          "Whether a mechanical block existed physically but was not recorded,"
+        ],
+        "alternatives": [],
+        "confidence": 0.85,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 39016,
+        "validation": "valid"
+      },
+      {
+        "id": "f6d36ebd-dda7-4b04-84c6-b9e2de145711",
+        "stage": "stored-energy",
+        "summary": "The investigation focuses on verifying the existence of a physical mechanical restraint despite blank documentation and assessing fluid bleed-through rates. The keeper's sufficiency under off-center displacement conditions is also being evaluated.",
+        "evidence": [
+          "incident-description",
+          "R3-EV-005"
+        ],
+        "unknowns": [
+          "Exact rate of fluid bleed-through or pressure decay on isolated branch without historian data",
+          "Whether the keeper alone was sufficient to retain link against gravity once wedging ceased given observed displacement"
+        ],
+        "alternatives": [],
+        "confidence": 0.85,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 48167,
+        "validation": "valid"
+      },
+      {
+        "id": "5fd4048b-9a25-4eea-bd13-d80430276ef1",
+        "stage": "isolation-loto",
+        "summary": "The investigation has identified a critical gap: the Lockout Verification Record lacks documentation for a mechanical restraint on a raised, unverified hydraulic balance. The next step is to physically confirm if such a restraint existed or was intended but omitted from records.",
+        "evidence": [
+          "Lockout verification record (blank block ID field)",
+          "Incident description (raised top backup roll balance without independent restraint)"
+        ],
+        "unknowns": [
+          "Whether the blank field represented an omission, error, or intentional reliance on non-existent restraints",
+          "The physical presence of any mechanical blocks at the time of isolation"
+        ],
+        "alternatives": [
+          "Possibility that a block was used but not recorded (documentation failure)",
+          "Possibility that no block was ever intended and reliance was placed solely on hydraulic pressure or wedging conditions",
+          "Possibility that the keeper device alone was deemed sufficient by procedure, though evidence suggests otherwise"
+        ],
+        "confidence": 0.75,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 36346,
+        "validation": "valid"
+      },
+      {
+        "id": "667f51da-88f7-4805-8a62-115d55cbcfce",
+        "stage": "procedure-planning",
+        "summary": "The investigation has identified a critical gap between the documented state (blank mechanical block ID) and the physical hazard (raised gravity load). The next step is to determine if this was an undocumented restraint or a missing one, and whether standard procedure permits relying on wedging.",
+        "evidence": [
+          "R3-EV-005 Lockout Verification Record",
+          "Incident Description Timeline"
+        ],
+        "unknowns": [],
+        "alternatives": [],
+        "confidence": 0.8,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 42876,
+        "validation": "valid"
+      },
+      {
+        "id": "67eca799-f31d-4156-a960-2420539a9b41",
+        "stage": "maintenance-outage",
+        "summary": "The investigation has confirmed that the Top Backup Roll Balance was left in a raised position without documented mechanical restraint and with potential hydraulic bleed-through. The critical unknown is whether a physical block existed but was undocumented, or if none existed at all. Additionally, we must determine if the Keeper alone could retain the link under off-center displacement conditions.",
+        "evidence": [
+          "R3-EV-005 (Lockout Verification Record)",
+          "4c287777-3168-4385-8d49-0f7a960f1d1b (Timeline events)",
+          "incident-description",
+          "adjudication-conflict-bah50f"
+        ],
+        "unknowns": [
+          "Physical presence of mechanical restraint on raised balance cylinder.",
+          "Sufficiency of Keeper under off-center displacement conditions.",
+          "Verification status of handwritten turnover note regarding keeper inspection."
+        ],
+        "alternatives": [],
+        "confidence": 0.82,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 60352,
+        "validation": "valid"
+      },
+      {
+        "id": "e91b9af0-666b-492f-bcce-81cc9300e9f9",
+        "stage": "communication-supervision",
+        "summary": "The investigation has identified a discrepancy between the documented 'Raised' position and the lack of recorded mechanical restraint ID. The next step is to determine if Turn 2 personnel verified physical restraints or assumed hydraulic isolation was sufficient.",
+        "evidence": [
+          "R3-EV-005 (Lockout Verification Record)",
+          "incident-description"
+        ],
+        "unknowns": [],
+        "alternatives": [
+          "Turnover note regarding keeper inspection may have been acted upon but not recorded; this is a separate issue from the backup roll balance restraint.",
+          "The blank field in R3-EV-005 might be an administrative error rather than evidence of non-compliance, requiring corroboration."
+        ],
+        "confidence": 0.82,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 31432,
+        "validation": "valid"
+      },
+      {
+        "id": "0f045879-c89d-4cb7-b6e4-fb61bfac6cf2",
+        "stage": "question-broker",
+        "summary": "The investigation has identified five canonical questions that address the core causal branches: physical presence of restraint (q-1dxfke6), procedural requirements for independent restraints (q-vl4yn7), keeper sufficiency under displacement (q-myo76q), validity of wedging as a retention strategy (q-cnxu29), and actionability of turnover notes (q-q1e6i3). All other proposed questions are covered by these canonical versions.",
+        "evidence": [
+          "incident-description",
+          "01_Mechanical_Assembly_and_Retention_Record.pdf"
+        ],
+        "unknowns": [
+          "Exact mechanical clearance between raised balance assembly and mill spreader/posts under zero-hydraulic pressure conditions.",
+          "Whether the keeper alone was sufficient to retain the link against gravity once wedging ceased given observed displacement."
+        ],
+        "alternatives": [],
+        "confidence": 0.95,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 102427,
+        "validation": "valid"
+      },
+      {
+        "id": "47b3924a-528d-46b2-9696-90009ccbd918",
+        "stage": "answer-fetching",
+        "summary": "The Lockout Verification Record (R3-EV-005) explicitly states the 'Mechanical block or rated restraint ID field is blank' and notes a gap in record. No other source provides physical inspection data, photographs, or witness testimony confirming installation.",
+        "evidence": [
+          "R3-EV-005: Recorded value for gravity control shows mechanical block/restraint ID as blank."
+        ],
+        "unknowns": [
+          "Whether a rated restraint was physically installed but not recorded in the synthetic test evidence packet.",
+          "The specific verification method used (if any) to confirm support after hydraulic isolation, given the record gap."
+        ],
+        "alternatives": [],
+        "confidence": 0.95,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 24957,
+        "validation": "valid"
+      },
+      {
+        "id": "2636f282-b5f4-4413-b411-897f84b65fb9",
+        "stage": "answer-fetching",
+        "summary": "The investigation question asks for the content of specific procedural documents ('R3 Outage Procedure' or 'JSHA'). The evidence packet contains synthetic test records (e.g., R3-EV-004, R3-EV-007) that describe an incident and show blank fields in Lockout/Tagout verification forms. These sources do not contain the full text of the standard procedures themselves.",
+        "evidence": [
+          "R3-EV-004 (Energy Control Plan - Synthetic)",
+          "R3-EV-007 (Outage Work Scope and Sequence - Synthetic)"
+        ],
+        "unknowns": [
+          "The actual text of the 'R3 Outage Procedure' or 'JSHA for R3 Stand'.",
+          "Whether a specific clause mandates an independent mechanical block versus relying on wedging."
+        ],
+        "alternatives": [],
+        "confidence": 0.95,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 30288,
+        "validation": "valid"
+      },
+      {
+        "id": "af8c8cc5-62a4-4570-bb9e-d71f7e318dc4",
+        "stage": "answer-fetching",
+        "summary": "The available evidence describes the Keeper's function and notes off-center displacement occurred, but does not contain the specific design specification or test data required to determine if retention is possible under those conditions.",
+        "evidence": [
+          "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5#1",
+          "R3-EV-003"
+        ],
+        "unknowns": [
+          "Keeper design specification for off-center loading.",
+          "Test reports on Keeper sufficiency under displacement."
+        ],
+        "alternatives": [
+          "The keeper relies solely on a centered load path and fails when displaced (hypothesis).",
+          "The keeper is designed to function regardless of minor displacement (hypothesis)."
+        ],
+        "confidence": 0.5,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 38335,
+        "validation": "valid"
+      },
+      {
+        "id": "cf2a95bd-2812-46d5-b563-994d0e550bb7",
+        "stage": "answer-fetching",
+        "summary": "The question cannot be answered from the current evidence. The packet contains procedural records (LOTO, Energy Control Plans) and specialist knowledge summaries regarding the incident's energy state but lacks the specific equipment design documentation required to confirm if the cylinder relies on hydraulic pressure for position retention.",
+        "evidence": [],
+        "unknowns": [
+          "Does the Top Backup Roll Balance Assembly Drawing exist in this track?",
+          "What does the Maintenance Manual specify about zero-pressure support mechanisms?"
+        ],
+        "alternatives": [],
+        "confidence": 0.95,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 27070,
+        "validation": "valid"
+      },
+      {
+        "id": "f742cdca-b494-44db-8307-08cec50e33a4",
+        "stage": "answer-fetching",
+        "summary": "The provided excerpt of R3-EV-006 lists a 'Turnover note' but does not show evidence (signature or log entry) that it was verified by a competent authority. The document is marked as synthetic test record without chain of custody details for the specific verification event.",
+        "evidence": [
+          "R3-EV-006"
+        ],
+        "unknowns": [
+          "Whether the handwritten note regarding keeper inspection was acted upon and verified by a competent authority before Turn 2 work began."
+        ],
+        "alternatives": [
+          "The verification occurred but is not captured in the provided excerpt of R3-EV-006.",
+          "The verification did not occur; the note remained unverified."
+        ],
+        "confidence": 1,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 30231,
+        "validation": "valid"
+      },
+      {
+        "id": "dcf21f66-7629-4d88-ae9e-fc543afae9bc",
+        "stage": "evidence-processing",
+        "summary": "The carrier beam fell because it lost its support condition after hydraulic isolation. The top backup roll balance remained raised without an independently verified mechanical restraint (lockout record shows blank block ID). As the yoke drifted downward due to gravity acting on the uncontrolled assembly, relative movement displaced the beam off-center, clearing the link-arm stop and allowing the fall.",
+        "evidence": [
+          "R3-EV-011",
+          "GTDE-02_extended_video_review.md",
+          "incident-description",
+          "R3-EV-005"
+        ],
+        "unknowns": [
+          "Exact mechanical clearance between the raised balance and mill spreader under zero pressure.",
+          "Whether the keeper alone could retain the link once wedging ceased given off-center displacement."
+        ],
+        "alternatives": [
+          "Fracture of yoke or beam (ruled out by inspection)."
+        ],
+        "confidence": 0.85,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 99021,
+        "validation": "valid"
+      },
+      {
+        "id": "77c99c3f-6e17-4443-997d-1af78df9bd66",
+        "stage": "causal-analysis",
+        "summary": "The focal event (beam fall) was caused by loss of gravity control on a raised top backup roll balance after hydraulic isolation. The causal chain includes: (1) assumption that wedging sufficed without independent mechanical restraint, leading to blank LOTO field; (2) design lack of inherent stop allowing off-center displacement; and (3) reliance on unverified handwritten turnover note rather than formal verification. Competing explanation (crane involvement) is rejected by operational logs.",
+        "evidence": [
+          "claim-1sb3iv3",
+          "claim-rgm13h",
+          "claim-56i6g2",
+          "claim-8c4q0",
+          "claim-uvz5fq"
+        ],
+        "unknowns": [
+          "Physical presence of mechanical block despite blank record field (requires R3-EV-017)",
+          "Keeper rating under off-center load conditions",
+          "Exact bleed-through rate without historian data"
+        ],
+        "alternatives": [],
+        "confidence": 0.62,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 117724,
+        "validation": "valid"
+      },
+      {
+        "id": "21f9fe28-373c-47d8-8e14-e3b8e1e6f077",
+        "stage": "causal-verification",
+        "summary": "The causal board contains multiple blocking defects: unsupported design claims, unverified hypotheses about bypassed stops, reliance on undocumented handwritten notes instead of formal verification records, and assumptions about wedging sufficiency without engineering analysis. No edges or nodes can be verified until these evidence gaps are addressed.",
+        "evidence": [
+          "claim-8c4q0 (design lacks stop)",
+          "claim-1j7o9k7 (anonymous note exists but unverified)",
+          "source-assessment-60vmby (blank LOTO field, no verifier signature)"
+        ],
+        "unknowns": [
+          "Whether a mechanical block physically existed despite blank record",
+          "Engineering rating of keeper vs. off-center displacement forces",
+          "Actual physical state of wedging at time of hydraulic bleed"
+        ],
+        "alternatives": [],
+        "confidence": 0.85,
+        "promptVersion": "try4.0.0",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 46689,
+        "validation": "valid"
+      }
+    ],
+    "stageErrors": [],
+    "revision": {
+      "added": [
+        "Initial investigation created"
+      ],
+      "changed": [],
+      "resolved": [],
+      "reopened": []
+    },
+    "documentIds": [
+      "c671091a-7741-4461-aba2-8fa6d5bbf39a",
+      "bedef97c-0ff9-4ff1-80a4-6757f87ce42e",
+      "a04da8b1-19ee-4708-acff-aaad4b2e84e7",
+      "f3378070-59ee-4c17-8702-4b85ff4f8404",
+      "cc1a2b99-1195-46b3-8e86-f11072f550e1",
+      "835b0452-e105-449a-b30b-2a1136746535",
+      "22b5d050-a0cb-4e24-a4fb-fddeabefb756",
+      "64c1c3ba-63e2-4a10-8767-088d76228e61",
+      "d6550cb9-11d6-47d9-a538-f0e1d99f489f",
+      "ab10970a-5ae2-45ed-a509-682b348d15a8",
+      "47f9b7de-0572-4fc4-981c-988ba5e95e4c",
+      "d0d0c922-3e3e-4a8a-b3c9-63b4d1507dc3",
+      "4c287777-3168-4385-8d49-0f7a960f1d1b",
+      "f5e83f96-cf54-4b66-9545-683f5eea1f4c",
+      "0bea8cd7-befb-48b2-b6b4-4f9e70fc9bd5",
+      "5ca223b3-3f7f-4b63-85d2-6e4c56aa2a9c",
+      "939b63ca-3c60-467d-b294-7901a06510fd",
+      "33e72c4f-2208-4083-a842-a85998150aa4",
+      "ec62a183-dcd6-4a5a-87ce-23798398355f",
+      "638ba6e1-8fc6-4a0a-bfd4-72fc44c8f752",
+      "765984bd-6f9c-4960-ac9a-81a5a8eda379",
+      "a3387037-dc3e-4ac0-a6be-a3f9a6e61e63",
+      "e9a42d6f-26d6-4ae4-9333-fbedaa087069",
+      "52f485b3-052e-44ee-8f84-63c152e8cb17",
+      "47628223-f5e8-4c4c-b110-e537304fe934",
+      "fbdfae4d-1252-4752-8702-cd062e468cea",
+      "b8d57a5e-db36-42d0-bb7f-ca908b9aaead",
+      "66b78607-a641-4655-b0c2-61d51752d84b",
+      "cf65ab90-10af-4604-b48e-4b0b7f3b3f5d",
+      "6c518081-a51b-4b6a-ab6c-905d7be42baf",
+      "528deeb2-6e77-4c8f-a062-f1ced34f2c7b",
+      "574758e7-6cbb-46e0-aca0-5bdbee8cad7f"
+    ]
+  }
+}

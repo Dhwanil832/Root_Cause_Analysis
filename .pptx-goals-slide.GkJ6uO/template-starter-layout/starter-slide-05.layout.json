@@ -1,0 +1,1042 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/v43r0a",
+    "id": "v43r0a",
+    "slide": 5,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "BASE",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Aptos Display"
+      },
+      "minorFont": {
+        "latinTypeface": "Aptos"
+      }
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "BASE",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "backgroundColor": "#F7F9FC",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "Shape 0",
+          "bbox": [
+            0,
+            693.12,
+            1279.97,
+            0
+          ],
+          "geometry": "line",
+          "lineColor": "#D7DEE9",
+          "lineWidth": 1.33
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/3",
+          "id": "3",
+          "name": "Text 1",
+          "bbox": [
+            40.32,
+            697.92,
+            211.2,
+            17.28
+          ],
+          "geometry": "rect",
+          "text": "RCA kickoff maps",
+          "textPreview": "RCA kickoff maps",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "RCA kickoff maps",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "RCA kickoff maps",
+                  "fontSize": 10,
+                  "typeface": "Aptos",
+                  "color": "#607089"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1gvqt87i",
+      "id": "2",
+      "name": "Shape 0",
+      "bbox": [
+        0,
+        0,
+        1279.97,
+        11.52
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fm903qx",
+      "id": "3",
+      "name": "Text 1",
+      "bbox": [
+        43.2,
+        30.72,
+        1008,
+        40.32
+      ],
+      "geometry": "rect",
+      "text": "Mobile equipment / vehicle involvement",
+      "textPreview": "Mobile equipment / vehicle involvement",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Mobile equipment / vehicle involvement"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Mobile equipment / vehicle involvement",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Mobile equipment / vehicle involvement",
+              "fontSize": 30.67,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nix8vipo",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        1082.88,
+        28.8,
+        148.8,
+        32.64
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#E7F4F8",
+      "lineColor": "#CFEAF2",
+      "lineWidth": 0.67
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hor2d83",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        1082.88,
+        36.96,
+        148.8,
+        11.52
+      ],
+      "geometry": "rect",
+      "text": "Table 4/15",
+      "textPreview": "Table 4/15",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Table 4/15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Table 4/15",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Table 4/15",
+              "fontSize": 10,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/cjil07el",
+      "id": "26",
+      "name": "Table 0",
+      "bbox": [
+        43.2,
+        109.44,
+        1193.28,
+        571.2
+      ],
+      "text": "Initial question | Potential direction it opens\nWhat mobile equipment or vehicle was involved, and what task was it performing? | Forklift, loader, truck, trailer, cart, tractor; travel, loading, unloading, towing, parking, positioning\nWhat was its movement, position, speed, load, and direction immediately before the event? | Backing, turning, stopping, acceleration, rollaway, unstable load, blind-side travel, collision sequence\nWhat route, travel surface, clearance, traffic pattern, and exclusion zone existed? | Poor surface, slope, congestion, restricted clearance, traffic-plan weakness, pedestrian separation, route change\nWhat could the operator and nearby people see or hear? | Blind spots, mirrors, cameras, alarms, lighting, noise, obstruction, line of sight, pedestrian awareness\nWhat was the equipment’s condition, including brakes, steering, tires, alarms, lights, restraints, and attachments? | Mechanical failure, missed pre-use inspection, maintenance issue, disabled warning, tire or brake condition, attachment defect\nWas the load stable, secured, within capacity, and compatible with the equipment? | Overcapacity, shifted load, poor center of gravity, incorrect attachment, inadequate securement, visibility obstruction\nWho controlled or directed the movement, and how was coordination handled? | Operator qualification, spotter, signal, radio, movement authority, conflicting direction; activates Communication / supervision\nWhat changed from the normal route, task, equipment, load, or surrounding activity? | Temporary route, substitute vehicle, unusual load, outage congestion, simultaneous work, changed traffic control",
+      "textPreview": "Initial question | Potential direction it opens | What mobile equipment or vehicle was involved, and what task was it performing? | Forkl...",
+      "rows": 9,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            43.2,
+            109.44,
+            494.4,
+            34.56
+          ],
+          "text": "Initial question",
+          "textPreview": "Initial question",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Initial question",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Initial question",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            537.6,
+            109.44,
+            698.88,
+            34.56
+          ],
+          "text": "Potential direction it opens",
+          "textPreview": "Potential direction it opens",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Potential direction it opens",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Potential direction it opens",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            43.2,
+            144,
+            494.4,
+            67.08
+          ],
+          "text": "What mobile equipment or vehicle was involved, and what task was it performing?",
+          "textPreview": "What mobile equipment or vehicle was involved, and what task was it performing?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What mobile equipment or vehicle was involved, and what task was it performing?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What mobile equipment or vehicle was involved, and what task was it performing?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            537.6,
+            144,
+            698.88,
+            67.08
+          ],
+          "text": "Forklift, loader, truck, trailer, cart, tractor; travel, loading, unloading, towing, parking, positioning",
+          "textPreview": "Forklift, loader, truck, trailer, cart, tractor; travel, loading, unloading, towing, parking, positioning",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Forklift, loader, truck, trailer, cart, tractor; travel, loading, unloading, towing, parking, positioning",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Forklift, loader, truck, trailer, cart, tractor; travel, loading, unloading, towing, parking, positioning",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            43.2,
+            211.08,
+            494.4,
+            67.08
+          ],
+          "text": "What was its movement, position, speed, load, and direction immediately before the event?",
+          "textPreview": "What was its movement, position, speed, load, and direction immediately before the event?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What was its movement, position, speed, load, and direction immediately before the event?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What was its movement, position, speed, load, and direction immediately before the event?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            537.6,
+            211.08,
+            698.88,
+            67.08
+          ],
+          "text": "Backing, turning, stopping, acceleration, rollaway, unstable load, blind-side travel, collision sequence",
+          "textPreview": "Backing, turning, stopping, acceleration, rollaway, unstable load, blind-side travel, collision sequence",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Backing, turning, stopping, acceleration, rollaway, unstable load, blind-side travel, collision sequence",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Backing, turning, stopping, acceleration, rollaway, unstable load, blind-side travel, collision sequence",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            43.2,
+            278.16,
+            494.4,
+            67.08
+          ],
+          "text": "What route, travel surface, clearance, traffic pattern, and exclusion zone existed?",
+          "textPreview": "What route, travel surface, clearance, traffic pattern, and exclusion zone existed?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What route, travel surface, clearance, traffic pattern, and exclusion zone existed?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What route, travel surface, clearance, traffic pattern, and exclusion zone existed?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            537.6,
+            278.16,
+            698.88,
+            67.08
+          ],
+          "text": "Poor surface, slope, congestion, restricted clearance, traffic-plan weakness, pedestrian separation, route change",
+          "textPreview": "Poor surface, slope, congestion, restricted clearance, traffic-plan weakness, pedestrian separation, route change",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Poor surface, slope, congestion, restricted clearance, traffic-plan weakness, pedestrian separation, route change",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Poor surface, slope, congestion, restricted clearance, traffic-plan weakness, pedestrian separation, route change",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            43.2,
+            345.24,
+            494.4,
+            67.08
+          ],
+          "text": "What could the operator and nearby people see or hear?",
+          "textPreview": "What could the operator and nearby people see or hear?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What could the operator and nearby people see or hear?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What could the operator and nearby people see or hear?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            537.6,
+            345.24,
+            698.88,
+            67.08
+          ],
+          "text": "Blind spots, mirrors, cameras, alarms, lighting, noise, obstruction, line of sight, pedestrian awareness",
+          "textPreview": "Blind spots, mirrors, cameras, alarms, lighting, noise, obstruction, line of sight, pedestrian awareness",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Blind spots, mirrors, cameras, alarms, lighting, noise, obstruction, line of sight, pedestrian awareness",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Blind spots, mirrors, cameras, alarms, lighting, noise, obstruction, line of sight, pedestrian awareness",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            43.2,
+            412.32,
+            494.4,
+            67.08
+          ],
+          "text": "What was the equipment’s condition, including brakes, steering, tires, alarms, lights, restraints, and attachments?",
+          "textPreview": "What was the equipment’s condition, including brakes, steering, tires, alarms, lights, restraints, and attachments?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What was the equipment’s condition, including brakes, steering, tires, alarms, lights, restraints, and attachments?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What was the equipment’s condition, including brakes, steering, tires, alarms, lights, restraints, and attachments?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            537.6,
+            412.32,
+            698.88,
+            67.08
+          ],
+          "text": "Mechanical failure, missed pre-use inspection, maintenance issue, disabled warning, tire or brake condition, attachment defect",
+          "textPreview": "Mechanical failure, missed pre-use inspection, maintenance issue, disabled warning, tire or brake condition, attachment defect",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Mechanical failure, missed pre-use inspection, maintenance issue, disabled warning, tire or brake condition, attachment defect",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Mechanical failure, missed pre-use inspection, maintenance issue, disabled warning, tire or brake condition, attachment defect",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            43.2,
+            479.4,
+            494.4,
+            67.08
+          ],
+          "text": "Was the load stable, secured, within capacity, and compatible with the equipment?",
+          "textPreview": "Was the load stable, secured, within capacity, and compatible with the equipment?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Was the load stable, secured, within capacity, and compatible with the equipment?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Was the load stable, secured, within capacity, and compatible with the equipment?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            537.6,
+            479.4,
+            698.88,
+            67.08
+          ],
+          "text": "Overcapacity, shifted load, poor center of gravity, incorrect attachment, inadequate securement, visibility obstruction",
+          "textPreview": "Overcapacity, shifted load, poor center of gravity, incorrect attachment, inadequate securement, visibility obstruction",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Overcapacity, shifted load, poor center of gravity, incorrect attachment, inadequate securement, visibility obstruction",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Overcapacity, shifted load, poor center of gravity, incorrect attachment, inadequate securement, visibility obstruction",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            43.2,
+            546.48,
+            494.4,
+            67.08
+          ],
+          "text": "Who controlled or directed the movement, and how was coordination handled?",
+          "textPreview": "Who controlled or directed the movement, and how was coordination handled?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Who controlled or directed the movement, and how was coordination handled?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Who controlled or directed the movement, and how was coordination handled?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            537.6,
+            546.48,
+            698.88,
+            67.08
+          ],
+          "text": "Operator qualification, spotter, signal, radio, movement authority, conflicting direction; activates Communication / supervision",
+          "textPreview": "Operator qualification, spotter, signal, radio, movement authority, conflicting direction; activates Communication / supervision",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Operator qualification, spotter, signal, radio, movement authority, conflicting direction; activates Communication / supervision",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Operator qualification, spotter, signal, radio, movement authority, conflicting direction; activates Communication / supervision",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            43.2,
+            613.56,
+            494.4,
+            67.08
+          ],
+          "text": "What changed from the normal route, task, equipment, load, or surrounding activity?",
+          "textPreview": "What changed from the normal route, task, equipment, load, or surrounding activity?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What changed from the normal route, task, equipment, load, or surrounding activity?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What changed from the normal route, task, equipment, load, or surrounding activity?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            537.6,
+            613.56,
+            698.88,
+            67.08
+          ],
+          "text": "Temporary route, substitute vehicle, unusual load, outage congestion, simultaneous work, changed traffic control",
+          "textPreview": "Temporary route, substitute vehicle, unusual load, outage congestion, simultaneous work, changed traffic control",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Temporary route, substitute vehicle, unusual load, outage congestion, simultaneous work, changed traffic control",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Temporary route, substitute vehicle, unusual load, outage congestion, simultaneous work, changed traffic control",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bmx8zipk",
+      "id": "8",
+      "name": "Shape 5",
+      "bbox": [
+        22.08,
+        109.44,
+        4.8,
+        571.2
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jahkze1",
+      "id": "25",
+      "name": "Slide Number Placeholder 0",
+      "bbox": [
+        1176,
+        697.92,
+        83.99,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "5",
+      "textPreview": "5",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

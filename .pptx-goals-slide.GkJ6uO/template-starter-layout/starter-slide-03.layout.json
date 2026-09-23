@@ -1,0 +1,1042 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/dsc495",
+    "id": "dsc495",
+    "slide": 3,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "BASE",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Aptos Display"
+      },
+      "minorFont": {
+        "latinTypeface": "Aptos"
+      }
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "BASE",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "backgroundColor": "#F7F9FC",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "Shape 0",
+          "bbox": [
+            0,
+            693.12,
+            1279.97,
+            0
+          ],
+          "geometry": "line",
+          "lineColor": "#D7DEE9",
+          "lineWidth": 1.33
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/3",
+          "id": "3",
+          "name": "Text 1",
+          "bbox": [
+            40.32,
+            697.92,
+            211.2,
+            17.28
+          ],
+          "geometry": "rect",
+          "text": "RCA kickoff maps",
+          "textPreview": "RCA kickoff maps",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "RCA kickoff maps",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "RCA kickoff maps",
+                  "fontSize": 10,
+                  "typeface": "Aptos",
+                  "color": "#607089"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dwf2p4ny",
+      "id": "2",
+      "name": "Shape 0",
+      "bbox": [
+        0,
+        0,
+        1279.97,
+        11.52
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sv6lgz6d",
+      "id": "3",
+      "name": "Text 1",
+      "bbox": [
+        43.2,
+        30.72,
+        1008,
+        40.32
+      ],
+      "geometry": "rect",
+      "text": "Electrical incident",
+      "textPreview": "Electrical incident",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Electrical incident"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Electrical incident",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Electrical incident",
+              "fontSize": 30.67,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3qxkjupw",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        1082.88,
+        28.8,
+        148.8,
+        32.64
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#E7F4F8",
+      "lineColor": "#CFEAF2",
+      "lineWidth": 0.67
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ip43apob",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        1082.88,
+        36.96,
+        148.8,
+        11.52
+      ],
+      "geometry": "rect",
+      "text": "Table 2/15",
+      "textPreview": "Table 2/15",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Table 2/15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Table 2/15",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Table 2/15",
+              "fontSize": 10,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/4vitcj2h",
+      "id": "26",
+      "name": "Table 0",
+      "bbox": [
+        43.2,
+        109.44,
+        1193.28,
+        571.2
+      ],
+      "text": "Initial question | Potential direction it opens\nWhat electrical asset, circuit, or system could be involved? | Equipment/tool, wiring, panel, battery, controls, temporary power, upstream or downstream circuit\nWhat was the confirmed energy state immediately before and during the event? | Energized work, unexpected energization, stored energy, induced voltage, battery power, unknown or unverified state\nWhat work, interaction, or change was occurring around the electrical system? | Operating, maintenance, testing, troubleshooting, installation, cleaning, switching, physical contact\nWhat evidence suggests an electrical event or abnormal condition? | Shock, arc flash, heat, smoke, tripped device, damaged insulation, exposed conductor, abnormal equipment behavior\nWhat was different from the normal equipment or work condition? | Temporary wiring, outage configuration, bypass, recent repair, damaged component, changed setup, wet or contaminated condition\nWhat protection or control was expected to prevent exposure, and what was its observed state? | Isolation / LOTO, breaker, fuse, relay, interlock, grounding, guarding, PPE; may activate equipment or procedure paths\nWho or what could have been exposed, and by what possible path? | Human involvement, direct or indirect contact, conductive path, nearby personnel, contractor exposure, equipment damage\nWere surrounding conditions relevant to the electrical exposure or failure? | Work-environment involvement: water, dampness, confined access, poor visibility, conductive surfaces, congestion",
+      "textPreview": "Initial question | Potential direction it opens | What electrical asset, circuit, or system could be involved? | Equipment/tool, wiring, ...",
+      "rows": 9,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            43.2,
+            109.44,
+            494.4,
+            34.56
+          ],
+          "text": "Initial question",
+          "textPreview": "Initial question",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Initial question",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Initial question",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            537.6,
+            109.44,
+            698.88,
+            34.56
+          ],
+          "text": "Potential direction it opens",
+          "textPreview": "Potential direction it opens",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Potential direction it opens",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Potential direction it opens",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            43.2,
+            144,
+            494.4,
+            67.08
+          ],
+          "text": "What electrical asset, circuit, or system could be involved?",
+          "textPreview": "What electrical asset, circuit, or system could be involved?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What electrical asset, circuit, or system could be involved?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What electrical asset, circuit, or system could be involved?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            537.6,
+            144,
+            698.88,
+            67.08
+          ],
+          "text": "Equipment/tool, wiring, panel, battery, controls, temporary power, upstream or downstream circuit",
+          "textPreview": "Equipment/tool, wiring, panel, battery, controls, temporary power, upstream or downstream circuit",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Equipment/tool, wiring, panel, battery, controls, temporary power, upstream or downstream circuit",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Equipment/tool, wiring, panel, battery, controls, temporary power, upstream or downstream circuit",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            43.2,
+            211.08,
+            494.4,
+            67.08
+          ],
+          "text": "What was the confirmed energy state immediately before and during the event?",
+          "textPreview": "What was the confirmed energy state immediately before and during the event?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What was the confirmed energy state immediately before and during the event?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What was the confirmed energy state immediately before and during the event?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            537.6,
+            211.08,
+            698.88,
+            67.08
+          ],
+          "text": "Energized work, unexpected energization, stored energy, induced voltage, battery power, unknown or unverified state",
+          "textPreview": "Energized work, unexpected energization, stored energy, induced voltage, battery power, unknown or unverified state",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Energized work, unexpected energization, stored energy, induced voltage, battery power, unknown or unverified state",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Energized work, unexpected energization, stored energy, induced voltage, battery power, unknown or unverified state",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            43.2,
+            278.16,
+            494.4,
+            67.08
+          ],
+          "text": "What work, interaction, or change was occurring around the electrical system?",
+          "textPreview": "What work, interaction, or change was occurring around the electrical system?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What work, interaction, or change was occurring around the electrical system?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What work, interaction, or change was occurring around the electrical system?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            537.6,
+            278.16,
+            698.88,
+            67.08
+          ],
+          "text": "Operating, maintenance, testing, troubleshooting, installation, cleaning, switching, physical contact",
+          "textPreview": "Operating, maintenance, testing, troubleshooting, installation, cleaning, switching, physical contact",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Operating, maintenance, testing, troubleshooting, installation, cleaning, switching, physical contact",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Operating, maintenance, testing, troubleshooting, installation, cleaning, switching, physical contact",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            43.2,
+            345.24,
+            494.4,
+            67.08
+          ],
+          "text": "What evidence suggests an electrical event or abnormal condition?",
+          "textPreview": "What evidence suggests an electrical event or abnormal condition?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What evidence suggests an electrical event or abnormal condition?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What evidence suggests an electrical event or abnormal condition?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            537.6,
+            345.24,
+            698.88,
+            67.08
+          ],
+          "text": "Shock, arc flash, heat, smoke, tripped device, damaged insulation, exposed conductor, abnormal equipment behavior",
+          "textPreview": "Shock, arc flash, heat, smoke, tripped device, damaged insulation, exposed conductor, abnormal equipment behavior",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Shock, arc flash, heat, smoke, tripped device, damaged insulation, exposed conductor, abnormal equipment behavior",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Shock, arc flash, heat, smoke, tripped device, damaged insulation, exposed conductor, abnormal equipment behavior",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            43.2,
+            412.32,
+            494.4,
+            67.08
+          ],
+          "text": "What was different from the normal equipment or work condition?",
+          "textPreview": "What was different from the normal equipment or work condition?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What was different from the normal equipment or work condition?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What was different from the normal equipment or work condition?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            537.6,
+            412.32,
+            698.88,
+            67.08
+          ],
+          "text": "Temporary wiring, outage configuration, bypass, recent repair, damaged component, changed setup, wet or contaminated condition",
+          "textPreview": "Temporary wiring, outage configuration, bypass, recent repair, damaged component, changed setup, wet or contaminated condition",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Temporary wiring, outage configuration, bypass, recent repair, damaged component, changed setup, wet or contaminated condition",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Temporary wiring, outage configuration, bypass, recent repair, damaged component, changed setup, wet or contaminated condition",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            43.2,
+            479.4,
+            494.4,
+            67.08
+          ],
+          "text": "What protection or control was expected to prevent exposure, and what was its observed state?",
+          "textPreview": "What protection or control was expected to prevent exposure, and what was its observed state?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What protection or control was expected to prevent exposure, and what was its observed state?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What protection or control was expected to prevent exposure, and what was its observed state?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            537.6,
+            479.4,
+            698.88,
+            67.08
+          ],
+          "text": "Isolation / LOTO, breaker, fuse, relay, interlock, grounding, guarding, PPE; may activate equipment or procedure paths",
+          "textPreview": "Isolation / LOTO, breaker, fuse, relay, interlock, grounding, guarding, PPE; may activate equipment or procedure paths",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Isolation / LOTO, breaker, fuse, relay, interlock, grounding, guarding, PPE; may activate equipment or procedure paths",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Isolation / LOTO, breaker, fuse, relay, interlock, grounding, guarding, PPE; may activate equipment or procedure paths",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            43.2,
+            546.48,
+            494.4,
+            67.08
+          ],
+          "text": "Who or what could have been exposed, and by what possible path?",
+          "textPreview": "Who or what could have been exposed, and by what possible path?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Who or what could have been exposed, and by what possible path?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Who or what could have been exposed, and by what possible path?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            537.6,
+            546.48,
+            698.88,
+            67.08
+          ],
+          "text": "Human involvement, direct or indirect contact, conductive path, nearby personnel, contractor exposure, equipment damage",
+          "textPreview": "Human involvement, direct or indirect contact, conductive path, nearby personnel, contractor exposure, equipment damage",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Human involvement, direct or indirect contact, conductive path, nearby personnel, contractor exposure, equipment damage",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Human involvement, direct or indirect contact, conductive path, nearby personnel, contractor exposure, equipment damage",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            43.2,
+            613.56,
+            494.4,
+            67.08
+          ],
+          "text": "Were surrounding conditions relevant to the electrical exposure or failure?",
+          "textPreview": "Were surrounding conditions relevant to the electrical exposure or failure?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Were surrounding conditions relevant to the electrical exposure or failure?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Were surrounding conditions relevant to the electrical exposure or failure?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            537.6,
+            613.56,
+            698.88,
+            67.08
+          ],
+          "text": "Work-environment involvement: water, dampness, confined access, poor visibility, conductive surfaces, congestion",
+          "textPreview": "Work-environment involvement: water, dampness, confined access, poor visibility, conductive surfaces, congestion",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Work-environment involvement: water, dampness, confined access, poor visibility, conductive surfaces, congestion",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Work-environment involvement: water, dampness, confined access, poor visibility, conductive surfaces, congestion",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v2dkfup0",
+      "id": "8",
+      "name": "Shape 5",
+      "bbox": [
+        22.08,
+        109.44,
+        4.8,
+        571.2
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kz6pgna1",
+      "id": "25",
+      "name": "Slide Number Placeholder 0",
+      "bbox": [
+        1176,
+        697.92,
+        83.99,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "3",
+      "textPreview": "3",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

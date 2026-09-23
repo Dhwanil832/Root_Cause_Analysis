@@ -1,0 +1,651 @@
+{
+  "processed": 16,
+  "total": 148,
+  "catalog": [
+    {
+      "label": "Instrument-air low-pressure indication at RHOB receiving header P-R triggered alarm AL-44 and paused work.",
+      "detail": "At approximately 10:00 AM on May 20, 2024, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored.",
+      "status": "proposed",
+      "sourceIds": [
+        "incident-description"
+      ],
+      "specialistIds": [],
+      "key": "focal",
+      "type": "focal-event",
+      "claimIds": [],
+      "assessmentKind": "observation"
+    },
+    {
+      "type": "condition",
+      "label": "Utilities air gallery distributes instrument air to the RHOB process area. The receiving header H-R at RHOB has a local indication point P-R that typically displays within a normal operating range (above 5.0 bar).",
+      "detail": "The Utilities air gallery distributes instrument air to the RHOB process area. The receiving header H-R at RHOB has a local indication point P-R that typically displays within a normal operating range (above 5.0 bar).",
+      "status": "proposed",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1675uru",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "Alarm AL-44 activates when P-R pressure drops below 4.5 bar and clears above 5.0 bar.",
+      "detail": "The RHOB PLC low-pressure input from point P-R (AL-44) is configured to trigger a 'COMP FAULT' indication if the measured pressure falls below 4.5 bar, and it resets when pressure rises above 5.0 bar.",
+      "status": "proposed",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-gybvj2",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "At 10:00 AM, P-R pressure dropped from ~6.8 bar to below alarm thresholds (<4.5 bar).",
+      "detail": "RHOB operations detected an instrument-air low-pressure indication at the receiving header (P-R), dropping from approximately 6.8 bar to a value that triggered the AL-44 alarm.",
+      "status": "proposed",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-ax2alr",
+      "assessmentKind": "observation",
+      "claimIds": [
+        "claim-12ce684"
+      ]
+    },
+    {
+      "type": "condition",
+      "label": "Work package WO-527-E field execution record was blank at folder issue.",
+      "detail": "The work package cover indicates the temporary instruction attachment field and the field execution record (WO-527-E) were both left blank when issued, meaning no specific instructions or updated drawings were attached to guide boundary preparation.",
+      "status": "proposed",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-q7dwrs",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "Maintenance acceptance signature was not yet signed at notification time.",
+      "detail": "The work package cover explicitly states that the maintenance acceptance signature field had not been filled in when the incident occurred, indicating the boundary preparation phase was incomplete or unverified by receiving operations.",
+      "status": "proposed",
+      "sourceIds": [
+        "eaee59fe-70f4-4876-a21d-780814412078#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1q7qtf5",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "Personnel U-A and U-B held current operating qualifications at shift start.",
+      "detail": "Both crew members were listed with 'Current Utilities operating qualification' and energy-control authorization, confirming they met the baseline competency requirements for their assigned tasks.",
+      "status": "proposed",
+      "sourceIds": [
+        "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+      ],
+      "specialistIds": [],
+      "key": "n-t9cpzc",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "Utilities acknowledged the alarm at approximately 10:02 AM and paused work.",
+      "detail": "Upon receiving notification of the low-pressure indication, Utilities operations formally acknowledged the issue around 10:02 AM and immediately halted all maintenance activities pending further review.",
+      "status": "proposed",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-w71b49",
+      "assessmentKind": "observation",
+      "claimIds": [
+        "claim-x9yg85"
+      ]
+    },
+    {
+      "type": "condition",
+      "label": "Work was paused and air supply restored by approximately 10:07 AM.",
+      "detail": "By about 10:07 AM, the local indication at RHOB returned to normal band levels. The incident description notes that work had been paused earlier but does not specify whether full restoration of service or just a temporary pressure recovery occurred before maintenance was deferred until later (by 10:20).",
+      "status": "proposed",
+      "sourceIds": [
+        "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+      ],
+      "specialistIds": [],
+      "key": "n-v2w4tg",
+      "assessmentKind": "observation",
+      "claimIds": [
+        "claim-17vesa8"
+      ]
+    },
+    {
+      "type": "condition",
+      "label": "P-U remained stable at 6.8–6.9 bar while P-R dropped.",
+      "detail": "The upstream supply was unaffected by the event that caused pressure loss downstream.",
+      "status": "proposed",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1ihsteu",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "AL-44 activates below 4.5 bar and clears above 5.0 bar.",
+      "detail": "The alarm threshold configuration accounts for why AL-44 triggered at ~10:00 when pressure fell to 5.8 bar then dropped further.",
+      "status": "proposed",
+      "sourceIds": [
+        "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+      ],
+      "specialistIds": [],
+      "key": "n-ily57r",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "Pressure and alarm data are sampled values (~30–40 seconds), not continuous waveforms.",
+      "detail": "The discrete sampling means the exact time of pressure drop is inferred from drops between samples (e.g., 6.8→5.8 at 10:00:11).",
+      "status": "proposed",
+      "sourceIds": [
+        "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+      ],
+      "specialistIds": [],
+      "key": "n-1ry5vzu",
+      "assessmentKind": "observation",
+      "claimIds": []
+    },
+    {
+      "type": "condition",
+      "label": "The area directory does not establish valve positions or pressure availability at any given time.",
+      "detail": "This document serves as an administrative index and lacks operational data on physical states like open/closed valves.",
+      "status": "proposed",
+      "sourceIds": [
+        "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+      ],
+      "specialistIds": [],
+      "key": "n-ao9o66",
+      "assessmentKind": "observation",
+      "claimIds": []
+    }
+  ],
+  "ledger": [
+    {
+      "candidateId": "n-1675uru",
+      "originalLabel": "Utilities air gallery serves RHOB process area; local indication P-R normally shows normal pressure band.",
+      "disposition": "board",
+      "reason": "Established condition: Utilities air gallery serves RHOB; local indication P-R normally shows normal pressure band.",
+      "canonicalId": "node-1b3hkdw",
+      "question": ""
+    },
+    {
+      "candidateId": "n-gybvj2",
+      "originalLabel": "Alarm AL-44 activates when P-R pressure drops below 4.5 bar and clears above 5.0 bar.",
+      "disposition": "board",
+      "reason": "Established condition: Alarm AL-44 activates when P-R pressure drops below 4.5 bar and clears above 5.0 bar.",
+      "canonicalId": "node-juebk5",
+      "question": ""
+    },
+    {
+      "candidateId": "n-ax2alr",
+      "originalLabel": "At 10:00 AM, P-R pressure dropped from ~6.8 bar to below alarm thresholds (<4.5 bar).",
+      "disposition": "board",
+      "reason": "Established condition: At 10:00 AM, P-R pressure dropped from ~6.8 bar to below alarm thresholds (<4.5 bar).",
+      "canonicalId": "node-1vihicz",
+      "question": ""
+    },
+    {
+      "candidateId": "n-q7dwrs",
+      "originalLabel": "Work package WO-527-E field execution record was blank at folder issue.",
+      "disposition": "board",
+      "reason": "Established condition: Work package WO-527-E field execution record was blank at folder issue.",
+      "canonicalId": "node-1d8qtyz",
+      "question": ""
+    },
+    {
+      "candidateId": "n-1q7qtf5",
+      "originalLabel": "Maintenance acceptance signature was not yet signed at notification time.",
+      "disposition": "board",
+      "reason": "Established condition: Maintenance acceptance signature was not yet signed at notification time.",
+      "canonicalId": "node-ng9a3s",
+      "question": ""
+    },
+    {
+      "candidateId": "n-1b1mn9d",
+      "originalLabel": "No evidence confirms whether crew saw recent changes or used a different version of the equipment-location sheet.",
+      "disposition": "question",
+      "reason": "Unknown: No evidence confirms whether crew saw recent changes or used a different version of the equipment-location sheet.",
+      "canonicalId": null,
+      "question": "Did either U-A or U-B view a configuration drawing that reflected any service-routing changes affecting the instrument-air system prior to 10:00 AM?"
+    },
+    {
+      "candidateId": "n-5fesl6",
+      "originalLabel": "No documented confirmation of understanding regarding root cause assessment or response steps.",
+      "disposition": "question",
+      "reason": "Unknown: No documented confirmation of understanding regarding root cause assessment or response steps.",
+      "canonicalId": null,
+      "question": "Was there a documented briefing or procedure that defined the immediate actions required for U-A/U-B upon receiving an AL-44 alarm?"
+    },
+    {
+      "candidateId": "n-1qpkyz6",
+      "originalLabel": "Shift log records 'boundary preparation in progress' but does not identify point of interruption or valve states.",
+      "disposition": "question",
+      "reason": "Unknown: Shift log records 'boundary preparation in progress' but does not identify point of interruption or valve states.",
+      "canonicalId": null,
+      "question": "What was the state (open/closed) of any isolation valves at the gallery when work paused?"
+    },
+    {
+      "candidateId": "n-t9cpzc",
+      "originalLabel": "Personnel U-A and U-B held current operating qualifications at shift start.",
+      "disposition": "board",
+      "reason": "Supported by source IA-S03; establishes crew competency at shift start.",
+      "canonicalId": "node-1mq0bge",
+      "question": ""
+    },
+    {
+      "candidateId": "n-w71b49",
+      "originalLabel": "Utilities acknowledged the alarm at approximately 10:02 AM and paused work.",
+      "disposition": "board",
+      "reason": "Supported by claim-x9yg85 and shift log IA-S01; confirms alarm acknowledgment and work pause.",
+      "canonicalId": "node-1rs007b",
+      "question": ""
+    },
+    {
+      "candidateId": "n-v2w4tg",
+      "originalLabel": "Work was paused and air supply restored by approximately 10:07 AM.",
+      "disposition": "board",
+      "reason": "Supported by claim-17vesa8 and shift log IA-S01; indicates pressure recovery but leaves ambiguity on full restoration vs temporary spike.",
+      "canonicalId": "node-4tstn7",
+      "question": ""
+    },
+    {
+      "candidateId": "n-baeffs",
+      "originalLabel": "The alarm AL-44 (COMP FAULT) was triggered by the low-pressure input from P-R.",
+      "disposition": "rejected",
+      "reason": "The proposition asserts a specific cause ('low-pressure input from P-R') which is explicitly unsupported by the evidence (source fcd254db...). The alarm label 'COMP FAULT' does not prove low pressure at P-R was the sole or primary trigger without mapping confirmation. Evidence states entries lack entailed cause attribution to this specific mechanism.",
+      "canonicalId": null,
+      "question": ""
+    },
+    {
+      "candidateId": "n-1ihsteu",
+      "originalLabel": "Utilities air gallery serves RHOB process area; local indication P-R normally shows normal pressure band (~6.8–6.9 bar).",
+      "disposition": "board",
+      "reason": "Upstream pressure stability confirms disturbance is localized to distribution path or receiving station.",
+      "canonicalId": "node-4mdosc",
+      "question": ""
+    },
+    {
+      "candidateId": "n-ily57r",
+      "originalLabel": "Alarm AL-44 is a PLC low-pressure input from P-R; active below 4.5 bar and clears above 5.0 bar.",
+      "disposition": "board",
+      "reason": "Alarm logic explains the timing of activation relative to pressure drop.",
+      "canonicalId": "node-vu00ff",
+      "question": ""
+    },
+    {
+      "candidateId": "n-1ry5vzu",
+      "originalLabel": "The pressure and alarm extract supplies sampled values, not a continuous waveform.",
+      "disposition": "board",
+      "reason": "Sampling intervals introduce uncertainty about the exact moment of interruption.",
+      "canonicalId": "node-n9epbz",
+      "question": ""
+    },
+    {
+      "candidateId": "n-ao9o66",
+      "originalLabel": "Area directory does not establish valve positions or pressure availability at any given time.",
+      "disposition": "board",
+      "reason": "Directory is a location index only; it cannot confirm valve positions or pressure availability.",
+      "canonicalId": "node-6t2yyp",
+      "question": ""
+    }
+  ],
+  "audit": [
+    {
+      "candidateIds": [
+        "n-1675uru",
+        "n-gybvj2",
+        "n-ax2alr",
+        "n-q7dwrs",
+        "n-1q7qtf5",
+        "n-1b1mn9d",
+        "n-5fesl6",
+        "n-1qpkyz6"
+      ],
+      "coverage": {
+        "selected": [
+          "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1",
+          "da0260c0-7d49-43e8-b074-da2a14c7d59c#1",
+          "24ec1587-92e9-4320-82c2-30368d834f1d#1",
+          "eaee59fe-70f4-4876-a21d-780814412078#1",
+          "7e69d300-c57e-40a8-bb37-35a61073ff33#1",
+          "0ff450fe-49da-4c67-8b42-35449fdad35c#1",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:vq-1cq95dh",
+          "incident-description",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:bq-1fanm2w",
+          "d838e866-dc34-4814-8dad-3b97d0353f05#1",
+          "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:vq-52l0ma",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:vq-zyn2wt"
+        ],
+        "omitted": [],
+        "instruction": "Only selected records were inspected. Missing or omitted records do not establish physical absence."
+      },
+      "rowProblems": [],
+      "outputReferenceIssues": [],
+      "referenceResolutions": [
+        {
+          "id": "n-1675uru",
+          "sourceIds": [
+            "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "b678a928-a8d2-472d-bc03-2e1a3dc411e6",
+              "to": [
+                "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-gybvj2",
+          "sourceIds": [
+            "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "da0260c0-7d49-43e8-b074-da2a14c7d59c",
+              "to": [
+                "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-ax2alr",
+          "sourceIds": [
+            "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+          ],
+          "claimIds": [
+            "claim-12ce684"
+          ],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "claim-12ce684",
+              "to": [
+                "IA-S01_shift_and_notification_log.md"
+              ]
+            },
+            {
+              "from": "IA-S01_shift_and_notification_log.md",
+              "to": [
+                "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-q7dwrs",
+          "sourceIds": [
+            "eaee59fe-70f4-4876-a21d-780814412078#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "eaee59fe-70f4-4876-a21d-780814412078",
+              "to": [
+                "eaee59fe-70f4-4876-a21d-780814412078#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-1q7qtf5",
+          "sourceIds": [
+            "eaee59fe-70f4-4876-a21d-780814412078#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "eaee59fe-70f4-4876-a21d-780814412078",
+              "to": [
+                "eaee59fe-70f4-4876-a21d-780814412078#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-1b1mn9d",
+          "sourceIds": [
+            "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "7e69d300-c57e-40a8-bb37-35a61073ff33",
+              "to": [
+                "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-5fesl6",
+          "sourceIds": [
+            "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+          ],
+          "claimIds": [
+            "claim-1abjb6"
+          ],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "claim-1abjb6",
+              "to": [
+                "IA-S01_shift_and_notification_log.md"
+              ]
+            },
+            {
+              "from": "IA-S01_shift_and_notification_log.md",
+              "to": [
+                "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-1qpkyz6",
+          "sourceIds": [
+            "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "24ec1587-92e9-4320-82c2-30368d834f1d",
+              "to": [
+                "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidateIds": [
+        "n-t9cpzc",
+        "n-w71b49",
+        "n-v2w4tg",
+        "n-baeffs",
+        "n-1ihsteu",
+        "n-ily57r",
+        "n-1ry5vzu",
+        "n-ao9o66"
+      ],
+      "coverage": {
+        "selected": [
+          "7e69d300-c57e-40a8-bb37-35a61073ff33#1",
+          "24ec1587-92e9-4320-82c2-30368d834f1d#1",
+          "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1",
+          "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1",
+          "da0260c0-7d49-43e8-b074-da2a14c7d59c#1",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:bq-1fanm2w",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:vq-1cq95dh",
+          "incident-description",
+          "0ff450fe-49da-4c67-8b42-35449fdad35c#1",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:vq-52l0ma",
+          "d838e866-dc34-4814-8dad-3b97d0353f05#1",
+          "eaee59fe-70f4-4876-a21d-780814412078#1",
+          "story-release:323756f5-dbe1-4650-9121-d583b3f97d77:vq-zyn2wt"
+        ],
+        "omitted": [],
+        "instruction": "Only selected records were inspected. Missing or omitted records do not establish physical absence."
+      },
+      "rowProblems": [],
+      "outputReferenceIssues": [],
+      "referenceResolutions": [
+        {
+          "id": "n-t9cpzc",
+          "sourceIds": [
+            "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "7e69d300-c57e-40a8-bb37-35a61073ff33",
+              "to": [
+                "7e69d300-c57e-40a8-bb37-35a61073ff33#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-w71b49",
+          "sourceIds": [
+            "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+          ],
+          "claimIds": [
+            "claim-x9yg85"
+          ],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "claim-x9yg85",
+              "to": [
+                "IA-S01_shift_and_notification_log.md"
+              ]
+            },
+            {
+              "from": "IA-S01_shift_and_notification_log.md",
+              "to": [
+                "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-v2w4tg",
+          "sourceIds": [
+            "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+          ],
+          "claimIds": [
+            "claim-17vesa8"
+          ],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "claim-17vesa8",
+              "to": [
+                "IA-S01_shift_and_notification_log.md"
+              ]
+            },
+            {
+              "from": "IA-S01_shift_and_notification_log.md",
+              "to": [
+                "24ec1587-92e9-4320-82c2-30368d834f1d#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-baeffs",
+          "sourceIds": [
+            "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+          ],
+          "claimIds": [
+            "claim-1fhjudf"
+          ],
+          "unresolved": [],
+          "normalizations": [
+            {
+              "from": "claim-1fhjudf",
+              "to": [
+                "IA-P01_pressure_and_alarm_extract.md"
+              ]
+            },
+            {
+              "from": "IA-P01_pressure_and_alarm_extract.md",
+              "to": [
+                "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-1ihsteu",
+          "sourceIds": [
+            "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": []
+        },
+        {
+          "id": "n-ily57r",
+          "sourceIds": [
+            "da0260c0-7d49-43e8-b074-da2a14c7d59c#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": []
+        },
+        {
+          "id": "n-1ry5vzu",
+          "sourceIds": [
+            "fcd254db-75b3-4a9d-abec-44c5b6a9b34e#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": []
+        },
+        {
+          "id": "n-ao9o66",
+          "sourceIds": [
+            "b678a928-a8d2-472d-bc03-2e1a3dc411e6#1"
+          ],
+          "claimIds": [],
+          "unresolved": [],
+          "normalizations": []
+        }
+      ]
+    }
+  ]
+}

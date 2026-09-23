@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "pid": 33378,
+  "model": "ollama:qwen3.5:latest",
+  "targetVersions": 4,
+  "committedVersions": 0,
+  "startedAt": "2026-09-15T12:37:16.651Z",
+  "phase": "stopped",
+  "updatedAt": "2026-09-15T12:58:06.591Z",
+  "incidentId": "bbcb9721-c1ac-4430-90a3-154ea2eca033",
+  "trackId": "5be64286-f121-4e05-9620-4085671563cb",
+  "url": "http://localhost:3000/incident/bbcb9721-c1ac-4430-90a3-154ea2eca033",
+  "lastError": "Error: Output contract: Unknown finding target edge-1qd881d. Use an existing board node.id or edge.id.",
+  "requestAttempt": 1,
+  "error": "Error: Output contract: Unknown finding target edge-1qd881d. Use an existing board node.id or edge.id.",
+  "finishedAt": "2026-09-15T12:58:06.591Z"
+}

@@ -1,0 +1,17 @@
+{"event":"model-list","at":"2026-09-16T14:39:52.100Z"}
+{"event":"model-list","at":"2026-09-16T14:40:28.141Z"}
+{"event":"model-list","at":"2026-09-16T14:41:46.905Z"}
+{"event":"request","id":"0001","systemSha256":"860cd6d40c2b590ace6bada83ce6df8be7b2fd7f94c46cfbe62f83fc15924974","maxOutputTokens":3200,"at":"2026-09-16T14:41:46.918Z"}
+{"event":"response","id":"0001","status":200,"durationMs":62382,"doneReason":"stop","inputTokens":3889,"outputTokens":1470,"at":"2026-09-16T14:42:49.300Z"}
+{"event":"request","id":"0002","systemSha256":"5330dcac5b6c73c4b114eab87a3853939bba021179aa43b0d85ec77e20f43223","maxOutputTokens":2800,"at":"2026-09-16T14:42:49.359Z"}
+{"event":"response","id":"0002","status":200,"durationMs":29516,"doneReason":"stop","inputTokens":5140,"outputTokens":461,"at":"2026-09-16T14:43:18.876Z"}
+{"event":"request","id":"0003","systemSha256":"18f376d3af291e8f04d804a1f31b2262f4ae15ee9434f1f7ed04fecdccf431cc","maxOutputTokens":1600,"at":"2026-09-16T14:43:18.883Z"}
+{"event":"response","id":"0003","status":200,"durationMs":42228,"doneReason":"stop","inputTokens":1775,"outputTokens":1166,"at":"2026-09-16T14:44:01.111Z"}
+{"event":"request","id":"0004","systemSha256":"04f4c101e9c23e567c2346c761578bc4276242daf7a74737800745c84a226738","maxOutputTokens":6400,"at":"2026-09-16T14:44:01.122Z"}
+{"event":"response","id":"0004","status":200,"durationMs":82669,"doneReason":"stop","inputTokens":4425,"outputTokens":2179,"at":"2026-09-16T14:45:23.791Z"}
+{"event":"request","id":"0005","systemSha256":"b765bbd0b365bf9ccc384ee4429cfa1bc22fd97a6104d37c51ae99f59cacef03","maxOutputTokens":3200,"at":"2026-09-16T14:45:23.802Z"}
+{"event":"response","id":"0005","status":200,"durationMs":31200,"doneReason":"stop","inputTokens":3643,"outputTokens":656,"at":"2026-09-16T14:45:55.002Z"}
+{"event":"request","id":"0006","systemSha256":"58eaa73cf76ad6409ced97f8abeaf59ee7bf7959e8a7e868d8ee9e656c0a228e","maxOutputTokens":3200,"at":"2026-09-16T14:45:55.006Z"}
+{"event":"response","id":"0006","status":200,"durationMs":40502,"doneReason":"stop","inputTokens":3621,"outputTokens":951,"at":"2026-09-16T14:46:35.508Z"}
+{"event":"request","id":"0007","systemSha256":"6efbbab29112575caaa865f40b32acaf715b4aa758d6fbffe96431fdc79c3360","maxOutputTokens":3200,"at":"2026-09-16T14:46:35.511Z"}
+{"event":"response","id":"0007","status":200,"durationMs":37161,"doneReason":"stop","inputTokens":3599,"outputTokens":834,"at":"2026-09-16T14:47:12.672Z"}

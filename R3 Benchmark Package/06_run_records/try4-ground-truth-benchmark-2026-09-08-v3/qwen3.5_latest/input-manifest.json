@@ -1,0 +1,133 @@
+{
+  "campaign": "try4-ground-truth-benchmark-2026-09-08-v3",
+  "modelId": "ollama:qwen3.5:latest",
+  "appUrl": "http://localhost:3001",
+  "mode": "standardized evidence-complete creation run",
+  "defaultReferenceCountExpected": 8,
+  "incidentDocumentCount": 24,
+  "withheldGroundTruthSupplied": false,
+  "incidentSha256": "0a3f1cd44def60b30609fc425b3b912fabf5675ff65db2615b3dc5c37bc54828",
+  "files": [
+    {
+      "path": "02_model_visible/02_starter_documents/Initial_Evidence_Register.pdf",
+      "sha256": "6bf1e0120dda8693a648234bb8d965e243c652f7780e326d717e92c384d70234",
+      "bytes": 4677
+    },
+    {
+      "path": "02_model_visible/02_starter_documents/Initial_Scene_Sketch_and_Timeline.pdf",
+      "sha256": "a7a64520d05154a906dcb98f13d3a0d932f87b74f5a781a684ac33a7d38bcdc5",
+      "bytes": 6774
+    },
+    {
+      "path": "02_model_visible/02_starter_documents/Preliminary_Incident_Notification_16515.pdf",
+      "sha256": "b2a55f7152d7298349373817c3087ee1d7a94c272a16dfc1c654dd2915dccf79",
+      "bytes": 4774
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-01_configuration_and_travel_observation.md",
+      "sha256": "6e880091bf2b133649efec51203ce1b80846a6dff84474c5b8bc0b5ee4460511",
+      "bytes": 1383
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-02_extended_video_review.md",
+      "sha256": "1f2206d8265e983ea2782b6c96e256546f2589294f23ce61d61ea0ab463cca00",
+      "bytes": 1194
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-03_hydraulic_isolation_followup.md",
+      "sha256": "ab1d231134d948bc19abb35dbcf7cd1e53d421f032d5fd0dd2dd1d8754f0b5bc",
+      "bytes": 1203
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-04_mechanical_design_and_retention_review.md",
+      "sha256": "03a1316e00b73678a7756163351fbce13bbced56653b0a4c54e0d36cd1cedc8e",
+      "bytes": 1370
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-05_task_loto_review.md",
+      "sha256": "319c69574d4b13695db7e232a925b2f937b78e58ff4886d7d62735398843059e",
+      "bytes": 1276
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-06_measurement_and_condition_summary.md",
+      "sha256": "579ebee3ac18b0ce3c0bf50695b19bbc4df34aa05cc7d64252e6a4c374f45fc4",
+      "bytes": 1148
+    },
+    {
+      "path": "04_challenge_evidence/01_Superseded_Similar_Stand_Drawing_Note.pdf",
+      "sha256": "e34d71459a911472145cbe487d855b1870b0ebb54993835e9dd55cecf88b3be5",
+      "bytes": 3808
+    },
+    {
+      "path": "04_challenge_evidence/02_Anonymous_Turnover_Note.pdf",
+      "sha256": "6c3931d3b29b943cffc7c64ac21d32a7052fc496e78102749091c2cd3ddd1ceb",
+      "bytes": 3607
+    },
+    {
+      "path": "04_challenge_evidence/03_Unverified_Crane_Rumor_Email.pdf",
+      "sha256": "59db339402761a86f6f53a88848d1331cb98da61edf6de2be7e808d6bc58adcd",
+      "bytes": 3835
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/01_Mechanical_Assembly_and_Retention_Record.pdf",
+      "sha256": "ae271728759aedb5d8857dd3c6f25ac67331114ce681d48383d1d8c46af8bec2",
+      "bytes": 4168
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/02_Energy_Control_Plan.pdf",
+      "sha256": "c5b68e242b9460884d6668f565f1a4ec97b02c791141dca087c9de116636b48e",
+      "bytes": 4330
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/03_Lockout_Verification_Record.pdf",
+      "sha256": "833dd5560369df527032a5eb3fcfbad30a4295dd67554827d6177f2a7001db7c",
+      "bytes": 4083
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/04_Shift_Turnover_Log.pdf",
+      "sha256": "6f88cb67d11ed1a9f4041cedef1c48023942c81937c0fe172dae60ea116ecc59",
+      "bytes": 3741
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/05_Outage_Work_Scope_and_Sequence.pdf",
+      "sha256": "eb47f42a49f32c888ed663040d517cc444a94fdf187dcd0d40f102644e7dc336",
+      "bytes": 3868
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/06_JJHAC_JSHA_Record.pdf",
+      "sha256": "fd57dd2bdc173b95550e6eac9573c86a80099c203f09f4d1f640c753804d8b7a",
+      "bytes": 4110
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/07_Witness_Statement_Packet.pdf",
+      "sha256": "664bf883c77b6bea1100d49da2c27a9b171bd86577c89207535276590b1eb7bb",
+      "bytes": 3745
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/08_Crane_Activity_Log.pdf",
+      "sha256": "98c8483a68c69ab18c0e15a69443124a0d21fa92f5816ee5b96e9f1ec2cd3627",
+      "bytes": 3651
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/09_Hydraulic_Status_and_Bleed_Verification.pdf",
+      "sha256": "f12fac21272131f4b6a1690a015a22071e4a1ddf6cb0312bcf965107cd45f658",
+      "bytes": 3759
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/10_Scene_Photo_Index_and_Measurement_Log.pdf",
+      "sha256": "f2dcd9b7d32cef1f3971f4635ef4dcc99efdbcc4be1f1e71b5de2e21eba2e46e",
+      "bytes": 4587
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/11_Post_Event_Mechanical_Inspection.pdf",
+      "sha256": "4edbdc1e2a00ebdbcec2f984d34c709e88441faf57a9a90e6da77789cc19098b",
+      "bytes": 4134
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/15_Video_Review_Log.pdf",
+      "sha256": "272e53ed06576673e7b7d9aae4055ff68e028344e7d744143fe8f876c7fe7748",
+      "bytes": 4071
+    }
+  ],
+  "startedAt": "2026-09-08T15:55:48.386Z"
+}

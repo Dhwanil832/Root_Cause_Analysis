@@ -1,0 +1,4 @@
+{"at":"2026-09-15T12:37:17.243Z","phase":"creating-fresh-incident","status":"running"}
+{"at":"2026-09-15T12:37:17.349Z","phase":"initial-causal-analysis"}
+{"at":"2026-09-15T12:58:06.501Z","phase":"request-failed","lastError":"Error: Output contract: Unknown finding target edge-1qd881d. Use an existing board node.id or edge.id.","requestAttempt":1}
+{"at":"2026-09-15T12:58:06.591Z","phase":"stopped","status":"failed","error":"Error: Output contract: Unknown finding target edge-1qd881d. Use an existing board node.id or edge.id.","finishedAt":"2026-09-15T12:58:06.591Z"}

@@ -1,0 +1,997 @@
+{
+  "metadata": {
+    "app": "Try 6",
+    "title": "IA-16036 · V1 / V2 causal boards",
+    "description": "# Instrument-air interruption during maintenance preparation\r\n\r\nRecord ID: IA-I01\r\n\r\nAt approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored. No injury is reported.\r\n\r\nThe initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment. Supporting records will be provided as the investigation develops.",
+    "modelName": "qwen3.5:latest",
+    "originalIncidentId": "9660f4f2-5fc0-4d0a-917e-8e48641956e3",
+    "originalTrackId": "a6647fe7-b418-4232-817f-b3c6d3a5325d",
+    "kind": "published-versions",
+    "note": "Published partial V1 and V2 from the controlled Qwen investigation. The saved board statements, connections and review findings are unchanged. More nodes or links do not by themselves establish a better RCA.",
+    "href": "/history/causal-comparison",
+    "dataUrl": "/history/featured-causal-boards.json",
+    "versions": [
+      {
+        "number": 1,
+        "label": "V1",
+        "subtitle": "Initial published partial investigation",
+        "createdAt": "2026-09-20T18:01:48.895Z",
+        "status": "partial",
+        "sourcePath": "Try 6/evals/ia16036-v2-controlled/failure-report-evidence.json",
+        "sourceSha256": "d38ff8dc1518c19f29815b65af9acbe6028b52314b67472dbe7f588076fa3f0b",
+        "sourceRecordId": "a20904da-8710-40df-8d58-fec78f451f2a",
+        "nodes": 5,
+        "edges": 4
+      },
+      {
+        "number": 2,
+        "label": "V2",
+        "subtitle": "After routing / valve records and one released answer",
+        "createdAt": "2026-09-20T20:03:37.537Z",
+        "status": "partial",
+        "sourcePath": "Try 6/evals/ia16036-v2-controlled/failure-report-evidence.json",
+        "sourceSha256": "d38ff8dc1518c19f29815b65af9acbe6028b52314b67472dbe7f588076fa3f0b",
+        "sourceRecordId": "3d44374c-888e-465a-8870-99d11eaa8c12",
+        "nodes": 9,
+        "edges": 6
+      }
+    ]
+  },
+  "versions": [
+    {
+      "number": 1,
+      "label": "V1",
+      "subtitle": "Initial published partial investigation",
+      "createdAt": "2026-09-20T18:01:48.895Z",
+      "status": "partial",
+      "sourcePath": "Try 6/evals/ia16036-v2-controlled/failure-report-evidence.json",
+      "sourceSha256": "d38ff8dc1518c19f29815b65af9acbe6028b52314b67472dbe7f588076fa3f0b",
+      "sourceRecordId": "a20904da-8710-40df-8d58-fec78f451f2a",
+      "board": {
+        "maturity": "developing",
+        "focalNodeId": "focal",
+        "nodes": [
+          {
+            "id": "focal",
+            "type": "focal-event",
+            "label": "Loss of instrument-air pressure at RHOB receiving station (P-R) coincident with AL-44 COMP FAULT alarm, while a two-person Utilities crew prepared for maintenance on dryer group D-101. The compressor motor running indication remained ON during the event; no trip log is available.",
+            "detail": "At ~10:00 AM on May 20, RHOB reported instrument-air pressure loss while a two-person Utilities crew prepared for maintenance. Pressure P-R dropped from 6.8 to 2.1 bar between 09:54 and 10:03; alarm AL-44 (COMP FAULT) triggered at 10:00:32, acknowledged ~10:03, cleared by 10:07. P-U remained stable upstream of the distribution route. The compressor motor running bit C-11 was ON during the drop and alarm period; no trip log is available.",
+            "status": "proposed",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "specialistIds": [],
+            "verified": false
+          },
+          {
+            "id": "proposition:8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "type": "event",
+            "label": "At approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure.",
+            "detail": "",
+            "status": "partially-supported",
+            "sourceIds": [
+              "incident-description",
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286",
+              "94a18bcb-40c1-4025-b5f5-70071d4bf567"
+            ],
+            "specialistIds": [
+              "process-material",
+              "equipment-tool"
+            ],
+            "verified": false,
+            "claimIds": [
+              "8e47c554-b6ef-42a5-b173-63a19b1c5f62"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "type": "event",
+            "label": "Alarm AL-44 (COMP FAULT) occurred at 10:00:32, was acknowledged at 10:03:14, and cleared at 10:06:24.",
+            "detail": "",
+            "status": "proposed",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "specialistIds": [
+              "electrical"
+            ],
+            "verified": false,
+            "claimIds": [
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "type": "condition",
+            "label": "Local indication returned to normal band.",
+            "detail": "",
+            "status": "supported",
+            "sourceIds": [
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "7723373a-97d0-494b-9b29-a6eea7bb94c1",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "specialistIds": [
+              "process-material",
+              "work-environment"
+            ],
+            "verified": true,
+            "claimIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "type": "barrier",
+            "label": "C-11 RUN bit was 1 at all sampled times including during P-R drop and alarm period.",
+            "detail": "",
+            "status": "proposed",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "specialistIds": [],
+            "verified": false,
+            "claimIds": [
+              "c08f1094-94cc-4a58-8c19-6f38f51424ff"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          }
+        ],
+        "edges": [
+          {
+            "id": "focal>caused>proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "from": "focal",
+            "to": "proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "type": "caused",
+            "rationale": "The pressure loss at P-R coincided with the AL-44 alarm occurrence; F83 confirms AL-44 is sourced from P-R, linking the event to the specific measurement point.",
+            "status": "unknown",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286",
+              "7723373a-97d0-494b-9b29-a6eea7bb94c1"
+            ],
+            "claimIds": [
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+              "5f42f283-583f-4719-a799-3811bfe984d1"
+            ],
+            "counterfactual": "If P-R had remained stable, AL-44 would not have triggered based on its low-pressure input logic (F83).",
+            "competingExplanation": "Alarm could be triggered by a false signal or mis-mapped input rather than actual pressure loss.",
+            "evidenceGap": "No trip log (F99); alarm input mapping not provided (S1, S2), so whether C-11 reflects motor state or is aliased remains unresolved. F84 notes display text retained from earlier template.",
+            "verified": false
+          },
+          {
+            "id": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6>preceded>focal",
+            "from": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "to": "focal",
+            "type": "preceded",
+            "rationale": "Pressure recovered after the interruption; normal band returned by 10:07.",
+            "status": "unknown",
+            "sourceIds": [
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "claimIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4"
+            ],
+            "counterfactual": "If pressure had not recovered, F13 would not have occurred as stated.",
+            "competingExplanation": "Recovery could be due to automatic restart, manual intervention, or upstream source restoration.",
+            "evidenceGap": "No evidence that P-R recovered to 6.8 bar; F77 shows recovery window but final value not explicitly stated beyond 'returned to normal band' in F13.",
+            "verified": false
+          },
+          {
+            "id": "focal>preceded>proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "from": "focal",
+            "to": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "type": "preceded",
+            "rationale": "Pressure recovered after the interruption; F13 states local indication returned to normal band by 10:07, following the alarm clearance at 10:06:24 (F76).",
+            "status": "unknown",
+            "sourceIds": [
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "claimIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4"
+            ],
+            "counterfactual": "If pressure had not recovered, F13 would not have occurred.",
+            "competingExplanation": "Recovery could be due to automatic restart, manual intervention, or upstream source restoration.",
+            "evidenceGap": "F13 uses qualitative 'normal band' without numeric confirmation; F77 shows recovery window but final value not explicitly stated beyond returning to normal.",
+            "verified": false
+          },
+          {
+            "id": "focal>failed-to-prevent>proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "from": "focal",
+            "to": "proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "type": "failed-to-prevent",
+            "rationale": "C-11 RUN bit remained 1 during the pressure drop and alarm period (S2), indicating the motor running indication did not prevent or signal a compressor trip despite low-pressure conditions.",
+            "status": "unknown",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "claimIds": [
+              "c08f1094-94cc-4a58-8c19-6f38f51424ff"
+            ],
+            "counterfactual": "If C-11 had indicated OFF during the event, it might have signaled a trip that could have prevented downstream effects or alerted operators earlier.",
+            "competingExplanation": "The bit may be aliased or reflect a different circuit condition than actual motor rotation (F82, F79).",
+            "evidenceGap": "No direct motor current/rotation evidence; F99 confirms no trip log attached. S1 states register does not establish valve states or prove every disturbance appears in export.",
+            "verified": false
+          }
+        ],
+        "verificationFindings": [
+          {
+            "id": "review:proposition:8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "targetId": "proposition:8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "severity": "important",
+            "issue": "partial: The assertion that RHOB reported a pressure loss at ~10:00 AM is corroborated by multiple sources (⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ shift log entry, ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ pressure data and alarm time, ⟦evidence:span:94a18bcb-40c1-4025-b5f5-70071d4bf567:1d12639309bb4c6a:0-592⟧ desk message). However, the 'Turn 2' identifier appears only in ⟦evidence:span:incident-description:ec7f57d0b8615f4e:0-643⟧ (incident account) and lacks independent verification in the remaining evidence set, creating a minor gap regarding the shift classification. Unresolved: Independent record defining 'Turn 2' as the shift designation applicable to the morning entries starting at 07:00 on May 20, 2024.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "targetId": "proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "severity": "important",
+            "issue": "review incomplete: [\n  {\n    \"code\": \"custom\",\n    \"path\": [\n      \"missingPremises\"\n    ],\n    \"message\": \"An entailed claim cannot have an unresolved necessary premise.\"\n  }\n]",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "targetId": "proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "severity": "important",
+            "issue": "review incomplete: [\n  {\n    \"code\": \"custom\",\n    \"path\": [\n      \"missingPremises\"\n    ],\n    \"message\": \"An entailed claim cannot have an unresolved necessary premise.\"\n  }\n]",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:focal>caused>proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "targetId": "focal>caused>proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6>preceded>focal",
+            "targetId": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6>preceded>focal",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:focal>preceded>proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "targetId": "focal>preceded>proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:focal>failed-to-prevent>proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "targetId": "focal>failed-to-prevent>proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          }
+        ],
+        "branchRevisions": [
+          {
+            "previousTargetId": "a8e348e2c2810ed7cb4c620657527e25d07376e9a9ff6d58a2463e086d650239",
+            "previousLabel": "a8e348e2c2810ed7cb4c620657527e25d07376e9a9ff6d58a2463e086d650239",
+            "action": "revise",
+            "reason": "Operator-approved partial-frame execution recovery. No observations, verdicts, source inputs, or failed traces changed.",
+            "replacementIds": [
+              "a8e348e2c2810ed7cb4c620657527e25d07376e9a9ff6d58a2463e086d650239"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-01-compressor-trip-or-control-fault",
+            "previousLabel": "branch:B-01-compressor-trip-or-control-fault",
+            "action": "revise",
+            "reason": "Initial hypothesis from F96 ('Might have lost the compressor again') requires verification.",
+            "replacementIds": [
+              "branch:B-01-compressor-trip-or-control-fault"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-02-supply-side-disturbance",
+            "previousLabel": "branch:B-02-supply-side-disturbance",
+            "action": "revise",
+            "reason": "P-U stability (F78) makes upstream source less likely but does not rule out downstream blockage.",
+            "replacementIds": [
+              "branch:B-02-supply-side-disturbance"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-03-maintenance-preparation-interference",
+            "previousLabel": "branch:B-03-maintenance-preparation-interference",
+            "action": "revise",
+            "reason": "Work boundary not yet released at notification time; F45 requires Utilities to prepare, RHOB to observe, Maintenance to receive after release.",
+            "replacementIds": [
+              "branch:B-03-maintenance-preparation-interference"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "8706a85455e96c7357cfbb0b1bd2bd7bd22a974b584d9bdec58c1e92214cc260",
+            "previousLabel": "8706a85455e96c7357cfbb0b1bd2bd7bd22a974b584d9bdec58c1e92214cc260",
+            "action": "revise",
+            "reason": "Operator requested scoped task recovery. Completed tasks, prior call traces and evidence are retained.",
+            "replacementIds": [
+              "8706a85455e96c7357cfbb0b1bd2bd7bd22a974b584d9bdec58c1e92214cc260"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "previousLabel": "8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "action": "revise",
+            "reason": "partial: The assertion that RHOB reported a pressure loss at ~10:00 AM is corroborated by multiple sources (⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ shift log entry, ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ pressure data and alarm time, ⟦evidence:span:94a18bcb-40c1-4025-b5f5-70071d4bf567:1d12639309bb4c6a:0-592⟧ desk message). However, the 'Turn 2' identifier appears only in ⟦evidence:span:incident-description:ec7f57d0b8615f4e:0-643⟧ (incident account) and lacks independent verification in the remaining evidence set, creating a minor gap regarding the shift classification. Unresolved: Independent record defining 'Turn 2' as the shift designation applicable to the morning entries starting at 07:00 on May 20, 2024.",
+            "replacementIds": [
+              "8e47c554-b6ef-42a5-b173-63a19b1c5f62"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "previousLabel": "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "action": "revise",
+            "reason": "supported: The claim matches the exact text of ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ Line 13, which is a record observation per ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ Line 16. The physical state is corroborated by pressure recovery data in ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ and the alarm clearing threshold in ⟦evidence:span:7723373a-97d0-494b-9b29-a6eea7bb94c1:90fe8a0e59693429:0-928⟧. No conflicting accounts exist; times are consistent within 'About' precision.",
+            "replacementIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "5f42f283-583f-4719-a799-3811bfe984d1",
+            "previousLabel": "5f42f283-583f-4719-a799-3811bfe984d1",
+            "action": "revise",
+            "reason": "supported: ⟦evidence:span:7723373a-97d0-494b-9b29-a6eea7bb94c1:90fe8a0e59693429:0-928⟧ Line 10 explicitly states AL-44 is mapped to P-R, matching the target statement exactly. No conflicting evidence regarding this definition exists.",
+            "replacementIds": [
+              "5f42f283-583f-4719-a799-3811bfe984d1"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "e0fce9ec915284bbb0c7135de86f0aca02e225da5888ca3d362cc71f8df1d8d8",
+            "previousLabel": "e0fce9ec915284bbb0c7135de86f0aca02e225da5888ca3d362cc71f8df1d8d8",
+            "action": "revise",
+            "reason": "Not executed: no active board node or connection uses this premise. Original observation and previous results retained.",
+            "replacementIds": [
+              "e0fce9ec915284bbb0c7135de86f0aca02e225da5888ca3d362cc71f8df1d8d8"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "f9369dcac319679112996988a424b2ed92d61d01c1f3808da7535563f7c9c95a",
+            "previousLabel": "f9369dcac319679112996988a424b2ed92d61d01c1f3808da7535563f7c9c95a",
+            "action": "revise",
+            "reason": "Not executed: no active board node or connection uses this premise. Original observation and previous results retained.",
+            "replacementIds": [
+              "f9369dcac319679112996988a424b2ed92d61d01c1f3808da7535563f7c9c95a"
+            ],
+            "evidenceIds": []
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "label": "V2",
+      "subtitle": "After routing / valve records and one released answer",
+      "createdAt": "2026-09-20T20:03:37.537Z",
+      "status": "partial",
+      "sourcePath": "Try 6/evals/ia16036-v2-controlled/failure-report-evidence.json",
+      "sourceSha256": "d38ff8dc1518c19f29815b65af9acbe6028b52314b67472dbe7f588076fa3f0b",
+      "sourceRecordId": "3d44374c-888e-465a-8870-99d11eaa8c12",
+      "board": {
+        "maturity": "developing",
+        "focalNodeId": "focal",
+        "nodes": [
+          {
+            "id": "focal",
+            "type": "focal-event",
+            "label": "Loss of instrument-air pressure at RHOB receiving station (P-R) coincident with AL-44 COMP FAULT alarm, while a two-person Utilities crew prepared for maintenance on dryer group D-101",
+            "detail": "Instrument-air pressure at RHOB dropped from 6.8 to 2.1 bar between 09:54 and 10:03 while a two-person Utilities crew prepared for maintenance on dryer group D-101. Alarm AL-44 (COMP FAULT) triggered at 10:00:32; P-U remained stable upstream. The compressor motor running indication C-11 was ON throughout. Work was paused and deferred.",
+            "status": "proposed",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "specialistIds": [],
+            "verified": false
+          },
+          {
+            "id": "proposition:8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "type": "event",
+            "label": "At approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure.",
+            "detail": "",
+            "status": "supported",
+            "sourceIds": [
+              "incident-description",
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286",
+              "94a18bcb-40c1-4025-b5f5-70071d4bf567"
+            ],
+            "specialistIds": [
+              "process-material",
+              "equipment-tool"
+            ],
+            "verified": true,
+            "claimIds": [
+              "8e47c554-b6ef-42a5-b173-63a19b1c5f62"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "type": "event",
+            "label": "Alarm AL-44 (COMP FAULT) occurred at 10:00:32, was acknowledged at 10:03:14, and cleared at 10:06:24.",
+            "detail": "",
+            "status": "unknown",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286",
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6"
+            ],
+            "specialistIds": [
+              "electrical"
+            ],
+            "verified": false,
+            "claimIds": [
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "type": "condition",
+            "label": "Local indication returned to normal band.",
+            "detail": "",
+            "status": "supported",
+            "sourceIds": [
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "7723373a-97d0-494b-9b29-a6eea7bb94c1",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286",
+              "34bca70a-aa05-4ed9-b902-22de342fc27d"
+            ],
+            "specialistIds": [
+              "process-material",
+              "work-environment"
+            ],
+            "verified": true,
+            "claimIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "type": "barrier",
+            "label": "C-11 RUN bit was 1 at all sampled times including during P-R drop and alarm period.",
+            "detail": "",
+            "status": "supported",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "specialistIds": [
+              "electrical"
+            ],
+            "verified": true,
+            "claimIds": [
+              "c08f1094-94cc-4a58-8c19-6f38f51424ff"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:22dc870b-4cb9-4384-8d38-f5b2e59bffa5",
+            "type": "condition",
+            "label": "Pressure P-R dropped from 6.8 bar to 2.1 bar between 09:54 and 10:03, then recovered.",
+            "detail": "",
+            "status": "partially-supported",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "specialistIds": [],
+            "verified": false,
+            "claimIds": [
+              "22dc870b-4cb9-4384-8d38-f5b2e59bffa5"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:d7d7e24d-1756-40f0-b5ba-0c797b35d9dd",
+            "type": "condition",
+            "label": "Pressure P-U remained stable at 6.8–6.9 bar throughout the window while P-R varied significantly.",
+            "detail": "",
+            "status": "partially-supported",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "specialistIds": [],
+            "verified": false,
+            "claimIds": [
+              "d7d7e24d-1756-40f0-b5ba-0c797b35d9dd"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:ac0de36c-dd14-4682-8ed7-5b6428f1b148",
+            "type": "change",
+            "label": "Work boundary is preparation only at time of initial notification.",
+            "detail": "",
+            "status": "supported",
+            "sourceIds": [
+              "21a89821-8419-463d-96dc-d3bd6c6d8a67"
+            ],
+            "specialistIds": [
+              "procedure-planning",
+              "maintenance-outage",
+              "isolation-loto"
+            ],
+            "verified": true,
+            "claimIds": [
+              "ac0de36c-dd14-4682-8ed7-5b6428f1b148"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          },
+          {
+            "id": "proposition:1b5e26cf-ca7e-4f4c-8b8f-238063eb5185",
+            "type": "change",
+            "label": "The main-route isolation remained incomplete when the service interruption occurred.",
+            "detail": "",
+            "status": "supported",
+            "sourceIds": [
+              "34bca70a-aa05-4ed9-b902-22de342fc27d",
+              "incident-description",
+              "40439331-1d17-4a79-95cc-b5c863114981",
+              "56772c5b-f8bd-496e-8338-4d80f54a3f4e"
+            ],
+            "specialistIds": [
+              "isolation-loto"
+            ],
+            "verified": true,
+            "claimIds": [
+              "1b5e26cf-ca7e-4f4c-8b8f-238063eb5185"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          }
+        ],
+        "edges": [
+          {
+            "id": "focal>caused>proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "from": "focal",
+            "to": "proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "type": "caused",
+            "rationale": "The pressure loss at P-R coincided with the AL-44 alarm occurrence; F83 confirms AL-44 is sourced from P-R, linking the event to the specific measurement point.",
+            "status": "unknown",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286",
+              "7723373a-97d0-494b-9b29-a6eea7bb94c1"
+            ],
+            "claimIds": [
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+              "22dc870b-4cb9-4384-8d38-f5b2e59bffa5",
+              "5f42f283-583f-4719-a799-3811bfe984d1"
+            ],
+            "counterfactual": "If P-R had not dropped, AL-44 would not have triggered (F83).",
+            "competingExplanation": "A different cause at P-R could trigger AL-44 if it drops below 4.5 bar; F77 shows P-R dropped.",
+            "evidenceGap": "No trip log (F99); alarm input mapping not provided (S1), so whether C-11 reflects motor state or is aliased remains unresolved. F84 notes display text retained from earlier template.",
+            "verified": false
+          },
+          {
+            "id": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6>preceded>focal",
+            "from": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "to": "focal",
+            "type": "preceded",
+            "rationale": "Pressure recovered after the interruption; normal band returned by 10:07, following alarm clearance at 10:06:24 (F76).",
+            "status": "unknown",
+            "sourceIds": [
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "7723373a-97d0-494b-9b29-a6eea7bb94c1",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "claimIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+              "22dc870b-4cb9-4384-8d38-f5b2e59bffa5"
+            ],
+            "counterfactual": "If pressure had not recovered, the system would have remained in a failed state.",
+            "competingExplanation": "Recovery could have been due to upstream restoration or downstream reconfiguration; F78 shows P-U stable throughout.",
+            "evidenceGap": "F13 uses qualitative 'normal band' without numeric confirmation; F77 shows recovery window but final value not explicitly stated beyond returning to normal.",
+            "verified": false
+          },
+          {
+            "id": "focal>preceded>proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "from": "focal",
+            "to": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "type": "preceded",
+            "rationale": "Pressure recovered after the interruption; normal band returned by 10:07, following alarm clearance at 10:06:24 (F76).",
+            "status": "unknown",
+            "sourceIds": [
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "7723373a-97d0-494b-9b29-a6eea7bb94c1",
+              "f24a87bf-1473-49ca-81a3-dc82aa303286"
+            ],
+            "claimIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+              "22dc870b-4cb9-4384-8d38-f5b2e59bffa5"
+            ],
+            "counterfactual": "If pressure had not recovered, F13 would not have been observed.",
+            "competingExplanation": "Recovery could be due to upstream restoration or downstream valve reopening; F78 shows P-U stable throughout.",
+            "evidenceGap": "F13 uses qualitative 'normal band' without numeric confirmation; F77 shows recovery window but final value not explicitly stated beyond returning to normal.",
+            "verified": false
+          },
+          {
+            "id": "proposition:d7d7e24d-1756-40f0-b5ba-0c797b35d9dd>failed-to-prevent>focal",
+            "from": "proposition:d7d7e24d-1756-40f0-b5ba-0c797b35d9dd",
+            "to": "focal",
+            "type": "failed-to-prevent",
+            "rationale": "P-U remained stable at 6.8–6.9 bar (F78), suggesting upstream source intact; however a downstream blockage or failed supply-side component could cause localized pressure loss without affecting P-U reading if they are on different branches of the header.",
+            "status": "unknown",
+            "sourceIds": [
+              "f24a87bf-1473-49ca-81a3-dc82aa303286",
+              "7723373a-97d0-494b-9b29-a6eea7bb94c1"
+            ],
+            "claimIds": [
+              "d7d7e24d-1756-40f0-b5ba-0c797b35d9dd",
+              "d55f6802-6b46-4e45-b954-b0f6694dbca8",
+              "2899862e-8324-46c7-ac33-7a2f5c2b071f"
+            ],
+            "counterfactual": "If P-U and P-R were on the same branch, stable P-U would have prevented P-R drop unless a valve between them failed.",
+            "competingExplanation": "Stable P-U makes upstream source less likely but does not rule out downstream blockage or auxiliary route interference (B-17).",
+            "evidenceGap": "Need piping diagram or point register mapping to confirm whether P-U and P-R are on the same header branch; F46 notes IA-D01 is not a current piping diagram.",
+            "verified": false
+          },
+          {
+            "id": "proposition:ac0de36c-dd14-4682-8ed7-5b6428f1b148>enabled>focal",
+            "from": "proposition:ac0de36c-dd14-4682-8ed7-5b6428f1b148",
+            "to": "focal",
+            "type": "enabled",
+            "rationale": "Work boundary is preparation only at time of initial notification (F20); possible valve misoperation or accidental isolation during setup before formal release.",
+            "status": "unknown",
+            "sourceIds": [
+              "21a89821-8419-463d-96dc-d3bd6c6d8a67",
+              "8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6",
+              "34bca70a-aa05-4ed9-b902-22de342fc27d",
+              "40439331-1d17-4a79-95cc-b5c863114981",
+              "story-release:c5bdbc70-37bd-42f3-9acc-00912637f096:00af67c6-51bd-4b01-9435-364973e59a91",
+              "3ad97827-73b7-4952-ae87-c5288728a604"
+            ],
+            "claimIds": [
+              "ac0de36c-dd14-4682-8ed7-5b6428f1b148",
+              "051aa4ec-9fa2-48bb-9541-65500dfeb65b",
+              "5987a2f5-e428-4987-a542-dc525820a545"
+            ],
+            "counterfactual": "If work boundary had been released and isolated, pressure loss would have required a different cause.",
+            "competingExplanation": "Preparation-only status enabled crew to manipulate valves without full isolation protocol; F45 requires Utilities to prepare, RHOB to observe, Maintenance to receive after release.",
+            "evidenceGap": "No evidence of field operation logged for this work topic (F15); need valve-by-valve content or witness testimony to confirm interference.",
+            "verified": false
+          },
+          {
+            "id": "proposition:1b5e26cf-ca7e-4f4c-8b8f-238063eb5185>enabled>focal",
+            "from": "proposition:1b5e26cf-ca7e-4f4c-8b8f-238063eb5185",
+            "to": "focal",
+            "type": "enabled",
+            "rationale": "The main-route isolation remained incomplete when the service interruption occurred (F127); this enabled a pressure drop to occur without full system shutdown.",
+            "status": "unknown",
+            "sourceIds": [
+              "34bca70a-aa05-4ed9-b902-22de342fc27d",
+              "56772c5b-f8bd-496e-8338-4d80f54a3f4e",
+              "story-release:c5bdbc70-37bd-42f3-9acc-00912637f096:00af67c6-51bd-4b01-9435-364973e59a91"
+            ],
+            "claimIds": [
+              "1b5e26cf-ca7e-4f4c-8b8f-238063eb5185",
+              "0d2372a2-c468-4fb5-80eb-2bb7f2c5a4c6",
+              "40f68739-753f-4c84-8304-cda14082e7f7"
+            ],
+            "counterfactual": "If main-route isolation had been complete, pressure loss would have required a different cause or full system failure.",
+            "competingExplanation": "Incomplete isolation could be due to valve misoperation during preparation; F118 shows M-101 closed but M-102 open at 10:05:40.",
+            "evidenceGap": "Need confirmation of whether V-201/V-202 were properly positioned and whether B-17 route was intended for use during event.",
+            "verified": false
+          }
+        ],
+        "verificationFindings": [
+          {
+            "id": "review:proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "targetId": "proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "severity": "important",
+            "issue": "unknown: ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧'s alarm journal selection explicitly lists AL-44 with occurrence 10:00:32, acknowledged 10:03:14, cleared 10:06:24. This is a record-observation claim (what the record says). ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ alone establishes each timestamp as recorded in the alarm journal without needing independent physical verification. Unresolved source disagreement affects the truth of this complete assertion. Source conflict: ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ uses approximate times for operator entries; ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ contains precise journal timestamps. The difference reflects precision level, not contradiction of record observation.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:22dc870b-4cb9-4384-8d38-f5b2e59bffa5",
+            "targetId": "proposition:22dc870b-4cb9-4384-8d38-f5b2e59bffa5",
+            "severity": "important",
+            "issue": "partial: ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ sampled data supports the start (6.8 bar) and recovery (6.8 bar), but the specific low-point value of 2.1 bar within the 10:03 window is not established; at 10:03:10, the recorded value was 2.6 bar. Sampling intervals are not defined to confirm intermediate values were missed. Unresolved: Evidence of P-R reading showing exactly 2.1 bar occurring before or at 10:03, or continuous logging data for P-R during the interval.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:d7d7e24d-1756-40f0-b5ba-0c797b35d9dd",
+            "targetId": "proposition:d7d7e24d-1756-40f0-b5ba-0c797b35d9dd",
+            "severity": "important",
+            "issue": "partial: Evidence ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ (IA-P01_pressure_and_alarm_extract) contains a pressure sample table covering the window 09:54–10:08. The recorded P-U values are restricted to 6.9 or 6.8 bar at each sample, matching the stability description. P-R values show a significant drop from 6.8 to 2.1 bar before recovery. While ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ notes that the export supplies sampled values rather than a continuous waveform (⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ line 7), these are the available valid observations for the investigation window, and no evidence contradicts their validity. Unresolved: Continuous data coverage between sample timestamps to confirm absence of transient dips below 6.8 bar for P-U.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:focal>caused>proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "targetId": "focal>caused>proposition:aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6>preceded>focal",
+            "targetId": "proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6>preceded>focal",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:focal>preceded>proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "targetId": "focal>preceded>proposition:fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:d7d7e24d-1756-40f0-b5ba-0c797b35d9dd>failed-to-prevent>focal",
+            "targetId": "proposition:d7d7e24d-1756-40f0-b5ba-0c797b35d9dd>failed-to-prevent>focal",
+            "severity": "important",
+            "issue": "One or more premises are unresolved; this connection remains a proposal.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:ac0de36c-dd14-4682-8ed7-5b6428f1b148>enabled>focal",
+            "targetId": "proposition:ac0de36c-dd14-4682-8ed7-5b6428f1b148>enabled>focal",
+            "severity": "important",
+            "issue": "The relationship is partially supported: ⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧ shows V-201 was opened and later closed, and V-202 was observed closed then moved to open during the incident window; ⟦evidence:span:40439331-1d17-4a79-95cc-b5c863114981:8807f9ec256a55f3:0-920⟧ confirms V-201/V-202 are inline valves on auxiliary route B-17. However, ⟦evidence:span:21a89821-8419-463d-96dc-d3bd6c6d8a67:c595755335412016:0-981⟧/⟦evidence:span:story-release:c5bdbc70-37bd-42f3-9acc-00912637f096:00af67c6-51bd-4b01-9435-364973e59a91:e3b050fe898c8daf:1696-2672⟧ state the temporary instruction attachment field is blank and no valve-by-valve checklist content is established; ⟦evidence:span:3ad97827-73b7-4952-ae87-c5288728a604:e46ae64dd253dfe0:0-1211⟧ notes a field-position observation does not prove internal valve condition or pressure loss cause. The claim that preparation-only status enabled crew to manipulate valves without full isolation (⟦evidence:span:21a89821-8419-463d-96dc-d3bd6c6d8a67:c595755335412016:0-981⟧) is plausible but unverified by a released temporary instruction or witness testimony confirming interference with the receiving header P-R. No evidence directly links V-202 opening to the drop in P-R, nor does it rule out upstream distribution causes.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          },
+          {
+            "id": "review:proposition:1b5e26cf-ca7e-4f4c-8b8f-238063eb5185>enabled>focal",
+            "targetId": "proposition:1b5e26cf-ca7e-4f4c-8b8f-238063eb5185>enabled>focal",
+            "severity": "important",
+            "issue": "The relationship is partially supported: ⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧ states that the main-route isolation remained incomplete at the time of interruption, which enabled the pressure drop. However, the causal link is not fully established because ⟦evidence:span:56772c5b-f8bd-496e-8338-4d80f54a3f4e:05b49d6a8bef936d:0-1233⟧ confirms V-202 was closed at 10:05:40 (when the pressure had already dropped), and ⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧ shows no record of a deliberate two-valve instruction being ignored. The mechanism enabling failure depends on whether B-17 was intended for use; ⟦evidence:span:story-release:c5bdbc70-37bd-42f3-9acc-00912637f096:00af67c6-51bd-4b01-9435-364973e59a91:e3b050fe898c8daf:0-1696⟧ indicates no temporary instruction was attached, but does not confirm intent to use B-17. Thus, the connection between incomplete isolation and pressure loss is plausible but not definitively proven by available evidence.",
+            "evidenceNeeded": "Evidence for the stated proposition and mechanism."
+          }
+        ],
+        "branchRevisions": [
+          {
+            "previousTargetId": "branch:B-01-compressor-trip-or-control-fault",
+            "previousLabel": "branch:B-01-compressor-trip-or-control-fault",
+            "action": "revise",
+            "reason": "Initial hypothesis from F96 ('Might have lost the compressor again') requires verification.",
+            "replacementIds": [
+              "branch:B-01-compressor-trip-or-control-fault"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-02-supply-side-disturbance",
+            "previousLabel": "branch:B-02-supply-side-disturbance",
+            "action": "revise",
+            "reason": "P-U stability (F78) makes upstream source less likely but does not rule out downstream blockage.",
+            "replacementIds": [
+              "branch:B-02-supply-side-disturbance"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-03-maintenance-preparation-interference",
+            "previousLabel": "branch:B-03-maintenance-preparation-interference",
+            "action": "revise",
+            "reason": "Work boundary not yet released at notification time; F45 requires Utilities to prepare, RHOB to observe, Maintenance to receive after release.",
+            "replacementIds": [
+              "branch:B-03-maintenance-preparation-interference"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "focal>failed-to-prevent>proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "previousLabel": "focal>failed-to-prevent>proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "action": "reject",
+            "reason": "This arrow is retained as a proposed causal connection; no withdrawal required.",
+            "replacementIds": [
+              "focal>failed-to-prevent>proposition:c08f1094-94cc-4a58-8c19-6f38f51424ff"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-01-compressor-trip-or-control-fault",
+            "previousLabel": "branch:B-01-compressor-trip-or-control-fault",
+            "action": "revise",
+            "reason": "Initial hypothesis from F96 ('Might have lost the compressor again') requires verification.",
+            "replacementIds": [
+              "branch:B-01-compressor-trip-or-control-fault"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-02-supply-side-disturbance",
+            "previousLabel": "branch:B-02-supply-side-disturbance",
+            "action": "revise",
+            "reason": "P-U stability (F78) makes upstream source less likely but does not rule out downstream blockage.",
+            "replacementIds": [
+              "branch:B-02-supply-side-disturbance"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "branch:B-03-maintenance-preparation-interference",
+            "previousLabel": "branch:B-03-maintenance-preparation-interference",
+            "action": "revise",
+            "reason": "Work boundary not yet released at notification time; F45 requires Utilities to prepare, RHOB to observe, Maintenance to receive after release.",
+            "replacementIds": [
+              "branch:B-03-maintenance-preparation-interference"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "previousLabel": "8e47c554-b6ef-42a5-b173-63a19b1c5f62",
+            "action": "revise",
+            "reason": "supported: ⟦evidence:span:incident-description:ec7f57d0b8615f4e:0-643⟧ Line 5 states: 'At approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure...'. ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ Line 11 corroborates this with a log entry at 'About 10:00' from RHOB noting 'Air-low indication' and requesting attendance. ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ supports the timing and magnitude of the pressure drop.",
+            "replacementIds": [
+              "8e47c554-b6ef-42a5-b173-63a19b1c5f62"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "previousLabel": "aacbe43e-41bb-471a-9dfd-7ab49750a4e4",
+            "action": "revise",
+            "reason": "unknown: ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧'s alarm journal selection explicitly lists AL-44 with occurrence 10:00:32, acknowledged 10:03:14, cleared 10:06:24. This is a record-observation claim (what the record says). ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ alone establishes each timestamp as recorded in the alarm journal without needing independent physical verification. Unresolved source disagreement affects the truth of this complete assertion. Source conflict: ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ uses approximate times for operator entries; ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ contains precise journal timestamps. The difference reflects precision level, not contradiction of record observation.",
+            "replacementIds": [
+              "aacbe43e-41bb-471a-9dfd-7ab49750a4e4"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "previousLabel": "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6",
+            "action": "revise",
+            "reason": "supported: Evidence ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ and ⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧ contain explicit entries stating the indication returned to normal band at approximately 10:07. Evidence ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ shows pressure P-R recovered to 6.8 bar by 10:06:50, satisfying the threshold defined in ⟦evidence:span:7723373a-97d0-494b-9b29-a6eea7bb94c1:90fe8a0e59693429:0-928⟧ (>5.0 bar). The logs (record-observation) and data (actual-state) align without contradiction.",
+            "replacementIds": [
+              "fff2d7b4-f4cc-4940-a4a3-8624bd9b9ff6"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "previousLabel": "c08f1094-94cc-4a58-8c19-6f38f51424ff",
+            "action": "revise",
+            "reason": "supported: The table in ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ explicitly contains a column 'C-11 RUN' with value '1' for all provided timestamps (Lines 11-20). The row range covers the times P-R dropped (Line 14, 15) and AL-44 occurred (between Line 13/16 in timeline). ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ states 'This export supplies these sampled values'. Thus, within the scope of this export, the bit value was recorded as 1 for all listed samples.",
+            "replacementIds": [
+              "c08f1094-94cc-4a58-8c19-6f38f51424ff"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "22dc870b-4cb9-4384-8d38-f5b2e59bffa5",
+            "previousLabel": "22dc870b-4cb9-4384-8d38-f5b2e59bffa5",
+            "action": "revise",
+            "reason": "partial: ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ sampled data supports the start (6.8 bar) and recovery (6.8 bar), but the specific low-point value of 2.1 bar within the 10:03 window is not established; at 10:03:10, the recorded value was 2.6 bar. Sampling intervals are not defined to confirm intermediate values were missed. Unresolved: Evidence of P-R reading showing exactly 2.1 bar occurring before or at 10:03, or continuous logging data for P-R during the interval.",
+            "replacementIds": [
+              "22dc870b-4cb9-4384-8d38-f5b2e59bffa5"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "d7d7e24d-1756-40f0-b5ba-0c797b35d9dd",
+            "previousLabel": "d7d7e24d-1756-40f0-b5ba-0c797b35d9dd",
+            "action": "revise",
+            "reason": "partial: Evidence ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ (IA-P01_pressure_and_alarm_extract) contains a pressure sample table covering the window 09:54–10:08. The recorded P-U values are restricted to 6.9 or 6.8 bar at each sample, matching the stability description. P-R values show a significant drop from 6.8 to 2.1 bar before recovery. While ⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ notes that the export supplies sampled values rather than a continuous waveform (⟦evidence:span:f24a87bf-1473-49ca-81a3-dc82aa303286:707c6f3d0e989e67:0-1053⟧ line 7), these are the available valid observations for the investigation window, and no evidence contradicts their validity. Unresolved: Continuous data coverage between sample timestamps to confirm absence of transient dips below 6.8 bar for P-U.",
+            "replacementIds": [
+              "d7d7e24d-1756-40f0-b5ba-0c797b35d9dd"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "ac0de36c-dd14-4682-8ed7-5b6428f1b148",
+            "previousLabel": "ac0de36c-dd14-4682-8ed7-5b6428f1b148",
+            "action": "revise",
+            "reason": "supported: The text in ⟦evidence:span:21a89821-8419-463d-96dc-d3bd6c6d8a67:c595755335412016:0-981⟧ line 7 matches the target statement verbatim within the work package index. ⟦evidence:span:story-release:c5bdbc70-37bd-42f3-9acc-00912637f096:00af67c6-51bd-4b01-9435-364973e59a91:e3b050fe898c8daf:0-1696⟧ corroborates this record content. ⟦evidence:span:c3369e35-3b56-4b7f-8f28-17013bfb300d:af8223c0c71b4d60:0-1254⟧ clarifies that a scheduled order does not constitute a released boundary, meaning the 'preparation only' status describes both the administrative record and the operational state before release. No evidence contradicts the stated status in ⟦evidence:span:21a89821-8419-463d-96dc-d3bd6c6d8a67:c595755335412016:0-981⟧ or ⟦evidence:span:story-release:c5bdbc70-37bd-42f3-9acc-00912637f096:00af67c6-51bd-4b01-9435-364973e59a91:e3b050fe898c8daf:0-1696⟧.",
+            "replacementIds": [
+              "ac0de36c-dd14-4682-8ed7-5b6428f1b148"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "1b5e26cf-ca7e-4f4c-8b8f-238063eb5185",
+            "previousLabel": "1b5e26cf-ca7e-4f4c-8b8f-238063eb5185",
+            "action": "revise",
+            "reason": "supported: ⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧ records valve states (M-102 open, M-101 closed) during the incident window. ⟦evidence:span:incident-description:ec7f57d0b8615f4e:0-643⟧ establishes interruption start at 10:00. ⟦evidence:span:40439331-1d17-4a79-95cc-b5c863114981:8807f9ec256a55f3:0-920⟧ and ⟦evidence:span:56772c5b-f8bd-496e-8338-4d80f54a3f4e:05b49d6a8bef936d:0-1233⟧ define the route controlled by these valves as the normal dryer/main route. The open state of M-102 confirms incomplete isolation.",
+            "replacementIds": [
+              "1b5e26cf-ca7e-4f4c-8b8f-238063eb5185"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "5f42f283-583f-4719-a799-3811bfe984d1",
+            "previousLabel": "5f42f283-583f-4719-a799-3811bfe984d1",
+            "action": "revise",
+            "reason": "supported: The point register entry (⟦evidence:span:7723373a-97d0-494b-9b29-a6eea7bb94c1:90fe8a0e59693429:0-928⟧) explicitly defines AL-44 as a 'RHOB PLC low-pressure input from P-R'. ⟦evidence:span:7723373a-97d0-494b-9b29-a6eea7bb94c1:90fe8a0e59693429:0-928⟧ Line 12 confirms this revision (PR-12) maps the signal to the receiving-header pressure condition (P-R), distinguishing it from legacy display text. No evidence contradicts this mapping definition.",
+            "replacementIds": [
+              "5f42f283-583f-4719-a799-3811bfe984d1"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "d55f6802-6b46-4e45-b954-b0f6694dbca8",
+            "previousLabel": "d55f6802-6b46-4e45-b954-b0f6694dbca8",
+            "action": "revise",
+            "reason": "supported: ⟦evidence:span:7723373a-97d0-494b-9b29-a6eea7bb94c1:90fe8a0e59693429:0-928⟧ lines 7 explicitly matches the target statement text within a table defining point registers. ⟦evidence:span:c3369e35-3b56-4b7f-8f28-17013bfb300d:af8223c0c71b4d60:0-1254⟧ line 11 confirms P-U as local indication at North gallery/Site air-header connection. No contradictory evidence exists regarding this definition.",
+            "replacementIds": [
+              "d55f6802-6b46-4e45-b954-b0f6694dbca8"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "2899862e-8324-46c7-ac33-7a2f5c2b071f",
+            "previousLabel": "2899862e-8324-46c7-ac33-7a2f5c2b071f",
+            "action": "revise",
+            "reason": "supported: The point register (⟦evidence:span:7723373a-97d0-494b-9b29-a6eea7bb94c1:90fe8a0e59693429:0-928⟧) explicitly maps point P-R to 'Pressure at the RHOB instrument-air receiving station'. The area directory (⟦evidence:span:c3369e35-3b56-4b7f-8f28-17013bfb300d:af8223c0c71b4d60:0-1254⟧) lists RHOB service station containing receiving header H-R and indication P-R. These records jointly define the monitoring scope.",
+            "replacementIds": [
+              "2899862e-8324-46c7-ac33-7a2f5c2b071f"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "051aa4ec-9fa2-48bb-9541-65500dfeb65b",
+            "previousLabel": "051aa4ec-9fa2-48bb-9541-65500dfeb65b",
+            "action": "revise",
+            "reason": "supported: Evidence ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ Line 7 directly states the assignment was reviewed and scheduled. Supporting evidence in ⟦evidence:span:49f2e07b-3ebf-4be5-86d9-aab36d621acd:93fb75a81c1a17aa:0-905⟧ confirms the two-person crew (U-A/U-B), and ⟦evidence:span:21a89821-8419-463d-96dc-d3bd6c6d8a67:c595755335412016:0-981⟧/⟦evidence:span:story-release:c5bdbc70-37bd-42f3-9acc-00912637f096:00af67c6-51bd-4b01-9435-364973e59a91:e3b050fe898c8daf:0-1696⟧ confirm the work package briefing covered the assignment. No evidence contradicts the administrative review status recorded in the shift log.",
+            "replacementIds": [
+              "051aa4ec-9fa2-48bb-9541-65500dfeb65b"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "5987a2f5-e428-4987-a542-dc525820a545",
+            "previousLabel": "5987a2f5-e428-4987-a542-dc525820a545",
+            "action": "revise",
+            "reason": "supported: Source ⟦evidence:span:8ecda5fe-f7f8-44a0-b257-4d02b8ea4ec6:41e169924d741199:0-1125⟧ provides a direct entry in the Utilities and RHOB shift log stating the collection occurred. This record is corroborated by crew attendance (⟦evidence:span:21a89821-8419-463d-96dc-d3bd6c6d8a67:c595755335412016:0-981⟧, ⟦evidence:span:49f2e07b-3ebf-4be5-86d9-aab36d621acd:93fb75a81c1a17aa:0-905⟧) and interview confirmation of folder receipt (⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧). No evidence contradicts the claim within the supplied packet.",
+            "replacementIds": [
+              "5987a2f5-e428-4987-a542-dc525820a545"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "0d2372a2-c468-4fb5-80eb-2bb7f2c5a4c6",
+            "previousLabel": "0d2372a2-c468-4fb5-80eb-2bb7f2c5a4c6",
+            "action": "revise",
+            "reason": "supported: The claim text matches the specific entry in Source ⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧ (line 12) verbatim. There are no contradictory accounts regarding this specific event in the supplied evidence packet (⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧-⟦evidence:span:incident-description:ec7f57d0b8615f4e:0-643⟧). The statement describes an event supported by a video review transcript.",
+            "replacementIds": [
+              "0d2372a2-c468-4fb5-80eb-2bb7f2c5a4c6"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "40f68739-753f-4c84-8304-cda14082e7f7",
+            "previousLabel": "40f68739-753f-4c84-8304-cda14082e7f7",
+            "action": "revise",
+            "reason": "supported: ⟦evidence:span:34bca70a-aa05-4ed9-b902-22de342fc27d:fe85c8ef2b7371d5:0-1753⟧ line 14 contains the literal text 'M-102 recorded open' within the execution log table, entailing the claim as a record observation.",
+            "replacementIds": [
+              "40f68739-753f-4c84-8304-cda14082e7f7"
+            ],
+            "evidenceIds": []
+          }
+        ]
+      }
+    }
+  ]
+}
+

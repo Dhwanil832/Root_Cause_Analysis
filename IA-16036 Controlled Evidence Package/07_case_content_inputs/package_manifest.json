@@ -1,0 +1,171 @@
+{
+  "case_id": "IA-16036",
+  "package_version": "1.1-case-content-only",
+  "status": "prepared_not_run",
+  "historical_anchor": "NearMissSafetyData!D573 = 16036",
+  "release_order": [
+    "B0",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "release_mode": "fixed_batches_cumulative",
+  "records": [
+    {
+      "id": "IA-I01",
+      "release": "B0",
+      "scope": "incident_description",
+      "path": "02_model_visible/00_incident_input/incident_summary.md",
+      "originalSha256": "4003b9baeea0d19858bdbee8cc40cbf8d3f3ddc4289b2354b85fe1840652c084",
+      "sha256": "b07017d810c0d8a150c9ea2df00cbb30b9d2953893d8027e2ce623d1bfa85a14"
+    },
+    {
+      "id": "IA-D01",
+      "release": "B0",
+      "scope": "default_reference",
+      "path": "02_model_visible/01_default_references/IA-D01_area_and_service_directory.md",
+      "originalSha256": "92bf8556f6d53430f535be8545f5a93e5d1793b79f13ecfc6bfa5887f3137710",
+      "sha256": "c94c5fd7ec582577f4d25cc78b6845f0e6f9f79638f9b52fcaec0926787dafc4"
+    },
+    {
+      "id": "IA-D02",
+      "release": "B0",
+      "scope": "default_reference",
+      "path": "02_model_visible/01_default_references/IA-D02_record_and_measurement_conventions.md",
+      "originalSha256": "d054d9edac83a514b5c2420712790c67fa1aa5d22e46f29db311ae6d88786dc6",
+      "sha256": "a3dbe24155c84842874d059f55e9fddb6e15573e43c44927e36f8ff8bfbefcbe"
+    },
+    {
+      "id": "IA-D03",
+      "release": "B0",
+      "scope": "default_reference",
+      "path": "02_model_visible/01_default_references/IA-D03_change_and_work_record_requirements.md",
+      "originalSha256": "36b50241035a66f68ff1ce570ff7dbf2dc730c3d35d04b5a27ba6571a6e652c5",
+      "sha256": "d75621a32958f40d0c5a003e9f1fc1cadd3547fe8c0a111f6b1a16c8fe268e19"
+    },
+    {
+      "id": "IA-S01",
+      "release": "B0",
+      "scope": "starter_document",
+      "path": "02_model_visible/02_starter_documents/IA-S01_shift_and_notification_log.md",
+      "originalSha256": "a17386f09ab48094c57be74a003e5e573bb11b5b1d3252202305bfea5bbd3f7c",
+      "sha256": "b0bcee1b6c1549295740c4511a8bcca4c5255a24f0c2cc6e57d370240760895a"
+    },
+    {
+      "id": "IA-S02",
+      "release": "B0",
+      "scope": "starter_document",
+      "path": "02_model_visible/02_starter_documents/IA-S02_work_package_cover.md",
+      "originalSha256": "c17cc96b7870a05567d7fd2e42c3d2c9901fe0ce07ab13516538ab4965d4aea8",
+      "sha256": "3e2ca7d04d6de2e284e24294f14e3b8fc892e3ece425cf1f6df57ebe7a7c9f75"
+    },
+    {
+      "id": "IA-S03",
+      "release": "B0",
+      "scope": "starter_document",
+      "path": "02_model_visible/02_starter_documents/IA-S03_assignment_and_authorization_extract.md",
+      "originalSha256": "a033829c14c1c04a6a8687d60916caa3ca9f950ad7aff7aa8c186ed9a9d5f734",
+      "sha256": "1f43f76b36b539fdf16dfaf9f54321bbe8248fc9ff35292a023aaf9bc8bcaec8"
+    },
+    {
+      "id": "IA-P01",
+      "release": "B1",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B1/IA-P01_pressure_and_alarm_extract.md",
+      "originalSha256": "9b9a6662b5de2efa0e77e12ede0b50129a711702a3fcfa5937d3400058090db4",
+      "sha256": "192a19c3fa433ac3b90e4bfc3c4658bbc863e04373ab2b83c3ec21e916aa739b"
+    },
+    {
+      "id": "IA-P02",
+      "release": "B1",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B1/IA-P02_point_register.md",
+      "originalSha256": "349b5acaab1b017446e6ca63646d535897cf382b67102f6877a3befd716e7cda",
+      "sha256": "e4d1cf37759623f83a3b276dc748a9e3515d29233d640e9d4002e378bf65990d"
+    },
+    {
+      "id": "IA-P03",
+      "release": "B1",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B1/IA-P03_work_document_extract.md",
+      "originalSha256": "8c7821413dc654ad98862a45207666256921c580289141394ab9f06e65910993",
+      "sha256": "5ee32e7b293addce0ca87e965837057ade1bd8a18a2352f2c1eaa6c97a121fbe"
+    },
+    {
+      "id": "IA-C01",
+      "release": "B1",
+      "scope": "answer_request_document",
+      "path": "04_challenge_evidence/IA-C01_desk_message.md",
+      "originalSha256": "e166f0a45862ff5c3ae1909b4206383016e09d6bd0e178cb8cece3817b7d345b",
+      "sha256": "5810a699949071a1909aef93b7323749e861647f2d2b49e2e2718417c147e1ba"
+    },
+    {
+      "id": "IA-P04",
+      "release": "B2",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B2/IA-P04_installation_and_line_register.md",
+      "originalSha256": "c445c6aaa282cb4dfedffcb62d0eb73f3eabb3b544bc85d555209e89f9b54449",
+      "sha256": "0ecc13b73d0f5ccd354519a538d40aed59ed9620c25331bf4a1f908089ff306c"
+    },
+    {
+      "id": "IA-P05",
+      "release": "B2",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B2/IA-P05_field_execution_and_observation_log.md",
+      "originalSha256": "338f41674b883bee5cf7b2039dd456170f724fccb2b2a6f86304fde3160f15cb",
+      "sha256": "c70fcfc084dfe5454b4cd7e45db385aac587daff30461e0ec9e0e684850ccf9d"
+    },
+    {
+      "id": "IA-P06",
+      "release": "B2",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B2/IA-P06_as_found_and_followup_notes.md",
+      "originalSha256": "32d363ea47d9bef007652fe8310c439f017b3ead673a485e72beb08db506af80",
+      "sha256": "2b4535fbfd6bc24d87097713a1f386f6fff5331e8acc26d2460cccc5c8df829b"
+    },
+    {
+      "id": "IA-C02",
+      "release": "B2",
+      "scope": "answer_request_document",
+      "path": "04_challenge_evidence/IA-C02_service_folder_sheet.md",
+      "originalSha256": "2836c813ea33c82127bcde76800566ac57f6ed103182a088a5f8430993c73c44",
+      "sha256": "08e4e536c3e2ba9487690b1e9cd36cc779782cbe1a43606b50752fa795b56b7d"
+    },
+    {
+      "id": "IA-P07",
+      "release": "B3",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B3/IA-P07_change_routing_history.md",
+      "originalSha256": "a258a68ef1eee3626521fe9bcb82c0d21c3556ed635bc78574ae43b62aadda21",
+      "sha256": "d4953c04206819739e34f1e54648e8f6f5cc7a1447d5904c5337182dd35eb843"
+    },
+    {
+      "id": "IA-P08",
+      "release": "B3",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B3/IA-P08_revision_and_distribution_register.md",
+      "originalSha256": "06095287e5fc15114d896c095c897bb38552e6586b93528083ae75e197d812f8",
+      "sha256": "d0979b015c7617bfcbf7fef61b43e00c1c496b7125658275dda5e708bc45e53a"
+    },
+    {
+      "id": "IA-P09",
+      "release": "B3",
+      "scope": "answer_request_document",
+      "path": "02_model_visible/03_progressive_evidence/B3/IA-P09_journal_reconciliation.md",
+      "originalSha256": "507e596497d8eae39bf4583ab08a49600dce3a9a785a4bdb470c5135f5b5b0ca",
+      "sha256": "4e8f174e47be060348c05992709a031bc97f4b33aaa0fcb55dd876dd2fe5ba27"
+    }
+  ],
+  "never_upload": [
+    "01_withheld_ground_truth/",
+    "03_answer_bank/",
+    "05_evaluation/",
+    "06_run_records/",
+    "README.md",
+    "package_manifest.json",
+    "package_seal.json",
+    "validate_package.mjs",
+    "provenance.operator-only.json"
+  ],
+  "note": "Operator only. Model inputs are individual record contents only, released by batch. Never upload this manifest, provenance, folder names, future releases, or evaluation material."
+}

@@ -1,0 +1,1042 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/xzvai8",
+    "id": "xzvai8",
+    "slide": 10,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "BASE",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Aptos Display"
+      },
+      "minorFont": {
+        "latinTypeface": "Aptos"
+      }
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "BASE",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "backgroundColor": "#F7F9FC",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "Shape 0",
+          "bbox": [
+            0,
+            693.12,
+            1279.97,
+            0
+          ],
+          "geometry": "line",
+          "lineColor": "#D7DEE9",
+          "lineWidth": 1.33
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/3",
+          "id": "3",
+          "name": "Text 1",
+          "bbox": [
+            40.32,
+            697.92,
+            211.2,
+            17.28
+          ],
+          "geometry": "rect",
+          "text": "RCA kickoff maps",
+          "textPreview": "RCA kickoff maps",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "RCA kickoff maps",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "RCA kickoff maps",
+                  "fontSize": 10,
+                  "typeface": "Aptos",
+                  "color": "#607089"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vi5ovm18",
+      "id": "2",
+      "name": "Shape 0",
+      "bbox": [
+        0,
+        0,
+        1279.97,
+        11.52
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uhwn2h0n",
+      "id": "3",
+      "name": "Text 1",
+      "bbox": [
+        43.2,
+        30.72,
+        1008,
+        40.32
+      ],
+      "geometry": "rect",
+      "text": "Maintenance, outage, or non-routine work",
+      "textPreview": "Maintenance, outage, or non-routine work",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Maintenance, outage, or non-routine work"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Maintenance, outage, or non-routine work",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Maintenance, outage, or non-routine work",
+              "fontSize": 30.67,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gn6tcj2",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        1082.88,
+        28.8,
+        148.8,
+        32.64
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#E7F4F8",
+      "lineColor": "#CFEAF2",
+      "lineWidth": 0.67
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8fe507ih",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        1082.88,
+        36.96,
+        148.8,
+        11.52
+      ],
+      "geometry": "rect",
+      "text": "Table 9/15",
+      "textPreview": "Table 9/15",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Table 9/15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Table 9/15",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Table 9/15",
+              "fontSize": 10,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/2hkn2lcv",
+      "id": "26",
+      "name": "Table 0",
+      "bbox": [
+        43.2,
+        109.44,
+        1193.28,
+        571.2
+      ],
+      "text": "Initial question | Potential direction it opens\nWhat work was planned, and what was actually being performed? | Planned versus actual scope, emergent work, troubleshooting, informal task, scope drift, conflicting work orders\nWhat equipment, process, or area was placed in a non-normal condition? | Shutdown, opened system, bypass, removed guard, disabled control, isolated area, changed process or access\nWhat had been removed, disabled, bypassed, opened, supported, or temporarily configured? | Missing component, temporary support, defeated interlock, open boundary, abnormal load path, incomplete reassembly\nWhat work occurred on previous shifts or by other crews and contractors? | Shift handoff, incomplete work, changed state, contractor interface, undocumented action, ownership gap\nWhat scope changes, discoveries, delays, or conflicting activities occurred? | Change control, new hazard, schedule pressure, simultaneous operations, work conflict, contingency planning\nWhat condition was the system expected to be left in between work stages? | Interim safe state, temporary configuration, responsibility, tagging, preservation, unattended equipment condition\nWhat inspections, hold points, testing, and return-to-service steps applied? | Missed verification, premature release, incomplete testing, signoff, commissioning, restoration or startup control\nWhat evidence documents the configuration and work sequence? | Work order, outage schedule, shift log, photographs, permits, configuration drawing, contractor record, control-system history",
+      "textPreview": "Initial question | Potential direction it opens | What work was planned, and what was actually being performed? | Planned versus actual s...",
+      "rows": 9,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            43.2,
+            109.44,
+            494.4,
+            34.56
+          ],
+          "text": "Initial question",
+          "textPreview": "Initial question",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Initial question",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Initial question",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            537.6,
+            109.44,
+            698.88,
+            34.56
+          ],
+          "text": "Potential direction it opens",
+          "textPreview": "Potential direction it opens",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Potential direction it opens",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Potential direction it opens",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            43.2,
+            144,
+            494.4,
+            67.08
+          ],
+          "text": "What work was planned, and what was actually being performed?",
+          "textPreview": "What work was planned, and what was actually being performed?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What work was planned, and what was actually being performed?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What work was planned, and what was actually being performed?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            537.6,
+            144,
+            698.88,
+            67.08
+          ],
+          "text": "Planned versus actual scope, emergent work, troubleshooting, informal task, scope drift, conflicting work orders",
+          "textPreview": "Planned versus actual scope, emergent work, troubleshooting, informal task, scope drift, conflicting work orders",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Planned versus actual scope, emergent work, troubleshooting, informal task, scope drift, conflicting work orders",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Planned versus actual scope, emergent work, troubleshooting, informal task, scope drift, conflicting work orders",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            43.2,
+            211.08,
+            494.4,
+            67.08
+          ],
+          "text": "What equipment, process, or area was placed in a non-normal condition?",
+          "textPreview": "What equipment, process, or area was placed in a non-normal condition?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What equipment, process, or area was placed in a non-normal condition?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What equipment, process, or area was placed in a non-normal condition?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            537.6,
+            211.08,
+            698.88,
+            67.08
+          ],
+          "text": "Shutdown, opened system, bypass, removed guard, disabled control, isolated area, changed process or access",
+          "textPreview": "Shutdown, opened system, bypass, removed guard, disabled control, isolated area, changed process or access",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Shutdown, opened system, bypass, removed guard, disabled control, isolated area, changed process or access",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Shutdown, opened system, bypass, removed guard, disabled control, isolated area, changed process or access",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            43.2,
+            278.16,
+            494.4,
+            67.08
+          ],
+          "text": "What had been removed, disabled, bypassed, opened, supported, or temporarily configured?",
+          "textPreview": "What had been removed, disabled, bypassed, opened, supported, or temporarily configured?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What had been removed, disabled, bypassed, opened, supported, or temporarily configured?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What had been removed, disabled, bypassed, opened, supported, or temporarily configured?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            537.6,
+            278.16,
+            698.88,
+            67.08
+          ],
+          "text": "Missing component, temporary support, defeated interlock, open boundary, abnormal load path, incomplete reassembly",
+          "textPreview": "Missing component, temporary support, defeated interlock, open boundary, abnormal load path, incomplete reassembly",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Missing component, temporary support, defeated interlock, open boundary, abnormal load path, incomplete reassembly",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Missing component, temporary support, defeated interlock, open boundary, abnormal load path, incomplete reassembly",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            43.2,
+            345.24,
+            494.4,
+            67.08
+          ],
+          "text": "What work occurred on previous shifts or by other crews and contractors?",
+          "textPreview": "What work occurred on previous shifts or by other crews and contractors?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What work occurred on previous shifts or by other crews and contractors?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What work occurred on previous shifts or by other crews and contractors?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            537.6,
+            345.24,
+            698.88,
+            67.08
+          ],
+          "text": "Shift handoff, incomplete work, changed state, contractor interface, undocumented action, ownership gap",
+          "textPreview": "Shift handoff, incomplete work, changed state, contractor interface, undocumented action, ownership gap",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Shift handoff, incomplete work, changed state, contractor interface, undocumented action, ownership gap",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Shift handoff, incomplete work, changed state, contractor interface, undocumented action, ownership gap",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            43.2,
+            412.32,
+            494.4,
+            67.08
+          ],
+          "text": "What scope changes, discoveries, delays, or conflicting activities occurred?",
+          "textPreview": "What scope changes, discoveries, delays, or conflicting activities occurred?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What scope changes, discoveries, delays, or conflicting activities occurred?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What scope changes, discoveries, delays, or conflicting activities occurred?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            537.6,
+            412.32,
+            698.88,
+            67.08
+          ],
+          "text": "Change control, new hazard, schedule pressure, simultaneous operations, work conflict, contingency planning",
+          "textPreview": "Change control, new hazard, schedule pressure, simultaneous operations, work conflict, contingency planning",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Change control, new hazard, schedule pressure, simultaneous operations, work conflict, contingency planning",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Change control, new hazard, schedule pressure, simultaneous operations, work conflict, contingency planning",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            43.2,
+            479.4,
+            494.4,
+            67.08
+          ],
+          "text": "What condition was the system expected to be left in between work stages?",
+          "textPreview": "What condition was the system expected to be left in between work stages?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What condition was the system expected to be left in between work stages?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What condition was the system expected to be left in between work stages?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            537.6,
+            479.4,
+            698.88,
+            67.08
+          ],
+          "text": "Interim safe state, temporary configuration, responsibility, tagging, preservation, unattended equipment condition",
+          "textPreview": "Interim safe state, temporary configuration, responsibility, tagging, preservation, unattended equipment condition",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Interim safe state, temporary configuration, responsibility, tagging, preservation, unattended equipment condition",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Interim safe state, temporary configuration, responsibility, tagging, preservation, unattended equipment condition",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            43.2,
+            546.48,
+            494.4,
+            67.08
+          ],
+          "text": "What inspections, hold points, testing, and return-to-service steps applied?",
+          "textPreview": "What inspections, hold points, testing, and return-to-service steps applied?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What inspections, hold points, testing, and return-to-service steps applied?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What inspections, hold points, testing, and return-to-service steps applied?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            537.6,
+            546.48,
+            698.88,
+            67.08
+          ],
+          "text": "Missed verification, premature release, incomplete testing, signoff, commissioning, restoration or startup control",
+          "textPreview": "Missed verification, premature release, incomplete testing, signoff, commissioning, restoration or startup control",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Missed verification, premature release, incomplete testing, signoff, commissioning, restoration or startup control",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Missed verification, premature release, incomplete testing, signoff, commissioning, restoration or startup control",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            43.2,
+            613.56,
+            494.4,
+            67.08
+          ],
+          "text": "What evidence documents the configuration and work sequence?",
+          "textPreview": "What evidence documents the configuration and work sequence?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What evidence documents the configuration and work sequence?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What evidence documents the configuration and work sequence?",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            537.6,
+            613.56,
+            698.88,
+            67.08
+          ],
+          "text": "Work order, outage schedule, shift log, photographs, permits, configuration drawing, contractor record, control-system history",
+          "textPreview": "Work order, outage schedule, shift log, photographs, permits, configuration drawing, contractor record, control-system history",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Work order, outage schedule, shift log, photographs, permits, configuration drawing, contractor record, control-system history",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Work order, outage schedule, shift log, photographs, permits, configuration drawing, contractor record, control-system history",
+                  "fontSize": 12.13,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tc765gj6",
+      "id": "8",
+      "name": "Shape 5",
+      "bbox": [
+        22.08,
+        109.44,
+        4.8,
+        571.2
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/et03udgf",
+      "id": "25",
+      "name": "Slide Number Placeholder 0",
+      "bbox": [
+        1176,
+        697.92,
+        83.99,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "10",
+      "textPreview": "10",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

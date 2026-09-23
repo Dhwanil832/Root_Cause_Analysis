@@ -1,0 +1,58 @@
+{
+  "model": "ollama:qwen3.5:latest",
+  "targetVersions": 4,
+  "title": "R3 — Qwen storyteller · unattended 2026-09-14T15:49:31.698Z",
+  "description": "At approximately 1:03 PM on October 14, 2024 (Turn 2), the R3 Exit Carrier Beam at the Indiana Harbor 80-inch Hot Strip roughing mill fell from the yoke into the R3 mill pit, landing on the sled and a scaffold platform. No team members were in the pit at the time, though several contractor employees had worked in the pit throughout the morning, and two contractor employees walking beside the mill stand witnessed the fall. The area was red-flagged for investigation. The beam and its link were found intact with the keeper still installed; no damage was apparent on the yoke on which the link rests. A small mill window liner from the top operator side fell with the beam. No crane lifts involving this equipment were in progress or had occurred prior. On the previous shift, the work rolls and top and bottom backup rolls had been removed in preparation for outage work in the mill stand; the R3 top backup roll balance had been left isolated in the raised position, and the B hydraulics had been shut off and bled for work on that system.\n",
+  "startedAt": "2026-09-14T15:49:31.673Z",
+  "installedModel": {
+    "name": "qwen3.5:latest",
+    "model": "qwen3.5:latest",
+    "modified_at": "2026-08-18T13:39:58.553693944-05:00",
+    "size": 6594474711,
+    "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "9.7B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 4096
+    },
+    "capabilities": [
+      "vision",
+      "completion",
+      "tools",
+      "thinking"
+    ]
+  },
+  "starterFiles": [
+    {
+      "file": "/Users/dhwanilchauhan/Desktop/RCA Try 1/R3 Benchmark Package/02_model_visible/02_starter_documents/Initial_Evidence_Register.pdf",
+      "sha256": "6bf1e0120dda8693a648234bb8d965e243c652f7780e326d717e92c384d70234"
+    },
+    {
+      "file": "/Users/dhwanilchauhan/Desktop/RCA Try 1/R3 Benchmark Package/02_model_visible/02_starter_documents/Initial_Scene_Sketch_and_Timeline.pdf",
+      "sha256": "a7a64520d05154a906dcb98f13d3a0d932f87b74f5a781a684ac33a7d38bcdc5"
+    },
+    {
+      "file": "/Users/dhwanilchauhan/Desktop/RCA Try 1/R3 Benchmark Package/02_model_visible/02_starter_documents/Preliminary_Incident_Notification_16515.pdf",
+      "sha256": "b2a55f7152d7298349373817c3087ee1d7a94c272a16dfc1c654dd2915dccf79"
+    }
+  ],
+  "rules": {
+    "sameModelOnly": true,
+    "humanAnswers": false,
+    "automaticRelease": true,
+    "strictCausalCommit": true,
+    "maxFullCyclesPerRequest": 2,
+    "maxRequestsPerAction": 2,
+    "deadlineHours": 24,
+    "stopOnEvidenceExhaustion": true,
+    "stopOnUncertainMutation": true,
+    "promptVersion": "try4.1.0-story-autonomous"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "4866969b-2dea-41ed-9b45-acb2de6fba9c",
+  "track_id": "3ef34107-57cc-4426-a284-aa600f37ce1a",
+  "number": 1,
+  "parent_number": 0,
+  "status": "paused",
+  "trigger": "Initial incident and evidence",
+  "input_json": "{\"$artifact\":\"json-u2:12f9fab9ec7d7c575a56cf032e5a03fd7b7f6df6c4a535b0febbe25820ea93a6\",\"chunks\":2}",
+  "state_json": "{\"$artifact\":\"json-u2:b79abf7273fcdb3e04bb2b4547ff0a26905e00210c7b28d18b7994848ee296f0\",\"chunks\":3}",
+  "snapshot_json": "{\"$artifact\":\"json-u2:43d705053b50ee62684a2ce22a650f33e9c607fccd22c343afc65afd72bc9ebf\",\"chunks\":373}",
+  "lease": null,
+  "lease_until": 0,
+  "generation": 1226,
+  "created_at": "2026-09-20T01:14:32.500Z",
+  "updated_at": "2026-09-20T14:05:30.452Z",
+  "pause_reason": "Paused by investigator. In-flight inference is cancelled on the next lease check; raw text remains preserved."
+}

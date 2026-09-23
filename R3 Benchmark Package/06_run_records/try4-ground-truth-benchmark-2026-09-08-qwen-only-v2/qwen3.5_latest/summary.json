@@ -1,0 +1,33 @@
+{
+  "campaign": "try4-ground-truth-benchmark-2026-09-08-qwen-only-v2",
+  "modelId": "ollama:qwen3.5:latest",
+  "incidentId": "9276eeb0-a723-47ad-aca9-2be80c5b9b2e",
+  "trackId": "b339a5c5-49b2-47a8-9122-d82948720dc5",
+  "version": 1,
+  "elapsedSeconds": 1119,
+  "status": "contradictions-unresolved",
+  "checkpoints": 17,
+  "failedCheckpoints": 0,
+  "blockedCheckpoints": 1,
+  "stageErrors": 0,
+  "tags": [
+    "equipment-tool",
+    "stored-energy",
+    "isolation-loto",
+    "procedure-planning",
+    "maintenance-outage",
+    "communication-supervision"
+  ],
+  "questions": 9,
+  "skippedQuestions": 12,
+  "sourceAssessments": 1,
+  "adjudicationConflicts": 3,
+  "evidenceClaims": 20,
+  "claimConflicts": 2,
+  "causalNodes": 8,
+  "causalEdges": 5,
+  "causalMaturity": "initial",
+  "verificationFindings": 5,
+  "correctiveActions": 0,
+  "completedAt": "2026-09-08T22:35:51.427Z"
+}

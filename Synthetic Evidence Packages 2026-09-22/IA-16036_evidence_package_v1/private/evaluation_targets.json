@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0",
+  "case_id": "IA-16036",
+  "operator_private": true,
+  "semantic_assessment_status": "unassessed_no_investigator_run",
+  "independent_expert_validation": "not_performed",
+  "scoring_weights": null,
+  "judge_choice": "not_selected",
+  "outcome_labels": [
+    "met",
+    "partial",
+    "missed",
+    "overclaimed",
+    "not_testable"
+  ],
+  "instructions": [
+    "Accept equivalent meanings and graph structures, not exact words or counts.",
+    "All members of one required evidence bundle are required; multiple bundles represent alternative sufficient sets.",
+    "If evidence delivery or technical validity is not established, mark affected target not_testable rather than model failure.",
+    "Structural citation checks do not assess entailment, causal validity or question quality.",
+    "No forced complete board at V1. Keep all derivatives of the same incident in the development split."
+  ],
+  "targets": [
+    {
+      "target_id": "AT01",
+      "stage": "B0",
+      "dimension": "understanding",
+      "expected_meaning": "Distinguish RHOB downstream pressure loss from listed stable common-header values and preserve sampling limits.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-I00",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D01",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "IA-D04",
+            "revision": 1,
+            "locator": "S1–S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Scoped partial board or explanation."
+      ],
+      "insufficient_responses": [
+        "Plant lost all air."
+      ],
+      "overclaims": [
+        "No upstream transient could occur."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Valve topology/states and trip history."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "historical interruption, synthetic measurement channels"
+    },
+    {
+      "target_id": "AT02",
+      "stage": "B0",
+      "dimension": "information_need",
+      "expected_meaning": "Seek flow-path connections, incident valve states, alarm input and applicable issued packet.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D03",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D04",
+            "revision": 1,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "IA-D05",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Merged question with distinct subparts."
+      ],
+      "insufficient_responses": [
+        "Only broad human-error questions."
+      ],
+      "overclaims": [
+        "Assumes exactly which unreleased valve was shut."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Physical path and content applicability."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "constructed information gaps"
+    },
+    {
+      "target_id": "AT03",
+      "stage": "B0",
+      "dimension": "factual_support",
+      "expected_meaning": "Treat compressor trip as initial desk interpretation, not established by display label.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D05",
+            "revision": 1,
+            "locator": "S1–S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Explicit hypothesis/unknown."
+      ],
+      "insufficient_responses": [
+        "Unqualified supported trip node."
+      ],
+      "overclaims": [
+        "Alarm acknowledgment proves restart."
+      ],
+      "expected_delta": "no_stage_change",
+      "remaining_unknowns": [
+        "Signal map and continuous journal."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic fair challenge"
+    },
+    {
+      "target_id": "AT04",
+      "stage": "B1",
+      "dimension": "connection",
+      "expected_meaning": "Combine topology, actual valve states and pressure trend: M101 closed AND V202 closed removes both traced feeds.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D06",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D07",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D04",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Joint-condition node or clearly qualified multiple links."
+      ],
+      "insufficient_responses": [
+        "Names shut valve without locating it in series path."
+      ],
+      "overclaims": [
+        "V201 was closed; either bypass valve alone supplies flow; M102 open bypasses M101."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Exact consumption/pressure decay."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "row sequence plus synthetic topology/state/time records"
+    },
+    {
+      "target_id": "AT05",
+      "stage": "B1",
+      "dimension": "evidence_integration",
+      "expected_meaning": "Attribute restoration to opening V202 with V201 already open and M101 still closed, aligned with recovery samples.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D06",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D07",
+            "revision": 1,
+            "locator": "S1/A1–A4"
+          },
+          {
+            "document_id": "IA-D04",
+            "revision": 1,
+            "locator": "S1/T5–T7"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Equivalent temporal-mechanistic explanation."
+      ],
+      "insufficient_responses": [
+        "Pressure recovered after troubleshooting, no path reasoning."
+      ],
+      "overclaims": [
+        "M101 reopened; recovery before closure; exact subsecond response."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Flow rate and exact latency."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "row restoration plus synthetic observations"
+    },
+    {
+      "target_id": "AT06",
+      "stage": "B1",
+      "dimension": "revision",
+      "expected_meaning": "Reinterpret AL44 as downstream low pressure, without claiming mapping alone proves no separate trip.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D05",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D08",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Retract trip support, keep separate trip hypothesis pending journal."
+      ],
+      "insufficient_responses": [
+        "Only changes display label text."
+      ],
+      "overclaims": [
+        "Alarm is a physical barrier or trip disproved solely by mapping."
+      ],
+      "expected_delta": "correct",
+      "remaining_unknowns": [
+        "Independent continuous trip status."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic signal meaning"
+    },
+    {
+      "target_id": "AT07",
+      "stage": "B2",
+      "dimension": "evidence_integration",
+      "expected_meaning": "Connect installed B17 before job to rev3 omission and actual WO527 issue; distinguish unissued rev4-D.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D03",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D09",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "IA-D10",
+            "revision": 1,
+            "locator": "S1–S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Outdated issued work packet rather than all procedures missing."
+      ],
+      "insufficient_responses": [
+        "A document gap without specific revision/applicability."
+      ],
+      "overclaims": [
+        "Crew ignored an issued updated revision; draft proves availability."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Informal knowledge and reasons for draft status."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "historical recorded ECP finding made testable synthetically"
+    },
+    {
+      "target_id": "AT08",
+      "stage": "B2",
+      "dimension": "connection",
+      "expected_meaning": "Explain CH218 No impact field → no generated ECP task under stated rule, without assigning motive.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D02",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "IA-D09",
+            "revision": 1,
+            "locator": "S1–S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Specific documentary handoff gap."
+      ],
+      "insufficient_responses": [
+        "Poor communication/culture without record mechanism."
+      ],
+      "overclaims": [
+        "Knowingly bypassed review; universal governance failure."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Why No was selected."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic deeper documentary mechanism"
+    },
+    {
+      "target_id": "AT09",
+      "stage": "B2",
+      "dimension": "revision",
+      "expected_meaning": "Use bounded journal and corrected desk source to retract trip explanation while retaining genuine alarm and pressure loss.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D11",
+            "revision": 1,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "IA-D05",
+            "revision": 2,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "IA-D04",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Close or weaken trip branch with cited time scope."
+      ],
+      "insufficient_responses": [
+        "Retains supported compressor trip and adds unrelated correction."
+      ],
+      "overclaims": [
+        "All compressor deficiencies ruled out forever."
+      ],
+      "expected_delta": "correct",
+      "remaining_unknowns": [
+        "Non-trip equipment health."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic continuous coverage and correction"
+    },
+    {
+      "target_id": "AT10",
+      "stage": "B2",
+      "dimension": "uncertainty",
+      "expected_meaning": "Keep why-V202, impact-selection motive, quantified damage and exact flow unknown; factual procedural gap does not prove intent.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "IA-D07",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "IA-D09",
+            "revision": 1,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "IA-D10",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "IA-D06",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "IA-I00",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "1SC D101, M101/M102, B17 V201/V202, H-U/H-R, AL44 and WO527",
+        "time": "2024-05-20 interruption; later records explicitly dated",
+        "location": "Harbor Works utilities/RHOB service",
+        "configuration": "planned dryer isolation; two traced parallel routes with series branch valves",
+        "units": "bar gauge; action clocks ±5 seconds"
+      },
+      "acceptable_variants": [
+        "Specific unresolved needs, not blanket uncertainty over established paths."
+      ],
+      "insufficient_responses": [
+        "Invents final culture cause to finish."
+      ],
+      "overclaims": [
+        "Incompetent worker, deliberate noncompliance, exact financial loss."
+      ],
+      "expected_delta": "retain-with-reason",
+      "remaining_unknowns": [
+        "Listed unknowns remain terminal in package."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "historical information boundary plus synthetic scoped records"
+    }
+  ]
+}

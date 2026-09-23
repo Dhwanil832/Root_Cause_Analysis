@@ -1,0 +1,35 @@
+{
+  "reviewedAt": "2026-09-16T23:21:33Z",
+  "reviewer": "parent assistant; source-to-answer comparison, not another Qwen inference",
+  "decision": "release_unedited_for_controlled_test",
+  "answersSha256": "d45ef868c47810a5d2b411ca0441e1e34ab533fbe76875cc9fc132db60416547",
+  "semanticApproval": false,
+  "basis": "The user requested testing both the storyteller and RCA on a small targeted batch. Preserve all four generated responses exactly, including failures, as simulated model-generated claims alongside both complete source records. Release is permission for this diagnostic run, not certification of factual support. The parent review and desired conclusions are not supplied to RCA.",
+  "questionReviews": [
+    {
+      "questionId": "bq-1fanm2w",
+      "result": "missed_answerable_comparison_and_question_premise",
+      "finding": "Did not combine P01 samples with P02 locations. Repeated the question's downstream North-gallery framing instead of noting that P-U is upstream. Limits on continuous coverage do not erase the available paired samples.",
+      "sourceRecords": ["IA-P01", "IA-P02"]
+    },
+    {
+      "questionId": "vq-52l0ma",
+      "result": "correct_missing_time_but_incomplete_answer",
+      "finding": "Correctly leaves 09:45 unknown, but omits the supplied 09:54/09:59:50 P-R values and first lower sample. Selected citations do not include the table supporting its stated 09:54 start time, although the full document does.",
+      "sourceRecords": ["IA-P01"]
+    },
+    {
+      "questionId": "vq-zyn2wt",
+      "result": "unsupported_acknowledgment_claim",
+      "finding": "Asserts Utilities acknowledged at approximately 10:02. S01 records work paused and service issue under review, not acknowledgment. P01 records AL-44 acknowledgment at 10:03:14, without identifying the acknowledging team. The response is not approved as a fact.",
+      "sourceRecords": ["IA-S01", "IA-P01"]
+    },
+    {
+      "questionId": "vq-1cq95dh",
+      "result": "appropriate_root_cause_uncertainty_but_missed_signal_mapping",
+      "finding": "Does not invent a physical root cause, but does not provide the answerable distinction that the alarm is triggered by P-R low pressure rather than a C-11 trip signal. No response selected a P02 citation.",
+      "sourceRecords": ["IA-P01", "IA-P02"]
+    }
+  ],
+  "nextStageEvaluation": "Check whether RCA uses the originals to recover missed measurements/mapping and avoids promoting the unsupported 10:02 acknowledgment claim. Distinguish provenance of document-derived facts from storyteller assertions. No answers will be manually repaired."
+}

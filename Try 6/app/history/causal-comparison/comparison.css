@@ -1,0 +1,31 @@
+.comparison-shell { max-width: 2200px; margin: 0 auto; padding-bottom: 50px; }
+.comparison-intro { padding: 28px 32px 18px; }
+.comparison-intro h1 { margin: 8px 0 18px; font-size: clamp(24px, 3vw, 36px); }
+.comparison-description { max-width: 1300px; line-height: 1.7; font-size: 14px; }
+.comparison-notice { padding: 14px 18px; border-left: 4px solid #a07629; background: #f5efdf; line-height: 1.6; font-size: 13px; }
+.comparison-links { display: flex; flex-wrap: wrap; gap: 24px; margin: 18px 0; font-size: 13px; }
+.comparison-links a { text-decoration: underline; }
+.comparison-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.comparison-controls button { padding: 10px 18px; border: 1px solid #adb9a1; border-radius: 8px; cursor: pointer; background: white; color: #233a2b; font-weight: 700; }
+.comparison-controls button[aria-pressed="true"] { background: #233a2b; color: white; }
+.comparison-help { font-size: 12px; line-height: 1.6; color: #5f695b; }
+.comparison-boards { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; margin: 0 24px; }
+.comparison-boards.side-by-side { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.comparison-board { min-width: 0; }
+.comparison-board-heading { min-height: 128px; padding: 12px 10px; }
+.comparison-board-heading h2 { margin: 0 0 8px; font-size: 21px; }
+.comparison-board-heading p { margin: 6px 0; font-size: 12px; line-height: 1.5; }
+.comparison-shell .canvas-toolbar { display: flex; flex-wrap: wrap; align-items: center; }
+.comparison-shell .canvas-toolbar > div:first-child { flex: 1 1 240px; }
+.comparison-node-text, .comparison-provenance { margin-top: 14px; padding: 14px; border: 1px solid #d1cec2; border-radius: 10px; background: #faf9f4; font-size: 12px; overflow-wrap: anywhere; }
+.comparison-node-text article { padding: 14px 0; border-bottom: 1px solid #d1cec2; }
+.comparison-node-text article:last-child { border-bottom: 0; }
+.comparison-node-text h3 { font-size: 14px; }
+.comparison-node-text p, .comparison-provenance p { line-height: 1.65; white-space: pre-wrap; }
+.comparison-shell summary { cursor: pointer; font-weight: 700; }
+@media (max-width: 1000px) {
+  .comparison-boards.side-by-side { grid-template-columns: minmax(0, 1fr); }
+  .comparison-intro { padding: 22px 18px 12px; }
+  .comparison-boards { margin: 0 14px; }
+}
+

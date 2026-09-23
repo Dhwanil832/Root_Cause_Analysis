@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-10T00:57:14.483Z",
+  "method": "POST",
+  "endpoint": "/api/incidents",
+  "args": [
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "14400",
+    "--request",
+    "POST",
+    "http://localhost:3000/api/incidents",
+    "--form",
+    "description=</Users/dhwanilchauhan/Desktop/RCA Try 1/R3 Benchmark Package/02_model_visible/00_incident_input/incident_summary.txt",
+    "--form",
+    "modelIds=[\"ollama:qwen3.5:latest\"]",
+    "--form",
+    "files=@/Users/dhwanilchauhan/Desktop/RCA Try 1/R3 Benchmark Package/02_model_visible/02_starter_documents/Initial_Evidence_Register.pdf;type=application/pdf",
+    "--form",
+    "files=@/Users/dhwanilchauhan/Desktop/RCA Try 1/R3 Benchmark Package/02_model_visible/02_starter_documents/Initial_Scene_Sketch_and_Timeline.pdf;type=application/pdf",
+    "--form",
+    "files=@/Users/dhwanilchauhan/Desktop/RCA Try 1/R3 Benchmark Package/02_model_visible/02_starter_documents/Preliminary_Incident_Notification_16515.pdf;type=application/pdf",
+    "--write-out",
+    "\n%{http_code}"
+  ]
+}

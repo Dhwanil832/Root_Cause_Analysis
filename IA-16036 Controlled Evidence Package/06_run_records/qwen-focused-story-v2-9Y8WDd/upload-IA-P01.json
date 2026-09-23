@@ -1,0 +1,27 @@
+{
+  "document": {
+    "id": "fcd254db-75b3-4a9d-abec-44c5b6a9b34e",
+    "scope": "question",
+    "title": "IA-P01_pressure_and_alarm_extract.md",
+    "plant": "General",
+    "incidentId": "b7c62bf9-604c-4312-9520-7b63b20b7363",
+    "trackId": "eebd569e-92a1-4b41-87c3-3f4953cfb2a6",
+    "questionId": "bq-1fanm2w",
+    "introducedVersion": 2,
+    "fileKey": "question/eebd569e-92a1-4b41-87c3-3f4953cfb2a6/fcd254db-75b3-4a9d-abec-44c5b6a9b34e-IA-P01_pressure_and_alarm_extract.md",
+    "fileName": "IA-P01_pressure_and_alarm_extract.md",
+    "contentType": "text/markdown",
+    "size": 1168,
+    "sha256": "9b9a6662b5de2efa0e77e12ede0b50129a711702a3fcfa5937d3400058090db4",
+    "revision": "1",
+    "extractionStatus": "ready",
+    "extractionNotes": "",
+    "extractedText": "# Pressure and alarm extract\n\nRecord ID: IA-P01 | Exported: 2024-05-20 14:00 | Window: 09:54–10:08\n\nSynthetic evaluation record. Numeric values and timestamped rows are fictional measurements for this exercise.\n\n## Selected pressure samples\n\nValues are bar gauge. The export supplies these sampled values, not a continuous waveform.\n\n| Local time | P-U | P-R | C-11 RUN |\n| --- | ---: | ---: | --- |\n| 09:54:00 | 6.9 | 6.8 | 1 |\n| 09:59:50 | 6.9 | 6.8 | 1 |\n| 10:00:11 | 6.9 | 5.8 | 1 |\n| 10:00:40 | 6.9 | 4.1 | 1 |\n| 10:01:10 | 6.8 | 3.4 | 1 |\n| 10:03:10 | 6.9 | 2.6 | 1 |\n| 10:05:50 | 6.9 | 2.1 | 1 |\n| 10:06:20 | 6.9 | 6.0 | 1 |\n| 10:06:50 | 6.9 | 6.8 | 1 |\n| 10:08:00 | 6.9 | 6.8 | 1 |\n\n## Alarm journal selection\n\n| Point | Display label | Occurred | Acknowledged | Cleared |\n| --- | --- | --- | --- | --- |\n| AL-44 | COMP FAULT | 10:00:32 | 10:03:14 | 10:06:24 |\n\nThis export does not include the alarm input mapping, valve states or flow values. C-11 RUN is a running-status bit. Its exact service association is in the point register. All displayed pressure samples have good acquisition quality; sensor accuracy and full time coverage are separate matters.",
+    "createdAt": "2026-09-16T23:22:11.983Z"
+  },
+  "fileKey": "question/eebd569e-92a1-4b41-87c3-3f4953cfb2a6/fcd254db-75b3-4a9d-abec-44c5b6a9b34e-IA-P01_pressure_and_alarm_extract.md",
+  "fileName": "IA-P01_pressure_and_alarm_extract.md",
+  "contentType": "text/markdown",
+  "size": 1168,
+  "excerpt": "# Pressure and alarm extract\n\nRecord ID: IA-P01 | Exported: 2024-05-20 14:00 | Window: 09:54–10:08\n\nSynthetic evaluation record. Numeric values and timestamped rows are fictional measurements for this exercise.\n\n## Selected pressure samples\n\nValues are bar gauge. The export supplies these sampled values, not a continuous waveform.\n\n| Local time | P-U | P-R | C-11 RUN |\n| --- | ---: | ---: | --- |\n| 09:54:00 | 6.9 | 6.8 | 1 |\n| 09:59:50 | 6.9 | 6.8 | 1 |\n| 10:00:11 | 6.9 | 5.8 | 1 |\n| 10:00:40 | 6.9 | 4.1 | 1 |\n| 10:01:10 | 6.8 | 3.4 | 1 |\n| 10:03:10 | 6.9 | 2.6 | 1 |\n| 10:05:50 | 6.9 | 2.1 | 1 |\n| 10:06:20 | 6.9 | 6.0 | 1 |\n| 10:06:50 | 6.9 | 6.8 | 1 |\n| 10:08:00 | 6.9 | 6.8 | 1 |\n\n## Alarm journal selection\n\n| Point | Display label | Occurred | Acknowledged | Cleared |\n| --- | --- | --- | --- | --- |\n| AL-44 | COMP FAULT | 10:00:32 | 10:03:14 | 10:06:24 |\n\nThis export does not include the alarm input mapping, valve states or flow values. C-11 RUN is a running-status bit. Its exact service association is in the point register. All displayed pressure samples have good acquisition quality; sensor accuracy and full time coverage are separate matters."
+}

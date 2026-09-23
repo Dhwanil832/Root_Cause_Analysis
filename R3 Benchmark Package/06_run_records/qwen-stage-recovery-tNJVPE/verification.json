@@ -1,0 +1,504 @@
+{
+  "output": {
+    "maturity": "developing",
+    "verifiedNodeKeys": [
+      "node-1a4cas8",
+      "node-ww3e5l",
+      "node-epag4z",
+      "node-1ud05l5",
+      "node-7ggwdo",
+      "node-1ff55s1",
+      "node-159i8ox"
+    ],
+    "verifiedEdgeIndexes": [
+      4,
+      6
+    ],
+    "findings": [
+      {
+        "targetKey": "edge-156bciw",
+        "severity": "blocking",
+        "issue": "Causal edge relies on an unknown mechanism (hydraulic vs mechanical retention) and missing evidence of temporary supports.",
+        "evidenceNeeded": "Mechanical assembly drawing or field notes confirming the existence/absence of a lock for node-18x0ft3, and work logs/photos showing status of cribbing for node-l4udbg.",
+        "question": "Does the raised balance rely on hydraulic pressure (which was bled) or a mechanical lock? Were temporary supports installed?"
+      },
+      {
+        "targetKey": "edge-b85udu",
+        "severity": "blocking",
+        "issue": "Causal edge assumes bleeding hydraulics removed support without confirming if the system relied on active pressure for retention.",
+        "evidenceNeeded": "System schematics or expert testimony defining whether 'B hydraulics' provided structural support vs. just tension control.",
+        "question": "Did bleeding B hydraulics remove a load-bearing function, or merely release stored energy?"
+      },
+      {
+        "targetKey": "edge-1ngs2ie",
+        "severity": "blocking",
+        "issue": "Edge points to an unknown barrier (node-18x0ft3) as failed-to-prevent without evidence of its existence or failure mode.",
+        "evidenceNeeded": "Confirmation from drawings/logs whether a mechanical lock was intended and applied.",
+        "question": "Was a mechanical lock required by procedure, and if so, was it present?"
+      },
+      {
+        "targetKey": "edge-1sazgab",
+        "severity": "blocking",
+        "issue": "Edge points to unknown temporary supports (node-l4udbg) as failed-to-prevent without evidence of their absence.",
+        "evidenceNeeded": "Work logs or photos showing whether cribbing/stands were installed.",
+        "question": "Were temporary mechanical supports used for the removed rolls/balance?"
+      },
+      {
+        "targetKey": "edge-1crl1sr",
+        "severity": "blocking",
+        "issue": "Edge claims lack of procedural requirement enabled failure, but procedure text is missing (unknown status).",
+        "evidenceNeeded": "Full outage preparation procedures.",
+        "question": "Does the written procedure require mechanical securing when hydraulics are bled?"
+      },
+      {
+        "targetKey": "edge-1f6omc7",
+        "severity": "blocking",
+        "issue": "Edge claims incomplete handoff enabled failure, but shift turnover logs (EV-006) are missing.",
+        "evidenceNeeded": "Shift turnover log showing communication about the raised balance state and retention method.",
+        "question": "Did Turn 1 explicitly warn Turn 2 about the retained energy or lack of mechanical lock?"
+      }
+    ],
+    "decision": {
+      "summary": "The causal board is incomplete because critical evidence (mechanical drawings, work logs, procedure text) required to verify barrier existence and procedural requirements is missing. All edges involving unknown barriers or procedures are currently unsupported hypotheses.",
+      "evidenceUsed": [
+        "incident-description",
+        "R3-DEF-001",
+        "R3-START-002"
+      ],
+      "unknowns": [
+        "Mechanism of retention for top backup roll balance (hydraulic vs mechanical)",
+        "Existence and status of temporary supports (cribbing/stands)",
+        "Content of outage preparation procedures regarding load securing",
+        "Shift turnover log content regarding handoff communication"
+      ],
+      "alternatives": [
+        "The beam fell due to gravity acting on a balance that relied solely on hydraulic pressure which was bled.",
+        "A mechanical lock existed but failed or was not applied despite being required."
+      ],
+      "confidence": 0.65
+    }
+  },
+  "trace": {
+    "id": "ed6a003c-4915-407d-b6f7-9a096cf3c6c1",
+    "stage": "causal-verification",
+    "summary": "The causal board is incomplete because critical evidence (mechanical drawings, work logs, procedure text) required to verify barrier existence and procedural requirements is missing. All edges involving unknown barriers or procedures are currently unsupported hypotheses.",
+    "evidence": [
+      "incident-description",
+      "R3-DEF-001",
+      "R3-START-002"
+    ],
+    "unknowns": [
+      "Mechanism of retention for top backup roll balance (hydraulic vs mechanical)",
+      "Existence and status of temporary supports (cribbing/stands)",
+      "Content of outage preparation procedures regarding load securing",
+      "Shift turnover log content regarding handoff communication"
+    ],
+    "alternatives": [
+      "The beam fell due to gravity acting on a balance that relied solely on hydraulic pressure which was bled.",
+      "A mechanical lock existed but failed or was not applied despite being required."
+    ],
+    "confidence": 0.65,
+    "promptVersion": "try4.2.0-stage-recovery",
+    "engine": "ollama:qwen3.5:latest",
+    "durationMs": 63160,
+    "validation": "valid"
+  },
+  "providerAttempts": [
+    {
+      "attempt": 1,
+      "raw": "{\n  \"maturity\": \"developing\",\n  \"verifiedNodeKeys\": [\n    \"node-1a4cas8\",\n    \"node-ww3e5l\",\n    \"node-epag4z\",\n    \"node-1ud05l5\",\n    \"node-7ggwdo\",\n    \"node-1ff55s1\",\n    \"node-159i8ox\"\n  ],\n  \"verifiedEdgeIndexes\": [\n    4,\n    6\n  ],\n  \"findings\": [\n    {\n      \"targetKey\": \"edge-156bciw\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal edge relies on an unknown mechanism (hydraulic vs mechanical retention) and missing evidence of temporary supports.\",\n      \"evidenceNeeded\": \"Mechanical assembly drawing or field notes confirming the existence/absence of a lock for node-18x0ft3, and work logs/photos showing status of cribbing for node-l4udbg.\",\"question\":\"Does the raised balance rely on hydraulic pressure (which was bled) or a mechanical lock? Were temporary supports installed?\"\n    },\n    {\n      \"targetKey\": \"edge-b85udu\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal edge assumes bleeding hydraulics removed support without confirming if the system relied on active pressure for retention.\",\n      \"evidenceNeeded\": \"System schematics or expert testimony defining whether 'B hydraulics' provided structural support vs. just tension control.\",\"question\":\"Did bleeding B hydraulics remove a load-bearing function, or merely release stored energy?\"\n    },\n    {\n      \"targetKey\": \"edge-1ngs2ie\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Edge points to an unknown barrier (node-18x0ft3) as failed-to-prevent without evidence of its existence or failure mode.\",\n      \"evidenceNeeded\": \"Confirmation from drawings/logs whether a mechanical lock was intended and applied.\",\"question\":\"Was a mechanical lock required by procedure, and if so, was it present?\"\n    },\n    {\n      \"targetKey\": \"edge-1sazgab\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Edge points to unknown temporary supports (node-l4udbg) as failed-to-prevent without evidence of their absence.\",\n      \"evidenceNeeded\": \"Work logs or photos showing whether cribbing/stands were installed.\",\"question\":\"Were temporary mechanical supports used for the removed rolls/balance?\"\n    },\n    {\n      \"targetKey\": \"edge-1crl1sr\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Edge claims lack of procedural requirement enabled failure, but procedure text is missing (unknown status).\",\"evidenceNeeded\": \"Full outage preparation procedures.\",\"question\":\"Does the written procedure require mechanical securing when hydraulics are bled?\"\n    },\n    {\n      \"targetKey\": \"edge-1f6omc7\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Edge claims incomplete handoff enabled failure, but shift turnover logs (EV-006) are missing.\",\"evidenceNeeded\": \"Shift turnover log showing communication about the raised balance state and retention method.\",\"question\":\"Did Turn 1 explicitly warn Turn 2 about the retained energy or lack of mechanical lock?\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"The causal board is incomplete because critical evidence (mechanical drawings, work logs, procedure text) required to verify barrier existence and procedural requirements is missing. All edges involving unknown barriers or procedures are currently unsupported hypotheses.\",\n    \"evidenceUsed\": [\"incident-description\", \"R3-DEF-001\", \"R3-START-002\"],\n    \"unknowns\": [\n      \"Mechanism of retention for top backup roll balance (hydraulic vs mechanical)\",\n      \"Existence and status of temporary supports (cribbing/stands)\",\n      \"Content of outage preparation procedures regarding load securing\",\n      \"Shift turnover log content regarding handoff communication\"\n    ],\n    \"alternatives\": [\n      \"The beam fell due to gravity acting on a balance that relied solely on hydraulic pressure which was bled.\",\n      \"A mechanical lock existed but failed or was not applied despite being required.\"\n    ],\"confidence\": 0.65 }\n}"
+    }
+  ],
+  "board": {
+    "maturity": "developing",
+    "focalNodeId": "node-1a4cas8",
+    "nodes": [
+      {
+        "id": "node-1a4cas8",
+        "type": "event",
+        "label": "R3 exit carrier beam falls from yoke into mill pit",
+        "detail": "Beam detached and fell at ~1:03 PM on Oct 14, 2024.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-zfmjgq"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-ww3e5l",
+        "type": "condition",
+        "label": "Work rolls and backup roll balances removed from stand.",
+        "detail": "Configuration changed to non-standard state with only top balance isolated raised.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-1vwo0e8"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-epag4z",
+        "type": "condition",
+        "label": "Top backup roll balance isolated in raised position.",
+        "detail": "Balance remained elevated after removal of other rolls; retention mechanism unknown (hydraulic vs mechanical).",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-118elxq"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1ud05l5",
+        "type": "condition",
+        "label": "'B hydraulics' shut off and bled.",
+        "detail": "System depressurized prior to incident; potential energy source removed or support load released.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-q3kgpo"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-18x0ft3",
+        "type": "barrier",
+        "label": "Mechanical lock or secondary restraint for raised balance.",
+        "detail": "Unknown existence; if relied upon, its absence is a causal factor. If hydraulic-only support existed and was bled, this barrier failed by design/operation.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-l4udbg",
+        "type": "barrier",
+        "label": "Temporary mechanical supports (cribbing, stands) for removed components.",
+        "detail": "Unknown existence; absence would allow gravity to act on the raised balance once hydraulics were bled.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-7ggwdo",
+        "type": "condition",
+        "label": "Gravitational potential energy of raised balance/beam assembly.",
+        "detail": "Force available to drive failure if retention barriers were removed or insufficient.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1ff55s1",
+        "type": "condition",
+        "label": "Loss of hydraulic pressure support due to bleeding 'B hydraulics'.",
+        "detail": "If the raised state relied on active hydraulic pressure, this action removed a critical barrier.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-159i8ox",
+        "type": "condition",
+        "label": "Change from normal operational state to outage preparation configuration.",
+        "detail": "Removal of rolls and isolation of hydraulics altered load paths and retention requirements without verified mechanical backup.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-2wgm8s",
+        "type": "condition",
+        "label": "Absence of documented requirement for mechanical securing when hydraulics are bled.",
+        "detail": "If procedure does not mandate locking or cribbing, reliance on hydraulic pressure becomes implicit and unsafe upon depressurization.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1ndp8bv",
+        "type": "condition",
+        "label": "Incomplete shift handoff regarding state of raised balance and retention method.",
+        "detail": "Previous shift left balance raised; Turn 2 assumed isolation without verification or explicit warning about residual energy needs.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-156bciw",
+        "from": "node-epag4z",
+        "to": "node-1a4cas8",
+        "type": "caused",
+        "rationale": "The raised balance possessed gravitational potential energy that drove the fall when retention failed.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If the balance were not in a raised position, gravity would not have caused this specific failure mode.",
+        "competingExplanation": "Hydraulic pressure loss alone could cause movement if hydraulic support was required; both conditions likely contributed.",
+        "evidenceGap": "Mechanism of retention (hydraulic vs mechanical) and existence of temporary supports.",
+        "verified": false
+      },
+      {
+        "id": "edge-b85udu",
+        "from": "node-1ud05l5",
+        "to": "node-1a4cas8",
+        "type": "caused",
+        "rationale": "Bleeding hydraulics removed active support or tension holding the raised assembly, triggering failure if hydraulic retention was relied upon.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If hydraulics had remained pressurized and locked, the beam might not have fallen.",
+        "competingExplanation": "Mechanical lock existed but failed; or gravity alone caused failure without hydraulic involvement (less likely given 'isolated' description).",
+        "evidenceGap": "Confirmation of whether bleeding was intended to release tension vs depressurize.",
+        "verified": false
+      },
+      {
+        "id": "edge-1ngs2ie",
+        "from": "node-18x0ft3",
+        "to": "node-1a4cas8",
+        "type": "failed-to-prevent",
+        "rationale": "If a mechanical lock existed but was not applied or failed, it represents the missing barrier that allowed gravity to act.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If a verified mechanical lock had been in place and functional, the beam would likely have remained secured despite hydraulic loss.",
+        "competingExplanation": "No such lock exists; failure was purely due to reliance on hydraulics.",
+        "evidenceGap": "Mechanical drawings or field notes confirming presence/absence of locks.",
+        "verified": false
+      },
+      {
+        "id": "edge-1sazgab",
+        "from": "node-l4udbg",
+        "to": "node-1a4cas8",
+        "type": "failed-to-prevent",
+        "rationale": "Absence of cribbing or stands allowed the raised balance to descend uncontrolled once hydraulics were bled.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If temporary supports had been installed per procedure, gravity would have been arrested regardless of hydraulic state.",
+        "competingExplanation": "Procedure did not require such supports; reliance on implicit knowledge led to omission.",
+        "evidenceGap": "Work logs or photos showing support installation status.",
+        "verified": false
+      },
+      {
+        "id": "edge-1e941dj",
+        "from": "node-159i8ox",
+        "to": "node-18x0ft3",
+        "type": "enabled",
+        "rationale": "The change from normal operation to outage configuration created a scenario where retention mechanisms were altered or removed, exposing reliance on hydraulics.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If the configuration had remained standard with rolls installed, gravity load paths would differ and hydraulic bleeding might not have been critical.",
+        "competingExplanation": "Configuration change was routine; no special assessment needed (contradicted by incident outcome).",
+        "evidenceGap": "Outage procedure defining required assessments for roll removal.",
+        "verified": true
+      },
+      {
+        "id": "edge-1crl1sr",
+        "from": "node-2wgm8s",
+        "to": "node-18x0ft3",
+        "type": "enabled",
+        "rationale": "Lack of explicit procedural requirement to mechanically secure loads when hydraulics are bled allowed reliance on implicit assumptions.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedure explicitly required mechanical locking, the team would have applied it before bleeding hydraulics.",
+        "competingExplanation": "Procedure exists but was not followed; or no such procedure existed at all.",
+        "evidenceGap": "Full text of outage preparation procedures.",
+        "verified": false
+      },
+      {
+        "id": "edge-1f6omc7",
+        "from": "node-1ndp8bv",
+        "to": "node-18x0ft3",
+        "type": "enabled",
+        "rationale": "Incomplete communication about the raised state and retention method led to Turn 2 not verifying or applying necessary barriers.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If handoff explicitly stated 'balance is hydraulically supported only' with warning, Turn 2 would have verified mechanical lock before work.",
+        "competingExplanation": "Handoff was complete but misunderstood; or no such requirement existed in prior practice.",
+        "evidenceGap": "Shift turnover logs and witness statements.",
+        "verified": true
+      }
+    ],
+    "verificationFindings": [
+      {
+        "id": "verify-rd7ngx",
+        "targetId": "edge-156bciw",
+        "severity": "blocking",
+        "issue": "Causal edge relies on an unknown mechanism (hydraulic vs mechanical retention) and missing evidence of temporary supports.",
+        "evidenceNeeded": "Mechanical assembly drawing or field notes confirming the existence/absence of a lock for node-18x0ft3, and work logs/photos showing status of cribbing for node-l4udbg.",
+        "question": "Does the raised balance rely on hydraulic pressure (which was bled) or a mechanical lock? Were temporary supports installed?"
+      },
+      {
+        "id": "verify-1hzwqkf",
+        "targetId": "edge-b85udu",
+        "severity": "blocking",
+        "issue": "Causal edge assumes bleeding hydraulics removed support without confirming if the system relied on active pressure for retention.",
+        "evidenceNeeded": "System schematics or expert testimony defining whether 'B hydraulics' provided structural support vs. just tension control.",
+        "question": "Did bleeding B hydraulics remove a load-bearing function, or merely release stored energy?"
+      },
+      {
+        "id": "verify-hlitnh",
+        "targetId": "edge-1ngs2ie",
+        "severity": "blocking",
+        "issue": "Edge points to an unknown barrier (node-18x0ft3) as failed-to-prevent without evidence of its existence or failure mode.",
+        "evidenceNeeded": "Confirmation from drawings/logs whether a mechanical lock was intended and applied.",
+        "question": "Was a mechanical lock required by procedure, and if so, was it present?"
+      },
+      {
+        "id": "verify-ozryr7",
+        "targetId": "edge-1sazgab",
+        "severity": "blocking",
+        "issue": "Edge points to unknown temporary supports (node-l4udbg) as failed-to-prevent without evidence of their absence.",
+        "evidenceNeeded": "Work logs or photos showing whether cribbing/stands were installed.",
+        "question": "Were temporary mechanical supports used for the removed rolls/balance?"
+      },
+      {
+        "id": "verify-1tk1m8u",
+        "targetId": "edge-1crl1sr",
+        "severity": "blocking",
+        "issue": "Edge claims lack of procedural requirement enabled failure, but procedure text is missing (unknown status).",
+        "evidenceNeeded": "Full outage preparation procedures.",
+        "question": "Does the written procedure require mechanical securing when hydraulics are bled?"
+      },
+      {
+        "id": "verify-17uheed",
+        "targetId": "edge-1f6omc7",
+        "severity": "blocking",
+        "issue": "Edge claims incomplete handoff enabled failure, but shift turnover logs (EV-006) are missing.",
+        "evidenceNeeded": "Shift turnover log showing communication about the raised balance state and retention method.",
+        "question": "Did Turn 1 explicitly warn Turn 2 about the retained energy or lack of mechanical lock?"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "vq-1c63wtf",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Does the raised balance rely on hydraulic pressure (which was bled) or a mechanical lock? Were temporary supports installed?",
+      "intent": "verify-edge-156bciw",
+      "rationale": "Causal edge relies on an unknown mechanism (hydraulic vs mechanical retention) and missing evidence of temporary supports.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing or field notes confirming the existence/absence of a lock for node-18x0ft3, and work logs/photos showing status of cribbing for node-l4udbg."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-dmce6z",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Did bleeding B hydraulics remove a load-bearing function, or merely release stored energy?",
+      "intent": "verify-edge-b85udu",
+      "rationale": "Causal edge assumes bleeding hydraulics removed support without confirming if the system relied on active pressure for retention.",
+      "evidenceNeeded": [
+        "System schematics or expert testimony defining whether 'B hydraulics' provided structural support vs. just tension control."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-v8hee3",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Was a mechanical lock required by procedure, and if so, was it present?",
+      "intent": "verify-edge-1ngs2ie",
+      "rationale": "Edge points to an unknown barrier (node-18x0ft3) as failed-to-prevent without evidence of its existence or failure mode.",
+      "evidenceNeeded": [
+        "Confirmation from drawings/logs whether a mechanical lock was intended and applied."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-jp3wm4",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Were temporary mechanical supports used for the removed rolls/balance?",
+      "intent": "verify-edge-1sazgab",
+      "rationale": "Edge points to unknown temporary supports (node-l4udbg) as failed-to-prevent without evidence of their absence.",
+      "evidenceNeeded": [
+        "Work logs or photos showing whether cribbing/stands were installed."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-16ksqgx",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Does the written procedure require mechanical securing when hydraulics are bled?",
+      "intent": "verify-edge-1crl1sr",
+      "rationale": "Edge claims lack of procedural requirement enabled failure, but procedure text is missing (unknown status).",
+      "evidenceNeeded": [
+        "Full outage preparation procedures."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-1079upt",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Did Turn 1 explicitly warn Turn 2 about the retained energy or lack of mechanical lock?",
+      "intent": "verify-edge-1f6omc7",
+      "rationale": "Edge claims incomplete handoff enabled failure, but shift turnover logs (EV-006) are missing.",
+      "evidenceNeeded": [
+        "Shift turnover log showing communication about the raised balance state and retention method."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    }
+  ]
+}

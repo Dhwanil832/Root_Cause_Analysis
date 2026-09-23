@@ -1,0 +1,156 @@
+{"kind":"deck","id":"pr/jw333y","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","placeholders":[{"name":"title","type":"title","textPreview":"Click To Edit Master Title Style"},{"name":"body","type":"body","textPreview":"Date"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"1_SMSVC_Title_and_Content","placeholders":[{"name":"title","type":"title","textPreview":"Click To Edit Master Title Style"},{"name":"content placeholder 10","textPreview":"Edit Master text styles | Second level | Third level | Fourth level | Fifth level"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"2_SMSVC_Section","placeholders":[{"name":"title","type":"title","textPreview":"Click To Edit Master Title Style"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"3_SMSVC_Conclusion"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"SMSVC_Title","placeholders":[{"name":"title","type":"title","textPreview":"CLICK TO EDIT MASTER TITLE STYLE"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"3_SMSVC_Blank","placeholders":[{"name":"title","type":"title","textPreview":"CLICK TO EDIT MASTER TITLE STYLE"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"2_SMSVC_Title_and_Content","placeholders":[{"name":"title","type":"title"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"},{"name":"body","type":"body"}]}
+{"kind":"slide","id":"sl/oaq6ia","slide":1,"title":"Project #19","textShapes":2}
+{"kind":"textbox","id":"sh/t8nqxcfu","slide":1,"text":"Project #19\nStandalone Root Cause Analysis\nProgress Since July 2026","textPreview":"Project #19 | Standalone Root Cause Analysis | Progress Since July 2026","textChars":67,"textLines":3,"bbox":[160,175,960,240]}
+{"kind":"textbox","id":"sh/65c72xgj","slide":1,"text":"Progress through 22 September 2026","textPreview":"Progress through 22 September 2026","textChars":34,"textLines":1,"bbox":[325,535,670,50]}
+{"kind":"notes","id":"nt/oaq6ia","slide":1,"text":"/Users/dhwanilchauhan/Downloads/S&T_PTC_July2026Presentation.pptx slides 7–13. Progress cutoff 22 September 2026, not a confirmed meeting date."}
+{"kind":"slide","id":"sl/obu3bf","slide":2,"title":"Progress Since July","textShapes":7}
+{"kind":"textbox","id":"sh/dgbulovi","slide":2,"text":"Progress Since July","textPreview":"Progress Since July","textChars":19,"textLines":1,"bbox":[97,18,963,80]}
+{"kind":"textbox","id":"sh/qd0vatcr","slide":2,"text":"Current investigation workspace","textPreview":"Current investigation workspace","textChars":31,"textLines":1,"bbox":[490,112,730,42]}
+{"kind":"textbox","id":"sh/0j2dg3u9","slide":2,"text":"JULY","textPreview":"JULY","textChars":4,"textLines":1,"bbox":[48,120,370,40]}
+{"kind":"textbox","id":"sh/1kbup8ve","slide":2,"text":"Stepwise RCA concept\nInitial causal mapping\nQwen testing planned","textPreview":"Stepwise RCA concept | Initial causal mapping | Qwen testing planned","textChars":64,"textLines":3,"bbox":[48,169,385,139]}
+{"kind":"textbox","id":"sh/ehkvetc3","slide":2,"text":"SINCE JULY","textPreview":"SINCE JULY","textChars":10,"textLines":1,"bbox":[48,347,375,40]}
+{"kind":"textbox","id":"sh/zitcnydo","slide":2,"text":"Preserved investigations\nEvidence-driven revisions\nRecorded Qwen experiments","textPreview":"Preserved investigations | Evidence-driven revisions | Recorded Qwen experiments","textChars":76,"textLines":3,"bbox":[48,397,385,140]}
+{"kind":"textbox","id":"sh/onmdk3u5","slide":2,"text":"Prototype implemented. Causal quality remains under evaluation.","textPreview":"Prototype implemented. Causal quality remains under evaluation.","textChars":63,"textLines":1,"bbox":[65,626,1110,42]}
+{"kind":"image","id":"im/2x4rqxsj","slide":2,"name":"","alt":"current-app","bbox":[460,164,770,434]}
+{"kind":"notes","id":"nt/obu3bf","slide":2,"text":"/Users/dhwanilchauhan/Downloads/S&T_PTC_July2026Presentation.pptx slides 7–13. /Users/dhwanilchauhan/Desktop/RCA Try 1/Try 7/TRY7_EXECUTIVE_PLAN.md, section 10 implementation receipt and observed smoke outcome. Screenshot: current Try 7 local interface captured 22 September 2026. Workflow availability is not evidence of RCA accuracy."}
+{"kind":"slide","id":"sl/6k64es","slide":3,"title":"How the Investigation Now Works","textShapes":18}
+{"kind":"textbox","id":"sh/pofylojm","slide":3,"text":"How the Investigation Now Works","textPreview":"How the Investigation Now Works","textChars":31,"textLines":1,"bbox":[97,18,963,80]}
+{"kind":"textbox","id":"sh/21ozqt0v","slide":3,"text":"One incident develops through evidence and successive saved versions","textPreview":"One incident develops through evidence and successive saved versions","textChars":68,"textLines":1,"bbox":[61,113,1145,46]}
+{"kind":"shape","id":"sh/32xgjy1g","slide":3,"bbox":[55,203,230,154]}
+{"kind":"textbox","id":"sh/crqhg3ix","slide":3,"text":"Incident + records","textPreview":"Incident + records","textChars":18,"textLines":1,"bbox":[67,215,206,54]}
+{"kind":"textbox","id":"sh/dszyp8ji","slide":3,"text":"Original sources retained","textPreview":"Original sources retained","textChars":25,"textLines":1,"bbox":[67,279,206,74]}
+{"kind":"shape","id":"sh/qpozut07","slide":3,"bbox":[365,203,230,154]}
+{"kind":"textbox","id":"sh/bqxgny1s","slide":3,"text":"Initial understanding","textPreview":"Initial understanding","textChars":21,"textLines":1,"bbox":[377,215,206,54]}
+{"kind":"textbox","id":"sh/0vqhkni9","slide":3,"text":"Entities and hypotheses","textPreview":"Entities and hypotheses","textChars":23,"textLines":1,"bbox":[377,279,206,74]}
+{"kind":"shape","id":"sh/lwzitsju","slide":3,"bbox":[675,203,230,154]}
+{"kind":"textbox","id":"sh/xkzu9obu","slide":3,"text":"Targeted expertise","textPreview":"Targeted expertise","textChars":18,"textLines":1,"bbox":[687,215,206,54]}
+{"kind":"textbox","id":"sh/wj6d03u9","slide":3,"text":"Focused questions","textPreview":"Focused questions","textChars":17,"textLines":1,"bbox":[687,279,206,74]}
+{"kind":"shape","id":"sh/vixc7yto","slide":3,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ahovytcj","slide":3,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/58zud8b6","slide":3,"bbox":[675,419,230,154]}
+{"kind":"textbox","id":"sh/k7qd43al","slide":3,"text":"Questions + answers","textPreview":"Questions + answers","textChars":19,"textLines":1,"bbox":[687,431,206,54]}
+{"kind":"textbox","id":"sh/j6hcbyt0","slide":3,"text":"Requests and sourced answers","textPreview":"Requests and sourced answers","textChars":28,"textLines":1,"bbox":[687,495,206,74]}
+{"kind":"shape","id":"sh/il8v2tsf","slide":3,"bbox":[365,419,230,154]}
+{"kind":"textbox","id":"sh/1cfu14bm","slide":3,"text":"Review + revision","textPreview":"Review + revision","textChars":17,"textLines":1,"bbox":[377,431,206,54]}
+{"kind":"textbox","id":"sh/0bmtsju1","slide":3,"text":"Facts, roles and links","textPreview":"Facts, roles and links","textChars":22,"textLines":1,"bbox":[377,495,206,74]}
+{"kind":"shape","id":"sh/c7al4369","slide":3,"bbox":[55,419,230,154]}
+{"kind":"textbox","id":"sh/d8jmx8nu","slide":3,"text":"Saved versions","textPreview":"Saved versions","textChars":14,"textLines":1,"bbox":[67,431,206,54]}
+{"kind":"textbox","id":"sh/q5s32do3","slide":3,"text":"Board and open questions","textPreview":"Board and open questions","textChars":24,"textLines":1,"bbox":[67,495,206,74]}
+{"kind":"shape","id":"sh/r614vy5o","slide":3,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/0bul8n65","slide":3,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/lc3m1snq","slide":3,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/y9s36dof","slide":3,"text":"NEW\nEVIDENCE","textPreview":"NEW | EVIDENCE","textChars":12,"textLines":2,"bbox":[973,286,228,84]}
+{"kind":"shape","id":"sh/za14zi50","slide":3,"bbox":[964,412,236,154]}
+{"kind":"textbox","id":"sh/8zu5cn6h","slide":3,"text":"Later records","textPreview":"Later records","textChars":13,"textLines":1,"bbox":[976,424,212,54]}
+{"kind":"textbox","id":"sh/903m5sn2","slide":3,"text":"Answers or corrections","textPreview":"Answers or corrections","textChars":22,"textLines":1,"bbox":[976,488,212,74]}
+{"kind":"shape","id":"sh/jupovmp4","slide":3,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/itw72h8j","slide":3,"text":"New information can strengthen, challenge or withdraw an explanation.","textPreview":"New information can strengthen, challenge or withdraw an explanation.","textChars":69,"textLines":1,"bbox":[64,619,1100,45]}
+{"kind":"notes","id":"nt/6k64es","slide":3,"text":"/Users/dhwanilchauhan/Desktop/RCA Try 1/RCA_RESEARCH_OVERVIEW_AND_PLAN.md sections 5, 8; /Users/dhwanilchauhan/Desktop/RCA Try 1/Try 7/TRY7_EXECUTIVE_PLAN.md sections 4, 10. Simplified conceptual workflow. The diagram summarizes responsibilities, not separate fixed sequential API agents. Review outcomes and questions can reopen investigation work."}
+{"kind":"slide","id":"sl/ei8z6i","slide":4,"title":"What Changed Between V1 and V2","textShapes":8}
+{"kind":"textbox","id":"sh/lovmtsbu","slide":4,"text":"What Changed Between V1 and V2","textPreview":"What Changed Between V1 and V2","textChars":30,"textLines":1,"bbox":[97,18,963,80]}
+{"kind":"textbox","id":"sh/y143idsj","slide":4,"text":"Instrument-air case: saved partial investigations","textPreview":"Instrument-air case: saved partial investigations","textChars":49,"textLines":1,"bbox":[55,113,1150,44]}
+{"kind":"textbox","id":"sh/8rmlo7al","slide":4,"text":"A concrete issue found","textPreview":"A concrete issue found","textChars":22,"textLines":1,"bbox":[766,178,438,45]}
+{"kind":"shape","id":"sh/9sfmxcb6","slide":4,"bbox":[787,263,183,94]}
+{"kind":"textbox","id":"sh/mp43mxsf","slide":4,"text":"Pressure loss","textPreview":"Pressure loss","textChars":13,"textLines":1,"bbox":[799,275,159,54]}
+{"kind":"shape","id":"sh/nqd4v2t0","slide":4,"bbox":[1032,263,183,94]}
+{"kind":"textbox","id":"sh/wv6ls7ah","slide":4,"text":"Recovery","textPreview":"Recovery","textChars":8,"textLines":1,"bbox":[1044,275,159,54]}
+{"kind":"shape","id":"sh/xwfm1cb2","slide":4,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/1ob2ts76","slide":4,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/0n2l0n6l","slide":4,"text":"V1 retained both directions\nfor the “preceded” relationship.","textPreview":"V1 retained both directions | for the “preceded” relationship.","textChars":60,"textLines":2,"bbox":[760,393,446,91]}
+{"kind":"textbox","id":"sh/fm9kr2p0","slide":4,"text":"The board grew.\nKey causal errors remained.","textPreview":"The board grew. | Key causal errors remained.","textChars":43,"textLines":2,"bbox":[760,504,443,100]}
+{"kind":"textbox","id":"sh/e103yxof","slide":4,"text":"5 to 9 nodes. Verified connections stayed at 0.","textPreview":"5 to 9 nodes. Verified connections stayed at 0.","textChars":47,"textLines":1,"bbox":[62,621,1110,44]}
+{"kind":"chart","id":"ch/zy9onyhg","slide":4,"name":"","chartType":"bar","bbox":[50,207,663,342]}
+{"kind":"notes","id":"nt/ei8z6i","slide":4,"text":"/Users/dhwanilchauhan/Desktop/RCA Try 1/Try 6/evals/v1-v2-presentation-review/output/Try6_V1_V2_Evidence_Review.md sections 1–3; /Users/dhwanilchauhan/Desktop/RCA Try 1/Try 6/public/history/featured-causal-boards.json. One Try 6 development case, IA-16036, Qwen3.5. Counts include focal event. V1 5 nodes/4 active links/0 verified links; V2 9/6/0. No claim that greater size means greater accuracy. Diagram at right is an abbreviated excerpt of the two opposing preceded links present in saved V1, not a correct process model."}
+{"kind":"slide","id":"sl/46zezd","slide":5,"title":"Improvements to Evidence Review","textShapes":18}
+{"kind":"textbox","id":"sh/t47apc7q","slide":5,"text":"Improvements to Evidence Review","textPreview":"Improvements to Evidence Review","textChars":31,"textLines":1,"bbox":[97,18,963,80]}
+{"kind":"textbox","id":"sh/61grux8z","slide":5,"text":"Corrections now have an explicit route back to the investigation","textPreview":"Corrections now have an explicit route back to the investigation","textChars":64,"textLines":1,"bbox":[57,112,1150,46]}
+{"kind":"shape","id":"sh/72psn2pk","slide":5,"bbox":[56,210,235,154]}
+{"kind":"textbox","id":"sh/g7it07qh","slide":5,"text":"Source evidence","textPreview":"Source evidence","textChars":15,"textLines":1,"bbox":[68,222,211,54]}
+{"kind":"textbox","id":"sh/h8ratc7m","slide":5,"text":"Preserved originals","textPreview":"Preserved originals","textChars":19,"textLines":1,"bbox":[68,286,211,74]}
+{"kind":"shape","id":"sh/u50byh8b","slide":5,"bbox":[355,210,235,154]}
+{"kind":"textbox","id":"sh/f69sr2pw","slide":5,"text":"Proposed correction","textPreview":"Proposed correction","textChars":19,"textLines":1,"bbox":[367,222,211,54]}
+{"kind":"textbox","id":"sh/4bit4rqd","slide":5,"text":"Source-bound change","textPreview":"Source-bound change","textChars":19,"textLines":1,"bbox":[367,286,211,74]}
+{"kind":"shape","id":"sh/pwraxw7y","slide":5,"bbox":[654,210,235,154]}
+{"kind":"textbox","id":"sh/xsryhsn6","slide":5,"text":"Re-review","textPreview":"Re-review","textChars":9,"textLines":1,"bbox":[666,222,211,54]}
+{"kind":"textbox","id":"sh/crihonml","slide":5,"text":"Check the revised claim","textPreview":"Check the revised claim","textChars":23,"textLines":1,"bbox":[666,286,211,74]}
+{"kind":"shape","id":"sh/bq9gf250","slide":5,"bbox":[953,210,235,154]}
+{"kind":"textbox","id":"sh/ap0zmx4f","slide":5,"text":"Saved revision","textPreview":"Saved revision","textChars":14,"textLines":1,"bbox":[965,222,211,54]}
+{"kind":"textbox","id":"sh/lgbylc32","slide":5,"text":"History + current view","textPreview":"History + current view","textChars":22,"textLines":1,"bbox":[965,286,211,74]}
+{"kind":"shape","id":"sh/kf2hs7mx","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/zetgj25c","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/yd0zqx4r","slide":5,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/1k7y98ny","slide":5,"text":"Three separate judgments","textPreview":"Three separate judgments","textChars":24,"textLines":1,"bbox":[57,401,1110,42]}
+{"kind":"shape","id":"sh/0jyxg3md","slide":5,"bbox":[57,464,350,154]}
+{"kind":"textbox","id":"sh/s32hwnu9","slide":5,"text":"Factual support","textPreview":"Factual support","textChars":15,"textLines":1,"bbox":[69,476,326,54]}
+{"kind":"textbox","id":"sh/t4byp8vu","slide":5,"text":"Does the source establish it?","textPreview":"Does the source establish it?","textChars":29,"textLines":1,"bbox":[69,540,326,74]}
+{"kind":"shape","id":"sh/61kzudc3","slide":5,"bbox":[447,464,350,154]}
+{"kind":"textbox","id":"sh/r2tgnido","slide":5,"text":"Causal role","textPreview":"Causal role","textChars":11,"textLines":1,"bbox":[459,476,326,54]}
+{"kind":"textbox","id":"sh/g7mh0nul","slide":5,"text":"Is it an event, condition or barrier?","textPreview":"Is it an event, condition or barrier?","textChars":37,"textLines":1,"bbox":[459,540,326,74]}
+{"kind":"shape","id":"sh/1svytsvq","slide":5,"bbox":[837,464,350,154]}
+{"kind":"textbox","id":"sh/e5kzydcf","slide":5,"text":"Connection validity","textPreview":"Connection validity","textChars":19,"textLines":1,"bbox":[849,476,326,54]}
+{"kind":"textbox","id":"sh/f6tgrid0","slide":5,"text":"Is the proposed relationship justified?","textPreview":"Is the proposed relationship justified?","textChars":39,"textLines":1,"bbox":[849,540,326,74]}
+{"kind":"textbox","id":"sh/ovmh47uh","slide":5,"text":"97 recorded software checks passed. Model RCA improvement still needs testing.","textPreview":"97 recorded software checks passed. Model RCA improvement still needs testing.","textChars":78,"textLines":1,"bbox":[57,627,1120,42]}
+{"kind":"notes","id":"nt/46zezd","slide":5,"text":"/Users/dhwanilchauhan/Desktop/RCA Try 1/Try 7/TRY7_EXECUTIVE_PLAN.md, section 10 implementation receipt and observed smoke outcome. These functions are described in the implementation receipt; full-plan acceptance is incomplete. The 97 checks are recorded deterministic software checks, not model accuracy scores."}
+{"kind":"slide","id":"sl/uiggov","slide":6,"title":"Latest Qwen Investigation","textShapes":6}
+{"kind":"textbox","id":"sh/1cvixoz2","slide":6,"text":"Latest Qwen Investigation","textPreview":"Latest Qwen Investigation","textChars":25,"textLines":1,"bbox":[97,18,963,80]}
+{"kind":"textbox","id":"sh/fad0vehw","slide":6,"text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[935,162,270,74]}
+{"kind":"textbox","id":"sh/s7mh0zyl","slide":6,"text":"tasks completed","textPreview":"tasks completed","textChars":15,"textLines":1,"bbox":[935,238,285,47]}
+{"kind":"textbox","id":"sh/t8vit4zq","slide":6,"text":"Partial V1","textPreview":"Partial V1","textChars":10,"textLines":1,"bbox":[935,325,287,50]}
+{"kind":"textbox","id":"sh/6lkzypgf","slide":6,"text":"5 observations\n+ focal event\n0 causal links","textPreview":"5 observations | + focal event | 0 causal links","textChars":43,"textLines":3,"bbox":[935,392,275,142]}
+{"kind":"textbox","id":"sh/r6d0ruh0","slide":6,"text":"Real run, preserved output. Execution remains inconclusive.","textPreview":"Real run, preserved output. Execution remains inconclusive.","textChars":59,"textLines":1,"bbox":[56,640,1115,40]}
+{"kind":"image","id":"im/nml0r6xs","slide":6,"name":"","alt":"current-board","bbox":[43,151,854,479]}
+{"kind":"notes","id":"nt/uiggov","slide":6,"text":"/Users/dhwanilchauhan/Desktop/RCA Try 1/Try 7/TRY7_EXECUTIVE_PLAN.md, section 10 implementation receipt and observed smoke outcome. Screenshot of the saved unscored Try 7 pneumatic-carriage smoke run. The screenshot shows the current app displaying the historical V1 snapshot. 21 tasks completed; partial version; 5 observations plus focal event, zero causal links; execution-inconclusive. Post-run fixes are not validated by a fresh frozen-config experiment."}
+{"kind":"slide","id":"sl/zcdwz5","slide":7,"title":"Staged Evidence for Validation","textShapes":16}
+{"kind":"textbox","id":"sh/3upg7ytw","slide":7,"text":"Staged Evidence for Validation","textPreview":"Staged Evidence for Validation","textChars":30,"textLines":1,"bbox":[97,18,963,80]}
+{"kind":"textbox","id":"sh/4vyxg3u1","slide":7,"text":"Two development cases","textPreview":"Two development cases","textChars":21,"textLines":1,"bbox":[55,118,1100,43]}
+{"kind":"textbox","id":"sh/5w7y98bm","slide":7,"text":"R3 beam fall","textPreview":"R3 beam fall","textChars":12,"textLines":1,"bbox":[65,184,477,40]}
+{"kind":"textbox","id":"sh/qxgfidc7","slide":7,"text":"Technical review required","textPreview":"Technical review required","textChars":25,"textLines":1,"bbox":[65,231,475,40]}
+{"kind":"textbox","id":"sh/rypgbyts","slide":7,"text":"Instrument-air loss","textPreview":"Instrument-air loss","textChars":19,"textLines":1,"bbox":[668,184,500,40]}
+{"kind":"textbox","id":"sh/szyxk3ud","slide":7,"text":"Prepared for pilot","textPreview":"Prepared for pilot","textChars":18,"textLines":1,"bbox":[668,231,493,40]}
+{"kind":"shape","id":"sh/d0ryd8by","slide":7,"bbox":[60,348,322,157]}
+{"kind":"textbox","id":"sh/m1wf69c3","slide":7,"text":"B0: starter evidence","textPreview":"B0: starter evidence","textChars":20,"textLines":1,"bbox":[72,360,298,54]}
+{"kind":"textbox","id":"sh/725gzeto","slide":7,"text":"Initial account and available records","textPreview":"Initial account and available records","textChars":37,"textLines":1,"bbox":[72,424,298,77]}
+{"kind":"shape","id":"sh/b6ho3ep8","slide":7,"bbox":[475,348,322,157]}
+{"kind":"textbox","id":"sh/al8nu9o3","slide":7,"text":"B1: new evidence","textPreview":"B1: new evidence","textChars":16,"textLines":1,"bbox":[487,360,298,54]}
+{"kind":"textbox","id":"sh/x8j654ne","slide":7,"text":"Records that distinguish explanations","textPreview":"Records that distinguish explanations","textChars":37,"textLines":1,"bbox":[487,424,298,77]}
+{"kind":"shape","id":"sh/c7a5wz6t","slide":7,"bbox":[890,348,322,157]}
+{"kind":"textbox","id":"sh/nih4zupc","slide":7,"text":"B2: further evidence","textPreview":"B2: further evidence","textChars":20,"textLines":1,"bbox":[902,360,298,54]}
+{"kind":"textbox","id":"sh/2h8nqpor","slide":7,"text":"Deeper context or a correction","textPreview":"Deeper context or a correction","textChars":30,"textLines":1,"bbox":[902,424,298,77]}
+{"kind":"shape","id":"sh/pkzm147i","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ojq5sz6x","slide":7,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/fex4vupg","slide":7,"text":"V1","textPreview":"V1","textChars":2,"textLines":1,"bbox":[162,526,110,50]}
+{"kind":"textbox","id":"sh/edonmpov","slide":7,"text":"V2","textPreview":"V2","textChars":2,"textLines":1,"bbox":[579,526,110,50]}
+{"kind":"textbox","id":"sh/i9onep8n","slide":7,"text":"V3","textPreview":"V3","textChars":2,"textLines":1,"bbox":[992,526,110,50]}
+{"kind":"textbox","id":"sh/3axo7a98","slide":7,"text":"Synthetic reconstructions. Independent technical validation remains pending.","textPreview":"Synthetic reconstructions. Independent technical validation remains pending.","textChars":76,"textLines":1,"bbox":[55,629,1135,43]}
+{"kind":"notes","id":"nt/zcdwz5","slide":7,"text":"/Users/dhwanilchauhan/Desktop/RCA Try 1/Synthetic Evidence Packages 2026-09-22/README_OPERATOR_ONLY.md. Two historically anchored synthetic reconstructions, not recovered company records. Both are derivatives of previously used development cases, not independent held-out cases. B0/B1/B2 are cumulative releases corresponding to V1/V2/V3. No new RCA run is claimed."}
+{"kind":"slide","id":"sl/sj7c46","slide":8,"title":"Next Steps","textShapes":14}
+{"kind":"textbox","id":"sh/xozmpcj6","slide":8,"text":"Next Steps","textPreview":"Next Steps","textChars":10,"textLines":1,"bbox":[97,18,963,80]}
+{"kind":"textbox","id":"sh/a183ex0f","slide":8,"text":"Next milestone: one reproducible investigation across three evidence releases","textPreview":"Next milestone: one reproducible investigation across three evidence releases","textChars":77,"textLines":1,"bbox":[55,115,1150,54]}
+{"kind":"shape","id":"sh/b2h4n210","slide":8,"bbox":[58,259,244,163]}
+{"kind":"textbox","id":"sh/oz6lc7ip","slide":8,"text":"Freeze the pilot","textPreview":"Freeze the pilot","textChars":16,"textLines":1,"bbox":[70,271,220,54]}
+{"kind":"textbox","id":"sh/90fmlcju","slide":8,"text":"Model, prompts and release schedule","textPreview":"Model, prompts and release schedule","textChars":35,"textLines":1,"bbox":[70,335,220,83]}
+{"kind":"shape","id":"sh/mxo3ax0j","slide":8,"bbox":[360,259,244,163]}
+{"kind":"textbox","id":"sh/nyx4j214","slide":8,"text":"Run V1–V3","textPreview":"Run V1–V3","textChars":9,"textLines":1,"bbox":[372,271,220,54]}
+{"kind":"textbox","id":"sh/0v6l8nid","slide":8,"text":"Save every input, board and revision","textPreview":"Save every input, board and revision","textChars":36,"textLines":1,"bbox":[372,335,220,83]}
+{"kind":"shape","id":"sh/1wfmhsjy","slide":8,"bbox":[662,259,244,163]}
+{"kind":"textbox","id":"sh/tgv6t8ry","slide":8,"text":"Baseline comparison","textPreview":"Baseline comparison","textChars":19,"textLines":1,"bbox":[674,271,220,54]}
+{"kind":"textbox","id":"sh/sfmpknqt","slide":8,"text":"Same model and same evidence","textPreview":"Same model and same evidence","textChars":28,"textLines":1,"bbox":[674,335,220,83]}
+{"kind":"shape","id":"sh/redori98","slide":8,"bbox":[964,259,244,163]}
+{"kind":"textbox","id":"sh/6d47id8n","slide":8,"text":"Assess quality","textPreview":"Assess quality","textChars":14,"textLines":1,"bbox":[976,271,220,54]}
+{"kind":"textbox","id":"sh/5cb6p8r2","slide":8,"text":"Evidence, mechanisms and revisions","textPreview":"Evidence, mechanisms and revisions","textChars":34,"textLines":1,"bbox":[976,335,220,83]}
+{"kind":"shape","id":"sh/4b25g3qh","slide":8,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/jatony9w","slide":8,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/i9knet8b","slide":8,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/hob6lor6","slide":8,"text":"Technical review","textPreview":"Technical review","textChars":16,"textLines":1,"bbox":[66,505,480,48]}
+{"kind":"textbox","id":"sh/wn25c3ql","slide":8,"text":"Review case realism and\ncausal interpretation.","textPreview":"Review case realism and | causal interpretation.","textChars":46,"textLines":2,"bbox":[66,563,480,85]}
+{"kind":"textbox","id":"sh/8r6p83ih","slide":8,"text":"Success criterion","textPreview":"Success criterion","textChars":17,"textLines":1,"bbox":[668,505,510,48]}
+{"kind":"textbox","id":"sh/9sf618zm","slide":8,"text":"Evidence produces justified\nchanges in the explanation.","textPreview":"Evidence produces justified | changes in the explanation.","textChars":55,"textLines":2,"bbox":[668,563,510,85]}
+{"kind":"notes","id":"nt/sj7c46","slide":8,"text":"/Users/dhwanilchauhan/Desktop/RCA Try 1/RCA_IMPLEMENTATION_AND_PAPER_CHECKLIST.md sections C–E. /Users/dhwanilchauhan/Desktop/RCA Try 1/Try 7/TRY7_EXECUTIVE_PLAN.md, section 10 implementation receipt and observed smoke outcome. Proposed milestones, not completed outcomes or dated commitments. Review R3 mechanics before scored use. Use equivalent evidence for baseline comparisons."}

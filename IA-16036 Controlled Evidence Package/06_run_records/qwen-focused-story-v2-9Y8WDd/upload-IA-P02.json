@@ -1,0 +1,27 @@
+{
+  "document": {
+    "id": "da0260c0-7d49-43e8-b074-da2a14c7d59c",
+    "scope": "question",
+    "title": "IA-P02_point_register.md",
+    "plant": "General",
+    "incidentId": "b7c62bf9-604c-4312-9520-7b63b20b7363",
+    "trackId": "eebd569e-92a1-4b41-87c3-3f4953cfb2a6",
+    "questionId": "bq-1fanm2w",
+    "introducedVersion": 2,
+    "fileKey": "question/eebd569e-92a1-4b41-87c3-3f4953cfb2a6/da0260c0-7d49-43e8-b074-da2a14c7d59c-IA-P02_point_register.md",
+    "fileName": "IA-P02_point_register.md",
+    "contentType": "text/markdown",
+    "size": 1023,
+    "sha256": "349b5acaab1b017446e6ca63646d535897cf382b67102f6877a3befd716e7cda",
+    "revision": "1",
+    "extractionStatus": "ready",
+    "extractionNotes": "",
+    "extractedText": "# Utilities point register extract\n\nRecord ID: IA-P02 | Configuration revision: PR-12 | Effective: 2024-05-01\n\nSynthetic evaluation record. Applies only to the fictional instrumentation in this case.\n\n| Point | Location/input | Description and scope |\n| --- | --- | --- |\n| P-U | Site header H-U, north gallery | Pressure upstream of the 1SC distribution routes |\n| P-R | RHOB receiving header H-R | Pressure at the RHOB instrument-air receiving station |\n| C-11 RUN | C-11 starter auxiliary contact | Common-header compressor motor running indication; not a local flow proof |\n| AL-44 | RHOB PLC low-pressure input from P-R | Active below 4.5 bar; clears above 5.0 bar |\n\nAL-44 display text was retained as “COMP FAULT” from an earlier operator-screen template. PR-12 maps it to the receiving-header pressure condition, not to C-11's trip contact.\n\nThis register maps signals. It does not establish the state of any distribution valve or prove that every supply disturbance would appear in the selected sample export.",
+    "createdAt": "2026-09-16T23:23:32.235Z"
+  },
+  "fileKey": "question/eebd569e-92a1-4b41-87c3-3f4953cfb2a6/da0260c0-7d49-43e8-b074-da2a14c7d59c-IA-P02_point_register.md",
+  "fileName": "IA-P02_point_register.md",
+  "contentType": "text/markdown",
+  "size": 1023,
+  "excerpt": "# Utilities point register extract\n\nRecord ID: IA-P02 | Configuration revision: PR-12 | Effective: 2024-05-01\n\nSynthetic evaluation record. Applies only to the fictional instrumentation in this case.\n\n| Point | Location/input | Description and scope |\n| --- | --- | --- |\n| P-U | Site header H-U, north gallery | Pressure upstream of the 1SC distribution routes |\n| P-R | RHOB receiving header H-R | Pressure at the RHOB instrument-air receiving station |\n| C-11 RUN | C-11 starter auxiliary contact | Common-header compressor motor running indication; not a local flow proof |\n| AL-44 | RHOB PLC low-pressure input from P-R | Active below 4.5 bar; clears above 5.0 bar |\n\nAL-44 display text was retained as “COMP FAULT” from an earlier operator-screen template. PR-12 maps it to the receiving-header pressure condition, not to C-11's trip contact.\n\nThis register maps signals. It does not establish the state of any distribution valve or prove that every supply disturbance would appear in the selected sample export."
+}

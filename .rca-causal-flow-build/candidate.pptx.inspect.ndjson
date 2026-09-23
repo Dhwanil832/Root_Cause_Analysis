@@ -1,0 +1,192 @@
+{"kind":"deck","id":"pr/zd63fn","name":"Deck"}
+{"kind":"layout","layoutId":"5246ca1a-9e2f-4511-8eb9-f814a9d3c6c7","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"da327603-8295-4cbf-bcc2-b1935346a988","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/hqc577","slide":1,"title":"RCA Investigation System","textShapes":5}
+{"kind":"shape","id":"sh/pwjqlkfe","slide":1,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/2t87a5gn","slide":1,"bbox":[72,146,7,300]}
+{"kind":"textbox","id":"sh/nuhojax8","slide":1,"text":"RCA Investigation System","textPreview":"RCA Investigation System","textChars":24,"textLines":1,"bbox":[112,165,900,86]}
+{"kind":"textbox","id":"sh/czapgfyp","slide":1,"text":"From incident description to evidence-supported causal paths","textPreview":"From incident description to evidence-supported causal paths","textChars":60,"textLines":1,"bbox":[116,262,820,54]}
+{"kind":"textbox","id":"sh/x0jqpkfa","slide":1,"text":"Separate specialist knowledge bases, one question handler and an iterative causal-analysis loop","textPreview":"Separate specialist knowledge bases, one question handler and an iterative causal-analysis loop","textChars":95,"textLines":1,"bbox":[116,337,920,72]}
+{"kind":"textbox","id":"sh/axs7epgz","slide":1,"text":"System concept","textPreview":"System concept","textChars":14,"textLines":1,"bbox":[1090,42,140,24]}
+{"kind":"textbox","id":"sh/by18nux4","slide":1,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[52,676,260,22]}
+{"kind":"notes","id":"nt/hqc577","slide":1,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}
+{"kind":"slide","id":"sl/xflwd1","slide":2,"title":"End-to-end investigation flow","textShapes":20}
+{"kind":"shape","id":"sh/i9kzm5w7","slide":2,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/5wbyx0fy","slide":2,"text":"End-to-end investigation flow","textPreview":"End-to-end investigation flow","textChars":29,"textLines":1,"bbox":[48,28,1050,48]}
+{"kind":"textbox","id":"sh/4v2hoved","slide":2,"text":"Knowledge develops first. Causal analysis then tests possible explanations against evidence.","textPreview":"Knowledge develops first. Causal analysis then tests possible explanations against evidence.","textChars":92,"textLines":1,"bbox":[50,82,1090,28]}
+{"kind":"shape","id":"sh/rytgzax4","slide":2,"bbox":[0,690,1280,0]}
+{"kind":"textbox","id":"sh/6xkzq5wj","slide":2,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[40,694,260,20]}
+{"kind":"textbox","id":"sh/d0vy1kfu","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1175,694,60,20]}
+{"kind":"textbox","id":"sh/szmhsfe9","slide":2,"text":"Incident\ndescription","textPreview":"Incident | description","textChars":20,"textLines":2,"bbox":[45,160,170,82]}
+{"kind":"textbox","id":"sh/729gn6xk","slide":2,"text":"System\nunderstanding","textPreview":"System | understanding","textChars":20,"textLines":2,"bbox":[247,160,170,82]}
+{"kind":"textbox","id":"sh/m10felgz","slide":2,"text":"Tagging","textPreview":"Tagging","textChars":7,"textLines":1,"bbox":[449,160,170,82]}
+{"kind":"textbox","id":"sh/ovmh8zex","slide":2,"text":"Selected specialist\nagents","textPreview":"Selected specialist | agents","textChars":26,"textLines":2,"bbox":[651,160,170,82]}
+{"kind":"textbox","id":"sh/pgvi14fi","slide":2,"text":"Candidate\nquestions","textPreview":"Candidate | questions","textChars":19,"textLines":2,"bbox":[853,160,170,82]}
+{"kind":"textbox","id":"sh/2t4z69wr","slide":2,"text":"Question\nBroker","textPreview":"Question | Broker","textChars":15,"textLines":2,"bbox":[1055,160,170,82]}
+{"kind":"shape","id":"sh/3ud0zexc","slide":2,"bbox":[215,201,32,0]}
+{"kind":"shape","id":"sh/cj6hcjet","slide":2,"bbox":[417,201,32,0]}
+{"kind":"shape","id":"sh/dkfi5ofe","slide":2,"bbox":[619,201,32,0]}
+{"kind":"shape","id":"sh/qhoza9w3","slide":2,"bbox":[821,201,32,0]}
+{"kind":"shape","id":"sh/bix03exo","slide":2,"bbox":[1023,201,32,0]}
+{"kind":"textbox","id":"sh/sn2h0fep","slide":2,"text":"Answer-Fetching\nAgent","textPreview":"Answer-Fetching | Agent","textChars":21,"textLines":2,"bbox":[1055,430,188,82]}
+{"kind":"textbox","id":"sh/tobytkfa","slide":2,"text":"Question Broker\nreturns answer","textPreview":"Question Broker | returns answer","textChars":30,"textLines":2,"bbox":[816,430,188,82]}
+{"kind":"textbox","id":"sh/tk3exg7y","slide":2,"text":"Specialist knowledge\nbases evolve","textPreview":"Specialist knowledge | bases evolve","textChars":33,"textLines":2,"bbox":[577,430,188,82]}
+{"kind":"textbox","id":"sh/8jux4bqd","slide":2,"text":"Causal Analysis\nAgent","textPreview":"Causal Analysis | Agent","textChars":21,"textLines":2,"bbox":[338,430,188,82]}
+{"kind":"textbox","id":"sh/7ilwv6p8","slide":2,"text":"Supported\ncausal board","textPreview":"Supported | causal board","textChars":22,"textLines":2,"bbox":[99,430,190,82]}
+{"kind":"shape","id":"sh/6hcf218n","slide":2,"bbox":[1140,242,9,188]}
+{"kind":"shape","id":"sh/hony107a","slide":2,"bbox":[1004,471,51,0]}
+{"kind":"shape","id":"sh/gnex8v6p","slide":2,"bbox":[765,471,51,0]}
+{"kind":"shape","id":"sh/vm5wzqp4","slide":2,"bbox":[526,471,51,0]}
+{"kind":"shape","id":"sh/ulwf6loj","slide":2,"bbox":[289,471,49,0]}
+{"kind":"textbox","id":"sh/5cny5076","slide":2,"text":"Knowledge-building round","textPreview":"Knowledge-building round","textChars":24,"textLines":1,"bbox":[46,122,500,25]}
+{"kind":"textbox","id":"sh/4bexcv6l","slide":2,"text":"Answer and causal-analysis round","textPreview":"Answer and causal-analysis round","textChars":32,"textLines":1,"bbox":[700,392,365,25]}
+{"kind":"shape","id":"sh/2lo3atk7","slide":2,"bbox":[432,242,708,188]}
+{"kind":"textbox","id":"sh/3mxkjy1c","slide":2,"text":"Missing facts create new questions","textPreview":"Missing facts create new questions","textChars":34,"textLines":1,"bbox":[632,318,310,30]}
+{"kind":"textbox","id":"sh/on6lc32x","slide":2,"text":"Each model track runs this flow independently.","textPreview":"Each model track runs this flow independently.","textChars":46,"textLines":1,"bbox":[52,615,520,32]}
+{"kind":"textbox","id":"sh/p8fml8ji","slide":2,"text":"The human investigator can answer, correct or override at any stage.","textPreview":"The human investigator can answer, correct or override at any stage.","textChars":68,"textLines":1,"bbox":[620,615,610,32]}
+{"kind":"notes","id":"nt/xflwd1","slide":2,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}
+{"kind":"slide","id":"sl/beeh2f","slide":3,"title":"Separate specialist knowledge bases","textShapes":16}
+{"kind":"shape","id":"sh/mt8ve5oz","slide":3,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/9wzep0na","slide":3,"text":"Separate specialist knowledge bases","textPreview":"Separate specialist knowledge bases","textChars":35,"textLines":1,"bbox":[48,28,1050,48]}
+{"kind":"textbox","id":"sh/8vqdgv65","slide":3,"text":"Specialists keep independent interpretations while the answer agent can search across all available knowledge.","textPreview":"Specialists keep independent interpretations while the answer agent can search across all available knowledge.","textChars":110,"textLines":1,"bbox":[50,82,1090,28]}
+{"kind":"shape","id":"sh/z6xwjq58","slide":3,"bbox":[0,690,1280,0]}
+{"kind":"textbox","id":"sh/y5ovalon","slide":3,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[40,694,260,20]}
+{"kind":"textbox","id":"sh/l8zel0ne","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1175,694,60,20]}
+{"kind":"textbox","id":"sh/k7qdcv6t","slide":3,"text":"Separate domain views","textPreview":"Separate domain views","textChars":21,"textLines":1,"bbox":[55,122,330,30]}
+{"kind":"textbox","id":"sh/j21wvu5s","slide":3,"text":"Equipment knowledge base","textPreview":"Equipment knowledge base","textChars":24,"textLines":1,"bbox":[55,165,340,60]}
+{"kind":"textbox","id":"sh/i1svmpo7","slide":3,"text":"Stored-energy knowledge base","textPreview":"Stored-energy knowledge base","textChars":28,"textLines":1,"bbox":[55,247,340,60]}
+{"kind":"textbox","id":"sh/o36dszy5","slide":3,"text":"Maintenance knowledge base","textPreview":"Maintenance knowledge base","textChars":26,"textLines":1,"bbox":[55,329,340,60]}
+{"kind":"textbox","id":"sh/p4fu1kzq","slide":3,"text":"Human knowledge base","textPreview":"Human knowledge base","textChars":20,"textLines":1,"bbox":[55,411,340,60]}
+{"kind":"textbox","id":"sh/21ovqp0f","slide":3,"text":"Other selected specialists","textPreview":"Other selected specialists","textChars":26,"textLines":1,"bbox":[55,493,340,60]}
+{"kind":"textbox","id":"sh/32xczuh0","slide":3,"text":"Answer-Fetching Agent","textPreview":"Answer-Fetching Agent","textChars":21,"textLines":1,"bbox":[485,248,260,86]}
+{"kind":"textbox","id":"sh/gz6dofi9","slide":3,"text":"Documents, uploaded evidence\nand user answers","textPreview":"Documents, uploaded evidence | and user answers","textChars":45,"textLines":2,"bbox":[485,410,260,86]}
+{"kind":"textbox","id":"sh/10fuxkzu","slide":3,"text":"Question Broker","textPreview":"Question Broker","textChars":15,"textLines":1,"bbox":[855,184,290,82]}
+{"kind":"textbox","id":"sh/ex4vm503","slide":3,"text":"Relevant specialists and\nCausal Analysis Agent","textPreview":"Relevant specialists and | Causal Analysis Agent","textChars":46,"textLines":2,"bbox":[855,368,290,94]}
+{"kind":"shape","id":"sh/fydcvaho","slide":3,"bbox":[395,195,90,96]}
+{"kind":"shape","id":"sh/sbmtkfix","slide":3,"bbox":[395,277,90,14]}
+{"kind":"shape","id":"sh/tcvut0zi","slide":3,"bbox":[395,291,90,68]}
+{"kind":"shape","id":"sh/9g321cna","slide":3,"bbox":[395,291,90,150]}
+{"kind":"shape","id":"sh/8fu1876p","slide":3,"bbox":[395,291,90,232]}
+{"kind":"shape","id":"sh/7elkz254","slide":3,"bbox":[615,334,0,76]}
+{"kind":"shape","id":"sh/mtcj6xoj","slide":3,"bbox":[745,225,110,66]}
+{"kind":"shape","id":"sh/ls3ixsny","slide":3,"bbox":[745,266,255,25]}
+{"kind":"shape","id":"sh/0ru14n6t","slide":3,"bbox":[1000,266,0,102]}
+{"kind":"textbox","id":"sh/zql0vi58","slide":3,"text":"The answer agent searches. It does not merge specialist knowledge bases.","textPreview":"The answer agent searches. It does not merge specialist knowledge bases.","textChars":72,"textLines":1,"bbox":[460,548,720,40]}
+{"kind":"textbox","id":"sh/ypsj2don","slide":3,"text":"Redundancy remains visible so one specialist can catch what another missed.","textPreview":"Redundancy remains visible so one specialist can catch what another missed.","textChars":75,"textLines":1,"bbox":[460,592,720,36]}
+{"kind":"notes","id":"nt/beeh2f","slide":3,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}
+{"kind":"slide","id":"sl/nh8rsn","slide":4,"title":"Question handling","textShapes":18}
+{"kind":"shape","id":"sh/9gvmp87i","slide":4,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/mtknet87","slide":4,"text":"Question handling","textPreview":"Question handling","textChars":17,"textLines":1,"bbox":[48,28,1050,48]}
+{"kind":"textbox","id":"sh/nut4nyps","slide":4,"text":"The same handler processes questions from specialist agents and from causal analysis.","textPreview":"The same handler processes questions from specialist agents and from causal analysis.","textChars":85,"textLines":1,"bbox":[50,82,1090,28]}
+{"kind":"shape","id":"sh/wjm5k369","slide":4,"bbox":[0,690,1280,0]}
+{"kind":"textbox","id":"sh/xkvmt87u","slide":4,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[40,694,260,20]}
+{"kind":"textbox","id":"sh/ah4nito3","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1175,694,60,20]}
+{"kind":"textbox","id":"sh/bid4rypo","slide":4,"text":"Specialist Agent\nproposes and justifies","textPreview":"Specialist Agent | proposes and justifies","textChars":39,"textLines":2,"bbox":[60,180,245,95]}
+{"kind":"textbox","id":"sh/cnil8jq5","slide":4,"text":"Causal Analysis Agent\nidentifies a missing fact","textPreview":"Causal Analysis Agent | identifies a missing fact","textChars":47,"textLines":2,"bbox":[60,400,245,95]}
+{"kind":"textbox","id":"sh/dobmho7a","slide":4,"text":"Question Broker","textPreview":"Question Broker","textChars":15,"textLines":1,"bbox":[410,287,225,95]}
+{"kind":"textbox","id":"sh/hcfapo32","slide":4,"text":"Answer-Fetching Agent","textPreview":"Answer-Fetching Agent","textChars":21,"textLines":1,"bbox":[745,287,245,95]}
+{"kind":"textbox","id":"sh/wb69wjmh","slide":4,"text":"Question Broker\nreceives the answer","textPreview":"Question Broker | receives the answer","textChars":35,"textLines":2,"bbox":[1060,287,170,95]}
+{"kind":"shape","id":"sh/vaxsnylw","slide":4,"bbox":[305,227.5,105,107]}
+{"kind":"shape","id":"sh/u94rut4b","slide":4,"bbox":[305,334.5,105,113]}
+{"kind":"shape","id":"sh/50fat83y","slide":4,"bbox":[635,334.5,110,0]}
+{"kind":"shape","id":"sh/4z6903md","slide":4,"bbox":[990,334.5,70,0]}
+{"kind":"textbox","id":"sh/jyxsryls","slide":4,"text":"Broker distributes the answer to every contributing or relevant agent","textPreview":"Broker distributes the answer to every contributing or relevant agent","textChars":69,"textLines":1,"bbox":[655,500,575,74]}
+{"kind":"shape","id":"sh/ixoryt47","slide":4,"bbox":[942.5,382,202.5,118]}
+{"kind":"textbox","id":"sh/t4zax83u","slide":4,"text":"Broker responsibilities","textPreview":"Broker responsibilities","textChars":23,"textLines":1,"bbox":[390,445,270,28]}
+{"kind":"shape","id":"sh/s3q943mp","slide":4,"bbox":[390,487,8,8]}
+{"kind":"textbox","id":"sh/c7yt0rul","slide":4,"text":"Merge overlapping questions","textPreview":"Merge overlapping questions","textChars":27,"textLines":1,"bbox":[410,475,225,39]}
+{"kind":"shape","id":"sh/d87u9wb6","slide":4,"bbox":[390,530,8,8]}
+{"kind":"textbox","id":"sh/q5gbyhcv","slide":4,"text":"Preserve contributors and purpose","textPreview":"Preserve contributors and purpose","textChars":33,"textLines":1,"bbox":[410,518,225,39]}
+{"kind":"shape","id":"sh/r6pc7mt0","slide":4,"bbox":[390,573,8,8]}
+{"kind":"textbox","id":"sh/0byt4rux","slide":4,"text":"Return the answer to the right agents","textPreview":"Return the answer to the right agents","textChars":37,"textLines":1,"bbox":[410,561,225,39]}
+{"kind":"textbox","id":"sh/1c7udwbi","slide":4,"text":"Answer-agent responsibilities","textPreview":"Answer-agent responsibilities","textChars":29,"textLines":1,"bbox":[715,145,310,30]}
+{"kind":"shape","id":"sh/e9gb2hcr","slide":4,"bbox":[715,190,8,8]}
+{"kind":"textbox","id":"sh/zapcbmtc","slide":4,"text":"Search specialist knowledge bases","textPreview":"Search specialist knowledge bases","textChars":33,"textLines":1,"bbox":[735,178,435,35]}
+{"kind":"shape","id":"sh/gfets7ud","slide":4,"bbox":[715,229,8,8]}
+{"kind":"textbox","id":"sh/hgnu1cby","slide":4,"text":"Search documents and evidence","textPreview":"Search documents and evidence","textChars":29,"textLines":1,"bbox":[735,217,435,35]}
+{"kind":"shape","id":"sh/jutw7adg","slide":4,"bbox":[715,268,8,8]}
+{"kind":"textbox","id":"sh/y9kfy5wv","slide":4,"text":"Ask the user when the answer remains unavailable","textPreview":"Ask the user when the answer remains unavailable","textChars":48,"textLines":1,"bbox":[735,256,435,35]}
+{"kind":"notes","id":"nt/nh8rsn","slide":4,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}
+{"kind":"slide","id":"sl/j8pt2a","slide":5,"title":"The first causal step","textShapes":14}
+{"kind":"shape","id":"sh/zmh8belk","slide":5,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/0nq94jm5","slide":5,"text":"The first causal step","textPreview":"The first causal step","textChars":21,"textLines":1,"bbox":[48,28,1050,48]}
+{"kind":"textbox","id":"sh/1ozqd43q","slide":5,"text":"Causal analysis starts with the immediate event and creates competing explanations for what directly allowed it.","textPreview":"Causal analysis starts with the immediate event and creates competing explanations for what directly allowed it.","textChars":112,"textLines":1,"bbox":[50,82,1090,28]}
+{"kind":"shape","id":"sh/mpsr694b","slide":5,"bbox":[0,690,1280,0]}
+{"kind":"textbox","id":"sh/nq18zelw","slide":5,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[40,694,260,20]}
+{"kind":"textbox","id":"sh/8ra98jmh","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1175,694,60,20]}
+{"kind":"textbox","id":"sh/9sjq1o3m","slide":5,"text":"Required support\nwas lost","textPreview":"Required support | was lost","textChars":25,"textLines":2,"bbox":[70,150,310,76]}
+{"kind":"textbox","id":"sh/atsrat47","slide":5,"text":"A restraint was\nineffective","textPreview":"A restraint was | ineffective","textChars":27,"textLines":2,"bbox":[70,262,310,76]}
+{"kind":"textbox","id":"sh/vu183yls","slide":5,"text":"The component moved\nout of position","textPreview":"The component moved | out of position","textChars":35,"textLines":2,"bbox":[70,374,310,76]}
+{"kind":"textbox","id":"sh/bapkz61w","slide":5,"text":"An external force\nacted on the beam","textPreview":"An external force | acted on the beam","textChars":35,"textLines":2,"bbox":[70,486,310,76]}
+{"kind":"textbox","id":"sh/a9gj6lkb","slide":5,"text":"R3 Exit Carrier Beam\nfell from the yoke","textPreview":"R3 Exit Carrier Beam | fell from the yoke","textChars":39,"textLines":2,"bbox":[840,282,340,120]}
+{"kind":"shape","id":"sh/xcr21gj2","slide":5,"bbox":[380,188,460,154]}
+{"kind":"shape","id":"sh/wbi18b2h","slide":5,"bbox":[380,300,460,42]}
+{"kind":"shape","id":"sh/n6pkv61k","slide":5,"bbox":[380,342,460,70]}
+{"kind":"shape","id":"sh/m5gj21kf","slide":5,"bbox":[380,342,460,182]}
+{"kind":"textbox","id":"sh/9872xgjq","slide":5,"text":"Possible direct explanations","textPreview":"Possible direct explanations","textChars":28,"textLines":1,"bbox":[70,112,340,28]}
+{"kind":"textbox","id":"sh/o7y14b25","slide":5,"text":"Event to explain","textPreview":"Event to explain","textChars":16,"textLines":1,"bbox":[840,238,340,30]}
+{"kind":"textbox","id":"sh/729k7q14","slide":5,"text":"A branch advances only when facts support a plausible mechanism.","textPreview":"A branch advances only when facts support a plausible mechanism.","textChars":64,"textLines":1,"bbox":[470,535,710,66]}
+{"kind":"textbox","id":"sh/6103e5kj","slide":5,"text":"At this stage, every explanation remains possible rather than proven.","textPreview":"At this stage, every explanation remains possible rather than proven.","textChars":69,"textLines":1,"bbox":[475,180,630,46]}
+{"kind":"textbox","id":"sh/2x4n6p4r","slide":5,"text":"The agent asks which fact would distinguish one explanation from the others.","textPreview":"The agent asks which fact would distinguish one explanation from the others.","textChars":76,"textLines":1,"bbox":[475,430,630,52]}
+{"kind":"notes","id":"nt/j8pt2a","slide":5,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}
+{"kind":"slide","id":"sl/3wzcds","slide":6,"title":"Causal-analysis loop","textShapes":14}
+{"kind":"shape","id":"sh/25wbipgj","slide":6,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/p8nad4za","slide":6,"text":"Causal-analysis loop","textPreview":"Causal-analysis loop","textChars":20,"textLines":1,"bbox":[48,28,1050,48]}
+{"kind":"textbox","id":"sh/o7etkzyp","slide":6,"text":"The agent moves backward only along explanations that survive evidence checks.","textPreview":"The agent moves backward only along explanations that survive evidence checks.","textChars":78,"textLines":1,"bbox":[50,82,1090,28]}
+{"kind":"shape","id":"sh/f25s7ahs","slide":6,"bbox":[0,690,1280,0]}
+{"kind":"textbox","id":"sh/e1wbe5gn","slide":6,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[40,694,260,20]}
+{"kind":"textbox","id":"sh/14na9kzy","slide":6,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1175,694,60,20]}
+{"kind":"textbox","id":"sh/03etgfyd","slide":6,"text":"1\nStart with the event","textPreview":"1 | Start with the event","textChars":22,"textLines":2,"bbox":[510,125,250,74]}
+{"kind":"textbox","id":"sh/ryls3ahw","slide":6,"text":"2\nPropose direct explanations","textPreview":"2 | Propose direct explanations","textChars":29,"textLines":2,"bbox":[865,195,280,80]}
+{"kind":"textbox","id":"sh/qxcba50b","slide":6,"text":"3\nConnect facts through a mechanism","textPreview":"3 | Connect facts through a mechanism","textChars":35,"textLines":2,"bbox":[900,390,280,80]}
+{"kind":"textbox","id":"sh/kfatkvu5","slide":6,"text":"4\nIdentify the missing fact","textPreview":"4 | Identify the missing fact","textChars":27,"textLines":2,"bbox":[510,520,250,74]}
+{"kind":"textbox","id":"sh/5gjut0vq","slide":6,"text":"5\nAsk through the Question Broker","textPreview":"5 | Ask through the Question Broker","textChars":33,"textLines":2,"bbox":[105,390,290,80]}
+{"kind":"textbox","id":"sh/idsbi5cf","slide":6,"text":"6\nReceive the answer and revise status","textPreview":"6 | Receive the answer and revise status","textChars":38,"textLines":2,"bbox":[105,195,290,80]}
+{"kind":"shape","id":"sh/je1crqdk","slide":6,"bbox":[760,162,245,33]}
+{"kind":"shape","id":"sh/wbqtgvu9","slide":6,"bbox":[1005,275,35,115]}
+{"kind":"shape","id":"sh/xcjup0vu","slide":6,"bbox":[760,430,140,127]}
+{"kind":"shape","id":"sh/a98belc3","slide":6,"bbox":[395,430,115,127]}
+{"kind":"shape","id":"sh/vahsnqdo","slide":6,"bbox":[250,275,0,115]}
+{"kind":"shape","id":"sh/g7utsfud","slide":6,"bbox":[395,162,115,73]}
+{"kind":"textbox","id":"sh/h83ulkby","slide":6,"text":"Supported path","textPreview":"Supported path","textChars":14,"textLines":1,"bbox":[470,300,155,54]}
+{"kind":"textbox","id":"sh/pozu5k32","slide":6,"text":"Possible path","textPreview":"Possible path","textChars":13,"textLines":1,"bbox":[650,300,155,54]}
+{"kind":"textbox","id":"sh/onqtcfmh","slide":6,"text":"Rejected path","textPreview":"Rejected path","textChars":13,"textLines":1,"bbox":[560,375,155,54]}
+{"kind":"textbox","id":"sh/32hc3alw","slide":6,"text":"When a direct link becomes supported, the agent asks what created that condition and moves one step further backward.","textPreview":"When a direct link becomes supported, the agent asks what created that condition and moves one step further backward.","textChars":117,"textLines":1,"bbox":[315,620,650,44]}
+{"kind":"notes","id":"nt/3wzcds","slide":6,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}
+{"kind":"slide","id":"sl/4kcgpu","slide":7,"title":"Causal connection record","textShapes":5}
+{"kind":"shape","id":"sh/61crmpob","slide":7,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/to3ah47m","slide":7,"text":"Causal connection record","textPreview":"Causal connection record","textChars":24,"textLines":1,"bbox":[48,28,1050,48]}
+{"kind":"textbox","id":"sh/s3u9oz6h","slide":7,"text":"The causal board stores an explicit claim and the evidence needed to assess it.","textPreview":"The causal board stores an explicit claim and the evidence needed to assess it.","textChars":79,"textLines":1,"bbox":[50,82,1090,28]}
+{"kind":"shape","id":"sh/fqlsjups","slide":7,"bbox":[0,690,1280,0]}
+{"kind":"textbox","id":"sh/epcrq9o7","slide":7,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[40,694,260,20]}
+{"kind":"textbox","id":"sh/1snal47y","slide":7,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1175,694,60,20]}
+{"kind":"textbox","id":"sh/vu1s7apo","slide":7,"text":"Questions remain outside the causal board until an answer produces a fact or changes a connection.","textPreview":"Questions remain outside the causal board until an answer produces a fact or changes a connection.","textChars":98,"textLines":1,"bbox":[120,600,1040,40]}
+{"kind":"table","id":"tb/dkze5wze","slide":7,"name":"","rows":8,"cols":2,"preview":"Causal-link field | What the agent records","bbox":[70,140,1140,430]}
+{"kind":"notes","id":"nt/4kcgpu","slide":7,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}
+{"kind":"slide","id":"sl/cmvagb","slide":8,"title":"Investigation record","textShapes":15}
+{"kind":"shape","id":"sh/i1kz6p0n","slide":8,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/54bi14zy","slide":8,"text":"Investigation record","textPreview":"Investigation record","textChars":20,"textLines":1,"bbox":[48,28,1050,48]}
+{"kind":"textbox","id":"sh/k32h8zid","slide":8,"text":"The system preserves how knowledge and causal explanations changed over time.","textPreview":"The system preserves how knowledge and causal explanations changed over time.","textChars":77,"textLines":1,"bbox":[50,82,1090,28]}
+{"kind":"shape","id":"sh/vyt0vahw","slide":8,"bbox":[0,690,1280,0]}
+{"kind":"textbox","id":"sh/adkz2p0b","slide":8,"text":"RCA investigation system","textPreview":"RCA investigation system","textChars":24,"textLines":1,"bbox":[40,694,260,20]}
+{"kind":"textbox","id":"sh/x0bixkz2","slide":8,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1175,694,60,20]}
+{"kind":"textbox","id":"sh/wz2h4fih","slide":8,"text":"The evolving record contains","textPreview":"The evolving record contains","textChars":28,"textLines":1,"bbox":[70,135,480,40]}
+{"kind":"shape","id":"sh/na90ra10","slide":8,"bbox":[80,202,8,8]}
+{"kind":"textbox","id":"sh/m90zy50f","slide":8,"text":"Versioned knowledge base for every selected specialist","textPreview":"Versioned knowledge base for every selected specialist","textChars":54,"textLines":1,"bbox":[100,190,560,50]}
+{"kind":"shape","id":"sh/8vahsfe1","slide":8,"bbox":[80,256,8,8]}
+{"kind":"textbox","id":"sh/9wjylkvm","slide":8,"text":"Source and confidence attached to each fact","textPreview":"Source and confidence attached to each fact","textChars":43,"textLines":1,"bbox":[100,244,560,50]}
+{"kind":"shape","id":"sh/m98zq5wv","slide":8,"bbox":[80,310,8,8]}
+{"kind":"textbox","id":"sh/nu1gjadg","slide":8,"text":"Question history, merged wording and contributing agents","textPreview":"Question history, merged wording and contributing agents","textChars":56,"textLines":1,"bbox":[100,298,560,50]}
+{"kind":"shape","id":"sh/07qhovep","slide":8,"bbox":[80,364,8,8]}
+{"kind":"textbox","id":"sh/l8zyh0va","slide":8,"text":"Unresolved contradictions and missing documents","textPreview":"Unresolved contradictions and missing documents","textChars":47,"textLines":1,"bbox":[100,352,560,50]}
+{"kind":"shape","id":"sh/y58zm5wz","slide":8,"bbox":[80,418,8,8]}
+{"kind":"textbox","id":"sh/z6hgfad4","slide":8,"text":"Competing causal paths with current status","textPreview":"Competing causal paths with current status","textChars":42,"textLines":1,"bbox":[100,406,560,50]}
+{"kind":"shape","id":"sh/k3uh0ze9","slide":8,"bbox":[80,472,8,8]}
+{"kind":"textbox","id":"sh/543it4ve","slide":8,"text":"Human corrections, approvals and overrides","textPreview":"Human corrections, approvals and overrides","textChars":42,"textLines":1,"bbox":[100,460,560,50]}
+{"kind":"textbox","id":"sh/t8fqx0jm","slide":8,"text":"Established facts","textPreview":"Established facts","textChars":17,"textLines":1,"bbox":[760,150,330,72]}
+{"kind":"textbox","id":"sh/s76pov21","slide":8,"text":"Competing causal paths","textPreview":"Competing causal paths","textChars":22,"textLines":1,"bbox":[760,285,330,72]}
+{"kind":"textbox","id":"sh/76x8vq1g","slide":8,"text":"Evidence-supported\ncausal board","textPreview":"Evidence-supported | causal board","textChars":31,"textLines":2,"bbox":[760,430,330,94]}
+{"kind":"shape","id":"sh/65o7mlkv","slide":8,"bbox":[925,222,0,63]}
+{"kind":"shape","id":"sh/54fqt0ja","slide":8,"bbox":[925,357,0,73]}
+{"kind":"textbox","id":"sh/k36pkv25","slide":8,"text":"Human approval remains the final gate","textPreview":"Human approval remains the final gate","textChars":37,"textLines":1,"bbox":[700,575,450,44]}
+{"kind":"notes","id":"nt/cmvagb","slide":8,"text":"[Sources]\n- System design developed in the RCA application working session.\n[/Sources]"}

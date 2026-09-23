@@ -1,0 +1,39 @@
+{
+  "app": "Try 4",
+  "title": "R3 beam fall · V1 / V2 causal boards",
+  "description": "At approximately 1:03 PM on October 14, 2024 (Turn 2), the R3 Exit Carrier Beam at the Indiana Harbor 80-inch Hot Strip roughing mill fell from the yoke into the R3 mill pit, landing on the sled and a scaffold platform. No team members were in the pit at the time, though several contractor employees had worked in the pit throughout the morning, and two contractor employees walking beside the mill stand witnessed the fall. The area was red-flagged for investigation. The beam and its link were found intact with the keeper still installed; no damage was apparent on the yoke on which the link rests. A small mill window liner from the top operator side fell with the beam. No crane lifts involving this equipment were in progress or had occurred prior. On the previous shift, the work rolls and top and bottom backup rolls had been removed in preparation for outage work in the mill stand; the R3 top backup roll balance had been left isolated in the raised position, and the B hydraulics had been shut off and bled for work on that system.",
+  "modelName": "qwen3.5:latest",
+  "originalIncidentId": "9276eeb0-a723-47ad-aca9-2be80c5b9b2e",
+  "originalTrackId": "b339a5c5-49b2-47a8-9122-d82948720dc5",
+  "kind": "published-versions",
+  "note": "Saved Qwen V1 and V2 from the R3 follow-up run. These are historical model outputs, not a verified or completed RCA. V3 and V4 remain in the original investigation.",
+  "href": "/history/causal-comparison",
+  "dataUrl": "/history/featured-causal-boards.json",
+  "versions": [
+    {
+      "number": 1,
+      "label": "V1",
+      "subtitle": "Initial account with 24 starter document(s)",
+      "createdAt": "2026-09-08T22:17:13.007Z",
+      "status": "contradictions-unresolved",
+      "sourcePath": "R3 Benchmark Package/06_run_records/qwen-followup/version-1.json",
+      "sourceSha256": "604c8a98878c449f11c542c03e2879a1e4825e0b0936885cafb949347e7457a8",
+      "sourceRecordId": "585bba91-6a74-4426-8ef2-8684f7ee73a6",
+      "nodes": 8,
+      "edges": 5
+    },
+    {
+      "number": 2,
+      "label": "V2",
+      "subtitle": "Evidence added for q-1dxfke6",
+      "createdAt": "2026-09-09T18:14:34.565Z",
+      "status": "contradictions-unresolved",
+      "sourcePath": "R3 Benchmark Package/06_run_records/qwen-followup/version-2.json",
+      "sourceSha256": "108c66e2b29326c272704fe4ca617a519505866613ef8614bf38a9a804c11e5b",
+      "sourceRecordId": "db406046-0750-4020-9a94-be1d8b38b9cb",
+      "nodes": 10,
+      "edges": 6
+    }
+  ]
+}
+

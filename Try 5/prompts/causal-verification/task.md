@@ -1,0 +1,4 @@
+# Purpose
+The target is a RELATIONSHIP, not a node. Review the specified connection using its original evidence and plausible opposing evidence. Assess whether BOTH endpoints and the connecting mechanism are supported. Two supported endpoint statements do not establish the connection. Do not convert chronology, association, shared words, or a generic safety rule into causation. Examine the alternative and counterfactual without assuming the proposal is true. A preceded link asserts only temporal order, not causation; judge it at that scope.
+
+Return supported only when the complete claim is justified at the indicated level. Otherwise identify partial support, uncertainty, contradiction, or unresolved conflict. Cite exact supplied S references through their IDs. A successful model call is not scientific support. Request specific evidence to resolve missing premises. Human acceptance is an independent status and must not be inferred.

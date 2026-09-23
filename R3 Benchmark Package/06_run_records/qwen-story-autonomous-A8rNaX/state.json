@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "pid": 77526,
+  "model": "ollama:qwen3.5:latest",
+  "targetVersions": 4,
+  "committedVersions": 1,
+  "startedAt": "2026-09-15T04:09:48.348Z",
+  "phase": "stopped",
+  "updatedAt": "2026-09-15T04:49:10.974Z",
+  "incidentId": "30502f9f-eaba-42f9-bee8-15324153496e",
+  "trackId": "5effca62-8b57-4353-ad96-830d2ee5dbab",
+  "url": "http://localhost:3000/incident/30502f9f-eaba-42f9-bee8-15324153496e",
+  "lastError": "Error: Output contract: Use an empty coveredByCandidateKey for keep candidate bq-hhq8mg.; Use an empty coveredByCandidateKey for keep candidate bq-ws1sje.; Use an empty coveredByCandidateKey for keep candidate bq-1oj29hu.; Use an empty coveredByCandidateKey for keep candidate bq-gifup5.",
+  "baseVersion": 1,
+  "pendingQuestions": 16,
+  "storyRoundId": "32db597b-5b27-4d38-b39a-fb64a93d821a",
+  "answerCount": 16,
+  "requestAttempt": 1,
+  "error": "Error: Output contract: Use an empty coveredByCandidateKey for keep candidate bq-hhq8mg.; Use an empty coveredByCandidateKey for keep candidate bq-ws1sje.; Use an empty coveredByCandidateKey for keep candidate bq-1oj29hu.; Use an empty coveredByCandidateKey for keep candidate bq-gifup5.",
+  "finishedAt": "2026-09-15T04:49:10.974Z"
+}

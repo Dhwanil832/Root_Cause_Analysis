@@ -1,0 +1,357 @@
+{"kind":"deck","id":"pr/fxf3z7","name":"Deck"}
+{"kind":"layout","layoutId":"f7714ce5-ec18-4e25-b1c2-84a934db11b2","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"953b4a12-1138-451f-ad3a-0a64d11f4799","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/iswjeu","slide":1,"title":"RCA Fieldwork","textShapes":5}
+{"kind":"shape","id":"sh/zadcjmt0","slide":1,"bbox":[0,0,20,720]}
+{"kind":"textbox","id":"sh/0bmtsral","slide":1,"text":"RCA Fieldwork","textPreview":"RCA Fieldwork","textChars":13,"textLines":1,"bbox":[82,130,930,70]}
+{"kind":"textbox","id":"sh/lcvulcb6","slide":1,"text":"What Try 3 tested, what Try 4 changed, and why the investigation remains open","textPreview":"What Try 3 tested, what Try 4 changed, and why the investigation remains open","textChars":77,"textLines":1,"bbox":[86,220,1010,108]}
+{"kind":"shape","id":"sh/md4buhsr","slide":1,"bbox":[86,364,240,4]}
+{"kind":"textbox","id":"sh/nydcnmtw","slide":1,"text":"R3 EXIT CARRIER BEAM CASE","textPreview":"R3 EXIT CARRIER BEAM CASE","textChars":25,"textLines":1,"bbox":[86,393,550,34]}
+{"kind":"textbox","id":"sh/8z6twrah","slide":1,"text":"Model behavior benchmark and causal-analysis review","textPreview":"Model behavior benchmark and causal-analysis review","textChars":51,"textLines":1,"bbox":[86,435,690,38]}
+{"kind":"textbox","id":"sh/90fupwb2","slide":1,"text":"September 2026","textPreview":"September 2026","textChars":14,"textLines":1,"bbox":[86,634,300,26]}
+{"kind":"notes","id":"nt/iswjeu","slide":1,"text":"Sources: Try 3 benchmark results and Try 4 qwen3.5 evaluation produced in the RCA Fieldwork workspace."}
+{"kind":"slide","id":"sl/jbf60s","slide":2,"title":"Two experiments with different purposes","textShapes":18}
+{"kind":"textbox","id":"sh/587qlsfi","slide":2,"text":"Two experiments with different purposes","textPreview":"Two experiments with different purposes","textChars":39,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/i5g7qdw7","slide":2,"text":"Try 3 compared models. Try 4 introduced a stronger, model-independent investigation harness.","textPreview":"Try 3 compared models. Try 4 introduced a stronger, model-independent investigation harness.","textChars":92,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/j6p8jixs","slide":2,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/w3ypony1","slide":2,"text":"Sources: Try 3 benchmark results; Try 4 evaluation report","textPreview":"Sources: Try 3 benchmark results; Try 4 evaluation report","textChars":57,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/h47qh8fm","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"shape","id":"sh/uhg7mdgv","slide":2,"bbox":[76,170,8,22]}
+{"kind":"textbox","id":"sh/v2p8fixg","slide":2,"text":"TRY 3","textPreview":"TRY 3","textChars":5,"textLines":1,"bbox":[94,166,212,30]}
+{"kind":"textbox","id":"sh/8fepk3y5","slide":2,"text":"Model benchmark","textPreview":"Model benchmark","textChars":15,"textLines":1,"bbox":[76,205,430,52]}
+{"kind":"textbox","id":"sh/9gnqd8fa","slide":2,"text":"Ten installed Ollama models received independent R3 incidents and the same evidence framework.","textPreview":"Ten installed Ollama models received independent R3 incidents and the same evidence framework.","textChars":94,"textLines":1,"bbox":[76,268,430,90]}
+{"kind":"textbox","id":"sh/pkne58ru","slide":2,"text":"Question tested","textPreview":"Question tested","textChars":15,"textLines":1,"bbox":[76,385,180,26]}
+{"kind":"textbox","id":"sh/4jedc3q9","slide":2,"text":"Which local model behaves best inside the existing pipeline?","textPreview":"Which local model behaves best inside the existing pipeline?","textChars":60,"textLines":1,"bbox":[76,418,430,76]}
+{"kind":"shape","id":"sh/3i5w3y9o","slide":2,"bbox":[590,162,2,442]}
+{"kind":"shape","id":"sh/2hwvat83","slide":2,"bbox":[658,170,8,22]}
+{"kind":"textbox","id":"sh/hgne1ory","slide":2,"text":"TRY 4","textPreview":"TRY 4","textChars":5,"textLines":1,"bbox":[676,166,212,30]}
+{"kind":"textbox","id":"sh/gfed8jqd","slide":2,"text":"Model-independent harness","textPreview":"Model-independent harness","textChars":25,"textLines":1,"bbox":[658,205,480,52]}
+{"kind":"textbox","id":"sh/felwze9s","slide":2,"text":"The architecture can run any supported model. Qwen3.5 supplied the first completed validation run.","textPreview":"The architecture can run any supported model. Qwen3.5 supplied the first completed validation run.","textChars":98,"textLines":1,"bbox":[658,268,466,104]}
+{"kind":"textbox","id":"sh/udcv6987","slide":2,"text":"Question tested","textPreview":"Question tested","textChars":15,"textLines":1,"bbox":[658,385,180,26]}
+{"kind":"textbox","id":"sh/tc3uxorm","slide":2,"text":"Does the stronger harness produce a more defensible investigation? Initial test: qwen3.5","textPreview":"Does the stronger harness produce a more defensible investigation? Initial test: qwen3.5","textChars":88,"textLines":1,"bbox":[658,418,460,88]}
+{"kind":"textbox","id":"sh/8bud4jq1","slide":2,"text":"64","textPreview":"64","textChars":2,"textLines":1,"bbox":[216,532,90,54]}
+{"kind":"textbox","id":"sh/k7i50329","slide":2,"text":"best Try 3 score","textPreview":"best Try 3 score","textChars":16,"textLines":1,"bbox":[312,546,180,30]}
+{"kind":"textbox","id":"sh/58rm983u","slide":2,"text":"68","textPreview":"68","textChars":2,"textLines":1,"bbox":[804,532,90,54]}
+{"kind":"textbox","id":"sh/y5gnydk3","slide":2,"text":"first Try 4 run: qwen3.5","textPreview":"first Try 4 run: qwen3.5","textChars":24,"textLines":1,"bbox":[900,546,235,30]}
+{"kind":"notes","id":"nt/jbf60s","slide":2,"text":"Try 3 score leader: qwen3.5 at 64/100. Try 4 is model-independent. Qwen3.5 was the first and only model evaluated in Try 4 at the time of this deck, scoring 68/100 using the same rubric."}
+{"kind":"slide","id":"sl/k3ur45","slide":3,"title":"Try 3 investigation flow","textShapes":16}
+{"kind":"textbox","id":"sh/0ju54v29","slide":3,"text":"Try 3 investigation flow","textPreview":"Try 3 investigation flow","textChars":24,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/zi14vq1o","slide":3,"text":"Each model owned a separate incident track and generated its own versioned investigation.","textPreview":"Each model owned a separate incident track and generated its own versioned investigation.","textChars":89,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/ehsn2lk3","slide":3,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/983m1kjq","slide":3,"text":"Source: Try 3 application design and evaluation protocol","textPreview":"Source: Try 3 application design and evaluation protocol","textChars":56,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/o7u58f25","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/nml4za1k","slide":3,"text":"Incident description\n+ starter records","textPreview":"Incident description | + starter records","textChars":38,"textLines":2,"bbox":[64,190,185,86]}
+{"kind":"textbox","id":"sh/mlcn65kz","slide":3,"text":"Baseline\nunderstanding","textPreview":"Baseline | understanding","textChars":22,"textLines":2,"bbox":[286,190,164,86]}
+{"kind":"textbox","id":"sh/5cjmpgjm","slide":3,"text":"Tag selection","textPreview":"Tag selection","textChars":13,"textLines":1,"bbox":[487,190,150,86]}
+{"kind":"textbox","id":"sh/4rqlwb21","slide":3,"text":"Selected\nspecialists","textPreview":"Selected | specialists","textChars":20,"textLines":2,"bbox":[674,190,160,86]}
+{"kind":"textbox","id":"sh/6lo7mtcn","slide":3,"text":"Question\nbroker","textPreview":"Question | broker","textChars":15,"textLines":2,"bbox":[871,190,150,86]}
+{"kind":"textbox","id":"sh/7mx8fyd8","slide":3,"text":"Answer\nfetchers","textPreview":"Answer | fetchers","textChars":15,"textLines":2,"bbox":[1058,190,156,86]}
+{"kind":"shape","id":"sh/8n6po3ut","slide":3,"bbox":[249,233,37,0]}
+{"kind":"shape","id":"sh/tofqh8ve","slide":3,"bbox":[450,233,37,0]}
+{"kind":"shape","id":"sh/uporqtcj","slide":3,"bbox":[637,233,37,0]}
+{"kind":"shape","id":"sh/vqx8jyd4","slide":3,"bbox":[834,233,37,0]}
+{"kind":"shape","id":"sh/grq9s3up","slide":3,"bbox":[1021,233,37,0]}
+{"kind":"textbox","id":"sh/hszql8va","slide":3,"text":"Evidence claims","textPreview":"Evidence claims","textChars":15,"textLines":1,"bbox":[846,390,165,82]}
+{"kind":"textbox","id":"sh/id8rudcv","slide":3,"text":"Causal board","textPreview":"Causal board","textChars":12,"textLines":1,"bbox":[630,390,165,82]}
+{"kind":"textbox","id":"sh/3eh8nidg","slide":3,"text":"Verification","textPreview":"Verification","textChars":12,"textLines":1,"bbox":[414,390,165,82]}
+{"kind":"textbox","id":"sh/fi18bi9o","slide":3,"text":"Corrective actions","textPreview":"Corrective actions","textChars":18,"textLines":1,"bbox":[170,390,190,82]}
+{"kind":"shape","id":"sh/eh87ids3","slide":3,"bbox":[1011,276,125,155]}
+{"kind":"shape","id":"sh/1kjqdsre","slide":3,"bbox":[795,431,51,0]}
+{"kind":"shape","id":"sh/0japknat","slide":3,"bbox":[579,431,51,0]}
+{"kind":"shape","id":"sh/ruho7y9c","slide":3,"bbox":[360,431,54,0]}
+{"kind":"textbox","id":"sh/qt87edsr","slide":3,"text":"Evidence could create a new version inside the same model track","textPreview":"Evidence could create a new version inside the same model track","textChars":63,"textLines":1,"bbox":[166,530,850,42]}
+{"kind":"textbox","id":"sh/dgz698ri","slide":3,"text":"The benchmark exposed failures in structured output, evidence reconciliation, causal direction, and premature actions.","textPreview":"The benchmark exposed failures in structured output, evidence reconciliation, causal direction, and premature actions.","textChars":118,"textLines":1,"bbox":[176,582,830,54]}
+{"kind":"notes","id":"nt/k3ur45","slide":3,"text":"Try 3 architecture summary. The flow is simplified for presentation and preserves the model-track separation described in the evaluation protocol."}
+{"kind":"slide","id":"sl/gciovs","slide":4,"title":"The 100-point evaluation rubric","textShapes":7}
+{"kind":"textbox","id":"sh/hobmhcju","slide":4,"text":"The 100-point evaluation rubric","textPreview":"The 100-point evaluation rubric","textChars":31,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/u1k3mhk3","slide":4,"text":"The scoring framework was defined before interpreting model performance.","textPreview":"The scoring framework was defined before interpreting model performance.","textChars":72,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/fmt4fmlo","slide":4,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/4r25sr2l","slide":4,"text":"Source: Try 3 R3 Ollama evaluation protocol","textPreview":"Source: Try 3 R3 Ollama evaluation protocol","textChars":43,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/psvmlwjq","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/2pknqhkf","slide":4,"text":"100","textPreview":"100","textChars":3,"textLines":1,"bbox":[74,172,230,110]}
+{"kind":"textbox","id":"sh/3qt4jm10","slide":4,"text":"TOTAL POINTS","textPreview":"TOTAL POINTS","textChars":12,"textLines":1,"bbox":[74,278,230,32]}
+{"kind":"textbox","id":"sh/kvilgn21","slide":4,"text":"Higher weight goes to evidence handling and causal reasoning because a fluent summary alone does not establish root cause.","textPreview":"Higher weight goes to evidence handling and causal reasoning because a fluent summary alone does not establish root cause.","textChars":122,"textLines":1,"bbox":[72,348,250,150]}
+{"kind":"chart","id":"ch/9ofixoja","slide":4,"name":"","chartType":"bar","bbox":[350,156,842,458]}
+{"kind":"notes","id":"nt/gciovs","slide":4,"text":"Rubric weights: comprehension 10, tags 10, questions 15, evidence targeting 15, provenance and contradictions 15, causal reasoning 20, corrective actions 10, calibration and trace 5."}
+{"kind":"slide","id":"sl/lbkeoc","slide":5,"title":"What earns each point allocation","textShapes":4}
+{"kind":"textbox","id":"sh/2hw7il8j","slide":5,"text":"What earns each point allocation","textPreview":"What earns each point allocation","textChars":32,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/pknqtg7u","slide":5,"text":"Scores reflect investigative usefulness, evidence discipline, and causal validity.","textPreview":"Scores reflect investigative usefulness, evidence discipline, and causal validity.","textChars":82,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/4jepkbqp","slide":5,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/fel8n6ps","slide":5,"text":"Source: Try 3 R3 Ollama evaluation protocol","textPreview":"Source: Try 3 R3 Ollama evaluation protocol","textChars":43,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/udc7e187","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"table","id":"tb/4fet4fy9","slide":5,"name":"","rows":9,"cols":3,"preview":"Dimension | Points | What earns credit","bbox":[66,156,1148,494]}
+{"kind":"notes","id":"nt/lbkeoc","slide":5,"text":"Full rubric wording from evaluation_protocol.md, shortened only for slide fit without changing the scoring meaning."}
+{"kind":"slide","id":"sl/gjk9zx","slide":6,"title":"Try 3 model performance","textShapes":4}
+{"kind":"textbox","id":"sh/fq58j2lo","slide":6,"text":"Try 3 model performance","textPreview":"Try 3 model performance","textChars":23,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/0repsnm9","slide":6,"text":"Qwen3.5 led the analytical benchmark. Two models produced no gradeable version within 30 minutes.","textPreview":"Qwen3.5 led the analytical benchmark. Two models produced no gradeable version within 30 minutes.","textChars":97,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/1s7qls3u","slide":6,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/q1w7md47","slide":6,"text":"Source: Try 3 benchmark_results.md, September 8, 2026","textPreview":"Source: Try 3 benchmark_results.md, September 8, 2026","textChars":53,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/r25ofi5c","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"chart","id":"ch/sv6x07u1","slide":6,"name":"","chartType":"bar","bbox":[82,150,1110,495]}
+{"kind":"notes","id":"nt/gjk9zx","slide":6,"text":"Try 3 scores: qwen3.5 64, qwen2.5 38, gemma3 31, mistral 29, llama3.1 27, hermes3 18, llama3.2 17, phi4-mini-reasoning 13, deepseek-r1 0, granite3.3 0."}
+{"kind":"slide","id":"sl/gx9r9u","slide":7,"title":"Why the four highest Try 3 scores landed where they did","textShapes":24}
+{"kind":"textbox","id":"sh/g3e5w7uh","slide":7,"text":"Why the four highest Try 3 scores landed where they did","textPreview":"Why the four highest Try 3 scores landed where they did","textChars":55,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/f254n2dc","slide":7,"text":"Strengths earned credit. Missing evidence discipline and causal structure capped every score.","textPreview":"Strengths earned credit. Missing evidence discipline and causal structure capped every score.","textChars":93,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/e1wnuhcr","slide":7,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/t0nmlcv6","slide":7,"text":"Source: Try 3 benchmark model-by-model findings","textPreview":"Source: Try 3 benchmark model-by-model findings","textChars":47,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/szels7ul","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/ry54j2d0","slide":7,"text":"MODEL","textPreview":"MODEL","textChars":5,"textLines":1,"bbox":[72,151,200,24]}
+{"kind":"textbox","id":"sh/6xw3qxcf","slide":7,"text":"SCORE","textPreview":"SCORE","textChars":5,"textLines":1,"bbox":[286,151,70,24]}
+{"kind":"textbox","id":"sh/5w3mhsvu","slide":7,"text":"WHAT WORKED","textPreview":"WHAT WORKED","textChars":11,"textLines":1,"bbox":[394,151,340,24]}
+{"kind":"textbox","id":"sh/4vulonu9","slide":7,"text":"WHY THE SCORE STOPPED","textPreview":"WHY THE SCORE STOPPED","textChars":21,"textLines":1,"bbox":[806,151,360,24]}
+{"kind":"textbox","id":"sh/u58n2tor","slide":7,"text":"qwen3.5","textPreview":"qwen3.5","textChars":7,"textLines":1,"bbox":[72,188,205,34]}
+{"kind":"textbox","id":"sh/f6h4bypc","slide":7,"text":"64","textPreview":"64","textChars":2,"textLines":1,"bbox":[286,184,70,44]}
+{"kind":"shape","id":"sh/g7q54j6h","slide":7,"bbox":[370,192,3,82]}
+{"kind":"textbox","id":"sh/h8zmdon2","slide":7,"text":"Best questions and evidence requests. It framed the changed outage configuration correctly.","textPreview":"Best questions and evidence requests. It framed the changed outage configuration correctly.","textChars":91,"textLines":1,"bbox":[394,188,380,78]}
+{"kind":"textbox","id":"sh/61ony9of","slide":7,"text":"Evidence processing failed. The board had one event node and no causal edges.","textPreview":"Evidence processing failed. The board had one event node and no causal edges.","textChars":77,"textLines":1,"bbox":[806,188,398,78]}
+{"kind":"shape","id":"sh/72x47ep0","slide":7,"bbox":[72,279,1132,1]}
+{"kind":"textbox","id":"sh/s3650j6l","slide":7,"text":"qwen2.5","textPreview":"qwen2.5","textChars":7,"textLines":1,"bbox":[72,294,205,34]}
+{"kind":"textbox","id":"sh/t4zm9o76","slide":7,"text":"38","textPreview":"38","textChars":2,"textLines":1,"bbox":[286,290,70,44]}
+{"kind":"shape","id":"sh/idonu9oj","slide":7,"bbox":[370,298,3,82]}
+{"kind":"textbox","id":"sh/jyx43up4","slide":7,"text":"Useful tags and questions about restraint, turnover, and isolation boundaries.","textPreview":"Useful tags and questions about restraint, turnover, and isolation boundaries.","textChars":78,"textLines":1,"bbox":[394,294,380,78]}
+{"kind":"textbox","id":"sh/n69sf61k","slide":7,"text":"Six stage errors, repeated questions, missed conflicts, and reverse causal arrows.","textPreview":"Six stage errors, repeated questions, missed conflicts, and reverse causal arrows.","textChars":82,"textLines":1,"bbox":[806,294,398,78]}
+{"kind":"shape","id":"sh/m50bm10z","slide":7,"bbox":[72,385,1132,1]}
+{"kind":"textbox","id":"sh/98bahgjq","slide":7,"text":"gemma3","textPreview":"gemma3","textChars":6,"textLines":1,"bbox":[72,400,205,34]}
+{"kind":"textbox","id":"sh/o72tobi5","slide":7,"text":"31","textPreview":"31","textChars":2,"textLines":1,"bbox":[286,396,70,44]}
+{"kind":"shape","id":"sh/butcjq1g","slide":7,"bbox":[370,404,3,82]}
+{"kind":"textbox","id":"sh/atkbql0b","slide":7,"text":"Sound focal-event summary and useful requests for drawings and isolation records.","textPreview":"Sound focal-event summary and useful requests for drawings and isolation records.","textChars":81,"textLines":1,"bbox":[394,400,380,78]}
+{"kind":"textbox","id":"sh/xwbulgzm","slide":7,"text":"Wrong rail and electrical tags, unsupported assertions, and failed causal analysis.","textPreview":"Wrong rail and electrical tags, unsupported assertions, and failed causal analysis.","textChars":83,"textLines":1,"bbox":[806,400,398,78]}
+{"kind":"shape","id":"sh/wv2tsbi1","slide":7,"bbox":[72,491,1132,1]}
+{"kind":"textbox","id":"sh/ryps7m1c","slide":7,"text":"mistral","textPreview":"mistral","textChars":7,"textLines":1,"bbox":[72,506,205,34]}
+{"kind":"textbox","id":"sh/qxgbeh0r","slide":7,"text":"29","textPreview":"29","textChars":2,"textLines":1,"bbox":[286,502,70,44]}
+{"kind":"shape","id":"sh/gjeponyp","slide":7,"bbox":[370,510,3,82]}
+{"kind":"textbox","id":"sh/h4nqhsza","slide":7,"text":"Recognized gravity energy, planning, and communication context.","textPreview":"Recognized gravity energy, planning, and communication context.","textChars":63,"textLines":1,"bbox":[394,506,380,78]}
+{"kind":"textbox","id":"sh/uhw7mdgj","slide":7,"text":"Weak evidence targeting and only a shallow causal board. No planted conflict was found.","textPreview":"Weak evidence targeting and only a shallow causal board. No planted conflict was found.","textChars":87,"textLines":1,"bbox":[806,506,398,78]}
+{"kind":"shape","id":"sh/vi58fih4","slide":7,"bbox":[72,597,1132,1]}
+{"kind":"notes","id":"nt/gx9r9u","slide":7,"text":"Explanations summarize the detailed findings in Try 3 benchmark_results.md."}
+{"kind":"slide","id":"sl/dwa9n6","slide":8,"title":"Why the remaining Try 3 models scored below 30","textShapes":25}
+{"kind":"textbox","id":"sh/j2xkzexo","slide":8,"text":"Why the remaining Try 3 models scored below 30","textPreview":"Why the remaining Try 3 models scored below 30","textChars":46,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/kn61sje9","slide":8,"text":"Completion alone did not earn a strong score when the investigation remained shallow or unreliable.","textPreview":"Completion alone did not earn a strong score when the investigation remained shallow or unreliable.","textChars":99,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/lof21ofu","slide":8,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/ax4jm9w7","slide":8,"text":"Source: Try 3 benchmark model-by-model findings","textPreview":"Source: Try 3 benchmark model-by-model findings","textChars":47,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/bydkvexs","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/wzm1ojed","slide":8,"text":"MODEL / SCORE","textPreview":"MODEL / SCORE","textChars":13,"textLines":1,"bbox":[72,158,240,24]}
+{"kind":"textbox","id":"sh/x0v2xofi","slide":8,"text":"CREDIT EARNED","textPreview":"CREDIT EARNED","textChars":13,"textLines":1,"bbox":[342,158,300,24]}
+{"kind":"textbox","id":"sh/ut83ydwb","slide":8,"text":"PRIMARY LIMIT","textPreview":"PRIMARY LIMIT","textChars":13,"textLines":1,"bbox":[710,158,450,24]}
+{"kind":"textbox","id":"sh/vuhk7idw","slide":8,"text":"llama3.1   27","textPreview":"llama3.1   27","textChars":13,"textLines":1,"bbox":[72,194,246,42]}
+{"kind":"textbox","id":"sh/nm9wnytg","slide":8,"text":"Clean structured-output run","textPreview":"Clean structured-output run","textChars":27,"textLines":1,"bbox":[342,194,322,48]}
+{"kind":"textbox","id":"sh/2l0fetcv","slide":8,"text":"Only one tag and a shallow evidence-to-cause path","textPreview":"Only one tag and a shallow evidence-to-cause path","textChars":49,"textLines":1,"bbox":[710,194,480,48]}
+{"kind":"shape","id":"sh/porypob6","slide":8,"bbox":[72,252,1118,1]}
+{"kind":"textbox","id":"sh/onixgjal","slide":8,"text":"hermes3   18","textPreview":"hermes3   18","textChars":12,"textLines":1,"bbox":[72,266,246,42]}
+{"kind":"textbox","id":"sh/ba9grytc","slide":8,"text":"Produced a small causal graph","textPreview":"Produced a small causal graph","textChars":29,"textLines":1,"bbox":[342,266,322,48]}
+{"kind":"textbox","id":"sh/ap0fitsr","slide":8,"text":"Weak tag selection and little provenance discipline","textPreview":"Weak tag selection and little provenance discipline","textChars":51,"textLines":1,"bbox":[710,266,480,48]}
+{"kind":"shape","id":"sh/xcbyt8bi","slide":8,"bbox":[72,324,1118,1]}
+{"kind":"textbox","id":"sh/cb2xk3ax","slide":8,"text":"llama3.2   17","textPreview":"llama3.2   17","textChars":13,"textLines":1,"bbox":[72,338,246,42]}
+{"kind":"textbox","id":"sh/zetgvit8","slide":8,"text":"Completed two versions","textPreview":"Completed two versions","textChars":22,"textLines":1,"bbox":[342,338,322,48]}
+{"kind":"textbox","id":"sh/ydkfmds3","slide":8,"text":"Low-value questions and weak causal development","textPreview":"Low-value questions and weak causal development","textChars":47,"textLines":1,"bbox":[710,338,480,48]}
+{"kind":"shape","id":"sh/u94zuhcb","slide":8,"bbox":[72,396,1118,1]}
+{"kind":"textbox","id":"sh/vax0nmdg","slide":8,"text":"phi4-mini   13","textPreview":"phi4-mini   13","textChars":14,"textLines":1,"bbox":[72,410,246,42]}
+{"kind":"textbox","id":"sh/wb61w7u1","slide":8,"text":"Generated substantial text","textPreview":"Generated substantial text","textChars":26,"textLines":1,"bbox":[342,410,322,48]}
+{"kind":"textbox","id":"sh/hcfipcvm","slide":8,"text":"Nineteen stage errors and extensive fallback content","textPreview":"Nineteen stage errors and extensive fallback content","textChars":52,"textLines":1,"bbox":[710,410,480,48]}
+{"kind":"shape","id":"sh/m54zqxwz","slide":8,"bbox":[72,468,1118,1]}
+{"kind":"textbox","id":"sh/76d0j2dk","slide":8,"text":"deepseek-r1   0","textPreview":"deepseek-r1   0","textChars":15,"textLines":1,"bbox":[72,482,246,42]}
+{"kind":"textbox","id":"sh/87mhs7u5","slide":8,"text":"No gradeable artifact","textPreview":"No gradeable artifact","textChars":21,"textLines":1,"bbox":[342,482,322,48]}
+{"kind":"textbox","id":"sh/98vilcvq","slide":8,"text":"Exceeded the 30-minute limit before committing a version","textPreview":"Exceeded the 30-minute limit before committing a version","textChars":56,"textLines":1,"bbox":[710,482,480,48]}
+{"kind":"shape","id":"sh/618j21c3","slide":8,"bbox":[72,540,1118,1]}
+{"kind":"textbox","id":"sh/r2h0v6do","slide":8,"text":"granite3.3   0","textPreview":"granite3.3   0","textChars":14,"textLines":1,"bbox":[72,554,246,42]}
+{"kind":"textbox","id":"sh/1wj2l0f6","slide":8,"text":"No gradeable artifact","textPreview":"No gradeable artifact","textChars":21,"textLines":1,"bbox":[342,554,322,48]}
+{"kind":"textbox","id":"sh/gvalsvel","slide":8,"text":"Exceeded the 30-minute limit before committing a version","textPreview":"Exceeded the 30-minute limit before committing a version","textChars":56,"textLines":1,"bbox":[710,554,480,48]}
+{"kind":"shape","id":"sh/fu1kjqx0","slide":8,"bbox":[72,612,1118,1]}
+{"kind":"notes","id":"nt/dwa9n6","slide":8,"text":"Try 3 lower-ranked model findings. Zero scores reflect the absence of a committed artifact, not a claim that the models have no general capability."}
+{"kind":"slide","id":"sl/o3asuz","slide":9,"title":"Try 3 exposed system failures as well as model failures","textShapes":22}
+{"kind":"textbox","id":"sh/lcfqpkja","slide":9,"text":"Try 3 exposed system failures as well as model failures","textPreview":"Try 3 exposed system failures as well as model failures","textChars":55,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/yporu5kj","slide":9,"text":"Several weaknesses appeared across models, which means prompt quality alone could not solve them.","textPreview":"Several weaknesses appeared across models, which means prompt quality alone could not solve them.","textChars":97,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/zax8na14","slide":9,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/cnmpsf2t","slide":9,"text":"Source: Try 3 benchmark cross-model findings","textPreview":"Source: Try 3 benchmark cross-model findings","textChars":44,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/dovql0jy","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/ql47q5kn","slide":9,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[78,176,54,38]}
+{"kind":"textbox","id":"sh/bmd8ja18","slide":9,"text":"Structured output","textPreview":"Structured output","textChars":17,"textLines":1,"bbox":[148,176,430,34]}
+{"kind":"textbox","id":"sh/ojmpov2h","slide":9,"text":"Long JSON responses failed or truncated.","textPreview":"Long JSON responses failed or truncated.","textChars":40,"textLines":1,"bbox":[148,220,445,72]}
+{"kind":"shape","id":"sh/pkvqh0j2","slide":9,"bbox":[148,298,445,1]}
+{"kind":"textbox","id":"sh/ps36lgbu","slide":9,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[78,324,54,38]}
+{"kind":"textbox","id":"sh/orupcbu9","slide":9,"text":"Evidence scope","textPreview":"Evidence scope","textChars":14,"textLines":1,"bbox":[148,324,430,34]}
+{"kind":"textbox","id":"sh/nqloj6do","slide":9,"text":"Large packets behaved like one source instead of separate records.","textPreview":"Large packets behaved like one source instead of separate records.","textChars":66,"textLines":1,"bbox":[148,368,445,72]}
+{"kind":"shape","id":"sh/2pc7a1c3","slide":9,"bbox":[148,446,445,1]}
+{"kind":"textbox","id":"sh/1o36hwvi","slide":9,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[78,472,54,38]}
+{"kind":"textbox","id":"sh/0nup8rud","slide":9,"text":"Question control","textPreview":"Question control","textChars":16,"textLines":1,"bbox":[148,472,430,34]}
+{"kind":"textbox","id":"sh/fmlof6ds","slide":9,"text":"Overlap survived and low-value questions consumed runtime.","textPreview":"Overlap survived and low-value questions consumed runtime.","textChars":58,"textLines":1,"bbox":[148,516,445,72]}
+{"kind":"shape","id":"sh/els761c7","slide":9,"bbox":[148,594,445,1]}
+{"kind":"textbox","id":"sh/dkj6dwvm","slide":9,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[654,176,54,38]}
+{"kind":"textbox","id":"sh/sjap4ru1","slide":9,"text":"Causal direction","textPreview":"Causal direction","textChars":16,"textLines":1,"bbox":[724,176,430,34]}
+{"kind":"textbox","id":"sh/43epkr2x","slide":9,"text":"Some boards pointed from the event back to pre-event conditions.","textPreview":"Some boards pointed from the event back to pre-event conditions.","textChars":64,"textLines":1,"bbox":[724,220,445,72]}
+{"kind":"shape","id":"sh/54nqtw3i","slide":9,"bbox":[724,298,445,1]}
+{"kind":"textbox","id":"sh/i1w7ihkr","slide":9,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[654,324,54,38]}
+{"kind":"textbox","id":"sh/j25ormlc","slide":9,"text":"Contradictions","textPreview":"Contradictions","textChars":14,"textLines":1,"bbox":[724,324,430,34]}
+{"kind":"textbox","id":"sh/wzupgr21","slide":9,"text":"Every scored Try 3 output missed the three planted challenge records.","textPreview":"Every scored Try 3 output missed the three planted challenge records.","textChars":69,"textLines":1,"bbox":[724,368,445,72]}
+{"kind":"shape","id":"sh/h0n6pc36","slide":9,"bbox":[724,446,445,1]}
+{"kind":"textbox","id":"sh/uxc7ehkv","slide":9,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[654,472,54,38]}
+{"kind":"textbox","id":"sh/vylonmlg","slide":9,"text":"Corrective actions","textPreview":"Corrective actions","textChars":18,"textLines":1,"bbox":[724,472,430,34]}
+{"kind":"textbox","id":"sh/gvypsb25","slide":9,"text":"Some models proposed actions before verifying the causal mechanism.","textPreview":"Some models proposed actions before verifying the causal mechanism.","textChars":67,"textLines":1,"bbox":[724,516,445,72]}
+{"kind":"shape","id":"sh/1w7q1g3q","slide":9,"bbox":[724,594,445,1]}
+{"kind":"notes","id":"nt/o3asuz","slide":9,"text":"Cross-model findings from Try 3: no scored output detected the seeded conflicts, several stages failed structured validation, and multiple boards contained weak or reversed causal links."}
+{"kind":"slide","id":"sl/rvu5e3","slide":10,"title":"Try 4 design changes apply to every supported model","textShapes":18}
+{"kind":"textbox","id":"sh/obe9cnqt","slide":10,"text":"Try 4 design changes apply to every supported model","textPreview":"Try 4 design changes apply to every supported model","textChars":51,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/nal8ji98","slide":10,"text":"The initial validation used qwen3.5 alone so the effect of the harness changes remained observable.","textPreview":"The initial validation used qwen3.5 alone so the effect of the harness changes remained observable.","textChars":99,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/29crad8n","slide":10,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/xgnqps7a","slide":10,"text":"Source: Try 4 implementation and initial qwen3.5 evaluation","textPreview":"Source: Try 4 implementation and initial qwen3.5 evaluation","textChars":59,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/cfe9gnq5","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/be58ni9k","slide":10,"text":"TRY 3","textPreview":"TRY 3","textChars":5,"textLines":1,"bbox":[78,154,250,34]}
+{"kind":"textbox","id":"sh/adwred8z","slide":10,"text":"TRY 4","textPreview":"TRY 4","textChars":5,"textLines":1,"bbox":[700,154,250,34]}
+{"kind":"textbox","id":"sh/dk3qdor6","slide":10,"text":"Documents supplied as broad packets","textPreview":"Documents supplied as broad packets","textChars":35,"textLines":1,"bbox":[78,198,446,48]}
+{"kind":"shape","id":"sh/sjap43ql","slide":10,"bbox":[570,206,22,4]}
+{"kind":"textbox","id":"sh/itknmdoz","slide":10,"text":"Evidence split into individually identified segments","textPreview":"Evidence split into individually identified segments","textChars":52,"textLines":1,"bbox":[700,198,470,48]}
+{"kind":"shape","id":"sh/jutovi54","slide":10,"bbox":[78,256,1092,1]}
+{"kind":"textbox","id":"sh/4v25on6p","slide":10,"text":"Prompt asked for source discipline","textPreview":"Prompt asked for source discipline","textChars":34,"textLines":1,"bbox":[78,270,446,48]}
+{"kind":"shape","id":"sh/5wb6xsna","slide":10,"bbox":[570,278,22,4]}
+{"kind":"textbox","id":"sh/6x4nqxov","slide":10,"text":"Dedicated source adjudication before specialists","textPreview":"Dedicated source adjudication before specialists","textChars":48,"textLines":1,"bbox":[700,270,470,48]}
+{"kind":"shape","id":"sh/rydoz25g","slide":10,"bbox":[78,328,1092,1]}
+{"kind":"textbox","id":"sh/szmps761","slide":10,"text":"Broker mainly removed duplicates","textPreview":"Broker mainly removed duplicates","textChars":32,"textLines":1,"bbox":[78,342,446,48]}
+{"kind":"shape","id":"sh/tkv61cnm","slide":10,"bbox":[570,350,22,4]}
+{"kind":"textbox","id":"sh/el47uxor","slide":10,"text":"Questions need a causal branch and decision unlocked","textPreview":"Questions need a causal branch and decision unlocked","textChars":52,"textLines":1,"bbox":[700,342,470,48]}
+{"kind":"shape","id":"sh/fmdo325c","slide":10,"bbox":[78,400,1092,1]}
+{"kind":"textbox","id":"sh/bqx4b2lk","slide":10,"text":"Causal links could remain weak","textPreview":"Causal links could remain weak","textChars":30,"textLines":1,"bbox":[78,414,446,48]}
+{"kind":"shape","id":"sh/qponihkz","slide":10,"bbox":[570,422,22,4]}
+{"kind":"textbox","id":"sh/dsf6dc3q","slide":10,"text":"Every link needs support, a counterfactual, an alternative, and a gap","textPreview":"Every link needs support, a counterfactual, an alternative, and a gap","textChars":69,"textLines":1,"bbox":[700,414,470,48]}
+{"kind":"shape","id":"sh/cr65k725","slide":10,"bbox":[78,472,1092,1]}
+{"kind":"textbox","id":"sh/3md472lo","slide":10,"text":"Actions could appear early","textPreview":"Actions could appear early","textChars":26,"textLines":1,"bbox":[78,486,446,48]}
+{"kind":"shape","id":"sh/214nex43","slide":10,"bbox":[570,494,22,4]}
+{"kind":"textbox","id":"sh/povm9c3e","slide":10,"text":"Actions require a verified causal target","textPreview":"Actions require a verified causal target","textChars":40,"textLines":1,"bbox":[700,486,470,48]}
+{"kind":"shape","id":"sh/onm5g72t","slide":10,"bbox":[78,544,1092,1]}
+{"kind":"textbox","id":"sh/fyd43ilc","slide":10,"text":"Final output carried most audit detail","textPreview":"Final output carried most audit detail","textChars":38,"textLines":1,"bbox":[78,558,446,48]}
+{"kind":"shape","id":"sh/ex4nax4r","slide":10,"bbox":[570,566,22,4]}
+{"kind":"textbox","id":"sh/krytozed","slide":10,"text":"Every stage persists a visible checkpoint","textPreview":"Every stage persists a visible checkpoint","textChars":41,"textLines":1,"bbox":[700,558,470,48]}
+{"kind":"shape","id":"sh/5srax4fy","slide":10,"bbox":[78,616,1092,1]}
+{"kind":"notes","id":"nt/rvu5e3","slide":10,"text":"Try 4 changes implemented in the duplicated application. The harness is model-independent and can run supported Ollama or API models. No model combination or model fallback was used in the first scored qwen3.5 run."}
+{"kind":"slide","id":"sl/h39pyi","slide":11,"title":"What is new in Try 4","textShapes":14}
+{"kind":"textbox","id":"sh/wvy54n61","slide":11,"text":"What is new in Try 4","textPreview":"What is new in Try 4","textChars":20,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/vup4bi5g","slide":11,"text":"One reusable investigation harness now adds evidence discipline, causal tests, and explicit decision gates around the selected model.","textPreview":"One reusable investigation harness now adds evidence discipline, causal tests, and explicit decision gates around the selected model.","textChars":133,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/utgn2dov","slide":11,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/5krmhsni","slide":11,"text":"Source: Try 4 implementation design","textPreview":"Source: Try 4 implementation design","textChars":35,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/4ji5876x","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/ji94f25s","slide":11,"text":"SUPPORTED MODEL","textPreview":"SUPPORTED MODEL","textChars":15,"textLines":1,"bbox":[70,158,190,24]}
+{"kind":"textbox","id":"sh/ix0n6xo7","slide":11,"text":"Ollama model","textPreview":"Ollama model","textChars":12,"textLines":1,"bbox":[70,195,168,62]}
+{"kind":"textbox","id":"sh/dobmlcnu","slide":11,"text":"API model","textPreview":"API model","textChars":9,"textLines":1,"bbox":[70,279,168,62]}
+{"kind":"textbox","id":"sh/sni5c769","slide":11,"text":"Qwen3.5 was the first test,\nnot a fixed dependency","textPreview":"Qwen3.5 was the first test, | not a fixed dependency","textChars":50,"textLines":2,"bbox":[70,373,182,78]}
+{"kind":"textbox","id":"sh/qt0bqt0r","slide":11,"text":"Same Try 4 harness","textPreview":"Same Try 4 harness","textChars":18,"textLines":1,"bbox":[322,237,194,78]}
+{"kind":"shape","id":"sh/rutczyhc","slide":11,"bbox":[238,226,84,50]}
+{"kind":"shape","id":"sh/sv2ts3ix","slide":11,"bbox":[238,276,84,34]}
+{"kind":"textbox","id":"sh/dwbu18zi","slide":11,"text":"Evidence layer\nIndividual records\nSource adjudication","textPreview":"Evidence layer | Individual records | Source adjudication","textChars":53,"textLines":3,"bbox":[594,166,208,112]}
+{"kind":"textbox","id":"sh/exkbud03","slide":11,"text":"Reasoning layer\nQuestion value gate\nCausal-link tests","textPreview":"Reasoning layer | Question value gate | Causal-link tests","textChars":53,"textLines":3,"bbox":[594,310,208,112]}
+{"kind":"textbox","id":"sh/fytc3ih8","slide":11,"text":"Control layer\nStage checkpoints\nAction verification","textPreview":"Control layer | Stage checkpoints | Action verification","textChars":51,"textLines":3,"bbox":[594,454,208,112]}
+{"kind":"shape","id":"sh/0z2twnit","slide":11,"bbox":[516,222,78,54]}
+{"kind":"shape","id":"sh/10bu5sze","slide":11,"bbox":[516,276,78,90]}
+{"kind":"shape","id":"sh/u1gby90j","slide":11,"bbox":[516,276,78,234]}
+{"kind":"textbox","id":"sh/v29sreh4","slide":11,"text":"Traceable investigation\nwith supported, disputed,\nand missing evidence visible","textPreview":"Traceable investigation | with supported, disputed, | and missing evidence visible","textChars":78,"textLines":3,"bbox":[902,280,280,140]}
+{"kind":"shape","id":"sh/j658zaxw","slide":11,"bbox":[802,222,100,128]}
+{"kind":"shape","id":"sh/y5wrqpgb","slide":11,"bbox":[802,350,100,16]}
+{"kind":"shape","id":"sh/l8nq1kf2","slide":11,"bbox":[802,350,100,160]}
+{"kind":"textbox","id":"sh/k7e9sfyh","slide":11,"text":"The harness changes stay constant when the model changes","textPreview":"The harness changes stay constant when the model changes","textChars":56,"textLines":1,"bbox":[320,607,870,36]}
+{"kind":"notes","id":"nt/h39pyi","slide":11,"text":"Try 4 is not a qwen-specific application. Any supported Ollama or API model can enter the same evidence, reasoning, and control layers. Qwen3.5 was the first model evaluated after the Try 4 improvements."}
+{"kind":"slide","id":"sl/8rffy0","slide":12,"title":"First Try 4 validation run: qwen3.5","textShapes":22}
+{"kind":"textbox","id":"sh/3ixsvypo","slide":12,"text":"First Try 4 validation run: qwen3.5","textPreview":"First Try 4 validation run: qwen3.5","textChars":35,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/oj6t43q9","slide":12,"text":"This initial run completed every reasoning stage and blocked corrective actions at the final gate.","textPreview":"This initial run completed every reasoning stage and blocked corrective actions at the final gate.","textChars":98,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/pkfux87u","slide":12,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/ut4byt87","slide":12,"text":"Source: Try 4 stage checkpoints for incident e1325fa4-6198-4d26-a5eb-ae8d4a930ef8","textPreview":"Source: Try 4 stage checkpoints for incident e1325fa4-6198-4d26-a5eb-ae8d4a930ef8","textChars":81,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/fudsrypc","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/gvmt03qx","slide":12,"text":"Understand","textPreview":"Understand","textChars":10,"textLines":1,"bbox":[70,184,142,72]}
+{"kind":"textbox","id":"sh/hwvato7i","slide":12,"text":"Structure","textPreview":"Structure","textChars":9,"textLines":1,"bbox":[250,184,142,72]}
+{"kind":"textbox","id":"sh/yp8badob","slide":12,"text":"Tag","textPreview":"Tag","textChars":3,"textLines":1,"bbox":[430,184,142,72]}
+{"kind":"textbox","id":"sh/zqhc3ipw","slide":12,"text":"Adjudicate\nsources","textPreview":"Adjudicate | sources","textChars":18,"textLines":2,"bbox":[610,184,142,72]}
+{"kind":"textbox","id":"sh/jydgvqxc","slide":12,"text":"Five\nspecialists","textPreview":"Five | specialists","textChars":16,"textLines":2,"bbox":[790,184,142,72]}
+{"kind":"textbox","id":"sh/ix4f2lwr","slide":12,"text":"Broker","textPreview":"Broker","textChars":6,"textLines":1,"bbox":[970,184,142,72]}
+{"kind":"shape","id":"sh/50fyx0fi","slide":12,"bbox":[212,220,38,0]}
+{"kind":"shape","id":"sh/kzmx4vex","slide":12,"bbox":[392,220,38,0]}
+{"kind":"shape","id":"sh/7mxgzqx8","slide":12,"bbox":[572,220,38,0]}
+{"kind":"shape","id":"sh/61of6lwn","slide":12,"bbox":[752,220,38,0]}
+{"kind":"shape","id":"sh/tofy10fe","slide":12,"bbox":[932,220,38,0]}
+{"kind":"textbox","id":"sh/sn6h8vet","slide":12,"text":"11 answer\nfetches","textPreview":"11 answer | fetches","textChars":17,"textLines":2,"bbox":[970,390,142,72]}
+{"kind":"textbox","id":"sh/fqxg3axk","slide":12,"text":"54 evidence\nclaims","textPreview":"54 evidence | claims","textChars":18,"textLines":2,"bbox":[790,390,142,72]}
+{"kind":"textbox","id":"sh/upoza5wz","slide":12,"text":"13 causal\nnodes","textPreview":"13 causal | nodes","textChars":15,"textLines":2,"bbox":[610,390,142,72]}
+{"kind":"textbox","id":"sh/qlsj29g7","slide":12,"text":"7 causal\nlinks","textPreview":"7 causal | links","textChars":14,"textLines":2,"bbox":[430,390,142,72]}
+{"kind":"textbox","id":"sh/bm10vehs","slide":12,"text":"Verify","textPreview":"Verify","textChars":6,"textLines":1,"bbox":[250,390,142,72]}
+{"kind":"textbox","id":"sh/cna14jyd","slide":12,"text":"Actions\nblocked","textPreview":"Actions | blocked","textChars":15,"textLines":2,"bbox":[70,390,142,72]}
+{"kind":"shape","id":"sh/dojix4zi","slide":12,"bbox":[1041,256,0,134]}
+{"kind":"shape","id":"sh/2h8jypgv","slide":12,"bbox":[932,426,38,0]}
+{"kind":"shape","id":"sh/3ih0ruhg","slide":12,"bbox":[752,426,38,0]}
+{"kind":"shape","id":"sh/4ja10zy1","slide":12,"bbox":[572,426,38,0]}
+{"kind":"shape","id":"sh/pkjit4zm","slide":12,"bbox":[392,426,38,0]}
+{"kind":"shape","id":"sh/mdcjatgf","slide":12,"bbox":[212,426,38,0]}
+{"kind":"textbox","id":"sh/nelk3yx0","slide":12,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[176,535,80,50]}
+{"kind":"textbox","id":"sh/hk7upcne","slide":12,"text":"successful checkpoints","textPreview":"successful checkpoints","textChars":22,"textLines":1,"bbox":[265,546,220,28]}
+{"kind":"textbox","id":"sh/wjydgrmt","slide":12,"text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[566,535,80,50]}
+{"kind":"textbox","id":"sh/vipcnm58","slide":12,"text":"failed stages","textPreview":"failed stages","textChars":13,"textLines":1,"bbox":[656,546,160,28]}
+{"kind":"textbox","id":"sh/uhgveh4n","slide":12,"text":"23 min","textPreview":"23 min","textChars":6,"textLines":1,"bbox":[908,535,130,50]}
+{"kind":"textbox","id":"sh/9w7ulcn2","slide":12,"text":"runtime","textPreview":"runtime","textChars":7,"textLines":1,"bbox":[1044,546,100,28]}
+{"kind":"notes","id":"nt/8rffy0","slide":12,"text":"The scored Try 4 run had 15 completed checkpoints, no failed reasoning stages, and one blocked corrective-action stage. Runtime was approximately 23 minutes."}
+{"kind":"slide","id":"sl/dpmwlt","slide":13,"title":"Qwen3.5 improved most in causal reasoning","textShapes":9}
+{"kind":"textbox","id":"sh/25o3qtc3","slide":13,"text":"Qwen3.5 improved most in causal reasoning","textPreview":"Qwen3.5 improved most in causal reasoning","textChars":41,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/p8zmlobu","slide":13,"text":"The first Try 4 validation gained evidence and causal discipline but lost action points because the verifier blocked premature actions.","textPreview":"The first Try 4 validation gained evidence and causal discipline but lost action points because the verifier blocked premature actions.","textChars":135,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/o7qlsju9","slide":13,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/fix4fets","slide":13,"text":"Sources: Try 3 qwen score 64; Try 4 qwen score 68","textPreview":"Sources: Try 3 qwen score 64; Try 4 qwen score 68","textChars":49,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/eho3m9c7","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/g36lojud","slide":13,"text":"64","textPreview":"64","textChars":2,"textLines":1,"bbox":[1010,214,150,70]}
+{"kind":"textbox","id":"sh/red4betg","slide":13,"text":"TRY 3","textPreview":"TRY 3","textChars":5,"textLines":1,"bbox":[1010,282,150,26]}
+{"kind":"shape","id":"sh/6d43i9cv","slide":13,"bbox":[1028,332,114,2]}
+{"kind":"textbox","id":"sh/sbe9wbml","slide":13,"text":"68","textPreview":"68","textChars":2,"textLines":1,"bbox":[1010,368,150,70]}
+{"kind":"textbox","id":"sh/tcnapg36","slide":13,"text":"TRY 4","textPreview":"TRY 4","textChars":5,"textLines":1,"bbox":[1010,436,150,26]}
+{"kind":"textbox","id":"sh/69wru14f","slide":13,"text":"Safer restraint lowered the action score while improving the investigation's integrity.","textPreview":"Safer restraint lowered the action score while improving the investigation's integrity.","textChars":87,"textLines":1,"bbox":[995,508,185,90]}
+{"kind":"chart","id":"ch/d4vqxoza","slide":13,"name":"","chartType":"bar","bbox":[70,154,905,484]}
+{"kind":"notes","id":"nt/dpmwlt","slide":13,"text":"Dimension scores. Try 3 qwen: 9, 8, 13, 13, 4, 6, 7, 4. Try 4 qwen: 9, 9, 13, 14, 6, 12, 0, 5. Totals are 64 and 68."}
+{"kind":"slide","id":"sl/jpmd5v","slide":14,"title":"The first Try 4 run produced a developing causal board","textShapes":13}
+{"kind":"textbox","id":"sh/u1wfe9gb","slide":14,"text":"The first Try 4 run produced a developing causal board","textPreview":"The first Try 4 run produced a developing causal board","textChars":54,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/h4ne9ozm","slide":14,"text":"Qwen3.5 proposed forward hypotheses. Verification kept the board at initial maturity.","textPreview":"Qwen3.5 proposed forward hypotheses. Verification kept the board at initial maturity.","textChars":85,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/g3exgjyh","slide":14,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/7ylw3ehk","slide":14,"text":"Source: Try 4 qwen causal board and verification findings","textPreview":"Source: Try 4 qwen causal board and verification findings","textChars":57,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/6xcfa90z","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/t0ne54zq","slide":14,"text":"Balance left raised\nwith rolls removed","textPreview":"Balance left raised | with rolls removed","textChars":38,"textLines":2,"bbox":[62,190,202,76]}
+{"kind":"textbox","id":"sh/8zexcjy5","slide":14,"text":"B hydraulics\nisolated and bled","textPreview":"B hydraulics | isolated and bled","textChars":30,"textLines":2,"bbox":[62,314,202,76]}
+{"kind":"textbox","id":"sh/jalwzuho","slide":14,"text":"Gravity-control field blank\nNo independent signature","textPreview":"Gravity-control field blank | No independent signature","textChars":52,"textLines":2,"bbox":[62,438,202,86]}
+{"kind":"textbox","id":"sh/y9cv6p03","slide":14,"text":"Suspected loss of positive\nmechanical restraint","textPreview":"Suspected loss of positive | mechanical restraint","textChars":47,"textLines":2,"bbox":[390,280,244,94]}
+{"kind":"textbox","id":"sh/4na5cral","slide":14,"text":"Carrier beam falls\ninto R3 mill pit","textPreview":"Carrier beam falls | into R3 mill pit","textChars":35,"textLines":2,"bbox":[758,280,224,94]}
+{"kind":"shape","id":"sh/5ojmlwb6","slide":14,"bbox":[264,228,126,99]}
+{"kind":"shape","id":"sh/ilsnahsf","slide":14,"bbox":[264,327,126,25]}
+{"kind":"shape","id":"sh/jm14jmt0","slide":14,"bbox":[264,327,126,154]}
+{"kind":"shape","id":"sh/wja587ap","slide":14,"bbox":[634,327,124,0]}
+{"kind":"textbox","id":"sh/hkjmhcba","slide":14,"text":"Six blocking findings","textPreview":"Six blocking findings","textChars":21,"textLines":1,"bbox":[1010,180,190,34]}
+{"kind":"textbox","id":"sh/ux836hsj","slide":14,"text":"Keeper function\n\nRequired restraint design\n\nTemporary supports\n\nPre-event configuration\n\nAnonymous note provenance\n\nR3 versus other stands","textPreview":"Keeper function |  | Required restraint design |  | Temporary supports |  | Pre-event configuration |  | Anonymous note provenance |  | R...","textChars":138,"textLines":11,"bbox":[1010,228,198,302]}
+{"kind":"shape","id":"sh/vyh4fmt4","slide":14,"bbox":[390,420,592,2]}
+{"kind":"textbox","id":"sh/gfu5kbat","slide":14,"text":"Every displayed connection remains a hypothesis until the missing design and execution evidence discriminates it from alternatives.","textPreview":"Every displayed connection remains a hypothesis until the missing design and execution evidence discriminates it from alternatives.","textChars":131,"textLines":1,"bbox":[390,446,592,100]}
+{"kind":"textbox","id":"sh/1g36tgbe","slide":14,"text":"Corrective actions stayed blocked","textPreview":"Corrective actions stayed blocked","textChars":33,"textLines":1,"bbox":[438,578,495,40]}
+{"kind":"notes","id":"nt/jpmd5v","slide":14,"text":"Simplified rendering of the Try 4 qwen causal board. The actual board contains 13 nodes and 7 links. None were verified. Six blocking findings remained."}
+{"kind":"slide","id":"sl/vo2pi2","slide":15,"title":"The current test cannot establish a final root cause","textShapes":9}
+{"kind":"textbox","id":"sh/kzux0z6d","slide":15,"text":"The current test cannot establish a final root cause","textPreview":"The current test cannot establish a final root cause","textChars":52,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/zylwrups","slide":15,"text":"The method can find good questions and hypotheses, but the evidence package cannot prove the physical mechanism.","textPreview":"The method can find good questions and hypotheses, but the evidence package cannot prove the physical mechanism.","textChars":112,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/ydcfypo7","slide":15,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/xc3epk7m","slide":15,"text":"Sources: Try 4 qwen verification findings and post-run evaluation","textPreview":"Sources: Try 4 qwen verification findings and post-run evaluation","textChars":65,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/cbuxwf61","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"shape","id":"sh/balwnapg","slide":15,"bbox":[76,172,8,22]}
+{"kind":"textbox","id":"sh/a9svupov","slide":15,"text":"WHAT THE PACKAGE ESTABLISHES","textPreview":"WHAT THE PACKAGE ESTABLISHES","textChars":28,"textLines":1,"bbox":[94,168,452,30]}
+{"kind":"textbox","id":"sh/h8ne1onq","slide":15,"text":"The beam fell with the keeper present.\n\nThe rolls had been removed.\n\nThe balance remained raised.\n\nB hydraulics had been isolated and bled.\n\nThe gravity-control record had gaps.","textPreview":"The beam fell with the keeper present. |  | The rolls had been removed. |  | The balance remained raised. |  | B hydraulics had been isol...","textChars":177,"textLines":9,"bbox":[82,218,460,318]}
+{"kind":"shape","id":"sh/w7ex8j6l","slide":15,"bbox":[590,166,2,448]}
+{"kind":"shape","id":"sh/mdob6twj","slide":15,"bbox":[654,172,8,22]}
+{"kind":"textbox","id":"sh/7exsfydo","slide":15,"text":"WHAT THE PACKAGE DOES NOT PROVE","textPreview":"WHAT THE PACKAGE DOES NOT PROVE","textChars":31,"textLines":1,"bbox":[672,168,472,30]}
+{"kind":"textbox","id":"sh/8fqt83e9","slide":15,"text":"The keeper's load-bearing function.\n\nThe required support or stopper arrangement.\n\nWhether supports were installed, removed, or failed.\n\nThe exact release mechanism.\n\nWhich procedural gap caused the physical failure.","textPreview":"The keeper's load-bearing function. |  | The required support or stopper arrangement. |  | Whether supports were installed, removed, or f...","textChars":216,"textLines":9,"bbox":[660,218,500,318]}
+{"kind":"textbox","id":"sh/90za18vu","slide":15,"text":"The test mixes model limitations with missing ground truth","textPreview":"The test mixes model limitations with missing ground truth","textChars":58,"textLines":1,"bbox":[228,580,824,48]}
+{"kind":"notes","id":"nt/vo2pi2","slide":15,"text":"The current synthetic package contains useful records but lacks authoritative design and execution evidence required to verify the beam-release mechanism."}
+{"kind":"slide","id":"sl/ahqj9v","slide":16,"title":"A partner RCA can create a valid ground-truth test","textShapes":15}
+{"kind":"textbox","id":"sh/t072doj2","slide":16,"text":"A partner RCA can create a valid ground-truth test","textPreview":"A partner RCA can create a valid ground-truth test","textChars":50,"textLines":1,"bbox":[64,36,1150,54]}
+{"kind":"textbox","id":"sh/6xwj290b","slide":16,"text":"The completed RCA provides the answer key. Its underlying evidence provides the fair model input.","textPreview":"The completed RCA provides the answer key. Its underlying evidence provides the fair model input.","textChars":97,"textLines":1,"bbox":[66,92,1120,34]}
+{"kind":"shape","id":"sh/ry5kbe1w","slide":16,"bbox":[64,132,1152,3]}
+{"kind":"textbox","id":"sh/4be10zil","slide":16,"text":"Recommended validation design based on the current benchmark limitation","textPreview":"Recommended validation design based on the current benchmark limitation","textChars":71,"textLines":1,"bbox":[66,682,1040,22]}
+{"kind":"textbox","id":"sh/5wn294jq","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1160,680,56,24]}
+{"kind":"textbox","id":"sh/i9wjyp0f","slide":16,"text":"Partner's completed RCA","textPreview":"Partner's completed RCA","textChars":23,"textLines":1,"bbox":[70,202,220,82]}
+{"kind":"textbox","id":"sh/ja5k7u10","slide":16,"text":"Identify accepted sequence,\nmechanism, barriers, and causes","textPreview":"Identify accepted sequence, | mechanism, barriers, and causes","textChars":59,"textLines":2,"bbox":[370,202,250,82]}
+{"kind":"textbox","id":"sh/o7y1c3ip","slide":16,"text":"Assemble only the records\nused to reach those findings","textPreview":"Assemble only the records | used to reach those findings","textChars":54,"textLines":2,"bbox":[700,202,250,82]}
+{"kind":"textbox","id":"sh/psr2l8ja","slide":16,"text":"Run blind model tests","textPreview":"Run blind model tests","textChars":21,"textLines":1,"bbox":[1030,202,180,82]}
+{"kind":"shape","id":"sh/1wz2p8ni","slide":16,"bbox":[290,243,80,0]}
+{"kind":"shape","id":"sh/gv6lg36x","slide":16,"bbox":[620,243,80,0]}
+{"kind":"shape","id":"sh/fuxkny5c","slide":16,"bbox":[950,243,80,0]}
+{"kind":"shape","id":"sh/eto3etor","slide":16,"bbox":[160,380,960,2]}
+{"kind":"textbox","id":"sh/tsf2lon6","slide":16,"text":"Fair test","textPreview":"Fair test","textChars":9,"textLines":1,"bbox":[170,416,200,34]}
+{"kind":"textbox","id":"sh/sr6lcj6l","slide":16,"text":"Models receive the underlying documents without the completed RCA.","textPreview":"Models receive the underlying documents without the completed RCA.","textChars":66,"textLines":1,"bbox":[170,462,360,78]}
+{"kind":"textbox","id":"sh/rqxkjy50","slide":16,"text":"Ground truth","textPreview":"Ground truth","textChars":12,"textLines":1,"bbox":[580,416,200,34]}
+{"kind":"textbox","id":"sh/6po3atov","slide":16,"text":"Reviewers compare each model's causal chain with the partner's accepted findings.","textPreview":"Reviewers compare each model's causal chain with the partner's accepted findings.","textChars":81,"textLines":1,"bbox":[580,462,370,78]}
+{"kind":"textbox","id":"sh/xojmxsnq","slide":16,"text":"What improves","textPreview":"What improves","textChars":13,"textLines":1,"bbox":[970,416,210,34]}
+{"kind":"textbox","id":"sh/cnqlon65","slide":16,"text":"The test can separate missing data from failures in the method or model.","textPreview":"The test can separate missing data from failures in the method or model.","textChars":72,"textLines":1,"bbox":[970,462,220,78]}
+{"kind":"textbox","id":"sh/w3ixgvyd","slide":16,"text":"Best next input: the partner RCA plus every source record it relied on","textPreview":"Best next input: the partner RCA plus every source record it relied on","textChars":70,"textLines":1,"bbox":[204,592,872,42]}
+{"kind":"notes","id":"nt/ahqj9v","slide":16,"text":"Recommended next validation step. Do not give the completed RCA to the model during the blind test. Use it as the scoring reference and supply the underlying evidence records as model inputs."}

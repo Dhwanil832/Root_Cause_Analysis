@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-10T00:59:42.479Z",
+  "method": "GET",
+  "endpoint": "/api/incidents/07e95cc9-ea21-45a6-b868-6318658299d9",
+  "args": [
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "14400",
+    "--request",
+    "GET",
+    "http://localhost:3000/api/incidents/07e95cc9-ea21-45a6-b868-6318658299d9",
+    "--write-out",
+    "\n%{http_code}"
+  ]
+}

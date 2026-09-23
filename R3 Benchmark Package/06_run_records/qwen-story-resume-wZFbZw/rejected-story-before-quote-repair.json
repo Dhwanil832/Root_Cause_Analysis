@@ -1,0 +1,508 @@
+{
+  "track": {
+    "id": "12a72d40-6c90-4bf3-9566-82fa9563d014",
+    "incident_id": "5d41662f-9b61-46a7-8ef7-5cb79c127271",
+    "model_id": "ollama:qwen3.5:latest",
+    "model_name": "qwen3.5:latest",
+    "provider": "ollama",
+    "created_at": "2026-09-10T17:52:53.335Z"
+  },
+  "version": 1,
+  "questions": [
+    {
+      "id": "bq-71po3",
+      "text": "What does the shift turnover log indicate regarding equipment status, isolation points, and work scope carry-over from previous shift to Turn 2?"
+    },
+    {
+      "id": "bq-1d9svag",
+      "text": "Does the maintenance practice or work order for removing rolls and isolating hydraulics include steps to secure or lower any dependent equipment (e.g., carrier beam) before leaving it unattended?"
+    },
+    {
+      "id": "bq-4co1ew",
+      "text": "What is the documented function of the B hydraulics in relation to yoke or carrier-beam support, and what are the consequences if they are bled while other components remain raised?"
+    },
+    {
+      "id": "bq-1005oko",
+      "text": "Was a formal change authorization issued for leaving the top backup roll balance raised with hydraulics bled, and does that authorization include safeguards against falling objects?"
+    },
+    {
+      "id": "bq-x3em49",
+      "text": "Did the two witnesses observe any abnormal motion or sound from the beam/yoke area before it fell?"
+    },
+    {
+      "id": "q-1hgm37p",
+      "text": "Did the crew understand that leaving a backup roll balance raised while bleeding adjacent hydraulics could alter load distribution or remove support for the carrier beam?"
+    },
+    {
+      "id": "q-1hqe2w8",
+      "text": "Does the R3 exit yoke/carrier beam assembly rely on B hydraulic pressure to maintain retention or support, and what is the documented consequence of bleeding this system while a backup roll balance remains raised?"
+    },
+    {
+      "id": "q-1pp4eqb",
+      "text": "Did the isolation of B hydraulics and/or leaving the top backup roll balance in a raised position mechanically disengage or unload the carrier beam from its yoke retention?"
+    },
+    {
+      "id": "q-18shbzq",
+      "text": "Did the previous shift communicate the configuration status (raised balance, bled hydraulics) to Turn 2 via a documented turnover log?"
+    },
+    {
+      "id": "q-gibq52",
+      "text": "Does the executed outage preparation work scope, maintenance plan, or associated Work Order explicitly define steps for securing or supporting the exit carrier beam when backup rolls are removed and hydraulics isolated?"
+    },
+    {
+      "id": "q-1vt0q9p",
+      "text": "Does the shift turnover log or handoff record from October 14 contain a specific entry noting that work rolls were removed, backup balances left raised, and hydraulics bled?"
+    },
+    {
+      "id": "q-rliprg",
+      "text": "Did the contractor crew working in the mill pit during Turn 2 morning receive a specific briefing on equipment conditions prior to starting work, and was this briefing documented?"
+    },
+    {
+      "id": "q-1fmm7gu",
+      "text": "What specific procedure or work order step required securing the carrier beam when removing rolls and isolating hydraulics, and was this step completed by Turn 1?"
+    }
+  ],
+  "scenario": {
+    "id": "6c8a536e-7c80-46ea-9af1-b478a0f65e3f",
+    "track_id": "12a72d40-6c90-4bf3-9566-82fa9563d014",
+    "title": "R3 beam — controlled benchmark scenario",
+    "model_id": "ollama:qwen3.5:latest",
+    "created_at": "2026-09-10T18:13:50.971Z",
+    "definition": {
+      "title": "R3 beam — controlled benchmark scenario",
+      "hiddenTruth": "Partner-reported chain: with rolls removed the raised assembly could exceed its normal installed-roll travel. The beam wedged against the spreader/posts while the yoke drifted down, displacing the link until it cleared the lifting point. Slow isolation-valve bleed-through was reported. Design and task isolation did not adequately address this configuration and gravity. Preserve the distinction between historical notification and controlled derivatives of partner findings. Original video, drawings, measurements and signed isolation records are not available. Never invent them or silently resolve the A/B hydraulic-system discrepancy.",
+      "sources": [
+        {
+          "id": "notification",
+          "title": "Initial incident description",
+          "sourceClass": "Historical notification excerpt supplied for this benchmark",
+          "text": "At approximately 1:03 PM on October 14, 2024 (Turn 2), the R3 Exit Carrier Beam at the Indiana Harbor 80 inch Hot Strip roughing mill fell from the yoke into the R3 mill pit, landing on the sled and a scaffold platform. No team members were in the pit. Contractor employees had worked there earlier, and two nearby contractors witnessed the fall. The beam and link were intact with the keeper installed; no damage was apparent on the yoke. A small top operator-side mill window liner fell with the beam. No relevant crane lift had occurred. Work rolls and top and bottom backup rolls were removed on the prior shift. The top backup roll balance was isolated raised; B hydraulics were shut off and bled.",
+          "available": true
+        },
+        {
+          "id": "GTDE-01",
+          "title": "Outage configuration",
+          "sourceClass": "Controlled derivative of partner finding; not an original field record",
+          "text": "With work rolls and backup rolls absent, the raised assembly could reach a position beyond its usual installed-roll limit. The top backup roll balance remained isolated in the fully raised position.",
+          "available": true
+        },
+        {
+          "id": "GTDE-02",
+          "title": "Reported video sequence",
+          "sourceClass": "Controlled derivative of partner-reported video finding; original video unavailable",
+          "text": "The beam became wedged against the top mill spreader and mill posts. The yoke drifted downward over approximately two hours while the wedged beam remained stationary. Relative movement displaced the link away from center until it cleared the yoke or lifting point. Exact displacement, forces, and the time of initial wedging are not established.",
+          "available": true
+        },
+        {
+          "id": "GTDE-03",
+          "title": "Reported hydraulic findings",
+          "sourceClass": "Controlled derivative; raw valve tests and historian data unavailable",
+          "text": "The R3 isolation valve had reported slow bleed-through capable of allowing yoke drift after shutdown. Isolation valves were not routinely inspected and were replaced when found defective. Exact leak-down rate, pressure history, and pre-outage defect onset are not established. B hydraulics appear in the incident narrative, but A hydraulics appear in the causal chart; this discrepancy remains unresolved.",
+          "available": true
+        },
+        {
+          "id": "GTDE-04",
+          "title": "Reported design findings",
+          "sourceClass": "Controlled derivative of partner design finding; controlled drawings unavailable",
+          "text": "The original design used one keeper on each link arm. No stop prevented beam wedging on the spreader or posts with backup rolls removed. Full drawing tolerances and clearance calculations are not available.",
+          "available": true
+        },
+        {
+          "id": "GTDE-05",
+          "title": "Reported isolation findings",
+          "sourceClass": "Controlled derivative of partner RCA finding; signed execution records unavailable",
+          "text": "Gravity and stored energy were not fully accounted for in the task-specific isolation. Adequate positive mechanical restraint for the raised assembly was not established. This does not establish who authorized leaving the balance raised or whether any temporary restraint had been installed and later removed.",
+          "available": true
+        },
+        {
+          "id": "GTDE-06",
+          "title": "Reported component condition",
+          "sourceClass": "Controlled derivative of partner findings; raw measurements unavailable",
+          "text": "The carrier beam weighed approximately 8,500 pounds. The beam and link were intact and the keeper remained installed. Measured wear did not provide enough normal clearance for release in the seated position. Raw dimensions and measurement methods are unavailable. The window liner’s causal role is not established.",
+          "available": true
+        }
+      ]
+    }
+  },
+  "rounds": [
+    {
+      "id": "374ca184-8e18-497a-9762-76d57b343f78",
+      "scenario_id": "6c8a536e-7c80-46ea-9af1-b478a0f65e3f",
+      "base_version": 1,
+      "status": "failed",
+      "error": "The prior batch was rejected: Unsupported story citation: notification. Regenerate the complete batch. Citation sourceId must come ONLY from allowedCitationSourceIds, not question IDs or existing answers. Quote exactly from that source's text. If no available source supports an answer, return unknown/unavailable without citations.",
+      "result_version": null,
+      "created_at": "2026-09-10T18:20:32.945Z",
+      "updated_at": "2026-09-10T18:22:54.717Z",
+      "questions": [
+        {
+          "id": "bq-71po3",
+          "text": "What does the shift turnover log indicate regarding equipment status, isolation points, and work scope carry-over from previous shift to Turn 2?"
+        },
+        {
+          "id": "bq-1d9svag",
+          "text": "Does the maintenance practice or work order for removing rolls and isolating hydraulics include steps to secure or lower any dependent equipment (e.g., carrier beam) before leaving it unattended?"
+        },
+        {
+          "id": "bq-4co1ew",
+          "text": "What is the documented function of the B hydraulics in relation to yoke or carrier-beam support, and what are the consequences if they are bled while other components remain raised?"
+        },
+        {
+          "id": "bq-1005oko",
+          "text": "Was a formal change authorization issued for leaving the top backup roll balance raised with hydraulics bled, and does that authorization include safeguards against falling objects?"
+        },
+        {
+          "id": "bq-x3em49",
+          "text": "Did the two witnesses observe any abnormal motion or sound from the beam/yoke area before it fell?"
+        },
+        {
+          "id": "q-1hgm37p",
+          "text": "Did the crew understand that leaving a backup roll balance raised while bleeding adjacent hydraulics could alter load distribution or remove support for the carrier beam?"
+        },
+        {
+          "id": "q-1hqe2w8",
+          "text": "Does the R3 exit yoke/carrier beam assembly rely on B hydraulic pressure to maintain retention or support, and what is the documented consequence of bleeding this system while a backup roll balance remains raised?"
+        },
+        {
+          "id": "q-1pp4eqb",
+          "text": "Did the isolation of B hydraulics and/or leaving the top backup roll balance in a raised position mechanically disengage or unload the carrier beam from its yoke retention?"
+        },
+        {
+          "id": "q-18shbzq",
+          "text": "Did the previous shift communicate the configuration status (raised balance, bled hydraulics) to Turn 2 via a documented turnover log?"
+        },
+        {
+          "id": "q-gibq52",
+          "text": "Does the executed outage preparation work scope, maintenance plan, or associated Work Order explicitly define steps for securing or supporting the exit carrier beam when backup rolls are removed and hydraulics isolated?"
+        },
+        {
+          "id": "q-1vt0q9p",
+          "text": "Does the shift turnover log or handoff record from October 14 contain a specific entry noting that work rolls were removed, backup balances left raised, and hydraulics bled?"
+        },
+        {
+          "id": "q-rliprg",
+          "text": "Did the contractor crew working in the mill pit during Turn 2 morning receive a specific briefing on equipment conditions prior to starting work, and was this briefing documented?"
+        },
+        {
+          "id": "q-1fmm7gu",
+          "text": "What specific procedure or work order step required securing the carrier beam when removing rolls and isolating hydraulics, and was this step completed by Turn 1?"
+        }
+      ],
+      "output": {
+        "attempts": [
+          {
+            "output": {
+              "answers": [
+                {
+                  "questionId": "bq-71po3",
+                  "status": "unknown",
+                  "answer": "The provided evidence does not contain a shift turnover log or handoff record from October 14. The 'notification' source describes the incident and mentions that work rolls were removed on the prior shift, but it does not cite a specific document detailing equipment status, isolation points, or carry-over communications.",
+                  "citations": [],
+                  "limitation": "No turnover log record is available in the evidence packet."
+                },
+                {
+                  "questionId": "bq-1d9svag",
+                  "status": "unknown",
+                  "answer": "The maintenance practice or work order for removing rolls and isolating hydraulics does not appear to include steps to secure or lower dependent equipment, as the incident occurred with the beam falling. However, no specific procedure document is available in the evidence packet to confirm what was intended versus what happened.",
+                  "citations": [
+                    {
+                      "sourceId": "GTDE-05",
+                      "quote": "Gravity and stored energy were not fully accounted for in the task-specific isolation. Adequate positive mechanical restraint for the raised assembly was not established."
+                    }
+                  ],
+                  "limitation": "Signed execution records are unavailable; this reflects a finding rather than a procedural requirement document."
+                },
+                {
+                  "questionId": "bq-4co1ew",
+                  "status": "partial",
+                  "answer": "The B hydraulics were shut off and bled, which allowed the yoke to drift down. The consequence of bleeding them while components remained raised was that gravity caused displacement.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "Work rolls and top and bottom backup rolls were removed on the prior shift... B hydraulics were shut off and bled."
+                    },
+                    {
+                      "sourceId": "GTDE-02",
+                      "quote": "The yoke drifted downward over approximately two hours while the wedged beam remained stationary. Relative movement displaced the link away from center until it cleared the yoke or lifting point."
+                    }
+                  ],
+                  "limitation": "Exact leak-down rate, pressure history, and pre-outage defect onset are not established (GTDE-03)."
+                },
+                {
+                  "questionId": "bq-1005oko",
+                  "status": "unknown",
+                  "answer": "There is no evidence of a formal change authorization issued for leaving the top backup roll balance raised with hydraulics bled, nor does any available record include safeguards against falling objects.",
+                  "citations": [
+                    {
+                      "sourceId": "GTDE-05",
+                      "quote": "This does not establish who authorized leaving the balance raised or whether any temporary restraint had been installed and later removed."
+                    }
+                  ],
+                  "limitation": "Signed execution records are unavailable (GTDE-05)."
+                },
+                {
+                  "questionId": "bq-x3em49",
+                  "status": "unknown",
+                  "answer": "The evidence does not specify what the two witnesses observed regarding abnormal motion or sound before the fall.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "two nearby contractors witnessed the fall."
+                    }
+                  ],
+                  "limitation": "Details of their observations prior to the event are not established in available records (GTDE-02)."
+                },
+                {
+                  "questionId": "q-1hgm37p",
+                  "status": "unknown",
+                  "answer": "It is unknown whether the crew understood that leaving a backup roll balance raised while bleeding adjacent hydraulics could alter load distribution or remove support for the carrier beam.",
+                  "citations": [],
+                  "limitation": "No record of crew understanding, briefing content, or training records exists in the evidence packet."
+                },
+                {
+                  "questionId": "q-1hqe2w8",
+                  "status": "partial",
+                  "answer": "The R3 exit yoke/carrier beam assembly relies on B hydraulics to maintain position; bleeding this system while a backup roll balance remains raised allows gravity to cause drift.",
+                  "citations": [
+                    {
+                      "sourceId": "GTDE-02",
+                      "quote": "With work rolls and backup rolls absent, the raised assembly could reach a position beyond its usual installed-roll limit... The yoke drifted downward over approximately two hours..."
+                    },
+                    {
+                      "sourceId": "notification",
+                      "quote": "...B hydraulics were shut off and bled."
+                    }
+                  ],
+                  "limitation": "Exact displacement, forces, and the time of initial wedging are not established (GTDE-02)."
+                },
+                {
+                  "questionId": "q-1pp4eqb",
+                  "status": "partial",
+                  "answer": "Leaving the top backup roll balance raised with hydraulics bled resulted in drift, but it is unclear if this mechanically disengaged or unloaded the beam from retention; gravity caused displacement.",
+                  "citations": [
+                    {
+                      "sourceId": "GTDE-02",
+                      "quote": "The yoke drifted downward over approximately two hours while the wedged beam remained stationary. Relative movement displaced the link away from center until it cleared the yoke or lifting point."
+                    }
+                  ],
+                  "limitation": "Exact displacement, forces, and whether mechanical disengagement occurred are not established (GTDE-02)."
+                },
+                {
+                  "questionId": "q-18shbzq",
+                  "status": "unknown",
+                  "answer": "The previous shift did communicate that work rolls were removed on the prior shift, but there is no evidence of a documented turnover log containing specific entries for raised balances or bled hydraulics.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "Work rolls and top and bottom backup rolls were removed on the prior shift."
+                    }
+                  ],
+                  "limitation": "Original video, drawings, measurements and signed isolation records are not available (hiddenTruth)."
+                },
+                {
+                  "questionId": "q-gibq52",
+                  "status": "unknown",
+                  "answer": "The executed outage preparation work scope or maintenance plan does not explicitly define steps for securing the exit carrier beam when backup rolls are removed and hydraulics isolated, as no such document is available.",
+                  "citations": [],
+                  "limitation": "Controlled drawings unavailable (GTDE-04); signed execution records unavailable (GTDE-05)."
+                },
+                {
+                  "questionId": "q-1vt0q9p",
+                  "status": "unknown",
+                  "answer": "The shift turnover log or handoff record from October 14 does not contain a specific entry noting that work rolls were removed, backup balances left raised, and hydraulics bled.",
+                  "citations": [],
+                  "limitation": "Signed execution records are unavailable (GTDE-05)."
+                },
+                {
+                  "questionId": "q-rliprg",
+                  "status": "unknown",
+                  "answer": "It is unknown whether the contractor crew working in the mill pit received a specific briefing on equipment conditions prior to starting work, and this was not documented.",
+                  "citations": [],
+                  "limitation": "No record of briefings or documentation exists."
+                },
+                {
+                  "questionId": "q-1fmm7gu",
+                  "status": "unknown",
+                  "answer": "There is no specific procedure or work order step documented requiring securing the carrier beam when removing rolls and isolating hydraulics, nor evidence that this was completed.",
+                  "citations": [],
+                  "limitation": "Controlled drawings unavailable (GTDE-04); signed execution records unavailable (GTDE-05)."
+                }
+              ]
+            },
+            "durationMs": 73709,
+            "engine": "ollama:qwen3.5:latest",
+            "validation": "valid",
+            "usage": {
+              "inputTokens": 2019,
+              "outputTokens": 1802
+            }
+          },
+          {
+            "output": {
+              "answers": [
+                {
+                  "questionId": "bq-71po3",
+                  "status": "unknown",
+                  "answer": "The provided evidence does not contain a shift turnover log or handoff record from October 14. The 'notification' source describes the incident and mentions that work rolls were removed on the prior shift, but it does not cite a specific document titled 'shift turnover log', nor does it detail equipment status, isolation points, or work scope carry-over in such a log.",
+                  "citations": [],
+                  "limitation": "No available source record describes the contents of a shift turnover log."
+                },
+                {
+                  "questionId": "bq-1d9svag",
+                  "status": "unknown",
+                  "answer": "The evidence does not establish whether maintenance practices or work orders include steps to secure dependent equipment. The 'notification' source states that the top backup roll balance was isolated raised and B hydraulics were bled, but it does not describe a procedure requiring securing of the carrier beam.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "The top backup roll balance was isolated raised; B hydraulics were shut off and bled."
+                    }
+                  ],
+                  "limitation": "No source record describes the specific maintenance practice or work order steps for securing dependent equipment."
+                },
+                {
+                  "questionId": "bq-4co1ew",
+                  "status": "unknown",
+                  "answer": "The evidence does not document the function of B hydraulics in relation to yoke support. The 'notification' source mentions that B hydraulics were bled, but it does not define their specific mechanical or hydraulic role regarding retention.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "B hydraulics were shut off and bled."
+                    }
+                  ],
+                  "limitation": "No source record defines the function of B hydraulics in relation to yoke or carrier-beam support, nor does it document consequences if they are bled while other components remain raised beyond stating that drift occurred after shutdown (GTDE-03)."
+                },
+                {
+                  "questionId": "bq-1005oko",
+                  "status": "unknown",
+                  "answer": "The evidence does not indicate whether a formal change authorization was issued for leaving the top backup roll balance raised. The 'notification' source states that work rolls were removed and hydraulics bled, but it provides no information on authorizations or safeguards.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "The top backup roll balance was isolated raised; B hydraulics were shut off and bled."
+                    }
+                  ],
+                  "limitation": "No source record describes a formal change authorization or associated safeguards against falling objects for this configuration."
+                },
+                {
+                  "questionId": "bq-x3em49",
+                  "status": "unknown",
+                  "answer": "The evidence does not confirm what the two witnesses observed before the fall. The 'notification' source states that two nearby contractors witnessed the fall, but it does not specify if they saw abnormal motion or sound prior to the event.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "two nearby contractors witnessed the fall."
+                    }
+                  ],
+                  "limitation": "No source record describes what specific observations (motion, sound) were made by witnesses before the incident occurred."
+                },
+                {
+                  "questionId": "q-1hgm37p",
+                  "status": "unknown",
+                  "answer": "The evidence does not establish whether the crew understood that leaving a backup roll balance raised while bleeding adjacent hydraulics could alter load distribution. The 'notification' source describes the configuration but does not record crew understanding.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "The top backup roll balance was isolated raised; B hydraulics were shut off and bled."
+                    }
+                  ],
+                  "limitation": "No source record documents the crew's understanding of load distribution changes or support removal consequences."
+                },
+                {
+                  "questionId": "q-1hqe2w8",
+                  "status": "unknown",
+                  "answer": "The evidence does not document that the R3 exit yoke/carrier beam assembly relies on B hydraulic pressure for retention. The 'notification' source mentions bleeding hydraulics and subsequent drift, but it does not explicitly state reliance on B hydraulics for support.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "B hydraulics were shut off and bled."
+                    }
+                  ],
+                  "limitation": "No source record documents the specific function of B hydraulic pressure in maintaining retention or support for the assembly, nor does it explicitly state that bleeding removes this support (though drift occurred)."
+                },
+                {
+                  "questionId": "q-1pp4eqb",
+                  "status": "unknown",
+                  "answer": "The evidence does not confirm if isolating B hydraulics or leaving the balance raised mechanically disengaged the carrier beam. The 'notification' source describes the configuration and subsequent drift, but it does not describe a mechanical disengagement event.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "The top backup roll balance was isolated raised; B hydraulics were shut off and bled."
+                    }
+                  ],
+                  "limitation": "No source record describes a mechanical disengagement or unloading of the carrier beam from its yoke retention caused by these actions."
+                },
+                {
+                  "questionId": "q-18shbzq",
+                  "status": "unknown",
+                  "answer": "The evidence does not confirm if previous shift communicated configuration status via a documented turnover log. The 'notification' source mentions the state of equipment but does not cite a specific communication record.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "Work rolls and top and bottom backup rolls were removed on the prior shift."
+                    }
+                  ],
+                  "limitation": "No source record describes a documented turnover log containing communication of configuration status from Turn 1 to Turn 2."
+                },
+                {
+                  "questionId": "q-gibq52",
+                  "status": "unknown",
+                  "answer": "The evidence does not show that the executed outage preparation work scope or Work Order explicitly defines steps for securing the exit carrier beam. The 'notification' source describes actions taken but does not cite a specific document defining these steps.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "Work rolls and top and bottom backup rolls were removed on the prior shift."
+                    }
+                  ],
+                  "limitation": "No source record describes an executed outage preparation work scope or Work Order that explicitly defines steps for securing the exit carrier beam when removing rolls and isolating hydraulics."
+                },
+                {
+                  "questionId": "q-1vt0q9p",
+                  "status": "unknown",
+                  "answer": "The evidence does not show a specific entry in a shift turnover log noting that work rolls were removed, backup balances left raised, and hydraulics bled. The 'notification' source mentions these facts but attributes them to the incident description rather than a specific log entry.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "Work rolls and top and bottom backup rolls were removed on the prior shift."
+                    }
+                  ],
+                  "limitation": "No source record describes a shift turnover log or handoff record from October 14 containing specific entries for these configuration details."
+                },
+                {
+                  "questionId": "q-rliprg",
+                  "status": "unknown",
+                  "answer": "The evidence does not confirm if the contractor crew received a specific briefing on equipment conditions or if this was documented. The 'notification' source mentions contractors worked there earlier and witnessed the fall, but it provides no details about briefings.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "Contractor employees had worked there earlier..."
+                    }
+                  ],
+                  "limitation": "No source record describes a specific briefing on equipment conditions received by the contractor crew or documentation of such a briefing."
+                },
+                {
+                  "questionId": "q-1fmm7gu",
+                  "status": "unknown",
+                  "answer": "The evidence does not identify a specific procedure or work order step requiring securing the carrier beam when removing rolls and isolating hydraulics. The 'notification' source describes actions taken but does not cite a document defining these steps.",
+                  "citations": [
+                    {
+                      "sourceId": "notification",
+                      "quote": "Work rolls and top and bottom backup rolls were removed on the prior shift."
+                    }
+                  ],
+                  "limitation": "No source record describes a specific procedure or work order step requiring securing of the carrier beam when removing rolls and isolating hydraulics, nor does it state if this was completed by Turn 1."
+                }
+              ]
+            },
+            "durationMs": 68048,
+            "engine": "ollama:qwen3.5:latest",
+            "validation": "valid",
+            "usage": {
+              "inputTokens": 2080,
+              "outputTokens": 2079
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Purpose
+Propose corrective actions for the supplied supported causal target only. State the responsible role, completion evidence, and effectiveness check. Address the mechanism rather than generic retraining or blame. Prefer eliminating the hazard or engineering controls when supported by the scenario, but do not invent a design specification. These are proposals for human approval, not authorized work instructions or proof that the investigation is closed.

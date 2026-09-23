@@ -1,0 +1,10 @@
+{
+  "endpoint": "/api/tracks/5effca62-8b57-4353-ad96-830d2ee5dbab/story",
+  "body": {
+    "action": "apply",
+    "roundId": "32db597b-5b27-4d38-b39a-fb64a93d821a",
+    "strictCausal": true
+  },
+  "formFiles": null,
+  "at": "2026-09-15T04:36:54.522Z"
+}

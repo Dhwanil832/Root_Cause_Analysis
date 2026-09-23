@@ -1,0 +1,710 @@
+{
+  "track": {
+    "id": "eebd569e-92a1-4b41-87c3-3f4953cfb2a6",
+    "incident_id": "b7c62bf9-604c-4312-9520-7b63b20b7363",
+    "model_id": "ollama:qwen3.5:latest",
+    "model_name": "qwen3.5:latest",
+    "provider": "ollama",
+    "created_at": "2026-09-16T18:16:47.795Z"
+  },
+  "version": 1,
+  "questions": [
+    {
+      "id": "bq-1fanm2w",
+      "text": "Do any SCADA, DCS, or field records show a simultaneous low-pressure event at other downstream points (e.g., North gallery) that would indicate an upstream source failure versus a localized leak?"
+    },
+    {
+      "id": "bq-4zrvtc",
+      "text": "Was there any engineering disposition, drawing redline, or temporary instruction issued for changes to instrument-air service affecting RHOB between 2024-03-01 and May 20, 2024?"
+    },
+    {
+      "id": "bq-u11qz3",
+      "text": "Which version of the equipment-location sheet (DW-1SC-17) did U-A/U-B use, and was it revised after any recent changes?"
+    },
+    {
+      "id": "q-1q67y6d",
+      "text": "Did U-A and/or U-B experience fatigue, high workload, time pressure, or physical limitations that could have affected their ability to observe cues, communicate effectively with RHOB operations, or execute the maintenance preparation steps as intended?"
+    },
+    {
+      "id": "q-1m9qc0f",
+      "text": "What specific field actions (valve positions, isolation steps) were performed by U-A and/or U-B immediately before the 10:00 AM air loss event?"
+    },
+    {
+      "id": "q-isvv2m",
+      "text": "Was there a breakdown in communication between the Utilities crew and RHOB operations regarding the air-low indication at 10:00 AM, or was the response time consistent with established procedures?"
+    },
+    {
+      "id": "q-1g3wd0d",
+      "text": "Was any component of the #1 slab caster (1SC) compressor/dryer system, receiving header H-R, or associated distribution piping physically damaged, blocked, leaking, or misaligned at the time of failure?"
+    },
+    {
+      "id": "q-1n5sgb8",
+      "text": "Were all required guards, supports, and attachments installed correctly on the 1SC dryer group or receiving header H-R before work began?"
+    },
+    {
+      "id": "q-lfkyw6",
+      "text": "Had the 1SC dryer group or receiving header H-R been inspected, maintained, repaired, modified, or reported defective prior to the incident?"
+    },
+    {
+      "id": "q-p37639",
+      "text": "Were the operating conditions (pressure, temperature, flow) within design limits for all involved equipment and piping?"
+    },
+    {
+      "id": "q-aodn1z",
+      "text": "Were there any external factors (third-party work, utility outage, environmental event) that could have interrupted the air supply?"
+    },
+    {
+      "id": "q-1sfb01e",
+      "text": "Was mechanical completion verified for any installed work or configuration changes before the crew began preparation at ~09:48 AM?"
+    },
+    {
+      "id": "q-1qywya4",
+      "text": "Did the crew use a current, issued configuration drawing for 1SC dryer D-101 that matched actual field conditions at the time of work?"
+    },
+    {
+      "id": "q-8irrr9",
+      "text": "Was there documented confirmation between Utilities and RHOB that the air-low alarm at ~10:00 AM was understood, assessed, and responded to appropriately?"
+    },
+    {
+      "id": "q-1o0jjls",
+      "text": "What specific information did RHOB convey in their initial notification at ~10:00 AM regarding the air loss (e.g., suspected origin, severity, or required action)?"
+    },
+    {
+      "id": "cq-pwqnd1",
+      "text": "Do any SCADA, DCS, or field records show a simultaneous low-pressure event at other downstream points (e.g., North gallery) that would indicate an upstream source failure versus a localized leak?"
+    },
+    {
+      "id": "cq-1bjavkz",
+      "text": "Was there any engineering disposition, drawing redline, or temporary instruction issued for changes to instrument-air service affecting RHOB between 2024-03-01 and May 20, 2024?"
+    },
+    {
+      "id": "cq-aiwqqn",
+      "text": "Which version of the equipment-location sheet (DW-1SC-17) did U-A/U-B use, and was it revised after any recent changes?"
+    },
+    {
+      "id": "cq-r5bh3",
+      "text": "Did U-A and/or U-B experience fatigue, high workload, time pressure, or physical limitations that could have affected their ability to observe cues, communicate effectively with RHOB operations, or execute the maintenance preparation steps as intended?"
+    },
+    {
+      "id": "cq-1w5y16f",
+      "text": "What specific field actions (valve positions, isolation steps) were performed by U-A and/or U-B immediately before the 10:00 AM air loss event?"
+    },
+    {
+      "id": "cq-5aexia",
+      "text": "Was mechanical completion verified for any installed work or configuration changes before the crew began preparation at ~09:48 AM?"
+    },
+    {
+      "id": "cq-9i9251",
+      "text": "Did the crew use a current, issued configuration drawing for 1SC dryer D-101 that matched actual field conditions at the time of work?"
+    },
+    {
+      "id": "cq-ynftlr",
+      "text": "Was there documented confirmation between Utilities and RHOB that the air-low alarm at ~10:00 AM was understood, assessed, and responded to appropriately?"
+    },
+    {
+      "id": "cq-d2k2sb",
+      "text": "Do any SCADA, DCS, or field records show a simultaneous low-pressure event at other downstream points (e.g., North gallery) that would indicate an upstream source failure versus a localized leak?"
+    },
+    {
+      "id": "cq-1ozky10",
+      "text": "Was there any engineering disposition, drawing redline, or temporary instruction issued for changes to instrument-air service affecting RHOB between 2024-03-01 and May 20, 2024?"
+    },
+    {
+      "id": "cq-7ra9m1",
+      "text": "Which version of the equipment-location sheet (DW-1SC-17) did U-A/U-B use, and was it revised after any recent changes?"
+    },
+    {
+      "id": "cq-1udf507",
+      "text": "Did U-A and/or U-B experience fatigue, high workload, time pressure, or physical limitations that could have affected their ability to observe cues, communicate effectively with RHOB operations, or execute the maintenance preparation steps as intended?"
+    },
+    {
+      "id": "cq-1gbbza8",
+      "text": "What specific field actions (valve positions, isolation steps) were performed by U-A and/or U-B immediately before the 10:00 AM air loss event?"
+    },
+    {
+      "id": "cq-tmvj6a",
+      "text": "Was there a breakdown in communication between the Utilities crew and RHOB operations regarding the air-low indication at 10:00 AM, or was the response time consistent with established procedures?"
+    },
+    {
+      "id": "cq-fg8rfm",
+      "text": "Was any component of the #1 slab caster (1SC) compressor/dryer system, receiving header H-R, or associated distribution piping physically damaged, blocked, leaking, or misaligned at the time of failure?"
+    },
+    {
+      "id": "cq-1mx164v",
+      "text": "Was mechanical completion verified for any installed work or configuration changes before the crew began preparation at ~09:48 AM?"
+    },
+    {
+      "id": "cq-of01u",
+      "text": "Do any SCADA, DCS, or field records show a simultaneous low-pressure event at other downstream points (e.g., North gallery) that would indicate an upstream source failure versus a localized leak?"
+    },
+    {
+      "id": "cq-1drxghv",
+      "text": "Was there any engineering disposition, drawing redline, or temporary instruction issued for changes to instrument-air service affecting RHOB between 2024-03-01 and May 20, 2024?"
+    },
+    {
+      "id": "cq-1lpmv31",
+      "text": "Which version of the equipment-location sheet (DW-1SC-17) did U-A/U-B use, and was it revised after any recent changes?"
+    },
+    {
+      "id": "cq-1y6gho0",
+      "text": "Did U-A and/or U-B experience fatigue, high workload, time pressure, or physical limitations that could have affected their ability to observe cues, communicate effectively with RHOB operations, or execute the maintenance preparation steps as intended?"
+    },
+    {
+      "id": "cq-7kpcjr",
+      "text": "What specific field actions (valve positions, isolation steps) were performed by U-A and/or U-B immediately before the 10:00 AM air loss event?"
+    },
+    {
+      "id": "cq-16fzxvq",
+      "text": "Was there a breakdown in communication between the Utilities crew and RHOB operations regarding the air-low indication at 10:00 AM, or was the response time consistent with established procedures?"
+    },
+    {
+      "id": "cq-1dg9aty",
+      "text": "Was any component of the #1 slab caster (1SC) compressor/dryer system, receiving header H-R, or associated distribution piping physically damaged, blocked, leaking, or misaligned at the time of failure?"
+    },
+    {
+      "id": "cq-191qbbj",
+      "text": "Were all required guards, supports, and attachments installed correctly on the 1SC dryer group or receiving header H-R before work began?"
+    },
+    {
+      "id": "vq-1j0c93y",
+      "text": "What specific evidence confirms the origin of the pressure loss and validates that 'verified' status is appropriate for this focal event?"
+    },
+    {
+      "id": "vq-15k3nss",
+      "text": "What evidence confirms that the crew saw the specific configuration drawing used for WO-527?"
+    },
+    {
+      "id": "vq-10xvg5",
+      "text": "Was a service-routing change affecting WO-527 documented in any issued ECP revision or temporary instruction attached to the work package before the incident?"
+    },
+    {
+      "id": "vq-15fecc",
+      "text": "Did crew members U-A or U-B fill out any entries on WO-527-E before 10:00 AM?"
+    },
+    {
+      "id": "vq-1m0lhsl",
+      "text": "Was there any documented briefing or distribution notice for ECP-1SC-04 Revision B (or later) to the Utilities crew prior to WO-527 issue time?"
+    },
+    {
+      "id": "vq-1cagkkv",
+      "text": "Did crew U-A/U-B physically verify or lock out specific supply lines (e.g., D-101 inlet) at 09:48, and is that state recorded in WO-527-E?"
+    },
+    {
+      "id": "vq-3lz41j",
+      "text": "Was there any verbal confirmation of understanding regarding the air loss event recorded in an interview or debrief note for U-A/U-B?"
+    },
+    {
+      "id": "vq-txol7d",
+      "text": "Does the single page (incident-description) constitute independent proof that the origin is currently unknown, or does it merely assert uncertainty without establishing a formal record gap?"
+    },
+    {
+      "id": "vq-m1ajf1",
+      "text": "Are there any upstream instrument-air supply contracts, shared distribution schematics, or external facility notifications that could confirm whether a wider outage occurred?"
+    },
+    {
+      "id": "vq-1w8ahga",
+      "text": "Can we obtain pre-incident inspection checklists or post-restoration equipment status confirmations to verify integrity?"
+    },
+    {
+      "id": "vq-1adixza",
+      "text": "Are there any shift rosters, overtime logs, or operator self-reports for May 20 that could indicate high workload or time pressure?"
+    },
+    {
+      "id": "vq-ressxy",
+      "text": "Can we obtain the call log entries between RHOB control room and Utilities team members from approximately 9:55 AM to 10:30 AM?"
+    },
+    {
+      "id": "vq-6b6c2",
+      "text": "Do any digital work orders, paper checklists, or electronic signatures exist in the CMMS that confirm mechanical completion before air restoration?"
+    },
+    {
+      "id": "vq-7lnjkx",
+      "text": "Does any attached document contain a dated piping diagram or LOTO checklist signed by the crew for this specific maintenance task?"
+    },
+    {
+      "id": "vq-1wyj3hj",
+      "text": "Is there any transcript, ticket note, or digital alert acknowledgement confirming that both parties understood the low-pressure condition?"
+    },
+    {
+      "id": "vq-69a8m1",
+      "text": "Can you provide documentation (or interview testimony) showing which version of the configuration drawing was used by U-A/U-B at 10:00 AM and whether they were briefed on equipment changes?"
+    },
+    {
+      "id": "vq-1t2ndcw",
+      "text": "Did crew members carry an alternate version of WO-527-E outside the folder system, and if so, where was it located?"
+    },
+    {
+      "id": "vq-4dula1",
+      "text": "What is the exact time difference between the system generating the 'air-low' alarm and the operator logging it as an event at 10:00 AM? Does the log entry represent a formal report to management or simply an internal acknowledgment of an active alarm?"
+    },
+    {
+      "id": "vq-1yeogz9",
+      "text": "Is there any record (chat log, call recording summary) where Utilities explicitly state 'We received your report' or similar confirmation at ~10:02 AM?"
+    },
+    {
+      "id": "vq-1achyp2",
+      "text": "Was there a documented service-routing change affecting this boundary at 10:00 AM, and if so, was Engineering disposition obtained?"
+    },
+    {
+      "id": "vq-v2zyg0",
+      "text": "Was there a signed mechanical completion check-list for 1SC dryer group D-101 prior to starting maintenance?"
+    },
+    {
+      "id": "vq-1f8jhhk",
+      "text": "Which revision of DW-1SC-17 did the crew use, and how does it compare to actual valve positions observed?"
+    },
+    {
+      "id": "vq-t5gajb",
+      "text": "Is there a written procedure (ECP, SOP, or Work Order Instruction) that mandates documenting a discussion on root cause assessment or response step confirmation prior to resuming work after an air interruption?"
+    },
+    {
+      "id": "vq-171ove8",
+      "text": "Does the revision history for ECP-1SC-04 show any modifications affecting RHOB boundary definitions between 2024-03-01 and May 20? If not, does the blank attachment field indicate that no such documentation was issued?"
+    },
+    {
+      "id": "vq-52l0ma",
+      "text": "What was the recorded value or state of local indication P-R at 09:45 AM and immediately before the pressure loss?"
+    },
+    {
+      "id": "vq-1fi1h0",
+      "text": "Does any other source confirm that the air-low indication at 10:00 AM was a physical event caused by supply interruption, not merely a log entry in a synthetic exercise?"
+    },
+    {
+      "id": "vq-w0jjon",
+      "text": "Does the work package cover (IA-S02) requirement for 'WO-527-E' field execution record imply it must be completed before maintenance release, and is there evidence that U-A/U-B failed to complete it?"
+    },
+    {
+      "id": "vq-s5h73l",
+      "text": "Are there engineering logs showing any service-routing changes affecting RHOB instrument air during the period March–May 2024?"
+    },
+    {
+      "id": "vq-1ob77mb",
+      "text": "Do SCADA trends exist that show whether the pressure loss originated at the compressor source, within a specific branch valve, or downstream of the Utilities gallery?"
+    },
+    {
+      "id": "vq-yf3ofn",
+      "text": "Does the execution record for WO-527 contain a timestamped log or signature confirming which valves were open/closed during boundary preparation?"
+    },
+    {
+      "id": "vq-19fb4b8",
+      "text": "Is there an applicable procedure that defines the maximum allowable time to respond to an air-low indication during maintenance boundary preparation?"
+    },
+    {
+      "id": "vq-19jei8c",
+      "text": "Did a service-routing change occur in the RHOB or 1SC dryer system between March 20, 2024 (policy effective date) and May 20, 2024?"
+    },
+    {
+      "id": "vq-19h2ez3",
+      "text": "Do SCADA trends show pressure drops originating upstream of RHOB before 10:00 AM on May 20?"
+    },
+    {
+      "id": "vq-1srt225",
+      "text": "Did crew members hold or reference a specific revision number for DW-1SC-17 during the gallery work?"
+    },
+    {
+      "id": "vq-gbhw1r",
+      "text": "What was the exact wording of RHOB's request at 10:02, and what specific actions did Utilities take immediately after receiving it?"
+    },
+    {
+      "id": "vq-j1dhvc",
+      "text": "Were there any approved but unimplemented changes to the instrument-air distribution network in the RHOB area during Turn 2 of May 20?"
+    },
+    {
+      "id": "vq-1g5x3cu",
+      "text": "Do any utility distribution logs or third-party work orders exist for May 20, 2024 that show a pressure loss starting around 10:00 AM?"
+    },
+    {
+      "id": "vq-be1uy",
+      "text": "Are there any field inspection logs or pressure test records from the morning of May 20 that document valve positions or equipment condition before the interruption?"
+    },
+    {
+      "id": "vq-bxgrbh",
+      "text": "Does the revision history for DW-1SC-17 show any changes between March 2024 and May 20, 2024 that were not distributed to the crew?"
+    },
+    {
+      "id": "vq-1nvbu1x",
+      "text": "Does a Change Management log exist for instrument-air routing changes affecting RHOB between Q1-Q2 2024? If yes, does it show an open or closed status for any relevant work orders?"
+    },
+    {
+      "id": "vq-zyn2wt",
+      "text": "Did the Utilities team acknowledge receipt of the air-low alarm before or after pressure was restored? If yes, how long did it take?"
+    },
+    {
+      "id": "vq-y0gkf1",
+      "text": "Were there any recorded communications indicating confusion, delay in acknowledging the alarm, or misinterpretation during the event?"
+    },
+    {
+      "id": "vq-145ig6n",
+      "text": "What were the actual valve states at 09:48 AM? Were any valves inadvertently left open/closed contrary to procedure?"
+    },
+    {
+      "id": "vq-c8gfn7",
+      "text": "Did any log entry, briefing record, or interview indicate a gap in shared understanding of the air-low event's origin or response?"
+    },
+    {
+      "id": "vq-1w169ar",
+      "text": "Was there any procedure requiring mechanical completion verification before boundary release? If so, was it performed?"
+    },
+    {
+      "id": "vq-m7d434",
+      "text": "Were there any service-routing changes affecting the RHOB instrument-air system between March 2024 and May 2024?"
+    },
+    {
+      "id": "vq-10e0xfs",
+      "text": "Did the air interruption originate from an unrecorded service-routing change at node-elx3yo?"
+    },
+    {
+      "id": "vq-didoj8",
+      "text": "Was there an established procedural requirement violated by the delay between 10:00 (alarm) and 10:02 (pause), or was this a normal operational pause?"
+    },
+    {
+      "id": "vq-9gzhah",
+      "text": "Where did the pressure loss originate (source header H-R, distribution system leak, or receiving equipment)?"
+    },
+    {
+      "id": "vq-1cq95dh",
+      "text": "What specific equipment or process condition caused the air-low indication to appear at RHOB P-R at approximately 10:00 AM?"
+    },
+    {
+      "id": "vq-1p6ezsl",
+      "text": "Does the absence of a maintenance acceptance signature indicate that an isolation step was omitted or that equipment remained energized when it should have been isolated?"
+    },
+    {
+      "id": "vq-1ylnvbm",
+      "text": "Is there a current piping diagram, P&ID revision, or field log that records valve positions for the RHOB service station and dryer aisle as of May 20, 2024?"
+    },
+    {
+      "id": "vq-ul3eym",
+      "text": "What SCADA data or field observation confirms whether the interruption originated upstream in the distribution system versus downstream equipment failure?"
+    },
+    {
+      "id": "vq-1c9f25j",
+      "text": "Were there any service-routing changes to the RHOB instrument-air system in Q1-Q2 2024 that required ECP revision or temporary instruction attachment?"
+    },
+    {
+      "id": "vq-8zps4e",
+      "text": "Did a service-routing change occur in this case? If yes, is there an approved temporary instruction or revised ECP attached to WO-527?"
+    },
+    {
+      "id": "vq-1o65js3",
+      "text": "Did the crew perform a field check of valve states and confirm isolation integrity before proceeding with work at approximately 10:00 AM?"
+    },
+    {
+      "id": "vq-1nik2rr",
+      "text": "Is there a procedure requiring documented acknowledgment of response steps when an instrument-air low indication occurs during maintenance preparation?"
+    },
+    {
+      "id": "vq-idgvrb",
+      "text": "Which revision number of DW-1SC-17 was carried to the field, and did either crew member reference a different version than Revision A?"
+    },
+    {
+      "id": "vq-e6oygm",
+      "text": "What specific messages were exchanged between the control rooms at 10:02 versus 10:07, and does the procedure define a maximum allowable interval before field attendance is required?"
+    },
+    {
+      "id": "vq-1h8yiy8",
+      "text": "Did the Utilities supervisor verbally confirm with Crew U-A/U-B at 10:02–10:07 that they understood the pause and next steps, even if not logged?"
+    }
+  ],
+  "scenario": {
+    "id": "35d80390-b10c-4424-8dfc-07a3db93e3cc",
+    "track_id": "eebd569e-92a1-4b41-87c3-3f4953cfb2a6",
+    "title": "IA-16036 — focused instrument-record evidence holder",
+    "model_id": "ollama:qwen3.5:latest",
+    "created_at": "2026-09-16T23:19:36.485Z",
+    "definition": {
+      "title": "IA-16036 — focused instrument-record evidence holder",
+      "hiddenTruth": "This is a fixed synthetic evaluation, not an authentic plant investigation. Only the attached available source records may establish releasable facts. No additional private causal answer key is supplied. Missing records and undocumented events remain unknown or unavailable; do not invent them, promote absence of documentation to absence of an action, or resolve a disputed assertion without supporting evidence.",
+      "sources": [
+        {
+          "id": "IA-I01",
+          "title": "Instrument-air interruption during maintenance preparation",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Instrument-air interruption during maintenance preparation\n\nRecord ID: IA-I01\n\nSynthetic evaluation record derived from a historical incident. Not an actual company record or operating instruction.\n\nAt approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored. No injury is reported in this evaluation case.\n\nThe initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment. Supporting records will be provided as the investigation develops.\n",
+          "available": true
+        },
+        {
+          "id": "IA-D01",
+          "title": "Utilities area and service directory",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Utilities area and service directory\n\nRecord ID: IA-D01 | Revision: 2 | Effective: 2024-04-01\n\nSynthetic evaluation record. All equipment identifiers and layout details are fictional and are not operating instructions.\n\n## Service areas\n\nThe Utilities air gallery serves the 1SC dryer group and distributes instrument air to the RHOB process area. RHOB is the local area name used in these records; it is not an individual compressor identifier. The 1SC gallery and RHOB instrument-air station are separate operating locations.\n\n| Location | Equipment/service | Normal record custodian |\n| --- | --- | --- |\n| North gallery | Site air-header connection, local indication P-U | Utilities operations |\n| Dryer aisle | Dryer group D-101 and main-route valves M-101/M-102 | Utilities maintenance |\n| East service rack | Auxiliary line installation area | Projects and Utilities |\n| RHOB service station | Receiving header H-R and indication P-R | RHOB operations |\n\n## Roles\n\nUtilities prepares the maintenance boundary. RHOB operations observes the receiving process. Maintenance receives the work boundary only after its release. A maintenance work order being scheduled is not a record that the boundary has been released.\n\nThis directory is a location index. It is not a current piping diagram and does not establish valve positions or the pressure available at any given time.\n",
+          "available": true
+        },
+        {
+          "id": "IA-D02",
+          "title": "Record and measurement conventions",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Record and measurement conventions\n\nRecord ID: IA-D02 | Revision: 1 | Effective: 2024-04-01\n\nSynthetic evaluation record. Conventions apply to this fictional case only.\n\n## Measurements\n\nPressure values are bar gauge. A pressure tag names the measurement point, not every location on the service. The point register is needed to interpret location and scope. A running indication is not a flow measurement. A command, a field-position observation and a proved internal valve condition are different records.\n\n## Time and identity\n\nWall times are local plant time on the stated date. Handwritten records are approximate unless stated otherwise. An alarm's occurrence time, acknowledgment time and export time may differ. Record aliases can persist after equipment changes; the title displayed on an alarm is not a substitute for its input mapping.\n\n## Status conventions\n\n“Filed” means retained in the archive. “Issued” means distributed for its stated use. “Installed” refers to a physical change. “Maintenance released” refers to work-boundary acceptance. None automatically establishes the other statuses.\n\nAn empty form field records no value. The reason it is empty requires other evidence. A draft, an issued revision and a historical reference copy can all exist at the same time.\n",
+          "available": true
+        },
+        {
+          "id": "IA-D03",
+          "title": "Change and work-record requirements",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Change and work-record requirements\n\nRecord ID: IA-D03 | Revision: 4 | Effective: 2024-03-01\n\nSynthetic evaluation record. Fictional administrative requirements, not the partner's actual policy or a safe-work procedure.\n\n## Change records\n\nSection 3.2: When a service-routing change affects an existing maintenance boundary, the change owner identifies the affected energy-control procedure (ECP), drawing and receiving operating area. Engineering disposition is required before the changed arrangement is used for that maintenance boundary.\n\nSection 3.4: Mechanical completion verifies the installed work covered by the completion sheet. Work-document disposition and distribution are separate signoffs. A drawing redline is not, by itself, an issued operating document.\n\nSection 3.6: The affected ECP is either revised and issued, or an approved temporary instruction is attached to the work package. Draft preparation alone does not satisfy distribution.\n\n## Work records\n\nSection 5.1: The work package records the ECP revision supplied to the crew and the maintenance boundary's acceptance state. An initial notification may be entered before the event sequence has been checked.\n\nSection 5.3: Competence and authorization records define the tasks for which a person is qualified. They do not record what that person actually observed or did on a particular job.\n",
+          "available": true
+        },
+        {
+          "id": "IA-S01",
+          "title": "Utilities and RHOB shift entries",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Utilities and RHOB shift entries\n\nRecord ID: IA-S01 | Log date: 2024-05-20 | Exported: 2024-05-20 13:00\n\nSynthetic evaluation record. Times and entries are reconstructed for the exercise.\n\n| Time | Desk | Entry |\n| --- | --- | --- |\n| 07:00 | Utilities | Two-person 1SC dryer maintenance-preparation assignment reviewed. WO-527 scheduled. |\n| 08:10 | RHOB | Morning check: local air indication in normal band. |\n| 09:35 | Utilities | Crew U-A/U-B collected WO-527 work folder and lock equipment. |\n| 09:48 | Utilities | Crew at gallery. Boundary preparation in progress; maintenance release pending. |\n| About 10:00 | RHOB | Air-low indication. Local controls showing supply complaints. Requested Utilities attendance. |\n| 10:02 | Utilities | Work paused. RHOB service issue under review. No line opening authorized. |\n| About 10:07 | RHOB | Local indication returned to normal band. Asked to retain alarm and pressure records. |\n| 10:20 | Utilities | Maintenance deferred. Work folder retained for review. |\n\nThe desk entries do not log every field operation. They do not identify the point at which the air supply was interrupted. “Normal band” is the operator's entry, not a captured numeric measurement.\n",
+          "available": true
+        },
+        {
+          "id": "IA-S02",
+          "title": "WO-527 work-package cover and attachment index",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# WO-527 work-package cover and attachment index\n\nRecord ID: IA-S02 | Issued copy: 2024-05-20 09:31\n\nSynthetic evaluation record. This is an administrative excerpt, not an executable isolation procedure.\n\nWork scope: planned maintenance and inspection of 1SC dryer group D-101. Receiving operation: RHOB instrument-air service. Crew assignment: U-A and U-B. Work boundary: preparation only at time of initial notification.\n\n| Attachment | Revision/status shown on supplied copy | Purpose |\n| --- | --- | --- |\n| ECP-1SC-04 | Revision 3, issued 2024-03-04 | Work-boundary document |\n| DW-1SC-17 | Revision A | Referenced equipment-location sheet |\n| WO-527-E | Blank at folder issue | Field execution record |\n| Daily work briefing | 2024-05-20 | Assignment and coordination |\n\nTemporary instruction attachment field: blank.\n\nMaintenance acceptance signature: not yet signed at notification time. The signature field is a work-stage record; it is not evidence that any particular field valve was open or closed.\n",
+          "available": true
+        },
+        {
+          "id": "IA-S03",
+          "title": "Assignment and authorization extract",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Assignment and authorization extract\n\nRecord ID: IA-S03 | Retrieved: 2024-05-20 15:00\n\nSynthetic evaluation record. Personnel codes are fictional; no actual employee records are reproduced.\n\n| Person code | Assigned role on WO-527 | Recorded qualification at shift start |\n| --- | --- | --- |\n| U-A | Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| U-B | Second Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| M-A | Maintenance receiver | Current dryer-maintenance qualification; boundary acceptance pending |\n\nThe daily briefing attendance sheet lists U-A and U-B. Its topic line reads “1SC dryer work and RHOB service coordination.” It contains no valve-by-valve content. The training extract does not state which configuration drawing the crew saw or whether either person received a recent change briefing.\n\nNo interview concerning fatigue, workload or individual intent is included in this extract.\n",
+          "available": true
+        },
+        {
+          "id": "IA-P01",
+          "title": "Pressure and alarm extract",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Pressure and alarm extract\n\nRecord ID: IA-P01 | Exported: 2024-05-20 14:00 | Window: 09:54–10:08\n\nSynthetic evaluation record. Numeric values and timestamped rows are fictional measurements for this exercise.\n\n## Selected pressure samples\n\nValues are bar gauge. The export supplies these sampled values, not a continuous waveform.\n\n| Local time | P-U | P-R | C-11 RUN |\n| --- | ---: | ---: | --- |\n| 09:54:00 | 6.9 | 6.8 | 1 |\n| 09:59:50 | 6.9 | 6.8 | 1 |\n| 10:00:11 | 6.9 | 5.8 | 1 |\n| 10:00:40 | 6.9 | 4.1 | 1 |\n| 10:01:10 | 6.8 | 3.4 | 1 |\n| 10:03:10 | 6.9 | 2.6 | 1 |\n| 10:05:50 | 6.9 | 2.1 | 1 |\n| 10:06:20 | 6.9 | 6.0 | 1 |\n| 10:06:50 | 6.9 | 6.8 | 1 |\n| 10:08:00 | 6.9 | 6.8 | 1 |\n\n## Alarm journal selection\n\n| Point | Display label | Occurred | Acknowledged | Cleared |\n| --- | --- | --- | --- | --- |\n| AL-44 | COMP FAULT | 10:00:32 | 10:03:14 | 10:06:24 |\n\nThis export does not include the alarm input mapping, valve states or flow values. C-11 RUN is a running-status bit. Its exact service association is in the point register. All displayed pressure samples have good acquisition quality; sensor accuracy and full time coverage are separate matters.\n",
+          "available": true
+        },
+        {
+          "id": "IA-P02",
+          "title": "Utilities point register extract",
+          "sourceClass": "Synthetic evaluation record; retain the provenance and limitations stated in the record.",
+          "text": "# Utilities point register extract\n\nRecord ID: IA-P02 | Configuration revision: PR-12 | Effective: 2024-05-01\n\nSynthetic evaluation record. Applies only to the fictional instrumentation in this case.\n\n| Point | Location/input | Description and scope |\n| --- | --- | --- |\n| P-U | Site header H-U, north gallery | Pressure upstream of the 1SC distribution routes |\n| P-R | RHOB receiving header H-R | Pressure at the RHOB instrument-air receiving station |\n| C-11 RUN | C-11 starter auxiliary contact | Common-header compressor motor running indication; not a local flow proof |\n| AL-44 | RHOB PLC low-pressure input from P-R | Active below 4.5 bar; clears above 5.0 bar |\n\nAL-44 display text was retained as “COMP FAULT” from an earlier operator-screen template. PR-12 maps it to the receiving-header pressure condition, not to C-11's trip contact.\n\nThis register maps signals. It does not establish the state of any distribution valve or prove that every supply disturbance would appear in the selected sample export.\n",
+          "available": true
+        }
+      ]
+    }
+  },
+  "rounds": [
+    {
+      "id": "323756f5-dbe1-4650-9121-d583b3f97d77",
+      "scenario_id": "35d80390-b10c-4424-8dfc-07a3db93e3cc",
+      "base_version": 1,
+      "status": "ready",
+      "error": "",
+      "result_version": null,
+      "created_at": "2026-09-16T23:19:36.504Z",
+      "updated_at": "2026-09-16T23:20:24.992Z",
+      "questions": [
+        {
+          "id": "bq-1fanm2w",
+          "text": "Do any SCADA, DCS, or field records show a simultaneous low-pressure event at other downstream points (e.g., North gallery) that would indicate an upstream source failure versus a localized leak?"
+        },
+        {
+          "id": "vq-52l0ma",
+          "text": "What was the recorded value or state of local indication P-R at 09:45 AM and immediately before the pressure loss?"
+        },
+        {
+          "id": "vq-zyn2wt",
+          "text": "Did the Utilities team acknowledge receipt of the air-low alarm before or after pressure was restored? If yes, how long did it take?"
+        },
+        {
+          "id": "vq-1cq95dh",
+          "text": "What specific equipment or process condition caused the air-low indication to appear at RHOB P-R at approximately 10:00 AM?"
+        }
+      ],
+      "output": {
+        "output": {
+          "answers": [
+            {
+              "questionId": "bq-1fanm2w",
+              "status": "unknown",
+              "answer": "The available evidence does not establish whether a simultaneous low-pressure event occurred at other downstream points such as the North gallery. The pressure extract (IA-P01) supplies sampled values for P-U and P-R but explicitly states it is not a continuous waveform and does not include data from all locations or valve states.",
+              "citations": [
+                {
+                  "sourceId": "IA-P01",
+                  "quote": "The export supplies these sampled values, not a continuous waveform."
+                },
+                {
+                  "sourceId": "IA-S01",
+                  "quote": "They do not identify the point at which the air supply was interrupted."
+                }
+              ],
+              "limitation": "The export supplies these sampled values, not a continuous waveform."
+            },
+            {
+              "questionId": "vq-52l0ma",
+              "status": "unknown",
+              "answer": "The available evidence does not establish whether a local indication P-R reading was recorded at 09:45 AM. The pressure extract (IA-P01) supplies sampled values starting at 09:54, and the shift entries (IA-S01) do not log every field operation or specific numeric measurements for that time.",
+              "citations": [
+                {
+                  "sourceId": "IA-P01",
+                  "quote": "## Selected pressure samples\n\nValues are bar gauge."
+                },
+                {
+                  "sourceId": "IA-P01",
+                  "quote": "All displayed pressure samples have good acquisition quality; sensor accuracy and full time coverage are separate matters."
+                }
+              ],
+              "limitation": "The export supplies these sampled values, not a continuous waveform."
+            },
+            {
+              "questionId": "vq-zyn2wt",
+              "status": "answered",
+              "answer": "The Utilities team acknowledged receipt of the air-low alarm at approximately 10:02, which was before pressure was restored. The shift entries indicate that work was paused and RHOB service issues were under review by then.",
+              "citations": [
+                {
+                  "sourceId": "IA-S01",
+                  "quote": "|\n| About 10:00 | RHOB | Air-low indication."
+                },
+                {
+                  "sourceId": "IA-S01",
+                  "quote": "RHOB service issue under review."
+                }
+              ],
+              "limitation": ""
+            },
+            {
+              "questionId": "vq-1cq95dh",
+              "status": "unknown",
+              "answer": "The available evidence does not establish what specific equipment or process condition caused the air-low indication at RHOB P-R. The shift entries (IA-S01) note that local controls showed supply complaints, but do not identify the point of interruption.",
+              "citations": [
+                {
+                  "sourceId": "IA-I01",
+                  "quote": "The initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment."
+                },
+                {
+                  "sourceId": "IA-S01",
+                  "quote": "|\n| About 10:00 | RHOB | Air-low indication."
+                }
+              ],
+              "limitation": ""
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "questionId": "bq-1fanm2w",
+            "output": {
+              "answers": [
+                {
+                  "questionId": "bq-1fanm2w",
+                  "status": "unknown",
+                  "answer": "The available evidence does not establish whether a simultaneous low-pressure event occurred at other downstream points such as the North gallery. The pressure extract (IA-P01) supplies sampled values for P-U and P-R but explicitly states it is not a continuous waveform and does not include data from all locations or valve states.",
+                  "passageIds": [
+                    "IA-P01:p4",
+                    "IA-S01:p20"
+                  ],
+                  "limitation": "The export supplies these sampled values, not a continuous waveform."
+                }
+              ]
+            },
+            "durationMs": 29869,
+            "engine": "ollama:qwen3.5:latest",
+            "validation": "valid",
+            "usage": {
+              "inputTokens": 8207,
+              "outputTokens": 164
+            },
+            "attempts": [
+              {
+                "attempt": 1,
+                "raw": "{\n  \"answers\": [\n    {\n      \"questionId\": \"bq-1fanm2w\",\n      \"status\": \"unknown\",\n      \"answer\": \"The available evidence does not establish whether a simultaneous low-pressure event occurred at other downstream points such as the North gallery. The pressure extract (IA-P01) supplies sampled values for P-U and P-R but explicitly states it is not a continuous waveform and does not include data from all locations or valve states.\",\n      \"passageIds\": [\n        \"IA-P01:p4\",\n        \"IA-S01:p20\"\n      ],\n      \"limitation\": \"The export supplies these sampled values, not a continuous waveform.\"\n    }\n  ]\n}"
+              }
+            ]
+          },
+          {
+            "questionId": "vq-52l0ma",
+            "output": {
+              "answers": [
+                {
+                  "questionId": "vq-52l0ma",
+                  "status": "unknown",
+                  "answer": "The available evidence does not establish whether a local indication P-R reading was recorded at 09:45 AM. The pressure extract (IA-P01) supplies sampled values starting at 09:54, and the shift entries (IA-S01) do not log every field operation or specific numeric measurements for that time.",
+                  "passageIds": [
+                    "IA-P01:p3",
+                    "IA-P01:p8"
+                  ],
+                  "limitation": "The export supplies these sampled values, not a continuous waveform."
+                }
+              ]
+            },
+            "durationMs": 6980,
+            "engine": "ollama:qwen3.5:latest",
+            "validation": "valid",
+            "usage": {
+              "inputTokens": 8342,
+              "outputTokens": 169
+            },
+            "attempts": [
+              {
+                "attempt": 1,
+                "raw": "{\n  \"answers\": [\n    {\n      \"questionId\": \"vq-52l0ma\",\n      \"status\": \"unknown\",\n      \"answer\": \"The available evidence does not establish whether a local indication P-R reading was recorded at 09:45 AM. The pressure extract (IA-P01) supplies sampled values starting at 09:54, and the shift entries (IA-S01) do not log every field operation or specific numeric measurements for that time.\",\n      \"passageIds\": [\n        \"IA-P01:p3\",\n        \"IA-P01:p8\"\n      ],\n      \"limitation\": \"The export supplies these sampled values, not a continuous waveform.\"\n    }\n  ]\n}"
+              }
+            ]
+          },
+          {
+            "questionId": "vq-zyn2wt",
+            "output": {
+              "answers": [
+                {
+                  "questionId": "vq-zyn2wt",
+                  "status": "answered",
+                  "answer": "The Utilities team acknowledged receipt of the air-low alarm at approximately 10:02, which was before pressure was restored. The shift entries indicate that work was paused and RHOB service issues were under review by then.",
+                  "passageIds": [
+                    "IA-S01:p9",
+                    "IA-S01:p13"
+                  ],
+                  "limitation": ""
+                }
+              ]
+            },
+            "durationMs": 5665,
+            "engine": "ollama:qwen3.5:latest",
+            "validation": "valid",
+            "usage": {
+              "inputTokens": 8499,
+              "outputTokens": 124
+            },
+            "attempts": [
+              {
+                "attempt": 1,
+                "raw": "{\n  \"answers\": [\n    {\n      \"questionId\": \"vq-zyn2wt\",\n      \"status\": \"answered\",\n      \"answer\": \"The Utilities team acknowledged receipt of the air-low alarm at approximately 10:02, which was before pressure was restored. The shift entries indicate that work was paused and RHOB service issues were under review by then.\",\n      \"passageIds\": [\"IA-S01:p9\", \"IA-S01:p13\"],\n      \"limitation\": \"\"\n    }\n  ]\n}"
+              }
+            ]
+          },
+          {
+            "questionId": "vq-1cq95dh",
+            "output": {
+              "answers": [
+                {
+                  "questionId": "vq-1cq95dh",
+                  "status": "unknown",
+                  "answer": "The available evidence does not establish what specific equipment or process condition caused the air-low indication at RHOB P-R. The shift entries (IA-S01) note that local controls showed supply complaints, but do not identify the point of interruption.",
+                  "passageIds": [
+                    "IA-I01:p6",
+                    "IA-S01:p9"
+                  ],
+                  "limitation": ""
+                }
+              ]
+            },
+            "durationMs": 5966,
+            "engine": "ollama:qwen3.5:latest",
+            "validation": "valid",
+            "usage": {
+              "inputTokens": 8618,
+              "outputTokens": 137
+            },
+            "attempts": [
+              {
+                "attempt": 1,
+                "raw": "{\n  \"answers\": [\n    {\n      \"questionId\": \"vq-1cq95dh\",\n      \"status\": \"unknown\",\n      \"answer\": \"The available evidence does not establish what specific equipment or process condition caused the air-low indication at RHOB P-R. The shift entries (IA-S01) note that local controls showed supply complaints, but do not identify the point of interruption.\",\n      \"passageIds\": [\n        \"IA-I01:p6\",\n        \"IA-S01:p9\"\n      ],\n      \"limitation\": \"\"\n    }\n  ]\n}"
+              }
+            ]
+          }
+        ],
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 48484,
+        "validation": "valid"
+      }
+    }
+  ]
+}

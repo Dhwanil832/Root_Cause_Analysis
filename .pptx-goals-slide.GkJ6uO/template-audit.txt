@@ -1,0 +1,8 @@
+Source deck: agent_kickoff_question_maps.pptx
+Purpose: preserve the existing 15-slide RCA kickoff-question reference and insert one overview slide before the category tables.
+Structure: 16:9, 1280 x 720. Every source slide uses the BASE layout with a pale background, teal top rule, navy title, upper-right table badge, orange vertical accent, full-width table, and inherited footer/slide number.
+Reusable pattern: source slide 1 provides the title, badge, accent, and table frame for the new overview slide.
+Typography: Aptos Display bold for the title; Aptos for badge, table headers, and table body.
+Insertion contract: duplicate source slide 1 as output slide 1, rewrite its title and badge, and replace its inherited two-column table with a three-column overview table in the same frame. Preserve all 15 original category slides after it.
+Placeholders: footer and slide number are inherited from the BASE layout and remain intentionally populated through inherited layout behavior.
+

@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-16T20:38:12.828Z",
+  "status": "stopped_no_retry",
+  "error": "Error: causal-verification: evidence packet has 64421 characters; the current limit is 60000. No evidence was truncated. Split the investigation input or implement explicit evidence batching before retrying.",
+  "incidentId": "b7c62bf9-604c-4312-9520-7b63b20b7363",
+  "trackId": "eebd569e-92a1-4b41-87c3-3f4953cfb2a6",
+  "url": "http://127.0.0.1:3005/incident/b7c62bf9-604c-4312-9520-7b63b20b7363"
+}

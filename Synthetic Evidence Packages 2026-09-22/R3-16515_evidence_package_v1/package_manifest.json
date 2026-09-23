@@ -1,0 +1,433 @@
+{
+  "schema_version": "1.0",
+  "case_id": "R3-16515",
+  "package_version": "1.0.0",
+  "package_status": "technical_review_needed",
+  "generation_provenance": {
+    "guide": "Try 7/SYNTHETIC_EVIDENCE_PACKAGE_GENERATION_GUIDE.md",
+    "guide_version": "1.0",
+    "author": "Codex",
+    "model_identity": null,
+    "model_configuration": null,
+    "generation_date": "2026-09-22",
+    "random_seed": null,
+    "substantive_operator_edits": [
+      "User requested these two cases; no additional scenario edits supplied."
+    ]
+  },
+  "historical_anchor": {
+    "incident_id": 16515,
+    "incident_title": "80HSM R3 Top Roll Balance Carrier Beam Incident",
+    "incident_date": "10/14/2024",
+    "workbook_sheet": "NearMissSafetyData",
+    "source_row": 180,
+    "recorded_finding": "Work Environment - Other ==> Still investigating"
+  },
+  "scenario_basis": "historical-row-derived synthetic reconstruction",
+  "design_deviations": [
+    "The historical row remains preliminary. The user-supplied R3 RCA PDF was additionally consulted for proposed mechanisms; it is not a recovered test record. Qualitative circuit and geometry extensions require independent engineering review. Do not score those targets as validated industrial truth."
+  ],
+  "experimental_split": "development_pilot_same_incident_derivative",
+  "release_policy": "fixed_batches_cumulative",
+  "stage_order": [
+    "B0",
+    "B1",
+    "B2"
+  ],
+  "provenance_notice": "README_OPERATOR_ONLY.md",
+  "documents": [
+    {
+      "document_id": "R3-D01",
+      "revision": 1,
+      "path": "payloads/B0/default_references/R3-D01_area_directory.md",
+      "display_name": "Roughing-area equipment directory",
+      "scope": "default_reference",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "a7b0f4bf92bb7b73ecf1ad1e1c7b257147b186d1881f8eab8190a6b013670188"
+    },
+    {
+      "document_id": "R3-D02",
+      "revision": 1,
+      "path": "payloads/B0/default_references/R3-D02_work_record_practice.md",
+      "display_name": "Outage work-record practice",
+      "scope": "default_reference",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "cfe43d333b49f915b6a433ca0d5f7001e4def0f17bc41423ad4dbe4ec85c6bec"
+    },
+    {
+      "document_id": "R3-I00",
+      "revision": 1,
+      "path": "payloads/B0/incident_description.md",
+      "display_name": "R3 outage notification",
+      "scope": "incident_description",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "d2ea9dffa825bb50d9d6e3a863077171aad1dee46ec6ed184b0457017c255354"
+    },
+    {
+      "document_id": "R3-D03",
+      "revision": 1,
+      "path": "payloads/B0/starter_documents/R3-D03_scene_record.md",
+      "display_name": "R3 restricted-area observation record",
+      "scope": "starter_document",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "506b1dc0dd1e0f295afd0224664cc07099d83cf8499191cf0e64ccfa198976d7"
+    },
+    {
+      "document_id": "R3-D04",
+      "revision": 1,
+      "path": "payloads/B0/starter_documents/R3-D04_shift_extract.md",
+      "display_name": "R3 outage shift extract",
+      "scope": "starter_document",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "ce4f32f5811e0c1774d25e57a70726ab34a665592a53eac6513b37f7c54f23b2"
+    },
+    {
+      "document_id": "R3-D05",
+      "revision": 1,
+      "path": "payloads/B0/starter_documents/R3-D05_desk_message_r1.md",
+      "display_name": "Roughing desk message",
+      "scope": "starter_document",
+      "eligible_from_release": "B0",
+      "supersedes": [],
+      "sha256": "943e85812c80122e4eeeafc48b3ca9f56b47dee2764c73caa0687a5b0dcce131"
+    },
+    {
+      "document_id": "R3-D06",
+      "revision": 1,
+      "path": "payloads/B1/R3-D06_position_review.md",
+      "display_name": "R3 fixed-view position review",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B1",
+      "supersedes": [],
+      "sha256": "eb383018aa282f0e9e160bf74a2216b4762e792d2659db4499249a98aeed902a"
+    },
+    {
+      "document_id": "R3-D07",
+      "revision": 1,
+      "path": "payloads/B1/R3-D07_assembly_survey.md",
+      "display_name": "R3 assembly survey extract",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B1",
+      "supersedes": [],
+      "sha256": "03e757534ae9a2dd244b644b8a8ea86bb00314da67bdb64c121d0cea79083d58"
+    },
+    {
+      "document_id": "R3-D08",
+      "revision": 1,
+      "path": "payloads/B1/R3-D08_witness_note.md",
+      "display_name": "R3 aisle witness note",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B1",
+      "supersedes": [],
+      "sha256": "042872d6484f05b0c37bdc9feaba6e13b2a9ed55cd2ee2b6f4f27c800a863552"
+    },
+    {
+      "document_id": "R3-D05",
+      "revision": 2,
+      "path": "payloads/B2/R3-D05_desk_message_r2.md",
+      "display_name": "Roughing desk message",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [
+        {
+          "document_id": "R3-D05",
+          "revision": 1
+        }
+      ],
+      "sha256": "a51f758e6d4b40532185eac3b78e6dc6b0fc4d79372b3dbbfa88af471a7b86af"
+    },
+    {
+      "document_id": "R3-D09",
+      "revision": 1,
+      "path": "payloads/B2/R3-D09_circuit_trace.md",
+      "display_name": "R3 balance circuit trace",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [],
+      "sha256": "d55530eefaa9dffbcc5faf6a8c3bd2116fc5af6bea1b9d7ac58a57100dcf8eaf"
+    },
+    {
+      "document_id": "R3-D10",
+      "revision": 1,
+      "path": "payloads/B2/R3-D10_component_observation.md",
+      "display_name": "IV-R3 workshop observation",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [],
+      "sha256": "27ab6a8e4c1ac342b14d920059d1f1d108013a2196a7f8dfce61868ba1fe7d99"
+    },
+    {
+      "document_id": "R3-D11",
+      "revision": 1,
+      "path": "payloads/B2/R3-D11_task_file_review.md",
+      "display_name": "R3 task-file comparison",
+      "scope": "answer_request_document",
+      "eligible_from_release": "B2",
+      "supersedes": [],
+      "sha256": "ce9175170ed45012a484dc890084dd8e9e720f23a55a017c27cc19828d97f167"
+    }
+  ],
+  "releases": [
+    {
+      "release_id": "B0",
+      "expected_parent_version": null,
+      "resulting_version": 1,
+      "additions": [
+        {
+          "document_id": "R3-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D05",
+          "revision": 1
+        }
+      ],
+      "withdrawals": [],
+      "supersessions": [],
+      "cumulative_active_sources": [
+        {
+          "document_id": "R3-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D05",
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "release_id": "B1",
+      "expected_parent_version": 1,
+      "resulting_version": 2,
+      "additions": [
+        {
+          "document_id": "R3-D06",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D07",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D08",
+          "revision": 1
+        }
+      ],
+      "withdrawals": [],
+      "supersessions": [],
+      "cumulative_active_sources": [
+        {
+          "document_id": "R3-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D05",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D06",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D07",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D08",
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "release_id": "B2",
+      "expected_parent_version": 2,
+      "resulting_version": 3,
+      "additions": [
+        {
+          "document_id": "R3-D05",
+          "revision": 2
+        },
+        {
+          "document_id": "R3-D09",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D10",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D11",
+          "revision": 1
+        }
+      ],
+      "withdrawals": [
+        {
+          "document_id": "R3-D05",
+          "revision": 1
+        }
+      ],
+      "supersessions": [
+        {
+          "old_source": {
+            "document_id": "R3-D05",
+            "revision": 1
+          },
+          "new_source": {
+            "document_id": "R3-D05",
+            "revision": 2
+          }
+        }
+      ],
+      "cumulative_active_sources": [
+        {
+          "document_id": "R3-D01",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D02",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-I00",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D03",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D06",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D07",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D08",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D05",
+          "revision": 2
+        },
+        {
+          "document_id": "R3-D09",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D10",
+          "revision": 1
+        },
+        {
+          "document_id": "R3-D11",
+          "revision": 1
+        }
+      ]
+    }
+  ],
+  "private_paths": [
+    "private/"
+  ],
+  "never_upload": [
+    "README_OPERATOR_ONLY.md",
+    "package_manifest.json",
+    "private/",
+    "run_records/"
+  ],
+  "external_never_upload": [
+    "../README_OPERATOR_ONLY.md",
+    "../package_tools.py",
+    "source workbook",
+    "source partner RCA PDF",
+    "generation guide",
+    "other model tracks and authoring conversation"
+  ],
+  "validation": {
+    "status": "structural_checks_passed",
+    "hash_status": "computed_sha256_final_payload_bytes",
+    "checks_performed": [
+      "JSON parsing, required private files and complete document inventory.",
+      "Unique document/revision identities, payload headers and actual SHA-256 hashes.",
+      "Cumulative release/parent lineage, eligibility, withdrawals and revision supersession.",
+      "All answer-bank verbatim excerpts found and stage-eligible; section headings resolved.",
+      "All target evidence bundles available at declared stage; required target fields present.",
+      "Known private marker/placeholder scan and operator-file exclusion coverage.",
+      "Original workbook byte hash unchanged.",
+      "Three cumulative export views checked for each case; hashes, revision membership and exclusion of operator files passed.",
+      "Exporter refuses an already-existing destination."
+    ],
+    "outstanding_issues": [
+      "Independent engineering review of qualitative clearance/load path and hydraulic trace required.",
+      "No app ingestion or RCA run performed.",
+      "Live access isolation and answer routing not exercised.",
+      "Semantic targets unassessed; no evaluator or weights chosen."
+    ],
+    "report": "private/validation_report.md",
+    "executed_check_count": 225,
+    "export_views_tested": [
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "semantic_assessment": "not_performed",
+    "independent_technical_review": "not_performed"
+  }
+}

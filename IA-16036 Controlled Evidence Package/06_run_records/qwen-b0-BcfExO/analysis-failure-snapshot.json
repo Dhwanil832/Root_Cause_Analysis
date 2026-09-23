@@ -1,0 +1,691 @@
+{
+  "incident": {
+    "id": "32f94e19-4ac4-4737-8b69-615ead787f43",
+    "title": "IA-16036 controlled B0 — Qwen — stop after V1",
+    "description": "# Instrument-air interruption during maintenance preparation\r\n\r\nRecord ID: IA-I01\r\n\r\nSynthetic evaluation record derived from a historical incident. Not an actual company record or operating instruction.\r\n\r\nAt approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored. No injury is reported in this evaluation case.\r\n\r\nThe initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment. Supporting records will be provided as the investigation develops.",
+    "createdAt": "2026-09-16T14:40:28.131Z",
+    "updatedAt": "2026-09-16T14:40:28.131Z",
+    "starterDocuments": [
+      {
+        "id": "21640826-5289-43e5-a883-3ff2c2d6cee0",
+        "scope": "starter",
+        "title": "IA-S01_shift_and_notification_log.md",
+        "plant": "General",
+        "incidentId": "32f94e19-4ac4-4737-8b69-615ead787f43",
+        "fileKey": "starter/32f94e19-4ac4-4737-8b69-615ead787f43/21640826-5289-43e5-a883-3ff2c2d6cee0-IA-S01_shift_and_notification_log.md",
+        "fileName": "IA-S01_shift_and_notification_log.md",
+        "contentType": "text/markdown",
+        "size": 1214,
+        "sha256": "a17386f09ab48094c57be74a003e5e573bb11b5b1d3252202305bfea5bbd3f7c",
+        "revision": "1",
+        "extractionStatus": "ready",
+        "extractionNotes": "",
+        "extractedText": "# Utilities and RHOB shift entries\n\nRecord ID: IA-S01 | Log date: 2024-05-20 | Exported: 2024-05-20 13:00\n\nSynthetic evaluation record. Times and entries are reconstructed for the exercise.\n\n| Time | Desk | Entry |\n| --- | --- | --- |\n| 07:00 | Utilities | Two-person 1SC dryer maintenance-preparation assignment reviewed. WO-527 scheduled. |\n| 08:10 | RHOB | Morning check: local air indication in normal band. |\n| 09:35 | Utilities | Crew U-A/U-B collected WO-527 work folder and lock equipment. |\n| 09:48 | Utilities | Crew at gallery. Boundary preparation in progress; maintenance release pending. |\n| About 10:00 | RHOB | Air-low indication. Local controls showing supply complaints. Requested Utilities attendance. |\n| 10:02 | Utilities | Work paused. RHOB service issue under review. No line opening authorized. |\n| About 10:07 | RHOB | Local indication returned to normal band. Asked to retain alarm and pressure records. |\n| 10:20 | Utilities | Maintenance deferred. Work folder retained for review. |\n\nThe desk entries do not log every field operation. They do not identify the point at which the air supply was interrupted. “Normal band” is the operator's entry, not a captured numeric measurement.",
+        "createdAt": "2026-09-16T14:40:28.132Z"
+      },
+      {
+        "id": "369ebcd6-ac78-4806-9c7d-16860a7ebe3b",
+        "scope": "starter",
+        "title": "IA-S02_work_package_cover.md",
+        "plant": "General",
+        "incidentId": "32f94e19-4ac4-4737-8b69-615ead787f43",
+        "fileKey": "starter/32f94e19-4ac4-4737-8b69-615ead787f43/369ebcd6-ac78-4806-9c7d-16860a7ebe3b-IA-S02_work_package_cover.md",
+        "fileName": "IA-S02_work_package_cover.md",
+        "contentType": "text/markdown",
+        "size": 1011,
+        "sha256": "c17cc96b7870a05567d7fd2e42c3d2c9901fe0ce07ab13516538ab4965d4aea8",
+        "revision": "1",
+        "extractionStatus": "ready",
+        "extractionNotes": "",
+        "extractedText": "# WO-527 work-package cover and attachment index\n\nRecord ID: IA-S02 | Issued copy: 2024-05-20 09:31\n\nSynthetic evaluation record. This is an administrative excerpt, not an executable isolation procedure.\n\nWork scope: planned maintenance and inspection of 1SC dryer group D-101. Receiving operation: RHOB instrument-air service. Crew assignment: U-A and U-B. Work boundary: preparation only at time of initial notification.\n\n| Attachment | Revision/status shown on supplied copy | Purpose |\n| --- | --- | --- |\n| ECP-1SC-04 | Revision 3, issued 2024-03-04 | Work-boundary document |\n| DW-1SC-17 | Revision A | Referenced equipment-location sheet |\n| WO-527-E | Blank at folder issue | Field execution record |\n| Daily work briefing | 2024-05-20 | Assignment and coordination |\n\nTemporary instruction attachment field: blank.\n\nMaintenance acceptance signature: not yet signed at notification time. The signature field is a work-stage record; it is not evidence that any particular field valve was open or closed.",
+        "createdAt": "2026-09-16T14:40:28.134Z"
+      },
+      {
+        "id": "03159822-76ac-4693-b843-8c65bb2a31ee",
+        "scope": "starter",
+        "title": "IA-S03_assignment_and_authorization_extract.md",
+        "plant": "General",
+        "incidentId": "32f94e19-4ac4-4737-8b69-615ead787f43",
+        "fileKey": "starter/32f94e19-4ac4-4737-8b69-615ead787f43/03159822-76ac-4693-b843-8c65bb2a31ee-IA-S03_assignment_and_authorization_extract.md",
+        "fileName": "IA-S03_assignment_and_authorization_extract.md",
+        "contentType": "text/markdown",
+        "size": 1014,
+        "sha256": "a033829c14c1c04a6a8687d60916caa3ca9f950ad7aff7aa8c186ed9a9d5f734",
+        "revision": "1",
+        "extractionStatus": "ready",
+        "extractionNotes": "",
+        "extractedText": "# Assignment and authorization extract\n\nRecord ID: IA-S03 | Retrieved: 2024-05-20 15:00\n\nSynthetic evaluation record. Personnel codes are fictional; no actual employee records are reproduced.\n\n| Person code | Assigned role on WO-527 | Recorded qualification at shift start |\n| --- | --- | --- |\n| U-A | Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| U-B | Second Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| M-A | Maintenance receiver | Current dryer-maintenance qualification; boundary acceptance pending |\n\nThe daily briefing attendance sheet lists U-A and U-B. Its topic line reads “1SC dryer work and RHOB service coordination.” It contains no valve-by-valve content. The training extract does not state which configuration drawing the crew saw or whether either person received a recent change briefing.\n\nNo interview concerning fatigue, workload or individual intent is included in this extract.",
+        "createdAt": "2026-09-16T14:40:28.135Z"
+      }
+    ],
+    "tracks": [
+      {
+        "id": "b928c874-b7d1-4c0c-815f-a65b45000025",
+        "modelId": "ollama:qwen3.5:latest",
+        "modelName": "qwen3.5:latest",
+        "provider": "ollama",
+        "documents": [
+          {
+            "id": "8feb0b81-8e6d-4791-8819-0f4790fe7ab7",
+            "scope": "reference",
+            "title": "IA-D01_area_and_service_directory.md",
+            "plant": "IA-16036 evaluation",
+            "fileKey": "reference/library/8feb0b81-8e6d-4791-8819-0f4790fe7ab7-IA-D01_area_and_service_directory.md",
+            "fileName": "IA-D01_area_and_service_directory.md",
+            "contentType": "text/markdown",
+            "size": 1380,
+            "sha256": "92bf8556f6d53430f535be8545f5a93e5d1793b79f13ecfc6bfa5887f3137710",
+            "revision": "B0",
+            "extractionStatus": "ready",
+            "extractionNotes": "",
+            "extractedText": "# Utilities area and service directory\n\nRecord ID: IA-D01 | Revision: 2 | Effective: 2024-04-01\n\nSynthetic evaluation record. All equipment identifiers and layout details are fictional and are not operating instructions.\n\n## Service areas\n\nThe Utilities air gallery serves the 1SC dryer group and distributes instrument air to the RHOB process area. RHOB is the local area name used in these records; it is not an individual compressor identifier. The 1SC gallery and RHOB instrument-air station are separate operating locations.\n\n| Location | Equipment/service | Normal record custodian |\n| --- | --- | --- |\n| North gallery | Site air-header connection, local indication P-U | Utilities operations |\n| Dryer aisle | Dryer group D-101 and main-route valves M-101/M-102 | Utilities maintenance |\n| East service rack | Auxiliary line installation area | Projects and Utilities |\n| RHOB service station | Receiving header H-R and indication P-R | RHOB operations |\n\n## Roles\n\nUtilities prepares the maintenance boundary. RHOB operations observes the receiving process. Maintenance receives the work boundary only after its release. A maintenance work order being scheduled is not a record that the boundary has been released.\n\nThis directory is a location index. It is not a current piping diagram and does not establish valve positions or the pressure available at any given time.",
+            "createdAt": "2026-09-16T14:40:28.043Z"
+          },
+          {
+            "id": "8ed97a7d-e713-4b6b-9e10-7b31ca3b8aa3",
+            "scope": "reference",
+            "title": "IA-D02_record_and_measurement_conventions.md",
+            "plant": "IA-16036 evaluation",
+            "fileKey": "reference/library/8ed97a7d-e713-4b6b-9e10-7b31ca3b8aa3-IA-D02_record_and_measurement_conventions.md",
+            "fileName": "IA-D02_record_and_measurement_conventions.md",
+            "contentType": "text/markdown",
+            "size": 1305,
+            "sha256": "d054d9edac83a514b5c2420712790c67fa1aa5d22e46f29db311ae6d88786dc6",
+            "revision": "B0",
+            "extractionStatus": "ready",
+            "extractionNotes": "",
+            "extractedText": "# Record and measurement conventions\n\nRecord ID: IA-D02 | Revision: 1 | Effective: 2024-04-01\n\nSynthetic evaluation record. Conventions apply to this fictional case only.\n\n## Measurements\n\nPressure values are bar gauge. A pressure tag names the measurement point, not every location on the service. The point register is needed to interpret location and scope. A running indication is not a flow measurement. A command, a field-position observation and a proved internal valve condition are different records.\n\n## Time and identity\n\nWall times are local plant time on the stated date. Handwritten records are approximate unless stated otherwise. An alarm's occurrence time, acknowledgment time and export time may differ. Record aliases can persist after equipment changes; the title displayed on an alarm is not a substitute for its input mapping.\n\n## Status conventions\n\n“Filed” means retained in the archive. “Issued” means distributed for its stated use. “Installed” refers to a physical change. “Maintenance released” refers to work-boundary acceptance. None automatically establishes the other statuses.\n\nAn empty form field records no value. The reason it is empty requires other evidence. A draft, an issued revision and a historical reference copy can all exist at the same time.",
+            "createdAt": "2026-09-16T14:40:28.111Z"
+          },
+          {
+            "id": "715dc23d-7d8f-46cf-bf2d-f0bc192aeb81",
+            "scope": "reference",
+            "title": "IA-D03_change_and_work_record_requirements.md",
+            "plant": "IA-16036 evaluation",
+            "fileKey": "reference/library/715dc23d-7d8f-46cf-bf2d-f0bc192aeb81-IA-D03_change_and_work_record_requirements.md",
+            "fileName": "IA-D03_change_and_work_record_requirements.md",
+            "contentType": "text/markdown",
+            "size": 1369,
+            "sha256": "36b50241035a66f68ff1ce570ff7dbf2dc730c3d35d04b5a27ba6571a6e652c5",
+            "revision": "B0",
+            "extractionStatus": "ready",
+            "extractionNotes": "",
+            "extractedText": "# Change and work-record requirements\n\nRecord ID: IA-D03 | Revision: 4 | Effective: 2024-03-01\n\nSynthetic evaluation record. Fictional administrative requirements, not the partner's actual policy or a safe-work procedure.\n\n## Change records\n\nSection 3.2: When a service-routing change affects an existing maintenance boundary, the change owner identifies the affected energy-control procedure (ECP), drawing and receiving operating area. Engineering disposition is required before the changed arrangement is used for that maintenance boundary.\n\nSection 3.4: Mechanical completion verifies the installed work covered by the completion sheet. Work-document disposition and distribution are separate signoffs. A drawing redline is not, by itself, an issued operating document.\n\nSection 3.6: The affected ECP is either revised and issued, or an approved temporary instruction is attached to the work package. Draft preparation alone does not satisfy distribution.\n\n## Work records\n\nSection 5.1: The work package records the ECP revision supplied to the crew and the maintenance boundary's acceptance state. An initial notification may be entered before the event sequence has been checked.\n\nSection 5.3: Competence and authorization records define the tasks for which a person is qualified. They do not record what that person actually observed or did on a particular job.",
+            "createdAt": "2026-09-16T14:40:28.121Z"
+          },
+          {
+            "id": "21640826-5289-43e5-a883-3ff2c2d6cee0",
+            "scope": "starter",
+            "title": "IA-S01_shift_and_notification_log.md",
+            "plant": "General",
+            "incidentId": "32f94e19-4ac4-4737-8b69-615ead787f43",
+            "fileKey": "starter/32f94e19-4ac4-4737-8b69-615ead787f43/21640826-5289-43e5-a883-3ff2c2d6cee0-IA-S01_shift_and_notification_log.md",
+            "fileName": "IA-S01_shift_and_notification_log.md",
+            "contentType": "text/markdown",
+            "size": 1214,
+            "sha256": "a17386f09ab48094c57be74a003e5e573bb11b5b1d3252202305bfea5bbd3f7c",
+            "revision": "1",
+            "extractionStatus": "ready",
+            "extractionNotes": "",
+            "extractedText": "# Utilities and RHOB shift entries\n\nRecord ID: IA-S01 | Log date: 2024-05-20 | Exported: 2024-05-20 13:00\n\nSynthetic evaluation record. Times and entries are reconstructed for the exercise.\n\n| Time | Desk | Entry |\n| --- | --- | --- |\n| 07:00 | Utilities | Two-person 1SC dryer maintenance-preparation assignment reviewed. WO-527 scheduled. |\n| 08:10 | RHOB | Morning check: local air indication in normal band. |\n| 09:35 | Utilities | Crew U-A/U-B collected WO-527 work folder and lock equipment. |\n| 09:48 | Utilities | Crew at gallery. Boundary preparation in progress; maintenance release pending. |\n| About 10:00 | RHOB | Air-low indication. Local controls showing supply complaints. Requested Utilities attendance. |\n| 10:02 | Utilities | Work paused. RHOB service issue under review. No line opening authorized. |\n| About 10:07 | RHOB | Local indication returned to normal band. Asked to retain alarm and pressure records. |\n| 10:20 | Utilities | Maintenance deferred. Work folder retained for review. |\n\nThe desk entries do not log every field operation. They do not identify the point at which the air supply was interrupted. “Normal band” is the operator's entry, not a captured numeric measurement.",
+            "createdAt": "2026-09-16T14:40:28.132Z"
+          },
+          {
+            "id": "369ebcd6-ac78-4806-9c7d-16860a7ebe3b",
+            "scope": "starter",
+            "title": "IA-S02_work_package_cover.md",
+            "plant": "General",
+            "incidentId": "32f94e19-4ac4-4737-8b69-615ead787f43",
+            "fileKey": "starter/32f94e19-4ac4-4737-8b69-615ead787f43/369ebcd6-ac78-4806-9c7d-16860a7ebe3b-IA-S02_work_package_cover.md",
+            "fileName": "IA-S02_work_package_cover.md",
+            "contentType": "text/markdown",
+            "size": 1011,
+            "sha256": "c17cc96b7870a05567d7fd2e42c3d2c9901fe0ce07ab13516538ab4965d4aea8",
+            "revision": "1",
+            "extractionStatus": "ready",
+            "extractionNotes": "",
+            "extractedText": "# WO-527 work-package cover and attachment index\n\nRecord ID: IA-S02 | Issued copy: 2024-05-20 09:31\n\nSynthetic evaluation record. This is an administrative excerpt, not an executable isolation procedure.\n\nWork scope: planned maintenance and inspection of 1SC dryer group D-101. Receiving operation: RHOB instrument-air service. Crew assignment: U-A and U-B. Work boundary: preparation only at time of initial notification.\n\n| Attachment | Revision/status shown on supplied copy | Purpose |\n| --- | --- | --- |\n| ECP-1SC-04 | Revision 3, issued 2024-03-04 | Work-boundary document |\n| DW-1SC-17 | Revision A | Referenced equipment-location sheet |\n| WO-527-E | Blank at folder issue | Field execution record |\n| Daily work briefing | 2024-05-20 | Assignment and coordination |\n\nTemporary instruction attachment field: blank.\n\nMaintenance acceptance signature: not yet signed at notification time. The signature field is a work-stage record; it is not evidence that any particular field valve was open or closed.",
+            "createdAt": "2026-09-16T14:40:28.134Z"
+          },
+          {
+            "id": "03159822-76ac-4693-b843-8c65bb2a31ee",
+            "scope": "starter",
+            "title": "IA-S03_assignment_and_authorization_extract.md",
+            "plant": "General",
+            "incidentId": "32f94e19-4ac4-4737-8b69-615ead787f43",
+            "fileKey": "starter/32f94e19-4ac4-4737-8b69-615ead787f43/03159822-76ac-4693-b843-8c65bb2a31ee-IA-S03_assignment_and_authorization_extract.md",
+            "fileName": "IA-S03_assignment_and_authorization_extract.md",
+            "contentType": "text/markdown",
+            "size": 1014,
+            "sha256": "a033829c14c1c04a6a8687d60916caa3ca9f950ad7aff7aa8c186ed9a9d5f734",
+            "revision": "1",
+            "extractionStatus": "ready",
+            "extractionNotes": "",
+            "extractedText": "# Assignment and authorization extract\n\nRecord ID: IA-S03 | Retrieved: 2024-05-20 15:00\n\nSynthetic evaluation record. Personnel codes are fictional; no actual employee records are reproduced.\n\n| Person code | Assigned role on WO-527 | Recorded qualification at shift start |\n| --- | --- | --- |\n| U-A | Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| U-B | Second Utilities operator | Current Utilities operating qualification and energy-control authorization |\n| M-A | Maintenance receiver | Current dryer-maintenance qualification; boundary acceptance pending |\n\nThe daily briefing attendance sheet lists U-A and U-B. Its topic line reads “1SC dryer work and RHOB service coordination.” It contains no valve-by-valve content. The training extract does not state which configuration drawing the crew saw or whether either person received a recent change briefing.\n\nNo interview concerning fatigue, workload or individual intent is included in this extract.",
+            "createdAt": "2026-09-16T14:40:28.135Z"
+          }
+        ],
+        "checkpoints": [
+          {
+            "id": "1187e2ef-434c-48a3-9d81-8592d4be842a",
+            "trackId": "b928c874-b7d1-4c0c-815f-a65b45000025",
+            "runId": "6de402cb-7f28-4de4-8791-41a37bc306c0",
+            "targetVersion": 1,
+            "sequence": 1,
+            "stage": "document-intelligence",
+            "status": "completed",
+            "payload": {
+              "records": [
+                {
+                  "documentId": "8feb0b81-8e6d-4791-8819-0f4790fe7ab7",
+                  "title": "IA-D01_area_and_service_directory.md",
+                  "fileName": "IA-D01_area_and_service_directory.md",
+                  "contentType": "text/markdown",
+                  "mode": "embedded-text",
+                  "documentType": "machine-readable document",
+                  "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+                  "observations": [],
+                  "limitations": [],
+                  "processedAt": "2026-09-16T14:41:46.906Z",
+                  "engine": "deterministic:document-extraction",
+                  "validation": "fallback"
+                },
+                {
+                  "documentId": "8ed97a7d-e713-4b6b-9e10-7b31ca3b8aa3",
+                  "title": "IA-D02_record_and_measurement_conventions.md",
+                  "fileName": "IA-D02_record_and_measurement_conventions.md",
+                  "contentType": "text/markdown",
+                  "mode": "embedded-text",
+                  "documentType": "machine-readable document",
+                  "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+                  "observations": [],
+                  "limitations": [],
+                  "processedAt": "2026-09-16T14:41:46.906Z",
+                  "engine": "deterministic:document-extraction",
+                  "validation": "fallback"
+                },
+                {
+                  "documentId": "715dc23d-7d8f-46cf-bf2d-f0bc192aeb81",
+                  "title": "IA-D03_change_and_work_record_requirements.md",
+                  "fileName": "IA-D03_change_and_work_record_requirements.md",
+                  "contentType": "text/markdown",
+                  "mode": "embedded-text",
+                  "documentType": "machine-readable document",
+                  "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+                  "observations": [],
+                  "limitations": [],
+                  "processedAt": "2026-09-16T14:41:46.906Z",
+                  "engine": "deterministic:document-extraction",
+                  "validation": "fallback"
+                },
+                {
+                  "documentId": "21640826-5289-43e5-a883-3ff2c2d6cee0",
+                  "title": "IA-S01_shift_and_notification_log.md",
+                  "fileName": "IA-S01_shift_and_notification_log.md",
+                  "contentType": "text/markdown",
+                  "mode": "embedded-text",
+                  "documentType": "machine-readable document",
+                  "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+                  "observations": [],
+                  "limitations": [],
+                  "processedAt": "2026-09-16T14:41:46.906Z",
+                  "engine": "deterministic:document-extraction",
+                  "validation": "fallback"
+                },
+                {
+                  "documentId": "369ebcd6-ac78-4806-9c7d-16860a7ebe3b",
+                  "title": "IA-S02_work_package_cover.md",
+                  "fileName": "IA-S02_work_package_cover.md",
+                  "contentType": "text/markdown",
+                  "mode": "embedded-text",
+                  "documentType": "machine-readable document",
+                  "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+                  "observations": [],
+                  "limitations": [],
+                  "processedAt": "2026-09-16T14:41:46.906Z",
+                  "engine": "deterministic:document-extraction",
+                  "validation": "fallback"
+                },
+                {
+                  "documentId": "03159822-76ac-4693-b843-8c65bb2a31ee",
+                  "title": "IA-S03_assignment_and_authorization_extract.md",
+                  "fileName": "IA-S03_assignment_and_authorization_extract.md",
+                  "contentType": "text/markdown",
+                  "mode": "embedded-text",
+                  "documentType": "machine-readable document",
+                  "summary": "Machine-readable text was extracted and is available to the investigation stages.",
+                  "observations": [],
+                  "limitations": [],
+                  "processedAt": "2026-09-16T14:41:46.906Z",
+                  "engine": "deterministic:document-extraction",
+                  "validation": "fallback"
+                }
+              ],
+              "failures": 0
+            },
+            "createdAt": "2026-09-16T14:41:46.906Z"
+          },
+          {
+            "id": "f06ceab5-b61c-400e-858e-1738e16148f5",
+            "trackId": "b928c874-b7d1-4c0c-815f-a65b45000025",
+            "runId": "6de402cb-7f28-4de4-8791-41a37bc306c0",
+            "targetVersion": 1,
+            "sequence": 2,
+            "stage": "incident-understanding",
+            "status": "completed",
+            "payload": {
+              "summary": "At approximately 10:00 AM on May 20, 2024 (Turn 2), a two-person Utilities crew (U-A/U-B) was preparing for planned maintenance of the #1 slab caster dryer group in the RHOB process area. They had collected work folder WO-527 but had not yet received formal release/maintenance acceptance from Maintenance receiver M-A, nor completed boundary preparation.\n\nAt ~10:00 AM, an air-low indication occurred at the RHOB service station (Receiving header H-R). The crew paused work. By 10:07 AM, local indications returned to normal without a formal line opening or restoration procedure documented in this packet yet.",
+              "focalEvent": "Loss of instrument-air pressure indicated by an alarm/indication at the RHOB service station while maintenance preparation was underway but not released.",
+              "actualImpact": "Work paused; no injuries reported. Air supply restored within ~7 minutes (10:02-10:07).",
+              "potentialImpact": "Loss of instrument air could have caused unintended valve movements, loss of control for safety systems, or inability to isolate equipment if a failure had persisted.",
+              "normalState": "Utilities operations manages the North gallery and Dryer aisle; RHOB operations observes receiving header H-R. Normal pressure is in 'local band' (numeric value unknown).",
+              "eventState": "At event time: Utilities crew at gallery preparing boundary; Maintenance receiver present but acceptance not signed/recorded as complete; no temporary instruction attached to WO-527.",
+              "understoodFacts": [
+                "Incident occurred during Turn 2 on May 20, 2024.",
+                "Crew U-A/U-B had operating qualifications and energy-control authorization at shift start.",
+                "Work order WO-527 was scheduled for planned maintenance of dryer group D-101.",
+                ", "
+              ],
+              "unknowns": [
+                "Exact time the air pressure dropped (approximate 'About 10:00' in log).",
+                "Whether the interruption originated at source, distribution system, or receiving equipment.",
+                "Numeric value of low-pressure alarm threshold and normal band limits.",
+                "Specific valve positions during the event.",
+                "Reason for air restoration (automatic vs manual intervention not yet detailed).",
+                "Status of any change records affecting service routing on May 20.",
+                "Whether a temporary instruction was required but missing."
+              ],
+              "questions": [
+                {
+                  "intent": "Determine if the interruption originated upstream or downstream to clarify causal chain and responsible system boundary.",
+                  "text": "Did pressure monitoring at any point between the air source (North gallery) and RHOB receiving header H-R show a drop before, during, or after 10:00 AM? If so, where was the first indication of loss?",
+                  "rationale": "Distinguishes whether Utilities distribution failed versus an isolated event affecting only RHOB.",
+                  "evidenceNeeded": [
+                    "Pressure trend logs for North gallery and Dryer aisle between 09:35-10:20.",
+                    "Alarm export times vs acknowledgment times from IA-S01."
+                  ],
+                  "priority": "high",
+                  "sourceIds": [
+                    "incident-description",
+                    "IA-D01_area_and_service_directory.md",
+                    "IA-S01_shift_and_notification_log.md"
+                  ],
+                  "routedTo": [
+                    "human"
+                  ],
+                  "causalBranch": "System boundary of failure (Source vs Distribution vs Receiving)"
+                },
+                {
+                  "intent": "Verify if maintenance release/boundary acceptance was formally completed before the event.",
+                  "text": "Was Maintenance receiver M-A's signature on WO-527 obtained and recorded prior to 10:00 AM? If not, what specific boundary conditions were assumed or communicated verbally?",
+                  "rationale": "Determines if work proceeded without formal acceptance of energy boundaries, which is a procedural gap.",
+                  "evidenceNeeded": [
+                    "Signed copy of WO-527 maintenance release form (if exists).",
+                    "Interview with M-A regarding verbal agreements."
+                  ],
+                  "priority": "high",
+                  "sourceIds": [
+                    "IA-S03_assignment_and_authorization_extract.md"
+                  ],
+                  "routedTo": [],
+                  "causalBranch": "Procedural compliance"
+                },
+                {
+                  "intent": "Identify if any recent changes to instrument-air routing or equipment configuration were in effect on May 20.",
+                  "text": "Were there any change records (ECP revisions, drawing redlines) affecting the RHOB service station or Dryer aisle active between March and April 2024 that might explain a transient loss?",
+                  "rationale": "Change management failures often cause unexpected behavior in energy systems.",
+                  "evidenceNeeded": [
+                    "List of issued change records effective May 20, 2024.",
+                    "Engineering disposition documents for any routing changes."
+                  ],
+                  "priority": "medium",
+                  "sourceIds": [],
+                  "routedTo": [],
+                  "causalBranch": "Change management"
+                },
+                {
+                  "intent": "Clarify the mechanism and duration of air restoration.",
+                  "text": "Was pressure restored automatically by a redundant supply, manual valve operation, or system reset? Who performed any action between 10:02 AM and 10:07 AM?",
+                  "rationale": "Understanding restoration helps assess risk recurrence and whether safeguards were adequate.",
+                  "evidenceNeeded": [
+                    "Field notes from U-A/U-B/M-A regarding actions taken.",
+                    "Valve position records or SCADA snapshots."
+                  ],
+                  "priority": "medium",
+                  "sourceIds": [],
+                  "routedTo": [],
+                  "causalBranch": "System resilience"
+                }
+              ],
+              "decision": {
+                "summary": "The incident involved a transient loss of instrument air at the RHOB service station during maintenance preparation. The crew had not yet received formal release/maintenance acceptance, and no temporary instruction was attached to WO-527. Key unknowns include the origin of the pressure drop (source vs distribution), exact timing relative to boundary status, and whether any recent changes affected system behavior.",
+                "evidenceUsed": [
+                  "incident-description",
+                  "IA-D01_area_and_service_directory.md",
+                  "IA-S01_shift_and_notification_log.md",
+                  "IA-S02_work_package_cover.md",
+                  "IA-S03_assignment_and_authorization_extract.md"
+                ],
+                "unknowns": [
+                  "Exact pressure drop origin and timing.",
+                  "Formal maintenance release status at event time.",
+                  "Recent change records affecting routing."
+                ],
+                "alternatives": [
+                  "Pressure loss was a brief upstream fluctuation unrelated to the work area.",
+                  "Loss occurred due to an unrecorded valve misposition during preparation.",
+                  "A recent but undocumented change altered normal operation."
+                ],
+                "confidence": 0.65
+              }
+            },
+            "createdAt": "2026-09-16T14:42:49.337Z"
+          },
+          {
+            "id": "99a2d743-314d-4d09-a48b-c173c2fdc16b",
+            "trackId": "b928c874-b7d1-4c0c-815f-a65b45000025",
+            "runId": "6de402cb-7f28-4de4-8791-41a37bc306c0",
+            "targetVersion": 1,
+            "sequence": 3,
+            "stage": "incident-structuring",
+            "status": "completed",
+            "payload": {
+              "summary": "At approximately 10:00 AM on May 20, 2024 (Turn 2), a two-person Utilities crew (U-A/U-B) was preparing for planned maintenance of the #1 slab caster dryer group in the RHOB process area. They had collected work folder WO-527 but had not yet received formal release/maintenance acceptance from Maintenance receiver M-A, nor completed boundary preparation.\n\nAt ~10:00 AM, an air-low indication occurred at the RHOB service station (Receiving header H-R). The crew paused work. By 10:07 AM, local indications returned to normal without a formal line opening or restoration procedure documented in this packet yet.",
+              "focalEvent": "Loss of instrument-air pressure indicated by an alarm/indication at the RHOB service station while maintenance preparation was underway but not released.",
+              "actualImpact": "Work paused; no injuries reported. Air supply restored within ~7 minutes (10:02-10:07).",
+              "potentialImpact": "Loss of instrument air could have caused unintended valve movements, loss of control for safety systems, or inability to isolate equipment if a failure had persisted.",
+              "normalState": "Utilities operations manages the North gallery and Dryer aisle; RHOB operations observes receiving header H-R. Normal pressure is in 'local band' (numeric value unknown).",
+              "eventState": "At event time: Utilities crew at gallery preparing boundary; Maintenance receiver present but acceptance not signed/recorded as complete; no temporary instruction attached to WO-527.",
+              "entities": [
+                {
+                  "type": "person",
+                  "name": "U-A",
+                  "description": "Utilities operator with current qualification and energy-control authorization.",
+                  "status": "partially-supported",
+                  "sourceIds": [
+                    "IA-S03_assignment_and_authorization_extract.md"
+                  ],
+                  "id": "entity-1n8efa7"
+                }
+              ],
+              "timeline": [
+                {
+                  "timeLabel": "2024-05-20 07:00",
+                  "sequence": 1,
+                  "description": "Utilities reviewed two-person assignment for WO-527.",
+                  "kind": "event",
+                  "status": "verified",
+                  "sourceIds": [
+                    "IA-S01_shift_and_notification_log.md"
+                  ],
+                  "id": "event-hckdq6"
+                }
+              ],
+              "conditions": [
+                "Normal pressure band observed at RHOB (numeric value unknown).",
+                "Work boundary preparation in progress but not formally released/accepted."
+              ],
+              "unknowns": [
+                "Exact time the air pressure dropped (approximate 'About 10:00' in log).",
+                "Whether the interruption originated at source, distribution system, or receiving equipment.",
+                "Numeric value of low-pressure alarm threshold and normal band limits.",
+                "Specific valve positions during the event.",
+                "Reason for air restoration (automatic vs manual intervention not yet detailed).",
+                "Status of any change records affecting service routing on May 20.",
+                "Whether a temporary instruction was required but missing.",
+                "Exact time of air interruption.",
+                "Origin point of the pressure drop (source, distribution, or receiving equipment).",
+                "Numeric alarm thresholds and normal band limits.",
+                "Specific valve positions during event.",
+                "Mechanism of restoration (automatic vs manual).",
+                "Status of any active change records affecting routing."
+              ]
+            },
+            "createdAt": "2026-09-16T14:43:18.878Z"
+          },
+          {
+            "id": "8178ffba-e674-4367-86a1-556f43f28f40",
+            "trackId": "b928c874-b7d1-4c0c-815f-a65b45000025",
+            "runId": "6de402cb-7f28-4de4-8791-41a37bc306c0",
+            "targetVersion": 1,
+            "sequence": 4,
+            "stage": "tagging",
+            "status": "completed",
+            "payload": [
+              {
+                "id": "human",
+                "rationale": "A two-person Utilities crew (U-A/U-B) was actively preparing for maintenance, and a Maintenance receiver (M-A) was present but had not yet formally accepted the work. The event occurred during this transition period involving human actions regarding boundary preparation and communication of status.",
+                "evidence": [
+                  "structuredIncident.answers[0].text: 'They had collected work folder WO-527 but had not yet received formal release/maintenance acceptance from Maintenance receiver M-A, nor completed boundary preparation.'",
+                  "structuredIncident.entities[0]: 'Utilities operator with current qualification and energy-control authorization'"
+                ],
+                "unknowns": [
+                  "Whether U-B was performing a specific task that could have been affected by the pressure drop.",
+                  "The exact communication protocol used between Utilities and RHOB/Maintenance."
+                ],
+                "confidence": 1,
+                "label": "Human involvement"
+              },
+              {
+                "id": "equipment-tool",
+                "rationale": "An instrument-air interruption occurred, directly involving process equipment (compressor/dryer system) or distribution infrastructure. The loss of pressure is an event concerning the integrity and state of physical tools/systems.",
+                "evidence": [
+                  "structuredIncident.focalEvent: 'Loss of instrument-air pressure indicated by an alarm/indication at the RHOB service station'",
+                  "originalIncident.text: 'RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system'"
+                ],
+                "unknowns": [
+                  "Whether the interruption originated from source, distribution, or receiving equipment.",
+                  "Specific valve positions during the event."
+                ],
+                "confidence": 0.95,
+                "label": "Equipment or tool involvement"
+              },
+              {
+                "id": "procedure-planning",
+                "rationale": "The incident occurred while work was 'preparing' but not yet formally released/accepted. This highlights a potential gap in procedure execution, boundary preparation protocols, or the planning of handover between Utilities and Maintenance.",
+                "evidence": [
+                  "structuredIncident.conditions[1]: 'Work boundary preparation in progress but not formally released/accepted.'",
+                  "originalIncident.text: 'The work was paused... No injury is reported'"
+                ],
+                "unknowns": [
+                  "Whether a temporary instruction was required but missing (listed as unknown).",
+                  "Status of any change records affecting service routing."
+                ],
+                "confidence": 0.85,
+                "label": "Procedure / planning involvement"
+              },
+              {
+                "id": "communication-supervision",
+                "rationale": "The event highlights the critical importance of communication between different operational areas (Utilities vs RHOB) and roles (Operators vs Maintenance Receiver). The lack of formal acceptance despite presence suggests a breakdown or ambiguity in supervision/communication regarding work status.",
+                "evidence": [
+                  "structuredIncident.answers[0].text: '...had not yet received formal release/maintenance acceptance from Maintenance receiver M-A'"
+                ],
+                "unknowns": [
+                  "The specific communication channels used between RHOB and Utilities."
+                ],
+                "confidence": 0.85,
+                "label": "Communication / supervision involvement"
+              },
+              {
+                "id": "maintenance-outage",
+                "rationale": "The incident occurred during the preparation phase for 'planned maintenance'. The context is inherently tied to non-routine work activities, outage planning, or system modification procedures.",
+                "evidence": [
+                  "originalIncident.text: '...while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance.'",
+                  "structuredIncident.answers[0].text: 'preparing for planned maintenance of the #1 slab caster dryer group'"
+                ],
+                "unknowns": [
+                  "Whether this specific work required an outage permit or if it was considered routine utility support."
+                ],
+                "confidence": 0.95,
+                "label": "Maintenance, outage, or non-routine work"
+              },
+              {
+                "id": "isolation-loto",
+                "rationale": "The incident involved a loss of instrument air, which is critical for safety systems and valve positioning (fail-safe). The fact that work was paused suggests the team recognized an isolation or energy-control issue. Understanding why formal release wasn't complete before this event occurred relates to LOTO/isolation procedures.",
+                "evidence": [
+                  "structuredIncident.answers[0].text: '...had not yet received formal release/maintenance acceptance from Maintenance receiver M-A, nor completed boundary preparation.'",
+                  "originalIncident.text: 'The work was paused'"
+                ],
+                "unknowns": [
+                  "Whether specific LOTO tags were applied to the air supply line.",
+                  "What isolation status is required for this type of maintenance."
+                ],
+                "confidence": 0.75,
+                "label": "Isolation / LOTO involvement"
+              }
+            ],
+            "createdAt": "2026-09-16T14:44:01.112Z"
+          },
+          {
+            "id": "b9a76d97-5a29-4f22-a0dd-4ae365b34d8d",
+            "trackId": "b928c874-b7d1-4c0c-815f-a65b45000025",
+            "runId": "6de402cb-7f28-4de4-8791-41a37bc306c0",
+            "targetVersion": 1,
+            "sequence": 5,
+            "stage": "evidence-adjudication",
+            "status": "completed",
+            "payload": {
+              "sourceAssessments": [
+                {
+                  "sourceId": "8feb0b81-8e6d-4791-8819-0f4790fe7ab7#1",
+                  "documentId": "8feb0b81-8e6d-4791-8819-0f4790fe7ab7",
+                  "label": "IA-D01_area_and_service_directory.md · representative section",
+                  "authority": "controlled",
+                  "directness": "contemporaneous-record",
+                  "applicability": "similar-equipment",
+                  "revisionStatus": "current",
+                  "reliability": "high",
+                  "supports": [
+                    "The Utilities air gallery serves the 1SC dryer group and distributes instrument air to the RHOB process area.",
+                    "RHOB is a local area name, not an individual compressor identifier."
+                  ],
+                  "cautions": [
+                    "Record explicitly states all equipment identifiers and layout details are fictional and synthetic for evaluation purposes; it cannot establish actual operating instructions or specific valve positions at event time."
+                  ],
+                  "limitations": [
+                    "Does not define normal pressure values, alarm thresholds, or the mechanism of air restoration.",
+                    "Cannot confirm if a change record was active on May 20 without cross-referencing other evidence (e.g., IA-S01)."
+                  ],
+                  "id": "source-assessment-14g9bll"
+                },
+                {
+                  "sourceId": "8ed97a7d-e713-4b6b-9e10-7b31ca3b8aa3#1",
+                  "documentId": "8ed97a7d-e713-4b6b-9e10-7b31ca3b8aa3",
+                  "label": "IA-D02_record_and_measurement_conventions.md · representative section",
+                  "authority": "controlled",
+                  "directness": "contemporaneous-record",
+                  "applicability": "general-guidance",
+                  "revisionStatus": "current",
+                  "reliability": "high",
+                  "supports": [
+                    "Handwritten records are approximate unless stated otherwise.",
+                    "Alarm occurrence time, acknowledgment time, and export time may differ."
+                  ],
+                  "cautions": [
+                    "Excerpt is truncated; full text regarding 'Filed' status conventions is missing. Cannot determine if a specific record was filed or superseded without the complete document."
+                  ],
+                  "limitations": [
+                    "Does not provide site-specific equipment behavior (e.g., compressor restart logic).",
+                    "Cannot independently verify that an alarm at 10:00 AM represented a true pressure drop versus a sensor fault without process data."
+                  ],
+                  "id": "source-assessment-1qi99n3"
+                },
+                {
+                  "sourceId": "715dc23d-7d8f-46cf-bf2d-f0bc192aeb81#1",
+                  "documentId": "715dc23d-7d8f-46cf-bf2d-f0bc192aeb81",
+                  "label": "IA-D03_change_and_work-record_requirements.md · representative section",
+                  "authority": "controlled",
+                  "directness": "contemporaneous-record",
+                  "applicability": "general-guidance",
+                  "revisionStatus": "current",
+                  "reliability": "high",
+                  "supports": [
+                    "When a service-routing change affects an existing maintenance boundary, engineering disposition is required before use.",
+                    "A drawing redline alone does not constitute an issued operating document."
+                  ],
+                  "cautions": [
+                    "Record explicitly states these are fictional administrative requirements for the exercise; they do not prove actual policy compliance on May 20 without corroborating logs (e.g., IA-S01)."
+                  ],
+                  "limitations": [
+                    "Cannot confirm whether a temporary instruction was required or issued because it does not contain specific work-pack details."
+                  ],
+                  "id": "source-assessment-9li3z"
+                },
+                {
+                  "sourceId": "21640826-5289-43e5-a883-3ff2c2d6cee0#1",
+                  "documentId": "21640826-5289-43e5-a883-3ff2c2d6cee0",
+                  "label": "IA-S01_shift_and_notification_log.md · representative section",
+                  "authority": "controlled",
+                  "directness": "contemporaneous-record",
+                  "applicability": "direct-r3",
+                  "revisionStatus": "current",
+                  "reliability": "medium",
+                  "supports": [
+                    "At 09:48, crew U-A/U-B was at the gallery with boundary preparation in progress and maintenance release pending.",
+                    "At ~10:00, RHOB reported an air-low indication; local controls showed supply complaints."
+                  ],
+                  "cautions": [
+                    "Record states times are reconstructed for the exercise (synthetic evaluation record).",
+                    "Entry at 10:02 notes 'No line opening authorized', but does not specify if a formal release was attempted or why it failed.",
+                    "Exact time of pressure drop is approximate ('About 10:00')."
+                  ],
+                  "limitations": [
+                    "Does not capture the specific communication channel used between RHOB and Utilities during the event."
+                  ],
+                  "id": "source-assessment-15xqlof"
+                },
+                {
+                  "sourceId": "369ebcd6-ac78-4806-9c7d-16860a7ebe3b#1",
+                  "documentId": "369ebcd6-ac78-4806-9c7d-16860a7ebe3b",
+                  "label": "IA-S02_work_package_cover.md · representative section",
+                  "authority": "controlled",
+                  "directness": "derived-summary",
+                  "applicability": "similar-equipment",
+                  "revisionStatus": "current",
+                  "reliability": "medium",
+                  "supports": [
+                    "Work scope: planned maintenance of 1SC dryer group D-101.",
+                    "Temporary instruction attachment field is blank on the supplied copy."
+                  ],
+                  "cautions": [
+                    "Record states this is an administrative excerpt, not an executable isolation procedure.",
+                    "Blank temporary instruction field does not prove one was required; it only shows none were attached to *this* specific copy at issue time."
+                  ],
+                  "limitations": [
+                    "Cannot confirm if a change record affecting service routing existed on May 20 without external data."
+                  ],
+                  "id": "source-assessment-1a0s2dh"
+                },
+                {
+                  "sourceId": "03159822-76ac-4693-b843-8c65bb2a31ee#1",
+                  "documentId": "03159822-76ac-4693-b843-8c65bb2a31ee",
+                  "label": "IA-S03_assignment_and_authorization_extract.md · representative section",
+                  "authority": "controlled",
+                  "directness": "derived-summary",
+                  "applicability": "similar-equipment",
+                  "revisionStatus": "current",
+                  "reliability": "medium",
+                  "supports": [
+                    "U-A and U-B held current Utilities operating qualification and energy-control authorization.",
+                    "M-A (Maintenance receiver) had boundary acceptance pending."
+                  ],
+                  "cautions": [
+                    "Record states personnel codes are fictional; no actual employee records reproduced.",
+                    "Training extract does not state which configuration drawing the crew saw or whether either person received a recent update."
+                  ],
+                  "limitations": [
+                    "Cannot confirm if U-B was performing a specific task affected by the pressure drop without operational logs."
+                  ],
+                  "id": "source-assessment-1dy7u5f"
+                }
+              ],
+              "adjudicationConflicts": []
+            },
+            "createdAt": "2026-09-16T14:45:23.794Z"
+          }
+        ],
+        "versions": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "rubric_version": "IA-16036-1.0",
+  "total_points": 100,
+  "criteria": [
+    {"id":"T01","batch":"B0","points":4,"name":"Correct focal event and work stage"},
+    {"id":"T02","batch":"B0","points":4,"name":"Initial uncertainty and no unsupported personal blame"},
+    {"id":"T03","batch":"B0","points":7,"name":"Questions target topology, timing and document applicability"},
+    {"id":"T04","batch":"B1","points":8,"name":"Join pressure values to measurement locations"},
+    {"id":"T05","batch":"B1","points":8,"name":"Separate alarm meaning, trip claim and acknowledgment time"},
+    {"id":"T06","batch":"B1","points":4,"name":"Request missing discriminator without premature mechanism"},
+    {"id":"T07","batch":"B2","points":10,"name":"Identify the two series valves and complete-path requirement"},
+    {"id":"T08","batch":"B2","points":10,"name":"Connect both unavailable paths to receiving-pressure loss"},
+    {"id":"T09","batch":"B2","points":8,"name":"Use restoration with unchanged main valve as corroboration"},
+    {"id":"T10","batch":"B2","points":4,"name":"Reject wrong-asset archived drawing applicability"},
+    {"id":"T11","batch":"B2","points":3,"name":"Respect observation timing and inspection scope"},
+    {"id":"T12","batch":"B3","points":8,"name":"Identify installed configuration versus actually issued instruction"},
+    {"id":"T13","batch":"B3","points":6,"name":"Identify specific change-routing gap without invented motive"},
+    {"id":"T14","batch":"B3","points":6,"name":"Resolve early compressor-trip claim using later evidence"},
+    {"id":"T15","batch":"B3","points":5,"name":"Evidence-driven board continuity, correction and clear labels"},
+    {"id":"T16","batch":"B3","points":5,"name":"Mechanism-linked actions, effectiveness check and bounded stopping"}
+  ]
+}

@@ -1,0 +1,1042 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/3o614y",
+    "id": "3o614y",
+    "slide": 2,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "BASE",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Aptos Display"
+      },
+      "minorFont": {
+        "latinTypeface": "Aptos"
+      }
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "BASE",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "backgroundColor": "#F7F9FC",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "Shape 0",
+          "bbox": [
+            0,
+            693.12,
+            1279.97,
+            0
+          ],
+          "geometry": "line",
+          "lineColor": "#D7DEE9",
+          "lineWidth": 1.33
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/3",
+          "id": "3",
+          "name": "Text 1",
+          "bbox": [
+            40.32,
+            697.92,
+            211.2,
+            17.28
+          ],
+          "geometry": "rect",
+          "text": "RCA kickoff maps",
+          "textPreview": "RCA kickoff maps",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "RCA kickoff maps",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "RCA kickoff maps",
+                  "fontSize": 10,
+                  "typeface": "Aptos",
+                  "color": "#607089"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/25",
+          "id": "25",
+          "name": "Slide Number Placeholder 0",
+          "bbox": [
+            1176,
+            697.92,
+            83.99,
+            31.5
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "resolvedTextStyle": {
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dojehcvy",
+      "id": "2",
+      "name": "Shape 0",
+      "bbox": [
+        0,
+        0,
+        1279.97,
+        11.52
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/snax87ed",
+      "id": "3",
+      "name": "Text 1",
+      "bbox": [
+        43.2,
+        30.72,
+        1008,
+        40.32
+      ],
+      "geometry": "rect",
+      "text": "Human involvement",
+      "textPreview": "Human involvement",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Human involvement"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Human involvement",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Human involvement",
+              "fontSize": 30.67,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fq1wjmd4",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        1082.88,
+        28.8,
+        148.8,
+        32.64
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#E7F4F8",
+      "lineColor": "#CFEAF2",
+      "lineWidth": 0.67
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epsfahwj",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        1082.88,
+        36.96,
+        148.8,
+        11.52
+      ],
+      "geometry": "rect",
+      "text": "Table 1/15",
+      "textPreview": "Table 1/15",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Table 1/15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Table 1/15",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Table 1/15",
+              "fontSize": 10,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/0rqpoje9",
+      "id": "26",
+      "name": "Table 0",
+      "bbox": [
+        43.2,
+        109.44,
+        1193.28,
+        571.2
+      ],
+      "text": "Initial question | Potential direction it opens\nWho was involved or exposed, and what role did each person have? | Worker, contractor, supervisor, operator, witness, bystander; assigned responsibility, authority, exposure location\nWhat was each person trying to accomplish immediately before the event? | Task objective, competing priorities, production pressure, troubleshooting goal, informal work, mismatch between assigned and actual work\nWhat actions or non-actions are factually established, and what remains assumed? | Verified sequence, decision points, perception, response, omitted action, unreliable reconstruction, premature human-error conclusion\nWhat information, cues, instructions, or warnings were available at the time? | Briefing, alarm, label, signal, visibility, language, comprehension, missing or conflicting information; may activate Communication / supervision\nWhat qualifications, training, authorization, or task familiarity were relevant? | Competency, certification, authorization, contractor qualification, refresher training, unfamiliar or non-routine task\nWere fatigue, overtime, workload, physical capability, ergonomics, or time pressure potentially relevant? | Shift length, staffing, workload, fatigue, distraction, reach, force, posture, physical limitation, schedule pressure\nWhat PPE or protective clothing was expected, available, and observed? | PPE selection, availability, condition, fit, compatibility, use, enforcement, hazard assessment\nHow did the task setup, equipment, environment, or organization shape the person’s available choices? | Equipment design, access, visibility, procedure practicality, supervision, staffing, incentives, line of fire; handoff to the relevant specialist",
+      "textPreview": "Initial question | Potential direction it opens | Who was involved or exposed, and what role did each person have? | Worker, contractor, ...",
+      "rows": 9,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            43.2,
+            109.44,
+            494.4,
+            34.56
+          ],
+          "text": "Initial question",
+          "textPreview": "Initial question",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Initial question",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Initial question",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            537.6,
+            109.44,
+            698.88,
+            34.56
+          ],
+          "text": "Potential direction it opens",
+          "textPreview": "Potential direction it opens",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Potential direction it opens",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Potential direction it opens",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            43.2,
+            144,
+            494.4,
+            67.08
+          ],
+          "text": "Who was involved or exposed, and what role did each person have?",
+          "textPreview": "Who was involved or exposed, and what role did each person have?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Who was involved or exposed, and what role did each person have?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Who was involved or exposed, and what role did each person have?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            537.6,
+            144,
+            698.88,
+            67.08
+          ],
+          "text": "Worker, contractor, supervisor, operator, witness, bystander; assigned responsibility, authority, exposure location",
+          "textPreview": "Worker, contractor, supervisor, operator, witness, bystander; assigned responsibility, authority, exposure location",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Worker, contractor, supervisor, operator, witness, bystander; assigned responsibility, authority, exposure location",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Worker, contractor, supervisor, operator, witness, bystander; assigned responsibility, authority, exposure location",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            43.2,
+            211.08,
+            494.4,
+            67.08
+          ],
+          "text": "What was each person trying to accomplish immediately before the event?",
+          "textPreview": "What was each person trying to accomplish immediately before the event?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What was each person trying to accomplish immediately before the event?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What was each person trying to accomplish immediately before the event?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            537.6,
+            211.08,
+            698.88,
+            67.08
+          ],
+          "text": "Task objective, competing priorities, production pressure, troubleshooting goal, informal work, mismatch between assigned and actual work",
+          "textPreview": "Task objective, competing priorities, production pressure, troubleshooting goal, informal work, mismatch between assigned and actual work",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Task objective, competing priorities, production pressure, troubleshooting goal, informal work, mismatch between assigned and actual work",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Task objective, competing priorities, production pressure, troubleshooting goal, informal work, mismatch between assigned and actual work",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            43.2,
+            278.16,
+            494.4,
+            67.08
+          ],
+          "text": "What actions or non-actions are factually established, and what remains assumed?",
+          "textPreview": "What actions or non-actions are factually established, and what remains assumed?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What actions or non-actions are factually established, and what remains assumed?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What actions or non-actions are factually established, and what remains assumed?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            537.6,
+            278.16,
+            698.88,
+            67.08
+          ],
+          "text": "Verified sequence, decision points, perception, response, omitted action, unreliable reconstruction, premature human-error conclusion",
+          "textPreview": "Verified sequence, decision points, perception, response, omitted action, unreliable reconstruction, premature human-error conclusion",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Verified sequence, decision points, perception, response, omitted action, unreliable reconstruction, premature human-error conclusion",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Verified sequence, decision points, perception, response, omitted action, unreliable reconstruction, premature human-error conclusion",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            43.2,
+            345.24,
+            494.4,
+            67.08
+          ],
+          "text": "What information, cues, instructions, or warnings were available at the time?",
+          "textPreview": "What information, cues, instructions, or warnings were available at the time?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What information, cues, instructions, or warnings were available at the time?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What information, cues, instructions, or warnings were available at the time?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            537.6,
+            345.24,
+            698.88,
+            67.08
+          ],
+          "text": "Briefing, alarm, label, signal, visibility, language, comprehension, missing or conflicting information; may activate Communication / supervision",
+          "textPreview": "Briefing, alarm, label, signal, visibility, language, comprehension, missing or conflicting information; may activate Communication / sup...",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Briefing, alarm, label, signal, visibility, language, comprehension, missing or conflicting information; may activate Communication / supervision",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Briefing, alarm, label, signal, visibility, language, comprehension, missing or conflicting information; may activate Communication / supervision",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            43.2,
+            412.32,
+            494.4,
+            67.08
+          ],
+          "text": "What qualifications, training, authorization, or task familiarity were relevant?",
+          "textPreview": "What qualifications, training, authorization, or task familiarity were relevant?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What qualifications, training, authorization, or task familiarity were relevant?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What qualifications, training, authorization, or task familiarity were relevant?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            537.6,
+            412.32,
+            698.88,
+            67.08
+          ],
+          "text": "Competency, certification, authorization, contractor qualification, refresher training, unfamiliar or non-routine task",
+          "textPreview": "Competency, certification, authorization, contractor qualification, refresher training, unfamiliar or non-routine task",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Competency, certification, authorization, contractor qualification, refresher training, unfamiliar or non-routine task",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Competency, certification, authorization, contractor qualification, refresher training, unfamiliar or non-routine task",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            43.2,
+            479.4,
+            494.4,
+            67.08
+          ],
+          "text": "Were fatigue, overtime, workload, physical capability, ergonomics, or time pressure potentially relevant?",
+          "textPreview": "Were fatigue, overtime, workload, physical capability, ergonomics, or time pressure potentially relevant?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Were fatigue, overtime, workload, physical capability, ergonomics, or time pressure potentially relevant?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Were fatigue, overtime, workload, physical capability, ergonomics, or time pressure potentially relevant?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            537.6,
+            479.4,
+            698.88,
+            67.08
+          ],
+          "text": "Shift length, staffing, workload, fatigue, distraction, reach, force, posture, physical limitation, schedule pressure",
+          "textPreview": "Shift length, staffing, workload, fatigue, distraction, reach, force, posture, physical limitation, schedule pressure",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Shift length, staffing, workload, fatigue, distraction, reach, force, posture, physical limitation, schedule pressure",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Shift length, staffing, workload, fatigue, distraction, reach, force, posture, physical limitation, schedule pressure",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            43.2,
+            546.48,
+            494.4,
+            67.08
+          ],
+          "text": "What PPE or protective clothing was expected, available, and observed?",
+          "textPreview": "What PPE or protective clothing was expected, available, and observed?",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What PPE or protective clothing was expected, available, and observed?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What PPE or protective clothing was expected, available, and observed?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            537.6,
+            546.48,
+            698.88,
+            67.08
+          ],
+          "text": "PPE selection, availability, condition, fit, compatibility, use, enforcement, hazard assessment",
+          "textPreview": "PPE selection, availability, condition, fit, compatibility, use, enforcement, hazard assessment",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "PPE selection, availability, condition, fit, compatibility, use, enforcement, hazard assessment",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "PPE selection, availability, condition, fit, compatibility, use, enforcement, hazard assessment",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            43.2,
+            613.56,
+            494.4,
+            67.08
+          ],
+          "text": "How did the task setup, equipment, environment, or organization shape the person’s available choices?",
+          "textPreview": "How did the task setup, equipment, environment, or organization shape the person’s available choices?",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "How did the task setup, equipment, environment, or organization shape the person’s available choices?",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "How did the task setup, equipment, environment, or organization shape the person’s available choices?",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            537.6,
+            613.56,
+            698.88,
+            67.08
+          ],
+          "text": "Equipment design, access, visibility, procedure practicality, supervision, staffing, incentives, line of fire; handoff to the relevant specialist",
+          "textPreview": "Equipment design, access, visibility, procedure practicality, supervision, staffing, incentives, line of fire; handoff to the relevant sp...",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Equipment design, access, visibility, procedure practicality, supervision, staffing, incentives, line of fire; handoff to the relevant specialist",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Equipment design, access, visibility, procedure practicality, supervision, staffing, incentives, line of fire; handoff to the relevant specialist",
+                  "fontSize": 11.6,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nelwnmd0",
+      "id": "8",
+      "name": "Shape 5",
+      "bbox": [
+        22.08,
+        109.44,
+        4.8,
+        571.2
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Aptos",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cb6tkbuh",
+      "id": "25",
+      "name": "Slide Number Placeholder 0",
+      "bbox": [
+        1176,
+        697.92,
+        83.99,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "2",
+      "textPreview": "2",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

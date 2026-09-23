@@ -1,0 +1,311 @@
+{
+  "frozenAt": "2026-09-10T00:56:47.742Z",
+  "files": [
+    {
+      "path": "01_withheld_ground_truth/corrective_action_alignment.md",
+      "bytes": 2193,
+      "sha256": "0b30b301c31e29f28ca1db97f55269a1fd4abe2ad6b4226921294acb223e4d16",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "01_withheld_ground_truth/expected_findings.md",
+      "bytes": 2954,
+      "sha256": "4a961e25e94d07f15d64f8ed2d165900b713071ee8e21f8e14e1eaaae8863b2b",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "01_withheld_ground_truth/ground_truth_limitations.md",
+      "bytes": 1845,
+      "sha256": "c6416eb4d4397abc500a0f610b0b15ffb1524ce36f7d8322b3ee1ecda24a7024",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "01_withheld_ground_truth/original_partner_rca/IH SIFp- 80HSM_ R3 Carrier Beam Near Miss 10.14.24.pdf",
+      "bytes": 64387,
+      "sha256": "1aaa9b76c53948081c4f5e8630958c64f699be1c530747877bc1fa45d45242ee",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "01_withheld_ground_truth/original_partner_rca/Indiana Harbor 80-Inch Fallen Carrier Beam - Copy.pptx",
+      "bytes": 1331059,
+      "sha256": "7cd1c2aa364e6ebedf69199d5c566df356e14b2e884fa70fd2f2466f9c484b62",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "01_withheld_ground_truth/structured_causal_map.md",
+      "bytes": 3625,
+      "sha256": "f78d4fdb5c07d710e4772fb98bc9461eece3ce33ce062648a0ae8d044199e24c",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "02_model_visible/00_incident_input/incident_summary.txt",
+      "bytes": 1044,
+      "sha256": "0a3f1cd44def60b30609fc425b3b912fabf5675ff65db2615b3dc5c37bc54828",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/PARTNER_REFERENCE_Confined_Space_Standard.pdf",
+      "bytes": 624494,
+      "sha256": "669ac81937ae5023a26996a26c3c80e1305152e77c97c9c27eb7121ec63e1f4c",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/PARTNER_REFERENCE_Energy_Isolation_Standard.pdf",
+      "bytes": 1636069,
+      "sha256": "91ff5d5807dc15ee715ccaa5df2eb5df02b84100d42ba26a86407aec7b62c1ad",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/PARTNER_REFERENCE_Energy_Isolation_Standard_text_copy.txt",
+      "bytes": 99942,
+      "sha256": "b930dc1d0a70e70646f772a625ce34356deba3566b616ac8a0d71d06bac0279f",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/PARTNER_REFERENCE_Fall_Protection_Standard.pdf",
+      "bytes": 441530,
+      "sha256": "3df3563fa71329d235ec20bd0305782c30505128e7978ca0778253cf4951b3fb",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/PARTNER_REFERENCE_Overhead_Crane_Safety.pdf",
+      "bytes": 498569,
+      "sha256": "9b16748236a158f026adba1123d49dd338035a5083e3cc16cf082ccfae07c745",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/PARTNER_REFERENCE_Safety_Handbook.pdf",
+      "bytes": 873700,
+      "sha256": "44d45c498c925dd03fae20ad98b1c55637de7bdc493534c00115c65f5b8bfc02",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/R3_Area_Orientation.pdf",
+      "bytes": 6442,
+      "sha256": "bf000092af155f5c79ac7a006155c300e651c5a7a382287fcf9afcd1b9d7dea0",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/R3_Outage_Roles_and_Records_Guide.pdf",
+      "bytes": 4047,
+      "sha256": "4240a2b2348e34c7c49343df669da1795f701d84e3dac7b1d382a506d26fb24e",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/01_default_references/R3_Roll_Balance_System_Primer.pdf",
+      "bytes": 4952,
+      "sha256": "92cb7d433783550d3cfb771677f064a41b39c8c9675e0b62bb75fae3e55abcaa",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/02_starter_documents/Initial_Evidence_Register.pdf",
+      "bytes": 4677,
+      "sha256": "6bf1e0120dda8693a648234bb8d965e243c652f7780e326d717e92c384d70234",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/02_starter_documents/Initial_Scene_Sketch_and_Timeline.pdf",
+      "bytes": 6774,
+      "sha256": "a7a64520d05154a906dcb98f13d3a0d932f87b74f5a781a684ac33a7d38bcdc5",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/02_starter_documents/Preliminary_Incident_Notification_16515.pdf",
+      "bytes": 4774,
+      "sha256": "b2a55f7152d7298349373817c3087ee1d7a94c272a16dfc1c654dd2915dccf79",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-01_configuration_and_travel_observation.md",
+      "bytes": 1383,
+      "sha256": "6e880091bf2b133649efec51203ce1b80846a6dff84474c5b8bc0b5ee4460511",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-02_extended_video_review.md",
+      "bytes": 1194,
+      "sha256": "1f2206d8265e983ea2782b6c96e256546f2589294f23ce61d61ea0ab463cca00",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-03_hydraulic_isolation_followup.md",
+      "bytes": 1203,
+      "sha256": "ab1d231134d948bc19abb35dbcf7cd1e53d421f032d5fd0dd2dd1d8754f0b5bc",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-04_mechanical_design_and_retention_review.md",
+      "bytes": 1370,
+      "sha256": "03a1316e00b73678a7756163351fbce13bbced56653b0a4c54e0d36cd1cedc8e",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-05_task_loto_review.md",
+      "bytes": 1276,
+      "sha256": "319c69574d4b13695db7e232a925b2f937b78e58ff4886d7d62735398843059e",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/GTDE-06_measurement_and_condition_summary.md",
+      "bytes": 1148,
+      "sha256": "579ebee3ac18b0ce3c0bf50695b19bbc4df34aa05cc7d64252e6a4c374f45fc4",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/ground_truth_derived/README.md",
+      "bytes": 1247,
+      "sha256": "82288f22e1412eb1b1aa3f6d0704c4995032f68377a1f075b339c7242497fb60",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/01_Mechanical_Assembly_and_Retention_Record.pdf",
+      "bytes": 4168,
+      "sha256": "ae271728759aedb5d8857dd3c6f25ac67331114ce681d48383d1d8c46af8bec2",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/02_Energy_Control_Plan.pdf",
+      "bytes": 4330,
+      "sha256": "c5b68e242b9460884d6668f565f1a4ec97b02c791141dca087c9de116636b48e",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/03_Lockout_Verification_Record.pdf",
+      "bytes": 4083,
+      "sha256": "833dd5560369df527032a5eb3fcfbad30a4295dd67554827d6177f2a7001db7c",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/04_Shift_Turnover_Log.pdf",
+      "bytes": 3741,
+      "sha256": "6f88cb67d11ed1a9f4041cedef1c48023942c81937c0fe172dae60ea116ecc59",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/05_Outage_Work_Scope_and_Sequence.pdf",
+      "bytes": 3868,
+      "sha256": "eb47f42a49f32c888ed663040d517cc444a94fdf187dcd0d40f102644e7dc336",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/06_JJHAC_JSHA_Record.pdf",
+      "bytes": 4110,
+      "sha256": "fd57dd2bdc173b95550e6eac9573c86a80099c203f09f4d1f640c753804d8b7a",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/07_Witness_Statement_Packet.pdf",
+      "bytes": 3745,
+      "sha256": "664bf883c77b6bea1100d49da2c27a9b171bd86577c89207535276590b1eb7bb",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/08_Crane_Activity_Log.pdf",
+      "bytes": 3651,
+      "sha256": "98c8483a68c69ab18c0e15a69443124a0d21fa92f5816ee5b96e9f1ec2cd3627",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/09_Hydraulic_Status_and_Bleed_Verification.pdf",
+      "bytes": 3759,
+      "sha256": "f12fac21272131f4b6a1690a015a22071e4a1ddf6cb0312bcf965107cd45f658",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/10_Scene_Photo_Index_and_Measurement_Log.pdf",
+      "bytes": 4587,
+      "sha256": "f2dcd9b7d32cef1f3971f4635ef4dcc99efdbcc4be1f1e71b5de2e21eba2e46e",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/11_Post_Event_Mechanical_Inspection.pdf",
+      "bytes": 4134,
+      "sha256": "4edbdc1e2a00ebdbcec2f984d34c709e88441faf57a9a90e6da77789cc19098b",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/12_Similar_Stand_Inspection.pdf",
+      "bytes": 3721,
+      "sha256": "f0923e11db54e39d2b6546598d32bd44922cf788dac112fcdb5fd34112345b0b",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/13_Scaffold_and_Pit_Occupancy_Record.pdf",
+      "bytes": 3653,
+      "sha256": "7b01546f30d38ea9389e23dff6f37b76c4f76c3ec9b5b63dc0e88ff1e9de2f3c",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/14_Contractor_Crew_Qualifications.pdf",
+      "bytes": 3795,
+      "sha256": "e5d310b48a5a59988f2ccd9e1997347e95910b8bd9f1b862f09b1d402bc622c6",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/15_Video_Review_Log.pdf",
+      "bytes": 4071,
+      "sha256": "272e53ed06576673e7b7d9aae4055ff68e028344e7d744143fe8f876c7fe7748",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "02_model_visible/03_progressive_evidence/original_synthetic_set/16_OEM_Engineering_Information_Request.pdf",
+      "bytes": 3791,
+      "sha256": "b4eb7cee53dca9ab8adfa8c2f0243c2fb700093d6bbf8c28a495a9318790dc28",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "03_answer_bank/answer_agent_rules.md",
+      "bytes": 1530,
+      "sha256": "a1d76902fce0861aafdd2a2eb506e848cffca3e9646b4d507f45f65c6cd6332b",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "03_answer_bank/established_facts.md",
+      "bytes": 3359,
+      "sha256": "deffd9123f6b2c969b4e3385970d032944515c2679b2a0cb9c222631d02c6b3e",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "03_answer_bank/question_answer_index.md",
+      "bytes": 4385,
+      "sha256": "71f57e425b6cc4e30a71bcfbe8c77163516500e05c4bd85952d6fb723c8d3474",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "03_answer_bank/source_release_map.md",
+      "bytes": 1386,
+      "sha256": "7b268819927ee150c61efb30d26be08d51ce370fa7a669964adbec3012639aa6",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "03_answer_bank/unresolved_facts.md",
+      "bytes": 1974,
+      "sha256": "34b2cb72cc996026c0c92686c7ea80cb4ba38d21fea5d43cebe89cdb7888d22c",
+      "modelVisibility": "never-wholesale"
+    },
+    {
+      "path": "04_challenge_evidence/01_Superseded_Similar_Stand_Drawing_Note.pdf",
+      "bytes": 3808,
+      "sha256": "e34d71459a911472145cbe487d855b1870b0ebb54993835e9dd55cecf88b3be5",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "04_challenge_evidence/02_Anonymous_Turnover_Note.pdf",
+      "bytes": 3607,
+      "sha256": "6c3931d3b29b943cffc7c64ac21d32a7052fc496e78102749091c2cd3ddd1ceb",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "04_challenge_evidence/03_Unverified_Crane_Rumor_Email.pdf",
+      "bytes": 3835,
+      "sha256": "59db339402761a86f6f53a88848d1331cb98da61edf6de2be7e808d6bc58adcd",
+      "modelVisibility": "conditional"
+    },
+    {
+      "path": "04_challenge_evidence/README.md",
+      "bytes": 1303,
+      "sha256": "75622648bfa871fb10daf9c8fd6c0d26ccb8315d27cab21f7ba80906d95d835e",
+      "modelVisibility": "never-wholesale"
+    }
+  ]
+}

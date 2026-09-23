@@ -1,0 +1,30 @@
+{
+  "case_id": "IA-16036",
+  "package_version": "1.0",
+  "status": "prepared_not_run",
+  "historical_anchor": "NearMissSafetyData!D573 = 16036",
+  "release_order": ["B0", "B1", "B2", "B3"],
+  "release_mode": "fixed_batches_cumulative",
+  "records": [
+    {"id":"IA-I01","release":"B0","scope":"incident_description","path":"02_model_visible/00_incident_input/incident_summary.md"},
+    {"id":"IA-D01","release":"B0","scope":"default_reference","path":"02_model_visible/01_default_references/IA-D01_area_and_service_directory.md"},
+    {"id":"IA-D02","release":"B0","scope":"default_reference","path":"02_model_visible/01_default_references/IA-D02_record_and_measurement_conventions.md"},
+    {"id":"IA-D03","release":"B0","scope":"default_reference","path":"02_model_visible/01_default_references/IA-D03_change_and_work_record_requirements.md"},
+    {"id":"IA-S01","release":"B0","scope":"starter_document","path":"02_model_visible/02_starter_documents/IA-S01_shift_and_notification_log.md"},
+    {"id":"IA-S02","release":"B0","scope":"starter_document","path":"02_model_visible/02_starter_documents/IA-S02_work_package_cover.md"},
+    {"id":"IA-S03","release":"B0","scope":"starter_document","path":"02_model_visible/02_starter_documents/IA-S03_assignment_and_authorization_extract.md"},
+    {"id":"IA-P01","release":"B1","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B1/IA-P01_pressure_and_alarm_extract.md"},
+    {"id":"IA-P02","release":"B1","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B1/IA-P02_point_register.md"},
+    {"id":"IA-P03","release":"B1","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B1/IA-P03_work_document_extract.md"},
+    {"id":"IA-C01","release":"B1","scope":"answer_request_document","path":"04_challenge_evidence/IA-C01_desk_message.md"},
+    {"id":"IA-P04","release":"B2","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B2/IA-P04_installation_and_line_register.md"},
+    {"id":"IA-P05","release":"B2","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B2/IA-P05_field_execution_and_observation_log.md"},
+    {"id":"IA-P06","release":"B2","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B2/IA-P06_as_found_and_followup_notes.md"},
+    {"id":"IA-C02","release":"B2","scope":"answer_request_document","path":"04_challenge_evidence/IA-C02_service_folder_sheet.md"},
+    {"id":"IA-P07","release":"B3","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B3/IA-P07_change_routing_history.md"},
+    {"id":"IA-P08","release":"B3","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B3/IA-P08_revision_and_distribution_register.md"},
+    {"id":"IA-P09","release":"B3","scope":"answer_request_document","path":"02_model_visible/03_progressive_evidence/B3/IA-P09_journal_reconciliation.md"}
+  ],
+  "never_upload": ["01_withheld_ground_truth/", "03_answer_bank/", "05_evaluation/", "06_run_records/", "README.md", "package_manifest.json", "package_seal.json", "validate_package.mjs"],
+  "note": "Operator-only manifest. Release individual record contents with neutral filenames. Never send this inventory or future-release plan to the RCA model. JSON templates are not native Try 4 API payloads."
+}

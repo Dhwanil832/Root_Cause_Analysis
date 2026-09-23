@@ -1,0 +1,30 @@
+{
+  "template_only": true,
+  "case_id": "IA-16036",
+  "run_id": null,
+  "model_track_id": null,
+  "source_board_version": null,
+  "source_question_export_sha256": null,
+  "next_batch": null,
+  "status": "candidate",
+  "answers": [],
+  "attachments": [],
+  "approval": {"approved": false, "approved_by": null, "approved_at": null},
+  "answer_shape_example_not_an_answer": {
+    "question_id": "REPLACE_WITH_ACTUAL_ID",
+    "original_question_ids": [],
+    "recipient_specialist_ids": [],
+    "status": "not_established",
+    "answer": "",
+    "citations": [{"record_id": "", "section_or_row": "", "exact_excerpt": ""}],
+    "limitations": [],
+    "inferences": []
+  },
+  "attachment_shape_example_not_an_attachment": {
+    "record_id": "",
+    "file_name": "",
+    "sha256": "",
+    "release_reason": "scheduled_evidence",
+    "question_ids": []
+  }
+}

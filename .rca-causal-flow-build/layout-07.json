@@ -1,0 +1,1016 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/4kcgpu",
+    "id": "4kcgpu",
+    "slide": 7,
+    "layoutId": "da327603-8295-4cbf-bcc2-b1935346a988",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "5246ca1a-9e2f-4511-8eb9-f814a9d3c6c7",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F9FC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "da327603-8295-4cbf-bcc2-b1935346a988",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "5246ca1a-9e2f-4511-8eb9-f814a9d3c6c7",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "5246ca1a-9e2f-4511-8eb9-f814a9d3c6c7",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/61crmpob",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/to3ah47m",
+      "id": "2",
+      "bbox": [
+        48,
+        28,
+        1050,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Causal connection record",
+      "textPreview": "Causal connection record",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 31,
+        "typeface": "Aptos Display",
+        "color": "#12365D",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Causal connection record"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Causal connection record",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "typeface": "Aptos Display",
+            "color": "#12365D",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Causal connection record",
+              "fontSize": 31,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s3u9oz6h",
+      "id": "3",
+      "bbox": [
+        50,
+        82,
+        1090,
+        28
+      ],
+      "geometry": "rect",
+      "text": "The causal board stores an explicit claim and the evidence needed to assess it.",
+      "textPreview": "The causal board stores an explicit claim and the evidence needed to assess it.",
+      "resolvedFontSize": 15.33,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 16,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.96,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The causal board stores an explicit claim and the evidence needed to assess it."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The causal board stores an explicit claim and the evidence needed to assess it.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Aptos",
+            "color": "#607089",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The causal board stores an explicit claim and the evidence needed to assess it.",
+              "fontSize": 16,
+              "typeface": "Aptos",
+              "color": "#607089",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fqlsjups",
+      "id": "4",
+      "bbox": [
+        0,
+        690,
+        1280,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D7DEE9",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epcrq9o7",
+      "id": "5",
+      "bbox": [
+        40,
+        694,
+        260,
+        20
+      ],
+      "geometry": "rect",
+      "text": "RCA investigation system",
+      "textPreview": "RCA investigation system",
+      "resolvedFontSize": 8.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.79,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RCA investigation system"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RCA investigation system",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#607089",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RCA investigation system",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#607089",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1snal47y",
+      "id": "6",
+      "bbox": [
+        1175,
+        694,
+        60,
+        20
+      ],
+      "geometry": "rect",
+      "text": "7",
+      "textPreview": "7",
+      "resolvedFontSize": 8.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.79,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "7"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "7",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#607089",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "7",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#607089",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/dkze5wze",
+      "id": "7",
+      "bbox": [
+        70,
+        140,
+        1140,
+        428
+      ],
+      "text": "Causal-link field | What the agent records\nCondition | What existed or happened before the event\nEffect | What changed or occurred next\nMechanism | How the condition could have produced the effect\nSupporting facts | Evidence that agrees with the proposed connection\nContradicting facts | Evidence that weakens or challenges the connection\nMissing evidence | The specific fact that would distinguish the direction\nStatus | Supported, possible, disputed or rejected",
+      "textPreview": "Causal-link field | What the agent records | Condition | What existed or happened before the event | Effect | What changed or occurred ne...",
+      "rows": 8,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            70,
+            140,
+            295,
+            43
+          ],
+          "text": "Causal-link field",
+          "textPreview": "Causal-link field",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Causal-link field",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "typeface": "Aptos",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Causal-link field",
+                  "fontSize": 17,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            365,
+            140,
+            845,
+            43
+          ],
+          "text": "What the agent records",
+          "textPreview": "What the agent records",
+          "fillColor": "#12365D",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What the agent records",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "typeface": "Aptos",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What the agent records",
+                  "fontSize": 17,
+                  "typeface": "Aptos",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            70,
+            183,
+            295,
+            55
+          ],
+          "text": "Condition",
+          "textPreview": "Condition",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Condition",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Condition",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            365,
+            183,
+            845,
+            55
+          ],
+          "text": "What existed or happened before the event",
+          "textPreview": "What existed or happened before the event",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What existed or happened before the event",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What existed or happened before the event",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            70,
+            238,
+            295,
+            55
+          ],
+          "text": "Effect",
+          "textPreview": "Effect",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Effect",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Effect",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            365,
+            238,
+            845,
+            55
+          ],
+          "text": "What changed or occurred next",
+          "textPreview": "What changed or occurred next",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "What changed or occurred next",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "What changed or occurred next",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            70,
+            293,
+            295,
+            55
+          ],
+          "text": "Mechanism",
+          "textPreview": "Mechanism",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Mechanism",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Mechanism",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            365,
+            293,
+            845,
+            55
+          ],
+          "text": "How the condition could have produced the effect",
+          "textPreview": "How the condition could have produced the effect",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "How the condition could have produced the effect",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "How the condition could have produced the effect",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            70,
+            348,
+            295,
+            55
+          ],
+          "text": "Supporting facts",
+          "textPreview": "Supporting facts",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Supporting facts",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Supporting facts",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            365,
+            348,
+            845,
+            55
+          ],
+          "text": "Evidence that agrees with the proposed connection",
+          "textPreview": "Evidence that agrees with the proposed connection",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Evidence that agrees with the proposed connection",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Evidence that agrees with the proposed connection",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            70,
+            403,
+            295,
+            55
+          ],
+          "text": "Contradicting facts",
+          "textPreview": "Contradicting facts",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Contradicting facts",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Contradicting facts",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            365,
+            403,
+            845,
+            55
+          ],
+          "text": "Evidence that weakens or challenges the connection",
+          "textPreview": "Evidence that weakens or challenges the connection",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Evidence that weakens or challenges the connection",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Evidence that weakens or challenges the connection",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            70,
+            458,
+            295,
+            55
+          ],
+          "text": "Missing evidence",
+          "textPreview": "Missing evidence",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Missing evidence",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Missing evidence",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            365,
+            458,
+            845,
+            55
+          ],
+          "text": "The specific fact that would distinguish the direction",
+          "textPreview": "The specific fact that would distinguish the direction",
+          "fillColor": "#EEF6FB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "The specific fact that would distinguish the direction",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "The specific fact that would distinguish the direction",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            70,
+            513,
+            295,
+            55
+          ],
+          "text": "Status",
+          "textPreview": "Status",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Status",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Status",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            365,
+            513,
+            845,
+            55
+          ],
+          "text": "Supported, possible, disputed or rejected",
+          "textPreview": "Supported, possible, disputed or rejected",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Supported, possible, disputed or rejected",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Aptos",
+                "color": "#1F2937"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Supported, possible, disputed or rejected",
+                  "fontSize": 16,
+                  "typeface": "Aptos",
+                  "color": "#1F2937"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vu1s7apo",
+      "id": "8",
+      "bbox": [
+        120,
+        600,
+        1040,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Questions remain outside the causal board until an answer produces a fact or changes a connection.",
+      "textPreview": "Questions remain outside the causal board until an answer produces a fact or changes a connection.",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 19,
+        "typeface": "Aptos",
+        "color": "#0E7490",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Questions remain outside the causal board until an answer produces a fact or changes a connection."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Questions remain outside the causal board until an answer produces a fact or changes a connection.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Aptos",
+            "color": "#0E7490",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Questions remain outside the causal board until an answer produces a fact or changes a connection.",
+              "fontSize": 19,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

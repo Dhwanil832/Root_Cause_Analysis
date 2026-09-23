@@ -1,0 +1,1 @@
+throw new Error('Historical experiment/migration launcher disabled in Try 6. It may target an older app or saved run. Start a fresh investigation through the Try 6 dashboard; use npm run dev for its worker.');

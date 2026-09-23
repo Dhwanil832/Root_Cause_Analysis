@@ -1,0 +1,9 @@
+{
+  "status": "stopped_no_retry",
+  "error": "TypeError: fetch failed",
+  "cause": {
+    "message": "Error: connect ECONNREFUSED 127.0.0.1:3003",
+    "code": "ECONNREFUSED"
+  },
+  "at": "2026-09-16T18:15:50.282Z"
+}

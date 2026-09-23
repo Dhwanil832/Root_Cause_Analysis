@@ -1,0 +1,68 @@
+{
+  "answers": [
+    {
+      "questionId": "bq-1fanm2w",
+      "status": "unknown",
+      "answer": "The available evidence does not establish whether a simultaneous low-pressure event occurred at other downstream points such as the North gallery. The pressure extract (IA-P01) supplies sampled values for P-U and P-R but explicitly states it is not a continuous waveform and does not include data from all locations or valve states.",
+      "citations": [
+        {
+          "sourceId": "IA-P01",
+          "quote": "The export supplies these sampled values, not a continuous waveform."
+        },
+        {
+          "sourceId": "IA-S01",
+          "quote": "They do not identify the point at which the air supply was interrupted."
+        }
+      ],
+      "limitation": "The export supplies these sampled values, not a continuous waveform."
+    },
+    {
+      "questionId": "vq-52l0ma",
+      "status": "unknown",
+      "answer": "The available evidence does not establish whether a local indication P-R reading was recorded at 09:45 AM. The pressure extract (IA-P01) supplies sampled values starting at 09:54, and the shift entries (IA-S01) do not log every field operation or specific numeric measurements for that time.",
+      "citations": [
+        {
+          "sourceId": "IA-P01",
+          "quote": "## Selected pressure samples\n\nValues are bar gauge."
+        },
+        {
+          "sourceId": "IA-P01",
+          "quote": "All displayed pressure samples have good acquisition quality; sensor accuracy and full time coverage are separate matters."
+        }
+      ],
+      "limitation": "The export supplies these sampled values, not a continuous waveform."
+    },
+    {
+      "questionId": "vq-zyn2wt",
+      "status": "answered",
+      "answer": "The Utilities team acknowledged receipt of the air-low alarm at approximately 10:02, which was before pressure was restored. The shift entries indicate that work was paused and RHOB service issues were under review by then.",
+      "citations": [
+        {
+          "sourceId": "IA-S01",
+          "quote": "|\n| About 10:00 | RHOB | Air-low indication."
+        },
+        {
+          "sourceId": "IA-S01",
+          "quote": "RHOB service issue under review."
+        }
+      ],
+      "limitation": ""
+    },
+    {
+      "questionId": "vq-1cq95dh",
+      "status": "unknown",
+      "answer": "The available evidence does not establish what specific equipment or process condition caused the air-low indication at RHOB P-R. The shift entries (IA-S01) note that local controls showed supply complaints, but do not identify the point of interruption.",
+      "citations": [
+        {
+          "sourceId": "IA-I01",
+          "quote": "The initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment."
+        },
+        {
+          "sourceId": "IA-S01",
+          "quote": "|\n| About 10:00 | RHOB | Air-low indication."
+        }
+      ],
+      "limitation": ""
+    }
+  ]
+}

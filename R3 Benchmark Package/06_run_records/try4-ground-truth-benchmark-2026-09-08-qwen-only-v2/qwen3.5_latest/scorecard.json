@@ -1,0 +1,37 @@
+{
+  "campaign": "try4-ground-truth-benchmark-2026-09-08-qwen-only-v2",
+  "modelId": "ollama:qwen3.5:latest",
+  "incidentId": "9276eeb0-a723-47ad-aca9-2be80c5b9b2e",
+  "trackId": "b339a5c5-49b2-47a8-9122-d82948720dc5",
+  "version": 1,
+  "score": 68,
+  "maximum": 100,
+  "sections": [
+    { "name": "Incident comprehension", "score": 9.5, "maximum": 10 },
+    { "name": "Tag selection", "score": 10, "maximum": 10 },
+    { "name": "Investigative questions", "score": 10.5, "maximum": 15 },
+    { "name": "Evidence targeting", "score": 8.5, "maximum": 15 },
+    { "name": "Provenance and contradiction handling", "score": 10.5, "maximum": 15 },
+    { "name": "Causal reasoning", "score": 14.5, "maximum": 20 },
+    { "name": "Corrective actions", "score": 0, "maximum": 10 },
+    { "name": "Calibration and trace quality", "score": 4.5, "maximum": 5 }
+  ],
+  "run": {
+    "elapsedSeconds": 1119,
+    "checkpoints": 17,
+    "failedCheckpoints": 0,
+    "blockedCheckpoints": 1,
+    "stageErrors": 0,
+    "status": "contradictions-unresolved",
+    "causalMaturity": "initial",
+    "canonicalQuestions": 9,
+    "skippedQuestions": 12,
+    "sourceAssessments": 1,
+    "adjudicationConflicts": 3,
+    "evidenceClaims": 20,
+    "claimConflicts": 2,
+    "causalNodes": 8,
+    "causalEdges": 5,
+    "correctiveActions": 0
+  }
+}

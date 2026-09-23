@@ -1,0 +1,39 @@
+{
+  "app": "Try 6",
+  "title": "IA-16036 · V1 / V2 causal boards",
+  "description": "# Instrument-air interruption during maintenance preparation\r\n\r\nRecord ID: IA-I01\r\n\r\nAt approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored. No injury is reported.\r\n\r\nThe initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment. Supporting records will be provided as the investigation develops.",
+  "modelName": "qwen3.5:latest",
+  "originalIncidentId": "9660f4f2-5fc0-4d0a-917e-8e48641956e3",
+  "originalTrackId": "a6647fe7-b418-4232-817f-b3c6d3a5325d",
+  "kind": "published-versions",
+  "note": "Published partial V1 and V2 from the controlled Qwen investigation. The saved board statements, connections and review findings are unchanged. More nodes or links do not by themselves establish a better RCA.",
+  "href": "/history/causal-comparison",
+  "dataUrl": "/history/featured-causal-boards.json",
+  "versions": [
+    {
+      "number": 1,
+      "label": "V1",
+      "subtitle": "Initial published partial investigation",
+      "createdAt": "2026-09-20T18:01:48.895Z",
+      "status": "partial",
+      "sourcePath": "Try 6/evals/ia16036-v2-controlled/failure-report-evidence.json",
+      "sourceSha256": "d38ff8dc1518c19f29815b65af9acbe6028b52314b67472dbe7f588076fa3f0b",
+      "sourceRecordId": "a20904da-8710-40df-8d58-fec78f451f2a",
+      "nodes": 5,
+      "edges": 4
+    },
+    {
+      "number": 2,
+      "label": "V2",
+      "subtitle": "After routing / valve records and one released answer",
+      "createdAt": "2026-09-20T20:03:37.537Z",
+      "status": "partial",
+      "sourcePath": "Try 6/evals/ia16036-v2-controlled/failure-report-evidence.json",
+      "sourceSha256": "d38ff8dc1518c19f29815b65af9acbe6028b52314b67472dbe7f588076fa3f0b",
+      "sourceRecordId": "3d44374c-888e-465a-8870-99d11eaa8c12",
+      "nodes": 9,
+      "edges": 6
+    }
+  ]
+}
+

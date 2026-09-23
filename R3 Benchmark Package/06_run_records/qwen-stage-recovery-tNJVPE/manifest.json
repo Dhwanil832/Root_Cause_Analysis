@@ -1,0 +1,9 @@
+{
+  "purpose": "Focused live stage regression; not a four-version investigation or RCA-quality score",
+  "model": "ollama:qwen3.5:latest",
+  "promptVersion": "try4.2.0-stage-recovery",
+  "startedAt": "2026-09-15T03:12:33.105Z",
+  "inputSha256": "51b388c55328044df47e8cba96dd5c3f4a2088aaf5b4653d14acf124e7e5dbf3",
+  "candidateCount": 26,
+  "status": "running"
+}

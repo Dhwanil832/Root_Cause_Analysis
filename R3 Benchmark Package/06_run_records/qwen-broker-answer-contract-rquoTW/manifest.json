@@ -1,0 +1,13 @@
+{
+  "purpose": "Focused answered-batch and subsequent coverage schema check; not a full RCA run",
+  "startedAt": "2026-09-15T12:35:28.194Z",
+  "model": "ollama:qwen3.5:latest",
+  "promptVersion": "try4.2.1-broker-contract",
+  "sourceSha256": "1012683288dea001e4576028f02f85a99cf551d79f1ce14102643a05ddad83be",
+  "failedIds": [
+    "bq-hhq8mg",
+    "bq-ws1sje",
+    "bq-1oj29hu",
+    "bq-gifup5"
+  ]
+}

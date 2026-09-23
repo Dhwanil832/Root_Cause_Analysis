@@ -1,0 +1,38 @@
+{
+  "app": "Try 5",
+  "title": "IA-16036 · Diagnostic before / after causal boards",
+  "description": "# Instrument-air interruption during maintenance preparation\r\n\r\nRecord ID: IA-I01\r\n\r\nSynthetic evaluation record derived from a historical incident. Not an actual company record or operating instruction.\r\n\r\nAt approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored. No injury is reported in this evaluation case.\r\n\r\nThe initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment. Supporting records will be provided as the investigation develops.",
+  "modelName": "qwen3.5:latest",
+  "originalIncidentId": "3bc540d5-ca36-4dbe-8576-730135eb0951",
+  "originalTrackId": "28f74b32-2564-4765-852f-1f3fc0c8f367",
+  "kind": "diagnostic-snapshots",
+  "note": "V1 and V2 here are display labels for two preserved diagnostic snapshots, NOT published application versions. The original investigation was paused; these snapshots do not represent a completed full RCA. No missing version has been generated or inferred.",
+  "href": "/history/causal-comparison",
+  "dataUrl": "/history/featured-causal-boards.json",
+  "versions": [
+    {
+      "number": 1,
+      "label": "V1 · Diagnostic snapshot",
+      "subtitle": "Corrected baseline, before the controlled document",
+      "createdAt": "2026-09-19T20:50:28.776Z",
+      "status": "awaiting-evidence",
+      "sourcePath": "Try 5/outputs/audited-board-pilot-wpypKU/snapshot.json",
+      "sourceSha256": "f6c2bdcaee65f973e472588897f6ed9c33f4c6016096865b7a98376a744e4a27",
+      "sourceRecordId": "da57d29d-cf54-4c29-85ae-54260ef92dcd",
+      "nodes": 2,
+      "edges": 0
+    },
+    {
+      "number": 2,
+      "label": "V2 · Diagnostic snapshot",
+      "subtitle": "After one pressure/alarm document",
+      "createdAt": "2026-09-19T21:06:03.309Z",
+      "status": "awaiting-evidence",
+      "sourcePath": "Try 5/outputs/audited-board-pilot-BiUUCI/snapshot.json",
+      "sourceSha256": "e6c5e7d4d2a50a52dd08bcca00a84dd0e571b01373352b23ed0574c6aa5b0926",
+      "sourceRecordId": "da57d29d-cf54-4c29-85ae-54260ef92dcd",
+      "nodes": 2,
+      "edges": 0
+    }
+  ]
+}

@@ -1,0 +1,731 @@
+{
+  "baselineQuestions": [
+    {
+      "id": "bq-w5ij6g",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "routedTo": [
+        "maintenance-outage",
+        "equipment-tool"
+      ],
+      "text": "Did leaving the top backup roll balance isolated in a 'raised' position change the load path or mechanical restraint on the yoke/carrier beam compared to its normal operating configuration?",
+      "intent": "determine-if-the-raised-position-of-the-top-backup-roll-balance-altered-structur",
+      "rationale": "If yes, this suggests an equipment state dependency that broke during outage prep. If no, focus shifts to hydraulic pressure loss effects.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing of R3 carrier beam/yoke/roll balance interface",
+        "Maintenance procedure for roll removal and isolation"
+      ],
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "bq-4sitzj",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "routedTo": [
+        "maintenance-outage",
+        "process-material"
+      ],
+      "text": "Does de-energizing and bleeding the 'B hydraulics' system remove hydraulic support that was actively restraining the carrier beam link/keeper assembly?",
+      "intent": "verify-if-bleeding-the-b-hydraulics-removed-a-critical-restraint-or-pressure-hol",
+      "rationale": "If yes, this points to an energy isolation procedure gap where depressurization inadvertently released a mechanical restraint. If no, focus shifts to gravity/mechanical failure.",
+      "evidenceNeeded": [
+        "P&ID or schematic of B hydraulics circuit relative to yoke/carrier beam",
+        "Energy Isolation Plan (ECP) for R3 area showing hydraulic boundaries"
+      ],
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "bq-14c0q1",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "routedTo": [
+        "maintenance-outage",
+        "process-material"
+      ],
+      "text": "Was there a documented handover or inspection confirming the carrier beam remained securely seated and that no unintended changes occurred during the previous shift's outage prep?",
+      "intent": "confirm-if-shift-turnover-procedures-included-verification-of-equipment-state-be",
+      "rationale": "If missing, this indicates an administrative control failure. If present but ignored, it points to human error in verification.",
+      "evidenceNeeded": [
+        "Shift turnover log",
+        "Area manager notes",
+        "Outage work scope documentation"
+      ],
+      "priority": "medium",
+      "status": "open"
+    }
+  ],
+  "canonicalQuestions": [
+    {
+      "id": "q-1s1wmx8",
+      "tagId": "maintenance-outage",
+      "proposedBy": "maintenance-outage",
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "text": "Were any physical stops, wedges, or secondary support devices installed on the yoke/carrier beam assembly to prevent downward movement after B hydraulics were bled?",
+      "intent": "verify-if-secondary-mechanical-supports-or-temporary-blocking-were-used-for-the",
+      "rationale": "The failure occurred with keeper intact; if a mechanical stop was missing due to procedure omission or removal error, this confirms an administrative/operational root cause.",
+      "evidenceNeeded": [
+        "Work order for outage preparation",
+        "Shift turnover log showing verification of supports",
+        "Photographs of the yoke area post-roll-removal"
+      ],
+      "causalBranch": "verify-if-secondary-mechanical-supports-or-temporary-blocking-were-used-for-the-",
+      "decisionUnlocked": "The failure occurred with keeper intact; if a mechanical stop was missing due to procedure omission or removal error, this confirms an administrative/operational root cause.",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "q-1tqwncv",
+      "tagId": "maintenance-outage",
+      "proposedBy": "maintenance-outage",
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "text": "Does isolating and raising the 'Top backup roll balance' transfer additional vertical or shear loads to the R3 exit carrier beam yoke assembly?",
+      "intent": "determine-if-raising-the-top-backup-roll-balance-altered-load-paths-that-exceede",
+      "rationale": "The incident description notes this specific configuration; understanding if this state is a known hazard requiring extra safeguards (e.g., blocking) distinguishes between design flaw vs. procedural gap.",
+      "evidenceNeeded": [
+        "R3 Roll Balance System engineering drawings",
+        "Load path analysis or FEA for raised balance condition",
+        "Maintenance manual section on roll removal procedures"
+      ],
+      "causalBranch": "determine-if-raising-the-top-backup-roll-balance-altered-load-paths-that-exceede",
+      "decisionUnlocked": "The incident description notes this specific configuration; understanding if this state is a known hazard requiring extra safeguards (e.g., blocking) distinguishes between design flaw vs. procedural gap.",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "q-1tn3i55",
+      "tagId": "maintenance-outage",
+      "proposedBy": "maintenance-outage",
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "text": "Is the carrier beam keeper assembly designed to retain the link under gravity-only loading conditions without active hydraulic support?",
+      "intent": "assess-whether-the-keeper-mechanism-is-rated-for-load-retention-when-hydraulic-p",
+      "rationale": "The fact that it fell with the keeper on suggests either a design limitation not accounted for in outage procedures or wear/damage. This requires engineering review of component ratings.",
+      "evidenceNeeded": [
+        "Component specification sheet for R3 Exit Carrier Beam Link",
+        "Design load rating documentation",
+        "Inspection history showing any prior damage to keepers"
+      ],
+      "causalBranch": "assess-whether-the-keeper-mechanism-is-rated-for-load-retention-when-hydraulic-p",
+      "decisionUnlocked": "The fact that it fell with the keeper on suggests either a design limitation not accounted for in outage procedures or wear/damage. This requires engineering review of component ratings.",
+      "priority": "medium",
+      "status": "open"
+    },
+    {
+      "id": "q-1o5g3js",
+      "tagId": "isolation-loto",
+      "proposedBy": "isolation-loto",
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "text": "Was a formal tryout (zero-energy verification) performed after bleeding the B hydraulics and raising the balance, specifically checking for residual pressure or movement of the carrier beam?",
+      "intent": "verify-isolation-verification-procedure",
+      "rationale": "The incident description notes 'B hydraulics were shut off and bled' but does not confirm if a functional test was done. Failure to verify zero energy before leaving equipment in an unstable configuration is a common LOTO gap.",
+      "evidenceNeeded": [
+        "LOTO verification checklist (EV-005)",
+        "Tryout log entries",
+        "Photographs of valve positions post-isolation"
+      ],
+      "causalBranch": "verify-isolation-verification-procedure",
+      "decisionUnlocked": "The incident description notes 'B hydraulics were shut off and bled' but does not confirm if a functional test was done. Failure to verify zero energy before leaving equipment in an unstable configuration is a common LOTO gap.",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "q-18f5nnz",
+      "tagId": "isolation-loto",
+      "proposedBy": "isolation-loto",
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "text": "Was the B hydraulic system fully drained and locked out to prevent backfeed or residual pressure that could actuate a mechanism holding the carrier beam?",
+      "intent": "verify-stored-energy-assessment",
+      "rationale": "Even if 'bled', trapped fluid in accumulators or lines can create stored energy. Verification of complete isolation is critical.",
+      "evidenceNeeded": [
+        "Hydraulic schematic",
+        "Pressure gauge readings post-isolation",
+        "Lockout tag location photos"
+      ],
+      "causalBranch": "verify-stored-energy-assessment",
+      "decisionUnlocked": "Even if 'bled', trapped fluid in accumulators or lines can create stored energy. Verification of complete isolation is critical.",
+      "priority": "medium",
+      "status": "open"
+    },
+    {
+      "id": "q-13jfram",
+      "tagId": "other-novel",
+      "proposedBy": "other-novel",
+      "routedTo": [
+        "other-novel"
+      ],
+      "text": "What is the mechanical design of the carrier beam link/keeper assembly, and how does it interact with the yoke when B hydraulics are bled and the top backup roll balance is raised?",
+      "intent": "clarify-mechanism",
+      "rationale": "This question targets the specific unknown regarding load paths under isolation conditions. Answering this will determine if a new tag or existing equipment/procedure tags need modification to cover this failure mode.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing (EV-004)",
+        "Engineering manual for R3 carrier beam system",
+        "Expert review of hydraulic bleed procedures vs. mechanical retention"
+      ],
+      "causalBranch": "clarify-mechanism",
+      "decisionUnlocked": "This question targets the specific unknown regarding load paths under isolation conditions. Answering this will determine if a new tag or existing equipment/procedure tags need modification to cover this failure mode.",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "q-1atpysc",
+      "tagId": "procedure-planning",
+      "proposedBy": "procedure-planning",
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "text": "Did the previous shift explicitly communicate to the incoming team that work rolls were removed, backup balances were raised/isolated, and hydraulics bled? Was this confirmed via a formal sign-off?",
+      "intent": "assess-the-adequacy-of-shift-handover-communication",
+      "rationale": "Failure in information transfer during turnover could lead to an unverified assumption of safety by the next crew.",
+      "evidenceNeeded": [
+        "Shift handover log or checklist",
+        "Witness statements from contractor employees"
+      ],
+      "causalBranch": "assess-the-adequacy-of-shift-handover-communication",
+      "decisionUnlocked": "Failure in information transfer during turnover could lead to an unverified assumption of safety by the next crew.",
+      "priority": "medium",
+      "status": "open"
+    },
+    {
+      "id": "cq-fl5lyj",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "text": "Were any physical stops, wedges, or secondary support devices installed on the yoke/carrier beam assembly to prevent downward movement after B hydraulics were bled?",
+      "intent": "verify-if-secondary-mechanical-supports-or-temporary-blocking-were-used-for-the-carrier-beam",
+      "rationale": "The failure occurred with keeper intact; if a mechanical stop was missing due to procedure omission or removal error, this confirms an administrative/operational root cause.",
+      "evidenceNeeded": [
+        "Work order for outage preparation",
+        "Shift turnover log showing verification of supports",
+        "Photographs of the yoke area post-roll-removal"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-if-secondary-mechanical-supports-or-temporary-blocking-were-used-for-the-carrier-beam",
+      "decisionUnlocked": "The failure occurred with keeper intact; if a mechanical stop was missing due to procedure omission or removal error, this confirms an administrative/operational root cause."
+    },
+    {
+      "id": "cq-1wm0mrf",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "text": "Was a formal tryout (zero-energy verification) performed after bleeding the B hydraulics and raising the balance, specifically checking for residual pressure or movement of the carrier beam?",
+      "intent": "verify-isolation-verification-procedure-for-b-hydraulics-system",
+      "rationale": "The incident description notes 'B hydraulics were shut off and bled' but does not confirm if a functional test was done. Failure to verify zero energy before leaving equipment in an unstable configuration is a common LOTO gap.",
+      "evidenceNeeded": [
+        "LOTO verification checklist (EV-005)",
+        "Tryout log entries",
+        "Photographs of valve positions post-isolation"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-isolation-verification-procedure-for-b-hydraulics-system",
+      "decisionUnlocked": "The incident description notes 'B hydraulics were shut off and bled' but does not confirm if a functional test was done. Failure to verify zero energy before leaving equipment in an unstable configuration is a common LOTO gap."
+    },
+    {
+      "id": "cq-164gses",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "text": "Was the B hydraulic system fully drained and locked out to prevent backfeed or residual pressure that could actuate a mechanism holding the carrier beam?",
+      "intent": "verify-stored-energy-assessment-for-b-hydraulics-system",
+      "rationale": "Even if 'bled', trapped fluid in accumulators or lines can create stored energy. Verification of complete isolation is critical.",
+      "evidenceNeeded": [
+        "Hydraulic schematic",
+        "Pressure gauge readings post-isolation",
+        "Lockout tag location photos"
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "verify-stored-energy-assessment-for-b-hydraulics-system",
+      "decisionUnlocked": "Even if 'bled', trapped fluid in accumulators or lines can create stored energy. Verification of complete isolation is critical."
+    },
+    {
+      "id": "cq-13ylu1v",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "other-novel"
+      ],
+      "text": "What is the mechanical design of the carrier beam link/keeper assembly, and how does it interact with the yoke when B hydraulics are bled and the top backup roll balance is raised?",
+      "intent": "clarify-mechanism-of-carrier-beam-link-keeper-interaction-under-isolation",
+      "rationale": "This question targets the specific unknown regarding load paths under isolation conditions. Answering this will determine if a new tag or existing equipment/procedure tags need modification to cover this failure mode.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing (EV-004)",
+        "Engineering manual for R3 carrier beam system",
+        "Expert review of hydraulic bleed procedures vs. mechanical retention"
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "clarify-mechanism-of-carrier-beam-link-keeper-interaction-under-isolation",
+      "decisionUnlocked": "This question targets the specific unknown regarding load paths under isolation conditions. Answering this will determine if a new tag or existing equipment/procedure tags need modification to cover this failure mode."
+    },
+    {
+      "id": "cq-tj6701",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "text": "Did the previous shift explicitly communicate to the incoming team that work rolls were removed, backup balances were raised/isolated, and hydraulics bled? Was this confirmed via a formal sign-off?",
+      "intent": "assess-the-adequacy-of-shift-handover-communication-regarding-equipment-status",
+      "rationale": "Failure in information transfer during turnover could lead to an unverified assumption of safety by the next crew.",
+      "evidenceNeeded": [
+        "Shift handover log or checklist",
+        "Witness statements from contractor employees"
+      ],
+      "priority": "medium",
+      "status": "open",
+      "causalBranch": "assess-the-adequacy-of-shift-handover-communication-regarding-equipment-status",
+      "decisionUnlocked": "Failure in information transfer during turnover could lead to an unverified assumption of safety by the next crew."
+    },
+    {
+      "id": "vq-qmbq4",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Does the mechanical design require secondary supports when hydraulics are bled?",
+      "intent": "verify-node-2ntcuj",
+      "rationale": "Root cause candidates lack evidence support and fail counterfactual testing.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing (EV-004) to verify load paths, keeper ratings, and hydraulic restraint requirements."
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-node-2ntcuj",
+      "decisionUnlocked": "Root cause candidates lack evidence support and fail counterfactual testing."
+    },
+    {
+      "id": "vq-13fv8xz",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Does bleeding the B hydraulics remove a primary load-bearing function?",
+      "intent": "verify-node-1ioe76g",
+      "rationale": "Condition 'Loss of Hydraulic Restraint' is inferred from hearsay without direct evidence that the hydraulic system was actively restraining the beam.",
+      "evidenceNeeded": [
+        "P&ID or schematic showing connection between B hydraulics and carrier beam link restraint mechanism."
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-node-1ioe76g",
+      "decisionUnlocked": "Condition 'Loss of Hydraulic Restraint' is inferred from hearsay without direct evidence that the hydraulic system was actively restraining the beam."
+    },
+    {
+      "id": "vq-v2uwim",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Does raising the top backup roll balance shift gravity loads to the carrier beam keeper?",
+      "intent": "verify-node-17t9bje",
+      "rationale": "Condition 'Raised Balance Altered Load Paths' is speculative hearsay without engineering verification.",
+      "evidenceNeeded": [
+        "Engineering analysis or drawing showing load transfer paths when balance is raised vs. lowered."
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-node-17t9bje",
+      "decisionUnlocked": "Condition 'Raised Balance Altered Load Paths' is speculative hearsay without engineering verification."
+    },
+    {
+      "id": "vq-5e1i2i",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Were secondary mechanical supports installed per procedure before isolating hydraulics?",
+      "intent": "verify-node-1f5jkfm",
+      "rationale": "Condition 'Absence of Secondary Mechanical Supports' lacks evidence; no logs or inspection records confirm absence.",
+      "evidenceNeeded": [
+        "Work order, shift turnover log, or visual inspection record confirming presence/absence of wedges/stops."
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-node-1f5jkfm",
+      "decisionUnlocked": "Condition 'Absence of Secondary Mechanical Supports' lacks evidence; no logs or inspection records confirm absence."
+    },
+    {
+      "id": "vq-1nrnf9w",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Is the keeper rated to hold gravity loads without hydraulic support?",
+      "intent": "verify-node-13tu2gi",
+      "rationale": "Condition 'Keeper Mechanism Not Rated' is an unverified inference; no component specification data exists.",
+      "evidenceNeeded": [
+        "Component spec sheet or design manual for carrier beam keeper assembly load ratings."
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-node-13tu2gi",
+      "decisionUnlocked": "Condition 'Keeper Mechanism Not Rated' is an unverified inference; no component specification data exists."
+    },
+    {
+      "id": "vq-1v3vkfp",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Was the specific equipment configuration communicated and verified during shift change?",
+      "intent": "verify-node-b7rwfu",
+      "rationale": "Condition 'Failure in Shift Turnover Communication' lacks evidence; no logs or witness statements confirm communication failure.",
+      "evidenceNeeded": [
+        "Shift turnover log, sign-off records, or witness testimony regarding configuration handoff."
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-node-b7rwfu",
+      "decisionUnlocked": "Condition 'Failure in Shift Turnover Communication' lacks evidence; no logs or witness statements confirm communication failure."
+    },
+    {
+      "id": "vq-v8tias",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Was a functional zero-energy verification performed before leaving equipment in unstable configuration?",
+      "intent": "verify-node-jogm21",
+      "rationale": "Condition 'Residual Pressure' is speculative; no tryout logs or hydraulic schematics confirm trapped energy.",
+      "evidenceNeeded": [
+        "Hydraulic system schematic and pressure test/tryout records for the B hydraulics loop."
+      ],
+      "priority": "high",
+      "status": "open",
+      "causalBranch": "verify-node-jogm21",
+      "decisionUnlocked": "Condition 'Residual Pressure' is speculative; no tryout logs or hydraulic schematics confirm trapped energy."
+    }
+  ],
+  "skippedQuestions": [
+    {
+      "id": "covered-w4l7y7",
+      "proposedBy": "baseline",
+      "text": "Did leaving the top backup roll balance isolated in a 'raised' position change the load path or mechanical restraint on the yoke/carrier beam compared to its normal operating configuration?",
+      "intent": "determine-if-the-raised-position-of-the-top-backup-roll-balance-altered-structur",
+      "coveredByQuestionId": "q-1tqwncv",
+      "coveredByTagId": "maintenance-outage",
+      "reason": "Both questions test if raising the balance alters load paths. q-1tqwncv is more specific about 'additional vertical or shear loads' and explicitly links to distinguishing design flaw vs procedural gap, covering bq-w5ij6g's intent."
+    },
+    {
+      "id": "covered-1bf63uc",
+      "proposedBy": "baseline",
+      "text": "Was there a documented handover or inspection confirming the carrier beam remained securely seated and that no unintended changes occurred during the previous shift's outage prep?",
+      "intent": "confirm-if-shift-turnover-procedures-included-verification-of-equipment-state-be",
+      "coveredByQuestionId": "q-1atpysc",
+      "coveredByTagId": "procedure-planning",
+      "reason": "Both questions test shift handover communication regarding equipment state. q-1atpysc explicitly asks about the specific conditions (rolls removed, balances raised/isolated) and formal sign-off, covering bq-14c0q1's intent."
+    },
+    {
+      "id": "covered-a5rz1e",
+      "proposedBy": "equipment-tool",
+      "text": "Does the engineering design or work instruction require secondary mechanical supports (e.g., cribbing, blocks) to be installed before isolating and bleeding the B hydraulic system while leaving the top backup roll balance in a raised position?",
+      "intent": "verify-if-bleeding-b-hydraulics-removes-primary-support-for-the-carrier-beam-whe",
+      "coveredByQuestionId": "q-1s1wmx8",
+      "coveredByTagId": "maintenance-outage",
+      "reason": "Both questions test for the existence of secondary mechanical supports. q-1s1wmx8 asks about physical stops/wedges installed after bleeding, covering q-3fsb8r's intent regarding work instructions requiring such steps."
+    },
+    {
+      "id": "covered-7b68d4",
+      "proposedBy": "maintenance-outage",
+      "text": "What was the exact timeline from when B hydraulics were bled until the carrier beam fell, and who verified that no temporary supports remained in place?",
+      "intent": "confirm-the-sequence-of-events-between-shift-turnover-and-incident-to-identify-i",
+      "coveredByQuestionId": "q-1o5g3js",
+      "coveredByTagId": "isolation-loto",
+      "reason": "Both questions test the sequence and verification after hydraulic bleed. q-1o5g3js specifically asks about a formal tryout/zero-energy check, covering q-hlf636's intent to establish the timeline and who verified stability."
+    },
+    {
+      "id": "covered-1e4k1re",
+      "proposedBy": "isolation-loto",
+      "text": "Does the mechanical assembly drawing (EV-004) specify load limits or stability requirements for the carrier beam link/keeper when hydraulics are bled and backup roll balances are raised?",
+      "intent": "verify-mechanical-retention-design-limits",
+      "coveredByQuestionId": "q-1tn3i55",
+      "coveredByTagId": "maintenance-outage",
+      "reason": "Both questions test design limits under specific conditions (bled hydraulics + raised balance). q-1tn3i55 asks if the keeper is rated for gravity-only loading, covering q-l16pbs's intent to verify mechanical retention design limits."
+    },
+    {
+      "id": "covered-13uxu7d",
+      "proposedBy": "procedure-planning",
+      "text": "Did the work plan or procedure require installing temporary mechanical blocks, cribbing, or outriggers to support the yoke/carrier beam assembly after roll removal but before hydraulic isolation?",
+      "intent": "determine-if-secondary-mechanical-supports-were-planned-and-verified-for-the-car",
+      "coveredByQuestionId": "q-1s1wmx8",
+      "coveredByTagId": "maintenance-outage",
+      "reason": "Both questions test if secondary supports were planned/used. q-1s1wmx8 asks about physical stops/wedges installed, covering q-nundyy's intent to determine if such supports were required and used."
+    },
+    {
+      "id": "covered-erxf84",
+      "proposedBy": "other-novel",
+      "text": "Were any temporary mechanical supports used during roll removal, and if so, were they removed or compromised before the incident?",
+      "intent": "assess-temporary-supports",
+      "coveredByQuestionId": "q-1s1wmx8",
+      "coveredByTagId": "maintenance-outage",
+      "reason": "Both questions test for the use of temporary mechanical supports. q-1s1wmx8 asks about physical stops/wedges, covering q-pcv7hb's intent to assess if such supports were used and removed."
+    },
+    {
+      "id": "covered-1xq7vxr",
+      "proposedBy": "isolation-loto",
+      "text": "Did the shift turnover documentation explicitly record that the top backup roll balance was left in a raised, unsupported state and require specific precautions?",
+      "intent": "verify-shift-turnover-communication",
+      "coveredByQuestionId": "q-1atpysc",
+      "coveredByTagId": "procedure-planning",
+      "reason": "Both questions test shift turnover documentation regarding the raised balance state. q-1atpysc asks about explicit communication of these specific conditions, covering q-url3gv's intent."
+    },
+    {
+      "id": "covered-dkd05s",
+      "proposedBy": "procedure-planning",
+      "text": "What does the term 'isolated' mean in this context? Does it imply a mechanical lockout of the hydraulic cylinder or simply shutting off power/bleeding pressure, and was there a visual confirmation that the raised position remained stable?",
+      "intent": "clarify-the-definition-and-verification-process-for-isolated-backup-roll-balance",
+      "coveredByQuestionId": "q-1o5g3js",
+      "coveredByTagId": "isolation-loto",
+      "reason": "Both questions address the definition and verification process for 'isolated' state. q-1o5g3js asks about a formal tryout/zero-energy check, covering q-ioscs4's intent to clarify if visual confirmation was done."
+    },
+    {
+      "id": "covered-177p2wj",
+      "proposedBy": "other-novel",
+      "text": "Does the 'isolated' state (raised balance + bled hydraulics) represent a documented non-standard configuration, or is it an undocumented deviation from normal operating procedures?",
+      "intent": "verify-isolation-state",
+      "coveredByQuestionId": "q-url3gv",
+      "coveredByTagId": "isolation-loto",
+      "reason": "Both questions test the documentation status of the 'isolated' state. q-url3gv asks about explicit recording in turnover logs, covering q-1hcke6g's intent to distinguish between known/untested vs undocumented deviations."
+    },
+    {
+      "id": "covered-z4qfd2",
+      "proposedBy": "causal-analysis",
+      "text": "Does de-energizing and bleeding the 'B hydraulics' system remove hydraulic support that was actively restraining the carrier beam link/keeper assembly?",
+      "intent": "verify-if-bleeding-the-b-hydraulics-removed-a-critical-restraint-or-pressure-hol",
+      "coveredByQuestionId": "bq-4sitzj",
+      "coveredByTagId": "baseline",
+      "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+    },
+    {
+      "id": "covered-1qr9hv2",
+      "proposedBy": "causal-analysis",
+      "text": "Does isolating and raising the 'Top backup roll balance' transfer additional vertical or shear loads to the R3 exit carrier beam yoke assembly?",
+      "intent": "determine-if-raising-the-top-backup-roll-balance-altered-load-paths-that-exceede-design-limits",
+      "coveredByQuestionId": "q-1tqwncv",
+      "coveredByTagId": "maintenance-outage",
+      "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+    },
+    {
+      "id": "covered-ev8uhd",
+      "proposedBy": "causal-analysis",
+      "text": "Is the carrier beam keeper assembly designed to retain the link under gravity-only loading conditions without active hydraulic support?",
+      "intent": "assess-whether-the-keeper-mechanism-is-rated-for-load-retention-when-hydraulic-p-pressure-is-absent",
+      "coveredByQuestionId": "q-1tn3i55",
+      "coveredByTagId": "maintenance-outage",
+      "reason": "The canonical question already covers the same investigation intent and evidence boundary."
+    }
+  ],
+  "verificationFindings": [
+    {
+      "id": "verify-18fjk0f",
+      "targetId": "node-2ntcuj",
+      "severity": "blocking",
+      "issue": "Root cause candidates lack evidence support and fail counterfactual testing.",
+      "evidenceNeeded": "Mechanical assembly drawing (EV-004) to verify load paths, keeper ratings, and hydraulic restraint requirements.",
+      "question": "Does the mechanical design require secondary supports when hydraulics are bled?"
+    },
+    {
+      "id": "verify-7tz8mq",
+      "targetId": "node-1ioe76g",
+      "severity": "blocking",
+      "issue": "Condition 'Loss of Hydraulic Restraint' is inferred from hearsay without direct evidence that the hydraulic system was actively restraining the beam.",
+      "evidenceNeeded": "P&ID or schematic showing connection between B hydraulics and carrier beam link restraint mechanism.",
+      "question": "Does bleeding the B hydraulics remove a primary load-bearing function?"
+    },
+    {
+      "id": "verify-1dh37k",
+      "targetId": "node-17t9bje",
+      "severity": "blocking",
+      "issue": "Condition 'Raised Balance Altered Load Paths' is speculative hearsay without engineering verification.",
+      "evidenceNeeded": "Engineering analysis or drawing showing load transfer paths when balance is raised vs. lowered.",
+      "question": "Does raising the top backup roll balance shift gravity loads to the carrier beam keeper?"
+    },
+    {
+      "id": "verify-k27xbq",
+      "targetId": "node-1f5jkfm",
+      "severity": "blocking",
+      "issue": "Condition 'Absence of Secondary Mechanical Supports' lacks evidence; no logs or inspection records confirm absence.",
+      "evidenceNeeded": "Work order, shift turnover log, or visual inspection record confirming presence/absence of wedges/stops.",
+      "question": "Were secondary mechanical supports installed per procedure before isolating hydraulics?"
+    },
+    {
+      "id": "verify-43rm8t",
+      "targetId": "node-13tu2gi",
+      "severity": "blocking",
+      "issue": "Condition 'Keeper Mechanism Not Rated' is an unverified inference; no component specification data exists.",
+      "evidenceNeeded": "Component spec sheet or design manual for carrier beam keeper assembly load ratings.",
+      "question": "Is the keeper rated to hold gravity loads without hydraulic support?"
+    },
+    {
+      "id": "verify-efh5om",
+      "targetId": "node-b7rwfu",
+      "severity": "blocking",
+      "issue": "Condition 'Failure in Shift Turnover Communication' lacks evidence; no logs or witness statements confirm communication failure.",
+      "evidenceNeeded": "Shift turnover log, sign-off records, or witness testimony regarding configuration handoff.",
+      "question": "Was the specific equipment configuration communicated and verified during shift change?"
+    },
+    {
+      "id": "verify-mfyhbo",
+      "targetId": "node-jogm21",
+      "severity": "blocking",
+      "issue": "Condition 'Residual Pressure' is speculative; no tryout logs or hydraulic schematics confirm trapped energy.",
+      "evidenceNeeded": "Hydraulic system schematic and pressure test/tryout records for the B hydraulics loop.",
+      "question": "Was a functional zero-energy verification performed before leaving equipment in unstable configuration?"
+    }
+  ],
+  "answerFetches": [
+    {
+      "id": "fetch-12o48nz",
+      "questionId": "bq-4sitzj",
+      "status": "partial",
+      "answer": "Evidence indicates that de-energizing (bleeding) B hydraulics likely removed hydraulic support, but evidence does not confirm if this was a 'critical restraint' sufficient to prevent the fall on its own. The carrier beam fell intact with the keeper installed while the top backup roll balance remained isolated in a raised position.",
+      "sourceIds": [
+        "R3-DEF-002",
+        "kb:equipment-tool"
+      ],
+      "claimIds": [
+        "claim-1pzd6x2",
+        "claim-10lnxcx"
+      ],
+      "userRequest": "Provide the P&ID or schematic of the B hydraulics circuit relative to the yoke/carrier beam, and an Energy Isolation Plan (ECP) for R3 area showing hydraulic boundaries.",
+      "searched": [
+        "R3-DEF-002",
+        "R3-START-002",
+        "R3-DEF-003"
+      ]
+    },
+    {
+      "id": "fetch-9stu1q",
+      "questionId": "q-1s1wmx8",
+      "status": "not-found",
+      "answer": "No evidence in the packet confirms whether physical stops, wedges, or secondary support devices were installed on the yoke/carrier beam assembly to prevent downward movement after B hydraulics were bled.",
+      "sourceIds": [],
+      "claimIds": [
+        "claim-1gpgfaw"
+      ],
+      "userRequest": "Provide the Work order for outage preparation, Shift turnover log showing verification of supports, or Photographs of the yoke area post-roll-removal to verify if secondary mechanical supports were used.",
+      "searched": [
+        "R3_Outage_Roles_and_Records_Guide.pdf",
+        "Initial_Evidence_Register.pdf",
+        "Initial_Scene_Sketch_and_Timeline.pdf"
+      ]
+    },
+    {
+      "id": "fetch-1tw4h1x",
+      "questionId": "q-1tqwncv",
+      "status": "partial",
+      "answer": "Evidence indicates that isolating the 'Top backup roll balance' in a raised position while bleeding B hydraulics created an unverified configuration change where load paths or support points for the yoke/carrier beam assembly were likely altered. However, specific engineering drawings (EV-004) and FEA analyses confirming whether this state transfers additional vertical/shear loads exceeding design limits are missing from the evidence packet.",
+      "sourceIds": [
+        "kb:equipment-tool",
+        "kb:maintenance-outage",
+        "kb:procedure-planning"
+      ],
+      "claimIds": [
+        "claim-7gptkk",
+        "claim-kdx4k5"
+      ],
+      "userRequest": "Provide the R3 Roll Balance System engineering drawings (specifically EV-004) and any Load path analysis or FEA for the raised balance condition to confirm if additional loads are transferred.",
+      "searched": [
+        "R3_Roll_Balance_System_Primer.pdf",
+        "Initial_Scene_Sketch_and_Timeline.pdf",
+        "R3_Area_Orientation.pdf"
+      ]
+    },
+    {
+      "id": "fetch-1rbtdp2",
+      "questionId": "q-1tn3i55",
+      "status": "not-found",
+      "answer": "The evidence packet does not contain a definitive answer to whether the carrier beam keeper assembly is designed for gravity-only retention without active hydraulic support.",
+      "sourceIds": [],
+      "claimIds": [
+        "claim-10347l4",
+        "claim-40sida",
+        "claim-1u6gd46"
+      ],
+      "userRequest": "Provide Component specification sheet for R3 Exit Carrier Beam Link, Design load rating documentation, and Inspection history showing any prior damage to keepers.",
+      "searched": [
+        "R3-DEF-002",
+        "R3-START-002",
+        "R3-DEF-001"
+      ]
+    },
+    {
+      "id": "fetch-vw2yvn",
+      "questionId": "q-1o5g3js",
+      "status": "not-found",
+      "answer": "No evidence in the packet confirms whether a formal tryout (zero-energy verification) was performed after bleeding B hydraulics and raising the balance.",
+      "sourceIds": [],
+      "claimIds": [
+        "claim-lonuat"
+      ],
+      "userRequest": "Provide the Executed lockout verification record (EV-005) or a tryout log entry documenting zero-energy verification for the B hydraulics and raised balance configuration.",
+      "searched": [
+        "R3_Outage_Roles_and_Records_Guide.pdf",
+        "R3_Roll_Balance_System_Primer.pdf",
+        "Initial_Evidence_Register.pdf",
+        "Initial_Scene_Sketch_and_Timeline.pdf"
+      ]
+    },
+    {
+      "id": "fetch-19k7p8z",
+      "questionId": "q-18f5nnz",
+      "status": "not-found",
+      "answer": "The evidence packet does not contain specific pressure gauge readings post-isolation or photos of lockout tag locations to confirm if the B hydraulic system was fully drained and locked out.",
+      "sourceIds": [
+        "R3-DEF-002"
+      ],
+      "claimIds": [],
+      "userRequest": "Provide pressure gauge readings post-isolation, photos of lockout tag locations, or a verified energy control plan record confirming the B hydraulic system was fully drained and locked out.",
+      "searched": [
+        "R3-DEF-002",
+        "R3-START-003"
+      ]
+    },
+    {
+      "id": "fetch-1tlhzuh",
+      "questionId": "q-13jfram",
+      "status": "not-found",
+      "answer": "The mechanical design of the carrier beam link/keeper assembly and its interaction with the yoke under isolated hydraulic conditions is not supported by evidence in this packet.",
+      "sourceIds": [],
+      "claimIds": [
+        "claim-h5646k",
+        "claim-2407kn",
+        "claim-153cbv5"
+      ],
+      "userRequest": "Provide the mechanical assembly drawing (EV-004) for the R3 carrier beam link/keeper system and any engineering manual describing load paths when B hydraulics are bled.",
+      "searched": [
+        "R3_Roll_Balance_System_Primer.pdf",
+        "Initial_Scene_Sketch_and_Timeline.pdf",
+        "R3_Area_Orientation.pdf"
+      ]
+    },
+    {
+      "id": "fetch-17i9gym",
+      "questionId": "q-1atpysc",
+      "status": "not-found",
+      "answer": "The evidence packet does not contain a formal sign-off record or shift handover log confirming that work rolls were removed, backup balances raised/isolated, and hydraulics bled.",
+      "sourceIds": [
+        "R3-START-002"
+      ],
+      "claimIds": [],
+      "userRequest": "Provide the Shift Handover Log or Checklist (specifically EV-006) to verify if explicit communication and formal sign-off occurred regarding roll removal, balance isolation/raising, and hydraulic bleeding.",
+      "searched": [
+        "R3-START-002",
+        "kb:procedure-planning"
+      ]
+    }
+  ],
+  "answers": []
+}

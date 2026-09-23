@@ -1,0 +1,5 @@
+{
+  "error": "Error: The prior batch was rejected: Unsupported story citation: notification; rejected quote: \"At approximately 1:03 PM on October 14, 2024 (Turn 2), the R3 Exit Carrier Beam at the Indiana Harbor 80 inch Hot Strip roughing mill fell from the yoke into the R3 mill pit...\". Copy one exact contiguous passage from this source. Do not add ellipses or combine passages from different sources.. Regenerate the complete batch. Citation sourceId must come ONLY from allowedCitationSourceIds, not question IDs or existing answers. Quote exactly from that source's text. If no available source supports an answer, return unknown/unavailable without citations.",
+  "incidentId": "5d41662f-9b61-46a7-8ef7-5cb79c127271",
+  "trackId": "12a72d40-6c90-4bf3-9566-82fa9563d014"
+}

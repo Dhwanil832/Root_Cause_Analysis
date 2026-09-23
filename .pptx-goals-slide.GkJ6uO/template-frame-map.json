@@ -1,0 +1,151 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "overview of investigation goals by category",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/k3yl0zql", "action": "rewrite" },
+        { "sourceElementId": "sh/65g3298r", "action": "rewrite" },
+        { "sourceElementId": "tb/4nilkzmd", "action": "replace" }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 1,
+      "narrativeRole": "human involvement kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/ozmd8r65", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 2,
+      "narrativeRole": "electrical incident kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/gbmxszmt", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 3,
+      "narrativeRole": "equipment or tool kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/re9g7yxo", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 4,
+      "narrativeRole": "mobile equipment kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/gv29g7q5", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 5,
+      "narrativeRole": "crane and lifting kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/4ji5kbid", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "narrativeRole": "rail and locomotive kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/lg76d8zy", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 7,
+      "narrativeRole": "stored and released energy kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/r2dkrq5g", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 8,
+      "narrativeRole": "isolation and LOTO kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/kredcr6t", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 9,
+      "narrativeRole": "maintenance and outage kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/wba1cjqp", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 11,
+      "sourceSlide": 10,
+      "narrativeRole": "process and material kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/kjytkvup", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 12,
+      "sourceSlide": 11,
+      "narrativeRole": "work-environment kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/k3uhcb6h", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 13,
+      "sourceSlide": 12,
+      "narrativeRole": "procedure and planning kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/sfi58ryd", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 14,
+      "sourceSlide": 13,
+      "narrativeRole": "communication and supervision kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/p0zyd0b6", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 15,
+      "sourceSlide": 14,
+      "narrativeRole": "animal and wildlife kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/4vmh0vq5", "action": "rewrite" }
+      ]
+    },
+    {
+      "outputSlide": 16,
+      "sourceSlide": 15,
+      "narrativeRole": "other and novel condition kickoff questions",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "sourceElementId": "sh/o7ah4nm5", "action": "rewrite" }
+      ]
+    }
+  ],
+  "omittedSourceSlides": []
+}

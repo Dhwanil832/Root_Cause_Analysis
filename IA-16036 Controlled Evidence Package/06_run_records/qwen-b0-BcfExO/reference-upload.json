@@ -1,0 +1,59 @@
+[
+  {
+    "recordId": "IA-D01",
+    "document": {
+      "id": "8feb0b81-8e6d-4791-8819-0f4790fe7ab7",
+      "scope": "reference",
+      "title": "IA-D01_area_and_service_directory.md",
+      "plant": "IA-16036 evaluation",
+      "fileKey": "reference/library/8feb0b81-8e6d-4791-8819-0f4790fe7ab7-IA-D01_area_and_service_directory.md",
+      "fileName": "IA-D01_area_and_service_directory.md",
+      "contentType": "text/markdown",
+      "size": 1380,
+      "sha256": "92bf8556f6d53430f535be8545f5a93e5d1793b79f13ecfc6bfa5887f3137710",
+      "revision": "B0",
+      "extractionStatus": "ready",
+      "extractionNotes": "",
+      "extractedText": "# Utilities area and service directory\n\nRecord ID: IA-D01 | Revision: 2 | Effective: 2024-04-01\n\nSynthetic evaluation record. All equipment identifiers and layout details are fictional and are not operating instructions.\n\n## Service areas\n\nThe Utilities air gallery serves the 1SC dryer group and distributes instrument air to the RHOB process area. RHOB is the local area name used in these records; it is not an individual compressor identifier. The 1SC gallery and RHOB instrument-air station are separate operating locations.\n\n| Location | Equipment/service | Normal record custodian |\n| --- | --- | --- |\n| North gallery | Site air-header connection, local indication P-U | Utilities operations |\n| Dryer aisle | Dryer group D-101 and main-route valves M-101/M-102 | Utilities maintenance |\n| East service rack | Auxiliary line installation area | Projects and Utilities |\n| RHOB service station | Receiving header H-R and indication P-R | RHOB operations |\n\n## Roles\n\nUtilities prepares the maintenance boundary. RHOB operations observes the receiving process. Maintenance receives the work boundary only after its release. A maintenance work order being scheduled is not a record that the boundary has been released.\n\nThis directory is a location index. It is not a current piping diagram and does not establish valve positions or the pressure available at any given time.",
+      "createdAt": "2026-09-16T14:40:28.043Z"
+    }
+  },
+  {
+    "recordId": "IA-D02",
+    "document": {
+      "id": "8ed97a7d-e713-4b6b-9e10-7b31ca3b8aa3",
+      "scope": "reference",
+      "title": "IA-D02_record_and_measurement_conventions.md",
+      "plant": "IA-16036 evaluation",
+      "fileKey": "reference/library/8ed97a7d-e713-4b6b-9e10-7b31ca3b8aa3-IA-D02_record_and_measurement_conventions.md",
+      "fileName": "IA-D02_record_and_measurement_conventions.md",
+      "contentType": "text/markdown",
+      "size": 1305,
+      "sha256": "d054d9edac83a514b5c2420712790c67fa1aa5d22e46f29db311ae6d88786dc6",
+      "revision": "B0",
+      "extractionStatus": "ready",
+      "extractionNotes": "",
+      "extractedText": "# Record and measurement conventions\n\nRecord ID: IA-D02 | Revision: 1 | Effective: 2024-04-01\n\nSynthetic evaluation record. Conventions apply to this fictional case only.\n\n## Measurements\n\nPressure values are bar gauge. A pressure tag names the measurement point, not every location on the service. The point register is needed to interpret location and scope. A running indication is not a flow measurement. A command, a field-position observation and a proved internal valve condition are different records.\n\n## Time and identity\n\nWall times are local plant time on the stated date. Handwritten records are approximate unless stated otherwise. An alarm's occurrence time, acknowledgment time and export time may differ. Record aliases can persist after equipment changes; the title displayed on an alarm is not a substitute for its input mapping.\n\n## Status conventions\n\n“Filed” means retained in the archive. “Issued” means distributed for its stated use. “Installed” refers to a physical change. “Maintenance released” refers to work-boundary acceptance. None automatically establishes the other statuses.\n\nAn empty form field records no value. The reason it is empty requires other evidence. A draft, an issued revision and a historical reference copy can all exist at the same time.",
+      "createdAt": "2026-09-16T14:40:28.111Z"
+    }
+  },
+  {
+    "recordId": "IA-D03",
+    "document": {
+      "id": "715dc23d-7d8f-46cf-bf2d-f0bc192aeb81",
+      "scope": "reference",
+      "title": "IA-D03_change_and_work_record_requirements.md",
+      "plant": "IA-16036 evaluation",
+      "fileKey": "reference/library/715dc23d-7d8f-46cf-bf2d-f0bc192aeb81-IA-D03_change_and_work_record_requirements.md",
+      "fileName": "IA-D03_change_and_work_record_requirements.md",
+      "contentType": "text/markdown",
+      "size": 1369,
+      "sha256": "36b50241035a66f68ff1ce570ff7dbf2dc730c3d35d04b5a27ba6571a6e652c5",
+      "revision": "B0",
+      "extractionStatus": "ready",
+      "extractionNotes": "",
+      "extractedText": "# Change and work-record requirements\n\nRecord ID: IA-D03 | Revision: 4 | Effective: 2024-03-01\n\nSynthetic evaluation record. Fictional administrative requirements, not the partner's actual policy or a safe-work procedure.\n\n## Change records\n\nSection 3.2: When a service-routing change affects an existing maintenance boundary, the change owner identifies the affected energy-control procedure (ECP), drawing and receiving operating area. Engineering disposition is required before the changed arrangement is used for that maintenance boundary.\n\nSection 3.4: Mechanical completion verifies the installed work covered by the completion sheet. Work-document disposition and distribution are separate signoffs. A drawing redline is not, by itself, an issued operating document.\n\nSection 3.6: The affected ECP is either revised and issued, or an approved temporary instruction is attached to the work package. Draft preparation alone does not satisfy distribution.\n\n## Work records\n\nSection 5.1: The work package records the ECP revision supplied to the crew and the maintenance boundary's acceptance state. An initial notification may be entered before the event sequence has been checked.\n\nSection 5.3: Competence and authorization records define the tasks for which a person is qualified. They do not record what that person actually observed or did on a particular job.",
+      "createdAt": "2026-09-16T14:40:28.121Z"
+    }
+  }
+]

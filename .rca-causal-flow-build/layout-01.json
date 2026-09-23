@@ -1,0 +1,436 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/hqc577",
+    "id": "hqc577",
+    "slide": 1,
+    "layoutId": "da327603-8295-4cbf-bcc2-b1935346a988",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "5246ca1a-9e2f-4511-8eb9-f814a9d3c6c7",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F9FC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "da327603-8295-4cbf-bcc2-b1935346a988",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "5246ca1a-9e2f-4511-8eb9-f814a9d3c6c7",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "5246ca1a-9e2f-4511-8eb9-f814a9d3c6c7",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwjqlkfe",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        18
+      ],
+      "geometry": "rect",
+      "fillColor": "#0E7490",
+      "lineColor": "#0E7490",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2t87a5gn",
+      "id": "2",
+      "bbox": [
+        72,
+        146,
+        7,
+        300
+      ],
+      "geometry": "rect",
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuhojax8",
+      "id": "3",
+      "bbox": [
+        112,
+        165,
+        900,
+        86
+      ],
+      "geometry": "rect",
+      "text": "RCA Investigation System",
+      "textPreview": "RCA Investigation System",
+      "resolvedFontSize": 50,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 50,
+        "typeface": "Aptos Display",
+        "color": "#12365D",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RCA Investigation System"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RCA Investigation System",
+          "resolvedTextStyle": {
+            "fontSize": 50,
+            "typeface": "Aptos Display",
+            "color": "#12365D",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RCA Investigation System",
+              "fontSize": 50,
+              "typeface": "Aptos Display",
+              "color": "#12365D",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/czapgfyp",
+      "id": "4",
+      "bbox": [
+        116,
+        262,
+        820,
+        54
+      ],
+      "geometry": "rect",
+      "text": "From incident description to evidence-supported causal paths",
+      "textPreview": "From incident description to evidence-supported causal paths",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "Aptos",
+        "color": "#0E7490",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "From incident description to evidence-supported causal paths"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "From incident description to evidence-supported causal paths",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Aptos",
+            "color": "#0E7490",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "From incident description to evidence-supported causal paths",
+              "fontSize": 25,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0jqpkfa",
+      "id": "5",
+      "bbox": [
+        116,
+        337,
+        920,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Separate specialist knowledge bases, one question handler and an iterative causal-analysis loop",
+      "textPreview": "Separate specialist knowledge bases, one question handler and an iterative causal-analysis loop",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 19,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Separate specialist knowledge bases, one question handler and an iterative causal-analysis loop"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Separate specialist knowledge bases, one question handler and an iterative causal-analysis loop",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Aptos",
+            "color": "#607089",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Separate specialist knowledge bases, one question handler and an iterative causal-analysis loop",
+              "fontSize": 19,
+              "typeface": "Aptos",
+              "color": "#607089",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/axs7epgz",
+      "id": "6",
+      "bbox": [
+        1090,
+        42,
+        140,
+        24
+      ],
+      "geometry": "rect",
+      "text": "System concept",
+      "textPreview": "System concept",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#0E7490",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.92,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "System concept"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "System concept",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#0E7490",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "System concept",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#0E7490",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/by18nux4",
+      "id": "7",
+      "bbox": [
+        52,
+        676,
+        260,
+        22
+      ],
+      "geometry": "rect",
+      "text": "RCA investigation system",
+      "textPreview": "RCA investigation system",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#607089",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.94,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RCA investigation system"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RCA investigation system",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#607089",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RCA investigation system",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#607089",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

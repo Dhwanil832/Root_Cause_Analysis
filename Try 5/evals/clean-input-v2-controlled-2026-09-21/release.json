@@ -1,0 +1,34 @@
+{
+  "parentRunId": "4866969b-2dea-41ed-9b45-acb2de6fba9c",
+  "incidentId": "e99d24d6-753c-427a-9304-cdbd6726090f",
+  "trackId": "3ef34107-57cc-4426-a284-aa600f37ce1a",
+  "expectedParentVersion": 1,
+  "reason": "User-approved controlled V2 from the preserved clean-input V1. Answer four existing questions using the fixed B2 release; independently review resulting findings and all retained board statements/connections. Do not restart V1's unfinished broad queue. New questions remain visible for the next release. This is a scoped partial revision, not a completed full RCA or an unchanged-scheduler benchmark.",
+  "documentPaths": [
+    "../IA-16036 Controlled Evidence Package/07_case_content_inputs/02_model_visible/03_progressive_evidence/B2/IA-P04_installation_and_line_register.md",
+    "../IA-16036 Controlled Evidence Package/07_case_content_inputs/02_model_visible/03_progressive_evidence/B2/IA-P05_field_execution_and_observation_log.md",
+    "../IA-16036 Controlled Evidence Package/07_case_content_inputs/02_model_visible/03_progressive_evidence/B2/IA-P06_as_found_and_followup_notes.md"
+  ],
+  "answers": [
+    {
+      "questionId": "22e66415-446c-46f4-84fb-628e45059edc",
+      "responseStatus": "partial",
+      "text": "IA-P04 records installation of B-17 on May 16. Its connection schedule lists H-U -> V-201 -> B-17 spool, and B-17 spool -> V-202 -> H-R, with no intervening feed. Both valves were present and labeled in the post-restoration IA-P06 walkdown. IA-P05 records V-201 being moved open at approximately 09:56. At 10:05:40 +/-5 seconds V-202's handle was recorded across the line and classified closed. V-202 was moved open at 10:06:18 +/-5 seconds. These are records of specific observations/actions; the later observation does not establish V-202's position at every earlier instant, and a handle position alone does not establish internal valve condition. Neither interview supplies a reason that V-202 remained closed."
+    },
+    {
+      "questionId": "bb3d6ccb-ac15-468f-a629-49d8488f9911",
+      "responseStatus": "partial",
+      "text": "IA-P05 records V-201 moved open at about 09:56 and U-A completing closure of M-101 at 10:00:03 +/-5 seconds. U-B was present. No contact with V-202 is visible within that camera's coverage; this is not a statement about all locations or times. Preparation was stopped by 10:02, and no maintenance opening of pipework or dryer covers commenced. IA-P04 identifies the normal dryer route as H-U -> M-101 -> D-101 -> M-102 -> H-R and the auxiliary B-17 route as H-U -> V-201 -> B-17 spool -> V-202 -> H-R. The records establish connectivity and recorded actions; they do not by themselves establish the complete causal mechanism or an operator's intent."
+    },
+    {
+      "questionId": "82ef0d42-e5ee-4d6e-8aab-6f1359ef702e",
+      "responseStatus": "partial",
+      "text": "IA-P05's gallery clock/video review transcript records completion of M-101 closure at 10:00:03 +/-5 seconds. The 10:05:40 +/-5 second field note records M-102 open and V-202 closed. The 10:06:18 +/-5 second action note states M-101 was left closed and M-102 left open while V-202 was moved open. These are the available field records, not a deduction from work-order status. They do not supply continuous incident-time valve positions, an internal condition test, or a separate signed independent isolation-verification check."
+    },
+    {
+      "questionId": "e154d43f-3ecf-4cc6-9e7b-c1dd1ec4e683",
+      "responseStatus": "partial",
+      "text": "IA-P05 records U-B moving V-202 open at 10:06:18 +/-5 seconds, leaving M-101 closed and M-102 open. Around 10:07 the RHOB radio entry reports local air indication back in the normal band. IA-P06 records no C-11 repair or reset between the initial call and recovery. Its later walkdown found no pipe rupture, separated fitting, or obvious sustained air discharge on the inspected route, but was not a full leak-rate test or incident-time demand measurement. These observations establish a manual valve action followed by recovery; they do not prove exclusivity of the cause or rule out every transient fault."
+    }
+  ]
+}

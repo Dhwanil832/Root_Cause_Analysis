@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1788746954515,
+      "tag": "0000_unusual_hercules",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1788754545706,
+      "tag": "0001_polite_angel",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789061970299,
+      "tag": "0002_slow_gauntlet",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1789732800000,
+      "tag": "0003_persistent_engine",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1789732900000,
+      "tag": "0004_story_jobs",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1789733000000,
+      "tag": "0005_engine_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1789783065732,
+      "tag": "0006_engine_artifacts",
+      "breakpoints": true
+    }
+  ]
+}

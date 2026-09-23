@@ -1,0 +1,123 @@
+{
+  "models": [
+    {
+      "id": "demo-field-analyst",
+      "name": "Field Analyst",
+      "provider": "builtin",
+      "detail": "Built-in deterministic preview",
+      "available": true
+    },
+    {
+      "id": "ollama:hermes3:8b",
+      "name": "hermes3:8b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "id": "ollama:granite3.3:8b",
+      "name": "granite3.3:8b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "id": "ollama:deepseek-r1:7b",
+      "name": "deepseek-r1:7b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion",
+        "thinking"
+      ]
+    },
+    {
+      "id": "ollama:phi4-mini-reasoning:3.8b",
+      "name": "phi4-mini-reasoning:3.8b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion"
+      ]
+    },
+    {
+      "id": "ollama:mistral:7b",
+      "name": "mistral:7b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "id": "ollama:gemma3:4b",
+      "name": "gemma3:4b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion"
+      ]
+    },
+    {
+      "id": "ollama:llama3.2:3b",
+      "name": "llama3.2:3b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "id": "ollama:qwen3.5:latest",
+      "name": "qwen3.5:latest",
+      "provider": "ollama",
+      "detail": "Ollama · local · vision",
+      "available": true,
+      "capabilities": [
+        "vision",
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "id": "ollama:llama3.1:latest",
+      "name": "llama3.1:latest",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "id": "ollama:qwen2.5:7b",
+      "name": "qwen2.5:7b",
+      "provider": "ollama",
+      "detail": "Ollama · local",
+      "available": true,
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    }
+  ],
+  "ollamaUrl": "http://127.0.0.1:11434",
+  "apiProviderConfigured": false
+}

@@ -1,0 +1,459 @@
+{
+  "purpose": "Focused live stage regression; not a four-version investigation or RCA-quality score",
+  "model": "ollama:qwen3.5:latest",
+  "promptVersion": "try4.2.0-stage-recovery",
+  "startedAt": "2026-09-15T03:03:47.182Z",
+  "inputSha256": "51b388c55328044df47e8cba96dd5c3f4a2088aaf5b4653d14acf124e7e5dbf3",
+  "candidateCount": 26,
+  "status": "failed",
+  "error": "Error: Output contract: Invalid coverage owner for q-czy36u: bq-1adc8hy,bq-rt3ptu,q-tgnqmy. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate.; Invalid coverage owner for q-1q1m1gv: bq-rt3ptu,q-tgnqmy,bq-1hgiq84. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate.",
+  "attempts": [
+    {
+      "attempt": 1,
+      "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-qrinsp\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"The question targets the specific sequence of tasks in an 'unobserved interval' to determine if a subsequent action triggered failure. This is distinct from canonical questions regarding general procedure existence or energy verification status; it requires witness testimony for that specific timeframe.\"\n    },\n    {\n      \"candidateKey\": \"q-g8epu4\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"This question assesses latent defects or historical modifications. While canonical questions address the immediate isolation state and procedure requirements, this specific inquiry into equipment history/modifications is a separate causal branch regarding long-term integrity.\"\n    },\n    {\n      \"candidateKey\": \"q-czy36u\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1adc8hy,bq-1hgiq84,bq-rt3ptu,bq-13a5gvm,q-tgnqmy,q-1pl6i7e,q-16qnd7a,q-tzvlnb\",\n      \"reason\": \"The intent to verify energy isolation completeness and the specific requirement for mechanical lockout vs. bleeding is fully covered by canonical questions bq-13a5gvm (formal verification), q-czy36u's core question about procedure requirements, and specifically q-tgnqmy/q-1pl6i7e which explicitly ask if a physical/mechanical lock was applied to the hydraulics or balance. The evidence needed overlaps significantly with canonical requests for LOTO sheets and schematics.\"\n    },\n    {\n      \"candidateKey\": \"q-1q1m1gv\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-13a5gvm,q-tgnqmy,q-1pl6i7e,bq-rt3ptu\",\n      \"reason\": \"The intent to determine if procedures require mechanical securing of suspended loads is covered by canonical question bq-13a5gvm (explicitly asks about procedure requirements for load securing) and q-czy36u. The evidence needed overlaps with the existing set.\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"Retained two proposed questions regarding specific task sequences in an unobserved interval and latent equipment history as they test distinct causal branches not fully covered by canonical isolation/procedure queries. Screened four other candidates (energy isolation completeness, procedure requirements for securing loads) because their intents are explicitly addressed by existing canonical questions covering LOTO verification, mechanical lock application, and load-securing procedures.\",\n    \"evidenceUsed\": [\"incident-description\", \"canonicalQuestions\"],\n    \"unknowns\": [],\n    \"alternatives\": [\"\"],\n    \"confidence\": 0.95\n  }\n}",
+      "error": "Output contract: Invalid coverage owner for q-czy36u: bq-1adc8hy,bq-1hgiq84,bq-rt3ptu,bq-13a5gvm,q-tgnqmy,q-1pl6i7e,q-16qnd7a,q-tzvlnb. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate.; Invalid coverage owner for q-1q1m1gv: bq-13a5gvm,q-tgnqmy,q-1pl6i7e,bq-rt3ptu. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate."
+    },
+    {
+      "attempt": 2,
+      "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-qrinsp\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Tests the specific unobserved interval between isolation and failure; distinct from general procedure checks.\"\n    },\n    {\n      \"candidateKey\": \"q-g8epu4\",\n      \"disposition\": \"screened\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Evidence packet states 'Equipment damage not apparent on the link or keeper' and beam found intact; no evidence of latent defect history is present to screen, but lack of visible damage makes this a lower priority than immediate isolation failures. However, strictly following screening rules: The prompt says 'Absence of evidence... does not establish that something did not occur'. Since we have NO record of maintenance history in the packet, we cannot definitively say it's screened by facts (wen\"\n    },\n    {\n      \"candidateKey\": \"q-czy36u\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1adc8hy,bq-rt3ptu,q-tgnqmy\",\n      \"reason\": \"The intent to verify energy isolation completeness and verification is fully covered by canonical questions bq-1hgiq84 (mechanical lock status), q-tgnqmy (physical mechanical lock applied?), q-1pl6i7e (procedure followed for B hydraulics), and bq-13a5gvm (formal zero-energy check). The specific question about whether bleeding was sufficient is a subset of the broader isolation verification questions already retained.\"\n    },\n    {\n      \"candidateKey\": \"q-1q1m1gv\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-rt3ptu,q-tgnqmy,bq-1hgiq84\",\n      \"reason\": \"The intent to determine load securing requirements and procedure existence is covered by bq-rt3ptu (temporary supports), q-tgnqmy (mechanical lock on balance), and bq-1hgiq84 (balance secured against gravity). The specific question about the carrier beam's own securing requirement overlaps with these existing checks regarding mechanical vs hydraulic retention for suspended loads.\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"Retained q-qrinsp as it tests a unique temporal gap. Screened q-g8epu4 due to lack of evidence supporting latent defects (though absence isn't proof). Covered q-czy36u and q-1q1m1gv by existing canonical questions addressing mechanical locking, zero-energy verification, and load securing procedures.\",\"evidenceUsed\":[\"incident-description\",\"structuredIncident\"],\"unknowns\":[\"Maintenance history for carrier beam assembly.\",\"Specific sequence of tasks during Turn 2 prior to fall.\",\"Status of temporary supports used for removed rolls/balance.\",\"Verification records confirming energy isolation and zero-energy state.\",\"Mechanism by which beam detached from yoke (gravity load, hydraulic release).\",\"Whether 'isolated in raised position' implies mechanical lock or reliance on hydraulics.\"],\"alternatives\":[\"q-g8epu4 could be kept if maintenance history is found to show defects; currently screened due to lack of evidence supporting the hypothesis.\",\"q-czy36u and q-1q1m1gv are covered by canonical questions bq-1hgiq84, q-tgnqmy, bq-rt3ptu, q-1pl6i7e, bq-13a5gvm which address isolation completeness and load securing.\",\"q-qrinsp remains open to determine if a specific action triggered the release.\"],\"confidence\":0.92}\n  }",
+      "error": "Output contract: Invalid coverage owner for q-czy36u: bq-1adc8hy,bq-rt3ptu,q-tgnqmy. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate.; Invalid coverage owner for q-1q1m1gv: bq-rt3ptu,q-tgnqmy,bq-1hgiq84. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate."
+    }
+  ],
+  "brokerBatches": [
+    {
+      "candidateIds": [
+        "bq-1adc8hy",
+        "bq-1hgiq84",
+        "bq-rt3ptu",
+        "bq-13a5gvm"
+      ],
+      "catalogIds": [],
+      "output": {
+        "decisions": [
+          {
+            "candidateKey": "bq-1adc8hy",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "The incident facts state B hydraulics were shut off/bled but do not establish the design dependency of the beam/balance on that pressure. This question tests a critical causal branch regarding failure mode."
+          },
+          {
+            "candidateKey": "bq-1hgiq84",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "The incident facts state the balance was 'isolated in a raised position' but do not confirm if this implies mechanical locking or hydraulic reliance. This question tests whether gravity load existed without restraint."
+          },
+          {
+            "candidateKey": "bq-rt3ptu",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "The incident facts mention work rolls/backup rolls removed but do not confirm the presence or absence of temporary supports for the specific balance that fell. This question tests procedural compliance and physical state."
+          },
+          {
+            "candidateKey": "bq-13a5gvm",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "The incident facts mention hydraulics were shut off but do not confirm if a formal zero-energy verification was performed. This question tests the validity of the isolation state."
+          }
+        ],
+        "decision": {
+          "summary": "All four candidate questions are retained as 'keep'. The evidence packet confirms events (hydraulics bled, balance raised) but lacks specific design data or procedural records to confirm whether hydraulic pressure was required for retention, if mechanical locks were used, if temporary supports existed, or if zero-energy verification occurred. Each question targets a distinct causal branch necessary to explain the fall.",
+          "evidenceUsed": [
+            "incident-description",
+            "64c1c3ba-63e2-4a10-8767-088d76228e61"
+          ],
+          "unknowns": [
+            "Mechanism by which beam detached from yoke (gravity load vs. hydraulic release).",
+            "Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.",
+            "Status of any temporary supports used for the removed rolls/balance.",
+            "Verification records confirming energy isolation and zero-energy state."
+          ],
+          "alternatives": [
+            "Design flaw: Beam relies on hydraulics which were bled.",
+            "Procedural failure: Balance raised without mechanical lock or cribbing.",
+            "Isolation error: Zero-energy check failed to detect residual pressure needed for retention."
+          ],
+          "confidence": 0.95
+        }
+      },
+      "trace": {
+        "id": "c99c227f-5a10-4abc-9763-28e19fc4e80b",
+        "stage": "question-broker",
+        "summary": "All four candidate questions are retained as 'keep'. The evidence packet confirms events (hydraulics bled, balance raised) but lacks specific design data or procedural records to confirm whether hydraulic pressure was required for retention, if mechanical locks were used, if temporary supports existed, or if zero-energy verification occurred. Each question targets a distinct causal branch necessary to explain the fall.",
+        "evidence": [
+          "incident-description",
+          "64c1c3ba-63e2-4a10-8767-088d76228e61"
+        ],
+        "unknowns": [
+          "Mechanism by which beam detached from yoke (gravity load vs. hydraulic release).",
+          "Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.",
+          "Status of any temporary supports used for the removed rolls/balance.",
+          "Verification records confirming energy isolation and zero-energy state."
+        ],
+        "alternatives": [
+          "Design flaw: Beam relies on hydraulics which were bled.",
+          "Procedural failure: Balance raised without mechanical lock or cribbing.",
+          "Isolation error: Zero-energy check failed to detect residual pressure needed for retention."
+        ],
+        "confidence": 0.95,
+        "promptVersion": "try4.2.0-stage-recovery",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 39551,
+        "validation": "valid"
+      },
+      "providerAttempts": [
+        {
+          "attempt": 1,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"bq-1adc8hy\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"The incident facts state B hydraulics were shut off/bled but do not establish the design dependency of the beam/balance on that pressure. This question tests a critical causal branch regarding failure mode.\"\n    },\n    {\n      \"candidateKey\": \"bq-1hgiq84\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"The incident facts state the balance was 'isolated in a raised position' but do not confirm if this implies mechanical locking or hydraulic reliance. This question tests whether gravity load existed without restraint.\"\n    },\n    {\n      \"candidateKey\": \"bq-rt3ptu\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"The incident facts mention work rolls/backup rolls removed but do not confirm the presence or absence of temporary supports for the specific balance that fell. This question tests procedural compliance and physical state.\"\n    },\n    {\n      \"candidateKey\": \"bq-13a5gvm\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"The incident facts mention hydraulics were shut off but do not confirm if a formal zero-energy verification was performed. This question tests the validity of the isolation state.\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"All four candidate questions are retained as 'keep'. The evidence packet confirms events (hydraulics bled, balance raised) but lacks specific design data or procedural records to confirm whether hydraulic pressure was required for retention, if mechanical locks were used, if temporary supports existed, or if zero-energy verification occurred. Each question targets a distinct causal branch necessary to explain the fall.\",\n    \"evidenceUsed\": [\"incident-description\", \"64c1c3ba-63e2-4a10-8767-088d76228e61\"],\n    \"unknowns\": [\n      \"Mechanism by which beam detached from yoke (gravity load vs. hydraulic release).\",\n      \"Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.\",\n      \"Status of any temporary supports used for the removed rolls/balance.\",\n      \"Verification records confirming energy isolation and zero-energy state.\"\n    ],\n    \"alternatives\": [\n      \"Design flaw: Beam relies on hydraulics which were bled.\",\n      \"Procedural failure: Balance raised without mechanical lock or cribbing.\",\n      \"Isolation error: Zero-energy check failed to detect residual pressure needed for retention.\"\n    ],\n    \"confidence\": 0.95\n  }\n}"
+        }
+      ]
+    },
+    {
+      "candidateIds": [
+        "q-2f332p",
+        "q-1d2qhmg",
+        "q-r8tggc",
+        "q-9ss5j5"
+      ],
+      "catalogIds": [
+        "bq-1adc8hy",
+        "bq-1hgiq84",
+        "bq-rt3ptu",
+        "bq-13a5gvm"
+      ],
+      "output": {
+        "decisions": [
+          {
+            "candidateKey": "q-2f332p",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-1hgiq84",
+            "reason": "The intent to determine if the balance relied on hydraulic pressure versus mechanical locking is fully covered by bq-1hgiq84. The canonical question explicitly asks whether it was physically locked/secured or left relying solely on hydraulics, which resolves the same causal branch."
+          },
+          {
+            "candidateKey": "q-1d2qhmg",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-13a5gvm",
+            "reason": "The intent to verify zero-energy state verification is fully covered by bq-13a5gvm. The canonical question explicitly asks if a formal energy-isolation verification was performed, matching the evidence needed (ECP/LOTO sheet) and decision unlocked."
+          },
+          {
+            "candidateKey": "q-r8tggc",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-rt3ptu",
+            "reason": "The intent to identify secondary restraints is fully covered by bq-rt3ptu. The canonical question explicitly asks if temporary mechanical supports were used, matching the evidence needed (technician notes/inspection records) and decision unlocked."
+          },
+          {
+            "candidateKey": "q-9ss5j5",
+            "disposition": "screened",
+            "coveredByCandidateKey": "",
+            "reason": "The incident description states that work rolls and backup roll balances were removed, leaving the top backup roll balance isolated in a raised position. The specific structural members supporting the beam are unknown but not yet established as a causal factor; however, this question is superseded by bq-1hgiq84 which addresses whether hydraulic pressure was required to hold the assembly when work rolls/balances were removed. If hydraulics held it (bq-1hgiq84 yes), then structural members are non"
+          }
+        ],
+        "decision": {
+          "summary": "All four proposed questions have been evaluated against existing canonical questions and incident facts.",
+          "evidenceUsed": [
+            "incident-description",
+            "69533d78-f570-4068-8fef-e3d881095983",
+            "64c1c3ba-63e2-4a10-8767-088d76228e61"
+          ],
+          "unknowns": [
+            "Mechanism by which beam detached from yoke (gravity load vs. hydraulic release)",
+            "Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure",
+            "Specific sequence of tasks performed during Turn 2 prior to the fall.",
+            "Status of any temporary supports used for the removed rolls/balance.",
+            "Verification records confirming energy isolation and zero-energy state."
+          ],
+          "alternatives": [
+            "If hydraulics were required (bq-1hgiq84 yes), bleeding them caused failure. If not, another cause exists.",
+            "If mechanical lock was absent (bq-1hgiq84 no) but supports existed (bq-rt3ptu yes), procedural compliance may have failed in design or support integrity."
+          ],
+          "confidence": 0.95
+        }
+      },
+      "trace": {
+        "id": "2b8879cd-a59f-4d1e-8408-2cbbd4e3df96",
+        "stage": "question-broker",
+        "summary": "All four proposed questions have been evaluated against existing canonical questions and incident facts.",
+        "evidence": [
+          "incident-description",
+          "69533d78-f570-4068-8fef-e3d881095983",
+          "64c1c3ba-63e2-4a10-8767-088d76228e61"
+        ],
+        "unknowns": [
+          "Mechanism by which beam detached from yoke (gravity load vs. hydraulic release)",
+          "Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure",
+          "Specific sequence of tasks performed during Turn 2 prior to the fall.",
+          "Status of any temporary supports used for the removed rolls/balance.",
+          "Verification records confirming energy isolation and zero-energy state."
+        ],
+        "alternatives": [
+          "If hydraulics were required (bq-1hgiq84 yes), bleeding them caused failure. If not, another cause exists.",
+          "If mechanical lock was absent (bq-1hgiq84 no) but supports existed (bq-rt3ptu yes), procedural compliance may have failed in design or support integrity."
+        ],
+        "confidence": 0.95,
+        "promptVersion": "try4.2.0-stage-recovery",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 39685,
+        "validation": "valid"
+      },
+      "providerAttempts": [
+        {
+          "attempt": 1,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-2f332p\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1hgiq84\",\"reason\":\"The intent to determine if the balance relied on hydraulic pressure versus mechanical locking is fully covered by bq-1hgiq84. The canonical question explicitly asks whether it was physically locked/secured or left relying solely on hydraulics, which resolves the same causal branch.\"\n    }, {\n      \"candidateKey\": \"q-1d2qhmg\",\n      \"disposition\": \"covered\",\"coveredByCandidateKey\":\"bq-13a5gvm\",\"reason\":\"The intent to verify zero-energy state verification is fully covered by bq-13a5gvm. The canonical question explicitly asks if a formal energy-isolation verification was performed, matching the evidence needed (ECP/LOTO sheet) and decision unlocked.\"\n    }, {\n      \"candidateKey\": \"q-r8tggc\",\n      \"disposition\": \"covered\",\"coveredByCandidateKey\":\"bq-rt3ptu\",\"reason\":\"The intent to identify secondary restraints is fully covered by bq-rt3ptu. The canonical question explicitly asks if temporary mechanical supports were used, matching the evidence needed (technician notes/inspection records) and decision unlocked.\"\n    }, {\n      \"candidateKey\": \"q-9ss5j5\",\n      \"disposition\": \"screened\",\"coveredByCandidateKey\":\"\",\"reason\":\"The incident description states that work rolls and backup roll balances were removed, leaving the top backup roll balance isolated in a raised position. The specific structural members supporting the beam are unknown but not yet established as a causal factor; however, this question is superseded by bq-1hgiq84 which addresses whether hydraulic pressure was required to hold the assembly when work rolls/balances were removed. If hydraulics held it (bq-1hgiq84 yes), then structural members are non\"\n    }\n  ],\"decision\":{\n      \"summary\":\"All four proposed questions have been evaluated against existing canonical questions and incident facts.\",\"evidenceUsed\":[\"incident-description\",\"69533d78-f570-4068-8fef-e3d881095983\",\"64c1c3ba-63e2-4a10-8767-088d76228e61\"],\"unknowns\":[\"Mechanism by which beam detached from yoke (gravity load vs. hydraulic release)\",\"Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure\",\"Specific sequence of tasks performed during Turn 2 prior to the fall.\",\"Status of any temporary supports used for the removed rolls/balance.\",\"Verification records confirming energy isolation and zero-energy state.\"],\"alternatives\":[\"If hydraulics were required (bq-1hgiq84 yes), bleeding them caused failure. If not, another cause exists.\",\"If mechanical lock was absent (bq-1hgiq84 no) but supports existed (bq-rt3ptu yes), procedural compliance may have failed in design or support integrity.\"],\"confidence\":0.95}\n}"
+        }
+      ]
+    },
+    {
+      "candidateIds": [
+        "q-e3igp9",
+        "q-18u8ru1",
+        "q-ukuog3",
+        "q-18sjud"
+      ],
+      "catalogIds": [
+        "bq-1adc8hy",
+        "bq-1hgiq84",
+        "bq-rt3ptu",
+        "bq-13a5gvm"
+      ],
+      "output": {
+        "decisions": [
+          {
+            "candidateKey": "q-e3igp9",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-1hgiq84",
+            "reason": "The intent to determine if a mechanical lock was applied versus reliance on hydraulics is fully covered by canonical question bq-1hgiq84. The evidence needed (field notes/work scope) aligns with the requirements of bq-1hgiq84."
+          },
+          {
+            "candidateKey": "q-ukuog3",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-1adc8hy",
+            "reason": "The intent to clarify if bleeding hydraulics removes support is fully covered by canonical question bq-1adc8hy. The evidence needed (schematics/documentation) aligns with the requirements of bq-1adc8hy."
+          },
+          {
+            "candidateKey": "q-18u8ru1",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-rt3ptu",
+            "reason": "The intent to verify temporary support usage is fully covered by canonical question bq-rt3ptu. The evidence needed (technician notes/inspection records) aligns with the requirements of bq-rt3ptu."
+          },
+          {
+            "candidateKey": "q-18sjud",
+            "disposition": "screened",
+            "coveredByCandidateKey": "",
+            "reason": "The question asks about communication regarding a mechanical lock. This is immaterial to determining the physical cause (mechanical vs hydraulic retention) because even if communicated, it does not change whether the equipment was physically secured or relied on pressure that had been bled. The causal branch 'assess-shift-handoff-completeness' has no independent evidence path distinct from verifying the actual state of the lock/pressure."
+          }
+        ],
+        "decision": {
+          "summary": "All proposed questions have either been covered by existing canonical questions or screened out as immaterial to determining the physical root cause. The investigation should proceed with answering the four retained canonical questions regarding hydraulic retention, mechanical locking status, temporary supports, and energy isolation verification.",
+          "evidenceUsed": [
+            "incident-description",
+            "64c1c3ba-63e2-4a10-8767-088d76228e61",
+            "69533d78-f570-4068-8fef-e3d881095983"
+          ],
+          "unknowns": [
+            "Mechanism by which beam detached from yoke (gravity load vs. hydraulic release).",
+            "Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.",
+            "Status of any temporary supports used for the removed rolls/balance."
+          ],
+          "alternatives": [],
+          "confidence": 0.95
+        }
+      },
+      "trace": {
+        "id": "44697e68-04a9-436a-b9f5-f3e4e74afb0e",
+        "stage": "question-broker",
+        "summary": "All proposed questions have either been covered by existing canonical questions or screened out as immaterial to determining the physical root cause. The investigation should proceed with answering the four retained canonical questions regarding hydraulic retention, mechanical locking status, temporary supports, and energy isolation verification.",
+        "evidence": [
+          "incident-description",
+          "64c1c3ba-63e2-4a10-8767-088d76228e61",
+          "69533d78-f570-4068-8fef-e3d881095983"
+        ],
+        "unknowns": [
+          "Mechanism by which beam detached from yoke (gravity load vs. hydraulic release).",
+          "Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.",
+          "Status of any temporary supports used for the removed rolls/balance."
+        ],
+        "alternatives": [],
+        "confidence": 0.95,
+        "promptVersion": "try4.2.0-stage-recovery",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 37161,
+        "validation": "valid"
+      },
+      "providerAttempts": [
+        {
+          "attempt": 1,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-e3igp9\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1hgiq84\",\"reason\":\"The intent to determine if a mechanical lock was applied versus reliance on hydraulics is fully covered by canonical question bq-1hgiq84. The evidence needed (field notes/work scope) aligns with the requirements of bq-1hgiq84.\"\n    }, {\n      \"candidateKey\": \"q-ukuog3\",\n      \"disposition\": \"covered\",\"coveredByCandidateKey\":\"bq-1adc8hy\",\"reason\":\"The intent to clarify if bleeding hydraulics removes support is fully covered by canonical question bq-1adc8hy. The evidence needed (schematics/documentation) aligns with the requirements of bq-1adc8hy.\"\n    }, {\n      \"candidateKey\": \"q-18u8ru1\",\n      \"disposition\": \"covered\",\"coveredByCandidateKey\":\"bq-rt3ptu\",\"reason\":\"The intent to verify temporary support usage is fully covered by canonical question bq-rt3ptu. The evidence needed (technician notes/inspection records) aligns with the requirements of bq-rt3ptu.\"\n    }, {\n      \"candidateKey\": \"q-18sjud\",\n      \"disposition\": \"screened\",\"coveredByCandidateKey\":\"\",\"reason\":\"The question asks about communication regarding a mechanical lock. This is immaterial to determining the physical cause (mechanical vs hydraulic retention) because even if communicated, it does not change whether the equipment was physically secured or relied on pressure that had been bled. The causal branch 'assess-shift-handoff-completeness' has no independent evidence path distinct from verifying the actual state of the lock/pressure.\"\n    }\n  ],\"decision\":{\n      \"summary\":\"All proposed questions have either been covered by existing canonical questions or screened out as immaterial to determining the physical root cause. The investigation should proceed with answering the four retained canonical questions regarding hydraulic retention, mechanical locking status, temporary supports, and energy isolation verification.\",\"evidenceUsed\":[\"incident-description\",\"64c1c3ba-63e2-4a10-8767-088d76228e61\",\"69533d78-f570-4068-8fef-e3d881095983\"],\"unknowns\":[\"Mechanism by which beam detached from yoke (gravity load vs. hydraulic release).\",\"Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.\",\"Status of any temporary supports used for the removed rolls/balance.\"],\"alternatives\":[],\n      \"confidence\":0.95\n    }\n  }"
+        }
+      ]
+    },
+    {
+      "candidateIds": [
+        "q-tgnqmy",
+        "q-1pl6i7e",
+        "q-16qnd7a",
+        "q-tzvlnb"
+      ],
+      "catalogIds": [
+        "bq-1adc8hy",
+        "bq-1hgiq84",
+        "bq-rt3ptu",
+        "bq-13a5gvm"
+      ],
+      "output": {
+        "decisions": [
+          {
+            "candidateKey": "q-tgnqmy",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Distinct intent: verifies specific mechanical locking of the Top Backup Roll Balance. Evidence needed (LOTO/turnover log) is not yet in evidence packet."
+          },
+          {
+            "candidateKey": "q-1pl6i7e",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Distinct intent: verifies specific procedure and mechanical locking for 'B hydraulics'. Evidence needed (Energy Control Plan) is not yet in evidence packet."
+          },
+          {
+            "candidateKey": "q-16qnd7a",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Distinct intent: verifies temporary mechanical supports for removed rolls/balance. Evidence needed (Work order/Maintenance Planner) is not yet in evidence packet."
+          },
+          {
+            "candidateKey": "q-tzvlnb",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Distinct intent: verifies zero-energy verification status. Evidence needed (Zero-energy log) is not yet in evidence packet."
+          }
+        ],
+        "decision": {
+          "summary": "All four candidates were retained as 'keep' because each tests a unique causal branch regarding isolation methods or supports that are currently unknowns per the incident description. No supplied fact answers these specific questions.",
+          "evidenceUsed": [
+            "incident-description"
+          ],
+          "unknowns": [
+            "Mechanical lock status of Top Backup Roll Balance",
+            "Hydraulic isolation method for B hydraulics",
+            "Presence/absence of temporary supports",
+            "Zero-energy verification record"
+          ],
+          "alternatives": [],
+          "confidence": 1
+        }
+      },
+      "trace": {
+        "id": "bff79f1a-916f-40c4-8bf8-4dcfcd1d1c98",
+        "stage": "question-broker",
+        "summary": "All four candidates were retained as 'keep' because each tests a unique causal branch regarding isolation methods or supports that are currently unknowns per the incident description. No supplied fact answers these specific questions.",
+        "evidence": [
+          "incident-description"
+        ],
+        "unknowns": [
+          "Mechanical lock status of Top Backup Roll Balance",
+          "Hydraulic isolation method for B hydraulics",
+          "Presence/absence of temporary supports",
+          "Zero-energy verification record"
+        ],
+        "alternatives": [],
+        "confidence": 1,
+        "promptVersion": "try4.2.0-stage-recovery",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 66711,
+        "validation": "repaired"
+      },
+      "providerAttempts": [
+        {
+          "attempt": 1,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-tgnqmy\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1hgiq84\",\"reason\":\"The intent to verify if a mechanical lock was applied versus reliance on hydraulics is fully covered by canonical question bq-1hgiq84. The evidence needed (field notes/work scope) aligns with the requirements of bq-1hgiq84.\"\n    }, {\n      \"candidateKey\": \"q-1pl6i7e\",\n      \"disposition\": \"covered\",\"coveredByCandidateKey\":\"bq-bq-rt3ptu\",\"reason\":\"The intent to verify if temporary mechanical supports were used is fully covered by canonical question bq-rt3ptu. The evidence needed (technician notes/inspection records) aligns with the requirements of bq-rt3ptu.\"\n    }, {\n      \"candidateKey\": \"q-tzvlnb\",\n      \"disposition\": \"covered\",\"coveredByCandidateKey\":\"bq-bq-13a5gvm\",\"reason\":\"The intent to verify if a formal zero-energy verification was performed is fully covered by canonical question bq-13a5gvm. The evidence needed (ECP/LOTO sheet) aligns with the requirements of bq-13a5gvm.\"\n    }\n  ],\"decision\":{\n      \"summary\":\"All four proposed questions have been screened as 'covered' because their specific intents and evidence needs are already addressed by existing canonical questions in the packet. No new causal branches or distinct decision points remain uncovered.\",\n      \"evidenceUsed\":[\"incident-description\",\"64c1c3ba-63e2-4a10-8767-088d76228e61\",\"69533d78-f570-4068-8fef-e3d881095983\"],\"unknowns\":[\"Mechanism by which beam detached from yoke (gravity load vs. hydraulic release).\",\"Whether 'isolated in raised position' implies a mechanical lock or reliance on hydraulic pressure.\",\"Specific sequence of tasks performed during Turn 2 prior to the fall.\",\"Status of any temporary supports used for the removed rolls/balance.\",\"Verification records confirming energy isolation and zero-energy state.\"],\"alternatives\":[\"If bq-1hgiq84 is answered 'mechanically secured', then q-tgnqmy's specific lock type becomes less critical but still relevant for procedural completeness. If bq-bq-rt3ptu confirms supports were used, the failure mode shifts to support design or hydraulic retention logic.\",\"confidenceLevel\",\n      \"whatWouldChangeConclusion\"\n    ],\"confidence\":1.0}\n  }",
+          "error": "Output contract: Invalid coverage owner for q-1pl6i7e: bq-bq-rt3ptu. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate.; Missing decision for q-16qnd7a. Account for every candidate exactly once.; Invalid coverage owner for q-tzvlnb: bq-bq-13a5gvm. Use a catalog key or an earlier kept candidate, never itself, a screened candidate, or a future candidate."
+        },
+        {
+          "attempt": 2,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-tgnqmy\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Distinct intent: verifies specific mechanical locking of the Top Backup Roll Balance. Evidence needed (LOTO/turnover log) is not yet in evidence packet.\"\n    },\n    {\n      \"candidateKey\": \"q-1pl6i7e\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Distinct intent: verifies specific procedure and mechanical locking for 'B hydraulics'. Evidence needed (Energy Control Plan) is not yet in evidence packet.\"\n    },\n    {\n      \"candidateKey\": \"q-16qnd7a\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Distinct intent: verifies temporary mechanical supports for removed rolls/balance. Evidence needed (Work order/Maintenance Planner) is not yet in evidence packet.\"\n    },\n    {\n      \"candidateKey\": \"q-tzvlnb\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Distinct intent: verifies zero-energy verification status. Evidence needed (Zero-energy log) is not yet in evidence packet.\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"All four candidates were retained as 'keep' because each tests a unique causal branch regarding isolation methods or supports that are currently unknowns per the incident description. No supplied fact answers these specific questions.\",\n    \"evidenceUsed\": [\"incident-description\"],\n    \"unknowns\": [\n      \"Mechanical lock status of Top Backup Roll Balance\",\n      \"Hydraulic isolation method for B hydraulics\",\n      \"Presence/absence of temporary supports\",\n      \"Zero-energy verification record\"\n    ],\n    \"alternatives\": [],\n    \"confidence\": 1.0\n  }\n}"
+        }
+      ]
+    },
+    {
+      "candidateIds": [
+        "q-url3gv",
+        "q-oakyhy",
+        "q-9ksck6",
+        "q-1ow646c"
+      ],
+      "catalogIds": [
+        "bq-1adc8hy",
+        "bq-1hgiq84",
+        "bq-rt3ptu",
+        "bq-13a5gvm",
+        "q-tgnqmy",
+        "q-1pl6i7e",
+        "q-16qnd7a",
+        "q-tzvlnb"
+      ],
+      "output": {
+        "decisions": [
+          {
+            "candidateKey": "q-url3gv",
+            "disposition": "screened",
+            "coveredByCandidateKey": "",
+            "reason": "The incident summary explicitly states the top backup roll balance was 'left isolated in a raised position' on the previous shift. The specific fact of communication regarding this state is already established by the event record; asking if it was communicated does not test a new causal branch but rather assumes the outcome (the fall) occurred despite that isolation status."
+          },
+          {
+            "candidateKey": "q-oakyhy",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-1adc8hy",
+            "reason": "This question asks if the beam assembly design requires a mechanical lock when hydraulics are bled. This is identical in intent and causal branch to canonical bq-1adc8hy ('Does the R3 carrier beam assembly rely on active hydraulic pressure... for retention'). The evidence needed (assembly drawing, manual) matches."
+          },
+          {
+            "candidateKey": "q-9ksck6",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-1hgiq84",
+            "reason": "This question asks if a mechanical lock was applied to the top backup roll balance or if it relied solely on hydraulic pressure. This is identical in intent and causal branch to canonical bq-1hgiq84 ('Was the top backup roll balance physically locked/secured...'). The evidence needed (field notes, work scope) matches."
+          },
+          {
+            "candidateKey": "q-1ow646c",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-rt3ptu",
+            "reason": "This question asks if temporary mechanical supports were installed for removed components. This is identical in intent and causal branch to canonical bq-rt3ptu ('Were temporary mechanical supports... used'). The evidence needed (work scope, inspection records) matches."
+          }
+        ],
+        "decision": {
+          "summary": "All four candidate questions were evaluated against the retained canonical question set. One candidate was screened because its specific fact (communication of isolation status) is already established by the incident description as a known event condition rather than an unknown causal variable requiring verification. The remaining three candidates were found to be fully covered by existing canonical questions that address identical intents, causal branches, and evidence requirements regarding hydraulic retention design, mechanical locking of isolated components, and use of temporary supports.",
+          "evidenceUsed": [
+            "incident-description",
+            "canonicalQuestions"
+          ],
+          "unknowns": [],
+          "alternatives": [
+            ""
+          ],
+          "confidence": 1
+        }
+      },
+      "trace": {
+        "id": "a85bacde-3394-40d9-b82b-f27a0e0d4478",
+        "stage": "question-broker",
+        "summary": "All four candidate questions were evaluated against the retained canonical question set. One candidate was screened because its specific fact (communication of isolation status) is already established by the incident description as a known event condition rather than an unknown causal variable requiring verification. The remaining three candidates were found to be fully covered by existing canonical questions that address identical intents, causal branches, and evidence requirements regarding hydraulic retention design, mechanical locking of isolated components, and use of temporary supports.",
+        "evidence": [
+          "incident-description",
+          "canonicalQuestions"
+        ],
+        "unknowns": [],
+        "alternatives": [
+          ""
+        ],
+        "confidence": 1,
+        "promptVersion": "try4.2.0-stage-recovery",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 35452,
+        "validation": "valid"
+      },
+      "providerAttempts": [
+        {
+          "attempt": 1,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-url3gv\",\n      \"disposition\": \"screened\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"The incident summary explicitly states the top backup roll balance was 'left isolated in a raised position' on the previous shift. The specific fact of communication regarding this state is already established by the event record; asking if it was communicated does not test a new causal branch but rather assumes the outcome (the fall) occurred despite that isolation status.\"\n    },\n    {\n      \"candidateKey\": \"q-oakyhy\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1adc8hy\",\n      \"reason\": \"This question asks if the beam assembly design requires a mechanical lock when hydraulics are bled. This is identical in intent and causal branch to canonical bq-1adc8hy ('Does the R3 carrier beam assembly rely on active hydraulic pressure... for retention'). The evidence needed (assembly drawing, manual) matches.\"\n    },\n    {\n      \"candidateKey\": \"q-9ksck6\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1hgiq84\",\n      \"reason\": \"This question asks if a mechanical lock was applied to the top backup roll balance or if it relied solely on hydraulic pressure. This is identical in intent and causal branch to canonical bq-1hgiq84 ('Was the top backup roll balance physically locked/secured...'). The evidence needed (field notes, work scope) matches.\"\n    },\n    {\n      \"candidateKey\": \"q-1ow646c\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-rt3ptu\",\n      \"reason\": \"This question asks if temporary mechanical supports were installed for removed components. This is identical in intent and causal branch to canonical bq-rt3ptu ('Were temporary mechanical supports... used'). The evidence needed (work scope, inspection records) matches.\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"All four candidate questions were evaluated against the retained canonical question set. One candidate was screened because its specific fact (communication of isolation status) is already established by the incident description as a known event condition rather than an unknown causal variable requiring verification. The remaining three candidates were found to be fully covered by existing canonical questions that address identical intents, causal branches, and evidence requirements regarding hydraulic retention design, mechanical locking of isolated components, and use of temporary supports.\",\n    \"evidenceUsed\": [\"incident-description\", \"canonicalQuestions\"],\n    \"unknowns\": [],\n    \"alternatives\": [\"\"],\n    \"confidence\": 1.0\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-09-15T03:08:33.737Z"
+}

@@ -1,0 +1,1 @@
+throw new Error('This is a historical Try 4 experiment launcher. It is intentionally disabled in Try 5 because its endpoints and run directories target the old app. Use the Try 5 dashboard or scripts/task-worker.mjs; do not run legacy launchers against the new engine.');

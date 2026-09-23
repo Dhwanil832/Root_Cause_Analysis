@@ -1,0 +1,8 @@
+{
+  "status": "stopped_no_retry",
+  "incidentId": "5d41aa01-76e5-4c79-973e-1c921fccfc4a",
+  "trackId": "78dc5a85-dd0d-48e1-b7d5-089b789a98c6",
+  "error": "Error: /api/tracks/78dc5a85-dd0d-48e1-b7d5-089b789a98c6/initialize: causal-analysis: evidence packet has 66798 characters; the current limit is 60000. No evidence was truncated. Split the investigation input or implement explicit evidence batching before retrying.",
+  "cause": null,
+  "at": "2026-09-16T16:00:26.344Z"
+}

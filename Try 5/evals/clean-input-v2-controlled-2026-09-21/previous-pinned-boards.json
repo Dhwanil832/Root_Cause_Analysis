@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "app": "Try 5",
+    "title": "IA-16036 · Diagnostic before / after causal boards",
+    "description": "# Instrument-air interruption during maintenance preparation\r\n\r\nRecord ID: IA-I01\r\n\r\nSynthetic evaluation record derived from a historical incident. Not an actual company record or operating instruction.\r\n\r\nAt approximately 10:00 AM on May 20, 2024, during Turn 2, the RHOB process area reported loss of instrument-air pressure while a two-person Utilities team was preparing the #1 slab caster (1SC) compressor/dryer system for planned maintenance. The work was paused and the air supply was subsequently restored. No injury is reported in this evaluation case.\r\n\r\nThe initial notification does not establish whether the interruption began at the air source, within the distribution system, or at the receiving equipment. Supporting records will be provided as the investigation develops.",
+    "modelName": "qwen3.5:latest",
+    "originalIncidentId": "3bc540d5-ca36-4dbe-8576-730135eb0951",
+    "originalTrackId": "28f74b32-2564-4765-852f-1f3fc0c8f367",
+    "kind": "diagnostic-snapshots",
+    "note": "V1 and V2 here are display labels for two preserved diagnostic snapshots, NOT published application versions. The original investigation was paused; these snapshots do not represent a completed full RCA. No missing version has been generated or inferred.",
+    "href": "/history/causal-comparison",
+    "dataUrl": "/history/featured-causal-boards.json",
+    "versions": [
+      {
+        "number": 1,
+        "label": "V1 · Diagnostic snapshot",
+        "subtitle": "Corrected baseline, before the controlled document",
+        "createdAt": "2026-09-19T20:50:28.776Z",
+        "status": "awaiting-evidence",
+        "sourcePath": "Try 5/outputs/audited-board-pilot-wpypKU/snapshot.json",
+        "sourceSha256": "f6c2bdcaee65f973e472588897f6ed9c33f4c6016096865b7a98376a744e4a27",
+        "sourceRecordId": "da57d29d-cf54-4c29-85ae-54260ef92dcd",
+        "nodes": 2,
+        "edges": 0
+      },
+      {
+        "number": 2,
+        "label": "V2 · Diagnostic snapshot",
+        "subtitle": "After one pressure/alarm document",
+        "createdAt": "2026-09-19T21:06:03.309Z",
+        "status": "awaiting-evidence",
+        "sourcePath": "Try 5/outputs/audited-board-pilot-BiUUCI/snapshot.json",
+        "sourceSha256": "e6c5e7d4d2a50a52dd08bcca00a84dd0e571b01373352b23ed0574c6aa5b0926",
+        "sourceRecordId": "da57d29d-cf54-4c29-85ae-54260ef92dcd",
+        "nodes": 2,
+        "edges": 0
+      }
+    ]
+  },
+  "versions": [
+    {
+      "number": 1,
+      "label": "V1 · Diagnostic snapshot",
+      "subtitle": "Corrected baseline, before the controlled document",
+      "createdAt": "2026-09-19T20:50:28.776Z",
+      "status": "awaiting-evidence",
+      "sourcePath": "Try 5/outputs/audited-board-pilot-wpypKU/snapshot.json",
+      "sourceSha256": "f6c2bdcaee65f973e472588897f6ed9c33f4c6016096865b7a98376a744e4a27",
+      "sourceRecordId": "da57d29d-cf54-4c29-85ae-54260ef92dcd",
+      "board": {
+        "maturity": "initial",
+        "focalNodeId": "focal",
+        "nodes": [
+          {
+            "id": "focal",
+            "type": "focal-event",
+            "label": "Loss of instrument-air pressure in the RHOB process area during Turn 2 on May 20, 2024, occurring while a Utilities crew was preparing for maintenance on the #1 slab caster (1SC) compressor/dryer system. The event involved an air-low indication and supply complaints at local controls.",
+            "detail": "At approximately 10:00 AM on May 20, 2024 (Turn 2), the RHOB process area experienced a loss of instrument-air pressure while a two-person Utilities crew prepared the #1 slab caster (1SC) compressor/dryer system for maintenance. The interruption was reported by local controls showing supply complaints and an air-low indication at RHOB, causing work pause. Pressure returned to normal around 10:07 AM without injury.",
+            "status": "proposed",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "specialistIds": [],
+            "verified": false
+          },
+          {
+            "id": "proposition:d6d606d9-c87c-412c-9f0e-ba3d0d6579a6",
+            "type": "condition",
+            "label": "Work boundary status: preparation only, not released.",
+            "detail": "The work package cover record (S1) explicitly states that the work boundary was 'preparation only' at time of initial notification and pending acceptance signoff. This condition existed when the air-low indication occurred (F3).",
+            "status": "supported",
+            "sourceIds": [
+              "5f34c4c4-0b2a-45a6-9bb3-db482516584b"
+            ],
+            "specialistIds": [
+              "procedure-planning",
+              "equipment-tool"
+            ],
+            "verified": true,
+            "claimIds": [
+              "d6d606d9-c87c-412c-9f0e-ba3d0d6579a6"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          }
+        ],
+        "edges": [],
+        "verificationFindings": [],
+        "branchRevisions": []
+      }
+    },
+    {
+      "number": 2,
+      "label": "V2 · Diagnostic snapshot",
+      "subtitle": "After one pressure/alarm document",
+      "createdAt": "2026-09-19T21:06:03.309Z",
+      "status": "awaiting-evidence",
+      "sourcePath": "Try 5/outputs/audited-board-pilot-BiUUCI/snapshot.json",
+      "sourceSha256": "e6c5e7d4d2a50a52dd08bcca00a84dd0e571b01373352b23ed0574c6aa5b0926",
+      "sourceRecordId": "da57d29d-cf54-4c29-85ae-54260ef92dcd",
+      "board": {
+        "maturity": "initial",
+        "focalNodeId": "focal",
+        "nodes": [
+          {
+            "id": "focal",
+            "type": "focal-event",
+            "label": "Loss of instrument-air pressure in the RHOB process area during Turn 2 on May 20, 2024, occurring while a Utilities crew was preparing for maintenance on the #1 slab caster (1SC) compressor/dryer system. The event involved an air-low indication and supply complaints at local controls.",
+            "detail": "At approximately 10:00 AM on May 20, 2024 (Turn 2), the RHOB process area experienced a loss of instrument-air pressure while a two-person Utilities crew prepared the #1 slab caster (1SC) compressor/dryer system for maintenance. The interruption was reported by local controls showing supply complaints and an air-low indication at RHOB, causing work pause. Pressure returned to normal around 10:07 AM without injury.",
+            "status": "proposed",
+            "sourceIds": [
+              "incident-description"
+            ],
+            "specialistIds": [],
+            "verified": false
+          },
+          {
+            "id": "proposition:d6d606d9-c87c-412c-9f0e-ba3d0d6579a6",
+            "type": "condition",
+            "label": "Work boundary status: preparation only, not released.",
+            "detail": "The work package cover record (S1) explicitly states that the maintenance release was pending and acceptance signatures were absent at notification time. S2 clarifies that a scheduled order does not equate to a released boundary; S7 notes that initial notifications can precede event sequence checks, meaning the system state could be incomplete.",
+            "status": "supported",
+            "sourceIds": [
+              "5f34c4c4-0b2a-45a6-9bb3-db482516584b",
+              "8e9fa6c5-731c-47d5-8f44-5e534066646e",
+              "ade8e8aa-c68c-4d8b-86e2-329ef038e4ae"
+            ],
+            "specialistIds": [
+              "procedure-planning",
+              "equipment-tool"
+            ],
+            "verified": true,
+            "claimIds": [
+              "d6d606d9-c87c-412c-9f0e-ba3d0d6579a6"
+            ],
+            "assessmentKind": "observation",
+            "humanStatus": "unreviewed"
+          }
+        ],
+        "edges": [],
+        "verificationFindings": [],
+        "branchRevisions": [
+          {
+            "previousTargetId": "d53da01b-7766-41f4-9952-08844c79cd9e",
+            "previousLabel": "d53da01b-7766-41f4-9952-08844c79cd9e",
+            "action": "revise",
+            "reason": "supported: S1 Line 13 explicitly logs 'Air-low indication' at RHOB desk. S2 Line 7 states RHOB process area reported loss of pressure. S3 Line 28 shows COMP FAULT alarm at 10:00:32. All sources within the packet describe this occurrence consistently without contradiction.",
+            "replacementIds": [
+              "d53da01b-7766-41f4-9952-08844c79cd9e"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "9e8a11bf-c220-4ad7-a0dd-1981fb293a8a",
+            "previousLabel": "9e8a11bf-c220-4ad7-a0dd-1981fb293a8a",
+            "action": "revise",
+            "reason": "supported: The claim is a direct record observation matching S1 Line 15 text. The entry notes RHOB as location. S2 pressure data confirms the physical recovery of the P-R indication (6.8 bar baseline) at ~10:07, consistent with the log time 'About 10:07'. No conflict exists between the operator entry and measured pressure values.",
+            "replacementIds": [
+              "9e8a11bf-c220-4ad7-a0dd-1981fb293a8a"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "d6d606d9-c87c-412c-9f0e-ba3d0d6579a6",
+            "previousLabel": "d6d606d9-c87c-412c-9f0e-ba3d0d6579a6",
+            "action": "revise",
+            "reason": "supported: The claim is fully supported by S1 Line 7 which records the work boundary status as preparation-only at the time of initial notification. S2 Lines 20-21 provide the definition that maintenance acceptance/release occurs only after release, validating the 'not yet released' implication. S5 Lines 13-14 corroborate the timeline and pending release status during the incident window.",
+            "replacementIds": [
+              "d6d606d9-c87c-412c-9f0e-ba3d0d6579a6"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "previousTargetId": "proposition:d6d606d9-c87c-412c-9f0e-ba3d0d6579a6",
+            "previousLabel": "proposition:d6d606d9-c87c-412c-9f0e-ba3d0d6579a6",
+            "action": "revise",
+            "reason": "The condition exists because administrative records (S1) define the work stage as 'preparation only' and pending signoff. This status is supported by document conventions in S2 and S6 which distinguish between scheduling a task and releasing it for execution. The absence of an acceptance signature does not prove isolation was achieved, but rather that the formal boundary release had not occurred.",
+            "replacementIds": [
+              "proposition:d6d606d9-c87c-412c-9f0e-ba3d0d6579a6"
+            ],
+            "evidenceIds": []
+          }
+        ]
+      }
+    }
+  ]
+}

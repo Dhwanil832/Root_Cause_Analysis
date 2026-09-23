@@ -1,0 +1,10 @@
+{
+  "id": "beam-drop-outage-001",
+  "description": "At approximately 1:03 PM on October 14, 2024, the R3 Exit Carrier Beam at the 80-inch Hot Strip roughing mill fell from the yoke into the R3 mill pit, landing on the sled and a scaffold platform. No team members were in the pit. Work rolls and backup rolls had been removed for outage work. The top backup roll balance had been left isolated in the raised position, and the B hydraulics had been shut off and bled.",
+  "expected": {
+    "requiredTags": ["equipment-tool", "stored-energy", "work-environment", "maintenance-outage", "isolation-loto"],
+    "forbiddenTags": ["electrical", "animal-wildlife", "rail-locomotive"],
+    "requiredBaselineIntents": ["site-vocabulary", "normal-vs-event", "event-timeline"],
+    "mustRecordBrokeredOverlap": true
+  }
+}

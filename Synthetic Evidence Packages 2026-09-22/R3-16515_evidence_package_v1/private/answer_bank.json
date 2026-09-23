@@ -1,0 +1,618 @@
+{
+  "schema_version": "1.0",
+  "case_id": "R3-16515",
+  "operator_private": true,
+  "release_policy": "fixed_batches_cumulative",
+  "answer_statuses": [
+    "answered",
+    "partial",
+    "conflicting",
+    "not_established",
+    "unavailable"
+  ],
+  "notes": [
+    "Need IDs are private semantic retrieval aids, not app question IDs.",
+    "Filter entries by released stage and resolve corrected source revisions before use.",
+    "When older sources are superseded, use an updated eligible entry or explicitly historical source context; never silently treat the withdrawn inference as current.",
+    "Unavailable answers do not reveal a future-record inventory."
+  ],
+  "entries": [
+    {
+      "need_id": "RN01",
+      "information_need": "What fell, where, and who was exposed at the time?",
+      "example_phrasings": [
+        "Who was underneath?",
+        "What happened and was anyone exposed?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "event",
+          "information_need": "Assembly and destination"
+        },
+        {
+          "subpart_id": "occupancy",
+          "information_need": "Pit occupancy"
+        },
+        {
+          "subpart_id": "harm",
+          "information_need": "Actual injury or loss assessment"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [
+        {
+          "document_id": "R3-I00",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "Nobody was working in the pit at that moment; contractors had worked there during the morning."
+        }
+      ],
+      "factual_answer": "Beam and link fell into the pit onto sled/scaffold. Earlier pit work and occupancy at the fall are distinct.",
+      "coverage": [
+        {
+          "subpart_id": "event",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "occupancy",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "harm",
+          "status": "unavailable",
+          "qualification": "No complete injury or cost assessment supplied."
+        }
+      ],
+      "does_not_establish": [
+        "No quantified loss or proof of all possible exposure routes."
+      ],
+      "related_domains": [
+        "human",
+        "equipment"
+      ]
+    },
+    {
+      "need_id": "RN02",
+      "information_need": "What configuration and work preceded the fall?",
+      "example_phrasings": [
+        "Were rolls installed?",
+        "Was a crane handling it?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "rolls",
+          "information_need": "Roll configuration"
+        },
+        {
+          "subpart_id": "balance",
+          "information_need": "Raised balance"
+        },
+        {
+          "subpart_id": "crane",
+          "information_need": "Reported crane work"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "Work rolls and top and bottom backup rolls had been removed on the previous shift."
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "The R3 top backup-roll balance was left raised."
+        },
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "No crane lift involving this assembly was in progress at the fall or reported earlier in the relevant outage work."
+        }
+      ],
+      "factual_answer": "Rolls were removed and balance raised for outage work; no involved crane lift is reported.",
+      "coverage": [
+        {
+          "subpart_id": "rolls",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "balance",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "crane",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        }
+      ],
+      "does_not_establish": [
+        "Configuration alone does not establish disengagement mechanism."
+      ],
+      "related_domains": [
+        "equipment",
+        "maintenance"
+      ]
+    },
+    {
+      "need_id": "RN03",
+      "information_need": "Was the keeper present, and was it adequate?",
+      "example_phrasings": [
+        "Did the keeper break?",
+        "Was the retaining device fitted and tested?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "presence",
+          "information_need": "As-found presence"
+        },
+        {
+          "subpart_id": "capacity",
+          "information_need": "Retention capacity and torque"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [
+        {
+          "document_id": "R3-D03",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "The keeper was still installed and the link appeared intact."
+        }
+      ],
+      "factual_answer": "Keeper installed and link apparently intact in initial visual check. Capacity and incident-time engagement are not established by this check.",
+      "coverage": [
+        {
+          "subpart_id": "presence",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "capacity",
+          "status": "unavailable",
+          "qualification": "Visual scene record does not establish capacity or pre-event torque."
+        }
+      ],
+      "does_not_establish": [
+        "Intact does not mean adequate in every relative position."
+      ],
+      "related_domains": [
+        "equipment",
+        "gravity"
+      ]
+    },
+    {
+      "need_id": "RN04",
+      "information_need": "What does the zero reading establish?",
+      "example_phrasings": [
+        "Was energy zero?",
+        "Was it unable to move?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "reading",
+          "information_need": "Reported local indication"
+        },
+        {
+          "subpart_id": "volume",
+          "information_need": "All hydraulic volumes and immobilization"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [
+        {
+          "document_id": "R3-D04",
+          "revision": 1,
+          "locator": "S2",
+          "exact_excerpt": "The prior-shift line reads “header gauge zero after bleed.”"
+        },
+        {
+          "document_id": "R3-D05",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "I was at the desk and did not check the beam/yoke position or a load-side gauge."
+        }
+      ],
+      "factual_answer": "Prior-shift header reading was reported zero. Desk immobility statement is an unverified interpretation of that same record, not a second measurement.",
+      "coverage": [
+        {
+          "subpart_id": "reading",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "volume",
+          "status": "not_established",
+          "qualification": "Header-only reading; circuit scope not established by this source."
+        }
+      ],
+      "does_not_establish": [
+        "No proof of zero cylinder pressure or mechanical restraint."
+      ],
+      "related_domains": [
+        "isolation",
+        "stored_energy"
+      ]
+    },
+    {
+      "need_id": "RN05",
+      "information_need": "Did beam and yoke move together?",
+      "example_phrasings": [
+        "Which part moved?",
+        "How much did the beam and yoke move?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "relative",
+          "information_need": "Relative visible movement"
+        },
+        {
+          "subpart_id": "distance",
+          "information_need": "Calibrated displacement"
+        }
+      ],
+      "eligible_from_release": "B1",
+      "sources": [
+        {
+          "document_id": "R3-D06",
+          "revision": 1,
+          "locator": "S1/P2",
+          "exact_excerpt": "| P2 | 12:10 | Same housing reference | Lower than P1 | No calibrated distance |"
+        },
+        {
+          "document_id": "R3-D06",
+          "revision": 1,
+          "locator": "S1/P3",
+          "exact_excerpt": "| P3 | 13:02 | Still at housing; lateral offset apparent relative to Y | Lower than P2 | Link/keeper contact obscured |"
+        }
+      ],
+      "factual_answer": "Yoke marker is lower while beam remains at the housing reference; later offset is visible. Distances and concealed contacts are unavailable.",
+      "coverage": [
+        {
+          "subpart_id": "relative",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "distance",
+          "status": "unavailable",
+          "qualification": "No distance calibration supplied."
+        }
+      ],
+      "does_not_establish": [
+        "No exact contact sequence or drift rate."
+      ],
+      "related_domains": [
+        "equipment",
+        "stored_energy"
+      ]
+    },
+    {
+      "need_id": "RN06",
+      "information_need": "What retention geometry and restraints were observed?",
+      "example_phrasings": [
+        "How could an intact keeper allow release?",
+        "Was there a block?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "geometry",
+          "information_need": "Qualitative offset relationship"
+        },
+        {
+          "subpart_id": "restraint",
+          "information_need": "Observed independent restraint"
+        }
+      ],
+      "eligible_from_release": "B1",
+      "sources": [
+        {
+          "document_id": "R3-D07",
+          "revision": 1,
+          "locator": "S2",
+          "exact_excerpt": "| Yoke lower relative to carrier; link laterally offset | A path exists past the retaining edge while the keeper remains attached |"
+        },
+        {
+          "document_id": "R3-D07",
+          "revision": 1,
+          "locator": "S3",
+          "exact_excerpt": "No independent mechanical restraint was found on the accessible recovered assembly or exposed yoke region."
+        }
+      ],
+      "factual_answer": "Unloaded review found a clearance path at the recorded relative position with keeper attached. No independent restraint was found in the accessible surveyed region.",
+      "coverage": [
+        {
+          "subpart_id": "geometry",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "restraint",
+          "status": "partial",
+          "qualification": "Accessible post-event survey and visible region only."
+        }
+      ],
+      "does_not_establish": [
+        "Not a rated test, numeric clearance or proof that every hidden restraint was absent."
+      ],
+      "related_domains": [
+        "equipment",
+        "isolation"
+      ]
+    },
+    {
+      "need_id": "RN07",
+      "information_need": "Did the liner initiate release?",
+      "example_phrasings": [
+        "Did the liner knock it loose?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "liner",
+          "information_need": "Observed liner fall"
+        },
+        {
+          "subpart_id": "sequence",
+          "information_need": "Liner-first ordering"
+        }
+      ],
+      "eligible_from_release": "B1",
+      "sources": [
+        {
+          "document_id": "R3-D03",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "A small liner from the top operator-side window was found with the fallen assembly."
+        },
+        {
+          "document_id": "R3-D08",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "I cannot say whether the liner moved first."
+        }
+      ],
+      "factual_answer": "A liner was found with the assembly; the witness cannot establish which moved first.",
+      "coverage": [
+        {
+          "subpart_id": "liner",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "sequence",
+          "status": "not_established",
+          "qualification": "Witness cannot see hidden contact or order separation."
+        }
+      ],
+      "does_not_establish": [
+        "No established liner-initiated cause."
+      ],
+      "related_domains": [
+        "equipment"
+      ]
+    },
+    {
+      "need_id": "RN08",
+      "information_need": "Which pressure volume and leakage path were examined?",
+      "example_phrasings": [
+        "Where was pressure measured?",
+        "Could oil leave the loaded side and how fast?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "location",
+          "information_need": "Gauge/cylinder relation"
+        },
+        {
+          "subpart_id": "valve",
+          "information_need": "Later reverse flow"
+        },
+        {
+          "subpart_id": "rate",
+          "information_need": "Event-time leakage rate"
+        }
+      ],
+      "eligible_from_release": "B2",
+      "sources": [
+        {
+          "document_id": "R3-D09",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "G-H is on the header side of IV-R3, not on the isolated cylinder side."
+        },
+        {
+          "document_id": "R3-D10",
+          "revision": 1,
+          "locator": "S1",
+          "exact_excerpt": "With the valve handle in its closed indication, the workshop observation recorded fluid passing from the port identified as the former load-side connection toward the former header connection."
+        }
+      ],
+      "factual_answer": "Header gauge does not measure cylinder-side pressure. Later closed-handle IV-R3 examination recorded load-to-header passing; event-time rate and other cylinder paths remain unresolved.",
+      "coverage": [
+        {
+          "subpart_id": "location",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "valve",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "rate",
+          "status": "unavailable",
+          "qualification": "No calibrated event-time flow measurement."
+        }
+      ],
+      "does_not_establish": [
+        "Not exclusive hydraulic root cause or historical raw test."
+      ],
+      "related_domains": [
+        "isolation",
+        "stored_energy",
+        "equipment"
+      ]
+    },
+    {
+      "need_id": "RN09",
+      "information_need": "What did the issued task record establish about gravity control?",
+      "example_phrasings": [
+        "What restraint method was required and recorded?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "requirement",
+          "information_need": "General recording requirement"
+        },
+        {
+          "subpart_id": "task",
+          "information_need": "Issued task content"
+        },
+        {
+          "subpart_id": "physical",
+          "information_need": "Actual complete restraint arrangement"
+        }
+      ],
+      "eligible_from_release": "B2",
+      "sources": [
+        {
+          "document_id": "R3-D02",
+          "revision": 1,
+          "locator": "S2",
+          "exact_excerpt": "For work involving a raised assembly, the task record identifies the assembly/configuration, the method intended to control gravity movement and the person verifying that method."
+        },
+        {
+          "document_id": "R3-D11",
+          "revision": 1,
+          "locator": "S2",
+          "exact_excerpt": "No configuration-specific attachment identifying a gravity-control method was included with this issued sheet."
+        }
+      ],
+      "factual_answer": "Required task-specific gravity-control method and verification are not documented in the supplied issued sheet/attachments. Complete physical arrangement is not established by the omission.",
+      "coverage": [
+        {
+          "subpart_id": "requirement",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "task",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "physical",
+          "status": "not_established",
+          "qualification": "Document omission is not physical absence."
+        }
+      ],
+      "does_not_establish": [
+        "No motive, training deficiency or proof of absent hardware from blanks."
+      ],
+      "related_domains": [
+        "planning",
+        "isolation"
+      ]
+    },
+    {
+      "need_id": "RN10",
+      "information_need": "What did the desk correction change?",
+      "example_phrasings": [
+        "Which earlier statement was corrected?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "correction",
+          "information_need": "Withdrawn immobility inference"
+        },
+        {
+          "subpart_id": "retained",
+          "information_need": "Prior header reading"
+        }
+      ],
+      "eligible_from_release": "B2",
+      "sources": [
+        {
+          "document_id": "R3-D05",
+          "revision": 2,
+          "locator": "S1",
+          "exact_excerpt": "I withdraw my earlier inference that the raised balance could not move hydraulically."
+        },
+        {
+          "document_id": "R3-D05",
+          "revision": 2,
+          "locator": "S2",
+          "exact_excerpt": "The prior-shift header indication remains as recorded."
+        }
+      ],
+      "factual_answer": "Revision 2 withdraws immobility inference but preserves the reported header indication.",
+      "coverage": [
+        {
+          "subpart_id": "correction",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        },
+        {
+          "subpart_id": "retained",
+          "status": "answered",
+          "qualification": "Covered only at the source scope."
+        }
+      ],
+      "does_not_establish": [
+        "Does not erase other scene evidence."
+      ],
+      "related_domains": [
+        "communication",
+        "isolation"
+      ]
+    },
+    {
+      "need_id": "RN11",
+      "information_need": "Why did the component or task-control gap originate?",
+      "example_phrasings": [
+        "Why was it allowed?",
+        "Who is at fault?"
+      ],
+      "subparts": [
+        {
+          "subpart_id": "origin",
+          "information_need": "Valve defect cause"
+        },
+        {
+          "subpart_id": "motive",
+          "information_need": "People's motives or complete organizational root cause"
+        }
+      ],
+      "eligible_from_release": "B0",
+      "sources": [],
+      "factual_answer": "The supplied records do not establish defect origin, individual motive or a complete organizational explanation.",
+      "coverage": [
+        {
+          "subpart_id": "origin",
+          "status": "unavailable",
+          "qualification": "No origin record supplied."
+        },
+        {
+          "subpart_id": "motive",
+          "status": "unavailable",
+          "qualification": "No supported account available."
+        }
+      ],
+      "does_not_establish": [
+        "Do not invent negligence, culture or an unavailable witness."
+      ],
+      "related_domains": [
+        "equipment",
+        "planning"
+      ]
+    }
+  ]
+}

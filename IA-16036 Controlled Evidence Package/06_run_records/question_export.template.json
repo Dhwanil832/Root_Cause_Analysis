@@ -1,0 +1,23 @@
+{
+  "template_only": true,
+  "case_id": "IA-16036",
+  "run_id": null,
+  "incident_id": null,
+  "model_track_id": null,
+  "model_tag": null,
+  "model_digest": null,
+  "app_version": null,
+  "prompt_hash": null,
+  "board_version": null,
+  "input_payload_sha256": null,
+  "board_export_sha256": null,
+  "questions": [],
+  "question_shape_example_not_a_real_question": {
+    "question_id": "REPLACE_WITH_ACTUAL_ID",
+    "text": "REPLACE_WITH_ACTUAL_QUESTION",
+    "original_question_ids": [],
+    "recipient_specialist_ids": [],
+    "related_node_ids": [],
+    "already_answered_source_ids": []
+  }
+}

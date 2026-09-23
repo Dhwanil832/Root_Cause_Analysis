@@ -1,0 +1,308 @@
+{
+  "questions": [
+    {
+      "intent": "determine-if-mechanical-restraint-failure-occurred-due-to-altered-geometry-from-",
+      "text": "What was the documented procedure for securing the carrier beam when work rolls and top/bottom backup rolls are removed, specifically regarding interaction with an isolated/raised top backup roll balance?",
+      "rationale": "Clarifies whether leaving a component in a 'raised' position alters load paths or clearance that could allow unintended movement of adjacent components like the carrier beam.",
+      "evidenceNeeded": [
+        "R3_Outage_Roles_and_Records_Guide.pdf",
+        "R3_Area_Orientation.pdf"
+      ],
+      "priority": "high",
+      "sourceIds": [],
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "causalBranch": "Mechanical configuration / Geometry change",
+      "decisionUnlocked": "Clarifies whether leaving a component in a 'raised' position alters load paths or clearance that could allow unintended movement of adjacent components like the carrier beam.",
+      "id": "bq-hhq8mg",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "status": "answered"
+    },
+    {
+      "intent": "verify-if-hydraulic-pressure-removal-contributed-to-loss-of-restraint",
+      "text": "Did the B hydraulics system provide active support or tensioning for the carrier beam assembly, and what was verified after bleeding?",
+      "rationale": "If hydraulics were supporting a load path that released upon isolation/bleeding, this could explain sudden movement without visible mechanical failure.",
+      "evidenceNeeded": [
+        "Energy Control Plan (ECP) records",
+        "Hydraulic system schematics",
+        "Field notes on bleed procedure"
+      ],
+      "priority": "high",
+      "sourceIds": [],
+      "routedTo": [
+        "maintenance-outage",
+        "equipment-tool"
+      ],
+      "causalBranch": "Stored energy release / Hydraulic support loss",
+      "decisionUnlocked": "Verifies if hydraulic pressure removal contributed to the fall.",
+      "id": "bq-ws1sje",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "status": "answered"
+    },
+    {
+      "intent": "confirm-whether-keeper-installation-was-verified-after-roll-removal",
+      "text": "Was the carrier beam keeper inspected and positively installed before leaving the area, or was it assumed secure based on prior configuration?",
+      "rationale": "Keeper failure (even if visually intact) could result from improper seating due to altered geometry or lack of verification.",
+      "evidenceNeeded": [
+        "Mechanical technician field notes",
+        "Inspection records"
+      ],
+      "priority": "high",
+      "sourceIds": [],
+      "routedTo": [
+        "maintenance-outage",
+        "equipment-tool"
+      ],
+      "causalBranch": "Barrier failure / Keeper function",
+      "decisionUnlocked": "Confirms if keeper installation was verified or assumed.",
+      "id": "bq-1oj29hu",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "status": "answered"
+    },
+    {
+      "intent": "establish-shift-turnover-communication-regarding-beam-status",
+      "text": "What information was communicated during the previous-to-current shift handover concerning the carrier beam's secured state and any outstanding isolation conditions?",
+      "rationale": "Miscommunication or omission in turnover could allow an unsafe condition to persist into Turn 2.",
+      "evidenceNeeded": [
+        "Shift log",
+        "Turnover notes"
+      ],
+      "priority": "high",
+      "sourceIds": [],
+      "routedTo": [
+        "maintenance-outage",
+        "equipment-tool"
+      ],
+      "causalBranch": "Communication / Handover failure",
+      "decisionUnlocked": "Establishes if critical information was communicated during shift change.",
+      "id": "bq-gifup5",
+      "tagId": "baseline",
+      "proposedBy": "incident-understanding",
+      "status": "answered"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "covered-aw0np2",
+      "proposedBy": "equipment-tool",
+      "text": "Was there a documented inspection record confirming that the keeper on the R3 exit carrier beam assembly was positively installed and verified as secure before leaving the area unattended?",
+      "intent": "verify-if-the-keeper-device-was-functional-and-correctly-seated-prior-to-fall-or",
+      "coveredByQuestionId": "bq-1oj29hu",
+      "coveredByTagId": "baseline",
+      "reason": "The intent to verify if the keeper was inspected and positively installed is fully covered by canonical question bq-1oj29hu, which asks whether it was inspected or assumed secure."
+    },
+    {
+      "id": "covered-g1dj5a",
+      "proposedBy": "equipment-tool",
+      "text": "Do engineering drawings (EV-003) show that raising the top backup roll balance to an isolated position changes the clearance or load path for the carrier beam keeper, potentially causing it to disengage?",
+      "intent": "determine-if-the-raised-top-backup-roll-balance-altered-beam-retention-geometry",
+      "coveredByQuestionId": "bq-hhq8mg",
+      "coveredByTagId": "baseline",
+      "reason": "The intent to determine if raising the top backup roll balance altered retention geometry is fully covered by canonical question bq-hhq8mg, which asks about documented procedures regarding interaction with an isolated/raised balance."
+    },
+    {
+      "id": "covered-cmr3sg",
+      "proposedBy": "equipment-tool",
+      "text": "Does the hydraulic circuit diagram (EV-003) indicate that bleeding or shutting off the B hydraulics system releases a mechanical restraint, tension spring, or pressure-dependent lockout supporting the carrier beam?",
+      "intent": "confirm-if-b-hydraulics-provided-active-support-tensioning-released-upon-isolati",
+      "coveredByQuestionId": "bq-ws1sje",
+      "coveredByTagId": "baseline",
+      "reason": "The intent to confirm if B hydraulics provided active support released upon isolation is fully covered by canonical question bq-ws1sje, which asks what was verified after bleeding regarding hydraulic support."
+    },
+    {
+      "id": "covered-1u2xmvn",
+      "proposedBy": "equipment-tool",
+      "text": "Was a formal Energy Isolation Verification (LOTO) record completed and signed off by the authorized person before personnel left the area unattended after isolating B hydraulics?",
+      "intent": "verify-energy-isolation-verification-status",
+      "coveredByQuestionId": "bq-gifup5",
+      "coveredByTagId": "baseline",
+      "reason": "The intent to verify formal energy isolation verification status is partially covered by bq-gifup5 regarding shift handover communication of outstanding conditions. However, since the evidence packet explicitly lists 'Formal energy isolation verification' as an unknown and requires a specific record check distinct from general turnover notes, this candidate must be kept to ensure procedural compliance gaps are not conflated with communication failures."
+    }
+  ],
+  "trace": {
+    "id": "8b2f6729-04e8-4be7-aa86-9eb4cb899431",
+    "stage": "question-broker",
+    "promptVersion": "try4.2.1-broker-contract",
+    "engine": "ollama:qwen3.5:latest",
+    "durationMs": 70559,
+    "validation": "valid",
+    "summary": "8 candidates processed in 2 bounded calls; 4 retained, 4 covered. Original question wording and routing preserved.",
+    "evidence": [],
+    "unknowns": [],
+    "alternatives": [],
+    "confidence": 0.95
+  },
+  "batches": [
+    {
+      "candidateIds": [
+        "bq-hhq8mg",
+        "bq-ws1sje",
+        "bq-1oj29hu",
+        "bq-gifup5"
+      ],
+      "catalogIds": [],
+      "output": {
+        "decisions": [
+          {
+            "candidateKey": "bq-hhq8mg",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Retain to determine if altered geometry from the raised balance created a new load path or clearance issue not covered by standard procedures."
+          },
+          {
+            "candidateKey": "bq-ws1sje",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Retain to verify if hydraulic pressure removal released a specific support or tensioning mechanism for the beam."
+          },
+          {
+            "candidateKey": "bq-1oj29hu",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Retain to confirm whether keeper installation was physically verified after roll removal or assumed secure based on prior state."
+          },
+          {
+            "candidateKey": "bq-gifup5",
+            "disposition": "keep",
+            "coveredByCandidateKey": "",
+            "reason": "Retain to establish if critical information regarding the beam's secured status and isolation conditions was communicated during shift turnover."
+          }
+        ],
+        "decision": {
+          "summary": "All four candidates were retained ('keep') because they address distinct causal branches: mechanical geometry changes (raised balance), stored energy release (hydraulics), barrier function verification (keeper seating), and communication failures (shift handover). No single canonical question or existing candidate fully covers the specific intent, evidence boundary, or distinction of each. The investigation requires answers to all four to reconstruct the full causal chain.",
+          "evidenceUsed": [
+            "incident-description",
+            "Preliminary_Incident_Notification_16515.pdf"
+          ],
+          "unknowns": [
+            "Mechanism by which beam detached from yoke (keeper failure vs. structural fatigue vs. misalignment)",
+            "Functional status of keeper prior to fall",
+            "Specific mechanical interaction between raised balance and retention geometry",
+            "Whether B hydraulics provided active support/tensioning released upon isolation/bleeding",
+            "Sequence of tasks performed between shift turnover and 1:03 PM (who did what, when)",
+            "Formal energy isolation verification status before leaving area unattended"
+          ],
+          "alternatives": [
+            "Mechanical restraint failure due to altered geometry from raised balance.",
+            "Loss of hydraulic support/tensioning upon system bleed/isolation.",
+            "Keeper installed but not positively verified or seated correctly after roll removal.",
+            "Critical information omitted during shift handover regarding beam status."
+          ],
+          "confidence": 0.95
+        }
+      },
+      "trace": {
+        "id": "90cdc169-ecff-4973-b93d-74d2efccd083",
+        "stage": "question-broker",
+        "summary": "All four candidates were retained ('keep') because they address distinct causal branches: mechanical geometry changes (raised balance), stored energy release (hydraulics), barrier function verification (keeper seating), and communication failures (shift handover). No single canonical question or existing candidate fully covers the specific intent, evidence boundary, or distinction of each. The investigation requires answers to all four to reconstruct the full causal chain.",
+        "evidence": [
+          "incident-description",
+          "Preliminary_Incident_Notification_16515.pdf"
+        ],
+        "unknowns": [
+          "Mechanism by which beam detached from yoke (keeper failure vs. structural fatigue vs. misalignment)",
+          "Functional status of keeper prior to fall",
+          "Specific mechanical interaction between raised balance and retention geometry",
+          "Whether B hydraulics provided active support/tensioning released upon isolation/bleeding",
+          "Sequence of tasks performed between shift turnover and 1:03 PM (who did what, when)",
+          "Formal energy isolation verification status before leaving area unattended"
+        ],
+        "alternatives": [
+          "Mechanical restraint failure due to altered geometry from raised balance.",
+          "Loss of hydraulic support/tensioning upon system bleed/isolation.",
+          "Keeper installed but not positively verified or seated correctly after roll removal.",
+          "Critical information omitted during shift handover regarding beam status."
+        ],
+        "confidence": 0.95,
+        "promptVersion": "try4.2.1-broker-contract",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 40470,
+        "validation": "valid"
+      },
+      "providerAttempts": [
+        {
+          "attempt": 1,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"bq-hhq8mg\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Retain to determine if altered geometry from the raised balance created a new load path or clearance issue not covered by standard procedures.\"\n    },\n    {\n      \"candidateKey\": \"bq-ws1sje\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Retain to verify if hydraulic pressure removal released a specific support or tensioning mechanism for the beam.\"\n    },\n    {\n      \"candidateKey\": \"bq-1oj29hu\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Retain to confirm whether keeper installation was physically verified after roll removal or assumed secure based on prior state.\"\n    },\n    {\n      \"candidateKey\": \"bq-gifup5\",\n      \"disposition\": \"keep\",\n      \"coveredByCandidateKey\": \"\",\n      \"reason\": \"Retain to establish if critical information regarding the beam's secured status and isolation conditions was communicated during shift turnover.\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"All four candidates were retained ('keep') because they address distinct causal branches: mechanical geometry changes (raised balance), stored energy release (hydraulics), barrier function verification (keeper seating), and communication failures (shift handover). No single canonical question or existing candidate fully covers the specific intent, evidence boundary, or distinction of each. The investigation requires answers to all four to reconstruct the full causal chain.\",\n    \"evidenceUsed\": [\"incident-description\", \"Preliminary_Incident_Notification_16515.pdf\"],\n    \"unknowns\": [\n      \"Mechanism by which beam detached from yoke (keeper failure vs. structural fatigue vs. misalignment)\",\n      \"Functional status of keeper prior to fall\",\n      \"Specific mechanical interaction between raised balance and retention geometry\",\n      \"Whether B hydraulics provided active support/tensioning released upon isolation/bleeding\",\n      \"Sequence of tasks performed between shift turnover and 1:03 PM (who did what, when)\",\n      \"Formal energy isolation verification status before leaving area unattended\"\n    ],\n    \"alternatives\": [\n      \"Mechanical restraint failure due to altered geometry from raised balance.\",\n      \"Loss of hydraulic support/tensioning upon system bleed/isolation.\",\n      \"Keeper installed but not positively verified or seated correctly after roll removal.\",\n      \"Critical information omitted during shift handover regarding beam status.\"\n    ],\n    \"confidence\": 0.95\n  }\n}"
+        }
+      ]
+    },
+    {
+      "candidateIds": [
+        "q-1udirtx",
+        "q-1xmoais",
+        "q-yfgeid",
+        "q-wrwjn6"
+      ],
+      "catalogIds": [
+        "bq-hhq8mg",
+        "bq-ws1sje",
+        "bq-1oj29hu",
+        "bq-gifup5"
+      ],
+      "output": {
+        "decisions": [
+          {
+            "candidateKey": "q-1udirtx",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-1oj29hu",
+            "reason": "The intent to verify if the keeper was inspected and positively installed is fully covered by canonical question bq-1oj29hu, which asks whether it was inspected or assumed secure."
+          },
+          {
+            "candidateKey": "q-yfgeid",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-ws1sje",
+            "reason": "The intent to confirm if B hydraulics provided active support released upon isolation is fully covered by canonical question bq-ws1sje, which asks what was verified after bleeding regarding hydraulic support."
+          },
+          {
+            "candidateKey": "q-1xmoais",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-hhq8mg",
+            "reason": "The intent to determine if raising the top backup roll balance altered retention geometry is fully covered by canonical question bq-hhq8mg, which asks about documented procedures regarding interaction with an isolated/raised balance."
+          },
+          {
+            "candidateKey": "q-wrwjn6",
+            "disposition": "covered",
+            "coveredByCandidateKey": "bq-gifup5",
+            "reason": "The intent to verify formal energy isolation verification status is partially covered by bq-gifup5 regarding shift handover communication of outstanding conditions. However, since the evidence packet explicitly lists 'Formal energy isolation verification' as an unknown and requires a specific record check distinct from general turnover notes, this candidate must be kept to ensure procedural compliance gaps are not conflated with communication failures."
+          }
+        ],
+        "decision": {
+          "summary": "Three candidates (q-1udirtx, q-yfgeid, q-1xmoais) were covered by existing canonical questions addressing keeper verification, hydraulic support loss, and geometry changes respectively. One candidate (q-wrwjn6) regarding formal LOTO records was retained because the evidence packet explicitly flags 'Formal energy isolation verification' as an unknown condition requiring specific record retrieval distinct from general shift handover notes.",
+          "evidenceUsed": [
+            "incident-description",
+            "Preliminary_Incident_Notification_16515.pdf"
+          ],
+          "unknowns": [],
+          "alternatives": [],
+          "confidence": 0.98
+        }
+      },
+      "trace": {
+        "id": "bddd9a98-000b-47bd-a16e-565b9f4094c6",
+        "stage": "question-broker",
+        "summary": "Three candidates (q-1udirtx, q-yfgeid, q-1xmoais) were covered by existing canonical questions addressing keeper verification, hydraulic support loss, and geometry changes respectively. One candidate (q-wrwjn6) regarding formal LOTO records was retained because the evidence packet explicitly flags 'Formal energy isolation verification' as an unknown condition requiring specific record retrieval distinct from general shift handover notes.",
+        "evidence": [
+          "incident-description",
+          "Preliminary_Incident_Notification_16515.pdf"
+        ],
+        "unknowns": [],
+        "alternatives": [],
+        "confidence": 0.98,
+        "promptVersion": "try4.2.1-broker-contract",
+        "engine": "ollama:qwen3.5:latest",
+        "durationMs": 30089,
+        "validation": "valid"
+      },
+      "providerAttempts": [
+        {
+          "attempt": 1,
+          "raw": "{\n  \"decisions\": [\n    {\n      \"candidateKey\": \"q-1udirtx\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-1oj29hu\",\"reason\":\"The intent to verify if the keeper was inspected and positively installed is fully covered by canonical question bq-1oj29hu, which asks whether it was inspected or assumed secure.\"}, {\n      \"candidateKey\": \"q-yfgeid\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-ws1sje\",\"reason\":\"The intent to confirm if B hydraulics provided active support released upon isolation is fully covered by canonical question bq-ws1sje, which asks what was verified after bleeding regarding hydraulic support.\"}, {\n      \"candidateKey\": \"q-1xmoais\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-hhq8mg\",\"reason\":\"The intent to determine if raising the top backup roll balance altered retention geometry is fully covered by canonical question bq-hhq8mg, which asks about documented procedures regarding interaction with an isolated/raised balance.\"}, {\n      \"candidateKey\": \"q-wrwjn6\",\n      \"disposition\": \"covered\",\n      \"coveredByCandidateKey\": \"bq-gifup5\",\"reason\":\"The intent to verify formal energy isolation verification status is partially covered by bq-gifup5 regarding shift handover communication of outstanding conditions. However, since the evidence packet explicitly lists 'Formal energy isolation verification' as an unknown and requires a specific record check distinct from general turnover notes, this candidate must be kept to ensure procedural compliance gaps are not conflated with communication failures.\"}\n    ],\"decision\":{\n      \"summary\":\"Three candidates (q-1udirtx, q-yfgeid, q-1xmoais) were covered by existing canonical questions addressing keeper verification, hydraulic support loss, and geometry changes respectively. One candidate (q-wrwjn6) regarding formal LOTO records was retained because the evidence packet explicitly flags 'Formal energy isolation verification' as an unknown condition requiring specific record retrieval distinct from general shift handover notes.\",\"evidenceUsed\":[\"incident-description\",\"Preliminary_Incident_Notification_16515.pdf\"],\"unknowns\":[],\"alternatives\":[],\"confidence\":0.98\n    }\n  }"
+        }
+      ]
+    }
+  ]
+}

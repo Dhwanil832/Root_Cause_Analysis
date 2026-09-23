@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-16T23:20:25.079Z",
+  "status": "candidate_batch_ready_for_review",
+  "roundId": "323756f5-dbe1-4650-9121-d583b3f97d77",
+  "questionCount": 4,
+  "answerCount": 4,
+  "answerStatuses": {
+    "unknown": 3,
+    "answered": 1
+  },
+  "answersSha256": "d45ef868c47810a5d2b411ca0441e1e34ab533fbe76875cc9fc132db60416547",
+  "durationMs": 48484,
+  "semanticApproval": false,
+  "rcaStarted": false,
+  "url": "http://127.0.0.1:3008/story/eebd569e-92a1-4b41-87c3-3f4953cfb2a6"
+}

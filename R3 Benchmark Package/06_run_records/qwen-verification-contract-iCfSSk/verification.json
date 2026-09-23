@@ -1,0 +1,555 @@
+{
+  "output": {
+    "maturity": "initial",
+    "verifiedNodeKeys": [
+      "node-1w4nim1"
+    ],
+    "verifiedEdgeIndexes": [],
+    "findings": [
+      {
+        "targetKey": "edge-u1txca",
+        "severity": "blocking",
+        "issue": "Causal link unsupported by evidence; relies on hypothesis without hydraulic schematics.",
+        "evidenceNeeded": "Hydraulic circuit diagram showing if pressure supports a latch or support path for the carrier beam.",
+        "question": "Does bleeding B hydraulics release a mechanical restraint dependent on fluid pressure?"
+      },
+      {
+        "targetKey": "edge-mkolcf",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; load path shift hypothesis lacks engineering analysis.",
+        "evidenceNeeded": "Engineering analysis of load paths when top backup roll balance is raised and work rolls removed.",
+        "question": "Does raising the isolated top backup roll balance transfer gravitational load to the carrier beam?"
+      },
+      {
+        "targetKey": "edge-2ujcte",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; existence of temporary supports is unknown.",
+        "evidenceNeeded": "Shift turnover logs (EV-006) and visual evidence confirming presence/removal of temporary supports.",
+        "question": "Were temporary mechanical restraints installed before roll removal, and were they removed?"
+      },
+      {
+        "targetKey": "edge-1foomg",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; mechanism of failure (keeper release vs load path) is unknown.",
+        "evidenceNeeded": "Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits.",
+        "question": "Did the removal of rolls or raising of the balance exceed the keeper's capacity in an unloaded state?"
+      },
+      {
+        "targetKey": "edge-1cc9aai",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; sequence of actions immediately before fall is undocumented.",
+        "evidenceNeeded": "Sequence of actions taken by maintenance and contractors in the minutes prior to failure (EV-006).",
+        "question": "What specific verification steps were performed after roll removal and hydraulic bleed?"
+      },
+      {
+        "targetKey": "edge-11tbp77",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; contractor actions near the beam are undocumented.",
+        "evidenceNeeded": "Contractor work logs and field notes detailing specific tasks performed near R3 stand.",
+        "question": "Did contractors interact with areas containing temporary supports or the carrier assembly?"
+      },
+      {
+        "targetKey": "edge-11tbp77",
+        "severity": "blocking",
+        "issue": "Circular reasoning detected: Contractor presence (node-151onji) is verified, but their specific actions causing support removal are hypothesized without evidence.",
+        "evidenceNeeded": "Contractor work logs and field notes detailing specific tasks performed near R3 stand.",
+        "question": "Did contractors interact with areas containing temporary supports or the carrier assembly?"
+      },
+      {
+        "targetKey": "node-1p2hjol",
+        "severity": "blocking",
+        "issue": "Node status 'verified' is inappropriate; mechanism of restraint failure (keeper release vs load path shift) remains unknown.",
+        "evidenceNeeded": "Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits.",
+        "question": "Did the keeper disengage due to overload or mechanical release?"
+      }
+    ],
+    "decision": {
+      "summary": "The causal board contains multiple blocking defects. No edge currently meets the evidence standard because all proposed causes rely on hypotheses (hydraulic latch, load path shift, temporary support removal) without supporting schematics, logs, or engineering analysis. The focal event is verified, but its cause remains unproven.",
+      "evidenceUsed": [
+        "claim-1sb3iv3",
+        "claim-fuvdp7",
+        "claim-fvs8pn",
+        "claim-ac8iph",
+        "claim-vrtl59"
+      ],
+      "unknowns": [
+        "Hydraulic circuit behavior when bled",
+        "Load path changes due to raised balance and roll removal",
+        "Existence/removal of temporary supports",
+        "Condition of keeper installation prior to failure"
+      ],
+      "alternatives": [
+        "Design flaw: Carrier beam not designed for unloaded state.",
+        "Procedural gap: Temporary supports removed inadvertently."
+      ],
+      "confidence": 0.85
+    }
+  },
+  "trace": {
+    "id": "d3f2bf55-6066-4e67-b41a-bcb1aed6b04e",
+    "stage": "causal-verification",
+    "summary": "The causal board contains multiple blocking defects. No edge currently meets the evidence standard because all proposed causes rely on hypotheses (hydraulic latch, load path shift, temporary support removal) without supporting schematics, logs, or engineering analysis. The focal event is verified, but its cause remains unproven.",
+    "evidence": [
+      "claim-1sb3iv3",
+      "claim-fuvdp7",
+      "claim-fvs8pn",
+      "claim-ac8iph",
+      "claim-vrtl59"
+    ],
+    "unknowns": [
+      "Hydraulic circuit behavior when bled",
+      "Load path changes due to raised balance and roll removal",
+      "Existence/removal of temporary supports",
+      "Condition of keeper installation prior to failure"
+    ],
+    "alternatives": [
+      "Design flaw: Carrier beam not designed for unloaded state.",
+      "Procedural gap: Temporary supports removed inadvertently."
+    ],
+    "confidence": 0.85,
+    "promptVersion": "try4.2.2-verification-contract",
+    "engine": "ollama:qwen3.5:latest",
+    "durationMs": 70018,
+    "validation": "valid"
+  },
+  "providerAttempts": [
+    {
+      "attempt": 1,
+      "raw": "{\n  \"maturity\": \"initial\",\n  \"verifiedNodeKeys\": [\n    \"node-1w4nim1\"\n  ],\n  \"verifiedEdgeIndexes\": [],\n  \"findings\": [\n    {\n      \"targetKey\": \"edge-u1txca\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal link unsupported by evidence; relies on hypothesis without hydraulic schematics.\",\n      \"evidenceNeeded\": \"Hydraulic circuit diagram showing if pressure supports a latch or support path for the carrier beam.\",\n      \"question\": \"Does bleeding B hydraulics release a mechanical restraint dependent on fluid pressure?\"\n    },\n    {\n      \"targetKey\": \"edge-mkolcf\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal link unsupported; load path shift hypothesis lacks engineering analysis.\",\n      \"evidenceNeeded\": \"Engineering analysis of load paths when top backup roll balance is raised and work rolls removed.\",\n      \"question\": \"Does raising the isolated top backup roll balance transfer gravitational load to the carrier beam?\"\n    },\n    {\n      \"targetKey\": \"edge-2ujcte\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal link unsupported; existence of temporary supports is unknown.\",\n      \"evidenceNeeded\": \"Shift turnover logs (EV-006) and visual evidence confirming presence/removal of temporary supports.\",\n      \"question\": \"Were temporary mechanical restraints installed before roll removal, and were they removed?\"\n    },\n    {\n      \"targetKey\": \"edge-1foomg\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal link unsupported; mechanism of failure (keeper release vs load path) is unknown.\",\n      \"evidenceNeeded\": \"Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits.\",\n      \"question\": \"Did the removal of rolls or raising of the balance exceed the keeper's capacity in an unloaded state?\"\n    },\n    {\n      \"targetKey\": \"edge-1cc9aai\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal link unsupported; sequence of actions immediately before fall is undocumented.\",\n      \"evidenceNeeded\": \"Sequence of actions taken by maintenance and contractors in the minutes prior to failure (EV-006).\",\n      \"question\": \"What specific verification steps were performed after roll removal and hydraulic bleed?\"\n    },\n    {\n      \"targetKey\": \"edge-11tbp77\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Causal link unsupported; contractor actions near the beam are undocumented.\",\n      \"evidenceNeeded\": \"Contractor work logs and field notes detailing specific tasks performed near R3 stand.\",\n      \"question\": \"Did contractors interact with areas containing temporary supports or the carrier assembly?\"\n    },\n    {\n      \"targetKey\": \"edge-11tbp77\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Circular reasoning detected: Contractor presence (node-151onji) is verified, but their specific actions causing support removal are hypothesized without evidence.\",\n      \"evidenceNeeded\": \"Contractor work logs and field notes detailing specific tasks performed near R3 stand.\",\n      \"question\": \"Did contractors interact with areas containing temporary supports or the carrier assembly?\"\n    },\n    {\n      \"targetKey\": \"node-1p2hjol\",\n      \"severity\": \"blocking\",\n      \"issue\": \"Node status 'verified' is inappropriate; mechanism of restraint failure (keeper release vs load path shift) remains unknown.\",\n      \"evidenceNeeded\": \"Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits.\",\n      \"question\": \"Did the keeper disengage due to overload or mechanical release?\"\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"The causal board contains multiple blocking defects. No edge currently meets the evidence standard because all proposed causes rely on hypotheses (hydraulic latch, load path shift, temporary support removal) without supporting schematics, logs, or engineering analysis. The focal event is verified, but its cause remains unproven.\",\n    \"evidenceUsed\": [\"claim-1sb3iv3\", \"claim-fuvdp7\", \"claim-fvs8pn\", \"claim-ac8iph\", \"claim-vrtl59\"],\n    \"unknowns\": [\n      \"Hydraulic circuit behavior when bled\",\n      \"Load path changes due to raised balance and roll removal\",\n      \"Existence/removal of temporary supports\",\n      \"Condition of keeper installation prior to failure\"\n    ],\n    \"alternatives\": [\n      \"Design flaw: Carrier beam not designed for unloaded state.\",\n      \"Procedural gap: Temporary supports removed inadvertently.\"\n    ],\n    \"confidence\": 0.85\n  }\n}"
+    }
+  ],
+  "board": {
+    "maturity": "initial",
+    "focalNodeId": "node-1w4nim1",
+    "nodes": [
+      {
+        "id": "node-1w4nim1",
+        "type": "event",
+        "label": "R3 exit carrier beam falls from yoke into mill pit",
+        "detail": "Beam fell intact with keeper installed; link attached. No visible fracture on primary components.",
+        "status": "verified",
+        "sourceIds": [
+          "claim-1sb3iv3",
+          "finding-z5iypn"
+        ],
+        "specialistIds": [],
+        "verified": true
+      },
+      {
+        "id": "node-wit7hs",
+        "type": "condition",
+        "label": "Work rolls and backup rolls removed; top balance raised, B hydraulics bled.",
+        "detail": "System state changed from normal operation to outage configuration. Top backup roll balance isolated in raised position.",
+        "status": "verified",
+        "sourceIds": [
+          "claim-1dxorz3",
+          "finding-jvdqhs"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1o2fp8o",
+        "type": "change",
+        "label": "B hydraulics shut off and bled.",
+        "detail": "Pressure removed from B system. Potential to alter mechanical restraint or support paths is hypothesized but unverified without schematics.",
+        "status": "supported",
+        "sourceIds": [
+          "claim-fuvdp7"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-178iswz",
+        "type": "change",
+        "label": "Top backup roll balance left isolated in raised position.",
+        "detail": "Gravitational potential and load path on yoke/carrier assembly altered by raising this component. Specific interaction with carrier beam unknown.",
+        "status": "verified",
+        "sourceIds": [
+          "claim-fvs8pn"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-13q1l7u",
+        "type": "change",
+        "label": "Work rolls removed from R3 stand.",
+        "detail": "Removal of primary support components (work/backup rolls) altered the load path for the carrier beam assembly.",
+        "status": "verified",
+        "sourceIds": [
+          "claim-1dxorz3"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1p2hjol",
+        "type": "condition",
+        "label": "Mechanical restraint on carrier beam failed or was insufficient.",
+        "detail": "The keeper retained the beam but did not prevent detachment. The specific mechanism of release (keeper disengagement vs load path shift) is unknown.",
+        "status": "verified",
+        "sourceIds": [
+          "claim-100e515"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-ymm92j",
+        "type": "condition",
+        "label": "Carrier assembly may not be designed to support loads in unloaded/bled state.",
+        "detail": "Hypothesis that the design does not account for gravity load on carrier beam when hydraulics are bled and rolls removed. Requires engineering drawing (EV-003) verification.",
+        "status": "unknown",
+        "sourceIds": [
+          "claim-vrtl59"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-iqm0nn",
+        "type": "condition",
+        "label": "Temporary supports may have been present and inadvertently removed.",
+        "detail": "Hypothesis that contractor work involved removal of temporary restraints. Evidence missing (EV-006 turnover logs).",
+        "status": "unknown",
+        "sourceIds": [
+          "claim-q1dc9j"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1qd881d",
+        "type": "condition",
+        "label": "Procedural controls for outage transition not fully applied.",
+        "detail": "Hypothesis that verification steps (e.g., confirming no personnel in danger zones before removing restraints) were missed. Requires procedure review and turnover logs.",
+        "status": "unknown",
+        "sourceIds": [
+          "claim-1y0jexl"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-151onji",
+        "type": "event",
+        "label": "Contractor employees worked in mill pit throughout morning.",
+        "detail": "Presence of contractors introduces potential for conflicting activities, scope drift, or inadvertent removal of supports. Specific actions undocumented.",
+        "status": "verified",
+        "sourceIds": [
+          "claim-3k7vds"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-135ti6n",
+        "type": "event",
+        "label": "Maintenance team performed roll removal and hydraulic isolation.",
+        "detail": "Actions taken by maintenance to prepare for outage. Sequence of actions immediately before fall undocumented (EV-006 missing).",
+        "status": "verified",
+        "sourceIds": [
+          "claim-fvs8pn"
+        ],
+        "specialistIds": [],
+        "verified": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-1foomg",
+        "from": "node-wit7hs",
+        "to": "node-1p2hjol",
+        "type": "caused",
+        "rationale": "Removal of rolls and raising balance altered load paths, potentially exceeding keeper capacity or removing support.",
+        "status": "proposed",
+        "sourceIds": [
+          "claim-1r1dhpz"
+        ],
+        "claimIds": [],
+        "counterfactual": "If the assembly was designed to handle this configuration without failure, the fall would not occur solely due to roll removal.",
+        "competingExplanation": "Keeper mechanism failed independently of load path changes (e.g., corrosion or improper installation).",
+        "evidenceGap": "Mechanical drawing showing interaction between raised balance and carrier beam; keeper design limits.",
+        "verified": false
+      },
+      {
+        "id": "edge-u1txca",
+        "from": "node-1o2fp8o",
+        "to": "node-1p2hjol",
+        "type": "caused",
+        "rationale": "Bleeding hydraulics may have released a latch or support path that was dependent on hydraulic pressure.",
+        "status": "proposed",
+        "sourceIds": [
+          "claim-1imxayi"
+        ],
+        "claimIds": [],
+        "counterfactual": "If B hydraulics were not required for restraint, bleeding them would be irrelevant to the fall.",
+        "competingExplanation": "Hydraulic bleed had no effect on mechanical restraints; failure was purely gravitational or structural.",
+        "evidenceGap": "Hydraulic circuit diagram showing if pressure supports a latch or support path.",
+        "verified": false
+      },
+      {
+        "id": "edge-mkolcf",
+        "from": "node-178iswz",
+        "to": "node-1p2hjol",
+        "type": "caused",
+        "rationale": "Raising the top backup roll balance may have shifted load onto the carrier beam, exceeding its capacity in an unloaded state.",
+        "status": "proposed",
+        "sourceIds": [
+          "claim-ac8iph"
+        ],
+        "claimIds": [],
+        "counterfactual": "If raising the balance did not shift load to the carrier beam, this change is irrelevant.",
+        "competingExplanation": "The raised balance was isolated and carried its own weight without affecting the yoke/carrier assembly.",
+        "evidenceGap": "Engineering analysis of load paths when top backup roll balance is raised.",
+        "verified": false
+      },
+      {
+        "id": "edge-2ujcte",
+        "from": "node-iqm0nn",
+        "to": "node-1p2hjol",
+        "type": "caused",
+        "rationale": "Inadvertent removal of temporary supports by contractors or maintenance removed a critical restraint.",
+        "status": "proposed",
+        "sourceIds": [
+          "claim-1y0jexl"
+        ],
+        "claimIds": [],
+        "counterfactual": "If temporary supports were never installed, this cause is invalid.",
+        "competingExplanation": "No temporary supports existed; failure was due to design or mechanical release mechanism only.",
+        "evidenceGap": "Shift turnover logs (EV-006) and visual evidence of support installation/removal.",
+        "verified": false
+      },
+      {
+        "id": "edge-11tbp77",
+        "from": "node-1qd881d",
+        "to": "node-1p2hjol",
+        "type": "caused",
+        "rationale": "Failure to verify restraint status or follow outage procedure led to loss of barrier.",
+        "status": "proposed",
+        "sourceIds": [
+          "claim-1skvw7h"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedures were followed correctly, the fall would not have occurred.",
+        "competingExplanation": "Procedures existed but were insufficient to prevent failure even when followed; root cause is design or equipment limitation.",
+        "evidenceGap": "Outage work scope documentation and procedure compliance records.",
+        "verified": false
+      },
+      {
+        "id": "edge-8lbair",
+        "from": "node-151onji",
+        "to": "node-iqm0nn",
+        "type": "caused",
+        "rationale": "Contractor activities in the pit created opportunity for inadvertent removal of supports.",
+        "status": "proposed",
+        "sourceIds": [
+          "claim-os53oq"
+        ],
+        "claimIds": [],
+        "counterfactual": "If contractors were restricted from areas with temporary supports, this link is weakened.",
+        "competingExplanation": "Contractors did not interact with the carrier beam area or its restraints.",
+        "evidenceGap": "Contractor work logs and field notes detailing specific tasks performed near R3 stand.",
+        "verified": false
+      },
+      {
+        "id": "edge-1cc9aai",
+        "from": "node-135ti6n",
+        "to": "node-1p2hjol",
+        "type": "caused",
+        "rationale": "Maintenance actions (roll removal, hydraulic bleed) directly altered system state leading to barrier loss.",
+        "status": "proposed",
+        "sourceIds": [
+          "claim-1244yn4"
+        ],
+        "claimIds": [],
+        "counterfactual": "If maintenance had verified restraint status after each action, failure could have been prevented.",
+        "competingExplanation": "Maintenance actions were correct; the system was inherently unstable in this configuration (design flaw).",
+        "evidenceGap": "Sequence of actions taken immediately before fall and verification records.",
+        "verified": false
+      }
+    ],
+    "verificationFindings": [
+      {
+        "id": "verify-1ww7xbg",
+        "targetId": "edge-u1txca",
+        "severity": "blocking",
+        "issue": "Causal link unsupported by evidence; relies on hypothesis without hydraulic schematics.",
+        "evidenceNeeded": "Hydraulic circuit diagram showing if pressure supports a latch or support path for the carrier beam.",
+        "question": "Does bleeding B hydraulics release a mechanical restraint dependent on fluid pressure?"
+      },
+      {
+        "id": "verify-nrady",
+        "targetId": "edge-mkolcf",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; load path shift hypothesis lacks engineering analysis.",
+        "evidenceNeeded": "Engineering analysis of load paths when top backup roll balance is raised and work rolls removed.",
+        "question": "Does raising the isolated top backup roll balance transfer gravitational load to the carrier beam?"
+      },
+      {
+        "id": "verify-gluhw7",
+        "targetId": "edge-2ujcte",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; existence of temporary supports is unknown.",
+        "evidenceNeeded": "Shift turnover logs (EV-006) and visual evidence confirming presence/removal of temporary supports.",
+        "question": "Were temporary mechanical restraints installed before roll removal, and were they removed?"
+      },
+      {
+        "id": "verify-1ay5wzj",
+        "targetId": "edge-1foomg",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; mechanism of failure (keeper release vs load path) is unknown.",
+        "evidenceNeeded": "Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits.",
+        "question": "Did the removal of rolls or raising of the balance exceed the keeper's capacity in an unloaded state?"
+      },
+      {
+        "id": "verify-7a5yl3",
+        "targetId": "edge-1cc9aai",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; sequence of actions immediately before fall is undocumented.",
+        "evidenceNeeded": "Sequence of actions taken by maintenance and contractors in the minutes prior to failure (EV-006).",
+        "question": "What specific verification steps were performed after roll removal and hydraulic bleed?"
+      },
+      {
+        "id": "verify-eq6zez",
+        "targetId": "edge-11tbp77",
+        "severity": "blocking",
+        "issue": "Causal link unsupported; contractor actions near the beam are undocumented.",
+        "evidenceNeeded": "Contractor work logs and field notes detailing specific tasks performed near R3 stand.",
+        "question": "Did contractors interact with areas containing temporary supports or the carrier assembly?"
+      },
+      {
+        "id": "verify-1ef5kcr",
+        "targetId": "edge-11tbp77",
+        "severity": "blocking",
+        "issue": "Circular reasoning detected: Contractor presence (node-151onji) is verified, but their specific actions causing support removal are hypothesized without evidence.",
+        "evidenceNeeded": "Contractor work logs and field notes detailing specific tasks performed near R3 stand.",
+        "question": "Did contractors interact with areas containing temporary supports or the carrier assembly?"
+      },
+      {
+        "id": "verify-6sf8qu",
+        "targetId": "node-1p2hjol",
+        "severity": "blocking",
+        "issue": "Node status 'verified' is inappropriate; mechanism of restraint failure (keeper release vs load path shift) remains unknown.",
+        "evidenceNeeded": "Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits.",
+        "question": "Did the keeper disengage due to overload or mechanical release?"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "vq-mth8df",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Does bleeding B hydraulics release a mechanical restraint dependent on fluid pressure?",
+      "intent": "verify-edge-u1txca",
+      "rationale": "Causal link unsupported by evidence; relies on hypothesis without hydraulic schematics.",
+      "evidenceNeeded": [
+        "Hydraulic circuit diagram showing if pressure supports a latch or support path for the carrier beam."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-zujfwv",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Does raising the isolated top backup roll balance transfer gravitational load to the carrier beam?",
+      "intent": "verify-edge-mkolcf",
+      "rationale": "Causal link unsupported; load path shift hypothesis lacks engineering analysis.",
+      "evidenceNeeded": [
+        "Engineering analysis of load paths when top backup roll balance is raised and work rolls removed."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-1ylomar",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Were temporary mechanical restraints installed before roll removal, and were they removed?",
+      "intent": "verify-edge-2ujcte",
+      "rationale": "Causal link unsupported; existence of temporary supports is unknown.",
+      "evidenceNeeded": [
+        "Shift turnover logs (EV-006) and visual evidence confirming presence/removal of temporary supports."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-dncics",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Did the removal of rolls or raising of the balance exceed the keeper's capacity in an unloaded state?",
+      "intent": "verify-edge-1foomg",
+      "rationale": "Causal link unsupported; mechanism of failure (keeper release vs load path) is unknown.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-i8mwyr",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "What specific verification steps were performed after roll removal and hydraulic bleed?",
+      "intent": "verify-edge-1cc9aai",
+      "rationale": "Causal link unsupported; sequence of actions immediately before fall is undocumented.",
+      "evidenceNeeded": [
+        "Sequence of actions taken by maintenance and contractors in the minutes prior to failure (EV-006)."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-onrj40",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Did contractors interact with areas containing temporary supports or the carrier assembly?",
+      "intent": "verify-edge-11tbp77",
+      "rationale": "Causal link unsupported; contractor actions near the beam are undocumented.",
+      "evidenceNeeded": [
+        "Contractor work logs and field notes detailing specific tasks performed near R3 stand."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-onrj40",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Did contractors interact with areas containing temporary supports or the carrier assembly?",
+      "intent": "verify-edge-11tbp77",
+      "rationale": "Circular reasoning detected: Contractor presence (node-151onji) is verified, but their specific actions causing support removal are hypothesized without evidence.",
+      "evidenceNeeded": [
+        "Contractor work logs and field notes detailing specific tasks performed near R3 stand."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "vq-sqb5ic",
+      "tagId": "causal-verification",
+      "proposedBy": "causal-verification",
+      "routedTo": [],
+      "text": "Did the keeper disengage due to overload or mechanical release?",
+      "intent": "verify-node-1p2hjol",
+      "rationale": "Node status 'verified' is inappropriate; mechanism of restraint failure (keeper release vs load path shift) remains unknown.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing showing interaction between raised balance and carrier beam, keeper design limits."
+      ],
+      "priority": "high",
+      "status": "proposed"
+    }
+  ]
+}

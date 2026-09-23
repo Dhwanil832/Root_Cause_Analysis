@@ -1,0 +1,14 @@
+{
+  "experiment": "r3-story-agent-2026-09-09",
+  "incidentId": "07e95cc9-ea21-45a6-b868-6318658299d9",
+  "trackId": "19b7928f-9ffe-4462-9064-b7f63c966952",
+  "promptVersion": "try4.0.0",
+  "modelId": "ollama:qwen3.5:latest",
+  "defaultReferenceCount": 8,
+  "starterDocumentCount": 3,
+  "files": {
+    "Try 4/src/providers/ollama.ts": "cea7a0423724657d53f1bcb37fffd709cbba0dc3de14b022111e991e570cc2f8",
+    "Try 4/src/orchestrator/investigation-loop.ts": "8d3d7a865f770ee07fbe2787782883cdcc554f2d14bbc6afa7e36be5fb0df9eb",
+    "R3 Benchmark Package/06_run_records/r3-story-agent-2026-09-09/frozen-hidden-facts-and-boundaries.md": "b027ee894209ef4e29afc0b582c154932cb54d0a9f36f896315763c5822234c5"
+  }
+}

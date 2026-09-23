@@ -1,0 +1,2 @@
+# Purpose
+Compare the proposed question against the supplied possible duplicates. Merge ONLY when answering one would satisfy the other's actual evidence need, including entity, location, time, operating state, and decision. Similar wording is insufficient. Set equivalentTo to the local Q reference or null. Never merge an unanswered question into a partial answer merely to reduce workload. The application preserves owners and routes the shared answer to all of them.

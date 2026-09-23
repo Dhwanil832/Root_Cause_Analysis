@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0",
+  "case_id": "R3-16515",
+  "operator_private": true,
+  "semantic_assessment_status": "unassessed_no_investigator_run",
+  "independent_expert_validation": "not_performed",
+  "scoring_weights": null,
+  "judge_choice": "not_selected",
+  "outcome_labels": [
+    "met",
+    "partial",
+    "missed",
+    "overclaimed",
+    "not_testable"
+  ],
+  "instructions": [
+    "Accept equivalent meanings and graph structures, not exact words or counts.",
+    "All members of one required evidence bundle are required; multiple bundles represent alternative sufficient sets.",
+    "If evidence delivery or technical validity is not established, mark affected target not_testable rather than model failure.",
+    "Structural citation checks do not assess entailment, causal validity or question quality.",
+    "No forced complete board at V1. Keep all derivatives of the same incident in the development split."
+  ],
+  "targets": [
+    {
+      "target_id": "RT01",
+      "stage": "B0",
+      "dimension": "understanding",
+      "expected_meaning": "Establish fall, raised outage configuration and intact as-found keeper without treating intact as all-position retention.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-I00",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D03",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D04",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Separate event and as-found nodes or a scoped combined account."
+      ],
+      "insufficient_responses": [
+        "Generic equipment failure."
+      ],
+      "overclaims": [
+        "Keeper broke or missing; all energies zero."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Release mechanism."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "row observations with synthetic record format"
+    },
+    {
+      "target_id": "RT02",
+      "stage": "B0",
+      "dimension": "information_need",
+      "expected_meaning": "Seek relative component positions/retaining geometry and gauge/isolation scope as discriminating needs.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D01",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "R3-D03",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D04",
+            "revision": 1,
+            "locator": "S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "One well-scoped merged question or separate questions."
+      ],
+      "insufficient_responses": [
+        "Ask for every training document without mechanical purpose."
+      ],
+      "overclaims": [
+        "Assume a stopper exists or missing block proven."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Exact interface and fluid path."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "constructed information gaps anchored to row"
+    },
+    {
+      "target_id": "RT03",
+      "stage": "B0",
+      "dimension": "factual_support",
+      "expected_meaning": "Keep desk immobility inference attributed and distinguish it from the copied header reading.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D04",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "R3-D05",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Unknown, unsupported, or explicitly attributed belief."
+      ],
+      "insufficient_responses": [
+        "Lists both as independently verified facts."
+      ],
+      "overclaims": [
+        "Two corroborating pressure measurements."
+      ],
+      "expected_delta": "no_stage_change",
+      "remaining_unknowns": [
+        "Load-side pressure and movement."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic source-scope challenge"
+    },
+    {
+      "target_id": "RT04",
+      "stage": "B1",
+      "dimension": "evidence_integration",
+      "expected_meaning": "Combine intact keeper, relative motion and offset geometry into a qualified disengagement explanation.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D03",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D06",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D07",
+            "revision": 1,
+            "locator": "S1–S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "One compound mechanism or linked scoped statements."
+      ],
+      "insufficient_responses": [
+        "Mentions wedging and keeper but no relationship."
+      ],
+      "overclaims": [
+        "A fracture, exact clearance or proven dynamic test."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Precise final contact sequence and forces."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic extension informed by supplemental partner hypothesis"
+    },
+    {
+      "target_id": "RT05",
+      "stage": "B1",
+      "dimension": "revision",
+      "expected_meaning": "Weaken the immobility/together-motion explanation because separate marker movements are observed.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D05",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D06",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Withdraw link, lower confidence or replace scoped statement with reason."
+      ],
+      "insufficient_responses": [
+        "Only rewords existing assertion."
+      ],
+      "overclaims": [
+        "Replaces all earlier observations as false."
+      ],
+      "expected_delta": "weaken",
+      "remaining_unknowns": [
+        "Hydraulic cause of relative motion."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic motion evidence"
+    },
+    {
+      "target_id": "RT06",
+      "stage": "B1",
+      "dimension": "uncertainty",
+      "expected_meaning": "Keep liner-first timing and complete restraint arrangement unresolved.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D07",
+            "revision": 1,
+            "locator": "S3"
+          },
+          {
+            "document_id": "R3-D08",
+            "revision": 1,
+            "locator": "S1–S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Limited accessible-survey finding; separate unknown hidden region."
+      ],
+      "insufficient_responses": [
+        "No unknowns recorded."
+      ],
+      "overclaims": [
+        "All possible restraints absent; liner definitely initiated."
+      ],
+      "expected_delta": "retain-with-reason",
+      "remaining_unknowns": [
+        "Concealed/pre-event conditions."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic scoped observations; row liner occurrence"
+    },
+    {
+      "target_id": "RT07",
+      "stage": "B2",
+      "dimension": "connection",
+      "expected_meaning": "Support a possible load-to-header drift path from trace, later passing observation and actual motion; not valve-only sufficiency.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D09",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D10",
+            "revision": 1,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "R3-D06",
+            "revision": 1,
+            "locator": "S1"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Contributory/consistent-with path with explicit later-test limit."
+      ],
+      "insufficient_responses": [
+        "Valve and fall simply linked because both are true."
+      ],
+      "overclaims": [
+        "Exact event leakage or exclusive valve root cause; drift alone sufficient for release."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Cylinder alternatives and event-time rate."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic mechanism; engineering review pending"
+    },
+    {
+      "target_id": "RT08",
+      "stage": "B2",
+      "dimension": "factual_support",
+      "expected_meaning": "Separate missing task-specific documentation from physical absence of restraint.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D02",
+            "revision": 1,
+            "locator": "S2"
+          },
+          {
+            "document_id": "R3-D11",
+            "revision": 1,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "R3-D07",
+            "revision": 1,
+            "locator": "S3"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Two differently qualified statements."
+      ],
+      "insufficient_responses": [
+        "Single unconditional no-block claim from blank entry."
+      ],
+      "overclaims": [
+        "Blank field proves hardware absent or deliberate omission."
+      ],
+      "expected_delta": "add",
+      "remaining_unknowns": [
+        "Full physical arrangement and omission rationale."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic task records"
+    },
+    {
+      "target_id": "RT09",
+      "stage": "B2",
+      "dimension": "revision",
+      "expected_meaning": "Apply D05 rev2 only to its immobility inference, preserving original reading and historical source.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D05",
+            "revision": 2,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "R3-D04",
+            "revision": 1,
+            "locator": "S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Supersession event or revised board/source assessment."
+      ],
+      "insufficient_responses": [
+        "Adds correction but retains supported immobility."
+      ],
+      "overclaims": [
+        "Treats original header reading as fabricated."
+      ],
+      "expected_delta": "correct",
+      "remaining_unknowns": [
+        "Actual cylinder pressure."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic correction"
+    },
+    {
+      "target_id": "RT10",
+      "stage": "B2",
+      "dimension": "causal_role",
+      "expected_meaning": "Distinguish indication, retention geometry, independent restraint and post-event containment.",
+      "required_evidence_bundles": [
+        [
+          {
+            "document_id": "R3-D02",
+            "revision": 1,
+            "locator": "S1–S2"
+          },
+          {
+            "document_id": "R3-D07",
+            "revision": 1,
+            "locator": "S2–S3"
+          },
+          {
+            "document_id": "R3-D09",
+            "revision": 1,
+            "locator": "S1"
+          },
+          {
+            "document_id": "R3-D03",
+            "revision": 1,
+            "locator": "S2"
+          }
+        ]
+      ],
+      "required_scope": {
+        "entity": "R3 carrier beam, link, keeper, yoke and traced hydraulic branch",
+        "time": "2024-10-14 outage and explicitly later examinations",
+        "location": "Harbor Works R3 stand/pit",
+        "configuration": "backup rolls removed; balance raised",
+        "units": "qualitative positions; header indication not cylinder pressure"
+      },
+      "acceptable_variants": [
+        "Equivalent node types allowed if functions and timing explicit."
+      ],
+      "insufficient_responses": [
+        "Every equipment item classified barrier."
+      ],
+      "overclaims": [
+        "Red-flag response caused original fall; gauge prevents drift."
+      ],
+      "expected_delta": "correct",
+      "remaining_unknowns": [
+        "Capacity and effectiveness."
+      ],
+      "assessment_method": "semantic_review_required",
+      "historical_or_synthetic_basis": "synthetic functional distinctions with row containment"
+    }
+  ]
+}

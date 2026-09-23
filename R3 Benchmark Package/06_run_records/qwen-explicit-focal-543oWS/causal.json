@@ -1,0 +1,915 @@
+{
+  "output": {
+    "maturity": "developing",
+    "focalEvent": {
+      "label": "R3 Exit Carrier Beam falls from yoke into mill pit",
+      "detail": "The beam, link, and keeper fell intact at ~1:03 PM on Oct 14. Work rolls/backup rolls were removed; B hydraulics shut off and bled; top backup roll balance left isolated raised.",
+      "status": "verified",
+      "sourceIds": [
+        "incident-description",
+        "R3-START-001"
+      ],
+      "specialistIds": []
+    },
+    "nodes": [
+      {
+        "key": "support-state",
+        "type": "condition",
+        "label": "B hydraulics system shut off and bled prior to fall.",
+        "detail": "System isolated; specific retention function under bleed state is unknown per evidence.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "R3-DEF-002"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "load-path-change",
+        "type": "condition",
+        "label": "Top backup roll balance left isolated in raised position.",
+        "detail": "Configuration change after removal; potential to alter load path or support conditions is hypothesized but unverified.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "R3-DEF-002"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "retention-method",
+        "type": "condition",
+        "label": "Exact retention method (mechanical vs. frictional) used by keeper on yoke is unknown.",
+        "detail": "Keeper remained installed after fall; whether it relies solely on hydraulic pressure or mechanical engagement under gravity/load changes is not established.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "R3-DEF-001"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "temp-supports",
+        "type": "condition",
+        "label": "Presence and removal sequence of temporary supports or braces on carrier assembly during outage prep is unknown.",
+        "detail": "Critical gap; their absence could explain load path changes, but evidence does not confirm presence/absence.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage",
+          "R3-START-002"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "dynamic-load",
+        "type": "condition",
+        "label": "No crane lifts active; other dynamic loads (vibration, nearby operations) not ruled out.",
+        "detail": "Evidence rules out crane activity but does not exclude vibration or adjacent equipment movement.",
+        "status": "partially-supported",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "barrier-failure",
+        "type": "event",
+        "label": "Retention mechanism failed to hold beam under gravity/load changes.",
+        "detail": "Beam detached while keeper and link remained intact; failure occurred without visible fracture or external lift.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "hydraulic-function-loss",
+        "type": "event",
+        "label": "Loss of hydraulic support/restraint due to isolation/bleeding.",
+        "detail": "Hypothesis that bleeding removed a critical restraint or altered load path; function not defined by current evidence.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "structural-reconfiguration",
+        "type": "event",
+        "label": "Load redistribution caused by isolated raised backup roll balance.",
+        "detail": "Hypothesis that raising the balance shifted load to carrier beam link; requires engineering analysis.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:other-novel"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "support-removal",
+        "type": "event",
+        "label": "Removal of temporary supports or braces (if present) during outage prep.",
+        "detail": "Hypothesis that undocumented removal contributed to loss of restraint; presence unconfirmed.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "dynamic-stress",
+        "type": "event",
+        "label": "Induction of dynamic stress from non-crane activities.",
+        "detail": "Hypothesis that nearby operations induced movement/stress; evidence insufficient to confirm.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "procedural-gap",
+        "type": "condition",
+        "label": "Procedure does not specify mechanical restraints required when hydraulics are bled.",
+        "detail": "Standard exists but specific requirements for R3 carrier beam retention under bleed conditions are unknown.",
+        "status": "verified",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "engineering-gap",
+        "type": "condition",
+        "label": "Mechanical assembly drawing (EV-003) unavailable to define load paths and retention mechanism.",
+        "detail": "Without this, causal links between configuration changes and failure cannot be adjudicated.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-START-002"
+        ],
+        "specialistIds": []
+      }
+    ],
+    "edges": [
+      {
+        "fromKey": "support-state",
+        "toKey": "barrier-failure",
+        "type": "caused",
+        "rationale": "Loss of hydraulic support may have removed a critical restraint, leading to barrier failure.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If B hydraulics did not provide retention when bled, bleeding would be the direct cause; if they do not, this edge is unsupported.",
+        "competingExplanation": "Failure due to structural reconfiguration (load-path change) rather than hydraulic loss.",
+        "evidenceGap": "Function of B hydraulics in bleed state and whether it provides primary restraint."
+      },
+      {
+        "fromKey": "load-path-change",
+        "toKey": "barrier-failure",
+        "type": "caused",
+        "rationale": "Raised backup roll balance may have altered load path, overloading the keeper or link.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:other-novel"
+        ],
+        "claimIds": [],
+        "counterfactual": "If raised position did not alter load paths, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than structural reconfiguration.",
+        "evidenceGap": "Engineering analysis of how isolated raised balance affects yoke/carrier beam loading."
+      },
+      {
+        "fromKey": "retention-method",
+        "toKey": "barrier-failure",
+        "type": "enabled",
+        "rationale": "If keeper relies on hydraulic pressure or friction that is compromised by load changes, failure occurs.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-DEF-001"
+        ],
+        "claimIds": [],
+        "counterfactual": "If keeper is purely mechanical and independent of hydraulics/load path, this edge is unsupported.",
+        "competingExplanation": "Failure due to external dynamic stress rather than retention method weakness.",
+        "evidenceGap": "Mechanical details of keeper installation and its dependence on hydraulic pressure or load conditions."
+      },
+      {
+        "fromKey": "temp-supports",
+        "toKey": "barrier-failure",
+        "type": "enabled",
+        "rationale": "If temporary supports were present and removed, their absence could explain loss of restraint.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no temporary supports existed or they remained in place, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic/structural causes rather than support removal.",
+        "evidenceGap": "Documentation of outage work scope and presence/removal sequence of braces."
+      },
+      {
+        "fromKey": "dynamic-load",
+        "toKey": "barrier-failure",
+        "type": "caused",
+        "rationale": "Dynamic stress from nearby operations may have induced movement or vibration leading to failure.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no other dynamic loads occurred, this edge is unsupported.",
+        "competingExplanation": "Failure due to static load path changes rather than dynamic induction.",
+        "evidenceGap": "Shift logs and witness statements regarding non-crane activities near yoke."
+      },
+      {
+        "fromKey": "procedural-gap",
+        "toKey": "support-state",
+        "type": "enabled",
+        "rationale": "Lack of procedure specifying mechanical restraints when hydraulics bled allowed unsafe configuration.",
+        "status": "verified",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedure required and was followed, this edge is unsupported.",
+        "competingExplanation": "Failure due to equipment defect rather than procedural gap.",
+        "evidenceGap": "Full text of Energy Isolation Standard (CCS HSS STD 001.0) regarding hydraulic bleed requirements."
+      },
+      {
+        "fromKey": "engineering-gap",
+        "toKey": "load-path-change",
+        "type": "enabled",
+        "rationale": "Without mechanical drawing, impact of isolated raised balance on load paths cannot be assessed.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-START-002"
+        ],
+        "claimIds": [],
+        "counterfactual": "If engineering analysis shows no significant change, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than structural reconfiguration.",
+        "evidenceGap": "Mechanical assembly drawing (EV-003) showing load paths and retention mechanism."
+      },
+      {
+        "fromKey": "support-state",
+        "toKey": "hydraulic-function-loss",
+        "type": "caused",
+        "rationale": "Shutting off and bleeding hydraulics directly caused loss of support/restraint function.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If B hydraulics do not provide retention when bled, this edge is unsupported.",
+        "competingExplanation": "Failure due to structural reconfiguration rather than hydraulic loss.",
+        "evidenceGap": "Hydraulic circuit diagram and maintenance procedure defining bleed impact."
+      },
+      {
+        "fromKey": "load-path-change",
+        "toKey": "structural-reconfiguration",
+        "type": "caused",
+        "rationale": "Raising backup roll balance directly caused structural reconfiguration.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If raised position did not alter load paths, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than structural reconfiguration.",
+        "evidenceGap": "Engineering analysis of isolated raised balance impact."
+      },
+      {
+        "fromKey": "temp-supports",
+        "toKey": "support-removal",
+        "type": "caused",
+        "rationale": "If temporary supports existed, their removal during outage prep caused support loss.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no temporary supports existed or they remained in place, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic/structural causes rather than support removal.",
+        "evidenceGap": "Outage work scope and equipment configuration log."
+      },
+      {
+        "fromKey": "dynamic-load",
+        "toKey": "dynamic-stress",
+        "type": "caused",
+        "rationale": "Nearby operations induced dynamic stress on the assembly.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no other activities occurred, this edge is unsupported.",
+        "competingExplanation": "Failure due to static load path changes rather than dynamic induction.",
+        "evidenceGap": "Shift logs and witness statements."
+      },
+      {
+        "fromKey": "procedural-gap",
+        "toKey": "support-state",
+        "type": "enabled",
+        "rationale": "Lack of procedure allowed unsafe configuration (bled hydraulics without mechanical restraint).",
+        "status": "verified",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedure required and was followed, this edge is unsupported.",
+        "competingExplanation": "Failure due to equipment defect rather than procedural gap.",
+        "evidenceGap": "Full text of Energy Isolation Standard."
+      },
+      {
+        "fromKey": "engineering-gap",
+        "toKey": "retention-method",
+        "type": "enabled",
+        "rationale": "Without mechanical drawing, retention method (mechanical vs. frictional) cannot be determined.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-START-002"
+        ],
+        "claimIds": [],
+        "counterfactual": "If engineering analysis defines retention method, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than unknown retention method.",
+        "evidenceGap": "Mechanical assembly drawing (EV-003)."
+      }
+    ],
+    "questions": [
+      {
+        "intent": "clarify-the-mechanical-role-of-b-hydraulics-in-beam-retention-when-isolated-bleed",
+        "text": "What specific function does the B hydraulic system serve in retaining or supporting the carrier beam assembly, and how might bleeding/shutting off this system affect that support?",
+        "rationale": "Evidence states 'B hydraulics were shut off and bled' but does not define their normal retention role. This gap prevents determining if loss of pressure contributed to failure.",
+        "evidenceNeeded": [
+          "Hydraulic circuit diagram for B system",
+          "Maintenance procedure describing bleed/isolation impact on beam support"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "maintenance-outage",
+          "human",
+          "equipment-tool"
+        ]
+      },
+      {
+        "intent": "determine-if-the-isolated-raised-position-of-top-backup-roll-balance-altered-load-path",
+        "text": "How does leaving the top backup roll balance isolated in a raised position affect the structural loading or restraint on the yoke and carrier beam link?",
+        "rationale": "Evidence notes this condition but lacks engineering context to assess if it created an unstable configuration.",
+        "evidenceNeeded": [
+          "Mechanical assembly drawing showing load paths",
+          "Outage work scope detailing sequence of removals"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "maintenance-outage",
+          "human"
+        ]
+      },
+      {
+        "intent": "establish-whether-any-temporary-supports-or-restraints-were-removed-as-part-of-o",
+        "text": "Were there documented temporary supports, braces, or secondary retention devices on the carrier beam assembly prior to its removal from service for outage? If so, which ones and when were they removed?",
+        "rationale": "Evidence mentions component removals but not specific support/removal steps. Missing this could miss a procedural cause.",
+        "evidenceNeeded": [
+          "Outage work scope",
+          "Mechanical technician field notes",
+          "Equipment configuration log"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "maintenance-outage",
+          "human"
+        ]
+      },
+      {
+        "intent": "confirm-if-any-non-crane-lifting-activity-or-vibration-source-occurred-that-could-induce-movement",
+        "text": "Were there any other equipment operations, material handling activities, or maintenance tasks in the vicinity of the yoke during Turn 2 prior to 1:03 PM that might induce movement or stress on the beam assembly?",
+        "rationale": "Evidence states no crane lifts occurred but does not rule out other dynamic loads.",
+        "evidenceNeeded": [
+          "Shift log",
+          "Crane activity log (if separate from overhead)",
+          "Witness statements regarding nearby operations"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "human"
+        ]
+      }
+    ],
+    "decision": {
+      "summary": "The beam fell due to a combination of unknown factors: loss of hydraulic support, potential structural reconfiguration from isolated raised balance, possible removal of undocumented temporary supports, and/or dynamic stress. The exact causal chain cannot be determined without engineering analysis (EV-003), outage work scope details, and procedure specifics on hydraulic bleed requirements.",
+      "evidenceUsed": [
+        "incident-description",
+        "R3-DEF-002",
+        "kb:maintenance-outage"
+      ],
+      "unknowns": [
+        "Function of B hydraulics in retention when bled; presence/removal sequence of temporary supports; exact load path impact of isolated raised balance; dynamic stress sources"
+      ],
+      "alternatives": [
+        "Hydraulic loss alone caused failure; Structural reconfiguration alone caused failure; Support removal alone caused failure; Combination of factors caused failure",
+        "Failure due to equipment defect rather than procedural gap"
+      ],
+      "confidence": 0.45
+    }
+  },
+  "trace": {
+    "id": "9bfbe402-e2ee-4246-b513-56a980f56bf2",
+    "stage": "causal-analysis",
+    "summary": "The beam fell due to a combination of unknown factors: loss of hydraulic support, potential structural reconfiguration from isolated raised balance, possible removal of undocumented temporary supports, and/or dynamic stress. The exact causal chain cannot be determined without engineering analysis (EV-003), outage work scope details, and procedure specifics on hydraulic bleed requirements.",
+    "evidence": [
+      "incident-description",
+      "R3-DEF-002",
+      "kb:maintenance-outage"
+    ],
+    "unknowns": [
+      "Function of B hydraulics in retention when bled; presence/removal sequence of temporary supports; exact load path impact of isolated raised balance; dynamic stress sources"
+    ],
+    "alternatives": [
+      "Hydraulic loss alone caused failure; Structural reconfiguration alone caused failure; Support removal alone caused failure; Combination of factors caused failure",
+      "Failure due to equipment defect rather than procedural gap"
+    ],
+    "confidence": 0.45,
+    "promptVersion": "try4.2.3-explicit-focal",
+    "engine": "ollama:qwen3.5:latest",
+    "durationMs": 153382,
+    "validation": "valid"
+  },
+  "providerAttempts": [
+    {
+      "attempt": 1,
+      "raw": "{\n  \"maturity\": \"developing\",\n  \"focalEvent\": {\n    \"label\": \"R3 Exit Carrier Beam falls from yoke into mill pit\",\n    \"detail\": \"The beam, link, and keeper fell intact at ~1:03 PM on Oct 14. Work rolls/backup rolls were removed; B hydraulics shut off and bled; top backup roll balance left isolated raised.\",\n    \"status\": \"verified\",\"sourceIds\":[\"incident-description\",\"R3-START-001\"],\"specialistIds\":[]\n  },\n  \"nodes\": [\n    {\n      \"key\":\"support-state\",\n      \"type\":\"condition\",\n      \"label\":\"B hydraulics system shut off and bled prior to fall.\",\n      \"detail\":\"System isolated; specific retention function under bleed state is unknown per evidence.\",\"status\":\"verified\",\"sourceIds\":[\"incident-description\",\"R3-DEF-002\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"load-path-change\",\n      \"type\":\"condition\",\n      \"label\":\"Top backup roll balance left isolated in raised position.\",\n      \"detail\":\"Configuration change after removal; potential to alter load path or support conditions is hypothesized but unverified.\",\"status\":\"unknown\",\"sourceIds\":[\"incident-description\",\"R3-DEF-002\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"retention-method\",\n      \"type\":\"condition\",\n      \"label\":\"Exact retention method (mechanical vs. frictional) used by keeper on yoke is unknown.\",\n      \"detail\":\"Keeper remained installed after fall; whether it relies solely on hydraulic pressure or mechanical engagement under gravity/load changes is not established.\",\"status\":\"unknown\",\"sourceIds\":[\"incident-description\",\"R3-DEF-001\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"temp-supports\",\n      \"type\":\"condition\",\n      \"label\":\"Presence and removal sequence of temporary supports or braces on carrier assembly during outage prep is unknown.\",\n      \"detail\":\"Critical gap; their absence could explain load path changes, but evidence does not confirm presence/absence.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:maintenance-outage\",\"R3-START-002\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"dynamic-load\",\n      \"type\":\"condition\",\n      \"label\":\"No crane lifts active; other dynamic loads (vibration, nearby operations) not ruled out.\",\n      \"detail\":\"Evidence rules out crane activity but does not exclude vibration or adjacent equipment movement.\",\"status\":\"partially-supported\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"barrier-failure\",\n      \"type\":\"event\",\n      \"label\":\"Retention mechanism failed to hold beam under gravity/load changes.\",\n      \"detail\":\"Beam detached while keeper and link remained intact; failure occurred without visible fracture or external lift.\",\"status\":\"verified\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"hydraulic-function-loss\",\n      \"type\":\"event\",\n      \"label\":\"Loss of hydraulic support/restraint due to isolation/bleeding.\",\n      \"detail\":\"Hypothesis that bleeding removed a critical restraint or altered load path; function not defined by current evidence.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:maintenance-outage\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"structural-reconfiguration\",\n      \"type\":\"event\",\n      \"label\":\"Load redistribution caused by isolated raised backup roll balance.\",\n      \"detail\":\"Hypothesis that raising the balance shifted load to carrier beam link; requires engineering analysis.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:other-novel\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"support-removal\",\n      \"type\":\"event\",\n      \"label\":\"Removal of temporary supports or braces (if present) during outage prep.\",\n      \"detail\":\"Hypothesis that undocumented removal contributed to loss of restraint; presence unconfirmed.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:maintenance-outage\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"dynamic-stress\",\n      \"type\":\"event\",\n      \"label\":\"Induction of dynamic stress from non-crane activities.\",\n      \"detail\":\"Hypothesis that nearby operations induced movement/stress; evidence insufficient to confirm.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:maintenance-outage\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"procedural-gap\",\n      \"type\":\"condition\",\n      \"label\":\"Procedure does not specify mechanical restraints required when hydraulics are bled.\",\n      \"detail\":\"Standard exists but specific requirements for R3 carrier beam retention under bleed conditions are unknown.\",\"status\":\"verified\",\"sourceIds\":[\"kb:maintenance-outage\"],\"specialistIds\":[]\n    },\n    {\n      \"key\":\"engineering-gap\",\n      \"type\":\"condition\",\n      \"label\":\"Mechanical assembly drawing (EV-003) unavailable to define load paths and retention mechanism.\",\n      \"detail\":\"Without this, causal links between configuration changes and failure cannot be adjudicated.\",\"status\":\"unknown\",\"sourceIds\":[\"R3-START-002\"],\"specialistIds\":[]\n    }\n  ],\n  \"edges\": [\n    {\n      \"fromKey\":\"support-state\",\n      \"toKey\":\"barrier-failure\",\n      \"type\":\"caused\",\n      \"rationale\":\"Loss of hydraulic support may have removed a critical restraint, leading to barrier failure.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:maintenance-outage\"],\"claimIds\":[],\"counterfactual\":\"If B hydraulics did not provide retention when bled, bleeding would be the direct cause; if they do not, this edge is unsupported.\",\"competingExplanation\":\"Failure due to structural reconfiguration (load-path change) rather than hydraulic loss.\",\"evidenceGap\":\"Function of B hydraulics in bleed state and whether it provides primary restraint.\"\n    },\n    {\n      \"fromKey\":\"load-path-change\",\n      \"toKey\":\"barrier-failure\",\n      \"type\":\"caused\",\n      \"rationale\":\"Raised backup roll balance may have altered load path, overloading the keeper or link.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:other-novel\"],\"claimIds\":[],\"counterfactual\":\"If raised position did not alter load paths, this edge is unsupported.\",\"competingExplanation\":\"Failure due to hydraulic loss rather than structural reconfiguration.\",\"evidenceGap\":\"Engineering analysis of how isolated raised balance affects yoke/carrier beam loading.\"\n    },\n    {\n      \"fromKey\":\"retention-method\",\n      \"toKey\":\"barrier-failure\",\n      \"type\":\"enabled\",\n      \"rationale\":\"If keeper relies on hydraulic pressure or friction that is compromised by load changes, failure occurs.\",\"status\":\"unknown\",\"sourceIds\":[\"R3-DEF-001\"],\"claimIds\":[],\"counterfactual\":\"If keeper is purely mechanical and independent of hydraulics/load path, this edge is unsupported.\",\"competingExplanation\":\"Failure due to external dynamic stress rather than retention method weakness.\",\"evidenceGap\":\"Mechanical details of keeper installation and its dependence on hydraulic pressure or load conditions.\"\n    },\n    {\n      \"fromKey\":\"temp-supports\",\n      \"toKey\":\"barrier-failure\",\n      \"type\":\"enabled\",\n      \"rationale\":\"If temporary supports were present and removed, their absence could explain loss of restraint.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:maintenance-outage\"],\"claimIds\":[],\"counterfactual\":\"If no temporary supports existed or they remained in place, this edge is unsupported.\",\"competingExplanation\":\"Failure due to hydraulic/structural causes rather than support removal.\",\"evidenceGap\":\"Documentation of outage work scope and presence/removal sequence of braces.\"\n    },\n    {\n      \"fromKey\":\"dynamic-load\",\n      \"toKey\":\"barrier-failure\",\n      \"type\":\"caused\",\n      \"rationale\":\"Dynamic stress from nearby operations may have induced movement or vibration leading to failure.\",\"status\":\"unknown\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\"counterfactual\":\"If no other dynamic loads occurred, this edge is unsupported.\",\"competingExplanation\":\"Failure due to static load path changes rather than dynamic induction.\",\"evidenceGap\":\"Shift logs and witness statements regarding non-crane activities near yoke.\"\n    },\n    {\n      \"fromKey\":\"procedural-gap\",\n      \"toKey\":\"support-state\",\n      \"type\":\"enabled\",\n      \"rationale\":\"Lack of procedure specifying mechanical restraints when hydraulics bled allowed unsafe configuration.\",\"status\":\"verified\",\"sourceIds\":[\"kb:maintenance-outage\"],\"claimIds\":[],\"counterfactual\":\"If procedure required and was followed, this edge is unsupported.\",\"competingExplanation\":\"Failure due to equipment defect rather than procedural gap.\",\"evidenceGap\":\"Full text of Energy Isolation Standard (CCS HSS STD 001.0) regarding hydraulic bleed requirements.\"\n    },\n    {\n      \"fromKey\":\"engineering-gap\",\n      \"toKey\":\"load-path-change\",\n      \"type\":\"enabled\",\n      \"rationale\":\"Without mechanical drawing, impact of isolated raised balance on load paths cannot be assessed.\",\"status\":\"unknown\",\"sourceIds\":[\"R3-START-002\"],\"claimIds\":[],\"counterfactual\":\"If engineering analysis shows no significant change, this edge is unsupported.\",\"competingExplanation\":\"Failure due to hydraulic loss rather than structural reconfiguration.\",\"evidenceGap\":\"Mechanical assembly drawing (EV-003) showing load paths and retention mechanism.\"\n    },\n    {\n      \"fromKey\":\"support-state\",\n      \"toKey\":\"hydraulic-function-loss\",\n      \"type\":\"caused\",\n      \"rationale\":\"Shutting off and bleeding hydraulics directly caused loss of support/restraint function.\",\"status\":\"verified\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\"counterfactual\":\"If B hydraulics do not provide retention when bled, this edge is unsupported.\",\"competingExplanation\":\"Failure due to structural reconfiguration rather than hydraulic loss.\",\"evidenceGap\":\"Hydraulic circuit diagram and maintenance procedure defining bleed impact.\"\n    },\n    {\n      \"fromKey\":\"load-path-change\",\n      \"toKey\":\"structural-reconfiguration\",\n      \"type\":\"caused\",\n      \"rationale\":\"Raising backup roll balance directly caused structural reconfiguration.\",\"status\":\"verified\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\"counterfactual\":\"If raised position did not alter load paths, this edge is unsupported.\",\"competingExplanation\":\"Failure due to hydraulic loss rather than structural reconfiguration.\",\"evidenceGap\":\"Engineering analysis of isolated raised balance impact.\"\n    },\n    {\n      \"fromKey\":\"temp-supports\",\n      \"toKey\":\"support-removal\",\n      \"type\":\"caused\",\n      \"rationale\":\"If temporary supports existed, their removal during outage prep caused support loss.\",\"status\":\"unknown\",\"sourceIds\":[\"kb:maintenance-outage\"],\"claimIds\":[],\"counterfactual\":\"If no temporary supports existed or they remained in place, this edge is unsupported.\",\"competingExplanation\":\"Failure due to hydraulic/structural causes rather than support removal.\",\"evidenceGap\":\"Outage work scope and equipment configuration log.\"\n    },\n    {\n      \"fromKey\":\"dynamic-load\",\n      \"toKey\":\"dynamic-stress\",\n      \"type\":\"caused\",\n      \"rationale\":\"Nearby operations induced dynamic stress on the assembly.\",\"status\":\"unknown\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\"counterfactual\":\"If no other activities occurred, this edge is unsupported.\",\"competingExplanation\":\"Failure due to static load path changes rather than dynamic induction.\",\"evidenceGap\":\"Shift logs and witness statements.\"\n    },\n    {\n      \"fromKey\":\"procedural-gap\",\n      \"toKey\":\"support-state\",\n      \"type\":\"enabled\",\n      \"rationale\":\"Lack of procedure allowed unsafe configuration (bled hydraulics without mechanical restraint).\",\"status\":\"verified\",\"sourceIds\":[\"kb:maintenance-outage\"],\"claimIds\":[],\"counterfactual\":\"If procedure required and was followed, this edge is unsupported.\",\"competingExplanation\":\"Failure due to equipment defect rather than procedural gap.\",\"evidenceGap\":\"Full text of Energy Isolation Standard.\"\n    },\n    {\n      \"fromKey\":\"engineering-gap\",\n      \"toKey\":\"retention-method\",\n      \"type\":\"enabled\",\n      \"rationale\":\"Without mechanical drawing, retention method (mechanical vs. frictional) cannot be determined.\",\"status\":\"unknown\",\"sourceIds\":[\"R3-START-002\"],\"claimIds\":[],\"counterfactual\":\"If engineering analysis defines retention method, this edge is unsupported.\",\"competingExplanation\":\"Failure due to hydraulic loss rather than unknown retention method.\",\"evidenceGap\":\"Mechanical assembly drawing (EV-003).\"\n    }\n  ],\"questions\": [\n    {\n      \"intent\":\"clarify-the-mechanical-role-of-b-hydraulics-in-beam-retention-when-isolated-bleed\",\n      \"text\":\"What specific function does the B hydraulic system serve in retaining or supporting the carrier beam assembly, and how might bleeding/shutting off this system affect that support?\",\n      \"rationale\":\"Evidence states 'B hydraulics were shut off and bled' but does not define their normal retention role. This gap prevents determining if loss of pressure contributed to failure.\",\"evidenceNeeded\":[\"Hydraulic circuit diagram for B system\",\"Maintenance procedure describing bleed/isolation impact on beam support\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"maintenance-outage\",\"human\",\"equipment-tool\"]\n    },\n    {\n      \"intent\":\"determine-if-the-isolated-raised-position-of-top-backup-roll-balance-altered-load-path\",\n      \"text\":\"How does leaving the top backup roll balance isolated in a raised position affect the structural loading or restraint on the yoke and carrier beam link?\",\n      \"rationale\":\"Evidence notes this condition but lacks engineering context to assess if it created an unstable configuration.\",\"evidenceNeeded\":[\"Mechanical assembly drawing showing load paths\",\"Outage work scope detailing sequence of removals\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"maintenance-outage\",\"human\"]\n    },\n    {\n      \"intent\":\"establish-whether-any-temporary-supports-or-restraints-were-removed-as-part-of-o\",\n      \"text\":\"Were there documented temporary supports, braces, or secondary retention devices on the carrier beam assembly prior to its removal from service for outage? If so, which ones and when were they removed?\",\n      \"rationale\":\"Evidence mentions component removals but not specific support/removal steps. Missing this could miss a procedural cause.\",\"evidenceNeeded\":[\"Outage work scope\",\"Mechanical technician field notes\",\"Equipment configuration log\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"maintenance-outage\",\"human\"]\n    },\n    {\n      \"intent\":\"confirm-if-any-non-crane-lifting-activity-or-vibration-source-occurred-that-could-induce-movement\",\n      \"text\":\"Were there any other equipment operations, material handling activities, or maintenance tasks in the vicinity of the yoke during Turn 2 prior to 1:03 PM that might induce movement or stress on the beam assembly?\",\n      \"rationale\":\"Evidence states no crane lifts occurred but does not rule out other dynamic loads.\",\"evidenceNeeded\":[\"Shift log\",\"Crane activity log (if separate from overhead)\",\"Witness statements regarding nearby operations\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"human\"]\n    }\n  ],\"decision\": {\n    \"summary\":\"The beam fell due to a combination of unknown factors: loss of hydraulic support, potential structural reconfiguration from isolated raised balance, possible removal of undocumented temporary supports, and/or dynamic stress. The exact causal chain cannot be determined without engineering analysis (EV-003), outage work scope details, and procedure specifics on hydraulic bleed requirements.\",\"evidenceUsed\":[\"incident-description\",\"R3-DEF-002\",\"kb:maintenance-outage\"],\"unknowns\":[\"Function of B hydraulics in retention when bled; presence/removal sequence of temporary supports; exact load path impact of isolated raised balance; dynamic stress sources\"],\"alternatives\":[\"Hydraulic loss alone caused failure; Structural reconfiguration alone caused failure; Support removal alone caused failure; Combination of factors caused failure\",\"Failure due to equipment defect rather than procedural gap\"],\n    \"confidence\":0.45} }"
+    }
+  ],
+  "board": {
+    "maturity": "initial",
+    "focalNodeId": "node-1r49pf8",
+    "nodes": [
+      {
+        "id": "node-1r49pf8",
+        "type": "focal-event",
+        "label": "R3 Exit Carrier Beam falls from yoke into mill pit",
+        "detail": "The beam, link, and keeper fell intact at ~1:03 PM on Oct 14. Work rolls/backup rolls were removed; B hydraulics shut off and bled; top backup roll balance left isolated raised.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "R3-START-001"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-9ebznz",
+        "type": "condition",
+        "label": "B hydraulics system shut off and bled prior to fall.",
+        "detail": "System isolated; specific retention function under bleed state is unknown per evidence.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "R3-DEF-002"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-6maisj",
+        "type": "condition",
+        "label": "Top backup roll balance left isolated in raised position.",
+        "detail": "Configuration change after removal; potential to alter load path or support conditions is hypothesized but unverified.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "R3-DEF-002"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-39udz0",
+        "type": "condition",
+        "label": "Exact retention method (mechanical vs. frictional) used by keeper on yoke is unknown.",
+        "detail": "Keeper remained installed after fall; whether it relies solely on hydraulic pressure or mechanical engagement under gravity/load changes is not established.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description",
+          "R3-DEF-001"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-15rx7m9",
+        "type": "condition",
+        "label": "Presence and removal sequence of temporary supports or braces on carrier assembly during outage prep is unknown.",
+        "detail": "Critical gap; their absence could explain load path changes, but evidence does not confirm presence/absence.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage",
+          "R3-START-002"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-gl9je4",
+        "type": "condition",
+        "label": "No crane lifts active; other dynamic loads (vibration, nearby operations) not ruled out.",
+        "detail": "Evidence rules out crane activity but does not exclude vibration or adjacent equipment movement.",
+        "status": "partially-supported",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-seuhfx",
+        "type": "event",
+        "label": "Retention mechanism failed to hold beam under gravity/load changes.",
+        "detail": "Beam detached while keeper and link remained intact; failure occurred without visible fracture or external lift.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1j8j48t",
+        "type": "event",
+        "label": "Loss of hydraulic support/restraint due to isolation/bleeding.",
+        "detail": "Hypothesis that bleeding removed a critical restraint or altered load path; function not defined by current evidence.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-p9jq00",
+        "type": "event",
+        "label": "Load redistribution caused by isolated raised backup roll balance.",
+        "detail": "Hypothesis that raising the balance shifted load to carrier beam link; requires engineering analysis.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:other-novel"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-13a0k7r",
+        "type": "event",
+        "label": "Removal of temporary supports or braces (if present) during outage prep.",
+        "detail": "Hypothesis that undocumented removal contributed to loss of restraint; presence unconfirmed.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-fz4h4z",
+        "type": "event",
+        "label": "Induction of dynamic stress from non-crane activities.",
+        "detail": "Hypothesis that nearby operations induced movement/stress; evidence insufficient to confirm.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-8zrvwm",
+        "type": "condition",
+        "label": "Procedure does not specify mechanical restraints required when hydraulics are bled.",
+        "detail": "Standard exists but specific requirements for R3 carrier beam retention under bleed conditions are unknown.",
+        "status": "verified",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1hlp0k2",
+        "type": "condition",
+        "label": "Mechanical assembly drawing (EV-003) unavailable to define load paths and retention mechanism.",
+        "detail": "Without this, causal links between configuration changes and failure cannot be adjudicated.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-START-002"
+        ],
+        "specialistIds": [],
+        "verified": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-1b3tvkp",
+        "from": "node-9ebznz",
+        "to": "node-seuhfx",
+        "type": "caused",
+        "rationale": "Loss of hydraulic support may have removed a critical restraint, leading to barrier failure.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If B hydraulics did not provide retention when bled, bleeding would be the direct cause; if they do not, this edge is unsupported.",
+        "competingExplanation": "Failure due to structural reconfiguration (load-path change) rather than hydraulic loss.",
+        "evidenceGap": "Function of B hydraulics in bleed state and whether it provides primary restraint.",
+        "verified": false
+      },
+      {
+        "id": "edge-1gcz6ky",
+        "from": "node-6maisj",
+        "to": "node-seuhfx",
+        "type": "caused",
+        "rationale": "Raised backup roll balance may have altered load path, overloading the keeper or link.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:other-novel"
+        ],
+        "claimIds": [],
+        "counterfactual": "If raised position did not alter load paths, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than structural reconfiguration.",
+        "evidenceGap": "Engineering analysis of how isolated raised balance affects yoke/carrier beam loading.",
+        "verified": false
+      },
+      {
+        "id": "edge-oi2vzq",
+        "from": "node-39udz0",
+        "to": "node-seuhfx",
+        "type": "enabled",
+        "rationale": "If keeper relies on hydraulic pressure or friction that is compromised by load changes, failure occurs.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-DEF-001"
+        ],
+        "claimIds": [],
+        "counterfactual": "If keeper is purely mechanical and independent of hydraulics/load path, this edge is unsupported.",
+        "competingExplanation": "Failure due to external dynamic stress rather than retention method weakness.",
+        "evidenceGap": "Mechanical details of keeper installation and its dependence on hydraulic pressure or load conditions.",
+        "verified": false
+      },
+      {
+        "id": "edge-1g0v7jl",
+        "from": "node-15rx7m9",
+        "to": "node-seuhfx",
+        "type": "enabled",
+        "rationale": "If temporary supports were present and removed, their absence could explain loss of restraint.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no temporary supports existed or they remained in place, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic/structural causes rather than support removal.",
+        "evidenceGap": "Documentation of outage work scope and presence/removal sequence of braces.",
+        "verified": false
+      },
+      {
+        "id": "edge-o87hs",
+        "from": "node-gl9je4",
+        "to": "node-seuhfx",
+        "type": "caused",
+        "rationale": "Dynamic stress from nearby operations may have induced movement or vibration leading to failure.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no other dynamic loads occurred, this edge is unsupported.",
+        "competingExplanation": "Failure due to static load path changes rather than dynamic induction.",
+        "evidenceGap": "Shift logs and witness statements regarding non-crane activities near yoke.",
+        "verified": false
+      },
+      {
+        "id": "edge-q7v20z",
+        "from": "node-8zrvwm",
+        "to": "node-9ebznz",
+        "type": "enabled",
+        "rationale": "Lack of procedure specifying mechanical restraints when hydraulics bled allowed unsafe configuration.",
+        "status": "verified",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedure required and was followed, this edge is unsupported.",
+        "competingExplanation": "Failure due to equipment defect rather than procedural gap.",
+        "evidenceGap": "Full text of Energy Isolation Standard (CCS HSS STD 001.0) regarding hydraulic bleed requirements.",
+        "verified": false
+      },
+      {
+        "id": "edge-1gghrjy",
+        "from": "node-1hlp0k2",
+        "to": "node-6maisj",
+        "type": "enabled",
+        "rationale": "Without mechanical drawing, impact of isolated raised balance on load paths cannot be assessed.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-START-002"
+        ],
+        "claimIds": [],
+        "counterfactual": "If engineering analysis shows no significant change, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than structural reconfiguration.",
+        "evidenceGap": "Mechanical assembly drawing (EV-003) showing load paths and retention mechanism.",
+        "verified": false
+      },
+      {
+        "id": "edge-1egkxmm",
+        "from": "node-9ebznz",
+        "to": "node-1j8j48t",
+        "type": "caused",
+        "rationale": "Shutting off and bleeding hydraulics directly caused loss of support/restraint function.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If B hydraulics do not provide retention when bled, this edge is unsupported.",
+        "competingExplanation": "Failure due to structural reconfiguration rather than hydraulic loss.",
+        "evidenceGap": "Hydraulic circuit diagram and maintenance procedure defining bleed impact.",
+        "verified": false
+      },
+      {
+        "id": "edge-1edvyu6",
+        "from": "node-6maisj",
+        "to": "node-p9jq00",
+        "type": "caused",
+        "rationale": "Raising backup roll balance directly caused structural reconfiguration.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If raised position did not alter load paths, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than structural reconfiguration.",
+        "evidenceGap": "Engineering analysis of isolated raised balance impact.",
+        "verified": false
+      },
+      {
+        "id": "edge-iuu45p",
+        "from": "node-15rx7m9",
+        "to": "node-13a0k7r",
+        "type": "caused",
+        "rationale": "If temporary supports existed, their removal during outage prep caused support loss.",
+        "status": "unknown",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no temporary supports existed or they remained in place, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic/structural causes rather than support removal.",
+        "evidenceGap": "Outage work scope and equipment configuration log.",
+        "verified": false
+      },
+      {
+        "id": "edge-1m4h91k",
+        "from": "node-gl9je4",
+        "to": "node-fz4h4z",
+        "type": "caused",
+        "rationale": "Nearby operations induced dynamic stress on the assembly.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If no other activities occurred, this edge is unsupported.",
+        "competingExplanation": "Failure due to static load path changes rather than dynamic induction.",
+        "evidenceGap": "Shift logs and witness statements.",
+        "verified": false
+      },
+      {
+        "id": "edge-12gztqy",
+        "from": "node-8zrvwm",
+        "to": "node-9ebznz",
+        "type": "enabled",
+        "rationale": "Lack of procedure allowed unsafe configuration (bled hydraulics without mechanical restraint).",
+        "status": "verified",
+        "sourceIds": [
+          "kb:maintenance-outage"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedure required and was followed, this edge is unsupported.",
+        "competingExplanation": "Failure due to equipment defect rather than procedural gap.",
+        "evidenceGap": "Full text of Energy Isolation Standard.",
+        "verified": false
+      },
+      {
+        "id": "edge-1uwkgv0",
+        "from": "node-1hlp0k2",
+        "to": "node-39udz0",
+        "type": "enabled",
+        "rationale": "Without mechanical drawing, retention method (mechanical vs. frictional) cannot be determined.",
+        "status": "unknown",
+        "sourceIds": [
+          "R3-START-002"
+        ],
+        "claimIds": [],
+        "counterfactual": "If engineering analysis defines retention method, this edge is unsupported.",
+        "competingExplanation": "Failure due to hydraulic loss rather than unknown retention method.",
+        "evidenceGap": "Mechanical assembly drawing (EV-003).",
+        "verified": false
+      }
+    ],
+    "verificationFindings": []
+  },
+  "questions": [
+    {
+      "id": "cq-66rphh",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "maintenance-outage",
+        "human",
+        "equipment-tool"
+      ],
+      "text": "What specific function does the B hydraulic system serve in retaining or supporting the carrier beam assembly, and how might bleeding/shutting off this system affect that support?",
+      "intent": "clarify-the-mechanical-role-of-b-hydraulics-in-beam-retention-when-isolated-bleed",
+      "rationale": "Evidence states 'B hydraulics were shut off and bled' but does not define their normal retention role. This gap prevents determining if loss of pressure contributed to failure.",
+      "evidenceNeeded": [
+        "Hydraulic circuit diagram for B system",
+        "Maintenance procedure describing bleed/isolation impact on beam support"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-1qiqxb8",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "maintenance-outage",
+        "human"
+      ],
+      "text": "How does leaving the top backup roll balance isolated in a raised position affect the structural loading or restraint on the yoke and carrier beam link?",
+      "intent": "determine-if-the-isolated-raised-position-of-top-backup-roll-balance-altered-load-path",
+      "rationale": "Evidence notes this condition but lacks engineering context to assess if it created an unstable configuration.",
+      "evidenceNeeded": [
+        "Mechanical assembly drawing showing load paths",
+        "Outage work scope detailing sequence of removals"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-1yqj3s6",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "maintenance-outage",
+        "human"
+      ],
+      "text": "Were there documented temporary supports, braces, or secondary retention devices on the carrier beam assembly prior to its removal from service for outage? If so, which ones and when were they removed?",
+      "intent": "establish-whether-any-temporary-supports-or-restraints-were-removed-as-part-of-o",
+      "rationale": "Evidence mentions component removals but not specific support/removal steps. Missing this could miss a procedural cause.",
+      "evidenceNeeded": [
+        "Outage work scope",
+        "Mechanical technician field notes",
+        "Equipment configuration log"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-1gwoelo",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "human"
+      ],
+      "text": "Were there any other equipment operations, material handling activities, or maintenance tasks in the vicinity of the yoke during Turn 2 prior to 1:03 PM that might induce movement or stress on the beam assembly?",
+      "intent": "confirm-if-any-non-crane-lifting-activity-or-vibration-source-occurred-that-could-induce-movement",
+      "rationale": "Evidence states no crane lifts occurred but does not rule out other dynamic loads.",
+      "evidenceNeeded": [
+        "Shift log",
+        "Crane activity log (if separate from overhead)",
+        "Witness statements regarding nearby operations"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    }
+  ],
+  "keyToId": {
+    "focal": "node-1r49pf8",
+    "support-state": "node-9ebznz",
+    "load-path-change": "node-6maisj",
+    "retention-method": "node-39udz0",
+    "temp-supports": "node-15rx7m9",
+    "dynamic-load": "node-gl9je4",
+    "barrier-failure": "node-seuhfx",
+    "hydraulic-function-loss": "node-1j8j48t",
+    "structural-reconfiguration": "node-p9jq00",
+    "support-removal": "node-13a0k7r",
+    "dynamic-stress": "node-fz4h4z",
+    "procedural-gap": "node-8zrvwm",
+    "engineering-gap": "node-1hlp0k2"
+  },
+  "labelCorrections": []
+}

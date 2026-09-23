@@ -1,0 +1,13 @@
+{
+  "decision": "release-reviewed-subset-unedited",
+  "reviewer": "Codex operator review before RCA dispatch",
+  "outputSha256": "4cdf266bab359dd48ea422251723b90d06a201b9ad0c1f9e73486da2166ad1ea",
+  "approvedQuestionIds": ["00af67c6-51bd-4b01-9435-364973e59a91"],
+  "withheldQuestionIds": ["e7f325e3-4bfc-49c7-af57-54661b16b3b6"],
+  "briefingAssessment": "Response is grounded in S02/S03, preserves the missing checklist and blank attachment limitations, and does not invent procedure contents. Its answered label is too strong for the request to obtain actual briefing content; retain that raw label for evaluation, not as proof that the missing content was obtained.",
+  "pipingAssessment": "Do not release. P04 is in the actual supplied source catalog and expressly supplies the header connection schedule. The model overlooks it and overstates absence of connectivity evidence based on D01/P02 alone. Exact valid quotations do not make this overall answer complete or correct.",
+  "documentRelease": ["IA-P04", "IA-P05"],
+  "rawProseEdited": false,
+  "storyRetryRequested": false,
+  "comparisonQualification": "This is a reviewed partial storyteller release with operator-selected original documents, not an autonomous storyteller pass. V2 must derive the distribution mechanism from the records; the operator supplies no causal conclusion."
+}

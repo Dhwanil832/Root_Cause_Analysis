@@ -1,0 +1,52 @@
+{
+  "name": "rca-fieldwork-try-7",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node scripts/local-app.mjs dev",
+    "dev:web": "vinext dev --hostname 127.0.0.1 --port 3017",
+    "worker": "node scripts/task-worker.mjs",
+    "build": "vinext build",
+    "start": "node scripts/local-app.mjs start",
+    "test:engine": "node --import ./scripts/register-test-loader.mjs --test scripts/investigation.test.mjs scripts/frame-recovery.test.mjs",
+    "test:try7": "node --import ./scripts/register-test-loader.mjs --test scripts/try7.test.mjs",
+    "test:capacity": "node --import ./scripts/register-test-loader.mjs --test scripts/capacity.test.mjs",
+    "test:regression": "node --import ./scripts/register-test-loader.mjs --test --test-name-pattern='lossless passages|context is bounded|malformed sibling|leases reject|partial answers stay|causal verifier cannot|story retrieval|visual source|answer-source attribution|large payloads|call-local grammar|read task includes|streaming provider|stream repetition|stream novelty|repetitive provider|long complete|stable literal|review formatting normalizes|review formatting preserves|inconsistent review|complete literal|review checks|scope-aware negatives|review citations|review request|review grammar|native thinking|production Qwen|partial whole|node truth|old speculative|incomplete output|truth uncertainty|factual nodes|commentary citations|broker merges' scripts/engine.test.mjs",
+    "typecheck": "tsc --noEmit --incremental false",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "fflate": "0.7.5",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "drizzle-orm": "0.45.2",
+    "unpdf": "1.0.6",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@cloudflare/workers-types": "4.20260515.1",
+    "@openai/sites-vite-plugin": "^0.1.0 || ^0.2.0",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "react-server-dom-webpack": "19.2.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "vinext": "1.0.0-beta.3",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0",
+    "drizzle-kit": "0.31.10"
+  },
+  "type": "module"
+}

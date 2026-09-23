@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-10T00:56:47.770Z",
+  "method": "GET",
+  "endpoint": "/api/models",
+  "args": [
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "14400",
+    "--request",
+    "GET",
+    "http://localhost:3000/api/models",
+    "--write-out",
+    "\n%{http_code}"
+  ]
+}

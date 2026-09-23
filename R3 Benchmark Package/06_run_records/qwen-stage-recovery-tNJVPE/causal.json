@@ -1,0 +1,809 @@
+{
+  "output": {
+    "maturity": "developing",
+    "focalKey": "focal",
+    "nodes": [
+      {
+        "key": "focal",
+        "type": "event",
+        "label": "R3 exit carrier beam falls from yoke into mill pit",
+        "detail": "Beam detached and fell at ~1:03 PM on Oct 14, 2024.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-zfmjgq"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "cond-removed",
+        "type": "condition",
+        "label": "Work rolls and backup roll balances removed from stand.",
+        "detail": "Configuration changed to non-standard state with only top balance isolated raised.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-1vwo0e8"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "cond-raised",
+        "type": "condition",
+        "label": "Top backup roll balance isolated in raised position.",
+        "detail": "Balance remained elevated after removal of other rolls; retention mechanism unknown (hydraulic vs mechanical).",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-118elxq"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "cond-hydraulics-off",
+        "type": "condition",
+        "label": "'B hydraulics' shut off and bled.",
+        "detail": "System depressurized prior to incident; potential energy source removed or support load released.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-q3kgpo"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "barrier-mech-lock",
+        "type": "barrier",
+        "label": "Mechanical lock or secondary restraint for raised balance.",
+        "detail": "Unknown existence; if relied upon, its absence is a causal factor. If hydraulic-only support existed and was bled, this barrier failed by design/operation.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "barrier-temp-support",
+        "type": "barrier",
+        "label": "Temporary mechanical supports (cribbing, stands) for removed components.",
+        "detail": "Unknown existence; absence would allow gravity to act on the raised balance once hydraulics were bled.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "cause-gravity",
+        "type": "condition",
+        "label": "Gravitational potential energy of raised balance/beam assembly.",
+        "detail": "Force available to drive failure if retention barriers were removed or insufficient.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "cause-hydraulic-loss",
+        "type": "condition",
+        "label": "Loss of hydraulic pressure support due to bleeding 'B hydraulics'.",
+        "detail": "If the raised state relied on active hydraulic pressure, this action removed a critical barrier.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "change-config",
+        "type": "condition",
+        "label": "Change from normal operational state to outage preparation configuration.",
+        "detail": "Removal of rolls and isolation of hydraulics altered load paths and retention requirements without verified mechanical backup.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "gap-procedure",
+        "type": "condition",
+        "label": "Absence of documented requirement for mechanical securing when hydraulics are bled.",
+        "detail": "If procedure does not mandate locking or cribbing, reliance on hydraulic pressure becomes implicit and unsafe upon depressurization.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      },
+      {
+        "key": "gap-handoff",
+        "type": "condition",
+        "label": "Incomplete shift handoff regarding state of raised balance and retention method.",
+        "detail": "Previous shift left balance raised; Turn 2 assumed isolation without verification or explicit warning about residual energy needs.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": []
+      }
+    ],
+    "edges": [
+      {
+        "fromKey": "cond-raised",
+        "toKey": "focal",
+        "type": "caused",
+        "rationale": "The raised balance possessed gravitational potential energy that drove the fall when retention failed.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If the balance were not in a raised position, gravity would not have caused this specific failure mode.",
+        "competingExplanation": "Hydraulic pressure loss alone could cause movement if hydraulic support was required; both conditions likely contributed.",
+        "evidenceGap": "Mechanism of retention (hydraulic vs mechanical) and existence of temporary supports."
+      },
+      {
+        "fromKey": "cond-hydraulics-off",
+        "toKey": "focal",
+        "type": "caused",
+        "rationale": "Bleeding hydraulics removed active support or tension holding the raised assembly, triggering failure if hydraulic retention was relied upon.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If hydraulics had remained pressurized and locked, the beam might not have fallen.",
+        "competingExplanation": "Mechanical lock existed but failed; or gravity alone caused failure without hydraulic involvement (less likely given 'isolated' description).",
+        "evidenceGap": "Confirmation of whether bleeding was intended to release tension vs depressurize."
+      },
+      {
+        "fromKey": "barrier-mech-lock",
+        "toKey": "focal",
+        "type": "failed-to-prevent",
+        "rationale": "If a mechanical lock existed but was not applied or failed, it represents the missing barrier that allowed gravity to act.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If a verified mechanical lock had been in place and functional, the beam would likely have remained secured despite hydraulic loss.",
+        "competingExplanation": "No such lock exists; failure was purely due to reliance on hydraulics.",
+        "evidenceGap": "Mechanical drawings or field notes confirming presence/absence of locks."
+      },
+      {
+        "fromKey": "barrier-temp-support",
+        "toKey": "focal",
+        "type": "failed-to-prevent",
+        "rationale": "Absence of cribbing or stands allowed the raised balance to descend uncontrolled once hydraulics were bled.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If temporary supports had been installed per procedure, gravity would have been arrested regardless of hydraulic state.",
+        "competingExplanation": "Procedure did not require such supports; reliance on implicit knowledge led to omission.",
+        "evidenceGap": "Work logs or photos showing support installation status."
+      },
+      {
+        "fromKey": "change-config",
+        "toKey": "barrier-mech-lock",
+        "type": "enabled",
+        "rationale": "The change from normal operation to outage configuration created a scenario where retention mechanisms were altered or removed, exposing reliance on hydraulics.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If the configuration had remained standard with rolls installed, gravity load paths would differ and hydraulic bleeding might not have been critical.",
+        "competingExplanation": "Configuration change was routine; no special assessment needed (contradicted by incident outcome).",
+        "evidenceGap": "Outage procedure defining required assessments for roll removal."
+      },
+      {
+        "fromKey": "gap-procedure",
+        "toKey": "barrier-mech-lock",
+        "type": "enabled",
+        "rationale": "Lack of explicit procedural requirement to mechanically secure loads when hydraulics are bled allowed reliance on implicit assumptions.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedure explicitly required mechanical locking, the team would have applied it before bleeding hydraulics.",
+        "competingExplanation": "Procedure exists but was not followed; or no such procedure existed at all.",
+        "evidenceGap": "Full text of outage preparation procedures."
+      },
+      {
+        "fromKey": "gap-handoff",
+        "toKey": "barrier-mech-lock",
+        "type": "enabled",
+        "rationale": "Incomplete communication about the raised state and retention method led to Turn 2 not verifying or applying necessary barriers.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If handoff explicitly stated 'balance is hydraulically supported only' with warning, Turn 2 would have verified mechanical lock before work.",
+        "competingExplanation": "Handoff was complete but misunderstood; or no such requirement existed in prior practice.",
+        "evidenceGap": "Shift turnover logs and witness statements."
+      }
+    ],
+    "questions": [
+      {
+        "intent": "determine-if-hydraulic-pressure-was-required-to-hold-the-beam-or-balance-in-place",
+        "text": "Does the R3 carrier beam assembly rely on active hydraulic pressure from system 'B' (or another source) for retention when not mechanically locked?",
+        "rationale": "If yes, shutting off and bleeding B hydraulics creates an immediate failure mode. If no, this is a non-factor.",
+        "evidenceNeeded": [
+          "R3 carrier beam assembly drawing",
+          "Maintenance practice documentation"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "equipment-tool"
+        ]
+      },
+      {
+        "intent": "verify-if-the-isolated-in-raised-position-state-was-mechanically-secured-or-left",
+        "text": "Was the top backup roll balance physically locked/secured against gravity after being lifted, or did it rely solely on hydraulic pressure?",
+        "rationale": "If unsecured and reliant on hydraulics that were bled/shut off previously, this explains the fall. If mechanically secured, another cause is needed.",
+        "evidenceNeeded": [
+          "Mechanical technician field notes",
+          "Outage work scope sequence"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "equipment-tool"
+        ]
+      },
+      {
+        "intent": "confirm-whether-any-temporary-supports-were-installed-for-the-removed-components",
+        "text": "Were temporary mechanical supports (cribbing, stands) used to hold the top backup roll balance or carrier beam link during outage work?",
+        "rationale": "Absence of such supports combined with hydraulic shutdown could lead to uncontrolled descent. Presence suggests procedural compliance but potential failure in support design.",
+        "evidenceNeeded": [
+          "Mechanical technician removal sequence notes",
+          "Inspection records"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "equipment-tool"
+        ]
+      },
+      {
+        "intent": "establish-if-the-isolated-status-of-the-top-backup-roll-balance-was-verified-as-zero-energy",
+        "text": "Was a formal energy-isolation verification (zero-energy check) performed on the system supporting or adjacent to the carrier beam link?",
+        "rationale": "If isolation was incomplete or misinterpreted, residual pressure could have caused movement. If complete but design relies on hydraulics for retention, this highlights a design flaw.",
+        "evidenceNeeded": [
+          "ECP/LOTO group box sheet",
+          "Zero-energy verification record"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "isolation-loto"
+        ]
+      },
+      {
+        "intent": "determine-load-securing-requirements-and-procedure-existence",
+        "text": "Does the applicable outage preparation procedure explicitly require mechanical securing (e.g., chocking, blocking) of suspended loads like the carrier beam when supporting rolls are removed?",
+        "rationale": "If no such requirement exists in writing but is implied by safety standards, there may be a gap between 'work-as-imagined' and 'work-as-done'. If it does exist, its absence indicates non-compliance.",
+        "evidenceNeeded": [
+          "Outage preparation procedure document",
+          "R3 Roll Balance System Primer (EV-002)",
+          "Maintenance manuals for R3 stand"
+        ],
+        "priority": "high",
+        "sourceIds": [],
+        "routedTo": [
+          "procedure-planning"
+        ]
+      },
+      {
+        "intent": "assess-shift-handoff-completeness",
+        "text": "Did the previous shift explicitly communicate to the current team that a mechanical lock was required or already applied before leaving the balance in a raised position?",
+        "rationale": "The timeline mentions an 'Unobserved interval' between isolation and fall. A communication gap during handover could explain why no one verified the state of the beam.",
+        "evidenceNeeded": [
+          "Shift turnover log (EV-006), Witness statements from previous shift crew."
+        ],
+        "priority": "medium",
+        "sourceIds": [],
+        "routedTo": [
+          "maintenance-outage"
+        ]
+      },
+      {
+        "intent": "verify-shift-turnover-communication",
+        "text": "Did the previous shift explicitly communicate to Turn 2 that the Top Backup Roll Balance was left in a raised position and isolated, including any specific warnings about residual energy?",
+        "rationale": "The 'unobserved interval' suggests potential communication gaps. If Turn 2 assumed isolation without verification based on incomplete handoff info.",
+        "evidenceNeeded": [
+          "Shift turnover log (EV-006)",
+          "Area/Shift Manager notes"
+        ],
+        "priority": "medium",
+        "sourceIds": [],
+        "routedTo": [
+          "isolation-loto"
+        ]
+      },
+      {
+        "intent": "verify-the-sequence-and-timing-between-isolation-and-failure",
+        "text": "What specific tasks were performed in the 'unobserved interval' between bleeding the B hydraulics and the beam falling at 1:03 PM?",
+        "rationale": "Identifies if a subsequent action (e.g., removing a pin, shifting weight) triggered the release or if it was an uncontrolled decay over time.",
+        "evidenceNeeded": [
+          "Shift turnover log (EV-006).",
+          "Witness statements regarding activities in that specific timeframe."
+        ],
+        "priority": "medium",
+        "sourceIds": [],
+        "routedTo": [
+          "equipment-tool"
+        ]
+      }
+    ],
+    "decision": {
+      "summary": "The beam fell because the raised top backup roll balance lost its retention barrier. The primary causal branch is whether this state relied on hydraulic pressure (which was bled) or a mechanical lock that failed/was absent. Secondary factors include lack of temporary supports and incomplete shift handoff communication about the unstable configuration.",
+      "evidenceUsed": [
+        "Incident description confirming fall, hydraulics bleeding, raised balance position",
+        "Knowledge bases indicating unknown retention mechanism"
+      ],
+      "unknowns": [
+        "Mechanism of retention (hydraulic vs mechanical)",
+        "Existence or absence of temporary supports",
+        "Content of shift turnover logs and LOTO records"
+      ],
+      "alternatives": [
+        "Hydraulic pressure was sole support; bleeding caused immediate failure.",
+        "Mechanical lock existed but failed due to fatigue, improper installation, or lack of verification.",
+        "No lock/supports existed; gravity alone caused descent after hydraulic release."
+      ],
+      "confidence": 0.65
+    }
+  },
+  "trace": {
+    "id": "e1aa9288-8479-4651-bc2c-e84408203119",
+    "stage": "causal-analysis",
+    "summary": "The beam fell because the raised top backup roll balance lost its retention barrier. The primary causal branch is whether this state relied on hydraulic pressure (which was bled) or a mechanical lock that failed/was absent. Secondary factors include lack of temporary supports and incomplete shift handoff communication about the unstable configuration.",
+    "evidence": [
+      "Incident description confirming fall, hydraulics bleeding, raised balance position",
+      "Knowledge bases indicating unknown retention mechanism"
+    ],
+    "unknowns": [
+      "Mechanism of retention (hydraulic vs mechanical)",
+      "Existence or absence of temporary supports",
+      "Content of shift turnover logs and LOTO records"
+    ],
+    "alternatives": [
+      "Hydraulic pressure was sole support; bleeding caused immediate failure.",
+      "Mechanical lock existed but failed due to fatigue, improper installation, or lack of verification.",
+      "No lock/supports existed; gravity alone caused descent after hydraulic release."
+    ],
+    "confidence": 0.65,
+    "promptVersion": "try4.2.0-stage-recovery",
+    "engine": "ollama:qwen3.5:latest",
+    "durationMs": 490378,
+    "validation": "repaired"
+  },
+  "providerAttempts": [
+    {
+      "attempt": 1,
+      "raw": "",
+      "error": "fetch failed"
+    },
+    {
+      "attempt": 2,
+      "raw": "{\n  \"maturity\": \"developing\",\n  \"focalKey\": \"focal\",\n  \"nodes\": [\n    {\n      \"key\": \"focal\",\n      \"type\": \"event\",\n      \"label\": \"R3 exit carrier beam falls from yoke into mill pit\",\n      \"detail\": \"Beam detached and fell at ~1:03 PM on Oct 14, 2024.\",\n      \"status\": \"verified\",\"sourceIds\":[\"incident-description\",\"event-zfmjgq\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"cond-removed\",\n      \"type\": \"condition\",\n      \"label\": \"Work rolls and backup roll balances removed from stand.\",\n      \"detail\": \"Configuration changed to non-standard state with only top balance isolated raised.\",\n      \"status\": \"verified\",\"sourceIds\":[\"incident-description\",\"event-1vwo0e8\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"cond-raised\",\n      \"type\": \"condition\",\n      \"label\": \"Top backup roll balance isolated in raised position.\",\n      \"detail\": \"Balance remained elevated after removal of other rolls; retention mechanism unknown (hydraulic vs mechanical).\",\n      \"status\": \"verified\",\"sourceIds\":[\"incident-description\",\"event-118elxq\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"cond-hydraulics-off\",\n      \"type\": \"condition\",\n      \"label\": \"'B hydraulics' shut off and bled.\",\n      \"detail\": \"System depressurized prior to incident; potential energy source removed or support load released.\",\n      \"status\": \"verified\",\"sourceIds\":[\"incident-description\",\"event-q3kgpo\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"barrier-mech-lock\",\n      \"type\": \"barrier\",\n      \"label\": \"Mechanical lock or secondary restraint for raised balance.\",\n      \"detail\": \"Unknown existence; if relied upon, its absence is a causal factor. If hydraulic-only support existed and was bled, this barrier failed by design/operation.\",\n      \"status\": \"unknown\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"barrier-temp-support\",\n      \"type\": \"barrier\",\n      \"label\": \"Temporary mechanical supports (cribbing, stands) for removed components.\",\n      \"detail\": \"Unknown existence; absence would allow gravity to act on the raised balance once hydraulics were bled.\",\n      \"status\": \"unknown\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"cause-gravity\",\n      \"type\": \"condition\",\n      \"label\": \"Gravitational potential energy of raised balance/beam assembly.\",\n      \"detail\": \"Force available to drive failure if retention barriers were removed or insufficient.\",\n      \"status\": \"verified\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"cause-hydraulic-loss\",\n      \"type\": \"condition\",\n      \"label\": \"Loss of hydraulic pressure support due to bleeding 'B hydraulics'.\",\n      \"detail\": \"If the raised state relied on active hydraulic pressure, this action removed a critical barrier.\",\n      \"status\": \"verified\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"change-config\",\n      \"type\": \"condition\",\n      \"label\": \"Change from normal operational state to outage preparation configuration.\",\n      \"detail\": \"Removal of rolls and isolation of hydraulics altered load paths and retention requirements without verified mechanical backup.\",\n      \"status\": \"verified\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"gap-procedure\",\n      \"type\": \"condition\",\n      \"label\": \"Absence of documented requirement for mechanical securing when hydraulics are bled.\",\n      \"detail\": \"If procedure does not mandate locking or cribbing, reliance on hydraulic pressure becomes implicit and unsafe upon depressurization.\",\n      \"status\": \"unknown\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    },\n    {\n      \"key\": \"gap-handoff\",\n      \"type\": \"condition\",\n      \"label\": \"Incomplete shift handoff regarding state of raised balance and retention method.\",\n      \"detail\": \"Previous shift left balance raised; Turn 2 assumed isolation without verification or explicit warning about residual energy needs.\",\n      \"status\": \"unknown\",\"sourceIds\":[\"incident-description\"],\"specialistIds\":[]\n    }\n  ],\n  \"edges\": [\n    {\n      \"fromKey\": \"cond-raised\",\n      \"toKey\": \"focal\",\n      \"type\": \"caused\",\n      \"rationale\": \"The raised balance possessed gravitational potential energy that drove the fall when retention failed.\",\n      \"status\": \"proposed\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\n      \"counterfactual\":\"If the balance were not in a raised position, gravity would not have caused this specific failure mode.\",\"competingExplanation\":\"Hydraulic pressure loss alone could cause movement if hydraulic support was required; both conditions likely contributed.\",\"evidenceGap\":\"Mechanism of retention (hydraulic vs mechanical) and existence of temporary supports.\"\n    },\n    {\n      \"fromKey\": \"cond-hydraulics-off\",\n      \"toKey\": \"focal\",\n      \"type\": \"caused\",\n      \"rationale\": \"Bleeding hydraulics removed active support or tension holding the raised assembly, triggering failure if hydraulic retention was relied upon.\",\n      \"status\": \"proposed\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\n      \"counterfactual\":\"If hydraulics had remained pressurized and locked, the beam might not have fallen.\",\"competingExplanation\":\"Mechanical lock existed but failed; or gravity alone caused failure without hydraulic involvement (less likely given 'isolated' description).\",\"evidenceGap\":\"Confirmation of whether bleeding was intended to release tension vs depressurize.\"\n    },\n    {\n      \"fromKey\": \"barrier-mech-lock\",\n      \"toKey\": \"focal\",\n      \"type\": \"failed-to-prevent\",\n      \"rationale\": \"If a mechanical lock existed but was not applied or failed, it represents the missing barrier that allowed gravity to act.\",\"status\": \"unknown\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\n      \"counterfactual\":\"If a verified mechanical lock had been in place and functional, the beam would likely have remained secured despite hydraulic loss.\",\"competingExplanation\":\"No such lock exists; failure was purely due to reliance on hydraulics.\",\"evidenceGap\":\"Mechanical drawings or field notes confirming presence/absence of locks.\"\n    },\n    {\n      \"fromKey\": \"barrier-temp-support\",\n      \"toKey\": \"focal\",\n      \"type\": \"failed-to-prevent\",\n      \"rationale\": \"Absence of cribbing or stands allowed the raised balance to descend uncontrolled once hydraulics were bled.\",\"status\": \"unknown\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\n      \"counterfactual\":\"If temporary supports had been installed per procedure, gravity would have been arrested regardless of hydraulic state.\",\"competingExplanation\":\"Procedure did not require such supports; reliance on implicit knowledge led to omission.\",\"evidenceGap\":\"Work logs or photos showing support installation status.\"\n    },\n    {\n      \"fromKey\": \"change-config\",\n      \"toKey\": \"barrier-mech-lock\",\n      \"type\": \"enabled\",\n      \"rationale\": \"The change from normal operation to outage configuration created a scenario where retention mechanisms were altered or removed, exposing reliance on hydraulics.\",\"status\": \"proposed\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\n      \"counterfactual\":\"If the configuration had remained standard with rolls installed, gravity load paths would differ and hydraulic bleeding might not have been critical.\",\"competingExplanation\":\"Configuration change was routine; no special assessment needed (contradicted by incident outcome).\",\"evidenceGap\":\"Outage procedure defining required assessments for roll removal.\"\n    },\n    {\n      \"fromKey\": \"gap-procedure\",\n      \"toKey\": \"barrier-mech-lock\",\n      \"type\": \"enabled\",\n      \"rationale\": \"Lack of explicit procedural requirement to mechanically secure loads when hydraulics are bled allowed reliance on implicit assumptions.\",\"status\": \"proposed\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\n      \"counterfactual\":\"If procedure explicitly required mechanical locking, the team would have applied it before bleeding hydraulics.\",\"competingExplanation\":\"Procedure exists but was not followed; or no such procedure existed at all.\",\"evidenceGap\":\"Full text of outage preparation procedures.\"\n    },\n    {\n      \"fromKey\": \"gap-handoff\",\n      \"toKey\": \"barrier-mech-lock\",\n      \"type\": \"enabled\",\n      \"rationale\": \"Incomplete communication about the raised state and retention method led to Turn 2 not verifying or applying necessary barriers.\",\"status\": \"proposed\",\"sourceIds\":[\"incident-description\"],\"claimIds\":[],\n      \"counterfactual\":\"If handoff explicitly stated 'balance is hydraulically supported only' with warning, Turn 2 would have verified mechanical lock before work.\",\"competingExplanation\":\"Handoff was complete but misunderstood; or no such requirement existed in prior practice.\",\"evidenceGap\":\"Shift turnover logs and witness statements.\"\n    }\n  ],\n  \"questions\": [\n    {\n      \"intent\": \"determine-if-hydraulic-pressure-was-required-to-hold-the-beam-or-balance-in-place\",\n      \"text\": \"Does the R3 carrier beam assembly rely on active hydraulic pressure from system 'B' (or another source) for retention when not mechanically locked?\",\n      \"rationale\":\"If yes, shutting off and bleeding B hydraulics creates an immediate failure mode. If no, this is a non-factor.\",\"evidenceNeeded\":[\"R3 carrier beam assembly drawing\",\"Maintenance practice documentation\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"equipment-tool\"]\n    },\n    {\n      \"intent\": \"verify-if-the-isolated-in-raised-position-state-was-mechanically-secured-or-left\",\n      \"text\": \"Was the top backup roll balance physically locked/secured against gravity after being lifted, or did it rely solely on hydraulic pressure?\",\n      \"rationale\":\"If unsecured and reliant on hydraulics that were bled/shut off previously, this explains the fall. If mechanically secured, another cause is needed.\",\"evidenceNeeded\":[\"Mechanical technician field notes\",\"Outage work scope sequence\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"equipment-tool\"]\n    },\n    {\n      \"intent\": \"confirm-whether-any-temporary-supports-were-installed-for-the-removed-components\",\n      \"text\": \"Were temporary mechanical supports (cribbing, stands) used to hold the top backup roll balance or carrier beam link during outage work?\",\n      \"rationale\":\"Absence of such supports combined with hydraulic shutdown could lead to uncontrolled descent. Presence suggests procedural compliance but potential failure in support design.\",\"evidenceNeeded\":[\"Mechanical technician removal sequence notes\",\"Inspection records\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"equipment-tool\"]\n    },\n    {\n      \"intent\": \"establish-if-the-isolated-status-of-the-top-backup-roll-balance-was-verified-as-zero-energy\",\n      \"text\": \"Was a formal energy-isolation verification (zero-energy check) performed on the system supporting or adjacent to the carrier beam link?\",\n      \"rationale\":\"If isolation was incomplete or misinterpreted, residual pressure could have caused movement. If complete but design relies on hydraulics for retention, this highlights a design flaw.\",\"evidenceNeeded\":[\"ECP/LOTO group box sheet\",\"Zero-energy verification record\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"isolation-loto\"]\n    },\n    {\n      \"intent\": \"determine-load-securing-requirements-and-procedure-existence\",\n      \"text\": \"Does the applicable outage preparation procedure explicitly require mechanical securing (e.g., chocking, blocking) of suspended loads like the carrier beam when supporting rolls are removed?\",\n      \"rationale\":\"If no such requirement exists in writing but is implied by safety standards, there may be a gap between 'work-as-imagined' and 'work-as-done'. If it does exist, its absence indicates non-compliance.\",\"evidenceNeeded\":[\"Outage preparation procedure document\",\"R3 Roll Balance System Primer (EV-002)\",\"Maintenance manuals for R3 stand\"],\"priority\":\"high\",\"sourceIds\":[],\"routedTo\":[\"procedure-planning\"]\n    },\n    {\n      \"intent\": \"assess-shift-handoff-completeness\",\n      \"text\": \"Did the previous shift explicitly communicate to the current team that a mechanical lock was required or already applied before leaving the balance in a raised position?\",\n      \"rationale\":\"The timeline mentions an 'Unobserved interval' between isolation and fall. A communication gap during handover could explain why no one verified the state of the beam.\",\"evidenceNeeded\":[\"Shift turnover log (EV-006), Witness statements from previous shift crew.\"],\"priority\":\"medium\",\"sourceIds\":[],\"routedTo\":[\"maintenance-outage\"]\n    },\n    {\n      \"intent\": \"verify-shift-turnover-communication\",\n      \"text\": \"Did the previous shift explicitly communicate to Turn 2 that the Top Backup Roll Balance was left in a raised position and isolated, including any specific warnings about residual energy?\",\n      \"rationale\":\"The 'unobserved interval' suggests potential communication gaps. If Turn 2 assumed isolation without verification based on incomplete handoff info.\",\"evidenceNeeded\":[\"Shift turnover log (EV-006)\",\"Area/Shift Manager notes\"],\"priority\":\"medium\",\"sourceIds\":[],\"routedTo\":[\"isolation-loto\"]\n    },\n    {\n      \"intent\": \"verify-the-sequence-and-timing-between-isolation-and-failure\",\n      \"text\": \"What specific tasks were performed in the 'unobserved interval' between bleeding the B hydraulics and the beam falling at 1:03 PM?\",\n      \"rationale\":\"Identifies if a subsequent action (e.g., removing a pin, shifting weight) triggered the release or if it was an uncontrolled decay over time.\",\"evidenceNeeded\":[\"Shift turnover log (EV-006).\",\"Witness statements regarding activities in that specific timeframe.\"],\"priority\":\"medium\",\"sourceIds\":[],\"routedTo\":[\"equipment-tool\"]\n    }\n  ],\n  \"decision\": {\n    \"summary\": \"The beam fell because the raised top backup roll balance lost its retention barrier. The primary causal branch is whether this state relied on hydraulic pressure (which was bled) or a mechanical lock that failed/was absent. Secondary factors include lack of temporary supports and incomplete shift handoff communication about the unstable configuration.\",\n    \"evidenceUsed\": [\"Incident description confirming fall, hydraulics bleeding, raised balance position\", \"Knowledge bases indicating unknown retention mechanism\"],\n    \"unknowns\": [\"Mechanism of retention (hydraulic vs mechanical)\", \"Existence or absence of temporary supports\", \"Content of shift turnover logs and LOTO records\"],\n    \"alternatives\": [\"Hydraulic pressure was sole support; bleeding caused immediate failure.\", \"Mechanical lock existed but failed due to fatigue, improper installation, or lack of verification.\", \"No lock/supports existed; gravity alone caused descent after hydraulic release.\"],\n    \"confidence\": 0.65\n  }\n}"
+    }
+  ],
+  "board": {
+    "maturity": "developing",
+    "focalNodeId": "node-1a4cas8",
+    "nodes": [
+      {
+        "id": "node-1a4cas8",
+        "type": "event",
+        "label": "R3 exit carrier beam falls from yoke into mill pit",
+        "detail": "Beam detached and fell at ~1:03 PM on Oct 14, 2024.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-zfmjgq"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-ww3e5l",
+        "type": "condition",
+        "label": "Work rolls and backup roll balances removed from stand.",
+        "detail": "Configuration changed to non-standard state with only top balance isolated raised.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-1vwo0e8"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-epag4z",
+        "type": "condition",
+        "label": "Top backup roll balance isolated in raised position.",
+        "detail": "Balance remained elevated after removal of other rolls; retention mechanism unknown (hydraulic vs mechanical).",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-118elxq"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1ud05l5",
+        "type": "condition",
+        "label": "'B hydraulics' shut off and bled.",
+        "detail": "System depressurized prior to incident; potential energy source removed or support load released.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description",
+          "event-q3kgpo"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-18x0ft3",
+        "type": "barrier",
+        "label": "Mechanical lock or secondary restraint for raised balance.",
+        "detail": "Unknown existence; if relied upon, its absence is a causal factor. If hydraulic-only support existed and was bled, this barrier failed by design/operation.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-l4udbg",
+        "type": "barrier",
+        "label": "Temporary mechanical supports (cribbing, stands) for removed components.",
+        "detail": "Unknown existence; absence would allow gravity to act on the raised balance once hydraulics were bled.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-7ggwdo",
+        "type": "condition",
+        "label": "Gravitational potential energy of raised balance/beam assembly.",
+        "detail": "Force available to drive failure if retention barriers were removed or insufficient.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1ff55s1",
+        "type": "condition",
+        "label": "Loss of hydraulic pressure support due to bleeding 'B hydraulics'.",
+        "detail": "If the raised state relied on active hydraulic pressure, this action removed a critical barrier.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-159i8ox",
+        "type": "condition",
+        "label": "Change from normal operational state to outage preparation configuration.",
+        "detail": "Removal of rolls and isolation of hydraulics altered load paths and retention requirements without verified mechanical backup.",
+        "status": "verified",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-2wgm8s",
+        "type": "condition",
+        "label": "Absence of documented requirement for mechanical securing when hydraulics are bled.",
+        "detail": "If procedure does not mandate locking or cribbing, reliance on hydraulic pressure becomes implicit and unsafe upon depressurization.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      },
+      {
+        "id": "node-1ndp8bv",
+        "type": "condition",
+        "label": "Incomplete shift handoff regarding state of raised balance and retention method.",
+        "detail": "Previous shift left balance raised; Turn 2 assumed isolation without verification or explicit warning about residual energy needs.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "specialistIds": [],
+        "verified": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-156bciw",
+        "from": "node-epag4z",
+        "to": "node-1a4cas8",
+        "type": "caused",
+        "rationale": "The raised balance possessed gravitational potential energy that drove the fall when retention failed.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If the balance were not in a raised position, gravity would not have caused this specific failure mode.",
+        "competingExplanation": "Hydraulic pressure loss alone could cause movement if hydraulic support was required; both conditions likely contributed.",
+        "evidenceGap": "Mechanism of retention (hydraulic vs mechanical) and existence of temporary supports.",
+        "verified": false
+      },
+      {
+        "id": "edge-b85udu",
+        "from": "node-1ud05l5",
+        "to": "node-1a4cas8",
+        "type": "caused",
+        "rationale": "Bleeding hydraulics removed active support or tension holding the raised assembly, triggering failure if hydraulic retention was relied upon.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If hydraulics had remained pressurized and locked, the beam might not have fallen.",
+        "competingExplanation": "Mechanical lock existed but failed; or gravity alone caused failure without hydraulic involvement (less likely given 'isolated' description).",
+        "evidenceGap": "Confirmation of whether bleeding was intended to release tension vs depressurize.",
+        "verified": false
+      },
+      {
+        "id": "edge-1ngs2ie",
+        "from": "node-18x0ft3",
+        "to": "node-1a4cas8",
+        "type": "failed-to-prevent",
+        "rationale": "If a mechanical lock existed but was not applied or failed, it represents the missing barrier that allowed gravity to act.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If a verified mechanical lock had been in place and functional, the beam would likely have remained secured despite hydraulic loss.",
+        "competingExplanation": "No such lock exists; failure was purely due to reliance on hydraulics.",
+        "evidenceGap": "Mechanical drawings or field notes confirming presence/absence of locks.",
+        "verified": false
+      },
+      {
+        "id": "edge-1sazgab",
+        "from": "node-l4udbg",
+        "to": "node-1a4cas8",
+        "type": "failed-to-prevent",
+        "rationale": "Absence of cribbing or stands allowed the raised balance to descend uncontrolled once hydraulics were bled.",
+        "status": "unknown",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If temporary supports had been installed per procedure, gravity would have been arrested regardless of hydraulic state.",
+        "competingExplanation": "Procedure did not require such supports; reliance on implicit knowledge led to omission.",
+        "evidenceGap": "Work logs or photos showing support installation status.",
+        "verified": false
+      },
+      {
+        "id": "edge-1e941dj",
+        "from": "node-159i8ox",
+        "to": "node-18x0ft3",
+        "type": "enabled",
+        "rationale": "The change from normal operation to outage configuration created a scenario where retention mechanisms were altered or removed, exposing reliance on hydraulics.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If the configuration had remained standard with rolls installed, gravity load paths would differ and hydraulic bleeding might not have been critical.",
+        "competingExplanation": "Configuration change was routine; no special assessment needed (contradicted by incident outcome).",
+        "evidenceGap": "Outage procedure defining required assessments for roll removal.",
+        "verified": false
+      },
+      {
+        "id": "edge-1crl1sr",
+        "from": "node-2wgm8s",
+        "to": "node-18x0ft3",
+        "type": "enabled",
+        "rationale": "Lack of explicit procedural requirement to mechanically secure loads when hydraulics are bled allowed reliance on implicit assumptions.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If procedure explicitly required mechanical locking, the team would have applied it before bleeding hydraulics.",
+        "competingExplanation": "Procedure exists but was not followed; or no such procedure existed at all.",
+        "evidenceGap": "Full text of outage preparation procedures.",
+        "verified": false
+      },
+      {
+        "id": "edge-1f6omc7",
+        "from": "node-1ndp8bv",
+        "to": "node-18x0ft3",
+        "type": "enabled",
+        "rationale": "Incomplete communication about the raised state and retention method led to Turn 2 not verifying or applying necessary barriers.",
+        "status": "proposed",
+        "sourceIds": [
+          "incident-description"
+        ],
+        "claimIds": [],
+        "counterfactual": "If handoff explicitly stated 'balance is hydraulically supported only' with warning, Turn 2 would have verified mechanical lock before work.",
+        "competingExplanation": "Handoff was complete but misunderstood; or no such requirement existed in prior practice.",
+        "evidenceGap": "Shift turnover logs and witness statements.",
+        "verified": false
+      }
+    ],
+    "verificationFindings": []
+  },
+  "questions": [
+    {
+      "id": "cq-xo9b6h",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "text": "Does the R3 carrier beam assembly rely on active hydraulic pressure from system 'B' (or another source) for retention when not mechanically locked?",
+      "intent": "determine-if-hydraulic-pressure-was-required-to-hold-the-beam-or-balance-in-place",
+      "rationale": "If yes, shutting off and bleeding B hydraulics creates an immediate failure mode. If no, this is a non-factor.",
+      "evidenceNeeded": [
+        "R3 carrier beam assembly drawing",
+        "Maintenance practice documentation"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-1hgiq84",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "text": "Was the top backup roll balance physically locked/secured against gravity after being lifted, or did it rely solely on hydraulic pressure?",
+      "intent": "verify-if-the-isolated-in-raised-position-state-was-mechanically-secured-or-left",
+      "rationale": "If unsecured and reliant on hydraulics that were bled/shut off previously, this explains the fall. If mechanically secured, another cause is needed.",
+      "evidenceNeeded": [
+        "Mechanical technician field notes",
+        "Outage work scope sequence"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-rt3ptu",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "text": "Were temporary mechanical supports (cribbing, stands) used to hold the top backup roll balance or carrier beam link during outage work?",
+      "intent": "confirm-whether-any-temporary-supports-were-installed-for-the-removed-components",
+      "rationale": "Absence of such supports combined with hydraulic shutdown could lead to uncontrolled descent. Presence suggests procedural compliance but potential failure in support design.",
+      "evidenceNeeded": [
+        "Mechanical technician removal sequence notes",
+        "Inspection records"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-1ejfk6b",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "text": "Was a formal energy-isolation verification (zero-energy check) performed on the system supporting or adjacent to the carrier beam link?",
+      "intent": "establish-if-the-isolated-status-of-the-top-backup-roll-balance-was-verified-as-zero-energy",
+      "rationale": "If isolation was incomplete or misinterpreted, residual pressure could have caused movement. If complete but design relies on hydraulics for retention, this highlights a design flaw.",
+      "evidenceNeeded": [
+        "ECP/LOTO group box sheet",
+        "Zero-energy verification record"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-1tebe9c",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "procedure-planning"
+      ],
+      "text": "Does the applicable outage preparation procedure explicitly require mechanical securing (e.g., chocking, blocking) of suspended loads like the carrier beam when supporting rolls are removed?",
+      "intent": "determine-load-securing-requirements-and-procedure-existence",
+      "rationale": "If no such requirement exists in writing but is implied by safety standards, there may be a gap between 'work-as-imagined' and 'work-as-done'. If it does exist, its absence indicates non-compliance.",
+      "evidenceNeeded": [
+        "Outage preparation procedure document",
+        "R3 Roll Balance System Primer (EV-002)",
+        "Maintenance manuals for R3 stand"
+      ],
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-cwae5c",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "maintenance-outage"
+      ],
+      "text": "Did the previous shift explicitly communicate to the current team that a mechanical lock was required or already applied before leaving the balance in a raised position?",
+      "intent": "assess-shift-handoff-completeness",
+      "rationale": "The timeline mentions an 'Unobserved interval' between isolation and fall. A communication gap during handover could explain why no one verified the state of the beam.",
+      "evidenceNeeded": [
+        "Shift turnover log (EV-006), Witness statements from previous shift crew."
+      ],
+      "priority": "medium",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-1ypjy1k",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "isolation-loto"
+      ],
+      "text": "Did the previous shift explicitly communicate to Turn 2 that the Top Backup Roll Balance was left in a raised position and isolated, including any specific warnings about residual energy?",
+      "intent": "verify-shift-turnover-communication",
+      "rationale": "The 'unobserved interval' suggests potential communication gaps. If Turn 2 assumed isolation without verification based on incomplete handoff info.",
+      "evidenceNeeded": [
+        "Shift turnover log (EV-006)",
+        "Area/Shift Manager notes"
+      ],
+      "priority": "medium",
+      "status": "proposed"
+    },
+    {
+      "id": "cq-zuoed2",
+      "tagId": "causal-analysis",
+      "proposedBy": "causal-analysis",
+      "routedTo": [
+        "equipment-tool"
+      ],
+      "text": "What specific tasks were performed in the 'unobserved interval' between bleeding the B hydraulics and the beam falling at 1:03 PM?",
+      "intent": "verify-the-sequence-and-timing-between-isolation-and-failure",
+      "rationale": "Identifies if a subsequent action (e.g., removing a pin, shifting weight) triggered the release or if it was an uncontrolled decay over time.",
+      "evidenceNeeded": [
+        "Shift turnover log (EV-006).",
+        "Witness statements regarding activities in that specific timeframe."
+      ],
+      "priority": "medium",
+      "status": "proposed"
+    }
+  ],
+  "keyToId": {
+    "focal": "node-1a4cas8",
+    "cond-removed": "node-ww3e5l",
+    "cond-raised": "node-epag4z",
+    "cond-hydraulics-off": "node-1ud05l5",
+    "barrier-mech-lock": "node-18x0ft3",
+    "barrier-temp-support": "node-l4udbg",
+    "cause-gravity": "node-7ggwdo",
+    "cause-hydraulic-loss": "node-1ff55s1",
+    "change-config": "node-159i8ox",
+    "gap-procedure": "node-2wgm8s",
+    "gap-handoff": "node-1ndp8bv"
+  },
+  "labelCorrections": []
+}

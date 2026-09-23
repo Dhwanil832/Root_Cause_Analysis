@@ -1,0 +1,7 @@
+{
+  "campaign": "try4-ground-truth-benchmark-2026-09-08-v3",
+  "modelId": "ollama:qwen3.5:latest",
+  "elapsedSeconds": 7200,
+  "error": "curl exit 28; HTTP 0; curl: (28) Operation timed out after 7200003 milliseconds with 0 bytes received\n; {\"raw\":\"\"}",
+  "failedAt": "2026-09-08T17:55:48.513Z"
+}

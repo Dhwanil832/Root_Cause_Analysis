@@ -1,0 +1,51 @@
+import fs from 'node:fs/promises';
+import { Presentation, PresentationFile, FileBlob } from '@oai/artifact-tool';
+import { resolvePresentationFont, finalizePresentation } from '/Users/dhwanilchauhan/.codex/plugins/cache/openai-primary-runtime/presentations/26.909.12148/skills/presentations/container_tools/artifact_tool_utils.mjs';
+const root='/Users/dhwanilchauhan/Desktop/RCA Try 1', build=root+'/.rca-progress-build';
+const skill='/Users/dhwanilchauhan/.codex/plugins/cache/openai-primary-runtime/presentations/26.909.12148/skills/presentations';
+const font='Arial';
+const p=await PresentationFile.importPptx(await FileBlob.load('/Users/dhwanilchauhan/Downloads/S&T_PTC_July2026Presentation.pptx'));
+for(const s of [...p.slides.items]) s.delete();
+const sources={july:'/Users/dhwanilchauhan/Downloads/S&T_PTC_July2026Presentation.pptx, slides 7–13',overview:root+'/RCA_RESEARCH_OVERVIEW_AND_PLAN.md, sections 5 and 8',review:root+'/RCA_SYSTEM_REVIEW_2026-09-18.md, sections 2–3',try7:root+'/Try 7/TRY7_EXECUTIVE_PLAN.md, section 10 implementation receipt and smoke outcome',packages:root+'/Synthetic Evidence Packages 2026-09-22/README_OPERATOR_ONLY.md',plan:root+'/RCA_IMPLEMENTATION_AND_PAPER_CHECKLIST.md, sections C–E'};
+function text(s,t,x,y,w,h,size=28,color='#000000',bold=false){const a=s.shapes.add({geometry:'textbox',position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});a.text=t;a.text.style={typeface:font,fontSize:size,color,bold,autoFit:'none'};return a;}
+function slide(title,notes){const cover=p.slides.items.length===0; const s=p.slides.add({layoutId:cover?'/ppt/slideLayouts/slideLayout3.xml':'/ppt/slideLayouts/slideLayout2.xml'});s.shapes.deleteAll();
+const t=text(s,cover?'Project #19\nStandalone Root Cause Analysis\nProgress Since July 2026':title,cover?160:97,cover?175:18,cover?960:970,cover?240:78,cover?54:42.6667,'#DDAB18',true);t.text.style={typeface:'Arial',fontSize:cover?54:42.6667,bold:true,color:'#DDAB18',alignment:cover?'center':'left',autoFit:'none'};
+s.speakerNotes.textFrame.setText(notes);return s;}
+function row(s,y,label,body){text(s,label,58,y-30,1140,45,32,'#000000',true);text(s,body,87,y+22,1100,100,29.3333,'#000000');}
+let s=slide('Standalone Root Cause Analysis',`Progress update based on project records available through 22 September 2026. Standalone RCA scope only. Source: ${sources.july}; ${sources.try7}; ${sources.packages}. The date is the evidence cutoff, not a confirmed meeting date.`);
+text(s,'Progress through 22 September 2026',325,535,670,50,26,'#000000');
+s=slide('Progress Since July',`July baseline: ${sources.july}. Current evidence: ${sources.overview}; ${sources.try7}; ${sources.packages}. July already described a prototype and methodology. Do not imply the project began from zero after July.`);
+row(s,185,'Step-by-step RCA','Built iterative investigations with specialist questions, evidence references and preserved investigation versions.');
+row(s,330,'Validate incident RCA','Ran development experiments on the R3 beam and instrument-air cases. Prepared staged synthetic evidence packages.');
+row(s,475,'Test open-source models','Ran Qwen through real investigation workflows. Reliability and causal accuracy remain under evaluation.');
+s=slide('Iterative Investigation Prototype',`Sources: ${sources.overview}; ${sources.try7}. These are implemented workflow capabilities, not claims of consistently correct reasoning. A specialist is selected for relevant uncertainty. Application versions (Try 4–7) differ from investigation snapshots (V1–V3).`);
+row(s,184,'Establish the incident','Register the narrative and documents, identify relevant entities, and form preliminary explanations.');
+row(s,329,'Investigate open questions','Consult relevant specialists, combine overlapping requests, and route source-backed answers to their owners.');
+row(s,474,'Review and revise','Assess factual support, causal roles and connections separately. Save the current board and unresolved questions.');
+s=slide('Findings from Development Runs',`Sources: ${sources.review}; ${sources.overview}. These experiments used changing inputs and configurations. They are development observations, not a controlled ranking of versions. Try 4 includes saved R3 versions and IA runs; Try 5 comparison snapshots were diagnostic; Try 6 published a partial IA V1/V2 pair.`);
+row(s,183,'Earlier causal pipelines','Produced visible boards, but expanding context and candidate links could block completion or create excessive work.');
+row(s,330,'Persistent task engine','Improved recovery and inspection. Completing the workflow still did not guarantee a useful causal explanation.');
+row(s,477,'Evidence revisions','Published V1 and V2, but some corrections failed to reach board wording and some questions remained stale.');
+s=slide('Recent RCA System Improvements',`Source: ${sources.try7}. The implementation receipt documents these changes and 97 deterministic checks (20 engine, 24 Try 7, 37 regression, 16 capacity), plus build/type checks. These are recorded checks, not checks rerun for this presentation. Full-plan acceptance remains incomplete.`);
+row(s,181,'Evidence and questions','Track partial answers and subscriber delivery. Preserve different question purposes and expose reviewer questions.');
+row(s,326,'Corrections and review','Apply source-bound revisions with history. Separate factual support from causal-role and relationship judgments.');
+row(s,471,'Reproducible records','Preserve snapshots, controlled-release receipts and experiment exports. The receipt reports 97 software checks passed.');
+s=slide('Latest Qwen Run: Partial Investigation',`Source: ${sources.try7}, Observed smoke outcome. Published 20 September 2026 at 8:17:54 PM America/Chicago. Real provider run on a short pneumatic-carriage incident, not the historical benchmark. 21 tasks completed, zero failed/blocked whole tasks. V1 contained 5 selected observations plus a focal event and zero causal links. 20 rejected output items remained preserved; one delivery receipt was pending in the saved snapshot. Configuration changes and a checkpoint repair occurred during the run. Post-run fixes passed scripted tests but await a fresh frozen-config model run.`);
+text(s,'21 tasks completed',64,192,525,60,38,'#000000',true);
+text(s,'Partial V1 published',658,192,555,60,38,'#000000',true);
+text(s,'5 selected observations and the focal event\n0 causal links',64,286,1110,95,32);
+text(s,'The run exposed answer-routing and revision issues.\nThe team implemented fixes and added regression checks.',64,415,1130,98,29);
+text(s,'Execution-inconclusive: a fresh run with a frozen configuration is still required.',64,569,1115,64,26,'#000000',true);
+s=slide('Staged Evidence Packages',`Source: ${sources.packages}. Packages generated 22 September 2026. Both are historically anchored synthetic reconstructions, not recovered company records. They are derivatives of development incidents already used and are not independent held-out cases. No RCA or storyteller jobs had been launched for these packages in the source record. R3 requires technical review; IA is prepared for pilot and is not independently expert validated.`);
+row(s,180,'R3 carrier-beam fall','Staged reconstruction prepared. Load-path and circuit details require independent technical review before scoring.');
+row(s,326,'Instrument-air loss','Package prepared for a pilot, with configuration, pressure observations and operating chronology across documents.');
+row(s,472,'Three evidence releases','Starter evidence supports V1. Later documents test whether V2 and V3 revise explanations for justified reasons.');
+text(s,'Synthetic reconstructions of development cases. Independent validation remains pending.',64,613,1110,38,21,'#000000');
+s=slide('Next Steps: Controlled Investigation',`Sources: ${sources.plan}; ${sources.try7}; ${sources.packages}. Proposed next steps, not completed results or dated commitments. Begin with the instrument-air package prepared for pilot. Review R3 mechanics before scored use. Freeze the independent assessment protocol before held-out evaluation. Proposed partner input: technical review of scenario realism and causal interpretation.`);
+row(s,180,'Freeze and run','Fix the model, prompts and evidence schedule. Preserve each version and the inputs that produced it.');
+row(s,326,'Assess the changes','Check factual accuracy, causal support, uncertainty and correction quality. Report software failures separately.');
+row(s,472,'Compare and review','Run a simpler baseline on the same evidence. Seek technical review of case realism and causal interpretations.');
+await (await PresentationFile.exportPptx(p)).save(build+'/themed-candidate.pptx');
+for(let i=0;i<p.slides.items.length;i++){const blob=await p.export({slide:p.slides.items[i],format:'png',scale:1});await fs.writeFile(build+`/themed-slide-${i+1}.png`,new Uint8Array(await blob.arrayBuffer()));}
+await finalizePresentation({workspaceDir:root,candidatePath:build+'/themed-candidate.pptx',finalPath:root+'/RCA Presentation Outputs/September Progress/RCA_Progress_Since_July_2026_July_Theme_Final.pptx',pythonExecutable:'/Users/dhwanilchauhan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:skill+'/container_tools/inspect_presentation_package_integrity.py',layoutValidatorPath:skill+'/container_tools/inspect_presentation_layout_geometry.py',layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit'],fontPolicy:{basis:'reference',families:[font,'Calibri'],referenceSha256:'3ecac542f41e1b35a4fa4f173c8a321a057b4a13bd8c9980e0202a3cdd5b7f04',referencePath:'/Users/dhwanilchauhan/Downloads/S&T_PTC_July2026Presentation.pptx'},verifyArtifactToolImport:true,receiptPath:build+'/themed-final-validation.json'});
+console.log('Exported eight slides. Font: '+font);

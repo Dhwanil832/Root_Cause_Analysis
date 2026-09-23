@@ -1,0 +1,37 @@
+[
+  {
+    "id": "case-01",
+    "statement": "No bolt was installed in bracket H7 at 10:21 on 17 May.",
+    "sources": ["Inspection record, 17 May. At 10:21 the inspector examined both mounting holes of bracket H7 directly with the cover removed. Neither hole contained a bolt. The cover was replaced at 10:24. This observation is limited to the inspection time."]
+  },
+  {
+    "id": "case-02",
+    "statement": "No bolt was installed in bracket H7 at 10:21 on 17 May.",
+    "sources": ["Inspection register, 17 May, 10:21. Component: bracket H7. Inspector: RN. Bolt identification field: blank. The register does not state why the field was left blank. No photograph or direct observation of the mounting holes is included."]
+  },
+  {
+    "id": "case-03",
+    "statement": "No bolt was installed in bracket H7 when the carriage moved at 09:50 on 17 May.",
+    "sources": ["17 May notification: the carriage moved at 09:50.\nInspection record: at 10:21 the inspector examined both mounting holes of bracket H7 with the cover removed. Neither hole contained a bolt. Work in the area occurred between notification and inspection; the work details have not been supplied. No observation of H7 at 09:50 is available."]
+  },
+  {
+    "id": "case-04",
+    "statement": "Log L8 does not record the tightening torque for bracket H7.",
+    "sources": ["Recording guide: every log entry must identify the component, time and technician.\nLog L8: Component H7; time 08:14; technician MT. Additional entry: final tightening torque 7.8 N·m, instrument T6. This is the complete single-page log."]
+  },
+  {
+    "id": "case-05",
+    "statement": "The W12 package failed rule R4 solely because it contained no temporary instruction.",
+    "sources": ["Rule R4 for W12 issue: include the current approved instruction revision OR an approved temporary instruction. Either route satisfies R4; both are not required.\nRevision register, effective 6 June: current approved instruction K2 revision 6.\nW12 issue inventory, 6 June: K2 revision 6 included. No temporary instruction included. Other package contents: task cover and access map."]
+  },
+  {
+    "id": "case-06",
+    "statement": "Log L9 records that pump P6 stopped at 14:22.",
+    "sources": ["Log L9, operator entry at 14:25: pump P6 stopped at 14:22. Cause not established; troubleshooting has not begun. There is no finding about why it stopped."]
+  },
+  {
+    "id": "case-07",
+    "statement": "The discharge pressure at test port P8 at 11:00 was 2.0 bar.",
+    "sources": ["Test sheet A, 9 June: calibrated gauge A connected to discharge test port P8 at 11:00 indicated 2.0 bar. No correction entry.", "Test sheet B, 9 June: calibrated gauge B connected to the same discharge test port P8 at 11:00 indicated 4.0 bar. No correction entry. The differing values have not been reconciled; neither reading has been designated authoritative."]
+  }
+]

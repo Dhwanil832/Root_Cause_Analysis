@@ -1,0 +1,5 @@
+{
+  "error": "Error: The prior batch was rejected: Unsupported story citation: notification. Regenerate the complete batch. Citation sourceId must come ONLY from allowedCitationSourceIds, not question IDs or existing answers. Quote exactly from that source's text. If no available source supports an answer, return unknown/unavailable without citations.",
+  "incidentId": "5d41662f-9b61-46a7-8ef7-5cb79c127271",
+  "trackId": "12a72d40-6c90-4bf3-9566-82fa9563d014"
+}

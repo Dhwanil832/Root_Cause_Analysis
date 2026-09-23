@@ -1,0 +1,70 @@
+{
+  "parentRunId": "4866969b-2dea-41ed-9b45-acb2de6fba9c",
+  "runId": "ac4a4d08-d40f-4f07-a806-2051c0f0808a",
+  "incidentId": "e99d24d6-753c-427a-9304-cdbd6726090f",
+  "trackId": "3ef34107-57cc-4426-a284-aa600f37ce1a",
+  "createdAt": "2026-09-22T03:25:13.562Z",
+  "model": {
+    "id": "ollama:qwen3.5:latest",
+    "name": "qwen3.5:latest",
+    "provider": "ollama",
+    "detail": "Ollama · local",
+    "available": true,
+    "capabilities": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ],
+    "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "contextWindow": 32768
+  },
+  "engineVersion": "try5.2.3",
+  "schedulingPolicy": "selected-answers-v1",
+  "parentBoardHash": "731f3dad6f22a1946057fcc53d4addf0e89e7f1c2e589cc3ed0c26ac16d7834f",
+  "parentStatePointerHash": "6a436ad09ecb4291cb369a0ef5b215886277046a4e2a48c0f1dbf87bade586bd",
+  "parentInputPointerHash": "145f00510decd88bf1e8acbb90b9bdefa756669e9f9a17e0a01995956556e369",
+  "releaseHash": "9fe83a3e79c7a8563b2a801a158c59b8a7dbea19c2b5dd6b1219ad9522d89105",
+  "inputHash": "f6461ca96c2173661ea041fda534b3d7fac7ecf2083f063771021db573ffc89a",
+  "documents": [
+    {
+      "id": "72b6bb56-1f77-4cef-9d58-6cc131979c2c",
+      "title": "IA-P04_installation_and_line_register.md",
+      "sha256": "0ecc13b73d0f5ccd354519a538d40aed59ed9620c25331bf4a1f908089ff306c"
+    },
+    {
+      "id": "8bdaeff4-d84c-4d3c-b79a-453f03d9bdc8",
+      "title": "IA-P05_field_execution_and_observation_log.md",
+      "sha256": "c70fcfc084dfe5454b4cd7e45db385aac587daff30461e0ec9e0e684850ccf9d"
+    },
+    {
+      "id": "f474db22-dd36-41a1-b30f-31d150dba2c7",
+      "title": "IA-P06_as_found_and_followup_notes.md",
+      "sha256": "2b4535fbfd6bc24d87097713a1f386f6fff5331e8acc26d2460cccc5c8df829b"
+    }
+  ],
+  "selectedQuestions": [
+    {
+      "id": "22e66415-446c-46f4-84fb-628e45059edc",
+      "text": "Were valves V-201 and/or V-202 physically installed in the field despite their absence from ECP revision 3, and if so, were they operated or left open during maintenance preparation?"
+    },
+    {
+      "id": "bb3d6ccb-ac15-468f-a629-49d8488f9911",
+      "text": "Was there any documented change in valve positions, isolation status, or equipment configuration during the maintenance preparation that could have contributed to the instrument-air pressure drop?"
+    },
+    {
+      "id": "82ef0d42-e5ee-4d6e-8aab-6f1359ef702e",
+      "text": "Was valve M-101 or M-102 in a closed position at the time of the pressure loss, and if so, was that closure verified by an independent check rather than assumed from work order status?"
+    },
+    {
+      "id": "e154d43f-3ecf-4cc6-9e7b-c1dd1ec4e683",
+      "text": "Did the restoration of air pressure occur automatically or was it manually re-energized by operators?"
+    }
+  ],
+  "baseline": {
+    "nodes": 32,
+    "edges": 8,
+    "findings": 768,
+    "questions": 241
+  }
+}
