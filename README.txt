@@ -1,4 +1,4 @@
-BENCHMARK HARNESS — THE SCORED FALLBACK
+BENCHMARK HARNESS
 
 This is the exact repaired runtime used for the scored GPT-5.5 fallback and
 the Qwen/Granite/Hermes/Mistral comparison. All 26 frozen runtime files are
