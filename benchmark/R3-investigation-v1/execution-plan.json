@@ -1,0 +1,42 @@
+{
+  "status": "Evaluation frozen; runtime/adapter qualification pending; do not execute automatically",
+  "arms": [
+    "gpt_clean",
+    "gpt_connected",
+    "qwen_clean",
+    "qwen_connected"
+  ],
+  "repetitions": 3,
+  "clean_packets": 17,
+  "checks_per_run": 96,
+  "connected_calls_per_invocation": 12,
+  "connected_operational_ceiling": 96,
+  "proposed_model_configurations": {
+    "gpt": {
+      "model": "gpt-5.5-2026-04-23",
+      "reasoning_effort": "medium",
+      "max_output_tokens": 32768,
+      "timeout_seconds": 600
+    },
+    "qwen": {
+      "model": "qwen3.5:latest",
+      "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+      "think": false,
+      "options": {
+        "temperature": 0,
+        "seed": 42,
+        "top_p": 0.8,
+        "top_k": 20,
+        "min_p": 0,
+        "presence_penalty": 0,
+        "repeat_penalty": 1,
+        "num_ctx": 32768,
+        "num_predict": 4096
+      },
+      "timeout_seconds": 600,
+      "endpoint": "http://127.0.0.1:11434/api/chat"
+    }
+  },
+  "configuration_note": "These are the recorded prior configurations, not a claim of live endpoint availability. A common schema-capable adapter and token-budget qualification must be frozen before execution. Do not switch model/configuration midway or drop context silently.",
+  "scoring": "Presence primary; contradiction and committed-state retention separately. See PROTOCOL.md."
+}

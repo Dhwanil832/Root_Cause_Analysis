@@ -1,0 +1,32 @@
+{
+  "decision": "revise",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Acquisition of retained offset/dynamic keeper-envelope evidence is now partially answered. Source D10 explicitly states that an approved off-center dynamic retention envelope is unavailable and that the incident lateral offset and release rotation are not measured. Source D12 confirms that no measured lateral offset at release or approved dynamic keeper-envelope analysis can be supplied from retained records. The request fields 'incident lateral/rotation measurement' and 'validated envelope with bounded incident offset' are therefore explicitly unavailable in the current collection. The request status is updated to 'blocked' because the specific evidence route (retained records) is established as unavailable for these fields, per D12.S02 and D10.S03. The request remains active for potential reopening if new validated envelope calculations or bounded offset data become available (D12.S03).",
+      "record": {
+        "id": "R_K",
+        "kind": "request",
+        "scope_key": "R_K",
+        "claim": "Acquire retained offset/dynamic keeper-envelope evidence.",
+        "status": "blocked",
+        "sources": ["D10", "D12"],
+        "depends_on": ["KEEP"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": [
+          "incident lateral/rotation measurement",
+          "validated envelope with bounded incident offset"
+        ]
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "partial"
+}

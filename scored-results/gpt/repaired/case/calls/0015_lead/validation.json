@@ -1,0 +1,44 @@
+{
+  "accepted": true,
+  "operations": 13,
+  "changed": 8,
+  "noops": [
+    "N_R3KeeperBypassUnresolved",
+    "E_R3HydraulicWithdrawalKeeperBypassToFall",
+    "N_R3HydraulicWithdrawalUnresolved",
+    "N_WP031NoBlockRetentionInstruction",
+    "E_WP031OmissionToBlockAbsence"
+  ],
+  "reason": null,
+  "invalidated_ids": [],
+  "committed": true,
+  "operations_accepted": true,
+  "dispatch": [
+    {
+      "job": {
+        "kind": "evidence",
+        "tag": "v17_leak_origin",
+        "focus": "Search maintenance, lab, preservation, fluid-cleanliness, and repair records for V17 leakage/contamination origin and whether the later contamination was time-relevant to the 13:00-13:24 event leakage.",
+        "target_ids": [
+          "R_R3V17LeakOriginRecords"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    },
+    {
+      "job": {
+        "kind": "evidence",
+        "tag": "keeper_dynamic_path",
+        "focus": "Search for the remaining R_R3InspectionPhotos v4 fields: time-relevant lateral/rotation measurement, validated off-center dynamic retention-envelope analysis, deformation measurements/NDE, or inspection evidence dating/loading mill-post/spreader contact marks.",
+        "target_ids": [
+          "R_R3InspectionPhotos"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "decision": "The incident involved the R3 delivery carrier beam falling into the mill pit and striking the sled and scaffold. The investigation has identified several supported conditions, including the absence of a positive-block instruction in WP-031, the incident assembly being parked raised with gravity available, the yoke YK-3 descending 40 +/- 1 mm before release, and the relative withdrawal exceeding the defined 30 mm engagement, eliminating primary seating by 13:24:00. The incident photograph and boundary record show no independent positive block under YK-3. Current revision C of the arrangement register has backup rolls removed, no backup-roll-associated stop, and no separate maintenance travel stop.",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "FALL",
+      "reason": "The revised report incorporates the supported conditions identified, focusing on the absence of a positive-block instruction, the assembly's raised state, the yoke's descent, and the loss of primary seating engagement. It also includes the absence of an independent positive block under YK-3 as per the incident photograph and boundary record.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24 due to loss of primary seating engagement, facilitated by the yoke's descent and absence of a positive-block instruction in WP-031, with no independent positive block under YK-3 as per the incident photograph and boundary record.",
+        "status": "supported",
+        "sources": ["D01", "D02", "D04", "D05", "D07", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "KEEP",
+      "reason": "The revised report now includes the supported condition of the absence of a positive-block instruction, which could allow separation after primary seating is lost. This is in addition to the original claim about a dynamic keeper-release path.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost, potentially facilitated by the absence of a positive-block instruction as indicated in WP-031.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "PROC",
+      "reason": "The revised report now explicitly mentions the omission of a positive-block instruction and off-center retention-envelope verification in WP-031 as supported conditions leading to the incident.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification, contributing to the loss of primary seating engagement and subsequent carrier fall.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "LOAD",
+      "reason": "The revised report now includes the supported condition of the assembly being parked raised with gravity available as a contributing factor to the incident.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available, contributing to the carrier's fall when primary seating engagement was lost.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

@@ -1,0 +1,53 @@
+{
+  "accepted": true,
+  "operations": 9,
+  "changed": 9,
+  "noops": [],
+  "reason": null,
+  "invalidated_ids": [],
+  "committed": true,
+  "operations_accepted": true,
+  "dispatch": [
+    {
+      "job": {
+        "kind": "specialist",
+        "tag": "mechanical_retention",
+        "focus": "Assess the remaining keeper-bypass uncertainty using D07/D10/D14: distinguish what can be inferred from primary seating loss and observed release versus what still requires lateral offset, rotation, deformation, or a validated dynamic retention envelope.",
+        "target_ids": [
+          "N_R3KeeperBypassUnresolved",
+          "E_R3HydraulicWithdrawalKeeperBypassToFall"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    },
+    {
+      "job": {
+        "kind": "specialist",
+        "tag": "hydraulic_upstream",
+        "focus": "Evaluate upstream causes and evidence limits for the supported C17/V17 support-fluid loss, including V17 closed indication versus leakage, later seat contamination, and what is or is not timestamped by D08/D09.",
+        "target_ids": [
+          "N_R3HydraulicWithdrawalUnresolved"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    },
+    {
+      "job": {
+        "kind": "specialist",
+        "tag": "work_control_upstream",
+        "focus": "Evaluate upstream work-control contribution within current evidence limits: WP-031 omission, no block/no hold or keeper-envelope check in D05, and the supplied-package boundary for signoff and authorization/reason records.",
+        "target_ids": [
+          "E_WP031OmissionToBlockAbsence",
+          "N_WP031NoBlockRetentionInstruction"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    }
+  ]
+}

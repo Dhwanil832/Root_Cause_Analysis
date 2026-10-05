@@ -1,0 +1,28 @@
+{
+  "verified_against": "Original scored GPT run, not only local comparison snapshot",
+  "original": "/Users/dhwanilchauhan/Desktop/RCA Try 1/RCA-GPT55-Repaired-2026-10-04",
+  "packaged": "/Users/dhwanilchauhan/Desktop/RCA Try 1/benchmark harness",
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "frozen_runtime_files_identical": 26,
+  "effective_role_prompt_hashes_identical": 5,
+  "saved_gpt_case_files_identical": 283,
+  "gpt_call_profiles_verified": 23,
+  "score_and_review_files_identical": [
+    "score-summary.json",
+    "reviewed-annotations.json",
+    "annotations.json",
+    "stage-windows.json",
+    "result-summary.json",
+    "terminal-audit.json",
+    "repaired/case/state.json"
+  ],
+  "scores": {
+    "presence": 82,
+    "consistent": 81,
+    "denominator": 96
+  },
+  "phase": "partial",
+  "completed_calls": 23,
+  "limitation": "Confirms package identity and provenance; does not claim all causal conclusions are correct. Launcher paths were adjusted for packaging; frozen engine and prompts are unchanged.",
+  "new_model_calls": 0
+}

@@ -1,0 +1,26 @@
+{
+  "phase": "partial",
+  "completed_calls": 23,
+  "role_counts": {
+    "intake": 1,
+    "lead": 9,
+    "evidence": 6,
+    "assessor": 4,
+    "specialist": 3
+  },
+  "runtime_snapshot_verified": true,
+  "unchanged_answer_hashes_verified": 23,
+  "pending_call": null,
+  "queue": [],
+  "pending_proposals": 0,
+  "stale_ids": [],
+  "followup_scheduled_in_read_only_replay": false,
+  "final_duplicate_delivery_added_evidence": false,
+  "semantic_score": null,
+  "judgment": "Mechanically quiescent partial board at recorded evidence boundaries; causal validity not established by controller acceptance.",
+  "remaining_model_review_points": [
+    "Procedure omission to actual absence of blocking is marked supported; requires semantic review of whether evidence establishes contribution rather than only co-occurrence.",
+    "Three requests remain partial although availability responses limit their remaining fields; retain exact labels in evaluation.",
+    "The full fall-mechanism edge remains unresolved because keeper bypass is not established."
+  ]
+}

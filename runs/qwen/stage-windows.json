@@ -1,0 +1,178 @@
+{
+  "S01": {
+    "name": "Incident understanding",
+    "start_call": 1,
+    "end_call": 1,
+    "primary_outputs": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Intake only.",
+    "selected_before_row_grading": true
+  },
+  "S02": {
+    "name": "Mechanism hypotheses",
+    "start_call": 1,
+    "end_call": 2,
+    "primary_outputs": [
+      "case/calls/0001_intake/answer.txt",
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Only initial cycle, intake and first reviewing lead; raw semantic equivalents count despite rejected operations.",
+    "selected_before_row_grading": true
+  },
+  "S03": {
+    "name": "Hypothesis and request review",
+    "start_call": 1,
+    "end_call": 2,
+    "primary_outputs": [
+      "case/calls/0001_intake/answer.txt",
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Only initial cycle, intake and first reviewing lead; raw semantic equivalents count despite rejected operations.",
+    "selected_before_row_grading": true
+  },
+  "S04": {
+    "name": "Search and request coverage",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S05": {
+    "name": "Motion and witness assessment",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S06": {
+    "name": "Hydraulics and execution assessment",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S07": {
+    "name": "Physical causal board",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S08": {
+    "name": "Upstream hypotheses",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S09": {
+    "name": "Origin and availability evidence",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S10": {
+    "name": "Boundaries and scoped negatives",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S11": {
+    "name": "Requests and stopping review",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  },
+  "S12": {
+    "name": "Final retained RCA",
+    "start_call": null,
+    "end_call": null,
+    "primary_outputs": [],
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "rule": "Never reached after rejected initial lead batch; no evidence acquisition, physical assessment, upstream investigation or final board was produced.",
+    "selected_before_row_grading": true
+  }
+}

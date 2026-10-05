@@ -1,0 +1,69 @@
+{
+  "decision": "The initial investigation has identified the focal event as the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold without causing any personnel injury. The assembly had been parked and raised after backup-roll removal during an outage. Initial observations noted the keeper plate was bolted to the assembly, and the beam and yoke were not reported fractured. The cause of the event is not explicitly stated in the initial event notice.",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "This operation creates a reported focal event node with the provided details, setting the stage for further investigation.",
+      "record": {
+        "id": "E01",
+        "kind": "node",
+        "scope_key": "R3_carrier_beam_incident",
+        "claim": "The R3 delivery carrier beam fell into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold without personnel injury.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "This operation creates a proposed request to investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+      "record": {
+        "id": "R01",
+        "kind": "request",
+        "scope_key": "R3_carrier_beam_incident",
+        "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, preserving evidence limits.",
+        "status": "proposed",
+        "sources": ["D01", "D02", "D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": ["initial_observations", "functional_system_description", "task_isolation_package"]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "specialist",
+      "tag": "mechanical_engineering",
+      "focus": "Analyze the physical mechanism of the R3 delivery carrier beam failure.",
+      "target_ids": ["E01"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "hydraulic_systems",
+      "focus": "Investigate hydraulic system behavior and potential contributions to the incident.",
+      "target_ids": ["E01"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "procedural_compliance",
+      "focus": "Review task isolation package D04 for compliance and potential omissions related to positive yoke block installation and off-center carrier retention verification.",
+      "target_ids": ["E01"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "waiting"
+}

@@ -1,0 +1,1434 @@
+{
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "incident": "At 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold. Investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+  "assignment": {
+    "kind": "assessor",
+    "tag": "",
+    "focus": "Assess submitted evidence D07 and coverage, corrections and independent branches.; Assess submitted evidence D08 and coverage, corrections and independent branches.; Assess submitted evidence D09 and coverage, corrections and independent branches.; Assess submitted evidence D05 and coverage, corrections and independent branches.; Assess submitted evidence USER_5258a84a5f5b and coverage, corrections and independent branches.; Assess submitted evidence D14 and coverage, corrections and independent branches.; Assess submitted evidence D10 and coverage, corrections and independent branches.; Assess submitted evidence D13 and coverage, corrections and independent branches.",
+    "target_ids": [
+      "R_R3ExecutionIsolation",
+      "R_R3HydraulicRecords",
+      "R_R3InspectionPhotos",
+      "R_R3MotionRecord"
+    ],
+    "id": "764a34c7cf73375b"
+  },
+  "source_revision": 13,
+  "ledger": {
+    "N_FocalEvent_R3BeamFall": {
+      "record": {
+        "id": "N_FocalEvent_R3BeamFall",
+        "kind": "node",
+        "scope_key": "r3_delivery_carrier_beam_fall_2024-10-14_1324",
+        "claim": "At 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform while the assembly was parked raised after backup-roll removal during the outage; no person was struck.",
+        "status": "reported",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "D01.S01 reports that at 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform, with no person struck, after the assembly had been parked raised following backup-roll removal during the outage. D01.S02 adds initial observations that the keeper plate was found bolted to the recovered assembly and that the beam/yoke were not reported fractured, but expressly says these are not a release-mechanism conclusion. D15.S01-S03 is not used as independent support because it is an unreviewed interpretation citing only the initial notice and handle status.",
+        "actor": "intake",
+        "version": 1,
+        "source_versions": {
+          "D01": 1
+        }
+      }
+    },
+    "R_R3MotionRecord": {
+      "record": {
+        "id": "R_R3MotionRecord",
+        "kind": "request",
+        "scope_key": "r3_motion_record_2024-10-14_event_window",
+        "claim": "Obtain and assess retained motion evidence to determine yoke/carrier movement timing, relative withdrawal, and possible interference during the R3 beam fall event.",
+        "status": "awaiting_user",
+        "sources": [
+          "D01",
+          "D02",
+          "D04",
+          "D15"
+        ],
+        "depends_on": [
+          "N_FocalEvent_R3BeamFall"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam and CB-3/YK-3 raised assembly",
+        "window": "14 October 2024 outage, interval before and at 13:24 event",
+        "fields": [
+          "time-position trace for yoke YK-3 and carrier beam",
+          "relative vertical withdrawal calculation inputs",
+          "evidence of mill post or spreader interference timing"
+        ]
+      },
+      "version": 3,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1,
+        "D04": 1,
+        "D15": 1
+      },
+      "review": "not_applicable",
+      "stale": false,
+      "justification": {
+        "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) time-position trace for yoke YK-3 and carrier beam: not answered. D01.S03 reports that a motion record was retained but provides no trace, channel list, timestamps, or values; D02.S04 describes the relevant geometry but is not an event record. (2) relative vertical withdrawal calculation inputs: not answered. D02.S04 defines relative vertical withdrawal as yoke downward travel minus carrier downward travel over the same interval, and D02.S05 gives the 30 mm primary seating engagement threshold, but no event-time yoke/carrier positions or interval values are present. (3) evidence of mill post or spreader interference timing: not answered. D02.S04 states mill post/spreader contact can temporarily hold the carrier while the yoke moves down, but no incident observation or timing of such contact is included. D15.S01-S03 is an unreviewed interpretation and contains no motion trace, retention-envelope calculation, or independent observation. D04 concerns procedure/isolation and does not supply motion evidence. This is a search/collection gap, not explicit unavailability; reopening/completion condition is production of the retained motion record, motion export, synchronized video/position channels, or a custodian answer identifying the motion-record contents for the 14 October 2024 interval before and at 13:24.",
+        "actor": "evidence",
+        "version": 3,
+        "source_versions": {
+          "D01": 1,
+          "D02": 1,
+          "D04": 1,
+          "D15": 1
+        }
+      },
+      "coverage": [
+        {
+          "version": 1,
+          "status": "proposed",
+          "fields": [
+            "time-position trace for yoke YK-3 and carrier beam",
+            "relative vertical withdrawal calculation inputs",
+            "evidence of mill post or spreader interference timing"
+          ],
+          "removed_fields": [],
+          "reason": "D01.S03 says a motion record was retained, but its coverage/applicability has not been checked. D02.S04-S05 defines that yoke YK-3 follows support cylinder C17, relative withdrawal is yoke downward travel minus carrier downward travel, and at least 30 mm relative downward yoke withdrawal eliminates primary seating engagement; D02.S05 also states keeper bypass requires separate lateral-offset/dynamic-path evidence. This request can support, challenge, or leave inconclusive whether motion sufficient for unseating occurred and whether temporary interference affected carrier/yoke relative travel. Reopening condition after answer/block: a new or revised motion source with additional time-position channels, timing synchronization, or interference observations for the same event window.",
+          "sources": [
+            "D01",
+            "D02"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1
+          }
+        },
+        {
+          "version": 2,
+          "status": "searching",
+          "fields": [
+            "time-position trace for yoke YK-3 and carrier beam",
+            "relative vertical withdrawal calculation inputs",
+            "evidence of mill post or spreader interference timing"
+          ],
+          "removed_fields": [],
+          "reason": "Approved for evidence acquisition. D01.S03 reports that a motion record was retained, while D02.S04-S05 makes the requested time-position trace, relative withdrawal inputs, and interference timing directly material to whether primary seating engagement could have been lost and whether carrier/yoke relative travel was affected. This does not assume keeper bypass; remaining gaps after this request would include lateral-offset/dynamic-path evidence unless included in the motion source. Reopening condition after answer/block: a new or revised motion source with additional time-position channels, timing synchronization, or interference observations for the same event window.",
+          "sources": [
+            "D01",
+            "D02"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1
+          }
+        },
+        {
+          "version": 3,
+          "status": "awaiting_user",
+          "fields": [
+            "time-position trace for yoke YK-3 and carrier beam",
+            "relative vertical withdrawal calculation inputs",
+            "evidence of mill post or spreader interference timing"
+          ],
+          "removed_fields": [],
+          "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) time-position trace for yoke YK-3 and carrier beam: not answered. D01.S03 reports that a motion record was retained but provides no trace, channel list, timestamps, or values; D02.S04 describes the relevant geometry but is not an event record. (2) relative vertical withdrawal calculation inputs: not answered. D02.S04 defines relative vertical withdrawal as yoke downward travel minus carrier downward travel over the same interval, and D02.S05 gives the 30 mm primary seating engagement threshold, but no event-time yoke/carrier positions or interval values are present. (3) evidence of mill post or spreader interference timing: not answered. D02.S04 states mill post/spreader contact can temporarily hold the carrier while the yoke moves down, but no incident observation or timing of such contact is included. D15.S01-S03 is an unreviewed interpretation and contains no motion trace, retention-envelope calculation, or independent observation. D04 concerns procedure/isolation and does not supply motion evidence. This is a search/collection gap, not explicit unavailability; reopening/completion condition is production of the retained motion record, motion export, synchronized video/position channels, or a custodian answer identifying the motion-record contents for the 14 October 2024 interval before and at 13:24.",
+          "sources": [
+            "D01",
+            "D02",
+            "D04",
+            "D15"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1,
+            "D04": 1,
+            "D15": 1
+          }
+        }
+      ],
+      "coverage_decision": "The searched collection does not contain the retained motion record itself. D01 only reports that a motion record was retained, and D02 only defines how to interpret yoke/carrier relative withdrawal and possible interference; the requested event-time trace, calculation inputs, and interference timing remain unanswered. User/source production of the retained motion record or export could resolve the request."
+    },
+    "R_R3HydraulicRecords": {
+      "record": {
+        "id": "R_R3HydraulicRecords",
+        "kind": "request",
+        "scope_key": "r3_c17_v17_hydraulic_records_2024-10-14_event_window",
+        "claim": "Obtain and assess retained hydraulic evidence for C17/V17 to determine support-chamber pressure/fluid retention, valve status, leakage, and alternate return-path conditions during the R3 raised-assembly event.",
+        "status": "awaiting_user",
+        "sources": [
+          "D01",
+          "D02",
+          "D04",
+          "D15"
+        ],
+        "depends_on": [
+          "N_FocalEvent_R3BeamFall"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 raised balance assembly C17 support chamber and V17 return-isolation valve",
+        "window": "14 October 2024 outage, interval before and at 13:24 event",
+        "fields": [
+          "C17 support-chamber pressure or position-related hydraulic data",
+          "V17 handle or closed-limit status with timestamps",
+          "V17 seat-leakage or chamber-to-return leakage measurements",
+          "external leakage and alternate return-path monitoring",
+          "motor or pump supply isolation timing"
+        ]
+      },
+      "version": 3,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1,
+        "D04": 1,
+        "D15": 1
+      },
+      "review": "not_applicable",
+      "stale": false,
+      "justification": {
+        "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) C17 support-chamber pressure or position-related hydraulic data: not answered. D01.S03 reports hydraulic records were retained but provides no pressure, position, channel list, timestamps, or values; D02.S02 describes that YK-3 follows C17 at 1:1 displacement and that loss of support-chamber fluid permits downward yoke travel, but it is not an incident hydraulic record. (2) V17 handle or closed-limit status with timestamps: not answered by an original record. D02.S03 states the V17 CLOSED limit switch detects handle position but not seat leakage; D15.S01-S02 refers to a writer's closed-valve-indication interpretation and a handle-status entry, but D15 is unreviewed, not an additional observation, and provides no original entry, timestamp, channel identity, or value history. (3) V17 seat-leakage or chamber-to-return leakage measurements: not answered. D02.S02-S03 identifies the isolated chamber-to-return path through V17 and warns closed indication does not measure leakage; no measurement is supplied. D15.S02 expressly says it contains no leak measurement. (4) external leakage and alternate return-path monitoring: not answered. D02.S02 says external leakage and alternate return paths are separately monitored, but no event-window monitoring results are present. (5) motor or pump supply isolation timing: not answered as an event record. D02.S03 says motor/pump supply isolation would not prove mechanical restraint or trapped-fluid retention; D04.S01 says WP-031 calls for electrical supply isolation and hydraulic valve closure, but neither document supplies actual event-window timing. This is a search/collection gap, not explicit unavailability; reopening/completion condition is production of the retained C17/V17 hydraulic records, hydraulic historian/export, V17 handle/limit log, leakage test/monitoring records, isolation timing records, or a custodian answer identifying their contents for the 14 October 2024 interval before and at 13:24.",
+        "actor": "evidence",
+        "version": 3,
+        "source_versions": {
+          "D01": 1,
+          "D02": 1,
+          "D04": 1,
+          "D15": 1
+        }
+      },
+      "coverage": [
+        {
+          "version": 1,
+          "status": "proposed",
+          "fields": [
+            "C17 support-chamber pressure or position-related hydraulic data",
+            "V17 handle or closed-limit status with timestamps",
+            "V17 seat-leakage or chamber-to-return leakage measurements",
+            "external leakage and alternate return-path monitoring",
+            "motor or pump supply isolation timing"
+          ],
+          "removed_fields": [],
+          "reason": "D01.S03 says hydraulic records were retained, but coverage/applicability has not been checked. D02.S02-S03 defines the applicable C17/V17 support-fluid path and warns that V17 CLOSED limit-switch position does not measure seat leakage and that motor/pump isolation does not prove mechanical restraint or that trapped fluid cannot leave the chamber. This request can support, challenge, or leave inconclusive whether support-chamber fluid loss or an alternate return/leak path was operating at the incident time; it will not by itself prove the carrier fell because D02.S06 states a leaking valve alone is not specified as sufficient. Reopening condition after answer/block: new or revised hydraulic data for C17/V17, external leakage monitoring, or alternate return-path monitoring in the event window.",
+          "sources": [
+            "D01",
+            "D02",
+            "D04"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1,
+            "D04": 1
+          }
+        },
+        {
+          "version": 2,
+          "status": "searching",
+          "fields": [
+            "C17 support-chamber pressure or position-related hydraulic data",
+            "V17 handle or closed-limit status with timestamps",
+            "V17 seat-leakage or chamber-to-return leakage measurements",
+            "external leakage and alternate return-path monitoring",
+            "motor or pump supply isolation timing"
+          ],
+          "removed_fields": [],
+          "reason": "Approved for evidence acquisition. D01.S03 reports retained hydraulic records, and D02.S02-S03 identifies C17 support-chamber fluid retention, V17 return-isolation status/leakage, external leakage, alternate return paths, and pump/motor isolation as distinct conditions. Each requested field can support, challenge, or leave inconclusive whether hydraulic support loss was present at the incident time; it will not by itself establish the full fall mechanism because D02.S06 states no rule that a leaking valve alone is sufficient. Reopening condition after answer/block: new or revised C17/V17 hydraulic data, leakage measurements, or alternate return-path monitoring from the event window.",
+          "sources": [
+            "D01",
+            "D02",
+            "D04"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1,
+            "D04": 1
+          }
+        },
+        {
+          "version": 3,
+          "status": "awaiting_user",
+          "fields": [
+            "C17 support-chamber pressure or position-related hydraulic data",
+            "V17 handle or closed-limit status with timestamps",
+            "V17 seat-leakage or chamber-to-return leakage measurements",
+            "external leakage and alternate return-path monitoring",
+            "motor or pump supply isolation timing"
+          ],
+          "removed_fields": [],
+          "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) C17 support-chamber pressure or position-related hydraulic data: not answered. D01.S03 reports hydraulic records were retained but provides no pressure, position, channel list, timestamps, or values; D02.S02 describes that YK-3 follows C17 at 1:1 displacement and that loss of support-chamber fluid permits downward yoke travel, but it is not an incident hydraulic record. (2) V17 handle or closed-limit status with timestamps: not answered by an original record. D02.S03 states the V17 CLOSED limit switch detects handle position but not seat leakage; D15.S01-S02 refers to a writer's closed-valve-indication interpretation and a handle-status entry, but D15 is unreviewed, not an additional observation, and provides no original entry, timestamp, channel identity, or value history. (3) V17 seat-leakage or chamber-to-return leakage measurements: not answered. D02.S02-S03 identifies the isolated chamber-to-return path through V17 and warns closed indication does not measure leakage; no measurement is supplied. D15.S02 expressly says it contains no leak measurement. (4) external leakage and alternate return-path monitoring: not answered. D02.S02 says external leakage and alternate return paths are separately monitored, but no event-window monitoring results are present. (5) motor or pump supply isolation timing: not answered as an event record. D02.S03 says motor/pump supply isolation would not prove mechanical restraint or trapped-fluid retention; D04.S01 says WP-031 calls for electrical supply isolation and hydraulic valve closure, but neither document supplies actual event-window timing. This is a search/collection gap, not explicit unavailability; reopening/completion condition is production of the retained C17/V17 hydraulic records, hydraulic historian/export, V17 handle/limit log, leakage test/monitoring records, isolation timing records, or a custodian answer identifying their contents for the 14 October 2024 interval before and at 13:24.",
+          "sources": [
+            "D01",
+            "D02",
+            "D04",
+            "D15"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1,
+            "D04": 1,
+            "D15": 1
+          }
+        }
+      ],
+      "coverage_decision": "The searched collection does not contain the retained C17/V17 hydraulic records themselves. D01 reports that hydraulic records were retained; D02 and D04 define applicable system/procedure limits; D15 mentions a closed-valve/handle-status basis only as an unreviewed interpretation and provides no original timestamped hydraulic record, pressure/position data, or leakage/return-path measurements. All requested fields remain unanswered pending production of the retained hydraulic record/export or custodian answer."
+    },
+    "R_R3ExecutionIsolation": {
+      "record": {
+        "id": "R_R3ExecutionIsolation",
+        "kind": "request",
+        "scope_key": "r3_wp031_execution_isolation_records_2024-10-14",
+        "claim": "Obtain and assess work-package execution and isolation evidence to determine actual restraint, isolation, authorization, and compliance conditions for WP-031 during the R3 event.",
+        "status": "awaiting_user",
+        "sources": [
+          "D01",
+          "D02",
+          "D04",
+          "D15"
+        ],
+        "depends_on": [
+          "N_FocalEvent_R3BeamFall"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 raised balance assembly during WP-031 stripper-box changeout",
+        "window": "14 October 2024 outage before and at 13:24 event",
+        "fields": [
+          "completed WP-031 steps and signoffs",
+          "actual positive yoke block presence or absence",
+          "electrical supply isolation records and timing",
+          "hydraulic valve closure or isolation records and timing",
+          "authorization and reason for any omitted restraint or retention-envelope verification"
+        ]
+      },
+      "version": 3,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1,
+        "D04": 1,
+        "D15": 1
+      },
+      "review": "not_applicable",
+      "stale": false,
+      "justification": {
+        "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) completed WP-031 steps and signoffs: not answered. D01.S03 reports that a work package and isolation records were retained, but supplies no completed steps, signoffs, names, times, or hold-point status. D04.S01 describes WP-031 scope and required isolation content, but D04.S03 states execution records are needed to establish what workers actually did. (2) actual positive yoke block presence or absence: not answered. D04.S01 says the task text contains no instruction to install a positive yoke block, but D04.S03 warns that procedural omission is distinct from proof of whether a block was actually present. D02.S06 distinguishes positive mechanical restraint from electrical isolation and hydraulic handle position, but is not an event execution record. (3) electrical supply isolation records and timing: not answered as an actual event record. D04.S01 says the package calls for electrical supply isolation, but no completed isolation record, timestamp, verification, or signoff is provided. (4) hydraulic valve closure or isolation records and timing: not answered as an actual event record. D04.S01 says the package calls for hydraulic valve closure; D04.S02 identifies the applicable raised-assembly tags as C17 support chamber and V17 return-isolation valve, but no completed closure/isolation log, timestamp, verification, or signoff is provided. D15.S01-S02 refers to a handle-status entry only through an unreviewed interpretation and provides no original entry or timestamp. (5) authorization and reason for any omitted restraint or retention-envelope verification: not answered. D04.S01 says the task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope, but D04.S03 expressly says this document does not establish why the procedure omitted that step; no authorization, deviation, risk assessment, or reason record is present. This is a search/collection gap, not explicit unavailability; reopening/completion condition is production of completed WP-031 forms, isolation/LOTO logs, permits, signoffs, witness records, deviation/authorization records, or a custodian answer identifying their contents for the 14 October 2024 outage before and at 13:24.",
+        "actor": "evidence",
+        "version": 3,
+        "source_versions": {
+          "D01": 1,
+          "D02": 1,
+          "D04": 1,
+          "D15": 1
+        }
+      },
+      "coverage": [
+        {
+          "version": 1,
+          "status": "proposed",
+          "fields": [
+            "completed WP-031 steps and signoffs",
+            "actual positive yoke block presence or absence",
+            "electrical supply isolation records and timing",
+            "hydraulic valve closure or isolation records and timing",
+            "authorization and reason for any omitted restraint or retention-envelope verification"
+          ],
+          "removed_fields": [],
+          "reason": "D01.S03 says the work package and isolation records were retained. D04.S01 states WP-031 calls for electrical supply isolation and hydraulic valve closure and contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope. D04.S03 warns that a procedural omission is distinct from proof of what workers did, so execution records are needed to establish actual block presence/compliance and any authorization or reason for noncompliance. This request can support, challenge, or leave inconclusive actual restraint/isolation conditions and procedure execution; it does not establish organizational cause by itself. Reopening condition after answer/block: new completed forms, permits, witness records, or authorization records covering WP-031 execution for this outage.",
+          "sources": [
+            "D01",
+            "D04"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D04": 1
+          }
+        },
+        {
+          "version": 2,
+          "status": "searching",
+          "fields": [
+            "completed WP-031 steps and signoffs",
+            "actual positive yoke block presence or absence",
+            "electrical supply isolation records and timing",
+            "hydraulic valve closure or isolation records and timing",
+            "authorization and reason for any omitted restraint or retention-envelope verification"
+          ],
+          "removed_fields": [],
+          "reason": "Approved for evidence acquisition. D01.S03 reports retained work-package and isolation records, and D04.S01/D04.S03 separate procedure content from actual compliance. The requested fields are needed to determine completed WP-031 steps/signoffs, actual positive yoke block presence or absence, isolation timing, and any authorization or reason for omitted restraint or retention-envelope verification. This acquisition is relevant to upstream work control but does not itself establish organizational cause. Reopening condition after answer/block: new completed forms, permits, witness records, or authorization records covering WP-031 execution for this outage.",
+          "sources": [
+            "D01",
+            "D04"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D04": 1
+          }
+        },
+        {
+          "version": 3,
+          "status": "awaiting_user",
+          "fields": [
+            "completed WP-031 steps and signoffs",
+            "actual positive yoke block presence or absence",
+            "electrical supply isolation records and timing",
+            "hydraulic valve closure or isolation records and timing",
+            "authorization and reason for any omitted restraint or retention-envelope verification"
+          ],
+          "removed_fields": [],
+          "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) completed WP-031 steps and signoffs: not answered. D01.S03 reports that a work package and isolation records were retained, but supplies no completed steps, signoffs, names, times, or hold-point status. D04.S01 describes WP-031 scope and required isolation content, but D04.S03 states execution records are needed to establish what workers actually did. (2) actual positive yoke block presence or absence: not answered. D04.S01 says the task text contains no instruction to install a positive yoke block, but D04.S03 warns that procedural omission is distinct from proof of whether a block was actually present. D02.S06 distinguishes positive mechanical restraint from electrical isolation and hydraulic handle position, but is not an event execution record. (3) electrical supply isolation records and timing: not answered as an actual event record. D04.S01 says the package calls for electrical supply isolation, but no completed isolation record, timestamp, verification, or signoff is provided. (4) hydraulic valve closure or isolation records and timing: not answered as an actual event record. D04.S01 says the package calls for hydraulic valve closure; D04.S02 identifies the applicable raised-assembly tags as C17 support chamber and V17 return-isolation valve, but no completed closure/isolation log, timestamp, verification, or signoff is provided. D15.S01-S02 refers to a handle-status entry only through an unreviewed interpretation and provides no original entry or timestamp. (5) authorization and reason for any omitted restraint or retention-envelope verification: not answered. D04.S01 says the task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope, but D04.S03 expressly says this document does not establish why the procedure omitted that step; no authorization, deviation, risk assessment, or reason record is present. This is a search/collection gap, not explicit unavailability; reopening/completion condition is production of completed WP-031 forms, isolation/LOTO logs, permits, signoffs, witness records, deviation/authorization records, or a custodian answer identifying their contents for the 14 October 2024 outage before and at 13:24.",
+          "sources": [
+            "D01",
+            "D02",
+            "D04",
+            "D15"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1,
+            "D04": 1,
+            "D15": 1
+          }
+        }
+      ],
+      "coverage_decision": "The searched collection does not contain completed WP-031 execution or isolation records. D04 provides procedure/package content only: it calls for electrical supply isolation and hydraulic valve closure and contains no instruction for a positive yoke block or retention-envelope verification, but D04 expressly does not prove actual compliance, block presence, authorization, or reasons for omission. User/source production of completed work-package forms, isolation logs, permits, signoffs, or authorization records could resolve the request."
+    },
+    "R_R3InspectionPhotos": {
+      "record": {
+        "id": "R_R3InspectionPhotos",
+        "kind": "request",
+        "scope_key": "r3_recovered_assembly_inspection_photos_measurements_2024-10-14",
+        "claim": "Obtain and assess inspection photographs and measurements to document recovered component condition, keeper/seating geometry, lateral offset indicators, and impact/contact evidence relevant to the R3 beam release path.",
+        "status": "partial",
+        "sources": [
+          "D01",
+          "D02",
+          "D04",
+          "D15"
+        ],
+        "depends_on": [
+          "N_FocalEvent_R3BeamFall"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 recovered carrier beam, yoke YK-3, keeper plate, sled, scaffold, and adjacent mill-post/spreader contact areas",
+        "window": "post-event recovery/inspection following 13:24 event on 14 October 2024, with preservation history if available",
+        "fields": [
+          "detailed keeper plate condition and fastener state beyond bolted presence",
+          "beam and yoke deformation, crack-test scope, or measurement evidence beyond initial no-fracture report",
+          "primary seating engagement or wear/contact measurements",
+          "lateral offset indicators and dynamic path marks",
+          "impact/contact evidence at sled, scaffold, mill post, or spreader beyond reported sled/scaffold strike"
+        ]
+      },
+      "version": 3,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1,
+        "D04": 1,
+        "D15": 1
+      },
+      "review": "not_applicable",
+      "stale": false,
+      "justification": {
+        "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) keeper plate condition and fastener state: partially answered only as to presence/bolting. D01.S02 reports the keeper plate was found bolted to the recovered assembly, but supplies no photograph, fastener count/torque, loosening, damage, deformation, witness marks, or preservation history. (2) beam and yoke fracture or deformation evidence: partially answered only as to fracture reporting. D01.S02 says the beam and yoke were not reported fractured, but this is an initial observation and gives no inspection photographs, dimensional checks, deformation assessment, crack-test scope, or measurement sensitivity. (3) primary seating engagement or wear/contact measurements: not answered. D02.S05 defines the 30 mm primary seating engagement rule and states keeper engagement requires separate evidence, but no event inspection measurement or wear/contact observation is supplied. (4) lateral offset indicators and dynamic path marks: not answered. D02.S05 states lateral offset and dynamic path require their own evidence; no incident photographs, witness marks, scrape paths, or offset measurements are present. D15.S01 suggests excess clearance only as an unreviewed interpretation and D15.S02 says it contains no retention-envelope calculation or independent witness account. (5) impact/contact evidence at sled, scaffold, mill post, or spreader: partially answered only for occurrence of sled/scaffold strike. D01.S01 reports the beam struck the sled and scaffold platform, but no inspection photos, impact marks, contact locations, mill-post/spreader contact observations, or measurements are provided. D04 concerns procedure/isolation and does not supply inspection evidence. This is a partial answer and a search/collection gap, not explicit unavailability; reopening/completion condition is production of retained inspection photographs, measurement sheets, preservation/chain-of-custody notes, NDE/dimensional inspection records, or a custodian answer identifying their contents for the recovered R3 carrier beam, YK-3, keeper, sled/scaffold, mill-post, and spreader contact areas after the 13:24 event.",
+        "actor": "evidence",
+        "version": 3,
+        "source_versions": {
+          "D01": 1,
+          "D02": 1,
+          "D04": 1,
+          "D15": 1
+        }
+      },
+      "coverage": [
+        {
+          "version": 1,
+          "status": "proposed",
+          "fields": [
+            "keeper plate condition and fastener state",
+            "beam and yoke fracture or deformation evidence",
+            "primary seating engagement or wear/contact measurements",
+            "lateral offset indicators and dynamic path marks",
+            "impact/contact evidence at sled, scaffold, mill post, or spreader"
+          ],
+          "removed_fields": [],
+          "reason": "D01.S03 says inspection photographs were retained. D01.S02 reports only initial observations that the keeper plate was found bolted to the recovered assembly and beam/yoke were not reported fractured; it expressly does not conclude the release mechanism. D02.S05 states primary seating loss and keeper engagement are separate questions, with keeper engagement depending on lateral offset and dynamic path. This request can support, challenge, or leave inconclusive whether fracture, deformation, keeper geometry, seating condition, or lateral offset contributed. Reopening condition after answer/block: new photographs, measurements, or preservation records of the recovered assembly, yoke, keeper, sled/scaffold impact area, or mill-post/spreader contact surfaces.",
+          "sources": [
+            "D01",
+            "D02"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1
+          }
+        },
+        {
+          "version": 2,
+          "status": "searching",
+          "fields": [
+            "keeper plate condition and fastener state",
+            "beam and yoke fracture or deformation evidence",
+            "primary seating engagement or wear/contact measurements",
+            "lateral offset indicators and dynamic path marks",
+            "impact/contact evidence at sled, scaffold, mill post, or spreader"
+          ],
+          "removed_fields": [],
+          "reason": "Approved for evidence acquisition. D01.S03 reports retained inspection photographs, D01.S02 gives only limited initial recovered-condition observations, and D02.S05 requires separate evidence for keeper engagement, lateral offset, and dynamic path. The requested fields can support, challenge, or leave inconclusive fracture/deformation, keeper condition, seating/contact geometry, lateral-offset indicators, and impact/contact paths. Reopening condition after answer/block: new photographs, measurements, or preservation records of the recovered assembly, yoke, keeper, sled/scaffold impact area, or mill-post/spreader contact surfaces.",
+          "sources": [
+            "D01",
+            "D02"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1
+          }
+        },
+        {
+          "version": 3,
+          "status": "partial",
+          "fields": [
+            "detailed keeper plate condition and fastener state beyond bolted presence",
+            "beam and yoke deformation, crack-test scope, or measurement evidence beyond initial no-fracture report",
+            "primary seating engagement or wear/contact measurements",
+            "lateral offset indicators and dynamic path marks",
+            "impact/contact evidence at sled, scaffold, mill post, or spreader beyond reported sled/scaffold strike"
+          ],
+          "removed_fields": [
+            "keeper plate condition and fastener state",
+            "beam and yoke fracture or deformation evidence",
+            "impact/contact evidence at sled, scaffold, mill post, or spreader"
+          ],
+          "reason": "Coverage of requested fields from searched sources D01, D02, D04, and D15: (1) keeper plate condition and fastener state: partially answered only as to presence/bolting. D01.S02 reports the keeper plate was found bolted to the recovered assembly, but supplies no photograph, fastener count/torque, loosening, damage, deformation, witness marks, or preservation history. (2) beam and yoke fracture or deformation evidence: partially answered only as to fracture reporting. D01.S02 says the beam and yoke were not reported fractured, but this is an initial observation and gives no inspection photographs, dimensional checks, deformation assessment, crack-test scope, or measurement sensitivity. (3) primary seating engagement or wear/contact measurements: not answered. D02.S05 defines the 30 mm primary seating engagement rule and states keeper engagement requires separate evidence, but no event inspection measurement or wear/contact observation is supplied. (4) lateral offset indicators and dynamic path marks: not answered. D02.S05 states lateral offset and dynamic path require their own evidence; no incident photographs, witness marks, scrape paths, or offset measurements are present. D15.S01 suggests excess clearance only as an unreviewed interpretation and D15.S02 says it contains no retention-envelope calculation or independent witness account. (5) impact/contact evidence at sled, scaffold, mill post, or spreader: partially answered only for occurrence of sled/scaffold strike. D01.S01 reports the beam struck the sled and scaffold platform, but no inspection photos, impact marks, contact locations, mill-post/spreader contact observations, or measurements are provided. D04 concerns procedure/isolation and does not supply inspection evidence. This is a partial answer and a search/collection gap, not explicit unavailability; reopening/completion condition is production of retained inspection photographs, measurement sheets, preservation/chain-of-custody notes, NDE/dimensional inspection records, or a custodian answer identifying their contents for the recovered R3 carrier beam, YK-3, keeper, sled/scaffold, mill-post, and spreader contact areas after the 13:24 event.",
+          "sources": [
+            "D01",
+            "D02",
+            "D04",
+            "D15"
+          ],
+          "source_versions": {
+            "D01": 1,
+            "D02": 1,
+            "D04": 1,
+            "D15": 1
+          }
+        }
+      ],
+      "coverage_decision": "The searched collection does not contain the retained inspection photographs or measurements. D01 provides only limited initial observations: the keeper plate was found bolted to the recovered assembly, and beam/yoke fracture was not reported. Detailed keeper/fastener condition, deformation measurements, seating/contact geometry, lateral-offset or dynamic-path marks, and impact/contact evidence remain unanswered pending production of the retained inspection photos/measurements or a custodian answer."
+    },
+    "N_R3LimitedRecoveredCondition": {
+      "record": {
+        "id": "N_R3LimitedRecoveredCondition",
+        "kind": "node",
+        "scope_key": "r3_limited_recovered_condition_initial_observations_2024-10-14",
+        "claim": "Initial post-event observations reported the R3 keeper plate bolted to the recovered assembly and did not report beam or yoke fracture, but did not establish the release mechanism or detailed component condition.",
+        "status": "supported",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [
+          "R_R3InspectionPhotos"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "Adopting assessor proposal. D01.S02 reports only two initial post-event condition observations: the keeper plate was found bolted to the recovered assembly and the beam/yoke were not reported fractured. D01.S02 expressly limits these to initial observations and not a release-mechanism conclusion. R_R3InspectionPhotos remains partial: no photographs, fastener torque/count, loosening, deformation measurements, crack-test scope, seating/contact measurements, lateral-offset marks, or preservation history were produced. This supports only the limited occurrence of the reported observations; reopening condition is production of retained inspection photos, NDE/dimensional inspection records, or preservation notes showing more detailed or contrary component condition.",
+        "actor": "lead",
+        "version": 1,
+        "source_versions": {
+          "D01": 1
+        }
+      }
+    },
+    "N_WP031NoBlockRetentionInstruction": {
+      "record": {
+        "id": "N_WP031NoBlockRetentionInstruction",
+        "kind": "node",
+        "scope_key": "wp031_text_no_positive_yoke_block_or_retention_envelope_verification",
+        "claim": "WP-031 task text called for electrical isolation and hydraulic valve closure but contained no instruction to install a positive yoke block or verify the off-center carrier retention envelope.",
+        "status": "supported",
+        "sources": [
+          "D04"
+        ],
+        "depends_on": [
+          "R_R3ExecutionIsolation"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D04": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "Adopting assessor proposal. D04.S01 states WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal, calls for electrical supply isolation and hydraulic valve closure, and contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope. D04.S03 limits this to procedure content and says execution records are needed to establish what workers actually did and why the omission existed. This supports procedural-content occurrence only, not actual compliance, authorization, or causal contribution.",
+        "actor": "lead",
+        "version": 1,
+        "source_versions": {
+          "D04": 1
+        }
+      }
+    },
+    "N_R3HydraulicWithdrawalUnresolved": {
+      "record": {
+        "id": "N_R3HydraulicWithdrawalUnresolved",
+        "kind": "node",
+        "scope_key": "r3_event_hydraulic_loss_and_relative_withdrawal_sufficiency",
+        "claim": "During the R3 event, C17/V17 hydraulic support-fluid loss produced yoke/carrier relative vertical withdrawal sufficient to eliminate the 30 mm primary seating engagement.",
+        "status": "unresolved",
+        "sources": [
+          "D01",
+          "D02",
+          "D15"
+        ],
+        "depends_on": [
+          "R_R3HydraulicRecords",
+          "R_R3MotionRecord"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1,
+        "D15": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "Adopting assessor proposal. D02.S02-S05 describes an applicable possible mechanism: loss of C17 support-chamber fluid permits downward yoke travel; relative vertical withdrawal equals yoke downward travel minus carrier downward travel; at least 30 mm relative downward yoke withdrawal eliminates primary seating engagement; keeper bypass also requires lateral-offset/dynamic-path evidence. But R_R3HydraulicRecords and R_R3MotionRecord remain awaiting_user because the searched collection lacks event-time pressure/position data, V17 leakage/return-path measurements, and yoke/carrier time-position traces. D15.S01-S02 is only an unreviewed interpretation and contains no leak measurement or retention-envelope calculation. Event-time hydraulic loss and sufficient relative withdrawal are unresolved, not refuted.",
+        "actor": "lead",
+        "version": 1,
+        "source_versions": {
+          "D01": 1,
+          "D02": 1,
+          "D15": 1
+        }
+      }
+    },
+    "N_R3KeeperBypassUnresolved": {
+      "record": {
+        "id": "N_R3KeeperBypassUnresolved",
+        "kind": "node",
+        "scope_key": "r3_keeper_bypass_lateral_offset_dynamic_path_event",
+        "claim": "During the R3 event, the carrier beam followed a lateral offset and dynamic path that bypassed keeper retention after any loss of primary seating engagement.",
+        "status": "unresolved",
+        "sources": [
+          "D02",
+          "D15"
+        ],
+        "depends_on": [
+          "R_R3InspectionPhotos",
+          "R_R3MotionRecord"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1,
+        "D15": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "Adopting assessor proposal. D02.S05 states that loss of primary seating engagement does not prove keeper bypass; keeper engagement depends on lateral offset and dynamic path, requiring separate evidence. R_R3InspectionPhotos remains partial because no seating/contact measurements, lateral-offset indicators, dynamic path marks, or retained photographs were produced. D15.S01 suggests excess clearance only as an unreviewed interpretation and D15.S02 says it has no retention-envelope calculation or independent witness account. Keeper bypass/dynamic path is therefore unresolved rather than supported or refuted.",
+        "actor": "lead",
+        "version": 1,
+        "source_versions": {
+          "D02": 1,
+          "D15": 1
+        }
+      }
+    },
+    "N_R3ActualBlockAbsentUnresolved": {
+      "record": {
+        "id": "N_R3ActualBlockAbsentUnresolved",
+        "kind": "node",
+        "scope_key": "r3_actual_positive_yoke_block_absence_event_window",
+        "claim": "At the R3 event, no positive yoke block or equivalent positive mechanical restraint was actually present to restrain the raised assembly.",
+        "status": "unresolved",
+        "sources": [
+          "D02",
+          "D04"
+        ],
+        "depends_on": [
+          "R_R3ExecutionIsolation"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1,
+        "D04": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "Adopting assessor proposal. D02.S06 distinguishes positive mechanical restraint from electrical isolation and hydraulic handle position. D04.S01 shows the task text did not instruct a positive yoke block, but D04.S03 says that omission is distinct from proof of what workers actually did. R_R3ExecutionIsolation remains awaiting_user because completed WP-031 steps, signoffs, and actual block presence/absence were not found. Thus actual absence of positive mechanical restraint at 13:24 is unresolved.",
+        "actor": "lead",
+        "version": 1,
+        "source_versions": {
+          "D02": 1,
+          "D04": 1
+        }
+      }
+    },
+    "E_R3HydraulicWithdrawalKeeperBypassToFall": {
+      "record": {
+        "id": "E_R3HydraulicWithdrawalKeeperBypassToFall",
+        "kind": "edge",
+        "scope_key": "r3_joint_hydraulic_withdrawal_keeper_bypass_no_block_caused_fall",
+        "claim": "Hydraulic support loss with sufficient relative yoke withdrawal, keeper-bypass dynamic path, and absence of positive mechanical restraint jointly caused or allowed the R3 delivery carrier beam fall.",
+        "status": "unresolved",
+        "sources": [
+          "D01",
+          "D02",
+          "D04",
+          "D15"
+        ],
+        "depends_on": [],
+        "from_ids": [
+          "N_R3HydraulicWithdrawalUnresolved",
+          "N_R3KeeperBypassUnresolved",
+          "N_R3ActualBlockAbsentUnresolved"
+        ],
+        "to_id": "N_FocalEvent_R3BeamFall",
+        "mode": "all",
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1,
+        "D04": 1,
+        "D15": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "Adopting assessor proposal. The proposed physical release path requires joint conditions: event-time hydraulic/support loss with enough yoke/carrier relative withdrawal to remove 30 mm primary seating engagement, a lateral-offset/dynamic path that bypassed keeper retention, and no effective positive mechanical restraint. D02.S02-S06 describes these as distinct conditions. Current evidence does not establish those incident conditions: R_R3HydraulicRecords and R_R3MotionRecord are awaiting_user, R_R3InspectionPhotos is partial, and R_R3ExecutionIsolation is awaiting_user. D01 reports the fall but no cause. Therefore causal contribution of this mechanism to the fall remains unresolved.",
+        "actor": "lead",
+        "version": 1,
+        "source_versions": {
+          "D01": 1,
+          "D02": 1,
+          "D04": 1,
+          "D15": 1
+        }
+      }
+    },
+    "E_WP031OmissionToBlockAbsence": {
+      "record": {
+        "id": "E_WP031OmissionToBlockAbsence",
+        "kind": "edge",
+        "scope_key": "wp031_no_block_instruction_contributed_to_actual_no_positive_block",
+        "claim": "WP-031's lack of a positive-yoke-block or retention-envelope-verification instruction contributed to the actual absence of positive mechanical restraint during the R3 event.",
+        "status": "unresolved",
+        "sources": [
+          "D04"
+        ],
+        "depends_on": [],
+        "from_ids": [
+          "N_WP031NoBlockRetentionInstruction"
+        ],
+        "to_id": "N_R3ActualBlockAbsentUnresolved",
+        "mode": "all",
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D04": 1
+      },
+      "review": "pending_human",
+      "stale": false,
+      "justification": {
+        "reason": "Adopting assessor proposal. D04.S01 supports only that WP-031 text omitted a positive yoke block/retention-envelope verification instruction; D04.S03 explicitly says execution records are needed to know what workers did and does not explain why the procedure omitted the step. R_R3ExecutionIsolation remains awaiting_user with completed forms, isolation logs, permits, signoffs, and authorization/reason records missing. Therefore a causal path from procedure omission to actual absence of restraint is unresolved, not supported.",
+        "actor": "lead",
+        "version": 1,
+        "source_versions": {
+          "D04": 1
+        }
+      }
+    }
+  },
+  "recent_proposals": [],
+  "recent_calls": [
+    {
+      "role": "lead",
+      "job_id": "da4e9c078e3e9506",
+      "path": "calls/0002_lead",
+      "decision": "Approve the four existing proposed acquisition requests as immediately relevant and non-duplicative. The current board supports only the reported fall event from D01; D02 and D04 define applicable system/procedure limits, while D15 remains an unreviewed interpretation and is not adopted as mechanism evidence. No physical release mechanism or upstream cause is yet supported.",
+      "validation": {
+        "accepted": true,
+        "operations": 4,
+        "changed": 4,
+        "noops": [],
+        "reason": null,
+        "invalidated_ids": [],
+        "committed": true,
+        "operations_accepted": true,
+        "dispatch": [
+          {
+            "job": {
+              "kind": "evidence",
+              "tag": "motion_records",
+              "focus": "Search retained motion evidence for yoke/carrier timing, relative withdrawal inputs, and mill-post/spreader interference timing in the R3 event window.",
+              "target_ids": [
+                "R_R3MotionRecord"
+              ]
+            },
+            "accepted": true,
+            "reason": null,
+            "duplicate": false
+          },
+          {
+            "job": {
+              "kind": "evidence",
+              "tag": "hydraulic_records",
+              "focus": "Search retained C17/V17 hydraulic evidence for support-chamber pressure/position, V17 status and leakage, external/alternate return paths, and motor or pump isolation timing.",
+              "target_ids": [
+                "R_R3HydraulicRecords"
+              ]
+            },
+            "accepted": true,
+            "reason": null,
+            "duplicate": false
+          },
+          {
+            "job": {
+              "kind": "evidence",
+              "tag": "execution_isolation",
+              "focus": "Search WP-031 execution and isolation records for completed steps, signoffs, actual positive blocking, isolation timing, authorization, and reasons for any omitted restraint or retention-envelope verification.",
+              "target_ids": [
+                "R_R3ExecutionIsolation"
+              ]
+            },
+            "accepted": true,
+            "reason": null,
+            "duplicate": false
+          },
+          {
+            "job": {
+              "kind": "evidence",
+              "tag": "inspection_photos",
+              "focus": "Search retained inspection photos and measurements for keeper/fastener condition, beam/yoke damage, seating/contact geometry, lateral offset or dynamic-path marks, and impact/contact evidence.",
+              "target_ids": [
+                "R_R3InspectionPhotos"
+              ]
+            },
+            "accepted": true,
+            "reason": null,
+            "duplicate": false
+          }
+        ]
+      }
+    },
+    {
+      "role": "evidence",
+      "job_id": "05fb9ff53d812be2",
+      "path": "calls/0003_evidence",
+      "decision": "The searched collection does not contain the retained motion record itself. D01 only reports that a motion record was retained, and D02 only defines how to interpret yoke/carrier relative withdrawal and possible interference; the requested event-time trace, calculation inputs, and interference timing remain unanswered. User/source production of the retained motion record or export could resolve the request.",
+      "validation": {
+        "accepted": true,
+        "operations": 1,
+        "changed": 1,
+        "noops": [],
+        "reason": null,
+        "invalidated_ids": [],
+        "committed": true,
+        "operations_accepted": true
+      }
+    },
+    {
+      "role": "evidence",
+      "job_id": "60d288488f445c5c",
+      "path": "calls/0004_evidence",
+      "decision": "The searched collection does not contain the retained C17/V17 hydraulic records themselves. D01 reports that hydraulic records were retained; D02 and D04 define applicable system/procedure limits; D15 mentions a closed-valve/handle-status basis only as an unreviewed interpretation and provides no original timestamped hydraulic record, pressure/position data, or leakage/return-path measurements. All requested fields remain unanswered pending production of the retained hydraulic record/export or custodian answer.",
+      "validation": {
+        "accepted": true,
+        "operations": 1,
+        "changed": 1,
+        "noops": [],
+        "reason": null,
+        "invalidated_ids": [],
+        "committed": true,
+        "operations_accepted": true
+      }
+    },
+    {
+      "role": "evidence",
+      "job_id": "a6cffc909eb88fbb",
+      "path": "calls/0005_evidence",
+      "decision": "The searched collection does not contain completed WP-031 execution or isolation records. D04 provides procedure/package content only: it calls for electrical supply isolation and hydraulic valve closure and contains no instruction for a positive yoke block or retention-envelope verification, but D04 expressly does not prove actual compliance, block presence, authorization, or reasons for omission. User/source production of completed work-package forms, isolation logs, permits, signoffs, or authorization records could resolve the request.",
+      "validation": {
+        "accepted": true,
+        "operations": 1,
+        "changed": 1,
+        "noops": [],
+        "reason": null,
+        "invalidated_ids": [],
+        "committed": true,
+        "operations_accepted": true
+      }
+    },
+    {
+      "role": "evidence",
+      "job_id": "5f71faeb7c0e8ec4",
+      "path": "calls/0006_evidence",
+      "decision": "The searched collection does not contain the retained inspection photographs or measurements. D01 provides only limited initial observations: the keeper plate was found bolted to the recovered assembly, and beam/yoke fracture was not reported. Detailed keeper/fastener condition, deformation measurements, seating/contact geometry, lateral-offset or dynamic-path marks, and impact/contact evidence remain unanswered pending production of the retained inspection photos/measurements or a custodian answer.",
+      "validation": {
+        "accepted": true,
+        "operations": 1,
+        "changed": 1,
+        "noops": [],
+        "reason": null,
+        "invalidated_ids": [],
+        "committed": true,
+        "operations_accepted": true
+      }
+    },
+    {
+      "role": "assessor",
+      "job_id": "3e2b50a3f6481fa0",
+      "path": "calls/0007_assessor",
+      "decision": "The retrieved evidence changes no request to answered for motion, hydraulic, or execution/isolation evidence; inspection evidence is only partial. Occurrence support remains limited to the reported fall, limited recovered-condition observations, and WP-031 procedure text. The physical release mechanism and upstream contribution of procedure/isolation remain unresolved because event-time motion, hydraulic, actual blocking, keeper-bypass, and execution records are not present in the searched collection.",
+      "validation": {
+        "accepted": null,
+        "reason": "held_for_lead_review",
+        "operations": 7
+      }
+    },
+    {
+      "role": "lead",
+      "job_id": "e93c826a61bcbfee",
+      "path": "calls/0008_lead",
+      "decision": "Adopt the assessor proposal with evidence limits preserved. The board now supports only: the reported fall event from D01, limited initial recovered-condition observations from D01, and WP-031 task-text content from D04. The proposed physical mechanism remains unresolved because the joint incident conditions—event-time hydraulic/support-fluid loss with sufficient relative yoke withdrawal, keeper-bypass lateral/dynamic path, and actual absence of positive mechanical restraint—are not established by the searched collection. Motion, hydraulic, and execution/isolation records remain awaiting user/source production; inspection evidence remains partial.",
+      "validation": {
+        "accepted": true,
+        "operations": 7,
+        "changed": 7,
+        "noops": [],
+        "reason": null,
+        "invalidated_ids": [],
+        "committed": true,
+        "operations_accepted": true,
+        "dispatch": []
+      }
+    },
+    {
+      "role": "lead",
+      "job_id": "a09007e5a2f897b8",
+      "path": "calls/0009_lead",
+      "decision": "Stopping review completed for both targeted supported premises. N_R3LimitedRecoveredCondition is only a limited reported post-event observation; its deeper mechanism or detailed component condition is not explained by the board and is blocked at the current evidence boundary because R_R3InspectionPhotos remains partial and retained photos/measurements were not produced. N_WP031NoBlockRetentionInstruction is supported only as WP-031 text content; the origin/reason for that omission is not explained and is blocked by the current absence of completed execution, authorization, deviation, risk-assessment, or procedure-basis records. No new duplicate request or specialist work is warranted without new source material; existing awaiting/partial requests already cover the missing evidence.",
+      "validation": {
+        "accepted": true,
+        "operations": 0,
+        "changed": 0,
+        "noops": [],
+        "reason": null,
+        "invalidated_ids": [],
+        "committed": true,
+        "operations_accepted": true,
+        "dispatch": []
+      }
+    }
+  ],
+  "completed_jobs": [
+    {
+      "kind": "intake",
+      "tag": "",
+      "focus": "Understand the focal incident, scope and immediate ambiguities.",
+      "target_ids": [],
+      "signature": "1f6ac1a6a4e6624702fc3313a003b41337808d34ea966ae460f6890870a4fb4c",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0001_intake"
+    },
+    {
+      "kind": "lead",
+      "tag": "",
+      "focus": "Review completed proposals/evidence, update the board and select the next immediately useful work.",
+      "target_ids": [],
+      "signature": "84b524a54c315f56efd495f974fb5de92337cc53f8c76d9c951a8516946c9bd4",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0002_lead"
+    },
+    {
+      "kind": "evidence",
+      "tag": "motion_records",
+      "focus": "Search retained motion evidence for yoke/carrier timing, relative withdrawal inputs, and mill-post/spreader interference timing in the R3 event window.",
+      "target_ids": [
+        "R_R3MotionRecord"
+      ],
+      "signature": "d24ff09c0b7d67202c164539dfe07df46b98fb03fe855f6f98511cbbdd151a38",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0003_evidence"
+    },
+    {
+      "kind": "evidence",
+      "tag": "hydraulic_records",
+      "focus": "Search retained C17/V17 hydraulic evidence for support-chamber pressure/position, V17 status and leakage, external/alternate return paths, and motor or pump isolation timing.",
+      "target_ids": [
+        "R_R3HydraulicRecords"
+      ],
+      "signature": "98c5576c58ecc12a3cabd10d2b5b8cdd8dc565cca1357d53ac789f98213c4df9",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0004_evidence"
+    },
+    {
+      "kind": "evidence",
+      "tag": "execution_isolation",
+      "focus": "Search WP-031 execution and isolation records for completed steps, signoffs, actual positive blocking, isolation timing, authorization, and reasons for any omitted restraint or retention-envelope verification.",
+      "target_ids": [
+        "R_R3ExecutionIsolation"
+      ],
+      "signature": "6a16ee573038a9a17971a06cdba8778da9b44304496b677cb10fcaa7088d7bed",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0005_evidence"
+    },
+    {
+      "kind": "evidence",
+      "tag": "inspection_photos",
+      "focus": "Search retained inspection photos and measurements for keeper/fastener condition, beam/yoke damage, seating/contact geometry, lateral offset or dynamic-path marks, and impact/contact evidence.",
+      "target_ids": [
+        "R_R3InspectionPhotos"
+      ],
+      "signature": "6c5a34b98d1a9905feb00c849accdcae3514cd120747571cf81cc39d8cef0d0f",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0006_evidence"
+    },
+    {
+      "kind": "assessor",
+      "tag": "",
+      "focus": "Assess retrieved evidence and coverage for R_R3MotionRecord; do not assume receipt proves a causal link.; Assess retrieved evidence and coverage for R_R3HydraulicRecords; do not assume receipt proves a causal link.; Assess retrieved evidence and coverage for R_R3ExecutionIsolation; do not assume receipt proves a causal link.; Assess retrieved evidence and coverage for R_R3InspectionPhotos; do not assume receipt proves a causal link.",
+      "target_ids": [
+        "R_R3ExecutionIsolation",
+        "R_R3HydraulicRecords",
+        "R_R3InspectionPhotos",
+        "R_R3MotionRecord"
+      ],
+      "signature": "b9a41614bba790f24474a40b46618e6b920b214ead9b7f11f1c524fab7b6f7cb",
+      "accepted": null,
+      "source_revision": 4,
+      "call_path": "calls/0007_assessor"
+    },
+    {
+      "kind": "lead",
+      "tag": "",
+      "focus": "Review completed proposals/evidence, update the board and select the next immediately useful work.",
+      "target_ids": [],
+      "signature": "84b524a54c315f56efd495f974fb5de92337cc53f8c76d9c951a8516946c9bd4",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0008_lead"
+    },
+    {
+      "kind": "lead",
+      "tag": "upstream_review",
+      "focus": "Stopping review: for EACH targeted supported causal premise, explicitly decide whether its origin is already explained by the board, requires a scoped upstream specialist, is blocked by an identified evidence boundary, or is context/out of scope with a reason. Schedule immediately useful upstream work where justified. Review prior completed work before requesting anything. An unknown sibling mechanism does not close independent upstream branches. This is a coverage review, not an instruction to invent origins or repeat unavailable requests.",
+      "target_ids": [
+        "N_R3LimitedRecoveredCondition",
+        "N_WP031NoBlockRetentionInstruction"
+      ],
+      "signature": "3a235430ac9f8e79b2e7abc5a48d361003a47afcc7e90c2917a6f69ebda40814",
+      "accepted": true,
+      "source_revision": 4,
+      "call_path": "calls/0009_lead"
+    }
+  ],
+  "queued_jobs": [],
+  "feedback": {
+    "accepted": true,
+    "operations": 0,
+    "changed": 0,
+    "noops": [],
+    "reason": null,
+    "invalidated_ids": [],
+    "committed": true,
+    "operations_accepted": true,
+    "dispatch": []
+  },
+  "runtime_contract": "2026-10-04-dependency-repair-2",
+  "source_changes": {},
+  "reassessment_required": [],
+  "dependency_relations": {
+    "N_FocalEvent_R3BeamFall": {
+      "source_evidence": [
+        "D01"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "R_R3MotionRecord": {
+      "source_evidence": [
+        "D01",
+        "D02",
+        "D04",
+        "D15"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": [
+        "N_FocalEvent_R3BeamFall"
+      ]
+    },
+    "R_R3HydraulicRecords": {
+      "source_evidence": [
+        "D01",
+        "D02",
+        "D04",
+        "D15"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": [
+        "N_FocalEvent_R3BeamFall"
+      ]
+    },
+    "R_R3ExecutionIsolation": {
+      "source_evidence": [
+        "D01",
+        "D02",
+        "D04",
+        "D15"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": [
+        "N_FocalEvent_R3BeamFall"
+      ]
+    },
+    "R_R3InspectionPhotos": {
+      "source_evidence": [
+        "D01",
+        "D02",
+        "D04",
+        "D15"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": [
+        "N_FocalEvent_R3BeamFall"
+      ]
+    },
+    "N_R3LimitedRecoveredCondition": {
+      "source_evidence": [
+        "D01"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [
+        "R_R3InspectionPhotos"
+      ],
+      "investigation_targets": []
+    },
+    "N_WP031NoBlockRetentionInstruction": {
+      "source_evidence": [
+        "D04"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [
+        "R_R3ExecutionIsolation"
+      ],
+      "investigation_targets": []
+    },
+    "N_R3HydraulicWithdrawalUnresolved": {
+      "source_evidence": [
+        "D01",
+        "D02",
+        "D15"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [
+        "R_R3HydraulicRecords",
+        "R_R3MotionRecord"
+      ],
+      "investigation_targets": []
+    },
+    "N_R3KeeperBypassUnresolved": {
+      "source_evidence": [
+        "D02",
+        "D15"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [
+        "R_R3InspectionPhotos",
+        "R_R3MotionRecord"
+      ],
+      "investigation_targets": []
+    },
+    "N_R3ActualBlockAbsentUnresolved": {
+      "source_evidence": [
+        "D02",
+        "D04"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [
+        "R_R3ExecutionIsolation"
+      ],
+      "investigation_targets": []
+    },
+    "E_R3HydraulicWithdrawalKeeperBypassToFall": {
+      "source_evidence": [
+        "D01",
+        "D02",
+        "D04",
+        "D15"
+      ],
+      "proof_records": [
+        "N_FocalEvent_R3BeamFall",
+        "N_R3ActualBlockAbsentUnresolved",
+        "N_R3HydraulicWithdrawalUnresolved",
+        "N_R3KeeperBypassUnresolved"
+      ],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "E_WP031OmissionToBlockAbsence": {
+      "source_evidence": [
+        "D04"
+      ],
+      "proof_records": [
+        "N_R3ActualBlockAbsentUnresolved",
+        "N_WP031NoBlockRetentionInstruction"
+      ],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    }
+  },
+  "upstream_dispositions": {
+    "N_R3LimitedRecoveredCondition": {
+      "target_id": "N_R3LimitedRecoveredCondition",
+      "action": "blocked",
+      "reason": "The board supports only D01.S02's limited initial observations that the keeper plate was bolted to the recovered assembly and fracture was not reported; D01.S02 expressly does not establish a release mechanism. The relevant acquisition route is already open as R_R3InspectionPhotos, which is partial: the searched collection lacks retained inspection photographs, detailed keeper/fastener condition, deformation/NDE/dimensional checks, seating/contact measurements, lateral-offset/dynamic-path marks, and preservation history. Reopen upstream assessment if retained inspection photos/measurements, NDE/dimensional records, preservation notes, or a custodian answer are produced.",
+      "record_ids": [
+        "N_R3LimitedRecoveredCondition",
+        "R_R3InspectionPhotos"
+      ],
+      "source_ids": [
+        "D01",
+        "D02",
+        "D15"
+      ],
+      "call_path": "calls/0009_lead",
+      "source_revision": 4
+    },
+    "N_WP031NoBlockRetentionInstruction": {
+      "target_id": "N_WP031NoBlockRetentionInstruction",
+      "action": "blocked",
+      "reason": "The board supports only D04.S01 procedure-text content: WP-031 called for electrical isolation and hydraulic valve closure and omitted positive yoke block/retention-envelope verification instructions. D04.S03 expressly says this does not establish what workers actually did or why the omission existed. The relevant acquisition route is already open as R_R3ExecutionIsolation, which remains awaiting_user and lacks completed WP-031 forms, isolation/LOTO records, signoffs, authorization/deviation records, risk assessment, or other records explaining the omission. Reopen upstream assessment if those execution or procedure-basis records are produced.",
+      "record_ids": [
+        "N_WP031NoBlockRetentionInstruction",
+        "R_R3ExecutionIsolation"
+      ],
+      "source_ids": [
+        "D04",
+        "D01"
+      ],
+      "call_path": "calls/0009_lead",
+      "source_revision": 4
+    }
+  },
+  "sources": [
+    {
+      "id": "D01",
+      "title": "R3 delivery carrier beam - initial event notice",
+      "content": "D01.S01 Event\nAt 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. No person was struck. The assembly had been parked raised after backup-roll removal during the outage.\n\nD01.S02 Initial observations\nThe keeper plate was found bolted to the recovered assembly. The beam and yoke were not reported fractured. These are initial condition observations, not a conclusion about the release mechanism.\n\nD01.S03 Available leads\nA motion record, work package, isolation records, inspection photographs and hydraulic records have been retained. Their coverage and applicability must be checked. The cause of the event is not stated in this notice.",
+      "revision": "0",
+      "version": 1,
+      "kind": "record",
+      "request_ids": [],
+      "hash": "d7c93970242e7625b654b3f00393a24b8848989127b2346110ea04a114f742ed",
+      "origin_name": "D01.json"
+    },
+    {
+      "id": "D02",
+      "title": "R3 raised assembly - functional system description",
+      "content": "D02.S01 Applicability\nThis functional description applies to R3 assembly set CB-3/YK-3 in the maintenance configuration with backup rolls removed. It specifies the equipment model used in this record set. It is not an operating or isolation instruction.\n\nD02.S02 Load and fluid paths\nYoke YK-3 follows support cylinder C17 at a 1:1 vertical displacement ratio. The effective support area is 100 cm2. With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel under load. The isolated test boundary has one chamber-to-return path through valve V17; external leakage and alternate return paths are separately monitored.\n\nD02.S03 Position versus sealing\nThe V17 CLOSED limit switch detects handle position. It does not measure seat leakage. Motor/pump supply being isolated does not prove that the raised assembly is mechanically restrained or that trapped fluid cannot leave the chamber.\n\nD02.S04 Geometry and interference\nThe carrier normally seats on the yoke. Mill post/spreader contact can temporarily hold the carrier vertically while the yoke moves down. Relative vertical withdrawal is yoke downward travel minus carrier downward travel over the same interval. Temporary interference contact is not a designed mechanical block.\n\nD02.S05 Primary and secondary retention\nIn the defined seated starting state, primary vertical seating engagement is 30 mm. Relative downward withdrawal of the yoke of at least 30 mm eliminates that primary seating engagement. This rule does not prove that the keeper is bypassed. Keeper engagement additionally depends on lateral offset and the dynamic path; those conditions require their own evidence.\n\nD02.S06 Energy\nGravity remains available while the assembly is raised. Electrical isolation, hydraulic handle position and positive mechanical restraint are distinct conditions. No rule here states that a leaking valve alone is sufficient to make the carrier fall.",
+      "revision": "C",
+      "version": 1,
+      "kind": "specification",
+      "request_ids": [],
+      "hash": "9d6e5a7b85f27ab6d8bed417456ed9f16ba9c44c46b3dea171a704fc5218b8e5",
+      "origin_name": "D02.json"
+    },
+    {
+      "id": "D04",
+      "title": "Stripper-box changeout - task isolation package",
+      "content": "D04.S01 Scope\nTask WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal. The package calls for electrical supply isolation and hydraulic valve closure. The task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope.\n\nD04.S02 Circuit nomenclature\nThe cover calls the supply group B hydraulics. A worksheet calls support-chamber trapped energy A. These names are not circuit identities. Use the tag schedule: C17 support chamber and V17 return-isolation valve belong to the raised balance assembly. Do not substitute unrelated A/B circuit records based on the letter alone.\n\nD04.S03 Interpretation limit\nA procedural omission is distinct from proof of what workers did. Execution records are needed to establish whether a block was actually present. This document does not establish why the procedure omitted that step.",
+      "revision": "3",
+      "version": 1,
+      "kind": "procedure extract",
+      "request_ids": [],
+      "hash": "a5a2cb42b05418153a97e1bb8ffa23d61f1f5d8ebd33227aad18bacd442da5ee",
+      "origin_name": "D04.json"
+    },
+    {
+      "id": "D15",
+      "title": "Preliminary investigation note - unreviewed",
+      "content": "D15.S01 Draft interpretation\nThe writer suggests that the closed valve indication proves hydraulic isolation and that the installed keeper should have prevented all movement. The writer therefore suspects excess clearance.\n\nD15.S02 Basis and status\nThis note cites only the initial event notice and handle-status entry. It contains no leak measurement, retention-envelope calculation or independent witness account. Status: unreviewed interpretation, not an additional observation.\n\nD15.S03 Source lineage\nThe attached action summary was copied from the initial investigation meeting. Repetition in this note is not independent corroboration.",
+      "revision": "0",
+      "version": 1,
+      "kind": "preliminary memo",
+      "request_ids": [],
+      "hash": "54b0de4652a17c15ec9ec74be89e34bca7751c2ea8bc02a8aef58b9adf14b798",
+      "origin_name": "D15.json"
+    },
+    {
+      "id": "D07",
+      "title": "CAM-3 motion measurement and coverage report",
+      "content": "D07.S01 Record identity\nSource CAM-3, frames indexed to the plant clock. The incident clip is continuous from 13:00:00 to 13:24:10. Vertical reference marks were surveyed before extraction. This report concerns vertical motion only.\n\nD07.S02 Measured interval\nBetween 13:00:00 and 13:24:00, yoke downward displacement is 40 +/- 1 mm and carrier downward displacement is 0 +/- 1 mm. The defined seated start was visible at 13:00. Post/spreader contact remained visible during this interval. Displacements share the same reference frame and time window.\n\nD07.S03 Release\nAt 13:24:03 the carrier starts downward travel into the pit. The keeper-to-yoke interface and lateral offset are occluded during the release. The clip cannot distinguish transient offset, rotation or local deformation as the keeper-bypass mechanism.\n\nD07.S04 Coverage limits\nNo contact from an overhead crane or its load is visible within the fully covered carrier envelope from 13:00 to 13:24:03. Temporal and spatial resolution are sufficient to detect direct crane/load contact within that envelope during this interval. Coverage does not exclude an earlier disturbance or all conceivable contact outside that envelope. Measurement uncertainty is bounded as stated; it is not a confidence percentage.",
+      "revision": "1",
+      "version": 1,
+      "kind": "measurement report",
+      "request_ids": [
+        "R_R3MotionRecord"
+      ],
+      "hash": "dfa2b78509c164e6e2c7e114dd899196622c6658062fc582923896c7e33442a8",
+      "origin_name": "D07.json"
+    },
+    {
+      "id": "D08",
+      "title": "C17 boundary measurements - incident interval",
+      "content": "D08.S01 Identity and time\nTags verified against C17/V17 in D02 and the WP-031 tag schedule. The records cover 13:00:00 to 13:24:00 on 14 October 2024, synchronized with CAM-3. They do not use the circuit nickname as identity.\n\nD08.S02 Measured quantities\nV17 CLOSED indication remains 1. The calibrated meter on the only C17-to-return route through V17 records 0.400 +/- 0.010 litres leaving the chamber. External loss is below 0.002 litres; the boundary inspection finds no alternate return route. Instrument checks passed before and after this interval.\n\nD08.S03 Model limits\nUse 100 cm2 effective area and 1:1 cylinder-to-yoke travel. Within this specified boundary, compression and temperature effects are negligible within the stated uncertainty. No independent block was present. Do not generalize these simplifications to an unspecified machine.\n\nD08.S04 Interpretation boundary\nThe meter records chamber fluid leaving through the tagged route despite closed-position indication. It does not establish valve wear age, contamination, prior inspection decisions or why the carrier bypassed its keeper.",
+      "revision": "1",
+      "version": 1,
+      "kind": "instrument report",
+      "request_ids": [
+        "R_R3HydraulicRecords"
+      ],
+      "hash": "c1ff60ad7daf77e72dc9bb183b01facd31d1189286f5d350fb46d402679f0a40",
+      "origin_name": "D08.json"
+    },
+    {
+      "id": "D09",
+      "title": "V17 removed-valve examination and bench test",
+      "content": "D09.S01 Custody\nValve tag V17 was photographed before removal after the event and retained in a sealed parts bag. No seat adjustment or cleaning preceded testing. Custody supports component identity, not a timestamp for every defect.\n\nD09.S02 Test conditions and results\nAt the specified loaded-direction differential used for this fixture, the handle and limit switch indicated CLOSED. Reverse leakage measured 17 +/- 2 mL/min on three repeats. The external body did not leak. A later examination shows seat contamination; its arrival time is unknown.\n\nD09.S03 Scope\nThis later test establishes bench behavior at examination and is compatible with the incident-route measurement. It alone does not establish the earlier leakage rate or prove when contamination developed. A successful later functional test would likewise not exclude every earlier intermittent condition.",
+      "revision": "0",
+      "version": 1,
+      "kind": "test report",
+      "request_ids": [
+        "R_R3HydraulicRecords"
+      ],
+      "hash": "007cd1b76641878938ce4584b9159371a90638cbb9e716fa009d2ee712d5ca34",
+      "origin_name": "D09.json"
+    },
+    {
+      "id": "D05",
+      "title": "WP-031 - configuration and isolation execution record",
+      "content": "D05.S01 Configuration entries\nAt 12:52 backup rolls were removed. At 12:57 the balance was raised. At 13:00 electrical isolation was recorded complete and the V17 handle was recorded CLOSED. These entries establish reported execution, not valve tightness.\n\nD05.S02 Restraint observation\nA configuration photograph taken at 13:00 and reviewed against the block locations shows no independent positive block under YK-3. The carrier is in contact with the mill post/spreader. The photo does not resolve keeper overlap.\n\nD05.S03 Verification coverage\nNo loaded hold test, chamber-volume test or keeper-envelope check was recorded before work began. The absence of these entries does not prove deliberate noncompliance or explain the origin of any component defect.",
+      "revision": "0",
+      "version": 1,
+      "kind": "record",
+      "request_ids": [
+        "R_R3HydraulicRecords",
+        "R_R3ExecutionIsolation"
+      ],
+      "hash": "55d1aa9e338d6a1a6c6b3e4f3242d4857410045ffded8ad8c878943f0fa3d287",
+      "origin_name": "D05.json"
+    },
+    {
+      "id": "USER_5258a84a5f5b",
+      "title": "User response to R_R3ExecutionIsolation",
+      "content": "R3 benchmark record desk: the supplied package contains no additional record answering the following requested scope: completed WP-031 steps and signoffs; authorization and reason for any omitted restraint or retention-envelope verification. This is a limit of this supplied package, not evidence that the historical activity or record never existed. The physical explanation remains for investigation.",
+      "revision": "0",
+      "version": 1,
+      "kind": "user_testimony",
+      "request_ids": [
+        "R_R3ExecutionIsolation"
+      ],
+      "hash": "67976e11f8fe2a8b2d0ff9354f4ed685acd491081d48f749059175abc1d320fb",
+      "origin_name": "user_input"
+    },
+    {
+      "id": "D14",
+      "title": "Recovered assembly - condition inspection",
+      "content": "D14.S01 Custody and examination\nCB-3 and YK-3 were photographed after recovery. Keeper fasteners remain installed and the plate remains attached. The full plate and fasteners show no gross separation or fracture. This inspection does not establish dynamic overlap during release.\n\nD14.S02 Condition\nWitness marks are present on the carrier and mill post/spreader contact surfaces. The marks are consistent with contact but cannot alone date when contact began or establish the exact load carried.\n\nD14.S03 Limits\nNo material record supports a fatigue-fracture explanation of a keeper bolt in this examination. Unmeasured deformation and the off-center release path remain separate questions.",
+      "revision": "0",
+      "version": 1,
+      "kind": "inspection report",
+      "request_ids": [
+        "R_R3InspectionPhotos"
+      ],
+      "hash": "70a5efb0ed09306aa6804691f977772068e354d0776e9516a73dd85ec4bdc079",
+      "origin_name": "D14.json"
+    },
+    {
+      "id": "D10",
+      "title": "CB-3/YK-3 clearance and engagement review",
+      "content": "D10.S01 Inputs\nUse current revision C, a 30 mm initial primary seat, and the signed convention: positive means downward travel. Relative withdrawal equals yoke travel minus carrier travel. Bounded errors are combined by interval arithmetic, not by assuming independence.\n\nD10.S02 Seated check\nAt the centered, seated post-event inspection position the keeper overlap is 8 +/- 1 mm. Under the rigid centered seated geometry, simple vertical passage over the yoke is not possible. This test does not reproduce the incident offset or rotation.\n\nD10.S03 Open calculation\nThe incident lateral offset and release rotation are not measured. An approved off-center dynamic retention envelope is unavailable. Primary seating loss can be assessed from supplied vertical data; keeper bypass cannot be resolved from that calculation alone.\n\nD10.S04 Required follow-up\nObtain a time-relevant lateral/rotation measurement or a validated retention-envelope analysis with an independently bounded incident offset. Repeating the centered seated measurement without new scope does not answer the dynamic question.",
+      "revision": "0",
+      "version": 1,
+      "kind": "engineering review",
+      "request_ids": [
+        "R_R3InspectionPhotos"
+      ],
+      "hash": "76e0a39cc2f5c7e891577ae263b53f97ae603fd62ddc6f15faf602fef51e2f70",
+      "origin_name": "D10.json"
+    },
+    {
+      "id": "D13",
+      "title": "R3 corrective-action proposal register",
+      "content": "D13.S01 Proposals\nPropose a travel stop for the backup-roll-removed configuration; review keeper coverage through offset travel; evaluate a positive raised-yoke block; replace V17; review stored-energy controls.\n\nD13.S02 Status\nAll entries are Identified. Effectiveness criteria have not been checked and implementation is not documented in this register.\n\nD13.S03 Limit\nA proposed modification is not evidence that the existing feature was absent, that its absence caused this event, or that the proposed design has been validated.",
+      "revision": "0",
+      "version": 1,
+      "kind": "action register",
+      "request_ids": [],
+      "hash": "e38b747b3a7d8453b34cc5335ae4e4cdf9fd6016a80594518d7f5957fc897d39",
+      "origin_name": "D13.json"
+    }
+  ]
+}

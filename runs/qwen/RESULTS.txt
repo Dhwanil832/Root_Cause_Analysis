@@ -1,0 +1,12 @@
+Fresh Qwen replication from the packaged scored fallback.
+
+Two new Ollama calls; both request payloads, generated answers and validation files are byte-identical to the historical scored fallback run.
+Same model digest, Ollama version, native context, temperature, seed, thinking=false and frozen runtime.
+
+Result: 17/96 raw expected-content presence, 17/96 consistency, 5 missing, 74 not reached; 0 committed nodes/edges/requests. Stage scores S01=5/8, S02=7/8, S03=5/8 (two opportunities unreached); remaining stages unreached.
+
+Intake rejected: physical node populated request-only asset/window/fields. Lead rejected: attempted to revise the rejected event, which never existed in the committed ledger. The controller queues another lead assignment, sets needs_attention, and exits. Launcher prevents implicit continuation of needs_attention.
+
+S03 is a rubric grouping, not a three-stage runtime cutoff. The S01-S03 scores are extracted from two early answers. Missing later scores do not measure later causal reasoning ability.
+
+Original manual annotations reapplied after exact fresh-output equivalence; this is not independent re-adjudication. See replication-verification.json and reviewed-annotations.json.

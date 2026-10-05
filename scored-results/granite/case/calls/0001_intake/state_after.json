@@ -1,0 +1,397 @@
+{
+  "description": "At 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold. Investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+  "sources": {
+    "D01": {
+      "id": "D01",
+      "title": "R3 delivery carrier beam - initial event notice",
+      "content": "D01.S01 Event\nAt 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. No person was struck. The assembly had been parked raised after backup-roll removal during the outage.\n\nD01.S02 Initial observations\nThe keeper plate was found bolted to the recovered assembly. The beam and yoke were not reported fractured. These are initial condition observations, not a conclusion about the release mechanism.\n\nD01.S03 Available leads\nA motion record, work package, isolation records, inspection photographs and hydraulic records have been retained. Their coverage and applicability must be checked. The cause of the event is not stated in this notice.",
+      "revision": "0",
+      "version": 1,
+      "kind": "record",
+      "request_ids": [],
+      "hash": "d7c93970242e7625b654b3f00393a24b8848989127b2346110ea04a114f742ed",
+      "origin_name": "D01.json"
+    },
+    "D02": {
+      "id": "D02",
+      "title": "R3 raised assembly - functional system description",
+      "content": "D02.S01 Applicability\nThis functional description applies to R3 assembly set CB-3/YK-3 in the maintenance configuration with backup rolls removed. It specifies the equipment model used in this record set. It is not an operating or isolation instruction.\n\nD02.S02 Load and fluid paths\nYoke YK-3 follows support cylinder C17 at a 1:1 vertical displacement ratio. The effective support area is 100 cm2. With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel under load. The isolated test boundary has one chamber-to-return path through valve V17; external leakage and alternate return paths are separately monitored.\n\nD02.S03 Position versus sealing\nThe V17 CLOSED limit switch detects handle position. It does not measure seat leakage. Motor/pump supply being isolated does not prove that the raised assembly is mechanically restrained or that trapped fluid cannot leave the chamber.\n\nD02.S04 Geometry and interference\nThe carrier normally seats on the yoke. Mill post/spreader contact can temporarily hold the carrier vertically while the yoke moves down. Relative vertical withdrawal is yoke downward travel minus carrier downward travel over the same interval. Temporary interference contact is not a designed mechanical block.\n\nD02.S05 Primary and secondary retention\nIn the defined seated starting state, primary vertical seating engagement is 30 mm. Relative downward withdrawal of the yoke of at least 30 mm eliminates that primary seating engagement. This rule does not prove that the keeper is bypassed. Keeper engagement additionally depends on lateral offset and the dynamic path; those conditions require their own evidence.\n\nD02.S06 Energy\nGravity remains available while the assembly is raised. Electrical isolation, hydraulic handle position and positive mechanical restraint are distinct conditions. No rule here states that a leaking valve alone is sufficient to make the carrier fall.",
+      "revision": "C",
+      "version": 1,
+      "kind": "specification",
+      "request_ids": [],
+      "hash": "9d6e5a7b85f27ab6d8bed417456ed9f16ba9c44c46b3dea171a704fc5218b8e5",
+      "origin_name": "D02.json"
+    },
+    "D04": {
+      "id": "D04",
+      "title": "Stripper-box changeout - task isolation package",
+      "content": "D04.S01 Scope\nTask WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal. The package calls for electrical supply isolation and hydraulic valve closure. The task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope.\n\nD04.S02 Circuit nomenclature\nThe cover calls the supply group B hydraulics. A worksheet calls support-chamber trapped energy A. These names are not circuit identities. Use the tag schedule: C17 support chamber and V17 return-isolation valve belong to the raised balance assembly. Do not substitute unrelated A/B circuit records based on the letter alone.\n\nD04.S03 Interpretation limit\nA procedural omission is distinct from proof of what workers did. Execution records are needed to establish whether a block was actually present. This document does not establish why the procedure omitted that step.",
+      "revision": "3",
+      "version": 1,
+      "kind": "procedure extract",
+      "request_ids": [],
+      "hash": "a5a2cb42b05418153a97e1bb8ffa23d61f1f5d8ebd33227aad18bacd442da5ee",
+      "origin_name": "D04.json"
+    },
+    "D15": {
+      "id": "D15",
+      "title": "Preliminary investigation note - unreviewed",
+      "content": "D15.S01 Draft interpretation\nThe writer suggests that the closed valve indication proves hydraulic isolation and that the installed keeper should have prevented all movement. The writer therefore suspects excess clearance.\n\nD15.S02 Basis and status\nThis note cites only the initial event notice and handle-status entry. It contains no leak measurement, retention-envelope calculation or independent witness account. Status: unreviewed interpretation, not an additional observation.\n\nD15.S03 Source lineage\nThe attached action summary was copied from the initial investigation meeting. Repetition in this note is not independent corroboration.",
+      "revision": "0",
+      "version": 1,
+      "kind": "preliminary memo",
+      "request_ids": [],
+      "hash": "54b0de4652a17c15ec9ec74be89e34bca7751c2ea8bc02a8aef58b9adf14b798",
+      "origin_name": "D15.json"
+    }
+  },
+  "source_revision": 4,
+  "ledger": {},
+  "history": [],
+  "events": [
+    {
+      "seq": 1,
+      "at": "2026-10-05T16:14:17.148917+00:00",
+      "kind": "source_received",
+      "source_id": "D01",
+      "request_id": null,
+      "kind_of_source": "record"
+    },
+    {
+      "seq": 2,
+      "at": "2026-10-05T16:14:17.149221+00:00",
+      "kind": "source_received",
+      "source_id": "D02",
+      "request_id": null,
+      "kind_of_source": "specification"
+    },
+    {
+      "seq": 3,
+      "at": "2026-10-05T16:14:17.149392+00:00",
+      "kind": "source_received",
+      "source_id": "D04",
+      "request_id": null,
+      "kind_of_source": "procedure extract"
+    },
+    {
+      "seq": 4,
+      "at": "2026-10-05T16:14:17.149674+00:00",
+      "kind": "source_received",
+      "source_id": "D15",
+      "request_id": null,
+      "kind_of_source": "preliminary memo"
+    },
+    {
+      "seq": 5,
+      "at": "2026-10-05T16:14:17.149677+00:00",
+      "kind": "case_created",
+      "initial_source_ids": [
+        "D01",
+        "D02",
+        "D04",
+        "D15"
+      ]
+    },
+    {
+      "seq": 6,
+      "at": "2026-10-05T16:16:09.655403+00:00",
+      "kind": "model_step",
+      "role": "intake",
+      "job_id": "initial",
+      "call_path": "calls/0001_intake",
+      "validation": {
+        "accepted": false,
+        "operations": 2,
+        "reason": "request_needs_scope_and_fields",
+        "operations_accepted": false,
+        "committed": false,
+        "errors": [
+          {
+            "code": "request_needs_scope_and_fields",
+            "phase": "controller",
+            "operation_index": 1,
+            "record_id": "R01",
+            "path": "$.operations[1].record",
+            "actual": {
+              "id": "R01",
+              "kind": "request",
+              "scope_key": "R3_carrier_beam_incident",
+              "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, preserving evidence limits.",
+              "status": "proposed",
+              "sources": [
+                "D01",
+                "D02",
+                "D04"
+              ],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": null,
+              "window": null,
+              "fields": [
+                "initial_observations",
+                "functional_system_description",
+                "task_isolation_package"
+              ]
+            },
+            "expected": "Nonempty asset, window and fields",
+            "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch."
+          }
+        ],
+        "validation_scope": "First blocking error; later dependent operations have not been validated.",
+        "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+      }
+    }
+  ],
+  "queue": [
+    {
+      "kind": "lead",
+      "tag": "",
+      "focus": "Review completed proposals/evidence, update the board and select the next immediately useful work.",
+      "target_ids": [],
+      "id": "9da790e0738f7038"
+    }
+  ],
+  "completed_jobs": [
+    {
+      "kind": "intake",
+      "tag": "",
+      "focus": "Understand the focal incident, scope and immediate ambiguities.",
+      "target_ids": [],
+      "signature": "1f6ac1a6a4e6624702fc3313a003b41337808d34ea966ae460f6890870a4fb4c",
+      "accepted": false,
+      "source_revision": 4,
+      "call_path": "calls/0001_intake"
+    }
+  ],
+  "calls": [
+    {
+      "role": "intake",
+      "job_id": "initial",
+      "path": "calls/0001_intake",
+      "decision": "The focal event is identified as the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold but not causing any personnel injury. The assembly had been parked and raised after backup-roll removal during an outage. Initial observations noted the keeper plate was bolted to the assembly, and the beam and yoke were not reported fractured. The cause of the event is not explicitly stated in the initial event notice.",
+      "validation": {
+        "accepted": false,
+        "operations": 2,
+        "reason": "request_needs_scope_and_fields",
+        "operations_accepted": false,
+        "committed": false,
+        "errors": [
+          {
+            "code": "request_needs_scope_and_fields",
+            "phase": "controller",
+            "operation_index": 1,
+            "record_id": "R01",
+            "path": "$.operations[1].record",
+            "actual": {
+              "id": "R01",
+              "kind": "request",
+              "scope_key": "R3_carrier_beam_incident",
+              "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, preserving evidence limits.",
+              "status": "proposed",
+              "sources": [
+                "D01",
+                "D02",
+                "D04"
+              ],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": null,
+              "window": null,
+              "fields": [
+                "initial_observations",
+                "functional_system_description",
+                "task_isolation_package"
+              ]
+            },
+            "expected": "Nonempty asset, window and fields",
+            "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch."
+          }
+        ],
+        "validation_scope": "First blocking error; later dependent operations have not been validated.",
+        "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+      }
+    }
+  ],
+  "feedback": {
+    "accepted": false,
+    "operations": 2,
+    "reason": "request_needs_scope_and_fields",
+    "operations_accepted": false,
+    "committed": false,
+    "errors": [
+      {
+        "code": "request_needs_scope_and_fields",
+        "phase": "controller",
+        "operation_index": 1,
+        "record_id": "R01",
+        "path": "$.operations[1].record",
+        "actual": {
+          "id": "R01",
+          "kind": "request",
+          "scope_key": "R3_carrier_beam_incident",
+          "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, preserving evidence limits.",
+          "status": "proposed",
+          "sources": [
+            "D01",
+            "D02",
+            "D04"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": [
+            "initial_observations",
+            "functional_system_description",
+            "task_isolation_package"
+          ]
+        },
+        "expected": "Nonempty asset, window and fields",
+        "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch."
+      }
+    ],
+    "validation_scope": "First blocking error; later dependent operations have not been validated.",
+    "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+  },
+  "phase": "ready",
+  "last_decision": "",
+  "proposals": [
+    {
+      "role": "intake",
+      "assignment": {
+        "id": "initial",
+        "kind": "intake",
+        "tag": "",
+        "focus": "Understand the focal incident, scope and immediate ambiguities.",
+        "target_ids": []
+      },
+      "output": {
+        "decision": "The focal event is identified as the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold but not causing any personnel injury. The assembly had been parked and raised after backup-roll removal during an outage. Initial observations noted the keeper plate was bolted to the assembly, and the beam and yoke were not reported fractured. The cause of the event is not explicitly stated in the initial event notice.",
+        "operations": [
+          {
+            "action": "create",
+            "expected_version": 0,
+            "replaces": null,
+            "reason": "This operation creates a reported focal event node with the provided details, setting the stage for further investigation.",
+            "record": {
+              "id": "E01",
+              "kind": "node",
+              "scope_key": "R3_carrier_beam_incident",
+              "claim": "The R3 delivery carrier beam fell into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold without personnel injury.",
+              "status": "reported",
+              "sources": [
+                "D01"
+              ],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": null,
+              "window": null,
+              "fields": []
+            }
+          },
+          {
+            "action": "create",
+            "expected_version": 0,
+            "replaces": null,
+            "reason": "This operation creates a proposed request to investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+            "record": {
+              "id": "R01",
+              "kind": "request",
+              "scope_key": "R3_carrier_beam_incident",
+              "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, preserving evidence limits.",
+              "status": "proposed",
+              "sources": [
+                "D01",
+                "D02",
+                "D04"
+              ],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": null,
+              "window": null,
+              "fields": [
+                "initial_observations",
+                "functional_system_description",
+                "task_isolation_package"
+              ]
+            }
+          }
+        ],
+        "next_work": [
+          {
+            "kind": "specialist",
+            "tag": "mechanical_engineering",
+            "focus": "Analyze the physical mechanism of the R3 delivery carrier beam failure.",
+            "target_ids": [
+              "E01"
+            ]
+          },
+          {
+            "kind": "specialist",
+            "tag": "hydraulic_systems",
+            "focus": "Investigate hydraulic system behavior and potential contributions to the incident.",
+            "target_ids": [
+              "E01"
+            ]
+          },
+          {
+            "kind": "specialist",
+            "tag": "procedural_compliance",
+            "focus": "Review task isolation package D04 for compliance and potential omissions related to positive yoke block installation and off-center carrier retention verification.",
+            "target_ids": [
+              "E01"
+            ]
+          }
+        ],
+        "upstream_dispositions": [],
+        "disposition": "waiting"
+      },
+      "call_path": "calls/0001_intake"
+    }
+  ],
+  "execution_profile": {
+    "provider": "ollama_macos_pilot",
+    "model": "granite3.3:8b",
+    "digest": "fd429f23b90980ed1bef53b990894e7b0199331f6ae90c5650240a7d5b70f1f7",
+    "server_version": "0.32.3",
+    "think": false,
+    "thinking_supported": false,
+    "truncate": false,
+    "shift": false,
+    "timeout_seconds": null,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "num_predict": -1,
+      "num_ctx": 131072
+    },
+    "require_full_gpu": false
+  },
+  "execution_profile_hash": "27a904bd558a8ffe31dbd35385c7ac85c9d420a8eb6a17d45e39e52d3fb27d72",
+  "runtime_contract": "2026-10-04-dependency-repair-2",
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "attempt_count": 1,
+  "last_update": {
+    "role": "intake",
+    "decision": "The focal event is identified as the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold but not causing any personnel injury. The assembly had been parked and raised after backup-roll removal during an outage. Initial observations noted the keeper plate was bolted to the assembly, and the beam and yoke were not reported fractured. The cause of the event is not explicitly stated in the initial event notice.",
+    "accepted": false,
+    "committed": false,
+    "call_path": "calls/0001_intake"
+  }
+}

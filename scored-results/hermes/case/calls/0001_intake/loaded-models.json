@@ -1,0 +1,23 @@
+{
+  "models": [
+    {
+      "name": "hermes3:8b",
+      "model": "hermes3:8b",
+      "size": 22328702400,
+      "digest": "4f6b83f30b62bc3d0cf9be09266db222805ee815c8fd7d8b38f863f655be78b7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_0"
+      },
+      "expires_at": "2319-01-15T10:06:26.783082807-06:00",
+      "size_vram": 17819301313,
+      "context_length": 131072
+    }
+  ]
+}

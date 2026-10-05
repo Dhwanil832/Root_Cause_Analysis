@@ -1,0 +1,40 @@
+{
+  "source": "/Users/dhwanilchauhan/Desktop/RCA Try 1/New RCA Harness/prototype",
+  "runtime_contract": "2026-10-04-dependency-repair-2",
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "effective_prompt_hashes": {
+    "intake": "031a194cc570a942f03aa10acfbe68b46a98b717e0071bd82fb2bb61a13efdf0",
+    "lead": "087e851bbde34112e5fbae143d19c0d2ccbf61c1350306dbebc4aff69304dd28",
+    "specialist": "ca477ce02a745ea580de6cfbc84c7fb5f4de3f2cc1d2d50d0f9580c82077dd04",
+    "evidence": "fa7f69f2e098d95be68eefeb3d39c2b8b3daef28fd91ed62b50d31f2a41392e2",
+    "assessor": "8916f033ab7070580833ba3a6f7db3f5902185bfaade3f9722416138a0dd78fc"
+  },
+  "files": {
+    "prototype/CONTRACT.md": "0c155b97c44945b1c9a0b5554b317e34f30450ebb64930ffc56eb30a94f7c470",
+    "prototype/README.md": "7c528b7ed8b3c46b53c0a567807eba79ef133bed7ca5d52ca645e64fc1bc41c9",
+    "prototype/rca/freshness.py": "80876970a6f6e23ae4647663b81f16ee7ad378260fdd113d5ff3058204dd6271",
+    "prototype/rca/server.py": "074e5219ad2d7496d72596c046189dccf4ffb11347c06f27ff38a019ce1ea124",
+    "prototype/rca/ui.js": "e1b369c8fea57f520fb3fb834e53e7c7a0c4ebb5191326e119997c1276723e8e",
+    "prototype/rca/controller.py": "65d17631039dec8bd328e9dfe66b7e8a7dcf85adcc32c4fce669fb2e8f1186e3",
+    "prototype/rca/provider.py": "bf461be0c369c586b945a514f16a35cac6bd6d3ed6cfd0b89a0dd03cfd65864a",
+    "prototype/rca/documents.py": "f38cc5cb09e48e656903445f30846bab54b70c35cf238e625b0f1001dba665f7",
+    "prototype/rca/ui_state.js": "b2ae9c7d7389a59e4772a3cfd12a55eda5578aecbf56df387aa707c9e97424e0",
+    "prototype/rca/__init__.py": "659e01744e7f2c8226e46e9855b93a184418b3863ecc1e4cee620868beccc726",
+    "prototype/rca/ui.html": "5841b728db2cfb33bd67a1a4181826a1917b6807f3121c5f87343cbf8917c83c",
+    "prototype/rca/prompts.py": "3b1931d3a4ed532db3321879795c327d9ba5bf266cf45be89b59bcf22e4d8283",
+    "prototype/rca/engine.py": "a461160cf459e2a1ba76f5ad9a7f77f3ee47cd1153d8c6a54d704d6b0115e6ae",
+    "prototype/rca/storage.py": "6ebe09eeb92af7b53e65004306e927e4710902735ddb9e8f1d5c9f0169634185",
+    "prototype/rca/contract.py": "ce688cc67d60fb2f17d4e67c34c19925390dd48f2e32a11a935d7f5caf6acf0d",
+    "prototype/rca/schema.py": "4eb5bcfd61dcf52cc14e736ff55829b0c7909dc006313d1542b7b0a78f47d581",
+    "experiments/U05-r3-three-arm/prompts/retrieval.txt": "5a721dd73461eb90e151a5d1cadfc3d04029019ef2ac159ea588625a66c42948",
+    "experiments/U05-r3-three-arm/prompts/reconciliation.txt": "c0d20888c13403fb3895704a893900dc1caa0bedf046424acc3c06b222ce0625",
+    "experiments/U05-r3-three-arm/prompts/specialist.txt": "ae1dc8bdd0ff20d3219f8dc5bb4ed5a8471868da5a28f7a83607e670a43c3c55",
+    "experiments/U05-r3-three-arm/prompts/requests.txt": "f9ebcd8d405597a550d061870f25778253d720738673cd46c7825b3116bc2943",
+    "experiments/U05-r3-three-arm/prompts/intake.txt": "88213bfc13fcf6103b62e02f842d8549e8f02a5991ceb9d0ffb5d38dfb210228",
+    "experiments/U05-r3-three-arm/prompts/report.txt": "d133db95ab82216a51ab521b54b2b9987a21039e75d3e1e9591862f1d77710e1",
+    "experiments/U05-r3-three-arm/prompts/agenda.txt": "86fc71aa4485288d7bbdbbb158112f964f7534e8f1b2f56a01c8dff22164e81d",
+    "experiments/U05-r3-three-arm/prompts/correction.txt": "756bf2f8b76e67e6e80e5f5fd4abb0260458998bfc0ef0fdf6411fd9fb2dc0d8",
+    "experiments/U05-r3-three-arm/prompts/assessment.txt": "4009f85ea39d96849fe9b9fd3f0b5c49093d3963b1e7f02d2af9b2a649d3161f",
+    "experiments/U05-r3-three-arm/prompts/board.txt": "0c1f36936a416135e5df45ca07edc18b829af5c1b2a9fff9eb8cbe9ecd807110"
+  }
+}

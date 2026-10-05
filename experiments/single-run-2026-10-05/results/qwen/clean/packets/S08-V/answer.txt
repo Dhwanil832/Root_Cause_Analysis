@@ -1,0 +1,112 @@
+{
+  "decision": "proposed",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose a physical mechanism for the focal event (FALL) based on the established upstream condition (LEAK). The leak (0.400 L) through V17 with a CLOSED indication implies a loss of hydraulic support. D02.S02 and D02.S06 establish that loss of support-chamber fluid permits downward yoke travel under gravity. D07 confirms the yoke moved down 40mm while the carrier held position (0mm) until 13:24:03. This differential motion constitutes a 'relative withdrawal' (D02.S04). D03C and D10 establish that primary seating engagement is 30mm. The measured withdrawal (40mm) exceeds this threshold, satisfying the condition for primary seating loss (SEAT). The mechanism is: Hydraulic leakage -> Loss of support pressure -> Yoke descent under gravity -> Relative withdrawal > 30mm -> Loss of primary seating -> Keeper bypass -> Carrier fall. This node links the physical cause (LEAK) to the event (FALL).",
+      "record": {
+        "id": "MECH_LEAK_TO_FALL",
+        "kind": "edge",
+        "scope_key": "MECH_LEAK_TO_FALL",
+        "claim": "Hydraulic leakage through V17 caused yoke descent, resulting in relative withdrawal exceeding 30mm and eliminating primary seating, which allowed the carrier to fall.",
+        "status": "candidate",
+        "sources": ["D02", "D07", "D08", "D03C", "D10"],
+        "depends_on": ["LEAK", "YOKE", "CARRIER", "SEAT", "CONFIG"],
+        "from_ids": ["LEAK", "YOKE", "CARRIER", "SEAT", "CONFIG"],
+        "to_id": "FALL",
+        "mode": "all",
+        "asset": "R3 assembly CB-3/YK-3",
+        "window": "13:00:00–13:24:03",
+        "fields": [
+          "hydraulic_pressure_loss",
+          "yoke_displacement",
+          "carrier_displacement",
+          "relative_withdrawal",
+          "primary_seating_engagement",
+          "seating_loss_threshold"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose an upstream procedural cause for the physical mechanism. D04.S01 and D05.S03 indicate that WP-031 omitted a positive-block instruction and verification of the retention envelope. D05.S02 confirms no independent positive block was present. D03C confirms no separate maintenance travel stop exists in the current configuration. The absence of a positive block (NOBLOCK) and the reliance on primary seating (which was lost due to the leak) created a single point of failure. The procedural omission (PROC) contributed to the incident by failing to establish a redundant restraint that would have prevented the fall even if primary seating was lost. This links the procedural gap to the physical vulnerability.",
+      "record": {
+        "id": "PROC_GAP_CONTRIBUTION",
+        "kind": "edge",
+        "scope_key": "PROC_GAP_CONTRIBUTION",
+        "claim": "The omission of a positive-block instruction and retention-envelope verification in WP-031 contributed to the incident by leaving the assembly reliant solely on primary seating, which was lost due to valve leakage.",
+        "status": "candidate",
+        "sources": ["D04", "D05", "D03C", "D10"],
+        "depends_on": ["PROC", "NOBLOCK", "CONFIG"],
+        "from_ids": ["PROC", "NOBLOCK", "CONFIG"],
+        "to_id": "MECH_LEAK_TO_FALL",
+        "mode": "any",
+        "asset": "R3 assembly CB-3/YK-3",
+        "window": "13:00:00–13:24:03",
+        "fields": [
+          "procedural_omission",
+          "positive_block_absence",
+          "redundancy_failure"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose an upstream configuration cause. D03C and D02.S01 establish that backup rolls were removed and no backup-roll-associated stop or separate maintenance travel stop was fitted. D03C.S02 explicitly states the backup-roll-associated stop is absent. This configuration change removed a potential physical restraint or stop that might have existed in other configurations (D03A). The absence of this stop (CONFIG) is a condition that allowed the yoke to descend freely without a mechanical stop, contributing to the relative withdrawal. This links the configuration state to the physical mechanism.",
+      "record": {
+        "id": "CONFIG_VULNERABILITY",
+        "kind": "edge",
+        "scope_key": "CONFIG_VULNERABILITY",
+        "claim": "The removal of backup rolls and the absence of a backup-roll-associated stop or separate maintenance travel stop (CONFIG) removed a potential physical restraint, allowing the yoke to descend freely under gravity when hydraulic support was lost.",
+        "status": "candidate",
+        "sources": ["D03C", "D02", "D03A"],
+        "depends_on": ["CONFIG", "NOBLOCK"],
+        "from_ids": ["CONFIG", "NOBLOCK"],
+        "to_id": "MECH_LEAK_TO_FALL",
+        "mode": "any",
+        "asset": "R3 assembly CB-3/YK-3",
+        "window": "13:00:00–13:24:03",
+        "fields": [
+          "backup_roll_removal",
+          "stop_absence",
+          "restraint_removal"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose an investigation request to resolve the unresolved question of whether the keeper was bypassed dynamically. D10.S03 and D07.S03 state that the incident lateral offset and release rotation are not measured, and an approved off-center dynamic retention envelope is unavailable. D14.S03 notes that unmeasured deformation and the off-center release path remain separate questions. To determine if the keeper (which was found attached, D14.S01) was bypassed due to lateral offset/rotation or if the primary seating loss alone was sufficient, we need a dynamic analysis or a physical reconstruction. This request targets the gap between the static inspection (keeper attached) and the dynamic event (carrier fell).",
+      "record": {
+        "id": "REQ_KEEPER_DYNAMIC_ANALYSIS",
+        "kind": "request",
+        "scope_key": "REQ_KEEPER_DYNAMIC_ANALYSIS",
+        "claim": "Acquire a time-relevant lateral/rotation measurement or a validated retention-envelope analysis to determine if the keeper was bypassed dynamically or if primary seating loss alone caused the fall.",
+        "status": "proposed",
+        "sources": ["D10", "D07", "D14"],
+        "depends_on": ["MECH_LEAK_TO_FALL", "PROC_GAP_CONTRIBUTION", "CONFIG_VULNERABILITY"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 assembly CB-3/YK-3",
+        "window": "13:00:00–13:24:03",
+        "fields": [
+          "lateral_offset_measurement",
+          "rotation_measurement",
+          "dynamic_retention_envelope_analysis",
+          "keeper_deformation_analysis"
+        ]
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

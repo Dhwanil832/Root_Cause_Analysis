@@ -1,0 +1,260 @@
+{
+  "decision": "REVISE",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm HYD status as 'candidate' with fresh reasoning: D08 confirms 0.400L fluid loss through V17 despite closed indication, and D02 defines the mechanism (loss of support permits descent). The claim remains supported by the mechanism but lacks proof of the specific cause of the leak (wear vs. seal failure), so 'candidate' is the correct status pending leak-origin evidence.",
+      "record": {
+        "id": "HYD",
+        "kind": "node",
+        "scope_key": "HYD",
+        "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+        "status": "candidate",
+        "sources": ["D02", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm BLOCK status as 'candidate' with fresh reasoning: D05 photograph shows no independent positive block; D02 states no independent mechanical block exists in this configuration. The claim is supported by observation but the *reason* for the absence (omission vs. missing part) is unresolved, keeping it 'candidate' rather than 'supported' until execution evidence clarifies intent.",
+      "record": {
+        "id": "BLOCK",
+        "kind": "node",
+        "scope_key": "BLOCK",
+        "claim": "No effective independent positive yoke block was present.",
+        "status": "candidate",
+        "sources": ["D02", "D04", "D05"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm PROC status as 'supported' with fresh reasoning: D04 explicitly states WP-031 contains no instruction for a positive block or off-center verification. The procedural omission is a fact supported by the document text. The claim is supported.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm LOAD status as 'supported' with fresh reasoning: D01 and D02 confirm the assembly was raised and gravity was available. The claim is supported.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm YOKE status as 'supported' with fresh reasoning: D07 provides direct measurement of 40mm yoke descent. The claim is supported.",
+      "record": {
+        "id": "YOKE",
+        "kind": "node",
+        "scope_key": "YOKE",
+        "claim": "YK-3 descended 40 +/- 1 mm during 13:00:00–13:24:00, before release at 13:24:03.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm CARRIER status as 'supported' with fresh reasoning: D07 provides direct measurement of 0mm carrier descent. The claim is supported.",
+      "record": {
+        "id": "CARRIER",
+        "kind": "node",
+        "scope_key": "CARRIER",
+        "claim": "The carrier moved downward 0 +/- 1 mm over that same interval and reference frame.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm CONTACT status as 'supported' with fresh reasoning: D02, D05, and D07 confirm post/spreader contact was visible. The claim is supported.",
+      "record": {
+        "id": "CONTACT",
+        "kind": "node",
+        "scope_key": "CONTACT",
+        "claim": "Post/spreader contact was visible through that interval, compatible with temporarily holding the carrier.",
+        "status": "supported",
+        "sources": ["D02", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm WITHDRAW status as 'supported' with fresh reasoning: D02 and D07 allow calculation of relative withdrawal (40mm yoke - 0mm carrier = 40mm), which exceeds the 30mm limit. The claim is supported.",
+      "record": {
+        "id": "WITHDRAW",
+        "kind": "node",
+        "scope_key": "WITHDRAW",
+        "claim": "Relative yoke-down withdrawal over the measured interval was 38–42 mm.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm SEAT status as 'supported' with fresh reasoning: D02 and D07 show relative withdrawal exceeded 30mm, eliminating primary seating. The claim is supported.",
+      "record": {
+        "id": "SEAT",
+        "kind": "node",
+        "scope_key": "SEAT",
+        "claim": "Relative withdrawal exceeded the defined 30 mm engagement and eliminated primary seating by 13:24:00.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm CRANE status as 'refuted' with fresh reasoning: D07 explicitly states no overhead crane/load contact is visible within the covered envelope. The claim is refuted.",
+      "record": {
+        "id": "CRANE",
+        "kind": "node",
+        "scope_key": "CRANE",
+        "claim": "Direct overhead-crane/load contact caused release within the fully covered 13:00:00–13:24:03 carrier envelope.",
+        "status": "refuted",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm FALL status as 'reported' with fresh reasoning: D01 reports the event. The claim is reported.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm KEEP status as 'candidate' with fresh reasoning: D02 describes a dynamic keeper-release path as a possibility. The claim is candidate pending evidence of lateral offset/rotation.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

@@ -1,0 +1,71 @@
+{
+  "decision": "Based on the available evidence, the physical mechanism leading to the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at approximately 13:24 can be attributed to a combination of factors related to hydraulic fluid loss (HYD) and the absence of an effective independent positive yoke block (BLOCK).",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "The revised assessment incorporates new evidence and refines the understanding of the incident's causal factors.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24 due to hydraulic fluid loss (HYD) and absence of an effective independent positive yoke block (BLOCK).",
+        "status": "supported",
+        "sources": ["D01", "D02", "D04", "D07", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "The revised assessment incorporates new evidence and refines the understanding of the incident's causal factors.",
+      "record": {
+        "id": "HYD",
+        "kind": "node",
+        "scope_key": "HYD",
+        "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+        "status": "supported",
+        "sources": ["D02", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "The revised assessment incorporates new evidence and refines the understanding of the incident's causal factors.",
+      "record": {
+        "id": "BLOCK",
+        "kind": "node",
+        "scope_key": "BLOCK",
+        "claim": "No effective independent positive yoke block was present, allowing for yoke descent under load.",
+        "status": "supported",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

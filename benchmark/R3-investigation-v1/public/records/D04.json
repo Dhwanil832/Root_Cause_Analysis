@@ -1,0 +1,24 @@
+{
+  "id": "D04",
+  "title": "Stripper-box changeout - task isolation package",
+  "revision": "3",
+  "issued": "2024-09-25",
+  "kind": "procedure extract",
+  "sections": [
+    {
+      "id": "D04.S01",
+      "heading": "Scope",
+      "text": "Task WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal. The package calls for electrical supply isolation and hydraulic valve closure. The task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope."
+    },
+    {
+      "id": "D04.S02",
+      "heading": "Circuit nomenclature",
+      "text": "The cover calls the supply group B hydraulics. A worksheet calls support-chamber trapped energy A. These names are not circuit identities. Use the tag schedule: C17 support chamber and V17 return-isolation valve belong to the raised balance assembly. Do not substitute unrelated A/B circuit records based on the letter alone."
+    },
+    {
+      "id": "D04.S03",
+      "heading": "Interpretation limit",
+      "text": "A procedural omission is distinct from proof of what workers did. Execution records are needed to establish whether a block was actually present. This document does not establish why the procedure omitted that step."
+    }
+  ]
+}

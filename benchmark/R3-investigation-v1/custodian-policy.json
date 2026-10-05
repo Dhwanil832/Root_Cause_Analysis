@@ -1,0 +1,99 @@
+{
+  "initial": [
+    "D01",
+    "D02",
+    "D04",
+    "D15"
+  ],
+  "routes": [
+    {
+      "id": "motion",
+      "request_meaning": "Yoke/carrier motion, video interval or direct crane-contact coverage",
+      "return_documents": [
+        "D07"
+      ]
+    },
+    {
+      "id": "execution",
+      "request_meaning": "Actual blocking, isolation execution, work/permit configuration",
+      "return_documents": [
+        "D05"
+      ]
+    },
+    {
+      "id": "witness",
+      "request_meaning": "Witness accounts or corroboration of yoke/carrier movement",
+      "return_documents": [
+        "D06A",
+        "D06B"
+      ]
+    },
+    {
+      "id": "incident_hydraulics",
+      "request_meaning": "Tagged incident fluid/pressure/flow boundary or leakage path",
+      "return_documents": [
+        "D08"
+      ]
+    },
+    {
+      "id": "configuration",
+      "request_meaning": "Applicable arrangement/revisions, stops, keeper installation",
+      "return_documents": [
+        "D03A",
+        "D03C"
+      ]
+    },
+    {
+      "id": "geometry",
+      "request_meaning": "Clearance, primary engagement, centered overlap or dynamic retention envelope",
+      "return_documents": [
+        "D10"
+      ]
+    },
+    {
+      "id": "recovery",
+      "request_meaning": "Keeper/fastener condition, fracture, recovery inspection or contact marks",
+      "return_documents": [
+        "D14"
+      ]
+    },
+    {
+      "id": "valve_exam",
+      "request_meaning": "Preserved valve identity, bench leakage or component examination",
+      "return_documents": [
+        "D09"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "request_meaning": "V17 inspection/replacement history, defect discovery/detectability or maintenance practice",
+      "return_documents": [
+        "D11"
+      ]
+    },
+    {
+      "id": "availability",
+      "request_meaning": "Retained keeper offset/envelope or contamination-onset availability",
+      "return_documents": [
+        "D12"
+      ]
+    },
+    {
+      "id": "actions",
+      "request_meaning": "Proposed or implemented corrective actions",
+      "return_documents": [
+        "D13"
+      ]
+    }
+  ],
+  "matching": "Semantic scope matching, never exact document/request IDs. Match all relevant routes for a compound request. Returned document content is unchanged. Record every route decision before scoring.",
+  "delivery": "At each genuine paused evidence boundary, respond to all currently relevant registered awaiting-user/partial requests. Requests still awaiting a scheduled local search wait for that search. D12 may accompany an explicit requested availability question; do not supply hidden measurements or gold states.",
+  "unsolicited": {
+    "document": "D13",
+    "trigger": "First actual custodian-response batch, once per connected run, independent of model identity or performance"
+  },
+  "unmatched_answer": "R3 benchmark record desk: the supplied package contains no additional record answering the following requested scope: {verbatim_unmatched_fields}. This is a limit of this supplied package, not evidence that the historical activity or record never existed. The physical explanation remains for investigation.",
+  "repeated_request": "Return an association to the already supplied document or the same availability response, not independent corroboration. Record the duplicate request; no new synthetic incident facts.",
+  "operator": "Prefer model-blinded operator mapping. Disclose and log when unblinded. No model-generated evidence or rubric-guided rescue.",
+  "automated_broker_implemented": false
+}

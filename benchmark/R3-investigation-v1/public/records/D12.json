@@ -1,0 +1,24 @@
+{
+  "id": "D12",
+  "title": "Investigation records desk - availability response",
+  "revision": "0",
+  "issued": "2024-10-18 10:00",
+  "kind": "records response",
+  "sections": [
+    {
+      "id": "D12.S01",
+      "heading": "Available",
+      "text": "Current maintenance arrangement C and superseded arrangement A are available. Requests for video, hydraulic measurements and bench records receive separate availability responses from the record custodian."
+    },
+    {
+      "id": "D12.S02",
+      "heading": "Unavailable",
+      "text": "The incident keeper interface is not visible in another camera. No measured lateral offset at release or approved dynamic keeper-envelope analysis can be supplied from the retained records. No record establishes the contamination onset."
+    },
+    {
+      "id": "D12.S03",
+      "heading": "Reopening conditions",
+      "text": "A newly validated envelope calculation plus a bounded incident offset could reopen the keeper branch. A traceable earlier contamination sample or dated inspection could reopen origin timing. This response establishes availability only; missing records are not physical causes."
+    }
+  ]
+}

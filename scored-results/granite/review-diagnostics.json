@@ -1,0 +1,9 @@
+{
+  "finding": "Lead repeats the same null asset/window request despite explicit nonempty asset/window feedback; all operations rejected atomically, including otherwise valid reported focal node. Proposed specialist tasks never executed.",
+  "references": [
+    "case/calls/0001_intake/answer.txt#/operations/1/record",
+    "case/calls/0002_lead/answer.txt#/operations/1/record"
+  ],
+  "mechanical_vs_semantic": "Missing request scope is an output-contract failure; downstream RCA reasoning is unobserved.",
+  "review_scope": "One unblinded manually reviewed run; 96 frozen checks, no new inference."
+}

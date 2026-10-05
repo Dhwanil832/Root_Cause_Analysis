@@ -1,0 +1,29 @@
+{
+  "id": "D08",
+  "title": "C17 boundary measurements - incident interval",
+  "revision": "1",
+  "issued": "2024-10-15 10:00",
+  "kind": "instrument report",
+  "sections": [
+    {
+      "id": "D08.S01",
+      "heading": "Identity and time",
+      "text": "Tags verified against C17/V17 in D02 and the WP-031 tag schedule. The records cover 13:00:00 to 13:24:00 on 14 October 2024, synchronized with CAM-3. They do not use the circuit nickname as identity."
+    },
+    {
+      "id": "D08.S02",
+      "heading": "Measured quantities",
+      "text": "V17 CLOSED indication remains 1. The calibrated meter on the only C17-to-return route through V17 records 0.400 +/- 0.010 litres leaving the chamber. External loss is below 0.002 litres; the boundary inspection finds no alternate return route. Instrument checks passed before and after this interval."
+    },
+    {
+      "id": "D08.S03",
+      "heading": "Model limits",
+      "text": "Use 100 cm2 effective area and 1:1 cylinder-to-yoke travel. Within this specified boundary, compression and temperature effects are negligible within the stated uncertainty. No independent block was present. Do not generalize these simplifications to an unspecified machine."
+    },
+    {
+      "id": "D08.S04",
+      "heading": "Interpretation boundary",
+      "text": "The meter records chamber fluid leaving through the tagged route despite closed-position indication. It does not establish valve wear age, contamination, prior inspection decisions or why the carrier bypassed its keeper."
+    }
+  ]
+}

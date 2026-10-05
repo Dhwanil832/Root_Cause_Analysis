@@ -1,0 +1,43 @@
+{
+  "accepted": false,
+  "operations": 2,
+  "reason": "request_needs_scope_and_fields",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "request_needs_scope_and_fields",
+      "phase": "controller",
+      "operation_index": 1,
+      "record_id": "clean_S01-B",
+      "path": "$.operations[1].record",
+      "actual": {
+        "id": "clean_S01-B",
+        "kind": "request",
+        "scope_key": "mechanism_and_upstream_causes",
+        "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit.",
+        "status": "proposed",
+        "sources": [],
+        "depends_on": [
+          "clean_S01-A"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": [
+          "motion_record",
+          "work_package",
+          "isolation_records",
+          "inspection_photographs",
+          "hydraulic_records"
+        ]
+      },
+      "expected": "Nonempty asset, window and fields",
+      "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch."
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

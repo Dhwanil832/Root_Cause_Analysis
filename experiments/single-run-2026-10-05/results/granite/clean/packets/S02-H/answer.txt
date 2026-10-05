@@ -1,0 +1,113 @@
+{
+  "decision": "The investigation suggests that the R3 delivery carrier beam fell due to a combination of hydraulic fluid loss (HYD) and insufficient yoke-down motion relative to the carrier (REL), which eliminated primary seating. The absence of an effective independent positive yoke block (BLOCK) further facilitated this event. The procedure WP-031 omitted a positive-block instruction and off-center retention-envelope verification (PROC), contributing to the incident. The assembly was parked raised, and gravity remained available (LOAD), which also played a role in the incident.",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "The current status of HYD, REL, BLOCK, and PROC is 'candidate', indicating that these nodes require further investigation and evidence to establish their roles in the incident. The 'supported' status of LOAD needs to be reassessed in light of the proposed mechanism.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "HYD needs to be further investigated for its role in permitting loaded yoke descent subject to restraint and applicable load/path conditions.",
+      "record": {
+        "id": "HYD",
+        "kind": "node",
+        "scope_key": "HYD",
+        "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "REL needs to be further investigated to understand how sufficient yoke-down motion relative to the carrier could eliminate primary seating.",
+      "record": {
+        "id": "REL",
+        "kind": "node",
+        "scope_key": "REL",
+        "claim": "Sufficient yoke-down motion relative to the carrier could eliminate primary seating.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "BLOCK needs to be further investigated to understand why no effective independent positive yoke block was present.",
+      "record": {
+        "id": "BLOCK",
+        "kind": "node",
+        "scope_key": "BLOCK",
+        "claim": "No effective independent positive yoke block was present.",
+        "status": "candidate",
+        "sources": ["D02", "D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "PROC needs to be further investigated to understand how the omission of a positive-block instruction and off-center retention-envelope verification contributed to the incident.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "waiting"
+}

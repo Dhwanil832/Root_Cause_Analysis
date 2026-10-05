@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "seconds": 102.319,
+  "usage": {
+    "input_tokens": 28083,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5524,
+    "reasoning_output_tokens": 1497
+  },
+  "model": "gpt-5.5",
+  "model_identity_scope": "CLI requested alias; not API snapshot verification",
+  "provider": "codex_chatgpt",
+  "answer_hash": "db0ad058a4e7b1b1ee7002e7562da6315557439e1b9f171af831598408c65de4",
+  "messages_hash": "15a3b09dc7646647b70ec4e3183c5d8c8054bfad254a0442ef539ae3b2336383"
+}

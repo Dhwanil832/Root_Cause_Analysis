@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "criteria": 96,
+  "exact_excerpt_checks": 159,
+  "frozen_criteria_hash_verified": true,
+  "all_output_hashes_verified": true,
+  "stage_window_citations_verified": true,
+  "retained_state_pointers_verified": true,
+  "stage_totals_verified": true,
+  "html_criteria_entries": 96,
+  "presence": 82,
+  "consistent_correct": 81,
+  "missing": 9,
+  "not_reached": 5,
+  "harness_blocked": 0,
+  "note": "This audit checks annotation integrity and arithmetic; semantic judgments are one unblinded assistant review, not independently adjudicated."
+}

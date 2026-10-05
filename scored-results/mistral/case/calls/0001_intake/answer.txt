@@ -1,0 +1,139 @@
+{
+  "decision": "Create one reported focal event and proposed requests for immediate clarification.",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Report the focal event based on the initial event notice (D01).",
+      "record": {
+        "id": "E01",
+        "kind": "node",
+        "scope_key": "focal_event",
+        "claim": "At 13:24 on 14 October 2024, the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Request the motion record for the R3 delivery carrier beam.",
+      "record": {
+        "id": "R01",
+        "kind": "request",
+        "scope_key": "motion_record",
+        "claim": "Motion record for the R3 delivery carrier beam",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["motion_record"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Request the work package for the R3 delivery carrier beam changeout.",
+      "record": {
+        "id": "R02",
+        "kind": "request",
+        "scope_key": "work_package",
+        "claim": "Work package for the R3 delivery carrier beam changeout",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["work_package"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Request the isolation records for the R3 delivery carrier beam.",
+      "record": {
+        "id": "R03",
+        "kind": "request",
+        "scope_key": "isolation_records",
+        "claim": "Isolation records for the R3 delivery carrier beam",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["isolation_records"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Request the inspection photographs for the R3 delivery carrier beam.",
+      "record": {
+        "id": "R04",
+        "kind": "request",
+        "scope_key": "inspection_photographs",
+        "claim": "Inspection photographs for the R3 delivery carrier beam",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["inspection_photographs"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Request the hydraulic records for the R3 delivery carrier beam.",
+      "record": {
+        "id": "R05",
+        "kind": "request",
+        "scope_key": "hydraulic_records",
+        "claim": "Hydraulic records for the R3 delivery carrier beam",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["hydraulic_records"]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "assessor",
+      "tag": "mechanical",
+      "focus": "Investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+      "target_ids": ["E01", "R01", "R02", "R03", "R04", "R05"]
+    }
+  ],"upstream_dispositions": [],"disposition": "continue"
+}

@@ -1,0 +1,133 @@
+{
+  "decision": "create",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Establish the focal event record based on D01.S01. The incident occurred at 13:24 on 14 October 2024 involving the R3 delivery carrier beam falling into the mill pit, striking the sled and scaffold. The assembly was in a raised state after backup-roll removal. No personnel were struck. The keeper plate was found bolted to the recovered assembly, and the beam/yoke were not reported fractured (D01.S02).",
+      "record": {
+        "id": "EVT_R3_20241014",
+        "kind": "node",
+        "scope_key": "R3_beam_fall_20241014",
+        "claim": "At 13:24 on 14 October 2024, the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_delivery_carrier_beam",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "occurrence",
+          "asset_identity",
+          "location",
+          "time",
+          "immediate_damage",
+          "post_event_condition"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose acquisition of evidence regarding the actual physical state of the yoke restraint mechanism. D02.S03 and D02.S06 indicate that handle position (V17 closed) does not prove mechanical restraint or absence of leakage. D04.S03 notes the procedure does not require a positive yoke block. We need to know if a block was physically installed and if the keeper was engaged as designed.",
+      "record": {
+        "id": "REQ_YOKE_RESTRAINT",
+        "kind": "request",
+        "scope_key": "R3_yoke_restraint_verification",
+        "claim": "Determine if a positive mechanical block was installed on the yoke and if the keeper plate was properly engaged to prevent downward travel.",
+        "status": "proposed",
+        "sources": ["D02", "D04"],
+        "depends_on": ["EVT_R3_20241014"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_yoke_C17_V17",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "block_installed",
+          "block_type",
+          "keeper_engagement_status",
+          "keeper_latch_condition"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose acquisition of hydraulic system state evidence. D02.S02 and D02.S03 suggest that loss of support-chamber fluid permits downward travel. We need to verify if V17 was actually closed, if there was external leakage, or if fluid escaped through the return path during the event.",
+      "record": {
+        "id": "REQ_HYDRO_STATE",
+        "kind": "request",
+        "scope_key": "R3_hydraulic_isolation_verification",
+        "claim": "Determine the actual hydraulic state of the support chamber (C17) and return valve (V17) at the time of the fall, including evidence of leakage or valve failure.",
+        "status": "proposed",
+        "sources": ["D02", "D01"],
+        "depends_on": ["EVT_R3_20241014"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_hydraulic_system_C17_V17",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "valve_V17_position",
+          "valve_V17_leakage_rate",
+          "chamber_pressure_at_event",
+          "fluid_loss_volume"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose acquisition of witness and procedural execution evidence. D04.S01 states the task text contains no instruction for a positive block. We need to know if workers followed a different procedure, if they verbally agreed to skip a step, or if they were unaware of the risk. D15.S02 notes the lack of independent witness accounts.",
+      "record": {
+        "id": "REQ_PROC_EXECUTION",
+        "kind": "request",
+        "scope_key": "R3_task_execution_verification",
+        "claim": "Determine if the task was executed according to the written procedure or if deviations occurred, and identify who performed the task and their stated rationale.",
+        "status": "proposed",
+        "sources": ["D04", "D15"],
+        "depends_on": ["EVT_R3_20241014"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_task_WP-031",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "procedure_followed",
+          "deviation_description",
+          "witness_accounts",
+          "worker_authorization"
+        ]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "specialist",
+      "tag": "mechanical_systems",
+      "focus": "Inspect the recovered assembly (D01.S02) and any available maintenance logs to determine if a positive mechanical block was installed on the yoke and verify the physical engagement of the keeper plate.",
+      "target_ids": ["REQ_YOKE_RESTRAINT"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "hydraulics",
+      "focus": "Review hydraulic records (D01.S03) and inspect the valve V17 and chamber C17 to determine if leakage occurred or if the valve failed to isolate the support chamber.",
+      "target_ids": ["REQ_HYDRO_STATE"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "operations_safety",
+      "focus": "Interview workers and review execution records to determine if the task WP-031 was performed as written or if deviations occurred, and to understand the rationale for any omissions.",
+      "target_ids": ["REQ_PROC_EXECUTION"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

@@ -1,0 +1,175 @@
+{
+  "fresh_model_calls": 2,
+  "historical_case": "../../scored-results/qwen",
+  "model_profile_identical": true,
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "comparison": [
+    {
+      "call": "0001_intake",
+      "files": {
+        "request.json": {
+          "byte_identical": true,
+          "sha256": "094d5994df31258792459e45fe16ab6f2d1dd9edf03be083e83232235e6caa21"
+        },
+        "answer.txt": {
+          "byte_identical": true,
+          "sha256": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+        },
+        "validation.json": {
+          "byte_identical": true,
+          "sha256": "98be09680bfbe340821b165ca30429ff4874fbe963b871ea400beefe9127462a"
+        }
+      }
+    },
+    {
+      "call": "0002_lead",
+      "files": {
+        "request.json": {
+          "byte_identical": true,
+          "sha256": "a79e1106ab39f7e462e78ce756f5447f56442178644bd1bbb5e6c935602c4bad"
+        },
+        "answer.txt": {
+          "byte_identical": true,
+          "sha256": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+        },
+        "validation.json": {
+          "byte_identical": true,
+          "sha256": "2f032d6b4c6446d1982b30b4ca5436a8bde0617a14b35417453d56cdb65ab898"
+        }
+      }
+    }
+  ],
+  "score": {
+    "denominator": 96,
+    "outcomes": {
+      "Present": 17,
+      "Missing": 5,
+      "Not reached": 74
+    },
+    "presence_score": 17,
+    "consistent_score": 17,
+    "stages": [
+      {
+        "stage": "S01",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 5,
+          "Missing": 3
+        },
+        "presence_score": 5,
+        "consistent_score": 5
+      },
+      {
+        "stage": "S02",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 7,
+          "Missing": 1
+        },
+        "presence_score": 7,
+        "consistent_score": 7
+      },
+      {
+        "stage": "S03",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 2,
+          "Present": 5,
+          "Missing": 1
+        },
+        "presence_score": 5,
+        "consistent_score": 5
+      },
+      {
+        "stage": "S04",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S05",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S06",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S07",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S08",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S09",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S10",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S11",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S12",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      }
+    ]
+  },
+  "scoring_method": "Apply the existing 96 reviewed criteria to byte-identical fresh outputs and identical initial exposure; verify every output reference/hash again. No copied model response substituted for inference.",
+  "phase": "needs_attention",
+  "committed_records": 0,
+  "queued_jobs": 1,
+  "queued_roles": [
+    "lead"
+  ],
+  "next_step_policy": "Unchanged frozen harness pauses on failed lead batch; queued correction is not automatically resumed.",
+  "completion": "Attempt stopped; full RCA not completed."
+}

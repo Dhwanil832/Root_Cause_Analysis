@@ -1,0 +1,33 @@
+test_atomic_replace_retires_old (test_runtime.ControllerTests.test_atomic_replace_retires_old) ... ok
+test_bad_batch_rolls_back_all (test_runtime.ControllerTests.test_bad_batch_rolls_back_all) ... ok
+test_changed_judgment_invalidates_approval_and_dependents (test_runtime.ControllerTests.test_changed_judgment_invalidates_approval_and_dependents) ... ok
+test_duplicate_request_scope (test_runtime.ControllerTests.test_duplicate_request_scope) ... ok
+test_endpoint_change_explains_replace (test_runtime.ControllerTests.test_endpoint_change_explains_replace) ... ok
+test_endpoint_order_is_not_identity_change (test_runtime.ControllerTests.test_endpoint_order_is_not_identity_change) ... ok
+test_evidence_cannot_commit_causal_nodes (test_runtime.ControllerTests.test_evidence_cannot_commit_causal_nodes) ... ok
+test_node_and_edge_can_replace_together (test_runtime.ControllerTests.test_node_and_edge_can_replace_together) ... ok
+test_node_replace_requires_dependents (test_runtime.ControllerTests.test_node_replace_requires_dependents) ... ok
+test_noop_does_not_reject_other_changes (test_runtime.ControllerTests.test_noop_does_not_reject_other_changes) ... ok
+test_physics_is_not_validated_by_structure (test_runtime.ControllerTests.test_physics_is_not_validated_by_structure) ... ok
+test_request_not_physical_endpoint (test_runtime.ControllerTests.test_request_not_physical_endpoint) ... ok
+test_stale_version_and_unknown_source (test_runtime.ControllerTests.test_stale_version_and_unknown_source) ... ok
+test_answer_persists_and_schedules_assessment (test_runtime.LifecycleTests.test_answer_persists_and_schedules_assessment) ... ok
+test_correction_stales_dependents_not_independent (test_runtime.LifecycleTests.test_correction_stales_dependents_not_independent) ... ok
+test_existing_document_new_request_link_schedules_assessment (test_runtime.LifecycleTests.test_existing_document_new_request_link_schedules_assessment) ... ok
+test_mock_connected_run_and_restart (test_runtime.LifecycleTests.test_mock_connected_run_and_restart) ... {"call": 1, "role": "intake", "phase": "ready", "validation": null, "queue": 1}
+{"call": 2, "role": "lead", "phase": "waiting", "validation": null, "queue": 0}
+ok
+test_new_document_allows_new_search (test_runtime.LifecycleTests.test_new_document_allows_new_search) ... ok
+test_pending_assessments_coalesce (test_runtime.LifecycleTests.test_pending_assessments_coalesce) ... ok
+test_rejected_human_review_stales_dependents (test_runtime.LifecycleTests.test_rejected_human_review_stales_dependents) ... ok
+test_search_miss_not_unavailability (test_runtime.LifecycleTests.test_search_miss_not_unavailability) ... ok
+test_search_not_repeated_only_for_status_version (test_runtime.LifecycleTests.test_search_not_repeated_only_for_status_version) ... ok
+test_stale_pending_output_not_committed (test_runtime.LifecycleTests.test_stale_pending_output_not_committed) ... ok
+test_unsupported_upload_fails_explicitly (test_runtime.LifecycleTests.test_unsupported_upload_fails_explicitly) ... ok
+test_upstream_review_does_not_dispatch_while_work_is_pending (test_runtime.LifecycleTests.test_upstream_review_does_not_dispatch_while_work_is_pending) ... ok
+test_upstream_review_once_and_reopens_on_new_evidence (test_runtime.LifecycleTests.test_upstream_review_once_and_reopens_on_new_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.016s
+
+OK

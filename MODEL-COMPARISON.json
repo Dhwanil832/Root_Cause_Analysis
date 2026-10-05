@@ -1,0 +1,290 @@
+{
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "scope": "Only verified results of the packaged scored fallback; no new model runs to fill missing cells.",
+  "rows": [
+    {
+      "model": "GPT-5.5",
+      "qualification": "Scored partial run",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 1,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        82,
+        null,
+        null
+      ],
+      "runs": [
+        {
+          "folder": "scored-results/gpt",
+          "presence": 82,
+          "consistent": 81,
+          "not_reached": 5,
+          "phase": "partial"
+        }
+      ]
+    },
+    {
+      "model": "bespoke-minicheck:7b",
+      "qualification": "Not run on this version",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 0,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        null,
+        null,
+        null
+      ],
+      "runs": []
+    },
+    {
+      "model": "hermes3:8b",
+      "qualification": "Ran; lead rejected",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 1,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        3,
+        null,
+        null
+      ],
+      "runs": [
+        {
+          "folder": "scored-results/hermes",
+          "presence": 3,
+          "consistent": 3,
+          "not_reached": 74,
+          "phase": "needs_attention"
+        }
+      ]
+    },
+    {
+      "model": "granite3.3:8b",
+      "qualification": "Ran; lead rejected",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 1,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        3,
+        null,
+        null
+      ],
+      "runs": [
+        {
+          "folder": "scored-results/granite",
+          "presence": 3,
+          "consistent": 3,
+          "not_reached": 74,
+          "phase": "needs_attention"
+        }
+      ]
+    },
+    {
+      "model": "deepseek-r1:7b",
+      "qualification": "Not run on this version",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 0,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        null,
+        null,
+        null
+      ],
+      "runs": []
+    },
+    {
+      "model": "phi4-mini-reasoning:3.8b",
+      "qualification": "Not run on this version",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 0,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        null,
+        null,
+        null
+      ],
+      "runs": []
+    },
+    {
+      "model": "mistral:7b",
+      "qualification": "Ran; lead rejected",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 1,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        2,
+        null,
+        null
+      ],
+      "runs": [
+        {
+          "folder": "scored-results/mistral",
+          "presence": 2,
+          "consistent": 2,
+          "not_reached": 74,
+          "phase": "needs_attention"
+        }
+      ]
+    },
+    {
+      "model": "gemma3:4b",
+      "qualification": "Not run on this version",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 0,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        null,
+        null,
+        null
+      ],
+      "runs": []
+    },
+    {
+      "model": "llama3.2:3b",
+      "qualification": "Not run on this version",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 0,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        null,
+        null,
+        null
+      ],
+      "runs": []
+    },
+    {
+      "model": "qwen3.5:latest",
+      "qualification": "Ran; lead rejected",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 2,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        17,
+        17,
+        null
+      ],
+      "runs": [
+        {
+          "folder": "scored-results/qwen",
+          "presence": 17,
+          "consistent": 17,
+          "not_reached": 74,
+          "phase": "needs_attention"
+        },
+        {
+          "folder": "runs/qwen",
+          "presence": 17,
+          "consistent": 17,
+          "not_reached": 74,
+          "phase": "needs_attention"
+        }
+      ]
+    },
+    {
+      "model": "llama3.1:latest",
+      "qualification": "Not run on this version",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 0,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        null,
+        null,
+        null
+      ],
+      "runs": []
+    },
+    {
+      "model": "qwen2.5:7b",
+      "qualification": "Not run on this version",
+      "clean_packets_saved": 0,
+      "clean_target": 51,
+      "connected_attempts_saved": 0,
+      "connected_target": 3,
+      "clean_scores": [
+        null,
+        null,
+        null
+      ],
+      "connected_scores": [
+        null,
+        null,
+        null
+      ],
+      "runs": []
+    }
+  ],
+  "notes": [
+    "Scores are expected-content presence /96, not final-board accuracy. A dash means not run, not zero.",
+    "Clean saved counts mean model responses, not the existing clean input packet templates.",
+    "GPT connected is the existing scored fallback, not the older 77/75/86 comparison.",
+    "Qwen connected includes the historical same-runtime attempt and the fresh byte-identical replication, listed chronologically; third repetition not run.",
+    "All listed local connected attempts stopped after two answers: 74 checks unreached and zero committed records. GPT is partial with five unreached checks.",
+    "Granite and Hermes explicitly allowed CPU offload; other displayed local runs used full GPU. Qualification describes execution status, not demonstrated RCA correctness.",
+    "Historical clean scores and MiniCheck 4/96 do not belong to this runtime and are intentionally excluded."
+  ]
+}

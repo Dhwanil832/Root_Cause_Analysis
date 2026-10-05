@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "seconds": 45.144,
+  "usage": {
+    "prompt_eval_count": 4372,
+    "eval_count": 620,
+    "done_reason": "stop"
+  },
+  "model": "hermes3:8b",
+  "provider": "ollama_macos_pilot",
+  "answer_hash": "d501e5f1f06ff981664d1b6416e7e40d4eeb41bd33079aaf62d9e0d6b1262001",
+  "request_hash": "b54da031729071c6635e2e74564c68cfa1e0d3af8ab33d9e06be6d449cfc2779"
+}

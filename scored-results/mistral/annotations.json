@@ -1,0 +1,1250 @@
+[
+  {
+    "criterion_id": "S01.01",
+    "outcome": "Present",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/0/record/claim"
+    ],
+    "excerpt_or_absence_reason": "Explicitly retains the carrier beam falling into the mill pit and striking sled and scaffold.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S01.02",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "The intake never states raised yoke configuration or removed backup rolls.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S01.03",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "The intake omits C17/V17 and does not resolve A/B terminology; tags appear later but cannot retroactively satisfy the intake window.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S01.04",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Generic hydraulic-record request does not distinguish CLOSED indication from actual sealing.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S01.05",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Generic isolation-record request never distinguishes electrical isolation from mechanical restraint.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S01.06",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No D15 discussion or identification as unreviewed/non-independent interpretation.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S01.07",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No explicit actual-block question or statement that procedure omission cannot establish actual absence.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S01.08",
+    "outcome": "Present",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations"
+    ],
+    "excerpt_or_absence_reason": "Initial requests prioritize carrier motion and isolation records among relevant work-package, inspection and hydraulic records; this earns clarification-direction credit, not measurement specificity.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.01",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No fluid-loss to loaded-yoke-descent conditional mechanism is proposed.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.02",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No separate seat-leak, external-loss and alternate-path hypotheses; requesting V17 records alone is insufficient.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.03",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Requests only generic hydraulic records/V17, without incident flow, pressure or boundary measurements that distinguish routes.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.04",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Neither answer conditions hydraulic contribution on raised load and independent restraint.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.05",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations/0/record/claim"
+    ],
+    "excerpt_or_absence_reason": "No comparison of yoke and carrier motion; the lead invents absolute speed and angular velocity instead.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.06",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No distinction between loss of primary seating and keeper-release mode.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.07",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No distinct offset, rotation or deformation/geometry keeper-release candidates.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S02.08",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Generic inspection photographs omit incident contact/keeper geometry and time/configuration scope.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No equivalent specialist hypothesis pair was generated for a merge opportunity.",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.02",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No hydraulic support-loss and relative primary-withdrawal steps are represented.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.03",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No explicit unresolved keeper-release hypothesis.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No overlapping branch-specific motion requests existed for shared acquisition.",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.05",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations"
+    ],
+    "excerpt_or_absence_reason": "Requests remain proposed with null time windows; none is approved for evidence search.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.06",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Request reasons do not identify how motion/hydraulic evidence would support or challenge competing hypotheses.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.07",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations/0"
+    ],
+    "excerpt_or_absence_reason": "No explicit conditional mechanism hypotheses; instead the lead fabricates motion measurements and treats a requested record as delivered evidence.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S03.08",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/next_work"
+    ],
+    "excerpt_or_absence_reason": "Only a generic assessor task is emitted; no useful scoped specialist or evidence acquisition work is dispatched.",
+    "contradiction": false,
+    "failure_origin": "Omission / unsupported reasoning",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Distinguish documents searched from documents that answer the motion request",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep the initial missing motion measurement awaiting user rather than disproven/unavailable",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Ask for the relevant motion interval and both moving objects",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep evidence-worker output about request coverage rather than causal adjudication",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Recognize D07 answers vertical yoke/carrier displacement over the same interval",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Separate D07 release timing from the displacement measurement endpoint",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain keeper interface/offset as not covered by D07",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S04.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Narrow the remaining request fields to genuine uncovered scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Extract yoke displacement 40 +/- 1 mm",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Extract carrier displacement 0 +/- 1 mm in the same frame/window",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Compute relative withdrawal interval 38-42 mm",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Conclude the 30 mm primary seat threshold is exceeded by the measured endpoint",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Associate visible contact and stationary carrier with a scoped holding contribution",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Preserve the 13:24:00 endpoint versus 13:24:03 release distinction",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep the specific keeper mode unresolved despite primary seating loss",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S05.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Treat W-A/W-B as compatible, limited observations of different components",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Use D08 incident evidence to identify flow through the tagged V17 route despite CLOSED indication",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Convert 0.400 +/- 0.010 L to 390-410 cm3",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Apply 100 cm2 area and 1:1 motion to obtain 39-41 mm yoke displacement",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Recognize the hydraulic displacement is consistent with the motion measurement",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Establish actual no-block condition from execution/boundary evidence",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Refute sufficient external-loss/alternate-path explanations only within the measured boundary",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Combine fluid loss, raised load and absent positive restraint when explaining descent",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S06.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Leave component-defect onset and keeper mode unresolved after hydraulic confirmation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Represent the observed fall independently of whether the complete causal path is established",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Represent fluid loss plus load/no block jointly contributing to yoke descent",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Represent both yoke and carrier motion as inputs to relative withdrawal",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Represent relative threshold exceedance leading to primary seating loss",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Preserve an explicit unresolved keeper bridge before complete fall-path confirmation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep actual block absence distinct from procedure omission",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Represent procedure-to-absence contribution as unestablished without a decision/execution bridge",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S07.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Preserve independent established hydraulic/motion findings while keeper evidence is missing",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Expand established V17 leakage into competing origin hypotheses",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Seek component/maintenance evidence capable of distinguishing valve origins",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Investigate inspection/detection opportunity without assuming the policy physically caused contamination",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Expand actual block absence into competing procedure, requirement or execution explanations",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Request relevant procedure approval, hazard review, applicable standards or execution rationale",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep deliberate noncompliance, training and budget origins conditional",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Investigate contact origins through maintenance configuration versus prior positioning/handling",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S08.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Seek earlier positioning/configuration evidence without re-requesting occluded incident keeper motion",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Identify the retained maintenance practice as no scheduled V17 seat-leak inspection and replacement on reported defect",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep detectability and physical contamination causation unestablished by that practice",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep leakage/contamination onset undated",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Separate delivered history from unresolved origin evidence in request coverage",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Mark retained incident offset/dynamic-envelope acquisition as explicitly unavailable",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep missing keeper evidence distinct from refuting its physical mechanism",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Specify a new valid route: validated envelope plus independently bounded incident offset",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S09.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep other supported branches available while this acquisition route is blocked",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Use current revision C for the incident and limit superseded A to its normal-rolling configuration",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Recognize centered 8 +/- 1 mm overlap excludes simple rigid centered seated passage only",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Refute gross keeper plate/fastener separation or fracture within recovery-inspection scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep crane/load-contact refutation limited to the covered time and envelope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Use later V17 bench leakage as compatibility evidence with unknown defect timing",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep D13 actions as identified proposals with no demonstrated implementation/effectiveness",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Distinguish observed physical conditions from why the procedure/design omitted controls",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S10.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Treat unavailable analysis/measurements as knowledge limits rather than physical causes",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Close the motion request within the delivered vertical-motion/release scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Close hydraulic acquisition within the delivered incident-flow/boundary scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep valve-origin timing explicitly unresolved or blocked within its unavailable route",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Keep the unavailable keeper acquisition route visibly separate from open physical hypotheses",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Reuse equivalent requests rather than repeat unchanged completed acquisition",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Account for upstream origins of established valve, no-block and contact conditions",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Preserve useful independent work while a different branch waits",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S11.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Declare partial/evidence-boundary status with concrete reopening conditions",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain the observed carrier fall as the focal occurrence",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain fluid loss plus raised load and absent block as the joint descent explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain both motions/contact holding as the relative-withdrawal explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain relative withdrawal beyond 30 mm as the primary seating-loss explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain the specific keeper-release mechanism as unresolved",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain recovered attachment and centered geometry as limits rather than proof of dynamic retention",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain the crane/contact negative with its time/envelope limits",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  },
+  {
+    "criterion_id": "S12.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached after the two rejected initial batches: ledger empty, no approved acquisition, no custodian delivery and no later reasoning stage. Unobserved expected reasoning: Retain gross keeper fracture/separation refutation within inspection scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw output only; neither batch committed and final ledger is empty."
+  }
+]

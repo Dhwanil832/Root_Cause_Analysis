@@ -1,0 +1,29 @@
+{
+  "id": "D03C",
+  "title": "R3 carrier and yoke - maintenance arrangement register",
+  "revision": "C",
+  "issued": "2024-09-20",
+  "kind": "drawing register",
+  "sections": [
+    {
+      "id": "D03C.S01",
+      "heading": "Document control",
+      "text": "Status: current for the incident configuration. Equipment identifiers CB-3/YK-3. Backup rolls removed; carrier initially raised and seated on the yoke."
+    },
+    {
+      "id": "D03C.S02",
+      "heading": "Arrangement",
+      "text": "The backup-roll-associated stop is absent in this configuration. No separate travel stop is fitted to prevent the raised carrier from reaching mill post/spreader interference. One keeper plate is fitted."
+    },
+    {
+      "id": "D03C.S03",
+      "heading": "Retention limits",
+      "text": "The current record specifies 30 mm primary vertical seating engagement from the defined initial seat. Centered, seated keeper overlap is 8 mm. No approved off-center dynamic keeper-envelope calculation is contained in this revision."
+    },
+    {
+      "id": "D03C.S04",
+      "heading": "Interpretation",
+      "text": "An intact installed keeper is not evidence that overlap is maintained at every lateral position. The absence of an envelope calculation describes a knowledge boundary; it does not itself cause physical motion."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+R3 fallback comparison — 2026-10-05
+
+Exact fallback core fingerprint: 6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32
+
+One connected attempt each; no generation/time/call quota and no silent prompt truncation.
+Granite 3.3 8B: 3/96 present, 3/96 consistent; 19 missing, 74 not reached. Repeated null request asset/window after correction feedback.
+Hermes 3 8B: 3/96 present, 3/96 consistent; 19 missing, 74 not reached. Lead-only upstream fields in intake; lead then creates a workflow-commentary node depending on an uncommitted node.
+Mistral 7B: 2/96 present, 2/96 consistent; 20 missing, 74 not reached. Wrong create versions; correction invents motion measurements and cites an unreceived request as source.
+
+Each produced 2 completed answers, both batches rejected, 0 committed records. No new run produced a causal board. Scores measure raw expected-content coverage; they are NOT accuracy on completed full investigations.
+
+Historical same-runtime baselines: Qwen3.5 17/96 (0 committed board records, 74 not reached); GPT-5.5 82/96 presence,81/96 consistency (12 nodes,5 edges,5 not reached; partial board with known unsupported causal bridge). These historical runs were not rerun.
+
+Hardware qualification: initial Granite/Hermes full-GPU checks failed before case creation/inference. Diagnostics retained under setup-checks. Explicit CPU/GPU offload then permitted at unchanged native 131072 context. Mistral full GPU at native 32768. No model inference retried or resampled. Performance timing is not a controlled cross-model comparison.
+
+All 96 manual annotations per run include original-output references, reasons, and stage windows. Single unblinded reviewer; see REPORT.html, reviewed-annotations.json and review-diagnostics.json.

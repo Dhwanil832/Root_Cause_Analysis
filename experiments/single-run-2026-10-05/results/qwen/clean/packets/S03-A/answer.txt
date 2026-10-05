@@ -1,0 +1,162 @@
+{
+  "decision": "Admit proposed hydraulic and mechanical hypotheses as candidate mechanisms. Merge duplicate acquisition requests into a single active request. Schedule one evidence job to acquire yoke/carrier displacement data within the incident window. Defer assessment of procedural omission until motion data clarifies whether a block existed or was bypassed.",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Merge duplicate hydraulic and mechanical mechanism proposals into a single supported hypothesis node. The claim that loss of fluid through V17 permits descent is consistent with D02.S02 and D02.S06. Status remains candidate pending motion evidence.",
+      "record": {
+        "id": "P_hydraulics_mech",
+        "kind": "node",
+        "scope_key": "P_hydraulics_mech",
+        "claim": "Loss of C17 support-chamber fluid through V17 could permit yoke descent under load without independent restraint.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Merge duplicate relative motion and keeper bypass hypotheses. Relative withdrawal of 30 mm eliminates primary seating (D02.S05). Keeper bypass depends on lateral offset and dynamic path, requiring separate evidence.",
+      "record": {
+        "id": "P_motion_keeper",
+        "kind": "node",
+        "scope_key": "P_motion_keeper",
+        "claim": "Relative yoke/carrier motion could eliminate primary seating; dynamic keeper bypass could allow separation after primary seating loss.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Consolidate duplicate acquisition requests into a single active request targeting uncovered fields: yoke displacement, carrier displacement, and common time window. Asset and window match D01/D02 applicability.",
+      "record": {
+        "id": "Q_motion",
+        "kind": "request",
+        "scope_key": "Q_motion",
+        "claim": "Obtain incident yoke and carrier motion to test relative withdrawal and seating engagement.",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["FALL", "P_hydraulics_mech", "P_motion_keeper"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": ["yoke displacement", "carrier displacement", "common time window"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Create procedural omission node to track WP-031 instruction gap. Status remains candidate until execution records confirm whether a block was installed. D04.S01 and D04.S03 support the claim of omission but not its operational effect.",
+      "record": {
+        "id": "P_PROC_omission",
+        "kind": "node",
+        "scope_key": "P_PROC_omission",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "candidate",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Create edge linking procedural omission to the fall event. Mode is 'any' because omission alone does not prove fall; it must coexist with a failure to block or a bypass. This edge is candidate pending motion evidence.",
+      "record": {
+        "id": "E_PROC_FALL",
+        "kind": "edge",
+        "scope_key": "E_PROC_FALL",
+        "claim": "Procedural omission in WP-031 may have contributed to the fall if no block was installed or if the block failed.",
+        "status": "candidate",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": ["P_PROC_omission"],
+        "to_id": "FALL",
+        "mode": "any",
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Create edge linking fluid loss mechanism to the fall event. Mode is 'all' because fluid loss must occur and must be sufficient to overcome load. This edge is candidate pending motion evidence.",
+      "record": {
+        "id": "E_FLUID_FALL",
+        "kind": "edge",
+        "scope_key": "E_FLUID_FALL",
+        "claim": "Loss of C17 support-chamber fluid through V17 could have caused the fall if no independent restraint existed.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": ["P_hydraulics_mech"],
+        "to_id": "FALL",
+        "mode": "all",
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Create edge linking relative motion/keeper bypass to the fall event. Mode is 'any' because either mechanism could independently contribute. This edge is candidate pending motion evidence.",
+      "record": {
+        "id": "E_MOTION_FALL",
+        "kind": "edge",
+        "scope_key": "E_MOTION_FALL",
+        "claim": "Relative yoke/carrier motion or dynamic keeper bypass could have caused the fall.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": ["P_motion_keeper"],
+        "to_id": "FALL",
+        "mode": "any",
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "evidence",
+      "tag": "hydraulics_mechanical",
+      "focus": "Acquire yoke displacement, carrier displacement, and common time window for R3 CB-3/YK-3 C17/V17 assembly during 14 October 2024 incident interval.",
+      "target_ids": ["Q_motion"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

@@ -1,0 +1,18 @@
+{
+  "finding": "S03 is an evaluation grouping, not a runtime stage cap. The two initial model answers can receive S01-S03 semantic-presence credit.",
+  "sequence": [
+    "Intake returns a proposed/committed batch; invalid intake is held for lead review.",
+    "Lead attempts a reviewed batch.",
+    "Controller rejects the complete batch if records, sources, dependencies or dispatch are invalid.",
+    "engine.apply_result requeues the lead assignment and sets phase=needs_attention.",
+    "engine.run breaks on needs_attention.",
+    "run_local.py will not automatically resume an existing needs_attention case; its guard requires ready."
+  ],
+  "code_references": [
+    "runtime/prototype/rca/engine.py:269",
+    "runtime/prototype/rca/engine.py:331",
+    "run_local.py:30"
+  ],
+  "attribution": "Contract errors belong to model output; the decision to pause rather than automatically attempt another correction belongs to harness recovery design. Downstream causal accuracy is unobserved, not established as bad.",
+  "changes_made": false
+}

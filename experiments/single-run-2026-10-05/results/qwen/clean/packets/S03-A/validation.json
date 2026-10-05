@@ -1,0 +1,22 @@
+{
+  "accepted": false,
+  "operations": 7,
+  "reason": "duplicate_claim_reuse_PROC",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "duplicate_claim_reuse_PROC",
+      "phase": "controller",
+      "operation_index": 3,
+      "record_id": "P_PROC_omission",
+      "path": "$.operations[3].record.claim",
+      "actual": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+      "expected": "Distinct normalized node claim",
+      "repair": "Reuse the existing node.",
+      "matched_record_id": "PROC"
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

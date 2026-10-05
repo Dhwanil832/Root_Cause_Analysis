@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "seconds": 57.596,
+  "usage": {
+    "prompt_eval_count": 16575,
+    "eval_count": 433,
+    "done_reason": "stop"
+  },
+  "model": "qwen3.5:latest",
+  "provider": "ollama_macos_pilot",
+  "answer_hash": "65952eb90531f8eec0ca4b7fef0b6bc35cffe712eb0c8f4b9456009ba9aad28f",
+  "request_hash": "bcb6bd23b4c61c76b85cc677b299e4a17b370b6914408aca3122191285bf099b"
+}

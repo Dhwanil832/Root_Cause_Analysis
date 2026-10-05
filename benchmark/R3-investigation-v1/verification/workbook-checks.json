@@ -1,0 +1,30 @@
+{
+  "tests": [
+    {
+      "name": "blank_not_zero",
+      "ok": true
+    },
+    {
+      "name": "one_stage_eight_points",
+      "ok": true
+    },
+    {
+      "name": "other_repetitions_still_pending",
+      "ok": true
+    },
+    {
+      "name": "harness_block_not_scored_zero",
+      "ok": true
+    },
+    {
+      "name": "real_zero_preserved",
+      "ok": true
+    },
+    {
+      "name": "restored_blank",
+      "ok": true
+    }
+  ],
+  "errorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "nativeExcelTested": false
+}

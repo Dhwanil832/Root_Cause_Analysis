@@ -1,0 +1,46 @@
+{
+  "accepted": false,
+  "operations": 4,
+  "reason": "physical_record_has_request_fields",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "physical_record_has_request_fields",
+      "phase": "controller",
+      "operation_index": 0,
+      "record_id": "EVT_R3_20241014",
+      "path": "$.operations[0].record",
+      "actual": {
+        "id": "EVT_R3_20241014",
+        "kind": "node",
+        "scope_key": "R3_beam_fall_20241014",
+        "claim": "At 13:24 on 14 October 2024, the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. The assembly was raised after backup-roll removal. No person was struck. The keeper plate was found bolted to the recovered assembly; the beam and yoke were not reported fractured.",
+        "status": "reported",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_delivery_carrier_beam",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "occurrence",
+          "asset_identity",
+          "initial_conditions",
+          "damage_state"
+        ]
+      },
+      "expected": {
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch."
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

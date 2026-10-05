@@ -1,0 +1,18 @@
+{
+  "accepted": false,
+  "committed": false,
+  "operations": 12,
+  "reason": "worker_cannot_dispatch_or_close_upstream_review",
+  "errors": [
+    {
+      "code": "role_output",
+      "role": "specialist",
+      "assignment_tag": "upstream_C",
+      "forbidden_fields": [
+        "upstream_dispositions"
+      ],
+      "expected": "Empty arrays for forbidden fields",
+      "repair": "Keep justified proposed operations; remove forbidden dispatch/review entries. Only a lead upstream_review call can populate upstream_dispositions."
+    }
+  ]
+}

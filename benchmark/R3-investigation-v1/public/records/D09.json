@@ -1,0 +1,24 @@
+{
+  "id": "D09",
+  "title": "V17 removed-valve examination and bench test",
+  "revision": "0",
+  "issued": "2024-10-16 11:00",
+  "kind": "test report",
+  "sections": [
+    {
+      "id": "D09.S01",
+      "heading": "Custody",
+      "text": "Valve tag V17 was photographed before removal after the event and retained in a sealed parts bag. No seat adjustment or cleaning preceded testing. Custody supports component identity, not a timestamp for every defect."
+    },
+    {
+      "id": "D09.S02",
+      "heading": "Test conditions and results",
+      "text": "At the specified loaded-direction differential used for this fixture, the handle and limit switch indicated CLOSED. Reverse leakage measured 17 +/- 2 mL/min on three repeats. The external body did not leak. A later examination shows seat contamination; its arrival time is unknown."
+    },
+    {
+      "id": "D09.S03",
+      "heading": "Scope",
+      "text": "This later test establishes bench behavior at examination and is compatible with the incident-route measurement. It alone does not establish the earlier leakage rate or prove when contamination developed. A successful later functional test would likewise not exclude every earlier intermittent condition."
+    }
+  ]
+}

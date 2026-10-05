@@ -1,0 +1,795 @@
+[
+  {
+    "model": "GPT-5.5",
+    "origin": "Historical scored fallback",
+    "phase": "partial",
+    "score": {
+      "denominator": 96,
+      "outcomes": {
+        "Present": 82,
+        "Missing": 9,
+        "Not reached": 5
+      },
+      "presence_score": 82,
+      "consistent_score": 81,
+      "stages": [
+        {
+          "stage": "S01",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 7,
+            "Missing": 1
+          },
+          "presence_score": 7,
+          "consistent_score": 7
+        },
+        {
+          "stage": "S02",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 8
+          },
+          "presence_score": 8,
+          "consistent_score": 8
+        },
+        {
+          "stage": "S03",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 1,
+            "Present": 7
+          },
+          "presence_score": 7,
+          "consistent_score": 7
+        },
+        {
+          "stage": "S04",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 8
+          },
+          "presence_score": 8,
+          "consistent_score": 8
+        },
+        {
+          "stage": "S05",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 6,
+            "Missing": 1,
+            "Not reached": 1
+          },
+          "presence_score": 6,
+          "consistent_score": 6
+        },
+        {
+          "stage": "S06",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 7,
+            "Missing": 1
+          },
+          "presence_score": 7,
+          "consistent_score": 7
+        },
+        {
+          "stage": "S07",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 6,
+            "Missing": 2
+          },
+          "presence_score": 6,
+          "consistent_score": 6
+        },
+        {
+          "stage": "S08",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 6,
+            "Not reached": 2
+          },
+          "presence_score": 6,
+          "consistent_score": 5
+        },
+        {
+          "stage": "S09",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 8
+          },
+          "presence_score": 8,
+          "consistent_score": 8
+        },
+        {
+          "stage": "S10",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 1,
+            "Present": 6,
+            "Missing": 1
+          },
+          "presence_score": 6,
+          "consistent_score": 6
+        },
+        {
+          "stage": "S11",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 7,
+            "Missing": 1
+          },
+          "presence_score": 7,
+          "consistent_score": 7
+        },
+        {
+          "stage": "S12",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 6,
+            "Missing": 2
+          },
+          "presence_score": 6,
+          "consistent_score": 6
+        }
+      ]
+    },
+    "active_records": {
+      "node": 12,
+      "request": 5,
+      "edge": 5
+    },
+    "completed_calls": 23
+  },
+  {
+    "model": "Qwen3.5",
+    "origin": "Historical same-runtime attempt",
+    "phase": "needs_attention",
+    "score": {
+      "denominator": 96,
+      "outcomes": {
+        "Present": 17,
+        "Missing": 5,
+        "Not reached": 74
+      },
+      "presence_score": 17,
+      "consistent_score": 17,
+      "stages": [
+        {
+          "stage": "S01",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 5,
+            "Missing": 3
+          },
+          "presence_score": 5,
+          "consistent_score": 5
+        },
+        {
+          "stage": "S02",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 7,
+            "Missing": 1
+          },
+          "presence_score": 7,
+          "consistent_score": 7
+        },
+        {
+          "stage": "S03",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 2,
+            "Present": 5,
+            "Missing": 1
+          },
+          "presence_score": 5,
+          "consistent_score": 5
+        },
+        {
+          "stage": "S04",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S05",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S06",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S07",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S08",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S09",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S10",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S11",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S12",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        }
+      ]
+    },
+    "active_records": {},
+    "completed_calls": 2
+  },
+  {
+    "model": "Granite 3.3 8B",
+    "origin": "New; CPU/GPU offload explicitly allowed",
+    "phase": "needs_attention",
+    "score": {
+      "denominator": 96,
+      "outcomes": {
+        "Present": 3,
+        "Missing": 19,
+        "Not reached": 74
+      },
+      "presence_score": 3,
+      "consistent_score": 3,
+      "stages": [
+        {
+          "stage": "S01",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 2,
+            "Missing": 6
+          },
+          "presence_score": 2,
+          "consistent_score": 2
+        },
+        {
+          "stage": "S02",
+          "denominator": 8,
+          "outcomes": {
+            "Missing": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S03",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 2,
+            "Missing": 5,
+            "Present": 1
+          },
+          "presence_score": 1,
+          "consistent_score": 1
+        },
+        {
+          "stage": "S04",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S05",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S06",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S07",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S08",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S09",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S10",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S11",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S12",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        }
+      ]
+    },
+    "active_records": {},
+    "completed_calls": 2
+  },
+  {
+    "model": "Hermes 3 8B",
+    "origin": "New; CPU/GPU offload explicitly allowed",
+    "phase": "needs_attention",
+    "score": {
+      "denominator": 96,
+      "outcomes": {
+        "Present": 3,
+        "Missing": 19,
+        "Not reached": 74
+      },
+      "presence_score": 3,
+      "consistent_score": 3,
+      "stages": [
+        {
+          "stage": "S01",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 2,
+            "Missing": 6
+          },
+          "presence_score": 2,
+          "consistent_score": 2
+        },
+        {
+          "stage": "S02",
+          "denominator": 8,
+          "outcomes": {
+            "Missing": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S03",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 2,
+            "Missing": 5,
+            "Present": 1
+          },
+          "presence_score": 1,
+          "consistent_score": 1
+        },
+        {
+          "stage": "S04",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S05",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S06",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S07",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S08",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S09",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S10",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S11",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S12",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        }
+      ]
+    },
+    "active_records": {},
+    "completed_calls": 2
+  },
+  {
+    "model": "Mistral 7B",
+    "origin": "New; full GPU",
+    "phase": "needs_attention",
+    "score": {
+      "denominator": 96,
+      "outcomes": {
+        "Present": 2,
+        "Missing": 20,
+        "Not reached": 74
+      },
+      "presence_score": 2,
+      "consistent_score": 2,
+      "stages": [
+        {
+          "stage": "S01",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 2,
+            "Missing": 6
+          },
+          "presence_score": 2,
+          "consistent_score": 2
+        },
+        {
+          "stage": "S02",
+          "denominator": 8,
+          "outcomes": {
+            "Missing": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S03",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 2,
+            "Missing": 6
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S04",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S05",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S06",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S07",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S08",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S09",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S10",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S11",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S12",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        }
+      ]
+    },
+    "active_records": {},
+    "completed_calls": 2
+  },
+  {
+    "model": "Qwen3.5 \u2014 fresh replication",
+    "origin": "Two new calls; both answers byte-identical to historical fallback; original annotations verified and reapplied",
+    "phase": "needs_attention",
+    "score": {
+      "denominator": 96,
+      "outcomes": {
+        "Present": 17,
+        "Missing": 5,
+        "Not reached": 74
+      },
+      "presence_score": 17,
+      "consistent_score": 17,
+      "stages": [
+        {
+          "stage": "S01",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 5,
+            "Missing": 3
+          },
+          "presence_score": 5,
+          "consistent_score": 5
+        },
+        {
+          "stage": "S02",
+          "denominator": 8,
+          "outcomes": {
+            "Present": 7,
+            "Missing": 1
+          },
+          "presence_score": 7,
+          "consistent_score": 7
+        },
+        {
+          "stage": "S03",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 2,
+            "Present": 5,
+            "Missing": 1
+          },
+          "presence_score": 5,
+          "consistent_score": 5
+        },
+        {
+          "stage": "S04",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S05",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S06",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S07",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S08",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S09",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S10",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S11",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        },
+        {
+          "stage": "S12",
+          "denominator": 8,
+          "outcomes": {
+            "Not reached": 8
+          },
+          "presence_score": 0,
+          "consistent_score": 0
+        }
+      ]
+    },
+    "active_records": {},
+    "completed_calls": 2
+  }
+]

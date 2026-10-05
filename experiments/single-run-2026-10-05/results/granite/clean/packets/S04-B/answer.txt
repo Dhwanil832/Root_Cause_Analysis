@@ -1,0 +1,29 @@
+{
+  "decision": "The requested fields are partially answered as follows:",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": null,
+      "reason": "The motion record (D07) provides measurements of yoke and carrier vertical displacement between 13:00 and 13:24, showing a 40 +/- 1 mm downward displacement for the yoke and 0 +/- 1 mm for the carrier. The release of the carrier into the pit is detected at 13:24:03. The coverage limits indicate that no contact from an overhead crane or its load is visible within the fully covered carrier envelope from 13:00 to 13:24:03, but this does not exclude earlier disturbances or contact outside the envelope.",
+      "record": {
+        "id": "R_MOTION",
+        "kind": "request",
+        "scope_key": "R_MOTION",
+        "claim": "Acquire the incident motion record to assess yoke/carrier movement and coverage.",
+        "status": "answered",
+        "sources": ["D01", "D07"],
+        "depends_on": ["REL", "KEEP"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": ["yoke/carrier vertical displacement", "common time window", "release timing", "keeper interface and lateral offset coverage"]
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "partial"
+}

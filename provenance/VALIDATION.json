@@ -1,0 +1,41 @@
+{
+  "runtime_and_package_hashes_verified": true,
+  "core_files": 26,
+  "new_runs": [
+    {
+      "model": "granite",
+      "calls": 2,
+      "committed_records": 0,
+      "phase": "needs_attention",
+      "presence": 3,
+      "not_reached": 74,
+      "answer_hashes_verified": true,
+      "criteria_with_valid_references": 96
+    },
+    {
+      "model": "hermes",
+      "calls": 2,
+      "committed_records": 0,
+      "phase": "needs_attention",
+      "presence": 3,
+      "not_reached": 74,
+      "answer_hashes_verified": true,
+      "criteria_with_valid_references": 96
+    },
+    {
+      "model": "mistral",
+      "calls": 2,
+      "committed_records": 0,
+      "phase": "needs_attention",
+      "presence": 2,
+      "not_reached": 74,
+      "answer_hashes_verified": true,
+      "criteria_with_valid_references": 96
+    }
+  ],
+  "report_links_verified": 553,
+  "new_completed_model_calls": 6,
+  "custodian_batches_required": 0,
+  "reason": "All three runs stopped at initial contract repair; no request was committed.",
+  "review": "Single unblinded manual semantic review, same 96 criteria; not independent adjudication."
+}

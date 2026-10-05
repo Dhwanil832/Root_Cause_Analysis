@@ -1,0 +1,117 @@
+{
+  "qwen": {
+    "provider": "ollama_macos_pilot",
+    "model": "qwen3.5:latest",
+    "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "server_version": "0.32.3",
+    "think": false,
+    "thinking_supported": true,
+    "truncate": false,
+    "shift": false,
+    "timeout_seconds": null,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "num_predict": -1,
+      "num_ctx": 262144
+    },
+    "require_full_gpu": true
+  },
+  "gptoss": {
+    "provider": "ollama_macos_pilot",
+    "model": "gpt-oss:20b",
+    "digest": "17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7",
+    "server_version": "0.32.3",
+    "think": "medium",
+    "thinking_supported": true,
+    "truncate": false,
+    "shift": false,
+    "timeout_seconds": null,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "num_predict": -1,
+      "num_ctx": 131072
+    },
+    "require_full_gpu": true
+  },
+  "granite": {
+    "provider": "ollama_macos_pilot",
+    "model": "granite3.3:8b",
+    "digest": "fd429f23b90980ed1bef53b990894e7b0199331f6ae90c5650240a7d5b70f1f7",
+    "server_version": "0.32.3",
+    "think": false,
+    "thinking_supported": false,
+    "truncate": false,
+    "shift": false,
+    "timeout_seconds": null,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "num_predict": -1,
+      "num_ctx": 131072
+    },
+    "require_full_gpu": false
+  },
+  "hermes": {
+    "provider": "ollama_macos_pilot",
+    "model": "hermes3:8b",
+    "digest": "4f6b83f30b62bc3d0cf9be09266db222805ee815c8fd7d8b38f863f655be78b7",
+    "server_version": "0.32.3",
+    "think": false,
+    "thinking_supported": false,
+    "truncate": false,
+    "shift": false,
+    "timeout_seconds": null,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "num_predict": -1,
+      "num_ctx": 131072
+    },
+    "require_full_gpu": false
+  },
+  "mistral": {
+    "provider": "ollama_macos_pilot",
+    "model": "mistral:7b",
+    "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+    "server_version": "0.32.3",
+    "think": false,
+    "thinking_supported": false,
+    "truncate": false,
+    "shift": false,
+    "timeout_seconds": null,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "num_predict": -1,
+      "num_ctx": 32768
+    },
+    "require_full_gpu": true
+  }
+}

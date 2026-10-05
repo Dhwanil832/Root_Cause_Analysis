@@ -1,0 +1,20 @@
+{
+  "purpose": "One fresh connected R3 investigation after dependency and stopping repair",
+  "model": "gpt-5.5",
+  "transport": "Codex saved ChatGPT login",
+  "reasoning_effort": "medium",
+  "repetitions": 1,
+  "runtime_contract": "2026-10-04-dependency-repair-2",
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "initial_documents": [
+    "D01",
+    "D02",
+    "D04",
+    "D15"
+  ],
+  "custodian": "Original frozen package documents, matched to requests under existing policy. No gold answers sent.",
+  "call_count_cap": null,
+  "application_timeout": null,
+  "comparison": "Previous current/fallback cases remain unchanged; no implicit fallback or model retries.",
+  "grading": "Execution and board audit after run. Historical scores are not new-run scores."
+}

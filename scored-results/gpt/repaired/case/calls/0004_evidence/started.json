@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-04T18:42:27.017415+00:00",
+  "execution_profile": {
+    "provider": "codex_chatgpt",
+    "model": "gpt-5.5",
+    "reasoning_effort": "medium",
+    "snapshot_verified": false,
+    "authentication": "saved ChatGPT login",
+    "context": "fresh ephemeral session per call",
+    "call_count_cap": null,
+    "application_timeout": null,
+    "original_api_profile_equivalent": false
+  },
+  "messages_hash": "a7b5164ec3d8810a0237f311df7db552709ca1fbb452bc25b3f4a750a3593689",
+  "schema_hash": "774d849dedc7df09f9c9e6fc183ab953d2028aac74a9c3beb54c047d7f678e1a"
+}

@@ -1,0 +1,19 @@
+{
+  "mode": "connected",
+  "repetitions": 1,
+  "models": {
+    "granite": "granite3.3:8b",
+    "hermes": "hermes3:8b",
+    "mistral": "mistral:7b"
+  },
+  "selection": "Installed models with useful prior clean-input performance; fixed before new outputs.",
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "baseline_gpt": "../RCA-GPT55-Repaired-2026-10-04",
+  "baseline_qwen": "../RCA-Ollama-Repaired-2026-10-04/qwen",
+  "historical_baselines": "Not fresh repetitions. Qwen score includes raw uncommitted answers, not a completed board.",
+  "limits": "No generation, elapsed-time, or call quota; native finite context; no silent truncation or retries. CPU offload explicitly allowed for Granite and Hermes after recorded full-GPU preload failure; Mistral retains full-GPU requirement.",
+  "custodian": "Existing frozen semantic route policy; operator maps at genuine evidence pauses before scoring, records decisions; unblinded operator disclosed.",
+  "scoring": "Frozen 96 criteria, bounded reasoning-stage windows selected before row grading; expected meaning counts in raw output, commitment reported separately; not reached separate from wrong/missing.",
+  "preservation": "New folder with byte-verified fallback core; current harness and all historical cases unchanged.",
+  "hardware_qualification": "Granite and Hermes initial full-GPU preloads failed before any model call or case creation. Preserve diagnostics separately; proceed with documented mixed CPU/GPU placement at identical native context."
+}

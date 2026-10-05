@@ -1,0 +1,11 @@
+{
+  "provider": "codex_chatgpt",
+  "model": "gpt-5.5",
+  "reasoning_effort": "medium",
+  "snapshot_verified": false,
+  "authentication": "saved ChatGPT login",
+  "context": "fresh ephemeral session per call",
+  "call_count_cap": null,
+  "application_timeout": null,
+  "original_api_profile_equivalent": false
+}

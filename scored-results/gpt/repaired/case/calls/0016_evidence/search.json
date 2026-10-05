@@ -1,0 +1,204 @@
+{
+  "query": "Obtain and assess records that can determine whether V17 leakage during the R3 event originated from pre-event seat contamination, wear, maintenance condition, or post-event handling/preservation effects. R3 V17 return-isolation valve and C17/V17 hydraulic circuit pre-event maintenance history before 14 October 2024 through post-event removal, preservation, examination, and any repair/replacement of V17 V17 pre-event maintenance inspection and leakage-test history post-event V17 removal preservation handling and contamination-identification notes C17/V17 circuit fluid cleanliness filter and debris records V17 repair replacement or defect-cause analysis records",
+  "collection_revision": 13,
+  "searched_ids": [
+    "D01",
+    "D02",
+    "D04",
+    "D05",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D13",
+    "D14",
+    "D15",
+    "USER_5258a84a5f5b"
+  ],
+  "hits": [
+    {
+      "source": {
+        "id": "D08",
+        "title": "C17 boundary measurements - incident interval",
+        "content": "D08.S01 Identity and time\nTags verified against C17/V17 in D02 and the WP-031 tag schedule. The records cover 13:00:00 to 13:24:00 on 14 October 2024, synchronized with CAM-3. They do not use the circuit nickname as identity.\n\nD08.S02 Measured quantities\nV17 CLOSED indication remains 1. The calibrated meter on the only C17-to-return route through V17 records 0.400 +/- 0.010 litres leaving the chamber. External loss is below 0.002 litres; the boundary inspection finds no alternate return route. Instrument checks passed before and after this interval.\n\nD08.S03 Model limits\nUse 100 cm2 effective area and 1:1 cylinder-to-yoke travel. Within this specified boundary, compression and temperature effects are negligible within the stated uncertainty. No independent block was present. Do not generalize these simplifications to an unspecified machine.\n\nD08.S04 Interpretation boundary\nThe meter records chamber fluid leaving through the tagged route despite closed-position indication. It does not establish valve wear age, contamination, prior inspection decisions or why the carrier bypassed its keeper.",
+        "revision": "1",
+        "version": 1,
+        "kind": "instrument report",
+        "request_ids": [
+          "R_R3HydraulicRecords"
+        ],
+        "hash": "c1ff60ad7daf77e72dc9bb183b01facd31d1189286f5d350fb46d402679f0a40",
+        "origin_name": "D08.json"
+      },
+      "lexical_score": 23.538
+    },
+    {
+      "source": {
+        "id": "D02",
+        "title": "R3 raised assembly - functional system description",
+        "content": "D02.S01 Applicability\nThis functional description applies to R3 assembly set CB-3/YK-3 in the maintenance configuration with backup rolls removed. It specifies the equipment model used in this record set. It is not an operating or isolation instruction.\n\nD02.S02 Load and fluid paths\nYoke YK-3 follows support cylinder C17 at a 1:1 vertical displacement ratio. The effective support area is 100 cm2. With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel under load. The isolated test boundary has one chamber-to-return path through valve V17; external leakage and alternate return paths are separately monitored.\n\nD02.S03 Position versus sealing\nThe V17 CLOSED limit switch detects handle position. It does not measure seat leakage. Motor/pump supply being isolated does not prove that the raised assembly is mechanically restrained or that trapped fluid cannot leave the chamber.\n\nD02.S04 Geometry and interference\nThe carrier normally seats on the yoke. Mill post/spreader contact can temporarily hold the carrier vertically while the yoke moves down. Relative vertical withdrawal is yoke downward travel minus carrier downward travel over the same interval. Temporary interference contact is not a designed mechanical block.\n\nD02.S05 Primary and secondary retention\nIn the defined seated starting state, primary vertical seating engagement is 30 mm. Relative downward withdrawal of the yoke of at least 30 mm eliminates that primary seating engagement. This rule does not prove that the keeper is bypassed. Keeper engagement additionally depends on lateral offset and the dynamic path; those conditions require their own evidence.\n\nD02.S06 Energy\nGravity remains available while the assembly is raised. Electrical isolation, hydraulic handle position and positive mechanical restraint are distinct conditions. No rule here states that a leaking valve alone is sufficient to make the carrier fall.",
+        "revision": "C",
+        "version": 1,
+        "kind": "specification",
+        "request_ids": [],
+        "hash": "9d6e5a7b85f27ab6d8bed417456ed9f16ba9c44c46b3dea171a704fc5218b8e5",
+        "origin_name": "D02.json"
+      },
+      "lexical_score": 21.101
+    },
+    {
+      "source": {
+        "id": "D01",
+        "title": "R3 delivery carrier beam - initial event notice",
+        "content": "D01.S01 Event\nAt 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. No person was struck. The assembly had been parked raised after backup-roll removal during the outage.\n\nD01.S02 Initial observations\nThe keeper plate was found bolted to the recovered assembly. The beam and yoke were not reported fractured. These are initial condition observations, not a conclusion about the release mechanism.\n\nD01.S03 Available leads\nA motion record, work package, isolation records, inspection photographs and hydraulic records have been retained. Their coverage and applicability must be checked. The cause of the event is not stated in this notice.",
+        "revision": "0",
+        "version": 1,
+        "kind": "record",
+        "request_ids": [],
+        "hash": "d7c93970242e7625b654b3f00393a24b8848989127b2346110ea04a114f742ed",
+        "origin_name": "D01.json"
+      },
+      "lexical_score": 18.188
+    },
+    {
+      "source": {
+        "id": "D09",
+        "title": "V17 removed-valve examination and bench test",
+        "content": "D09.S01 Custody\nValve tag V17 was photographed before removal after the event and retained in a sealed parts bag. No seat adjustment or cleaning preceded testing. Custody supports component identity, not a timestamp for every defect.\n\nD09.S02 Test conditions and results\nAt the specified loaded-direction differential used for this fixture, the handle and limit switch indicated CLOSED. Reverse leakage measured 17 +/- 2 mL/min on three repeats. The external body did not leak. A later examination shows seat contamination; its arrival time is unknown.\n\nD09.S03 Scope\nThis later test establishes bench behavior at examination and is compatible with the incident-route measurement. It alone does not establish the earlier leakage rate or prove when contamination developed. A successful later functional test would likewise not exclude every earlier intermittent condition.",
+        "revision": "0",
+        "version": 1,
+        "kind": "test report",
+        "request_ids": [
+          "R_R3HydraulicRecords"
+        ],
+        "hash": "007cd1b76641878938ce4584b9159371a90638cbb9e716fa009d2ee712d5ca34",
+        "origin_name": "D09.json"
+      },
+      "lexical_score": 16.14
+    },
+    {
+      "source": {
+        "id": "D04",
+        "title": "Stripper-box changeout - task isolation package",
+        "content": "D04.S01 Scope\nTask WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal. The package calls for electrical supply isolation and hydraulic valve closure. The task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope.\n\nD04.S02 Circuit nomenclature\nThe cover calls the supply group B hydraulics. A worksheet calls support-chamber trapped energy A. These names are not circuit identities. Use the tag schedule: C17 support chamber and V17 return-isolation valve belong to the raised balance assembly. Do not substitute unrelated A/B circuit records based on the letter alone.\n\nD04.S03 Interpretation limit\nA procedural omission is distinct from proof of what workers did. Execution records are needed to establish whether a block was actually present. This document does not establish why the procedure omitted that step.",
+        "revision": "3",
+        "version": 1,
+        "kind": "procedure extract",
+        "request_ids": [],
+        "hash": "a5a2cb42b05418153a97e1bb8ffa23d61f1f5d8ebd33227aad18bacd442da5ee",
+        "origin_name": "D04.json"
+      },
+      "lexical_score": 14.336
+    },
+    {
+      "source": {
+        "id": "D10",
+        "title": "CB-3/YK-3 clearance and engagement review",
+        "content": "D10.S01 Inputs\nUse current revision C, a 30 mm initial primary seat, and the signed convention: positive means downward travel. Relative withdrawal equals yoke travel minus carrier travel. Bounded errors are combined by interval arithmetic, not by assuming independence.\n\nD10.S02 Seated check\nAt the centered, seated post-event inspection position the keeper overlap is 8 +/- 1 mm. Under the rigid centered seated geometry, simple vertical passage over the yoke is not possible. This test does not reproduce the incident offset or rotation.\n\nD10.S03 Open calculation\nThe incident lateral offset and release rotation are not measured. An approved off-center dynamic retention envelope is unavailable. Primary seating loss can be assessed from supplied vertical data; keeper bypass cannot be resolved from that calculation alone.\n\nD10.S04 Required follow-up\nObtain a time-relevant lateral/rotation measurement or a validated retention-envelope analysis with an independently bounded incident offset. Repeating the centered seated measurement without new scope does not answer the dynamic question.",
+        "revision": "0",
+        "version": 1,
+        "kind": "engineering review",
+        "request_ids": [
+          "R_R3InspectionPhotos"
+        ],
+        "hash": "76e0a39cc2f5c7e891577ae263b53f97ae603fd62ddc6f15faf602fef51e2f70",
+        "origin_name": "D10.json"
+      },
+      "lexical_score": 12.449
+    },
+    {
+      "source": {
+        "id": "D05",
+        "title": "WP-031 - configuration and isolation execution record",
+        "content": "D05.S01 Configuration entries\nAt 12:52 backup rolls were removed. At 12:57 the balance was raised. At 13:00 electrical isolation was recorded complete and the V17 handle was recorded CLOSED. These entries establish reported execution, not valve tightness.\n\nD05.S02 Restraint observation\nA configuration photograph taken at 13:00 and reviewed against the block locations shows no independent positive block under YK-3. The carrier is in contact with the mill post/spreader. The photo does not resolve keeper overlap.\n\nD05.S03 Verification coverage\nNo loaded hold test, chamber-volume test or keeper-envelope check was recorded before work began. The absence of these entries does not prove deliberate noncompliance or explain the origin of any component defect.",
+        "revision": "0",
+        "version": 1,
+        "kind": "record",
+        "request_ids": [
+          "R_R3HydraulicRecords",
+          "R_R3ExecutionIsolation"
+        ],
+        "hash": "55d1aa9e338d6a1a6c6b3e4f3242d4857410045ffded8ad8c878943f0fa3d287",
+        "origin_name": "D05.json"
+      },
+      "lexical_score": 9.861
+    },
+    {
+      "source": {
+        "id": "D14",
+        "title": "Recovered assembly - condition inspection",
+        "content": "D14.S01 Custody and examination\nCB-3 and YK-3 were photographed after recovery. Keeper fasteners remain installed and the plate remains attached. The full plate and fasteners show no gross separation or fracture. This inspection does not establish dynamic overlap during release.\n\nD14.S02 Condition\nWitness marks are present on the carrier and mill post/spreader contact surfaces. The marks are consistent with contact but cannot alone date when contact began or establish the exact load carried.\n\nD14.S03 Limits\nNo material record supports a fatigue-fracture explanation of a keeper bolt in this examination. Unmeasured deformation and the off-center release path remain separate questions.",
+        "revision": "0",
+        "version": 1,
+        "kind": "inspection report",
+        "request_ids": [
+          "R_R3InspectionPhotos"
+        ],
+        "hash": "70a5efb0ed09306aa6804691f977772068e354d0776e9516a73dd85ec4bdc079",
+        "origin_name": "D14.json"
+      },
+      "lexical_score": 6.704
+    },
+    {
+      "source": {
+        "id": "D13",
+        "title": "R3 corrective-action proposal register",
+        "content": "D13.S01 Proposals\nPropose a travel stop for the backup-roll-removed configuration; review keeper coverage through offset travel; evaluate a positive raised-yoke block; replace V17; review stored-energy controls.\n\nD13.S02 Status\nAll entries are Identified. Effectiveness criteria have not been checked and implementation is not documented in this register.\n\nD13.S03 Limit\nA proposed modification is not evidence that the existing feature was absent, that its absence caused this event, or that the proposed design has been validated.",
+        "revision": "0",
+        "version": 1,
+        "kind": "action register",
+        "request_ids": [],
+        "hash": "e38b747b3a7d8453b34cc5335ae4e4cdf9fd6016a80594518d7f5957fc897d39",
+        "origin_name": "D13.json"
+      },
+      "lexical_score": 5.624
+    },
+    {
+      "source": {
+        "id": "D15",
+        "title": "Preliminary investigation note - unreviewed",
+        "content": "D15.S01 Draft interpretation\nThe writer suggests that the closed valve indication proves hydraulic isolation and that the installed keeper should have prevented all movement. The writer therefore suspects excess clearance.\n\nD15.S02 Basis and status\nThis note cites only the initial event notice and handle-status entry. It contains no leak measurement, retention-envelope calculation or independent witness account. Status: unreviewed interpretation, not an additional observation.\n\nD15.S03 Source lineage\nThe attached action summary was copied from the initial investigation meeting. Repetition in this note is not independent corroboration.",
+        "revision": "0",
+        "version": 1,
+        "kind": "preliminary memo",
+        "request_ids": [],
+        "hash": "54b0de4652a17c15ec9ec74be89e34bca7751c2ea8bc02a8aef58b9adf14b798",
+        "origin_name": "D15.json"
+      },
+      "lexical_score": 5.336
+    },
+    {
+      "source": {
+        "id": "D07",
+        "title": "CAM-3 motion measurement and coverage report",
+        "content": "D07.S01 Record identity\nSource CAM-3, frames indexed to the plant clock. The incident clip is continuous from 13:00:00 to 13:24:10. Vertical reference marks were surveyed before extraction. This report concerns vertical motion only.\n\nD07.S02 Measured interval\nBetween 13:00:00 and 13:24:00, yoke downward displacement is 40 +/- 1 mm and carrier downward displacement is 0 +/- 1 mm. The defined seated start was visible at 13:00. Post/spreader contact remained visible during this interval. Displacements share the same reference frame and time window.\n\nD07.S03 Release\nAt 13:24:03 the carrier starts downward travel into the pit. The keeper-to-yoke interface and lateral offset are occluded during the release. The clip cannot distinguish transient offset, rotation or local deformation as the keeper-bypass mechanism.\n\nD07.S04 Coverage limits\nNo contact from an overhead crane or its load is visible within the fully covered carrier envelope from 13:00 to 13:24:03. Temporal and spatial resolution are sufficient to detect direct crane/load contact within that envelope during this interval. Coverage does not exclude an earlier disturbance or all conceivable contact outside that envelope. Measurement uncertainty is bounded as stated; it is not a confidence percentage.",
+        "revision": "1",
+        "version": 1,
+        "kind": "measurement report",
+        "request_ids": [
+          "R_R3MotionRecord"
+        ],
+        "hash": "dfa2b78509c164e6e2c7e114dd899196622c6658062fc582923896c7e33442a8",
+        "origin_name": "D07.json"
+      },
+      "lexical_score": 4.625
+    },
+    {
+      "source": {
+        "id": "USER_5258a84a5f5b",
+        "title": "User response to R_R3ExecutionIsolation",
+        "content": "R3 benchmark record desk: the supplied package contains no additional record answering the following requested scope: completed WP-031 steps and signoffs; authorization and reason for any omitted restraint or retention-envelope verification. This is a limit of this supplied package, not evidence that the historical activity or record never existed. The physical explanation remains for investigation.",
+        "revision": "0",
+        "version": 1,
+        "kind": "user_testimony",
+        "request_ids": [
+          "R_R3ExecutionIsolation"
+        ],
+        "hash": "67976e11f8fe2a8b2d0ff9354f4ed685acd491081d48f749059175abc1d320fb",
+        "origin_name": "user_input"
+      },
+      "lexical_score": 3.75
+    }
+  ],
+  "limitation": "Lexical retrieval; a search miss is not proof that information does not exist. No OCR or web lookup performed."
+}

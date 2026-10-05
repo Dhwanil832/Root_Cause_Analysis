@@ -1,0 +1,105 @@
+{
+  "decision": "The established condition that the assembly had 'no independent positive block' (NOBLOCK) is supported by visual evidence (D05, D08) but does not explain the *mechanism* of the fall. The fall occurred because the primary seating was lost (SEAT) while the assembly was raised (LOAD) and gravity was available (CONFIG). The loss of seating is attributed to relative withdrawal (WITHDRAW) exceeding the 30 mm limit. However, the *cause* of this withdrawal is unresolved. Evidence D08 confirms fluid leakage (LEAK) through V17 despite the CLOSED indication, which provides a mechanism for yoke descent. However, D07 shows the carrier did not move (0 mm) while the yoke moved (40 mm), implying the carrier was held by contact (CONTACT) until the final release. The critical unresolved question is whether the leakage alone caused the yoke to descend enough to lose the 30 mm seat, or if an unmeasured lateral offset/rotation (implied by D10) allowed the keeper to bypass earlier. The current evidence supports the 'Leak-induced Withdrawal' hypothesis but lacks the lateral/rotation data to confirm if the keeper was bypassed dynamically or if the seat was simply lost to vertical withdrawal. The investigation must proceed to quantify the lateral offset or obtain a validated retention-envelope analysis to distinguish between 'vertical withdrawal loss' and 'dynamic bypass'.",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose a new hypothesis node to capture the specific mechanism of primary seating loss. The current evidence supports leakage (LEAK) and yoke descent (YOKE), but the link to seating loss (SEAT) requires a specific causal claim. This node asserts that the relative withdrawal caused by leakage exceeded the 30 mm limit, leading to seating loss. This is distinct from a dynamic bypass hypothesis.",
+      "record": {
+        "id": "MECH_LEAK_WITHDRAW",
+        "kind": "node",
+        "scope_key": "MECH_LEAK_WITHDRAW",
+        "claim": "The primary seating was lost because the relative vertical withdrawal (yoke down minus carrier down) caused by fluid leakage through V17 exceeded the 30 mm engagement limit.",
+        "status": "candidate",
+        "sources": ["D02", "D07", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose a competing hypothesis node to capture the alternative mechanism where the keeper was bypassed due to lateral offset/rotation, which is not fully resolved by vertical data alone. This addresses the gap identified in D10.",
+      "record": {
+        "id": "MECH_DYNAMIC_BYPASS",
+        "kind": "node",
+        "scope_key": "MECH_DYNAMIC_BYPASS",
+        "claim": "The primary seating was lost because the carrier rotated or laterally offset during the withdrawal, allowing the keeper to bypass the yoke before the 30 mm vertical limit was reached.",
+        "status": "candidate",
+        "sources": ["D02", "D07", "D10"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose a request to acquire the missing lateral/rotation data required to distinguish between the two mechanisms. D10 explicitly states this data is unavailable and required.",
+      "record": {
+        "id": "REQ_LATERAL_OFFSET",
+        "kind": "request",
+        "scope_key": "REQ_LATERAL_OFFSET",
+        "claim": "Acquire time-relevant lateral position and rotation measurement of the carrier/yoke interface during the incident interval.",
+        "status": "proposed",
+        "sources": ["D10"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "CB-3/YK-3",
+        "window": "13:00:00 - 13:24:03",
+        "fields": ["lateral_offset", "rotation_angle"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Propose a request to acquire the validated retention-envelope analysis mentioned in D10 to confirm if the current configuration allows for the observed withdrawal without bypass.",
+      "record": {
+        "id": "REQ_RETENTION_ENVELOPE",
+        "kind": "request",
+        "scope_key": "REQ_RETENTION_ENVELOPE",
+        "claim": "Obtain a validated retention-envelope analysis for the maintenance configuration (backup rolls removed) to determine the maximum allowable withdrawal before keeper bypass.",
+        "status": "proposed",
+        "sources": ["D10", "D03C"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "CB-3/YK-3",
+        "window": "13:00:00 - 13:24:03",
+        "fields": ["envelope_limit", "bypass_conditions"]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "specialist",
+      "tag": "mechanism_analysis",
+      "focus": "Evaluate the two proposed mechanisms (Leak-induced Withdrawal vs. Dynamic Bypass) against the available evidence. Determine if the vertical withdrawal data (D07, D08) is sufficient to support the Leak-induced Withdrawal hypothesis or if the Dynamic Bypass hypothesis requires the new lateral/rotation data.",
+      "target_ids": ["MECH_LEAK_WITHDRAW", "MECH_DYNAMIC_BYPASS"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "data_acquisition",
+      "focus": "Execute the proposed requests to acquire lateral offset/rotation data and retention-envelope analysis. If these cannot be obtained, document the evidence boundary and assess if the investigation can proceed with uncertainty or must be paused.",
+      "target_ids": ["REQ_LATERAL_OFFSET", "REQ_RETENTION_ENVELOPE"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

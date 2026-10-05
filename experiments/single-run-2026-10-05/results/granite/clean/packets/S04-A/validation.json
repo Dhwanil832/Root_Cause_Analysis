@@ -1,0 +1,50 @@
+{
+  "accepted": false,
+  "operations": 1,
+  "reason": "identity_changed_use_replace",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "identity_changed_use_replace",
+      "phase": "controller",
+      "operation_index": 0,
+      "record_id": "R_MOTION",
+      "path": "$.operations[0].record",
+      "actual": {
+        "id": "R_MOTION",
+        "kind": "request",
+        "scope_key": "R_MOTION",
+        "claim": "Acquire the incident motion record to assess yoke/carrier movement and coverage. R3 CB-3/YK-3 C17/V17 raised maintenance assembly 14 October 2024 incident and stated relevant record interval yoke/carrier vertical displacement common time window release timing keeper interface and lateral offset coverage",
+        "status": "partial",
+        "sources": [
+          "D01",
+          "D02"
+        ],
+        "depends_on": [
+          "REL",
+          "KEEP"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": [
+          "yoke/carrier vertical displacement",
+          "common time window",
+          "release timing",
+          "keeper interface and lateral offset coverage"
+        ]
+      },
+      "expected": {
+        "kind": "request",
+        "scope_key": "R_MOTION",
+        "claim": "Acquire the incident motion record to assess yoke/carrier movement and coverage."
+      },
+      "repair": "Keep identity verbatim or replace with a fresh same-kind ID."
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

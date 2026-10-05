@@ -1,0 +1,64 @@
+{
+  "accepted": true,
+  "operations": 4,
+  "changed": 4,
+  "noops": [],
+  "reason": null,
+  "invalidated_ids": [],
+  "committed": true,
+  "operations_accepted": true,
+  "dispatch": [
+    {
+      "job": {
+        "kind": "evidence",
+        "tag": "motion_records",
+        "focus": "Search retained motion evidence for yoke/carrier timing, relative withdrawal inputs, and mill-post/spreader interference timing in the R3 event window.",
+        "target_ids": [
+          "R_R3MotionRecord"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    },
+    {
+      "job": {
+        "kind": "evidence",
+        "tag": "hydraulic_records",
+        "focus": "Search retained C17/V17 hydraulic evidence for support-chamber pressure/position, V17 status and leakage, external/alternate return paths, and motor or pump isolation timing.",
+        "target_ids": [
+          "R_R3HydraulicRecords"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    },
+    {
+      "job": {
+        "kind": "evidence",
+        "tag": "execution_isolation",
+        "focus": "Search WP-031 execution and isolation records for completed steps, signoffs, actual positive blocking, isolation timing, authorization, and reasons for any omitted restraint or retention-envelope verification.",
+        "target_ids": [
+          "R_R3ExecutionIsolation"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    },
+    {
+      "job": {
+        "kind": "evidence",
+        "tag": "inspection_photos",
+        "focus": "Search retained inspection photos and measurements for keeper/fastener condition, beam/yoke damage, seating/contact geometry, lateral offset or dynamic-path marks, and impact/contact evidence.",
+        "target_ids": [
+          "R_R3InspectionPhotos"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    }
+  ]
+}

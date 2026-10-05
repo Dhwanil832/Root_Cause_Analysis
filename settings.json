@@ -1,0 +1,20 @@
+{
+  "ollama_version": "0.32.3",
+  "repetitions": 3,
+  "modes": [
+    "connected",
+    "clean"
+  ],
+  "require_full_gpu": true,
+  "gpu": null,
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "presence_penalty": 0,
+    "repeat_penalty": 1,
+    "num_predict": -1
+  }
+}

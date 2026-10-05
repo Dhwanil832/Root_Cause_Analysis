@@ -1,0 +1,146 @@
+{
+  "mode": "clean",
+  "packets": [
+    {
+      "task": "S01-A",
+      "stage": "S01",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": false,
+      "rejection_reason": "physical_record_has_request_fields"
+    },
+    {
+      "task": "S02-H",
+      "stage": "S02",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": null,
+      "rejection_reason": "held_for_lead_review"
+    },
+    {
+      "task": "S02-M",
+      "stage": "S02",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": null,
+      "rejection_reason": "held_for_lead_review"
+    },
+    {
+      "task": "S03-A",
+      "stage": "S03",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": false,
+      "rejection_reason": "duplicate_claim_reuse_PROC"
+    },
+    {
+      "task": "S04-A",
+      "stage": "S04",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "task": "S04-B",
+      "stage": "S04",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "task": "S05-A",
+      "stage": "S05",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": null,
+      "rejection_reason": "held_for_lead_review"
+    },
+    {
+      "task": "S06-A",
+      "stage": "S06",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": null,
+      "rejection_reason": "held_for_lead_review"
+    },
+    {
+      "task": "S07-A",
+      "stage": "S07",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": false,
+      "rejection_reason": "identity_changed_use_replace"
+    },
+    {
+      "task": "S08-V",
+      "stage": "S08",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": null,
+      "rejection_reason": "held_for_lead_review"
+    },
+    {
+      "task": "S08-B",
+      "stage": "S08",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": false,
+      "rejection_reason": "worker_cannot_dispatch_or_close_upstream_review"
+    },
+    {
+      "task": "S08-C",
+      "stage": "S08",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": null,
+      "rejection_reason": "held_for_lead_review"
+    },
+    {
+      "task": "S09-V",
+      "stage": "S09",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "task": "S09-K",
+      "stage": "S09",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "task": "S10-A",
+      "stage": "S10",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": false,
+      "rejection_reason": "worker_cannot_dispatch_or_close_upstream_review"
+    },
+    {
+      "task": "S11-A",
+      "stage": "S11",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "task": "S12-A",
+      "stage": "S12",
+      "score": null,
+      "status": "answer_saved",
+      "accepted": true,
+      "rejection_reason": null
+    }
+  ],
+  "completed_answers": 17,
+  "processed_tasks": 17,
+  "target_tasks": 17,
+  "score": null,
+  "scoring_status": "manual_semantic_review_required"
+}

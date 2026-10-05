@@ -1,0 +1,25 @@
+{
+  "classification": "Model-contract failure, no observed transport/context failure",
+  "first_error": {
+    "call": 1,
+    "code": "physical_record_has_request_fields",
+    "cause": "Physical event node carries nonempty asset/window/fields; prompt requires null/null/empty."
+  },
+  "propagation": {
+    "call": 2,
+    "code": "unknown_revision_target",
+    "cause": "Lead correctly clears request-only fields but revises the rejected, absent node. Packet ledger is empty and feedback explicitly states no operations committed."
+  },
+  "raw_semantic_presence": 17,
+  "consistent_correct": 17,
+  "missing": 5,
+  "not_reached": 74,
+  "committed_records": 0,
+  "notes": [
+    "Rejected raw answers receive semantic credit in S01-S03. Final retained content remains empty.",
+    "S03.02 is present in intake reasoning but the lead drops the explicit primary-seat step.",
+    "Both outputs label the incident time with UTC Z although no timezone was established; unsupported extra specificity, no arbitrary score deduction.",
+    "Same frozen core as GPT-5.5; no automatic retry or manually repaired output.",
+    "A correct rejection does not prove the entire harness fault-free or that larger models will always succeed."
+  ]
+}

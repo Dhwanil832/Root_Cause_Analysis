@@ -1,0 +1,104 @@
+{
+  "status": "partial_review_not_final_score",
+  "reviewed_checks": 12,
+  "total_checks": 96,
+  "rows": [
+    {
+      "criterion_id": "S01.01",
+      "outcome": "Present",
+      "reason": "Explicit focal carrier fall into pit onto sled/scaffold.",
+      "output_reference": "packets/S01-A/answer.txt#/operations/0/record/claim",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S01.02",
+      "outcome": "Present",
+      "reason": "Reason explicitly states raised assembly after backup-roll removal.",
+      "output_reference": "packets/S01-A/answer.txt#/operations/0/reason",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S01.03",
+      "outcome": "Missing",
+      "reason": "Uses C17/V17 tags but does not resolve A/B naming ambiguity.",
+      "output_reference": "packets/S01-A/answer.txt",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S01.04",
+      "outcome": "Present",
+      "reason": "Explicitly states V17 closed handle position does not prove absence of leakage.",
+      "output_reference": "packets/S01-A/answer.txt#/operations/1/reason",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S01.05",
+      "outcome": "Missing",
+      "reason": "No explicit electrical-isolation versus mechanical-restraint distinction.",
+      "output_reference": "packets/S01-A/answer.txt",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S01.06",
+      "outcome": "Missing",
+      "reason": "Cites D15 but does not identify its unreviewed/non-independent status.",
+      "output_reference": "packets/S01-A/answer.txt",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S01.07",
+      "outcome": "Present",
+      "reason": "Requests actual installed block verification despite absence of block instruction in procedure.",
+      "output_reference": "packets/S01-A/answer.txt#/operations/1/reason",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S01.08",
+      "outcome": "Missing",
+      "reason": "Prioritizes restraint/hydraulics and procedure execution but does not request incident motion clarification.",
+      "output_reference": "packets/S01-A/answer.txt",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S02.01",
+      "outcome": "Missing",
+      "reason": "Does not newly state the conditional fluid-loss to loaded-yoke-descent mechanism; proposed requests alone do not restate the required relationship.",
+      "output_reference": "packets/S02-H/answer.txt",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S02.02",
+      "outcome": "Missing",
+      "reason": "No distinct V17 seat leakage, external loss and alternate-path candidates.",
+      "output_reference": "packets/S02-H/answer.txt",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S02.03",
+      "outcome": "Missing",
+      "reason": "Requests chamber fluid-loss data but no route/boundary evidence distinguishing hydraulic paths.",
+      "output_reference": "packets/S02-H/answer.txt#/operations/0",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    },
+    {
+      "criterion_id": "S02.04",
+      "outcome": "Missing",
+      "reason": "Requests block presence but omits raised-load premise and its joint role in the fluid-loss mechanism.",
+      "output_reference": "packets/S02-H/answer.txt#/operations/0",
+      "reviewer": "Single assistant, unblinded, manual provisional review",
+      "provisional": true
+    }
+  ],
+  "scope": "Only newly emitted expected meaning counts; supplied clean input facts alone do not earn credit. Final full scoring and consistency review still required."
+}

@@ -1,0 +1,32 @@
+{
+  "accepted": false,
+  "operations": 4,
+  "reason": "unknown_source",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "unknown_source",
+      "phase": "controller",
+      "operation_index": 0,
+      "record_id": "E01",
+      "path": "$.operations[0].record.sources",
+      "actual": [
+        "D01",
+        "R01"
+      ],
+      "expected": [
+        "D01",
+        "D02",
+        "D04",
+        "D15"
+      ],
+      "repair": "Use supplied top-level source IDs; put section/page locators in reason.",
+      "unknown_ids": [
+        "R01"
+      ]
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

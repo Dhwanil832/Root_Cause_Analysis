@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-05T16:18:19.280805+00:00",
+  "model": "granite3.3:8b",
+  "phase": "needs_attention",
+  "calls": 2,
+  "records": 0,
+  "failure": null,
+  "feedback": {
+    "accepted": false,
+    "operations": 2,
+    "reason": "request_needs_scope_and_fields",
+    "operations_accepted": false,
+    "committed": false,
+    "errors": [
+      {
+        "code": "request_needs_scope_and_fields",
+        "phase": "controller",
+        "operation_index": 1,
+        "record_id": "R01",
+        "path": "$.operations[1].record",
+        "actual": {
+          "id": "R01",
+          "kind": "request",
+          "scope_key": "R3_carrier_beam_incident",
+          "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, preserving evidence limits.",
+          "status": "proposed",
+          "sources": [
+            "D01",
+            "D02",
+            "D04"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": [
+            "initial_observations",
+            "functional_system_description",
+            "task_isolation_package"
+          ]
+        },
+        "expected": "Nonempty asset, window and fields",
+        "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch."
+      }
+    ],
+    "validation_scope": "First blocking error; later dependent operations have not been validated.",
+    "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+  },
+  "requests_for_custodian": [],
+  "sources": [
+    "D01",
+    "D02",
+    "D04",
+    "D15"
+  ],
+  "score": null
+}

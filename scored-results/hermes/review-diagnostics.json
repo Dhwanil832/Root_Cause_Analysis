@@ -1,0 +1,17 @@
+{
+  "findings": [
+    {
+      "reference": "case/calls/0001_intake/answer.txt",
+      "finding": "Intake emits lead-only upstream dispositions and document IDs in record_ids; creates a knowledge-gap node in place of a physical explanation."
+    },
+    {
+      "reference": "case/calls/0002_lead/answer.txt",
+      "finding": "Lead represents its workflow approval as a physical board node citing D01, depends on uncommitted N_A, and does not resubmit the original focal node/request work."
+    }
+  ],
+  "scope": "Single unblinded review, two completed model answers and zero committed records; no final RCA.",
+  "borderline_checks": [
+    "S02.05 requires identifiable paired relative motion; generic relative-withdrawal question alone is not credited.",
+    "S03.03 requires a distinct keeper-release hypothesis; general why/engagement uncertainty is not credited."
+  ]
+}

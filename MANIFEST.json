@@ -1,0 +1,24 @@
+{
+  "name": "benchmark harness",
+  "selected_version": "Previously scored repaired fallback; no reasoner/translator or later deterministic-mapping changes",
+  "runtime_contract": "2026-10-04-dependency-repair-2",
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "frozen_runtime_source": "/Users/dhwanilchauhan/Desktop/RCA Try 1/RCA-Fallback-Local-2026-10-05/runtime",
+  "benchmark_source": "/Users/dhwanilchauhan/Desktop/RCA Try 1/RCA-Linux-Server/bundle/benchmarks/R3-investigation-v1",
+  "unchanged": "All 26 frozen runtime files and every benchmark freeze entry; Ollama and Codex transport adapter files copied unchanged.",
+  "packaging_changes_only": [
+    "Local paths now resolve inside this folder.",
+    "Run results go to runs/MODEL; historical scored cases stay in scored-results.",
+    "Local launcher exposes the five recorded Ollama profiles.",
+    "Report paths resolve to included historical outputs.",
+    "RUN.sh and verify.py provide package entry points."
+  ],
+  "new_model_calls": 0,
+  "limitations": [
+    "GPT fallback is partial and has a known unsupported procedure-to-block-absence edge.",
+    "Qwen/Granite/Hermes/Mistral historical scores include raw uncommitted answers; none of those saved runs committed a board.",
+    "Evidence custodian matching and semantic grading remain supervised; no automatic gold-answer injection.",
+    "Recorded Ollama version 0.32.3 and model digests are enforced.",
+    "The unchanged Codex adapter uses saved ChatGPT login and /private/tmp on macOS."
+  ]
+}

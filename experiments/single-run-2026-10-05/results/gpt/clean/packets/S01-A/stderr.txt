@@ -1,0 +1,23 @@
+2026-10-05T17:08:58.935679Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-10-05T17:08:58.937807Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-10-05T17:08:59.387771Z  WARN codex_http_client::custom_ca: encountered errors while loading native root certificates native_root_error_count=1
+2026-10-05T17:08:59.453496Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: invalid peer certificate: UnknownIssuer, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-05T17:08:59.453885Z  WARN codex_core::session::startup_prewarm: startup websocket prewarm setup failed: stream disconnected before completion: invalid peer certificate: UnknownIssuer
+2026-10-05T17:08:59.910586Z  WARN codex_http_client::custom_ca: encountered errors while loading native root certificates native_root_error_count=1
+2026-10-05T17:08:59.949751Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: invalid peer certificate: UnknownIssuer, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-05T17:08:59.950192Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 192ms)... turn_id=01a10d0a-43f2-7f40-bd15-a61085bc9101 retries=1 max_retries=5 sampling_error=stream disconnected before completion: invalid peer certificate: UnknownIssuer
+2026-10-05T17:09:00.148304Z  WARN codex_http_client::custom_ca: encountered errors while loading native root certificates native_root_error_count=1
+2026-10-05T17:09:00.182928Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: invalid peer certificate: UnknownIssuer, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-05T17:09:00.182998Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (2/5 in 402ms)... turn_id=01a10d0a-43f2-7f40-bd15-a61085bc9101 retries=2 max_retries=5 sampling_error=stream disconnected before completion: invalid peer certificate: UnknownIssuer
+2026-10-05T17:09:00.590550Z  WARN codex_http_client::custom_ca: encountered errors while loading native root certificates native_root_error_count=1
+2026-10-05T17:09:00.634966Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: invalid peer certificate: UnknownIssuer, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-05T17:09:00.635126Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (3/5 in 821ms)... turn_id=01a10d0a-43f2-7f40-bd15-a61085bc9101 retries=3 max_retries=5 sampling_error=stream disconnected before completion: invalid peer certificate: UnknownIssuer
+2026-10-05T17:09:01.460083Z  WARN codex_http_client::custom_ca: encountered errors while loading native root certificates native_root_error_count=1
+2026-10-05T17:09:01.516753Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: invalid peer certificate: UnknownIssuer, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-05T17:09:01.516873Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (4/5 in 1.523s)... turn_id=01a10d0a-43f2-7f40-bd15-a61085bc9101 retries=4 max_retries=5 sampling_error=stream disconnected before completion: invalid peer certificate: UnknownIssuer
+2026-10-05T17:09:03.049672Z  WARN codex_http_client::custom_ca: encountered errors while loading native root certificates native_root_error_count=1
+2026-10-05T17:09:03.091121Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: invalid peer certificate: UnknownIssuer, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-05T17:09:03.092031Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (5/5 in 3.167s)... turn_id=01a10d0a-43f2-7f40-bd15-a61085bc9101 retries=5 max_retries=5 sampling_error=stream disconnected before completion: invalid peer certificate: UnknownIssuer
+2026-10-05T17:09:06.263999Z  WARN codex_http_client::custom_ca: encountered errors while loading native root certificates native_root_error_count=1
+2026-10-05T17:09:06.304498Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: invalid peer certificate: UnknownIssuer, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-05T17:09:06.306309Z  WARN codex_core::client: falling back to HTTP

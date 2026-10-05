@@ -1,0 +1,155 @@
+{
+  "decision": "assess",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Revise node HYD status from 'candidate' to 'supported'. Evidence D02.S02 establishes that loss of support-chamber fluid permits descent under load. Evidence D05.S01 confirms V17 handle was recorded CLOSED at 13:00, but D02.S03 explicitly states handle position does not prove sealing. Evidence D07.S02 shows yoke moved 40mm while carrier was stationary (0mm) until 13:24:03. This relative motion (yoke down, carrier held) implies the support chamber lost fluid pressure (descent permitted) while the carrier remained seated on the yoke. The mechanism of 'fluid loss permitting descent' is supported by the observed yoke displacement and the known hydraulic path, even though the exact leak rate or valve failure mode is not yet identified. The claim is supported by the combination of D02 (mechanism) and D07 (observed yoke motion).",
+      "record": {
+        "id": "HYD",
+        "kind": "node",
+        "scope_key": "HYD",
+        "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+        "status": "supported",
+        "sources": ["D02", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Revise node REL status from 'candidate' to 'supported'. Evidence D07.S02 shows yoke downward displacement of 40mm while carrier displacement was 0mm between 13:00 and 13:24:00. Evidence D02.S05 states that relative downward withdrawal of the yoke of at least 30mm eliminates primary seating engagement. The observed 40mm relative withdrawal (yoke down, carrier stationary) exceeds the 30mm threshold. Therefore, sufficient yoke-down motion relative to the carrier occurred, which is sufficient to eliminate primary seating. The claim is supported by D02 (rule) and D07 (measurement).",
+      "record": {
+        "id": "REL",
+        "kind": "node",
+        "scope_key": "REL",
+        "claim": "Sufficient yoke-down motion relative to the carrier could eliminate primary seating.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Revise node KEEP status from 'candidate' to 'unresolved'. Evidence D07.S03 states the keeper-to-yoke interface and lateral offset are occluded during the release. Evidence D06A and D06B confirm observers could not see the keeper or quantify displacement. While D02.S05 notes keeper engagement depends on lateral offset and dynamic path, there is no evidence yet to determine if the keeper was bypassed or if the carrier separated due to a dynamic path failure. The claim that a dynamic keeper-release path allowed separation is compatible with the event but lacks direct evidence of the release mechanism (offset, rotation, deformation). It remains unresolved pending specific evidence on the keeper interface state at release.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "unresolved",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Revise node BLOCK status from 'candidate' to 'refuted'. Evidence D05.S02 states a configuration photograph at 13:00 shows no independent positive block under YK-3. Evidence D07.S02 confirms post/spreader contact remained visible until 13:24:03, but D07.S03 clarifies this contact is 'temporary interference' (D02.S04), not a designed mechanical block. Evidence D02.S02 explicitly states 'With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel'. The absence of a positive block is established by D05.S02 and D07.S02. The claim 'No effective independent positive yoke block was present' is supported by the photo and the definition of temporary interference. However, the status was 'candidate' based on D02/D04. Now that D05 confirms the absence of a block, the claim is supported. Wait, re-evaluating: The claim is 'No effective independent positive yoke block was present'. D05.S02 says 'shows no independent positive block'. D02.S02 says 'With no independent mechanical block...'. This supports the claim. Why did I think refuted? Ah, the previous status was 'candidate'. The evidence D05.S02 directly supports the claim. So it should be 'supported'. Let me correct the reasoning.",
+      "record": {
+        "id": "BLOCK",
+        "kind": "node",
+        "scope_key": "BLOCK",
+        "claim": "No effective independent positive yoke block was present.",
+        "status": "supported",
+        "sources": ["D02", "D04", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Revise node PROC status from 'supported' to 'supported' (no change in status, but reaffirming with fresh reasoning). Evidence D04.S01 states the task text contains no instruction to install a positive yoke block. Evidence D05.S02 confirms no block was present. The claim 'WP-031 omitted a positive-block instruction' is supported by D04.S01. The claim 'off-center retention-envelope verification' is also supported by D04.S01 (no instruction) and D05.S03 (no verification recorded). The status remains 'supported'.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": ["D04", "D05"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Revise node LOAD status from 'supported' to 'supported' (reaffirming). Evidence D01.S01 states the assembly was parked raised. Evidence D02.S06 states gravity remains available while raised. Evidence D05.S01 confirms the balance was raised at 12:57. The claim is supported.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": ["D01", "D02", "D05"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Revise node FALL status from 'reported' to 'supported'. Evidence D01.S01 reports the fall. Evidence D07.S03 confirms carrier started downward travel at 13:24:03. The claim is supported by D01 and D07.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "supported",
+        "sources": ["D01", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "partial"
+}

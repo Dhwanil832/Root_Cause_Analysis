@@ -1,0 +1,10 @@
+{
+  "criteria_file": "/Users/dhwanilchauhan/Desktop/RCA Try 1/RCA-Linux-Server/bundle/benchmarks/R3-investigation-v1/private/evaluator/criteria.json",
+  "criteria_sha256": "421b4952c62aac024996d3632e510b5f98200eb3f7d697879922aaadeaca16d8",
+  "denominator": 96,
+  "repetitions": 1,
+  "reviewer": "Codex assistant; single unblinded semantic review; no independent adjudication",
+  "scoring": "Frozen expected meanings; exact pointers and verbatim excerpts. Presence and consistent-correct reported separately. Extra findings do not add primary points.",
+  "runtime_boundary": "Repaired harness; old run scores are historical, not an identical-runtime comparison.",
+  "opportunity_note": "No synthetic duplicate fixture, witness evidence or arrangement revisions were injected to manufacture opportunities. Unelicited/unobtained checks remain zero coverage and separately labelled."
+}

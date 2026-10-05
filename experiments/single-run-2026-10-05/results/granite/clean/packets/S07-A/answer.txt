@@ -1,0 +1,275 @@
+{
+  "decision": "The investigation supports the physical mechanism where the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold. The following warranted causal relationships have been established:",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "FALL",
+      "reason": "Updated to reflect the supported causal relationships.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24 due to loss of primary seating engagement, facilitated by a dynamic keeper-release path and omitted positive-block instruction in WP-031.",
+        "status": "supported",
+        "sources": ["D01", "D02", "D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "KEEP",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost, as evidenced by the incident.",
+        "status": "supported",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "PROC",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification, contributing to the loss of primary seating engagement.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "LOAD",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available, enabling the carrier to move downward upon loss of primary seating engagement.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "YOKE",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "YOKE",
+        "kind": "node",
+        "scope_key": "YOKE",
+        "claim": "YK-3 descended 40 +/- 1 mm during 13:00:00–13:24:00, before release at 13:24:03, indicating loss of primary seating engagement.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "CARRIER",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "CARRIER",
+        "kind": "node",
+        "scope_key": "CARRIER",
+        "claim": "The carrier moved downward 0 +/- 1 mm over the same interval and reference frame, consistent with the yoke's descent and loss of primary seating engagement.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "CONTACT",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "CONTACT",
+        "kind": "node",
+        "scope_key": "CONTACT",
+        "claim": "Post/spreader contact was visible through the interval, temporarily holding the carrier but not providing an independent positive block.",
+        "status": "supported",
+        "sources": ["D02", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "WITHDRAW",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "WITHDRAW",
+        "kind": "node",
+        "scope_key": "WITHDRAW",
+        "claim": "Relative yoke-down withdrawal over the measured interval was 38–42 mm, exceeding the defined 30 mm engagement and eliminating primary seating by 13:24:00.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "SEAT",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "SEAT",
+        "kind": "node",
+        "scope_key": "SEAT",
+        "claim": "Relative withdrawal exceeded the defined 30 mm engagement and eliminated primary seating by 13:24:00, allowing the carrier to move downward.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "LEAK",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "LEAK",
+        "kind": "node",
+        "scope_key": "LEAK",
+        "claim": "0.400 +/- 0.010 L left C17 through V17 despite CLOSED indication over the incident measurement interval, suggesting a potential leak path contributing to loss of primary seating engagement.",
+        "status": "supported",
+        "sources": ["D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "NOBLOCK",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "NOBLOCK",
+        "kind": "node",
+        "scope_key": "NOBLOCK",
+        "claim": "The incident photograph and boundary record show no independent positive block under YK-3, supporting the dynamic keeper-release path hypothesis.",
+        "status": "supported",
+        "sources": ["D05", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "CONFIG",
+      "reason": "Updated to reflect the supported causal relationship.",
+      "record": {
+        "id": "CONFIG",
+        "kind": "node",
+        "scope_key": "CONFIG",
+        "claim": "Current revision C has backup rolls removed, no backup-roll-associated stop, and no separate maintenance travel stop, potentially contributing to the loss of primary seating engagement.",
+        "status": "supported",
+        "sources": ["D03C"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "evidence",
+      "tag": "",
+      "focus": "Investigate the dynamic keeper-release path and potential off-center retention-envelope calculation to fully understand the loss of primary seating engagement.",
+      "target_ids": ["KEEP", "PROC", "CONFIG"]
+    }
+  ],
+  "upstream_dispositions": [
+    {
+      "target_id": "FALL",
+      "action": "investigate",
+      "reason": "The immediate unresolved issue is the physical mechanism of the carrier's fall, which can be further unlocked with investigation into the dynamic keeper-release path and off-center retention-envelope calculation.",
+      "record_ids": ["KEEP", "PROC", "CONFIG"],
+      "source_ids": []
+    }
+  ],
+  "disposition": "partial"
+}

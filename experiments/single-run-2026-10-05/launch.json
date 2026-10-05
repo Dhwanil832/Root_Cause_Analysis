@@ -1,0 +1,14 @@
+{
+  "processes": [
+    {
+      "lane": "local",
+      "pid": 97021
+    },
+    {
+      "lane": "gpt",
+      "pid": 97022
+    }
+  ],
+  "repetitions": 1,
+  "purpose": "User-requested single-run clean and connected comparison; no extra connected repeats for existing scored same-runtime models."
+}

@@ -1,0 +1,27 @@
+{
+  "started_at": "2026-10-05T16:11:49.707298+00:00",
+  "pid": 94455,
+  "models": [
+    {
+      "model": "granite",
+      "exit_code": 0,
+      "phase": "setup_error",
+      "calls": 0
+    },
+    {
+      "model": "hermes",
+      "exit_code": 0,
+      "phase": "setup_error",
+      "calls": 0
+    },
+    {
+      "model": "mistral",
+      "exit_code": 0,
+      "phase": "needs_attention",
+      "calls": 2
+    }
+  ],
+  "phase": "attempts_paused_or_terminal",
+  "active_model": null,
+  "finished_at": "2026-10-05T16:13:40.242026+00:00"
+}

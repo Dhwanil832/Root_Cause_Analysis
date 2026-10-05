@@ -1,0 +1,29 @@
+{
+  "id": "D07",
+  "title": "CAM-3 motion measurement and coverage report",
+  "revision": "1",
+  "issued": "2024-10-15 09:00",
+  "kind": "measurement report",
+  "sections": [
+    {
+      "id": "D07.S01",
+      "heading": "Record identity",
+      "text": "Source CAM-3, frames indexed to the plant clock. The incident clip is continuous from 13:00:00 to 13:24:10. Vertical reference marks were surveyed before extraction. This report concerns vertical motion only."
+    },
+    {
+      "id": "D07.S02",
+      "heading": "Measured interval",
+      "text": "Between 13:00:00 and 13:24:00, yoke downward displacement is 40 +/- 1 mm and carrier downward displacement is 0 +/- 1 mm. The defined seated start was visible at 13:00. Post/spreader contact remained visible during this interval. Displacements share the same reference frame and time window."
+    },
+    {
+      "id": "D07.S03",
+      "heading": "Release",
+      "text": "At 13:24:03 the carrier starts downward travel into the pit. The keeper-to-yoke interface and lateral offset are occluded during the release. The clip cannot distinguish transient offset, rotation or local deformation as the keeper-bypass mechanism."
+    },
+    {
+      "id": "D07.S04",
+      "heading": "Coverage limits",
+      "text": "No contact from an overhead crane or its load is visible within the fully covered carrier envelope from 13:00 to 13:24:03. Temporal and spatial resolution are sufficient to detect direct crane/load contact within that envelope during this interval. Coverage does not exclude an earlier disturbance or all conceivable contact outside that envelope. Measurement uncertainty is bounded as stated; it is not a confidence percentage."
+    }
+  ]
+}

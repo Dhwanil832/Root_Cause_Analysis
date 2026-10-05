@@ -1,0 +1,279 @@
+{
+  "decision": "partial",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported nodes (PROC, LOAD, YOKE, CARRIER, CONTACT, WITHDRAW, SEAT, LEAK, NOBLOCK, CONFIG) with fresh reasoning based on current evidence versions. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node LOAD with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node YOKE with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "YOKE",
+        "kind": "node",
+        "scope_key": "YOKE",
+        "claim": "YK-3 descended 40 +/- 1 mm during 13:00:00–13:24:00, before release at 13:24:03.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node CARRIER with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "CARRIER",
+        "kind": "node",
+        "scope_key": "CARRIER",
+        "claim": "The carrier moved downward 0 +/- 1 mm over that same interval and reference frame.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node CONTACT with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "CONTACT",
+        "kind": "node",
+        "scope_key": "CONTACT",
+        "claim": "Post/spreader contact was visible through that interval, compatible with temporarily holding the carrier.",
+        "status": "supported",
+        "sources": ["D02", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node WITHDRAW with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "WITHDRAW",
+        "kind": "node",
+        "scope_key": "WITHDRAW",
+        "claim": "Relative yoke-down withdrawal over the measured interval was 38–42 mm.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node SEAT with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "SEAT",
+        "kind": "node",
+        "scope_key": "SEAT",
+        "claim": "Relative withdrawal exceeded the defined 30 mm engagement and eliminated primary seating by 13:24:00.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node LEAK with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "LEAK",
+        "kind": "node",
+        "scope_key": "LEAK",
+        "claim": "0.400 +/- 0.010 L left C17 through V17 despite CLOSED indication over the incident measurement interval.",
+        "status": "supported",
+        "sources": ["D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node NOBLOCK with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "NOBLOCK",
+        "kind": "node",
+        "scope_key": "NOBLOCK",
+        "claim": "The incident photograph and boundary record show no independent positive block under YK-3.",
+        "status": "supported",
+        "sources": ["D05", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of supported node CONFIG with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "CONFIG",
+        "kind": "node",
+        "scope_key": "CONFIG",
+        "claim": "Current revision C has backup rolls removed, no backup-roll-associated stop and no separate maintenance travel stop.",
+        "status": "supported",
+        "sources": ["D03C"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of candidate node KEEP with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm status of reported node FALL with fresh reasoning. No physical change to claims; update review status to pending_human for consistency with ledger state.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier beam fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "specialist",
+      "tag": "mechanism",
+      "focus": "Evaluate whether the dynamic keeper-release path (KEEP) is physically plausible given the measured 40 mm yoke withdrawal, 0 mm carrier movement, and the absence of an off-center retention-envelope calculation. Determine if keeper bypass requires lateral offset, rotation, or deformation not yet measured.",
+      "target_ids": ["KEEP"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "mechanism",
+      "focus": "Assess whether the combination of primary seating loss (SEAT) and absence of positive block (NOBLOCK) is sufficient to explain the fall, or if an additional mechanism (e.g., keeper bypass, structural failure) is required. Identify missing measurements (lateral offset, rotation) needed to resolve this.",
+      "target_ids": ["FALL", "KEEP", "SEAT", "NOBLOCK"]
+    },
+    {
+      "kind": "assessor",
+      "tag": "board",
+      "focus": "Synthesize supported conditions (LOAD, YOKE, CARRIER, CONTACT, WITHDRAW, SEAT, LEAK, NOBLOCK, CONFIG, PROC) and unresolved mechanisms (KEEP) into a partial board. Identify the remaining evidence gap (dynamic keeper-envelope) and propose next acquisition if warranted.",
+      "target_ids": ["FALL", "KEEP", "PROC", "LOAD", "YOKE", "CARRIER", "CONTACT", "WITHDRAW", "SEAT", "LEAK", "NOBLOCK", "CONFIG"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "partial"
+}

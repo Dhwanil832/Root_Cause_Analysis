@@ -1,0 +1,190 @@
+{
+  "model": "gpt-5.5",
+  "transport": "Codex saved ChatGPT login",
+  "model_identity_scope": "Requested CLI alias, not API snapshot verification",
+  "runtime_contract": "2026-10-04-dependency-repair-2",
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "phase": "partial",
+  "completed_calls": 23,
+  "rejected_calls": 0,
+  "role_counts": {
+    "intake": 1,
+    "lead": 9,
+    "evidence": 6,
+    "assessor": 4,
+    "specialist": 3
+  },
+  "active_records": {
+    "node": 12,
+    "request": 5,
+    "edge": 5
+  },
+  "stale_ids": [],
+  "fresh_supported_edges": [
+    "E_WP031OmissionToBlockAbsence",
+    "E_R3V17ClosedPathLeakToHydraulicWithdrawal"
+  ],
+  "pending_call": null,
+  "queued_jobs": 0,
+  "pending_proposals": 0,
+  "event_counts": {
+    "source_received": 16,
+    "case_created": 1,
+    "controller_commit": 16,
+    "model_step": 23,
+    "assessment_coalesced": 17,
+    "upstream_review_scheduled": 3,
+    "upstream_review_recorded": 3,
+    "evidence_attached": 3
+  },
+  "usage": {
+    "input_tokens": 615979,
+    "cached_input_tokens": 28672,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 57506,
+    "reasoning_output_tokens": 16608
+  },
+  "feedback": {
+    "accepted": true,
+    "operations": 0,
+    "changed": 0,
+    "noops": [],
+    "reason": null,
+    "invalidated_ids": [],
+    "committed": true,
+    "operations_accepted": true,
+    "dispatch": []
+  },
+  "semantic_score": {
+    "denominator": 96,
+    "outcomes": {
+      "Present": 82,
+      "Missing": 9,
+      "Not reached": 5
+    },
+    "presence_score": 82,
+    "consistent_score": 81,
+    "stages": [
+      {
+        "stage": "S01",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 7,
+          "Missing": 1
+        },
+        "presence_score": 7,
+        "consistent_score": 7
+      },
+      {
+        "stage": "S02",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 8
+        },
+        "presence_score": 8,
+        "consistent_score": 8
+      },
+      {
+        "stage": "S03",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 1,
+          "Present": 7
+        },
+        "presence_score": 7,
+        "consistent_score": 7
+      },
+      {
+        "stage": "S04",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 8
+        },
+        "presence_score": 8,
+        "consistent_score": 8
+      },
+      {
+        "stage": "S05",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 6,
+          "Missing": 1,
+          "Not reached": 1
+        },
+        "presence_score": 6,
+        "consistent_score": 6
+      },
+      {
+        "stage": "S06",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 7,
+          "Missing": 1
+        },
+        "presence_score": 7,
+        "consistent_score": 7
+      },
+      {
+        "stage": "S07",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 6,
+          "Missing": 2
+        },
+        "presence_score": 6,
+        "consistent_score": 6
+      },
+      {
+        "stage": "S08",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 6,
+          "Not reached": 2
+        },
+        "presence_score": 6,
+        "consistent_score": 5
+      },
+      {
+        "stage": "S09",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 8
+        },
+        "presence_score": 8,
+        "consistent_score": 8
+      },
+      {
+        "stage": "S10",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 1,
+          "Present": 6,
+          "Missing": 1
+        },
+        "presence_score": 6,
+        "consistent_score": 6
+      },
+      {
+        "stage": "S11",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 7,
+          "Missing": 1
+        },
+        "presence_score": 7,
+        "consistent_score": 7
+      },
+      {
+        "stage": "S12",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 6,
+          "Missing": 2
+        },
+        "presence_score": 6,
+        "consistent_score": 6
+      }
+    ]
+  },
+  "limitation": "One connected run, single unblinded semantic review against the frozen 96 checks. Execution counts do not certify reasoning; criteria-level evidence and stage windows are saved."
+}

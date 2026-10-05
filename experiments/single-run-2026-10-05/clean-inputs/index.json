@@ -1,0 +1,517 @@
+[
+  {
+    "id": "S01-A",
+    "stage": "S01",
+    "role": "intake",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "target_ids": [],
+    "criterion_ids": [
+      "S01.01",
+      "S01.02",
+      "S01.03",
+      "S01.04",
+      "S01.05",
+      "S01.06",
+      "S01.07",
+      "S01.08"
+    ],
+    "packet": "clean/packets/S01-A.json",
+    "prompt": "frozen/prompts/intake.txt"
+  },
+  {
+    "id": "S02-H",
+    "stage": "S02",
+    "role": "specialist",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "target_ids": [
+      "FALL"
+    ],
+    "criterion_ids": [
+      "S02.01",
+      "S02.02",
+      "S02.03",
+      "S02.04"
+    ],
+    "packet": "clean/packets/S02-H.json",
+    "prompt": "frozen/prompts/specialist.txt"
+  },
+  {
+    "id": "S02-M",
+    "stage": "S02",
+    "role": "specialist",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "target_ids": [
+      "FALL"
+    ],
+    "criterion_ids": [
+      "S02.05",
+      "S02.06",
+      "S02.07",
+      "S02.08"
+    ],
+    "packet": "clean/packets/S02-M.json",
+    "prompt": "frozen/prompts/specialist.txt"
+  },
+  {
+    "id": "S03-A",
+    "stage": "S03",
+    "role": "lead",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "target_ids": [
+      "FALL"
+    ],
+    "criterion_ids": [
+      "S03.01",
+      "S03.02",
+      "S03.03",
+      "S03.04",
+      "S03.05",
+      "S03.06",
+      "S03.07",
+      "S03.08"
+    ],
+    "packet": "clean/packets/S03-A.json",
+    "prompt": "frozen/prompts/lead.txt"
+  },
+  {
+    "id": "S04-A",
+    "stage": "S04",
+    "role": "evidence",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "target_ids": [
+      "R_MOTION"
+    ],
+    "criterion_ids": [
+      "S04.01",
+      "S04.02",
+      "S04.03",
+      "S04.04"
+    ],
+    "packet": "clean/packets/S04-A.json",
+    "prompt": "frozen/prompts/evidence.txt"
+  },
+  {
+    "id": "S04-B",
+    "stage": "S04",
+    "role": "evidence",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07"
+    ],
+    "target_ids": [
+      "R_MOTION"
+    ],
+    "criterion_ids": [
+      "S04.05",
+      "S04.06",
+      "S04.07",
+      "S04.08"
+    ],
+    "packet": "clean/packets/S04-B.json",
+    "prompt": "frozen/prompts/evidence.txt"
+  },
+  {
+    "id": "S05-A",
+    "stage": "S05",
+    "role": "assessor",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07"
+    ],
+    "target_ids": [
+      "REL",
+      "KEEP",
+      "HYD"
+    ],
+    "criterion_ids": [
+      "S05.01",
+      "S05.02",
+      "S05.03",
+      "S05.04",
+      "S05.05",
+      "S05.06",
+      "S05.07",
+      "S05.08"
+    ],
+    "packet": "clean/packets/S05-A.json",
+    "prompt": "frozen/prompts/assessor.txt"
+  },
+  {
+    "id": "S06-A",
+    "stage": "S06",
+    "role": "assessor",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14"
+    ],
+    "target_ids": [
+      "HYD",
+      "BLOCK"
+    ],
+    "criterion_ids": [
+      "S06.01",
+      "S06.02",
+      "S06.03",
+      "S06.04",
+      "S06.05",
+      "S06.06",
+      "S06.07",
+      "S06.08"
+    ],
+    "packet": "clean/packets/S06-A.json",
+    "prompt": "frozen/prompts/assessor.txt"
+  },
+  {
+    "id": "S07-A",
+    "stage": "S07",
+    "role": "lead",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14"
+    ],
+    "target_ids": [
+      "FALL"
+    ],
+    "criterion_ids": [
+      "S07.01",
+      "S07.02",
+      "S07.03",
+      "S07.04",
+      "S07.05",
+      "S07.06",
+      "S07.07",
+      "S07.08"
+    ],
+    "packet": "clean/packets/S07-A.json",
+    "prompt": "frozen/prompts/lead.txt"
+  },
+  {
+    "id": "S08-V",
+    "stage": "S08",
+    "role": "specialist",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14"
+    ],
+    "target_ids": [
+      "LEAK"
+    ],
+    "criterion_ids": [
+      "S08.01",
+      "S08.02",
+      "S08.03"
+    ],
+    "packet": "clean/packets/S08-V.json",
+    "prompt": "frozen/prompts/specialist.txt"
+  },
+  {
+    "id": "S08-B",
+    "stage": "S08",
+    "role": "specialist",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14"
+    ],
+    "target_ids": [
+      "NOBLOCK"
+    ],
+    "criterion_ids": [
+      "S08.04",
+      "S08.05",
+      "S08.06"
+    ],
+    "packet": "clean/packets/S08-B.json",
+    "prompt": "frozen/prompts/specialist.txt"
+  },
+  {
+    "id": "S08-C",
+    "stage": "S08",
+    "role": "specialist",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14"
+    ],
+    "target_ids": [
+      "CONTACT"
+    ],
+    "criterion_ids": [
+      "S08.07",
+      "S08.08"
+    ],
+    "packet": "clean/packets/S08-C.json",
+    "prompt": "frozen/prompts/specialist.txt"
+  },
+  {
+    "id": "S09-V",
+    "stage": "S09",
+    "role": "evidence",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14",
+      "D09",
+      "D11",
+      "D12",
+      "D13"
+    ],
+    "target_ids": [
+      "R_V"
+    ],
+    "criterion_ids": [
+      "S09.01",
+      "S09.02",
+      "S09.03",
+      "S09.04"
+    ],
+    "packet": "clean/packets/S09-V.json",
+    "prompt": "frozen/prompts/evidence.txt"
+  },
+  {
+    "id": "S09-K",
+    "stage": "S09",
+    "role": "evidence",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14",
+      "D09",
+      "D11",
+      "D12",
+      "D13"
+    ],
+    "target_ids": [
+      "R_K"
+    ],
+    "criterion_ids": [
+      "S09.05",
+      "S09.06",
+      "S09.07",
+      "S09.08"
+    ],
+    "packet": "clean/packets/S09-K.json",
+    "prompt": "frozen/prompts/evidence.txt"
+  },
+  {
+    "id": "S10-A",
+    "stage": "S10",
+    "role": "assessor",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14",
+      "D09",
+      "D11",
+      "D12",
+      "D13"
+    ],
+    "target_ids": [],
+    "criterion_ids": [
+      "S10.01",
+      "S10.02",
+      "S10.03",
+      "S10.04",
+      "S10.05",
+      "S10.06",
+      "S10.07",
+      "S10.08"
+    ],
+    "packet": "clean/packets/S10-A.json",
+    "prompt": "frozen/prompts/assessor.txt"
+  },
+  {
+    "id": "S11-A",
+    "stage": "S11",
+    "role": "lead",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14",
+      "D09",
+      "D11",
+      "D12",
+      "D13"
+    ],
+    "target_ids": [],
+    "criterion_ids": [
+      "S11.01",
+      "S11.02",
+      "S11.03",
+      "S11.04",
+      "S11.05",
+      "S11.06",
+      "S11.07",
+      "S11.08"
+    ],
+    "packet": "clean/packets/S11-A.json",
+    "prompt": "frozen/prompts/lead.txt"
+  },
+  {
+    "id": "S12-A",
+    "stage": "S12",
+    "role": "lead",
+    "source_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15",
+      "D05",
+      "D06A",
+      "D06B",
+      "D07",
+      "D03A",
+      "D03C",
+      "D08",
+      "D10",
+      "D14",
+      "D09",
+      "D11",
+      "D12",
+      "D13"
+    ],
+    "target_ids": [],
+    "criterion_ids": [
+      "S12.01",
+      "S12.02",
+      "S12.03",
+      "S12.04",
+      "S12.05",
+      "S12.06",
+      "S12.07",
+      "S12.08"
+    ],
+    "packet": "clean/packets/S12-A.json",
+    "prompt": "frozen/prompts/lead.txt"
+  }
+]

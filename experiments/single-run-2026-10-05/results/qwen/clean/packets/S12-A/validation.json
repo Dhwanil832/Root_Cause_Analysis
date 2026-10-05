@@ -1,0 +1,50 @@
+{
+  "accepted": true,
+  "operations": 25,
+  "changed": 5,
+  "noops": [
+    "KEEP",
+    "PROC",
+    "LOAD",
+    "YOKE",
+    "CARRIER",
+    "CONTACT",
+    "WITHDRAW",
+    "SEAT",
+    "LEAK",
+    "NOBLOCK",
+    "CONFIG",
+    "BENCH",
+    "HISTORY",
+    "ACTION",
+    "ORIGIN_VALVE",
+    "ORIGIN_BLOCK",
+    "ORIGIN_CONTACT",
+    "CRANE",
+    "FRACTURE",
+    "CENTERED"
+  ],
+  "reason": null,
+  "invalidated_ids": [],
+  "committed": true,
+  "operations_accepted": true,
+  "dispatch": [
+    {
+      "job": {
+        "kind": "assessor",
+        "tag": "lead_review",
+        "focus": "Evaluate the current state of the board. Confirm that the supported physical mechanism (E_HYD) explains the fall given the unresolved keeper-release bridge (KEEP). Note that the upstream origins (ORIGIN_VALVE, ORIGIN_BLOCK) remain unresolved. Determine if the investigation can be closed with the current evidence, noting the evidence boundary regarding the keeper bypass mechanism, or if any new evidence acquisition is justified (e.g., lateral offset measurement if available).",
+        "target_ids": [
+          "FALL",
+          "KEEP",
+          "E_RELEASE",
+          "ORIGIN_VALVE",
+          "ORIGIN_BLOCK"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    }
+  ]
+}

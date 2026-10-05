@@ -1,0 +1,29 @@
+{
+  "id": "D10",
+  "title": "CB-3/YK-3 clearance and engagement review",
+  "revision": "0",
+  "issued": "2024-10-16 14:00",
+  "kind": "engineering review",
+  "sections": [
+    {
+      "id": "D10.S01",
+      "heading": "Inputs",
+      "text": "Use current revision C, a 30 mm initial primary seat, and the signed convention: positive means downward travel. Relative withdrawal equals yoke travel minus carrier travel. Bounded errors are combined by interval arithmetic, not by assuming independence."
+    },
+    {
+      "id": "D10.S02",
+      "heading": "Seated check",
+      "text": "At the centered, seated post-event inspection position the keeper overlap is 8 +/- 1 mm. Under the rigid centered seated geometry, simple vertical passage over the yoke is not possible. This test does not reproduce the incident offset or rotation."
+    },
+    {
+      "id": "D10.S03",
+      "heading": "Open calculation",
+      "text": "The incident lateral offset and release rotation are not measured. An approved off-center dynamic retention envelope is unavailable. Primary seating loss can be assessed from supplied vertical data; keeper bypass cannot be resolved from that calculation alone."
+    },
+    {
+      "id": "D10.S04",
+      "heading": "Required follow-up",
+      "text": "Obtain a time-relevant lateral/rotation measurement or a validated retention-envelope analysis with an independently bounded incident offset. Repeating the centered seated measurement without new scope does not answer the dynamic question."
+    }
+  ]
+}

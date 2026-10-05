@@ -1,0 +1,41 @@
+{
+  "accepted": false,
+  "operations": 12,
+  "reason": "identity_changed_use_replace",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "identity_changed_use_replace",
+      "phase": "controller",
+      "operation_index": 11,
+      "record_id": "FALL",
+      "path": "$.operations[11].record",
+      "actual": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier beam fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "reported",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "expected": {
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24."
+      },
+      "repair": "Keep identity verbatim or replace with a fresh same-kind ID."
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

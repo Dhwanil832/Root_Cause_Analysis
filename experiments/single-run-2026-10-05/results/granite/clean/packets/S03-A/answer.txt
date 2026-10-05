@@ -1,0 +1,134 @@
+{
+  "decision": "The investigation suggests that the R3 delivery carrier beam fell due to a loss of C17 support-chamber fluid, allowing the yoke to descend under load without independent restraint. This conclusion is based on the functional system description (D02) and the proposed hydraulic investigation (Q_hydraulics). The mechanical investigation (Q_mechanical) also supports the hypothesis of relative yoke/carrier motion eliminating primary seating, potentially aided by dynamic keeper bypass (P_KEEP). However, these are conditional mechanisms and further evidence is needed for confirmation.",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections.",
+      "record": {
+        "id": "P_hydraulics",
+        "kind": "node",
+        "scope_key": "P_hydraulics",
+        "claim": "Loss of C17 support-chamber fluid through V17 could permit yoke descent under load without independent restraint.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections.",
+      "record": {
+        "id": "Q_hydraulics",
+        "kind": "request",
+        "scope_key": "Q_hydraulics",
+        "claim": "Obtain incident yoke and carrier motion to test relative withdrawal.",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["FALL"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": ["yoke displacement", "carrier displacement", "common time window"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections.",
+      "record": {
+        "id": "P_mechanical",
+        "kind": "node",
+        "scope_key": "P_mechanical",
+        "claim": "Loss of C17 support-chamber fluid through V17 could permit yoke descent under load without independent restraint.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections.",
+      "record": {
+        "id": "Q_mechanical",
+        "kind": "request",
+        "scope_key": "Q_mechanical",
+        "claim": "Obtain incident yoke and carrier motion to test relative withdrawal.",
+        "status": "proposed",
+        "sources": ["D01"],
+        "depends_on": ["FALL"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": ["yoke displacement", "carrier displacement", "common time window"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections.",
+      "record": {
+        "id": "P_REL",
+        "kind": "node",
+        "scope_key": "P_REL",
+        "claim": "Relative yoke/carrier motion could eliminate primary seating.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections.",
+      "record": {
+        "id": "P_KEEP",
+        "kind": "node",
+        "scope_key": "P_KEEP",
+        "claim": "Dynamic keeper bypass could allow separation after primary seating loss.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

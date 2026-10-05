@@ -1,0 +1,16 @@
+{
+  "scope": "One attempt, no complete RCA; raw presence does not imply valid board.",
+  "errors": [
+    {
+      "call": 1,
+      "finding": "All creates use expected_version 1, but fresh create requires 0.",
+      "reference": "case/calls/0001_intake/answer.txt#/operations"
+    },
+    {
+      "call": 2,
+      "finding": "Invents 2 m/s and 0.1 rad/s without delivered measurement; cites request R01 as source; revises nonexistent records at version 5 and retains new creates at version 1.",
+      "reference": "case/calls/0002_lead/answer.txt#/operations"
+    }
+  ],
+  "scoring_note": "Fabricated extra claims are recorded explicitly; the frozen presence rubric does not impose an invented additional penalty."
+}

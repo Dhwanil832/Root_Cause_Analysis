@@ -1,0 +1,204 @@
+{
+  "type": "object",
+  "properties": {
+    "decision": {
+      "type": "string"
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "create",
+              "revise",
+              "replace"
+            ]
+          },
+          "expected_version": {
+            "type": "integer"
+          },
+          "replaces": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "record": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "node",
+                  "edge",
+                  "request"
+                ]
+              },
+              "scope_key": {
+                "type": "string"
+              },
+              "claim": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "reported",
+                  "candidate",
+                  "supported",
+                  "refuted",
+                  "unresolved",
+                  "conflicting",
+                  "withdrawn",
+                  "proposed",
+                  "searching",
+                  "awaiting_user",
+                  "partial",
+                  "answered",
+                  "blocked",
+                  "terminated"
+                ]
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "depends_on": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "from_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "to_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "mode": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "all",
+                  "any",
+                  null
+                ]
+              },
+              "asset": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "window": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "scope_key",
+              "claim",
+              "status",
+              "sources",
+              "depends_on",
+              "from_ids",
+              "to_id",
+              "mode",
+              "asset",
+              "window",
+              "fields"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "action",
+          "expected_version",
+          "replaces",
+          "reason",
+          "record"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "next_work": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "specialist",
+              "evidence",
+              "assessor"
+            ]
+          },
+          "tag": {
+            "type": "string"
+          },
+          "focus": {
+            "type": "string"
+          },
+          "target_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "kind",
+          "tag",
+          "focus",
+          "target_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "continue",
+        "waiting",
+        "partial"
+      ]
+    }
+  },
+  "required": [
+    "decision",
+    "operations",
+    "next_work",
+    "disposition"
+  ],
+  "additionalProperties": false
+}

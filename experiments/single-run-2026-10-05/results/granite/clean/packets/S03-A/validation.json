@@ -1,0 +1,22 @@
+{
+  "accepted": false,
+  "operations": 6,
+  "reason": "duplicate_claim_reuse_P_hydraulics",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "duplicate_claim_reuse_P_hydraulics",
+      "phase": "controller",
+      "operation_index": 2,
+      "record_id": "P_mechanical",
+      "path": "$.operations[2].record.claim",
+      "actual": "Loss of C17 support-chamber fluid through V17 could permit yoke descent under load without independent restraint.",
+      "expected": "Distinct normalized node claim",
+      "repair": "Reuse the existing node.",
+      "matched_record_id": "P_hydraulics"
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

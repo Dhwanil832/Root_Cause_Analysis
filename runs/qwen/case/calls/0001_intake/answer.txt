@@ -1,0 +1,124 @@
+{
+  "decision": "create_focal_event",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Establish the focal event record based on D01.S01. The incident occurred at 13:24 on 14 October 2024 involving the R3 delivery carrier beam falling into the mill pit, striking the sled and scaffold. The assembly was in a raised state after backup-roll removal. No personnel were struck. Initial condition observations (D01.S02) note the keeper plate was bolted and the beam/yoke were not reported fractured, but these are observations, not conclusions on the release mechanism.",
+      "record": {
+        "id": "EVT_R3_20241014",
+        "kind": "node",
+        "scope_key": "R3_beam_fall_20241014",
+        "claim": "At 13:24 on 14 October 2024, the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. The assembly was raised after backup-roll removal. No person was struck. The keeper plate was found bolted to the recovered assembly; the beam and yoke were not reported fractured.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_delivery_carrier_beam",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "occurrence",
+          "asset_identity",
+          "initial_conditions",
+          "damage_state"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Create a clarification request to determine if a positive mechanical block (yoke block) was installed, as D04.S01 indicates the procedure does not call for it, but D02.S02 implies loss of support-chamber fluid permits downward travel without independent mechanical blocks. D01.S03 confirms isolation records exist but coverage must be checked.",
+      "record": {
+        "id": "REQ_BLOCK_STATUS",
+        "kind": "request",
+        "scope_key": "R3_yoke_block_presence",
+        "claim": "Determine whether a positive mechanical block (yoke block) was physically installed on the R3 assembly at the time of the incident, given the procedure (D04) does not mandate it and the system description (D02) allows downward travel without it.",
+        "status": "proposed",
+        "sources": ["D01", "D02", "D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_delivery_carrier_beam",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "block_installed",
+          "block_type",
+          "block_verification_method"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Create a clarification request to verify the hydraulic isolation state of the support chamber (C17) and return valve (V17). D02.S03 warns that handle position switches do not measure seat leakage, and D01.S03 notes hydraulic records are retained. Need to confirm if fluid was trapped or if leakage occurred.",
+      "record": {
+        "id": "REQ_HYDRO_STATUS",
+        "kind": "request",
+        "scope_key": "R3_hydraulic_isolation_state",
+        "claim": "Verify the actual hydraulic condition of the support chamber (C17) and return valve (V17) at the time of the incident, specifically checking for seat leakage, external leakage, or alternate return paths that could permit downward travel despite valve closure.",
+        "status": "proposed",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_delivery_carrier_beam",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "valve_V17_leakage_rate",
+          "chamber_C17_pressure_at_event",
+          "external_leakage_detected",
+          "alternate_return_path_active"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Create a clarification request to assess the retention envelope and interference conditions. D02.S04 and D02.S05 describe how temporary interference (mill post/spreader contact) might hold the carrier vertically while the yoke moves, and how primary seating engagement is lost after 30mm withdrawal. Need to know if such interference existed or if the keeper engagement was bypassed.",
+      "record": {
+        "id": "REQ_RETENTION_ENVELOPE",
+        "kind": "request",
+        "scope_key": "R3_retention_envelope_and_interference",
+        "claim": "Assess whether the carrier was held by temporary interference (mill post/spreader contact) or if the keeper engagement was bypassed due to lateral offset or dynamic path conditions, as described in D02.S04 and D02.S05.",
+        "status": "proposed",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3_delivery_carrier_beam",
+        "window": "2024-10-14T13:24:00Z",
+        "fields": [
+          "interference_contact_present",
+          "keeper_lateral_offset",
+          "dynamic_path_conditions",
+          "yoke_withdrawal_distance"
+        ]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "specialist",
+      "tag": "hydraulic_systems",
+      "focus": "Analyze hydraulic records (D01.S03) and valve V17 behavior to determine if leakage or alternate return paths contributed to the fall, addressing the gap in D02.S03 regarding handle position vs. actual sealing.",
+      "target_ids": ["REQ_HYDRO_STATUS"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "mechanical_retention",
+      "focus": "Inspect physical evidence and witness accounts to determine if a positive mechanical block was installed (REQ_BLOCK_STATUS) and assess the retention envelope conditions (REQ_RETENTION_ENVELOPE), including interference contacts and keeper engagement.",
+      "target_ids": ["REQ_BLOCK_STATUS", "REQ_RETENTION_ENVELOPE"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

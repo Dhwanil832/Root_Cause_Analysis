@@ -1,0 +1,40 @@
+{
+  "accepted": false,
+  "operations": 1,
+  "reason": "missing_or_retired_dependency_N_A",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "missing_or_retired_dependency_N_A",
+      "phase": "controller",
+      "operation_index": 0,
+      "record_id": "N_C",
+      "path": "$.operations[0].record",
+      "actual": {
+        "id": "N_C",
+        "kind": "node",
+        "scope_key": "intake_decision",
+        "claim": "The intake proposal correctly identifies the focal event and immediate ambiguities. It asks for measurements and inspection that can clarify the carrier's release mechanism. The intake proposal is justified and should be committed. The intake proposal does not yet have the authority to dispatch specialist work or to populate upstream_dispositions. Those actions require lead review.",
+        "status": "reported",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [
+          "N_A"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "expected": "All dependencies active in final batch",
+      "repair": "Update or retire all active dependents when replacing their target.",
+      "dependency_id": "N_A"
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

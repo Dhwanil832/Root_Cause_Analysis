@@ -1,0 +1,69 @@
+[
+  {
+    "test": "Earlier clean-input benchmark",
+    "model": "qwen3.5:latest",
+    "presence": [
+      49,
+      49,
+      49
+    ],
+    "consistent": [
+      46,
+      46,
+      46
+    ],
+    "denominator": 96,
+    "meaning": "Independent task packets with correct upstream inputs; all 96 checks evaluated; not a connected board score.",
+    "source": "New RCA Harness/benchmarks/R3-codex55-continuation-v1/review/score-summary.json"
+  },
+  {
+    "test": "Earlier connected benchmark",
+    "model": "qwen3.5:latest",
+    "presence": [
+      7,
+      7,
+      7
+    ],
+    "consistent": [
+      7,
+      7,
+      7
+    ],
+    "denominator": 96,
+    "not_reached": 88,
+    "meaning": "Older connected attempts stopped before later stages; different runtime and early evaluation windows from repaired fallback.",
+    "source": "New RCA Harness/benchmarks/R3-codex55-continuation-v1/review/score-summary.json"
+  },
+  {
+    "test": "Scored repaired fallback historical Qwen",
+    "model": "qwen3.5:latest",
+    "presence": 17,
+    "consistent": 17,
+    "denominator": 96,
+    "not_reached": 74,
+    "meaning": "Initial intake and lead outputs counted for raw semantic coverage; zero committed records; runtime copied into benchmark harness.",
+    "source": "scored-results/qwen/score-summary.json"
+  },
+  {
+    "test": "Server clean-input comparison",
+    "model": "qwen3.5:latest",
+    "presence": [
+      47,
+      46,
+      46
+    ],
+    "consistent": [
+      44,
+      43,
+      43
+    ],
+    "denominator": 96,
+    "execution_incomplete": [
+      3,
+      0,
+      0
+    ],
+    "meaning": "Separate server comparison; first repetition includes incomplete opportunities. Not a connected final-board score.",
+    "source": "RCA-Server-Review-2026-10-04/clean-scoring/summary-console.json"
+  }
+]

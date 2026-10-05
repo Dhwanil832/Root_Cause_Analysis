@@ -1,0 +1,1549 @@
+[
+  {
+    "criterion_id": "S01.01",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/0/record/claim"
+    ],
+    "excerpt_or_absence_reason": "Explicit carrier fall into pit onto sled/scaffold focal occurrence, though the node was structurally rejected.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S01.02",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/0/record/claim"
+    ],
+    "excerpt_or_absence_reason": "Raised assembly after backup-roll removal is explicit.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S01.03",
+    "outcome": "Missing",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations"
+    ],
+    "excerpt_or_absence_reason": "C17/V17 tags are used, but A/B terminology ambiguity is never resolved; same rule as GPT-5.5 review.",
+    "contradiction": false,
+    "failure_origin": "Omission",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S01.04",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/2/reason"
+    ],
+    "excerpt_or_absence_reason": "Explicit warning that handle position does not measure seat leakage; actual hydraulic condition is requested.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S01.05",
+    "outcome": "Missing",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No statement distinguishes electrical isolation from gravity restraint. Requesting a block alone does not supply this comparison.",
+    "contradiction": false,
+    "failure_origin": "Omission",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S01.06",
+    "outcome": "Missing",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "D15 is not discussed or identified as unreviewed/non-independent.",
+    "contradiction": false,
+    "failure_origin": "Omission",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S01.07",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/1"
+    ],
+    "excerpt_or_absence_reason": "Actual physical block presence is requested despite procedure omission, not inferred absent.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S01.08",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/1",
+      "case/calls/0001_intake/answer.txt#/operations/2",
+      "case/calls/0001_intake/answer.txt#/operations/3"
+    ],
+    "excerpt_or_absence_reason": "Initial work targets actual restraint/isolation and contact/yoke motion rather than unrelated organizational origins.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S02.01",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/1/reason",
+      "case/calls/0001_intake/answer.txt#/operations/2"
+    ],
+    "excerpt_or_absence_reason": "Conditional support-chamber fluid loss permitting downward travel is explicit in raised configuration; no incident leakage confirmation.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S02.02",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/2/record"
+    ],
+    "excerpt_or_absence_reason": "Seat leakage, external leakage and alternate return paths are separately named and requested.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S02.03",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/2/record/fields"
+    ],
+    "excerpt_or_absence_reason": "Requests V17 leakage rate, C17 pressure, external loss and alternate path activity at incident time.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S02.04",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/0/record/claim",
+      "case/calls/0001_intake/answer.txt#/operations/1/reason"
+    ],
+    "excerpt_or_absence_reason": "Raised configuration and absent-independent-block premise explicitly condition support-fluid-loss/downward-travel hypothesis.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S02.05",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/3/reason"
+    ],
+    "excerpt_or_absence_reason": "Explicit carrier held vertically by contact while yoke moves; differential mechanism is stated, not just absolute yoke motion.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S02.06",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/3"
+    ],
+    "excerpt_or_absence_reason": "Primary seating lost at 30 mm and the separate keeper engagement/bypass question are stated.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S02.07",
+    "outcome": "Missing",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/3",
+      "case/calls/0002_lead/answer.txt#/operations/3"
+    ],
+    "excerpt_or_absence_reason": "Lateral offset is the only specific keeper candidate. Generic dynamic path conditions do not specify a second distinguishable rotation/deformation/geometry alternative.",
+    "contradiction": false,
+    "failure_origin": "Omission",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1",
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S02.08",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/3/record"
+    ],
+    "excerpt_or_absence_reason": "Incident-scoped request seeks interference contact, keeper offset and dynamic path evidence.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S03.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No equivalent pair of specialist hydraulic hypotheses was generated; duplicate-merge opportunity never elicited.",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S03.02",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/2",
+      "case/calls/0001_intake/answer.txt#/operations/3/reason"
+    ],
+    "excerpt_or_absence_reason": "Within the first-cycle raw output window, hydraulic loss/downward travel and carrier-held/yoke-moving primary withdrawal are distinct. The lead later omits the explicit primary-seat step, recorded as a preservation diagnostic; omission does not erase earlier presence in this designated window.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "631a5fc1ba0fca6ad59885cfa8aff335f1b9b283f081aa63fdc730d548491fb1"
+    }
+  },
+  {
+    "criterion_id": "S03.03",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations/3"
+    ],
+    "excerpt_or_absence_reason": "Keeper bypass remains a distinct open mechanical question, not answered by hydraulics; semantic equivalent accepted without a separate candidate node.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S03.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations"
+    ],
+    "excerpt_or_absence_reason": "No overlapping motion requests from different branches were generated for merger, and no shared motion acquisition was dispatched.",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S03.05",
+    "outcome": "Missing",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations/1",
+      "case/calls/0002_lead/answer.txt#/operations/2",
+      "case/calls/0002_lead/answer.txt#/operations/3"
+    ],
+    "excerpt_or_absence_reason": "Requests are scoped but remain proposed. Lead never approves them as searching or initiates evidence acquisition; scoped drafting alone is not approval.",
+    "contradiction": false,
+    "failure_origin": "Omission",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S03.06",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations/2/reason",
+      "case/calls/0002_lead/answer.txt#/operations/3/reason"
+    ],
+    "excerpt_or_absence_reason": "Hydraulic test distinguishes closed indication from flow paths; contact/geometry inquiry discriminates carrier holding and keeper bypass.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S03.07",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/operations/2",
+      "case/calls/0002_lead/answer.txt#/operations/3"
+    ],
+    "excerpt_or_absence_reason": "Mechanisms remain questions to verify/assess, with no unsupported incident confirmation.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S03.08",
+    "outcome": "Present",
+    "exposure": "Initial sources and intake/lead outputs available",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/next_work"
+    ],
+    "excerpt_or_absence_reason": "Lead emits useful hydraulic and mechanical specialist dispatches despite incomplete knowledge. Raw intended dispatch receives meaning credit; neither was actually queued because the batch failed.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Distinguish documents searched from documents that answer the motion request",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep the initial missing motion measurement awaiting user rather than disproven/unavailable",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Ask for the relevant motion interval and both moving objects",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep evidence-worker output about request coverage rather than causal adjudication",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Recognize D07 answers vertical yoke/carrier displacement over the same interval",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Separate D07 release timing from the displacement measurement endpoint",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain keeper interface/offset as not covered by D07",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S04.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Narrow the remaining request fields to genuine uncovered scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Extract yoke displacement 40 +/- 1 mm",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Extract carrier displacement 0 +/- 1 mm in the same frame/window",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Compute relative withdrawal interval 38-42 mm",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Conclude the 30 mm primary seat threshold is exceeded by the measured endpoint",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Associate visible contact and stationary carrier with a scoped holding contribution",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Preserve the 13:24:00 endpoint versus 13:24:03 release distinction",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep the specific keeper mode unresolved despite primary seating loss",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S05.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Treat W-A/W-B as compatible, limited observations of different components",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Use D08 incident evidence to identify flow through the tagged V17 route despite CLOSED indication",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Convert 0.400 +/- 0.010 L to 390-410 cm3",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Apply 100 cm2 area and 1:1 motion to obtain 39-41 mm yoke displacement",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Recognize the hydraulic displacement is consistent with the motion measurement",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Establish actual no-block condition from execution/boundary evidence",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Refute sufficient external-loss/alternate-path explanations only within the measured boundary",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Combine fluid loss, raised load and absent positive restraint when explaining descent",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S06.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Leave component-defect onset and keeper mode unresolved after hydraulic confirmation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Represent the observed fall independently of whether the complete causal path is established",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Represent fluid loss plus load/no block jointly contributing to yoke descent",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Represent both yoke and carrier motion as inputs to relative withdrawal",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Represent relative threshold exceedance leading to primary seating loss",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Preserve an explicit unresolved keeper bridge before complete fall-path confirmation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep actual block absence distinct from procedure omission",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Represent procedure-to-absence contribution as unestablished without a decision/execution bridge",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S07.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Preserve independent established hydraulic/motion findings while keeper evidence is missing",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Expand established V17 leakage into competing origin hypotheses",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Seek component/maintenance evidence capable of distinguishing valve origins",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Investigate inspection/detection opportunity without assuming the policy physically caused contamination",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Expand actual block absence into competing procedure, requirement or execution explanations",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Request relevant procedure approval, hazard review, applicable standards or execution rationale",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep deliberate noncompliance, training and budget origins conditional",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Investigate contact origins through maintenance configuration versus prior positioning/handling",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S08.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Seek earlier positioning/configuration evidence without re-requesting occluded incident keeper motion",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Identify the retained maintenance practice as no scheduled V17 seat-leak inspection and replacement on reported defect",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep detectability and physical contamination causation unestablished by that practice",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep leakage/contamination onset undated",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Separate delivered history from unresolved origin evidence in request coverage",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Mark retained incident offset/dynamic-envelope acquisition as explicitly unavailable",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep missing keeper evidence distinct from refuting its physical mechanism",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Specify a new valid route: validated envelope plus independently bounded incident offset",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S09.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep other supported branches available while this acquisition route is blocked",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Use current revision C for the incident and limit superseded A to its normal-rolling configuration",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Recognize centered 8 +/- 1 mm overlap excludes simple rigid centered seated passage only",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Refute gross keeper plate/fastener separation or fracture within recovery-inspection scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep crane/load-contact refutation limited to the covered time and envelope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Use later V17 bench leakage as compatibility evidence with unknown defect timing",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep D13 actions as identified proposals with no demonstrated implementation/effectiveness",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Distinguish observed physical conditions from why the procedure/design omitted controls",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S10.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Treat unavailable analysis/measurements as knowledge limits rather than physical causes",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Close the motion request within the delivered vertical-motion/release scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Close hydraulic acquisition within the delivered incident-flow/boundary scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep valve-origin timing explicitly unresolved or blocked within its unavailable route",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Keep the unavailable keeper acquisition route visibly separate from open physical hypotheses",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Reuse equivalent requests rather than repeat unchanged completed acquisition",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Account for upstream origins of established valve, no-block and contact conditions",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Preserve useful independent work while a different branch waits",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S11.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Declare partial/evidence-boundary status with concrete reopening conditions",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.01",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain the observed carrier fall as the focal occurrence",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.02",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain fluid loss plus raised load and absent block as the joint descent explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.03",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain both motions/contact holding as the relative-withdrawal explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.04",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain relative withdrawal beyond 30 mm as the primary seating-loss explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.05",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain the specific keeper-release mechanism as unresolved",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.06",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain recovered attachment and centered geometry as limits rather than proof of dynamic retention",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.07",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain the crane/contact negative with its time/envelope limits",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  },
+  {
+    "criterion_id": "S12.08",
+    "outcome": "Not reached",
+    "exposure": "Required stage or opportunity not elicited before model-contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Not reached: initial lead attempted to revise an uncommitted event record. Empty ledger, no accepted requests, no custodian delivery and no subsequent assessment/final-board cycle. This is unobserved downstream reasoning, not a wrong answer to: Retain gross keeper fracture/separation refutation within inspection scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Original single-assistant unblinded semantic judgments reapplied only after byte-for-byte equality of both newly generated answers, requests and validations was verified; not a second independent reviewer.",
+    "raw_vs_committed": "Raw output only: both batches rejected and final ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "aec28090ec37302e1478b0e4cfd61f43b71c7ba64d050c925b6859033fed6fb9"
+    }
+  }
+]

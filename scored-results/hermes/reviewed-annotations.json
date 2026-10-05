@@ -1,0 +1,1538 @@
+[
+  {
+    "criterion_id": "S01.01",
+    "outcome": "Present",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/0/record/claim"
+    ],
+    "excerpt_or_absence_reason": "Explicit focal beam fall into pit striking sled and scaffold.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S01.02",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No raised assembly or removed-backup-roll maintenance configuration.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S01.03",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No C17/V17 or A/B terminology resolution.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S01.04",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No closed-handle versus actual-sealing distinction.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S01.05",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No electrical-isolation versus mechanical-restraint distinction.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S01.06",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "D15 is cited as a document, but never classified as unreviewed/non-independent interpretation.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S01.07",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Block inspection is mentioned, but no explicit distinction between procedure omission and actual unknown block presence.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S01.08",
+    "outcome": "Present",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/decision"
+    ],
+    "excerpt_or_absence_reason": "Intake prioritizes relative withdrawal, keeper engagement and inspecting actual block/retention conditions.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.01",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No fluid-loss/loaded-yoke-descent conditional mechanism.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.02",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No alternative hydraulic paths: V17 seat leakage, external loss, alternate route.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.03",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No incident flow/pressure/boundary evidence request.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.04",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No load/restraint premises conditioning hydraulic contribution.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.05",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/decision"
+    ],
+    "excerpt_or_absence_reason": "Asks for carrier relative vertical withdrawal without specifying paired yoke/carrier motion or distinguishing carrier motion from yoke motion; required relationship is not explicit.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.06",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No primary-seat threshold or distinction between primary seating loss and keeper-release mode.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.07",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No separate offset, rotation or deformation/geometry keeper candidates.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S02.08",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/next_work"
+    ],
+    "excerpt_or_absence_reason": "Asks for clearance/inspection generally but omits incident time/configuration-scoped contact and keeper evidence.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S03.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No equivalent hydraulic specialist hypotheses were generated for merger.",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S03.02",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Neither hydraulic loss nor relative primary-withdrawal step is represented.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S03.03",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/1/record"
+    ],
+    "excerpt_or_absence_reason": "Keeper engagement uncertainty is bundled into a broad documents-do-not-explain-the-fall node; no distinct physical keeper-release hypothesis is retained.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S03.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No overlapping branch-specific motion requests existed for shared acquisition.",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S03.05",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "No request records are created or approved with asset, interval and measurement scope.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S03.06",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt#/decision"
+    ],
+    "excerpt_or_absence_reason": "General statement that measurements can clarify release does not specify how motion/hydraulic evidence supports or challenges a proposed mechanism.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S03.07",
+    "outcome": "Missing",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/operations/1/record"
+    ],
+    "excerpt_or_absence_reason": "Unknown why/keeper-engagement gap is recorded, but no physical conditional mechanism hypotheses exist to preserve.",
+    "contradiction": false,
+    "failure_origin": "Omission / incomplete relationship",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S03.08",
+    "outcome": "Present",
+    "exposure": "Initial four documents and two initial-cycle outputs only",
+    "output_reference": [
+      "case/calls/0001_intake/answer.txt#/next_work"
+    ],
+    "excerpt_or_absence_reason": "Raw intake dispatches useful clearance/retention/block inspection work to a specialist without waiting for full understanding. Lead fails to carry this forward and no dispatch commits.",
+    "contradiction": false,
+    "failure_origin": "None",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0001_intake/answer.txt": "d3816c07f097739003edde461b5495fec13b593e42b4927ee4ca08dd61167549"
+    }
+  },
+  {
+    "criterion_id": "S04.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Distinguish documents searched from documents that answer the motion request",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S04.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep the initial missing motion measurement awaiting user rather than disproven/unavailable",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S04.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Ask for the relevant motion interval and both moving objects",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S04.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep evidence-worker output about request coverage rather than causal adjudication",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S04.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Recognize D07 answers vertical yoke/carrier displacement over the same interval",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S04.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Separate D07 release timing from the displacement measurement endpoint",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S04.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain keeper interface/offset as not covered by D07",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S04.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Narrow the remaining request fields to genuine uncovered scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Extract yoke displacement 40 +/- 1 mm",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Extract carrier displacement 0 +/- 1 mm in the same frame/window",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Compute relative withdrawal interval 38-42 mm",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Conclude the 30 mm primary seat threshold is exceeded by the measured endpoint",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Associate visible contact and stationary carrier with a scoped holding contribution",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Preserve the 13:24:00 endpoint versus 13:24:03 release distinction",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep the specific keeper mode unresolved despite primary seating loss",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S05.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Treat W-A/W-B as compatible, limited observations of different components",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Use D08 incident evidence to identify flow through the tagged V17 route despite CLOSED indication",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Convert 0.400 +/- 0.010 L to 390-410 cm3",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Apply 100 cm2 area and 1:1 motion to obtain 39-41 mm yoke displacement",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Recognize the hydraulic displacement is consistent with the motion measurement",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Establish actual no-block condition from execution/boundary evidence",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Refute sufficient external-loss/alternate-path explanations only within the measured boundary",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Combine fluid loss, raised load and absent positive restraint when explaining descent",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S06.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Leave component-defect onset and keeper mode unresolved after hydraulic confirmation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Represent the observed fall independently of whether the complete causal path is established",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Represent fluid loss plus load/no block jointly contributing to yoke descent",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Represent both yoke and carrier motion as inputs to relative withdrawal",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Represent relative threshold exceedance leading to primary seating loss",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Preserve an explicit unresolved keeper bridge before complete fall-path confirmation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep actual block absence distinct from procedure omission",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Represent procedure-to-absence contribution as unestablished without a decision/execution bridge",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S07.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Preserve independent established hydraulic/motion findings while keeper evidence is missing",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Expand established V17 leakage into competing origin hypotheses",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Seek component/maintenance evidence capable of distinguishing valve origins",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Investigate inspection/detection opportunity without assuming the policy physically caused contamination",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Expand actual block absence into competing procedure, requirement or execution explanations",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Request relevant procedure approval, hazard review, applicable standards or execution rationale",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep deliberate noncompliance, training and budget origins conditional",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Investigate contact origins through maintenance configuration versus prior positioning/handling",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S08.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Seek earlier positioning/configuration evidence without re-requesting occluded incident keeper motion",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Identify the retained maintenance practice as no scheduled V17 seat-leak inspection and replacement on reported defect",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep detectability and physical contamination causation unestablished by that practice",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep leakage/contamination onset undated",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Separate delivered history from unresolved origin evidence in request coverage",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Mark retained incident offset/dynamic-envelope acquisition as explicitly unavailable",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep missing keeper evidence distinct from refuting its physical mechanism",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Specify a new valid route: validated envelope plus independently bounded incident offset",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S09.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep other supported branches available while this acquisition route is blocked",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Use current revision C for the incident and limit superseded A to its normal-rolling configuration",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Recognize centered 8 +/- 1 mm overlap excludes simple rigid centered seated passage only",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Refute gross keeper plate/fastener separation or fracture within recovery-inspection scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep crane/load-contact refutation limited to the covered time and envelope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Use later V17 bench leakage as compatibility evidence with unknown defect timing",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep D13 actions as identified proposals with no demonstrated implementation/effectiveness",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Distinguish observed physical conditions from why the procedure/design omitted controls",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S10.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Treat unavailable analysis/measurements as knowledge limits rather than physical causes",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Close the motion request within the delivered vertical-motion/release scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Close hydraulic acquisition within the delivered incident-flow/boundary scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep valve-origin timing explicitly unresolved or blocked within its unavailable route",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Keep the unavailable keeper acquisition route visibly separate from open physical hypotheses",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Reuse equivalent requests rather than repeat unchanged completed acquisition",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Account for upstream origins of established valve, no-block and contact conditions",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Preserve useful independent work while a different branch waits",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S11.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Declare partial/evidence-boundary status with concrete reopening conditions",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.01",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain the observed carrier fall as the focal occurrence",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.02",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain fluid loss plus raised load and absent block as the joint descent explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.03",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain both motions/contact holding as the relative-withdrawal explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.04",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain relative withdrawal beyond 30 mm as the primary seating-loss explanation",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.05",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain the specific keeper-release mechanism as unresolved",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.06",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain recovered attachment and centered geometry as limits rather than proof of dynamic retention",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.07",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain the crane/contact negative with its time/envelope limits",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  },
+  {
+    "criterion_id": "S12.08",
+    "outcome": "Not reached",
+    "exposure": "Required opportunity/stage never elicited before contract stop",
+    "output_reference": [
+      "case/calls/0002_lead/answer.txt"
+    ],
+    "excerpt_or_absence_reason": "Required stage never reached after two rejected initial batches; no committed requests, delivered evidence or later assessment. Expected but unobserved: Retain gross keeper fracture/separation refutation within inspection scope",
+    "contradiction": false,
+    "failure_origin": "Model-contract / routing",
+    "reviewer": "Single assistant, unblinded; manual semantic review, no external model grading",
+    "raw_vs_committed": "Raw only; no operations committed and ledger empty.",
+    "verified_output_hashes": {
+      "case/calls/0002_lead/answer.txt": "0b3aed408a6a114ec8dfcbc756fc24203cb9969c7d81c1ecc919817b3b399698"
+    }
+  }
+]

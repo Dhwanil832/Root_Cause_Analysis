@@ -1,0 +1,23 @@
+{
+  "provider": "ollama_macos_pilot",
+  "model": "mistral:7b",
+  "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+  "server_version": "0.32.3",
+  "think": false,
+  "thinking_supported": false,
+  "truncate": false,
+  "shift": false,
+  "timeout_seconds": null,
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "presence_penalty": 0,
+    "repeat_penalty": 1,
+    "num_predict": -1,
+    "num_ctx": 32768
+  },
+  "require_full_gpu": true
+}

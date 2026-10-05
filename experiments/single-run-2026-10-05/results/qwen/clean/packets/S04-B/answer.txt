@@ -1,0 +1,34 @@
+{
+  "decision": "revise",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Acquisition of the incident motion record is now answered for the requested fields. D07 provides yoke/carrier vertical displacement (40 mm yoke, 0 mm carrier), common time window (13:00–13:24:03), release timing (13:24:03), and confirms keeper interface/lateral offset are occluded during release. Remaining fields (keeper interface and lateral offset coverage) are explicitly unavailable due to occlusion per D07.S03; no further acquisition can resolve them without new instrumentation or a different view. The request is narrowed to the answered fields and marked answered with a concrete reason for the gap.",
+      "record": {
+        "id": "R_MOTION",
+        "kind": "request",
+        "scope_key": "R_MOTION",
+        "claim": "Acquire the incident motion record to assess yoke/carrier movement and coverage.",
+        "status": "answered",
+        "sources": ["D07"],
+        "depends_on": ["REL", "KEEP"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": [
+          "yoke/carrier vertical displacement",
+          "common time window",
+          "release timing",
+          "keeper interface and lateral offset coverage"
+        ]
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "partial"
+}

@@ -1,0 +1,423 @@
+{
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "incident": "At 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold. Investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+  "assignment": {
+    "kind": "evidence",
+    "tag": "",
+    "focus": "Determine which requested fields are covered and what remains.",
+    "target_ids": [
+      "R_MOTION"
+    ],
+    "id": "clean_S04-A"
+  },
+  "source_revision": 4,
+  "ledger": {
+    "FALL": {
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "reported",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "HYD": {
+      "record": {
+        "id": "HYD",
+        "kind": "node",
+        "scope_key": "HYD",
+        "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+        "status": "candidate",
+        "sources": [
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "REL": {
+      "record": {
+        "id": "REL",
+        "kind": "node",
+        "scope_key": "REL",
+        "claim": "Sufficient yoke-down motion relative to the carrier could eliminate primary seating.",
+        "status": "candidate",
+        "sources": [
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "KEEP": {
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "candidate",
+        "sources": [
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "BLOCK": {
+      "record": {
+        "id": "BLOCK",
+        "kind": "node",
+        "scope_key": "BLOCK",
+        "claim": "No effective independent positive yoke block was present.",
+        "status": "candidate",
+        "sources": [
+          "D02",
+          "D04"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1,
+        "D04": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "PROC": {
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": [
+          "D04"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D04": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "LOAD": {
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": [
+          "D01",
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "R_MOTION": {
+      "record": {
+        "id": "R_MOTION",
+        "kind": "request",
+        "scope_key": "R_MOTION",
+        "claim": "Acquire the incident motion record to assess yoke/carrier movement and coverage.",
+        "status": "searching",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [
+          "REL",
+          "KEEP"
+        ],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": [
+          "yoke/carrier vertical displacement",
+          "common time window",
+          "release timing",
+          "keeper interface and lateral offset coverage"
+        ]
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1
+      },
+      "review": "not_applicable",
+      "stale": false
+    }
+  },
+  "recent_proposals": [],
+  "recent_calls": [],
+  "completed_jobs": [],
+  "queued_jobs": [],
+  "feedback": null,
+  "runtime_contract": "2026-10-04-dependency-repair-2",
+  "source_changes": {},
+  "reassessment_required": [],
+  "dependency_relations": {
+    "FALL": {
+      "source_evidence": [
+        "D01"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "HYD": {
+      "source_evidence": [
+        "D02"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "REL": {
+      "source_evidence": [
+        "D02"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "KEEP": {
+      "source_evidence": [
+        "D02"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "BLOCK": {
+      "source_evidence": [
+        "D02",
+        "D04"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "PROC": {
+      "source_evidence": [
+        "D04"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "LOAD": {
+      "source_evidence": [
+        "D01",
+        "D02"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": []
+    },
+    "R_MOTION": {
+      "source_evidence": [
+        "D01"
+      ],
+      "proof_records": [],
+      "acquisition_requests": [],
+      "investigation_targets": [
+        "KEEP",
+        "REL"
+      ]
+    }
+  },
+  "upstream_dispositions": {},
+  "retrieval": {
+    "query": "Acquire the incident motion record to assess yoke/carrier movement and coverage. R3 CB-3/YK-3 C17/V17 raised maintenance assembly 14 October 2024 incident and stated relevant record interval yoke/carrier vertical displacement common time window release timing keeper interface and lateral offset coverage",
+    "collection_revision": 4,
+    "searched_ids": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ],
+    "hits": [
+      {
+        "source": {
+          "id": "D02",
+          "title": "R3 raised assembly - functional system description",
+          "content": "D02.S01 Applicability\nThis functional description applies to R3 assembly set CB-3/YK-3 in the maintenance configuration with backup rolls removed. It specifies the equipment model used in this record set. It is not an operating or isolation instruction.\n\nD02.S02 Load and fluid paths\nYoke YK-3 follows support cylinder C17 at a 1:1 vertical displacement ratio. The effective support area is 100 cm2. With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel under load. The isolated test boundary has one chamber-to-return path through valve V17; external leakage and alternate return paths are separately monitored.\n\nD02.S03 Position versus sealing\nThe V17 CLOSED limit switch detects handle position. It does not measure seat leakage. Motor/pump supply being isolated does not prove that the raised assembly is mechanically restrained or that trapped fluid cannot leave the chamber.\n\nD02.S04 Geometry and interference\nThe carrier normally seats on the yoke. Mill post/spreader contact can temporarily hold the carrier vertically while the yoke moves down. Relative vertical withdrawal is yoke downward travel minus carrier downward travel over the same interval. Temporary interference contact is not a designed mechanical block.\n\nD02.S05 Primary and secondary retention\nIn the defined seated starting state, primary vertical seating engagement is 30 mm. Relative downward withdrawal of the yoke of at least 30 mm eliminates that primary seating engagement. This rule does not prove that the keeper is bypassed. Keeper engagement additionally depends on lateral offset and the dynamic path; those conditions require their own evidence.\n\nD02.S06 Energy\nGravity remains available while the assembly is raised. Electrical isolation, hydraulic handle position and positive mechanical restraint are distinct conditions. No rule here states that a leaking valve alone is sufficient to make the carrier fall.",
+          "revision": "C",
+          "version": 1,
+          "kind": "specification",
+          "request_ids": [],
+          "hash": "9d6e5a7b85f27ab6d8bed417456ed9f16ba9c44c46b3dea171a704fc5218b8e5",
+          "origin_name": "D02.json"
+        },
+        "lexical_score": 16.742
+      },
+      {
+        "source": {
+          "id": "D01",
+          "title": "R3 delivery carrier beam - initial event notice",
+          "content": "D01.S01 Event\nAt 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. No person was struck. The assembly had been parked raised after backup-roll removal during the outage.\n\nD01.S02 Initial observations\nThe keeper plate was found bolted to the recovered assembly. The beam and yoke were not reported fractured. These are initial condition observations, not a conclusion about the release mechanism.\n\nD01.S03 Available leads\nA motion record, work package, isolation records, inspection photographs and hydraulic records have been retained. Their coverage and applicability must be checked. The cause of the event is not stated in this notice.",
+          "revision": "0",
+          "version": 1,
+          "kind": "record",
+          "request_ids": [],
+          "hash": "d7c93970242e7625b654b3f00393a24b8848989127b2346110ea04a114f742ed",
+          "origin_name": "D01.json"
+        },
+        "lexical_score": 12.851
+      },
+      {
+        "source": {
+          "id": "D04",
+          "title": "Stripper-box changeout - task isolation package",
+          "content": "D04.S01 Scope\nTask WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal. The package calls for electrical supply isolation and hydraulic valve closure. The task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope.\n\nD04.S02 Circuit nomenclature\nThe cover calls the supply group B hydraulics. A worksheet calls support-chamber trapped energy A. These names are not circuit identities. Use the tag schedule: C17 support chamber and V17 return-isolation valve belong to the raised balance assembly. Do not substitute unrelated A/B circuit records based on the letter alone.\n\nD04.S03 Interpretation limit\nA procedural omission is distinct from proof of what workers did. Execution records are needed to establish whether a block was actually present. This document does not establish why the procedure omitted that step.",
+          "revision": "3",
+          "version": 1,
+          "kind": "procedure extract",
+          "request_ids": [],
+          "hash": "a5a2cb42b05418153a97e1bb8ffa23d61f1f5d8ebd33227aad18bacd442da5ee",
+          "origin_name": "D04.json"
+        },
+        "lexical_score": 4.467
+      },
+      {
+        "source": {
+          "id": "D15",
+          "title": "Preliminary investigation note - unreviewed",
+          "content": "D15.S01 Draft interpretation\nThe writer suggests that the closed valve indication proves hydraulic isolation and that the installed keeper should have prevented all movement. The writer therefore suspects excess clearance.\n\nD15.S02 Basis and status\nThis note cites only the initial event notice and handle-status entry. It contains no leak measurement, retention-envelope calculation or independent witness account. Status: unreviewed interpretation, not an additional observation.\n\nD15.S03 Source lineage\nThe attached action summary was copied from the initial investigation meeting. Repetition in this note is not independent corroboration.",
+          "revision": "0",
+          "version": 1,
+          "kind": "preliminary memo",
+          "request_ids": [],
+          "hash": "54b0de4652a17c15ec9ec74be89e34bca7751c2ea8bc02a8aef58b9adf14b798",
+          "origin_name": "D15.json"
+        },
+        "lexical_score": 1.792
+      }
+    ],
+    "limitation": "Lexical retrieval; a search miss is not proof that information does not exist. No OCR or web lookup performed."
+  },
+  "sources": [
+    {
+      "id": "D02",
+      "title": "R3 raised assembly - functional system description",
+      "content": "D02.S01 Applicability\nThis functional description applies to R3 assembly set CB-3/YK-3 in the maintenance configuration with backup rolls removed. It specifies the equipment model used in this record set. It is not an operating or isolation instruction.\n\nD02.S02 Load and fluid paths\nYoke YK-3 follows support cylinder C17 at a 1:1 vertical displacement ratio. The effective support area is 100 cm2. With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel under load. The isolated test boundary has one chamber-to-return path through valve V17; external leakage and alternate return paths are separately monitored.\n\nD02.S03 Position versus sealing\nThe V17 CLOSED limit switch detects handle position. It does not measure seat leakage. Motor/pump supply being isolated does not prove that the raised assembly is mechanically restrained or that trapped fluid cannot leave the chamber.\n\nD02.S04 Geometry and interference\nThe carrier normally seats on the yoke. Mill post/spreader contact can temporarily hold the carrier vertically while the yoke moves down. Relative vertical withdrawal is yoke downward travel minus carrier downward travel over the same interval. Temporary interference contact is not a designed mechanical block.\n\nD02.S05 Primary and secondary retention\nIn the defined seated starting state, primary vertical seating engagement is 30 mm. Relative downward withdrawal of the yoke of at least 30 mm eliminates that primary seating engagement. This rule does not prove that the keeper is bypassed. Keeper engagement additionally depends on lateral offset and the dynamic path; those conditions require their own evidence.\n\nD02.S06 Energy\nGravity remains available while the assembly is raised. Electrical isolation, hydraulic handle position and positive mechanical restraint are distinct conditions. No rule here states that a leaking valve alone is sufficient to make the carrier fall.",
+      "revision": "C",
+      "version": 1,
+      "kind": "specification",
+      "request_ids": [],
+      "hash": "9d6e5a7b85f27ab6d8bed417456ed9f16ba9c44c46b3dea171a704fc5218b8e5",
+      "origin_name": "D02.json"
+    },
+    {
+      "id": "D01",
+      "title": "R3 delivery carrier beam - initial event notice",
+      "content": "D01.S01 Event\nAt 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. No person was struck. The assembly had been parked raised after backup-roll removal during the outage.\n\nD01.S02 Initial observations\nThe keeper plate was found bolted to the recovered assembly. The beam and yoke were not reported fractured. These are initial condition observations, not a conclusion about the release mechanism.\n\nD01.S03 Available leads\nA motion record, work package, isolation records, inspection photographs and hydraulic records have been retained. Their coverage and applicability must be checked. The cause of the event is not stated in this notice.",
+      "revision": "0",
+      "version": 1,
+      "kind": "record",
+      "request_ids": [],
+      "hash": "d7c93970242e7625b654b3f00393a24b8848989127b2346110ea04a114f742ed",
+      "origin_name": "D01.json"
+    },
+    {
+      "id": "D04",
+      "title": "Stripper-box changeout - task isolation package",
+      "content": "D04.S01 Scope\nTask WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal. The package calls for electrical supply isolation and hydraulic valve closure. The task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope.\n\nD04.S02 Circuit nomenclature\nThe cover calls the supply group B hydraulics. A worksheet calls support-chamber trapped energy A. These names are not circuit identities. Use the tag schedule: C17 support chamber and V17 return-isolation valve belong to the raised balance assembly. Do not substitute unrelated A/B circuit records based on the letter alone.\n\nD04.S03 Interpretation limit\nA procedural omission is distinct from proof of what workers did. Execution records are needed to establish whether a block was actually present. This document does not establish why the procedure omitted that step.",
+      "revision": "3",
+      "version": 1,
+      "kind": "procedure extract",
+      "request_ids": [],
+      "hash": "a5a2cb42b05418153a97e1bb8ffa23d61f1f5d8ebd33227aad18bacd442da5ee",
+      "origin_name": "D04.json"
+    },
+    {
+      "id": "D15",
+      "title": "Preliminary investigation note - unreviewed",
+      "content": "D15.S01 Draft interpretation\nThe writer suggests that the closed valve indication proves hydraulic isolation and that the installed keeper should have prevented all movement. The writer therefore suspects excess clearance.\n\nD15.S02 Basis and status\nThis note cites only the initial event notice and handle-status entry. It contains no leak measurement, retention-envelope calculation or independent witness account. Status: unreviewed interpretation, not an additional observation.\n\nD15.S03 Source lineage\nThe attached action summary was copied from the initial investigation meeting. Repetition in this note is not independent corroboration.",
+      "revision": "0",
+      "version": 1,
+      "kind": "preliminary memo",
+      "request_ids": [],
+      "hash": "54b0de4652a17c15ec9ec74be89e34bca7751c2ea8bc02a8aef58b9adf14b798",
+      "origin_name": "D15.json"
+    }
+  ]
+}

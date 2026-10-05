@@ -1,0 +1,345 @@
+{
+  "decision": "The incident involved the R3 delivery carrier beam falling into the mill pit and striking the sled and scaffold. The investigation has identified several supported conditions related to the incident, including the dynamic keeper-release path, the omission of a positive-block instruction in WP-031, the assembly being parked raised with gravity available, the yoke descending 40 +/- 1 mm before release, the carrier moving downward 0 +/- 1 mm over the same interval, post/spreader contact visible through the interval, relative yoke-down withdrawal of 38–42 mm, and a leak of 0.400 +/- 0.010 L from C17 through V17 despite a CLOSED indication. The current configuration (revision C) lacks backup rolls, a backup-roll-associated stop, and a separate maintenance travel stop. No independent positive block was observed under YK-3 in the configuration photograph. The incident photograph and boundary record show no independent positive block under YK-3. The absence of a validated retention-envelope analysis with an independently bounded incident offset is noted as required follow-up.",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "FALL",
+      "reason": "The revised report incorporates the supported conditions identified, providing a more comprehensive understanding of the incident's physical mechanism and relevant upstream causes within the evidence limits.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "supported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "KEEP",
+      "reason": "The revised report incorporates the supported condition related to a dynamic keeper-release path, which could allow separation after primary seating is lost.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "supported",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "PROC",
+      "reason": "The revised report incorporates the supported condition that WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "LOAD",
+      "reason": "The revised report incorporates the supported condition that the incident assembly was parked raised and gravity remained available.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "YOKE",
+      "reason": "The revised report incorporates the supported condition that the yoke YK-3 descended 40 +/- 1 mm during 13:00:00–13:24:00, before release at 13:24:03.",
+      "record": {
+        "id": "YOKE",
+        "kind": "node",
+        "scope_key": "YOKE",
+        "claim": "YK-3 descended 40 +/- 1 mm during 13:00:00–13:24:00, before release at 13:24:03.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "CARRIER",
+      "reason": "The revised report incorporates the supported condition that the carrier moved downward 0 +/- 1 mm over the same interval and reference frame.",
+      "record": {
+        "id": "CARRIER",
+        "kind": "node",
+        "scope_key": "CARRIER",
+        "claim": "The carrier moved downward 0 +/- 1 mm over the same interval and reference frame.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "CONTACT",
+      "reason": "The revised report incorporates the supported condition that post/spreader contact was visible through the interval, compatible with temporarily holding the carrier.",
+      "record": {
+        "id": "CONTACT",
+        "kind": "node",
+        "scope_key": "CONTACT",
+        "claim": "Post/spreader contact was visible through the interval, compatible with temporarily holding the carrier.",
+        "status": "supported",
+        "sources": ["D02", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "WITHDRAW",
+      "reason": "The revised report incorporates the supported condition that relative yoke-down withdrawal over the measured interval was 38–42 mm.",
+      "record": {
+        "id": "WITHDRAW",
+        "kind": "node",
+        "scope_key": "WITHDRAW",
+        "claim": "Relative yoke-down withdrawal over the measured interval was 38–42 mm.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "SEAT",
+      "reason": "The revised report incorporates the supported condition that relative withdrawal exceeded the defined 30 mm engagement and eliminated primary seating by 13:24:00.",
+      "record": {
+        "id": "SEAT",
+        "kind": "node",
+        "scope_key": "SEAT",
+        "claim": "Relative withdrawal exceeded the defined 30 mm engagement and eliminated primary seating by 13:24:00.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "LEAK",
+      "reason": "The revised report incorporates the supported condition that 0.400 +/- 0.010 L left C17 through V17 despite CLOSED indication over the incident measurement interval.",
+      "record": {
+        "id": "LEAK",
+        "kind": "node",
+        "scope_key": "LEAK",
+        "claim": "0.400 +/- 0.010 L left C17 through V17 despite CLOSED indication over the incident measurement interval.",
+        "status": "supported",
+        "sources": ["D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "NOBLOCK",
+      "reason": "The revised report incorporates the supported condition that the incident photograph and boundary record show no independent positive block under YK-3.",
+      "record": {
+        "id": "NOBLOCK",
+        "kind": "node",
+        "scope_key": "NOBLOCK",
+        "claim": "The incident photograph and boundary record show no independent positive block under YK-3.",
+        "status": "supported",
+        "sources": ["D05", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "CONFIG",
+      "reason": "The revised report incorporates the supported condition that current revision C has backup rolls removed, no backup-roll-associated stop, and no separate maintenance travel stop.",
+      "record": {
+        "id": "CONFIG",
+        "kind": "node",
+        "scope_key": "CONFIG",
+        "claim": "Current revision C has backup rolls removed, no backup-roll-associated stop, and no separate maintenance travel stop.",
+        "status": "supported",
+        "sources": ["D03C"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [
+    {
+      "target_id": "FALL",
+      "action": "investigate",
+      "reason": "Investigate the origins of the observed carrier contact/holding condition.",
+      "record_ids": ["FALL"],
+      "source_ids": []
+    },
+    {
+      "target_id": "KEEP",
+      "action": "investigate",
+      "reason": "Investigate the dynamic keeper-release path that could allow separation after primary seating is lost.",
+      "record_ids": ["KEEP"],
+      "source_ids": []
+    },
+    {
+      "target_id": "PROC",
+      "action": "investigate",
+      "reason": "Investigate the omission of a positive-block instruction and off-center retention-envelope verification in WP-031.",
+      "record_ids": ["PROC"],
+      "source_ids": []
+    },
+    {
+      "target_id": "LOAD",
+      "action": "investigate",
+      "reason": "Investigate the assembly being parked raised with gravity available.",
+      "record_ids": ["LOAD"],
+      "source_ids": []
+    },
+    {
+      "target_id": "YOKE",
+      "action": "investigate",
+      "reason": "Investigate the yoke YK-3 descending 40 +/- 1 mm during 13:00:00–13:24:00 before release at 13:24:03.",
+      "record_ids": ["YOKE"],
+      "source_ids": []
+    },
+    {
+      "target_id": "CARRIER",
+      "action": "investigate",
+      "reason": "Investigate the carrier moving downward 0 +/- 1 mm over the same interval and reference frame.",
+      "record_ids": ["CARRIER"],
+      "source_ids": []
+    },
+    {
+      "target_id": "CONTACT",
+      "action": "investigate",
+      "reason": "Investigate the post/spreader contact visible through the interval, compatible with temporarily holding the carrier.",
+      "record_ids": ["CONTACT"],
+      "source_ids": []
+    },
+    {
+      "target_id": "WITHDRAW",
+      "action": "investigate",
+      "reason": "Investigate the relative yoke-down withdrawal of 38–42 mm over the measured interval.",
+      "record_ids": ["WITHDRAW"],
+      "source_ids": []
+    },
+    {
+      "target_id": "SEAT",
+      "action": "investigate",
+      "reason": "Investigate the relative withdrawal exceeding the defined 30 mm engagement and eliminating primary seating by 13:24:00.",
+      "record_ids": ["SEAT"],
+      "source_ids": []
+    },
+    {
+      "target_id": "LEAK",
+      "action": "investigate",
+      "reason": "Investigate the 0.400 +/- 0.010 L leak from C17 through V17 despite the CLOSED indication over the incident measurement interval.",
+      "record_ids": ["LEAK"],
+      "source_ids": []
+    },
+    {
+      "target_id": "NOBLOCK",
+      "action": "investigate",
+      "reason": "Investigate the absence of an independent positive block under YK-3 in the configuration photograph.",
+      "record_ids": ["NOBLOCK"],
+      "source_ids": []
+    },
+    {
+      "target_id": "CONFIG",
+      "action": "investigate",
+      "reason": "Investigate the current revision C lacking backup rolls, a backup-roll-associated stop, and a separate maintenance travel stop.",
+      "record_ids": ["CONFIG"],
+      "source_ids": []
+    }
+  ],
+  "disposition": "continue"
+}

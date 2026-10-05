@@ -1,0 +1,33 @@
+{
+  "accepted": true,
+  "operations": 6,
+  "changed": 2,
+  "noops": [
+    "ORIGIN_CONTACT",
+    "ORIGIN_VALVE",
+    "KEEP",
+    "E_RELEASE"
+  ],
+  "reason": null,
+  "invalidated_ids": [],
+  "committed": true,
+  "operations_accepted": true,
+  "dispatch": [
+    {
+      "job": {
+        "kind": "assessor",
+        "tag": "lead_review",
+        "focus": "Evaluate the current state of the investigation: The physical mechanism of release (keeper bypass) and the origin of leakage are unresolved due to missing dynamic envelope and contamination timing data. The procedural omission (PROC) is supported but does not explain the physical event without the missing data. The investigation is paused at the evidence boundary defined by D10 and D12.",
+        "target_ids": [
+          "ORIGIN_CONTACT",
+          "ORIGIN_VALVE",
+          "KEEP",
+          "E_RELEASE"
+        ]
+      },
+      "accepted": true,
+      "reason": null,
+      "duplicate": false
+    }
+  ]
+}

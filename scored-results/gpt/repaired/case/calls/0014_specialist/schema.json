@@ -1,0 +1,255 @@
+{
+  "type": "object",
+  "properties": {
+    "decision": {
+      "type": "string"
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "create",
+              "revise",
+              "replace"
+            ]
+          },
+          "expected_version": {
+            "type": "integer",
+            "description": "0 for create; current target ledger version for revise/replace."
+          },
+          "replaces": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "null for create/revise; old same-kind ledger ID for replace, which needs a fresh record.id."
+          },
+          "reason": {
+            "type": "string",
+            "description": "Concrete evidence-grounded justification. Requests: per-field coverage, original source/locator, remaining gaps and reopening condition. Persisted with the record."
+          },
+          "record": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Fresh ledger ID on create/replace. Match [A-Za-z][A-Za-z0-9_-]{0,79}."
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "node",
+                  "edge",
+                  "request"
+                ]
+              },
+              "scope_key": {
+                "type": "string"
+              },
+              "claim": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "reported",
+                  "candidate",
+                  "supported",
+                  "refuted",
+                  "unresolved",
+                  "conflicting",
+                  "withdrawn",
+                  "proposed",
+                  "searching",
+                  "awaiting_user",
+                  "partial",
+                  "answered",
+                  "blocked",
+                  "terminated"
+                ],
+                "description": "Allowed by record kind: {'node': ['reported', 'candidate', 'supported', 'refuted', 'unresolved', 'conflicting', 'withdrawn'], 'edge': ['candidate', 'supported', 'refuted', 'unresolved', 'conflicting', 'withdrawn'], 'request': ['proposed', 'searching', 'awaiting_user', 'partial', 'answered', 'blocked', 'terminated']}"
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Unique top-level source IDs, never section IDs. Put section/page locators in reason."
+              },
+              "depends_on": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "from_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "to_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "mode": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "all",
+                  "any",
+                  null
+                ]
+              },
+              "asset": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "window": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "scope_key",
+              "claim",
+              "status",
+              "sources",
+              "depends_on",
+              "from_ids",
+              "to_id",
+              "mode",
+              "asset",
+              "window",
+              "fields"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "action",
+          "expected_version",
+          "replaces",
+          "reason",
+          "record"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "next_work": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "specialist",
+              "evidence",
+              "assessor"
+            ]
+          },
+          "tag": {
+            "type": "string"
+          },
+          "focus": {
+            "type": "string"
+          },
+          "target_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "kind",
+          "tag",
+          "focus",
+          "target_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "upstream_dispositions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target_id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "investigate",
+              "already_explained",
+              "blocked",
+              "out_of_scope",
+              "no_longer_applicable"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "record_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "target_id",
+          "action",
+          "reason",
+          "record_ids",
+          "source_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "continue",
+        "waiting",
+        "partial"
+      ]
+    }
+  },
+  "required": [
+    "decision",
+    "operations",
+    "next_work",
+    "upstream_dispositions",
+    "disposition"
+  ],
+  "additionalProperties": false
+}

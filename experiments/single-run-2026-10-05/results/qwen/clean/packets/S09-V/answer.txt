@@ -1,0 +1,33 @@
+{
+  "decision": "revise",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Acquisition of component history and dated evidence for valve leakage origin is now partially answered. D11 confirms no scheduled seat-leakage inspection for V17 in the preceding year and that practice is replacement on defect report (D11.S01). D11 explicitly states no record dates the onset of V17 leakage or seat contamination (D11.S03). D09 confirms seat contamination was found at examination but arrival time is unknown (D09.S02). D12 confirms no record establishes contamination onset (D12.S02). Remaining fields: 'defect detectability' (requires time-relevant lateral/rotation measurement or validated retention-envelope analysis with bounded incident offset per D10.S04) and 'contamination onset' (requires traceable earlier contamination sample or dated inspection per D12.S03). Coverage narrowed to uncovered fields.",
+      "record": {
+        "id": "R_V",
+        "kind": "request",
+        "scope_key": "R_V",
+        "claim": "Acquire component history and dated evidence to investigate valve leakage origin.",
+        "status": "partial",
+        "sources": ["D01", "D11", "D09", "D12"],
+        "depends_on": ["LEAK"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": [
+          "V17 inspection/replacement practice",
+          "defect detectability",
+          "contamination onset"
+        ]
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "partial"
+}

@@ -1,0 +1,21 @@
+{
+  "accepted": false,
+  "operations": 4,
+  "reason": "unknown_revision_target",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "unknown_revision_target",
+      "phase": "controller",
+      "operation_index": 0,
+      "record_id": "EVT_R3_20241014",
+      "path": "$.operations[0].record.id",
+      "actual": "EVT_R3_20241014",
+      "expected": [],
+      "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch."
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

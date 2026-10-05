@@ -1,0 +1,39 @@
+{
+  "id": "D02",
+  "title": "R3 raised assembly - functional system description",
+  "revision": "C",
+  "issued": "2024-09-20",
+  "kind": "specification",
+  "sections": [
+    {
+      "id": "D02.S01",
+      "heading": "Applicability",
+      "text": "This functional description applies to R3 assembly set CB-3/YK-3 in the maintenance configuration with backup rolls removed. It specifies the equipment model used in this record set. It is not an operating or isolation instruction."
+    },
+    {
+      "id": "D02.S02",
+      "heading": "Load and fluid paths",
+      "text": "Yoke YK-3 follows support cylinder C17 at a 1:1 vertical displacement ratio. The effective support area is 100 cm2. With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel under load. The isolated test boundary has one chamber-to-return path through valve V17; external leakage and alternate return paths are separately monitored."
+    },
+    {
+      "id": "D02.S03",
+      "heading": "Position versus sealing",
+      "text": "The V17 CLOSED limit switch detects handle position. It does not measure seat leakage. Motor/pump supply being isolated does not prove that the raised assembly is mechanically restrained or that trapped fluid cannot leave the chamber."
+    },
+    {
+      "id": "D02.S04",
+      "heading": "Geometry and interference",
+      "text": "The carrier normally seats on the yoke. Mill post/spreader contact can temporarily hold the carrier vertically while the yoke moves down. Relative vertical withdrawal is yoke downward travel minus carrier downward travel over the same interval. Temporary interference contact is not a designed mechanical block."
+    },
+    {
+      "id": "D02.S05",
+      "heading": "Primary and secondary retention",
+      "text": "In the defined seated starting state, primary vertical seating engagement is 30 mm. Relative downward withdrawal of the yoke of at least 30 mm eliminates that primary seating engagement. This rule does not prove that the keeper is bypassed. Keeper engagement additionally depends on lateral offset and the dynamic path; those conditions require their own evidence."
+    },
+    {
+      "id": "D02.S06",
+      "heading": "Energy",
+      "text": "Gravity remains available while the assembly is raised. Electrical isolation, hydraulic handle position and positive mechanical restraint are distinct conditions. No rule here states that a leaking valve alone is sufficient to make the carrier fall."
+    }
+  ]
+}

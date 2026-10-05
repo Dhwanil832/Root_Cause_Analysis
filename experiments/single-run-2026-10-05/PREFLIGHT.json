@@ -1,0 +1,111 @@
+{
+  "frozen_runtime_verified": true,
+  "repetitions": 1,
+  "tasks": [
+    {
+      "task": "S01-A",
+      "packet_hash": "92498300653b96d3f2acea36b4830bc00ac120c7e651cbdd9d31f3d1bcee37d2",
+      "prompt_hash": "031a194cc570a942f03aa10acfbe68b46a98b717e0071bd82fb2bb61a13efdf0",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S02-H",
+      "packet_hash": "dfce17df39c30b3dc4c25af7c304cc9cd270d81c67056097bb4eb0cdde9573e1",
+      "prompt_hash": "ca477ce02a745ea580de6cfbc84c7fb5f4de3f2cc1d2d50d0f9580c82077dd04",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S02-M",
+      "packet_hash": "4e608ed1b13a3e2ef5277bbb1386c2f2cf4487443a43a4fbdb2dc0ac9c7719d4",
+      "prompt_hash": "ca477ce02a745ea580de6cfbc84c7fb5f4de3f2cc1d2d50d0f9580c82077dd04",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S03-A",
+      "packet_hash": "23a7103ead7776d8e5c13563c3598de30ec50f733ab24d4f32012c230534ff88",
+      "prompt_hash": "087e851bbde34112e5fbae143d19c0d2ccbf61c1350306dbebc4aff69304dd28",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S04-A",
+      "packet_hash": "e16710eeeb3e5eb708fe8ce438b53c4b136030ab2cd5e611550352398eae35ae",
+      "prompt_hash": "fa7f69f2e098d95be68eefeb3d39c2b8b3daef28fd91ed62b50d31f2a41392e2",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S04-B",
+      "packet_hash": "a773f932b1f2043241d462417185a7b70b681f37aba2174a7fe791cd7c7e82b2",
+      "prompt_hash": "fa7f69f2e098d95be68eefeb3d39c2b8b3daef28fd91ed62b50d31f2a41392e2",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S05-A",
+      "packet_hash": "d2f0d1fcb55e36ca59ad3c6bb7b5c0c38c8cb867311965bbafa3cdcea0516183",
+      "prompt_hash": "8916f033ab7070580833ba3a6f7db3f5902185bfaade3f9722416138a0dd78fc",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S06-A",
+      "packet_hash": "43f43e18947bb61bf168415c7f16a823c925a972d7df7480de31b8fec5c39334",
+      "prompt_hash": "8916f033ab7070580833ba3a6f7db3f5902185bfaade3f9722416138a0dd78fc",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S07-A",
+      "packet_hash": "484c417b1f3c6c72202b541296e3b9f103d9503a89d18cb0e7d312833ff3b2c5",
+      "prompt_hash": "087e851bbde34112e5fbae143d19c0d2ccbf61c1350306dbebc4aff69304dd28",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S08-V",
+      "packet_hash": "84c0d2c985a0d4b2933110e9df2ae9eee19f286ad545552c8a9585fd8ca85ff0",
+      "prompt_hash": "ca477ce02a745ea580de6cfbc84c7fb5f4de3f2cc1d2d50d0f9580c82077dd04",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S08-B",
+      "packet_hash": "967f5c24605987615f9474f4c633e9df2073088bf0acb9fd74fbb22309dc6d69",
+      "prompt_hash": "ca477ce02a745ea580de6cfbc84c7fb5f4de3f2cc1d2d50d0f9580c82077dd04",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S08-C",
+      "packet_hash": "35c9649c5b7677d488f78004e946e0abcbe5345ae20bad2ee37078df01a63df3",
+      "prompt_hash": "ca477ce02a745ea580de6cfbc84c7fb5f4de3f2cc1d2d50d0f9580c82077dd04",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S09-V",
+      "packet_hash": "f5d8c6c5f1eddb826cda4545224c4145f1e80cbb1d9c2bcab8ba41bfc0109c96",
+      "prompt_hash": "fa7f69f2e098d95be68eefeb3d39c2b8b3daef28fd91ed62b50d31f2a41392e2",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S09-K",
+      "packet_hash": "14a91437c972e9fcfba90d2cafecb644ac4763643ccf42213583c73d4658bbb6",
+      "prompt_hash": "fa7f69f2e098d95be68eefeb3d39c2b8b3daef28fd91ed62b50d31f2a41392e2",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S10-A",
+      "packet_hash": "b1192e42d2eb91e1b3cb9cebec1c7524b8f0c69f239ba3e8dd87e38b9aa58fc0",
+      "prompt_hash": "8916f033ab7070580833ba3a6f7db3f5902185bfaade3f9722416138a0dd78fc",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S11-A",
+      "packet_hash": "9fd9542ce6d89199846449e0fcc61894147e0b3ac2e6ffcd3d6e823cd9a817e1",
+      "prompt_hash": "087e851bbde34112e5fbae143d19c0d2ccbf61c1350306dbebc4aff69304dd28",
+      "current_controller_exercised_without_exception": true
+    },
+    {
+      "task": "S12-A",
+      "packet_hash": "b82cb4787a54ae23145af7981caf682b06307ac9eed9e1444f918675afb2255c",
+      "prompt_hash": "087e851bbde34112e5fbae143d19c0d2ccbf61c1350306dbebc4aff69304dd28",
+      "current_controller_exercised_without_exception": true
+    }
+  ],
+  "model_calls": 0,
+  "codex_cli_found": true,
+  "limitations": "Empty-output fixture verifies runner plumbing only; not a model, causal or expected-output test."
+}

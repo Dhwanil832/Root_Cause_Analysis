@@ -1,0 +1,92 @@
+{
+  "decision": "The investigation suggests that the physical mechanism leading to the R3 delivery carrier beam falling into the mill pit involved a loss of primary seating engagement between the yoke and the carrier, which was not prevented by the keeper due to insufficient lateral offset and dynamic path evidence. This loss of primary seating engagement allowed the carrier to move downward, ultimately striking the sled and scaffold. The upstream cause appears to be a procedural omission in task WP-031, which did not include instructions for installing a positive yoke block or verifying the off-center retention envelope. This omission, combined with the current configuration (revision C) that lacks a backup-roll-associated stop and separate maintenance travel stop, facilitated the incident. The evidence supports this conclusion, as it shows the yoke descending 40 +/- 1 mm during the 13:00:00–13:24:00 interval, while the carrier moved downward only 0 +/- 1 mm, indicating a relative withdrawal of 38–42 mm, which exceeded the defined 30 mm engagement and eliminated primary seating by 13:24:00. The leakage of 0.400 +/- 0.010 L from C17 through V17 despite the CLOSED indication further supports this mechanism. The incident occurred due to a combination of procedural omission, configuration changes, and unverified dynamic retention conditions.",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "FALL",
+      "reason": "The focal condition, the fall of the R3 delivery carrier beam, has been established. This revision focuses on refining the supported conditions related to the upstream causes and mechanisms leading to the incident.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24 due to loss of primary seating engagement between the yoke and carrier, facilitated by procedural omission in WP-031, current configuration lacking backup-roll-associated stop and separate maintenance travel stop, and insufficient lateral offset and dynamic path evidence for the keeper.",
+        "status": "supported",
+        "sources": ["D01", "D02", "D04", "D07", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "KEEP",
+      "reason": "The investigation suggests a dynamic keeper-release path allowed separation after primary seating was lost, which is now supported by evidence.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost, as evidenced by the relative withdrawal of 38–42 mm and elimination of primary seating by 13:24:00.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "PROC",
+      "reason": "Task WP-031 omitted a positive-block instruction and off-center retention-envelope verification, which is now supported by evidence.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification, facilitating the incident by not ensuring proper yoke-carrier engagement and keeper functionality.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 2,
+      "replaces": "LOAD",
+      "reason": "The incident assembly was parked raised and gravity remained available, which is now supported by evidence.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised, and gravity remained available, contributing to the downward movement of the carrier when primary seating was lost.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

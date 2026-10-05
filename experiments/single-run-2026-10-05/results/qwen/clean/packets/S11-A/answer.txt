@@ -1,0 +1,141 @@
+{
+  "decision": "The investigation has reached a genuine evidence boundary regarding the physical mechanism of release. The supported nodes (LEAK, LOAD, NOBLOCK, SEAT) establish that the primary seating was lost due to fluid loss and relative withdrawal. However, the specific physical bridge allowing the carrier to bypass the keeper (ORIGIN_CONTACT) and the specific origin of the leakage (ORIGIN_VALVE) remain unresolved. The available evidence (D07, D10, D12) explicitly states that lateral offset, rotation, and dynamic envelope calculations are missing. No further physical evidence exists in the current packet to resolve these specific mechanisms. The investigation must pause physical causality analysis for these specific nodes until new evidence is acquired or the scope is adjusted. The procedural omission (PROC) is supported but does not explain the physical mechanism without the missing dynamic data.",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the status of ORIGIN_CONTACT and ORIGIN_VALVE as unresolved due to missing dynamic envelope data, explicitly citing D10 and D12 which state these records are unavailable. This prevents premature closure or speculation.",
+      "record": {
+        "id": "ORIGIN_CONTACT",
+        "kind": "node",
+        "scope_key": "ORIGIN_CONTACT",
+        "claim": "A particular configuration/positioning sequence caused carrier contact; that origin is not fully established.",
+        "status": "unresolved",
+        "sources": ["D03C", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the status of ORIGIN_VALVE as unresolved due to missing contamination onset data, explicitly citing D11 and D12 which state these records are unavailable.",
+      "record": {
+        "id": "ORIGIN_VALVE",
+        "kind": "node",
+        "scope_key": "ORIGIN_VALVE",
+        "claim": "An upstream valve condition or contamination process caused the observed leakage; its specific origin is unresolved.",
+        "status": "unresolved",
+        "sources": ["D08", "D09", "D11", "D12"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the status of KEEP as unresolved because the dynamic keeper-release path (offset/rotation) is not established by current evidence (D10, D12).",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "unresolved",
+        "sources": ["D02", "D07", "D10", "D12", "D14"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the status of E_RELEASE as candidate because the physical bridge (KEEP) is unresolved. The edge cannot be supported until the keeper mechanism is clarified.",
+      "record": {
+        "id": "E_RELEASE",
+        "kind": "edge",
+        "scope_key": "E_RELEASE",
+        "claim": "Primary seating loss plus the unresolved keeper-release bridge could explain separation.",
+        "status": "candidate",
+        "sources": ["D01", "D02", "D07", "D10", "D12"],
+        "depends_on": [],
+        "from_ids": ["SEAT", "KEEP"],
+        "to_id": "FALL",
+        "mode": "all",
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the status of R_KEEP as partial/awaiting_user because the specific dynamic envelope data is missing and required to resolve the KEEP node.",
+      "record": {
+        "id": "R_KEEP",
+        "kind": "request",
+        "scope_key": "R_KEEP",
+        "claim": "Acquire retained incident dynamic keeper evidence.",
+        "status": "awaiting_user",
+        "sources": ["D01"],
+        "depends_on": ["KEEP"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": ["incident offset", "approved dynamic envelope"]
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the status of R_ORIGIN as partial/awaiting_user because the contamination onset date is missing and required to resolve the ORIGIN_VALVE node.",
+      "record": {
+        "id": "R_ORIGIN",
+        "kind": "request",
+        "scope_key": "R_ORIGIN",
+        "claim": "Acquire dated V17 origin evidence.",
+        "status": "awaiting_user",
+        "sources": ["D01"],
+        "depends_on": ["ORIGIN_VALVE"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": ["inspection/replacement history", "contamination onset"]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "assessor",
+      "tag": "lead_review",
+      "focus": "Evaluate the current state of the investigation: The physical mechanism of release (keeper bypass) and the origin of leakage are unresolved due to missing dynamic envelope and contamination timing data. The procedural omission (PROC) is supported but does not explain the physical event without the missing data. The investigation is paused at the evidence boundary defined by D10 and D12.",
+      "target_ids": ["ORIGIN_CONTACT", "ORIGIN_VALVE", "KEEP", "E_RELEASE"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "waiting"
+}

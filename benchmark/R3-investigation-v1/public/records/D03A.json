@@ -1,0 +1,24 @@
+{
+  "id": "D03A",
+  "title": "R3 carrier and yoke - arrangement register",
+  "revision": "A",
+  "issued": "2018-06-11",
+  "kind": "drawing register",
+  "sections": [
+    {
+      "id": "D03A.S01",
+      "heading": "Document control",
+      "text": "Status: superseded by revision C before 14 October 2024. Applicability: normal rolling arrangement, backup rolls installed, carrier seated and centered."
+    },
+    {
+      "id": "D03A.S02",
+      "heading": "Arrangement",
+      "text": "This arrangement includes a backup-roll-associated stop. Centered keeper contact is shown; full offset travel is not qualified."
+    },
+    {
+      "id": "D03A.S03",
+      "heading": "Boundary",
+      "text": "Do not infer that the backup-roll-associated stop remains present when backup rolls are removed. No maintenance-state travel envelope is specified."
+    }
+  ]
+}

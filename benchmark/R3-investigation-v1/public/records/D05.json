@@ -1,0 +1,24 @@
+{
+  "id": "D05",
+  "title": "WP-031 - configuration and isolation execution record",
+  "revision": "0",
+  "issued": "2024-10-14 13:02",
+  "kind": "record",
+  "sections": [
+    {
+      "id": "D05.S01",
+      "heading": "Configuration entries",
+      "text": "At 12:52 backup rolls were removed. At 12:57 the balance was raised. At 13:00 electrical isolation was recorded complete and the V17 handle was recorded CLOSED. These entries establish reported execution, not valve tightness."
+    },
+    {
+      "id": "D05.S02",
+      "heading": "Restraint observation",
+      "text": "A configuration photograph taken at 13:00 and reviewed against the block locations shows no independent positive block under YK-3. The carrier is in contact with the mill post/spreader. The photo does not resolve keeper overlap."
+    },
+    {
+      "id": "D05.S03",
+      "heading": "Verification coverage",
+      "text": "No loaded hold test, chamber-volume test or keeper-envelope check was recorded before work began. The absence of these entries does not prove deliberate noncompliance or explain the origin of any component defect."
+    }
+  ]
+}

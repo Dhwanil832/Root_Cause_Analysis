@@ -1,0 +1,494 @@
+{
+  "method": "Manual, retrospective, unblinded expected-meaning coverage of the final active ledger plus current report. Uses existing U05 eight-item pad. Meaning may span records. Presence is not edge normalization, overall causal correctness, human approval, or a controlled model comparison.",
+  "present": 7,
+  "total": 8,
+  "final_state_sha256": "17579e69d24d4097dcaf2b1c886358a05c1d4b6403b8d52137041f04efb03133",
+  "rows": [
+    {
+      "id": "F1",
+      "expected": "Observed carrier fall retained as the focal occurrence",
+      "present": true,
+      "note": "Focal occurrence retained as reported; this credit does not require model support or human approval.",
+      "evidence": [
+        {
+          "id": "N-FE-001",
+          "record": {
+            "id": "N-FE-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_focal_event",
+            "claim": "At 13:24 on 14 October 2024, the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform while the assembly was parked raised after backup-roll removal; no person was struck.",
+            "status": "reported",
+            "sources": [
+              "D01",
+              "D07"
+            ],
+            "depends_on": [],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 2,
+          "review": "pending_human"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "expected": "Incident fluid loss + raised load + no independent block jointly permit yoke descent",
+      "present": true,
+      "note": "Joint meaning is present across the equipment-rule node, incident leakage and no-block findings, and the execution contribution edge. No explicit joint edge maps fluid loss + load + no block into a separate yoke-descent node.",
+      "evidence": [
+        {
+          "id": "N-SYS-001",
+          "record": {
+            "id": "N-SYS-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_C17_V17_applicable_hydraulic_behavior",
+            "claim": "For R3 CB-3/YK-3 in the maintenance configuration, YK-3 follows C17 at a 1:1 vertical displacement ratio; with no independent mechanical block, loss of C17 support-chamber fluid can permit downward yoke travel under load, while V17 CLOSED/handle position or motor/pump isolation does not by itself prove seat sealing or mechanical restraint.",
+            "status": "supported",
+            "sources": [
+              "D02"
+            ],
+            "depends_on": [],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        },
+        {
+          "id": "N-MECH-HYD-V17LEAK-001",
+          "record": {
+            "id": "N-MECH-HYD-V17LEAK-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_V17_seat_leak_candidate",
+            "claim": "During the raised parked interval before the fall, C17 support-chamber fluid escaped through V17 seat leakage despite any CLOSED handle/limit indication, permitting C17/YK-3 descent under load.",
+            "status": "supported",
+            "sources": [
+              "D02",
+              "D07",
+              "D08",
+              "D09"
+            ],
+            "depends_on": [
+              "N-SYS-001",
+              "N-MECH-YOKEDESC-001",
+              "R-HYD-001",
+              "N-MECH-HYD-VOL-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 2,
+          "review": "pending_human"
+        },
+        {
+          "id": "N-EXEC-001",
+          "record": {
+            "id": "N-EXEC-001",
+            "kind": "node",
+            "scope_key": "WP-031_R3_CB3_YK3_2024-10-14_execution_configuration_no_positive_block",
+            "claim": "During WP-031 execution before the fall, backup rolls were removed, the balance was raised, electrical isolation was recorded complete, V17 handle was recorded CLOSED, a 13:00 configuration photograph showed no independent positive block under YK-3, and no loaded hold test, chamber-volume test, or keeper-envelope check was recorded.",
+            "status": "supported",
+            "sources": [
+              "D05"
+            ],
+            "depends_on": [
+              "N-FE-001",
+              "R-EXEC-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        },
+        {
+          "id": "E-EXEC-REST-001",
+          "record": {
+            "id": "E-EXEC-REST-001",
+            "kind": "edge",
+            "scope_key": "WP-031_R3_CB3_YK3_2024-10-14_no_positive_block_to_unrestrained_yoke_descent_condition",
+            "claim": "The photographed absence of an independent positive YK-3 block during WP-031 execution contributed to the available unrestrained yoke-descent condition because C17 support-fluid loss could move the yoke under load without a separate mechanical block; this does not establish the origin of the V17 leak or the keeper-release path.",
+            "status": "supported",
+            "sources": [
+              "D02",
+              "D05",
+              "D08"
+            ],
+            "depends_on": [
+              "N-SYS-001",
+              "N-EXEC-001"
+            ],
+            "from_ids": [
+              "N-EXEC-001"
+            ],
+            "to_id": "N-MECH-REST-001",
+            "mode": "all",
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "expected": "Yoke motion and independently held/stationary carrier jointly determine relative withdrawal",
+      "present": true,
+      "note": "Both measurements and the temporary contact/holding condition are in supported compound nodes. The dedicated contact-to-relative-withdrawal edge remains candidate and does not explicitly join separate yoke/carrier inputs.",
+      "evidence": [
+        {
+          "id": "N-MECH-YOKEDESC-001",
+          "record": {
+            "id": "N-MECH-YOKEDESC-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_measured_yoke_carrier_vertical_motion",
+            "claim": "Between 13:00:00 and 13:24:00 on 14 October 2024, from a visible defined seated start, YK-3/yoke moved downward 40 +/- 1 mm in the same reference frame while the carrier moved downward 0 +/- 1 mm; at 13:24:03 the carrier started downward travel into the pit.",
+            "status": "supported",
+            "sources": [
+              "D07"
+            ],
+            "depends_on": [
+              "N-FE-001",
+              "R-MOTION-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        },
+        {
+          "id": "N-MECH-POSTCONTACT-001",
+          "record": {
+            "id": "N-MECH-POSTCONTACT-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_visible_post_spreader_contact_during_withdrawal",
+            "claim": "From 13:00:00 to 13:24:00 on 14 October 2024, post/spreader contact remained visible while the yoke descended 40 +/- 1 mm and the carrier did not measurably descend; this supports a temporary interference/holding condition for the relative withdrawal but is not a designed mechanical block and does not establish keeper bypass.",
+            "status": "supported",
+            "sources": [
+              "D02",
+              "D05",
+              "D07",
+              "D14"
+            ],
+            "depends_on": [
+              "N-GEOM-001",
+              "N-MECH-YOKEDESC-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 2,
+          "review": "pending_human"
+        },
+        {
+          "id": "N-MECH-RELWD-001",
+          "record": {
+            "id": "N-MECH-RELWD-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_relative_yoke_withdrawal_30mm",
+            "claim": "At or before the fall, yoke downward travel exceeded carrier downward travel by at least 30 mm over the same interval, eliminating primary vertical seating engagement.",
+            "status": "supported",
+            "sources": [
+              "D01",
+              "D02",
+              "D07"
+            ],
+            "depends_on": [
+              "N-FE-001",
+              "N-GEOM-001",
+              "R-MOTION-001",
+              "N-MECH-YOKEDESC-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 2,
+          "review": "pending_human"
+        }
+      ]
+    },
+    {
+      "id": "F4",
+      "expected": "Relative withdrawal beyond 30 mm explains primary seating loss",
+      "present": true,
+      "note": "Explicit relative-motion threshold and primary seating loss appear together in the supported claim.",
+      "evidence": [
+        {
+          "id": "N-MECH-RELWD-001",
+          "record": {
+            "id": "N-MECH-RELWD-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_relative_yoke_withdrawal_30mm",
+            "claim": "At or before the fall, yoke downward travel exceeded carrier downward travel by at least 30 mm over the same interval, eliminating primary vertical seating engagement.",
+            "status": "supported",
+            "sources": [
+              "D01",
+              "D02",
+              "D07"
+            ],
+            "depends_on": [
+              "N-FE-001",
+              "N-GEOM-001",
+              "R-MOTION-001",
+              "N-MECH-YOKEDESC-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 2,
+          "review": "pending_human"
+        },
+        {
+          "id": "N-GEOM-001",
+          "record": {
+            "id": "N-GEOM-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_primary_seating_keeper_conditional_geometry",
+            "claim": "In the defined seated starting state, 30 mm of relative yoke-down withdrawal eliminates primary vertical seating, but keeper bypass additionally depends on lateral offset and dynamic path; mill post/spreader contact can temporarily hold the carrier while the yoke moves and is not a designed mechanical block.",
+            "status": "supported",
+            "sources": [
+              "D02"
+            ],
+            "depends_on": [],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        }
+      ]
+    },
+    {
+      "id": "F5",
+      "expected": "Specific dynamic keeper-release mechanism remains unresolved",
+      "present": true,
+      "note": "Keeper mode remains unresolved; the whole fall-path edge remains candidate.",
+      "evidence": [
+        {
+          "id": "N-MECH-KEEP-001",
+          "record": {
+            "id": "N-MECH-KEEP-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_keeper_bypass_release_path",
+            "claim": "During the release, keeper engagement was bypassed or ineffective because lateral offset and the dynamic path allowed the carrier to separate despite the keeper plate later being found bolted to the recovered assembly.",
+            "status": "unresolved",
+            "sources": [
+              "D01",
+              "D02",
+              "D03C",
+              "D07",
+              "D10",
+              "D12",
+              "D14"
+            ],
+            "depends_on": [
+              "N-FE-001",
+              "N-OBS-001",
+              "N-GEOM-001",
+              "R-INSP-001",
+              "N-MECH-RELWD-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 3,
+          "review": "pending_human"
+        },
+        {
+          "id": "E-MECH-JOINT-002",
+          "record": {
+            "id": "E-MECH-JOINT-002",
+            "kind": "edge",
+            "scope_key": "R3_CB3_YK3_2024-10-14_candidate_hydraulic_yoke_descent_release_path",
+            "claim": "The hydraulic/yoke-descent path now has supported incident conditions for C17/V17 support-fluid loss, no effective independent positive restraint, and at least 30 mm relative yoke-down withdrawal eliminating primary seating; the complete causal path to the carrier fall remains candidate because keeper/lateral-offset/dynamic-path release is still unresolved.",
+            "status": "candidate",
+            "sources": [
+              "D01",
+              "D02",
+              "D03C",
+              "D04",
+              "D05",
+              "D07",
+              "D08",
+              "D09",
+              "D10",
+              "D12",
+              "D14"
+            ],
+            "depends_on": [
+              "N-SYS-001",
+              "N-GEOM-001",
+              "N-MECH-YOKEDESC-001",
+              "R-HYD-001",
+              "R-EXEC-001",
+              "R-INSP-001"
+            ],
+            "from_ids": [
+              "N-MECH-HYD-001",
+              "N-MECH-REST-001",
+              "N-MECH-RELWD-001",
+              "N-MECH-KEEP-001"
+            ],
+            "to_id": "N-FE-001",
+            "mode": "all",
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        }
+      ]
+    },
+    {
+      "id": "F6",
+      "expected": "Recovered attachment/centered overlap constrain but do not establish dynamic retention",
+      "present": true,
+      "note": "Refuted attachment-implies-retention inference and centered-only overlap/configuration limits are preserved. A separate dynamic-envelope route is not cleanly represented as a blocked request.",
+      "evidence": [
+        {
+          "id": "N-INF-KEEPER-001",
+          "record": {
+            "id": "N-INF-KEEPER-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_bolted_keeper_proves_no_keeper_bypass_inference",
+            "claim": "The keeper plate being found bolted to the recovered assembly by itself establishes that keeper bypass or release past the keeper could not have occurred during the incident.",
+            "status": "refuted",
+            "sources": [
+              "D01",
+              "D02",
+              "D03C",
+              "D10",
+              "D14",
+              "D15"
+            ],
+            "depends_on": [
+              "N-OBS-001",
+              "N-GEOM-001",
+              "R-INSP-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 2,
+          "review": "pending_human"
+        },
+        {
+          "id": "N-CONFIG-001",
+          "record": {
+            "id": "N-CONFIG-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_current_maintenance_configuration_retention_geometry",
+            "claim": "For the incident maintenance configuration, revision C applies to CB-3/YK-3 with backup rolls removed; the backup-roll-associated stop is absent, no separate travel stop is fitted to prevent the raised carrier from reaching mill post/spreader interference, one keeper plate is fitted, primary vertical seating engagement is 30 mm, centered seated keeper overlap is 8 +/- 1 mm, and no approved off-center dynamic keeper-envelope calculation is available.",
+            "status": "supported",
+            "sources": [
+              "D03C",
+              "D10",
+              "D12"
+            ],
+            "depends_on": [
+              "N-FE-001",
+              "R-INSP-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        }
+      ]
+    },
+    {
+      "id": "F7",
+      "expected": "Crane/load contact refutation remains limited to covered interval/envelope",
+      "present": true,
+      "note": "Refuted claim names the fully covered envelope and 13:00:00\u201313:24:03 interval.",
+      "evidence": [
+        {
+          "id": "N-MECH-CRANECONTACT-001",
+          "record": {
+            "id": "N-MECH-CRANECONTACT-001",
+            "kind": "node",
+            "scope_key": "R3_CB3_YK3_2024-10-14_direct_crane_contact_within_covered_envelope",
+            "claim": "Direct overhead-crane or crane-load contact within D07's fully covered carrier envelope from 13:00:00 to 13:24:03 caused or triggered the carrier release.",
+            "status": "refuted",
+            "sources": [
+              "D07"
+            ],
+            "depends_on": [
+              "N-FE-001",
+              "R-MOTION-001"
+            ],
+            "from_ids": [],
+            "to_id": null,
+            "mode": null,
+            "asset": null,
+            "window": null,
+            "fields": []
+          },
+          "version": 1,
+          "review": "pending_human"
+        }
+      ]
+    },
+    {
+      "id": "F8",
+      "expected": "Gross keeper fracture/separation refutation remains within inspection scope",
+      "present": false,
+      "note": "No final active record explicitly refutes gross keeper fracture/separation within D14 inspection scope. Initial beam/yoke no-fracture reporting is a different claim and receives no substitute credit.",
+      "evidence": []
+    }
+  ]
+}

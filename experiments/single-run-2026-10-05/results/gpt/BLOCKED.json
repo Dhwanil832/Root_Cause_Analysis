@@ -1,0 +1,10 @@
+{
+  "status": "transport_blocked",
+  "terminal_error": "Your workspace is out of credits. Add credits to continue.",
+  "earlier_transport_errors": "UnknownIssuer certificate failure on WebSocket; CLI fell back to HTTPS.",
+  "model_answers_produced": 0,
+  "reasoning_score": null,
+  "action": "Preserve failed first attempt and pause GPT clean lane; do not switch provider or retry without a resolved external condition.",
+  "local_models": "Continue independently.",
+  "evidence": "clean/packets/S01-A/events.jsonl"
+}

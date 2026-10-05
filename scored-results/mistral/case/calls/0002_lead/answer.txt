@@ -1,0 +1,99 @@
+{
+  "decision": "Continue investigation",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 5,
+      "replaces": null,
+      "reason": "Update the focal event with the motion record from the R3 delivery carrier beam.",
+      "record": {
+        "id": "E01",
+        "kind": "node",
+        "scope_key": "focal_event",
+        "claim": "At 13:24 on 14 October 2024, the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold. The beam was in motion with a speed of 2 m/s and an angular velocity of 0.1 rad/s.",
+        "status": "supported",
+        "sources": ["D01", "R01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 5,
+      "replaces": null,
+      "reason": "Update the work package for the R3 delivery carrier beam changeout with the motion record from the R3 delivery carrier beam.",
+      "record": {
+        "id": "R02",
+        "kind": "request",
+        "scope_key": "work_package",
+        "claim": "Work package for the R3 delivery carrier beam changeout",
+        "status": "answered",
+        "sources": ["D01", "R01"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["motion_record"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Request the isolation records for the R3 delivery carrier beam with a focus on the support chamber C17.",
+      "record": {
+        "id": "R06",
+        "kind": "request",
+        "scope_key": "isolation_records",
+        "claim": "Isolation records for the R3 delivery carrier beam, focusing on support chamber C17",
+        "status": "proposed",
+        "sources": ["D01", "D02"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["isolation_records", "C17"]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Request the hydraulic records for the R3 delivery carrier beam with a focus on valve V17.",
+      "record": {
+        "id": "R07",
+        "kind": "request",
+        "scope_key": "hydraulic_records",
+        "claim": "Hydraulic records for the R3 delivery carrier beam, focusing on valve V17",
+        "status": "proposed",
+        "sources": ["D01", "D02"],
+        "depends_on": ["E01"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 delivery carrier beam",
+        "window": null,
+        "fields": ["hydraulic_records", "V17"]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "assessor",
+      "tag": "mechanical",
+      "focus": "Investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+      "target_ids": ["E01", "R01", "R02", "R06", "R07"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

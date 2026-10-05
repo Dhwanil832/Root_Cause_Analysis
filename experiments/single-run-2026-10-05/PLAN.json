@@ -1,0 +1,106 @@
+{
+  "name": "R3 single-run clean and connected comparison",
+  "repetitions": 1,
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "models": [
+    {
+      "key": "gpt",
+      "name": "gpt-5.5",
+      "transport": "codex_chatgpt"
+    },
+    {
+      "key": "qwen",
+      "name": "qwen3.5:latest",
+      "transport": "ollama"
+    },
+    {
+      "key": "granite",
+      "name": "granite3.3:8b",
+      "transport": "ollama"
+    },
+    {
+      "key": "hermes",
+      "name": "hermes3:8b",
+      "transport": "ollama"
+    },
+    {
+      "key": "mistral",
+      "name": "mistral:7b",
+      "transport": "ollama"
+    },
+    {
+      "key": "llama32",
+      "name": "llama3.2:3b",
+      "transport": "ollama"
+    },
+    {
+      "key": "gemma",
+      "name": "gemma3:4b",
+      "transport": "ollama"
+    },
+    {
+      "key": "qwen25",
+      "name": "qwen2.5:7b",
+      "transport": "ollama"
+    },
+    {
+      "key": "llama31",
+      "name": "llama3.1:latest",
+      "transport": "ollama"
+    },
+    {
+      "key": "deepseek",
+      "name": "deepseek-r1:7b",
+      "transport": "ollama"
+    },
+    {
+      "key": "phi",
+      "name": "phi4-mini-reasoning:3.8b",
+      "transport": "ollama"
+    },
+    {
+      "key": "minicheck",
+      "name": "bespoke-minicheck:7b",
+      "transport": "ollama"
+    }
+  ],
+  "existing_connected": {
+    "gpt": "scored-results/gpt",
+    "qwen": "runs/qwen",
+    "granite": "scored-results/granite",
+    "hermes": "scored-results/hermes",
+    "mistral": "scored-results/mistral"
+  },
+  "local_order": [
+    "qwen",
+    "granite",
+    "hermes",
+    "mistral",
+    "llama32",
+    "gemma",
+    "qwen25",
+    "llama31",
+    "deepseek",
+    "phi",
+    "minicheck"
+  ],
+  "clean_tasks_per_model": 17,
+  "new_clean_calls_planned": 204,
+  "missing_connected_models": [
+    "llama32",
+    "gemma",
+    "qwen25",
+    "llama31",
+    "deepseek",
+    "phi",
+    "minicheck"
+  ],
+  "new_connected_attempts_planned": 7,
+  "limits": "Existing uncapped generation/time/call settings; native finite model context. Preserve native harness needs_attention pauses; never silently resume a rejected lead batch.",
+  "clean_inputs": "Original frozen clean state content and assignments, rendered with current engine.packet to include current metadata; audited all original content keys unchanged. Same role prompts as connected.",
+  "scoring": "Frozen 96 meaning-based checks. Semantic grading after saved answers; no keyword scoring, no score for pending output. Keep execution incomplete/not reached distinct.",
+  "custodian": "Existing frozen policy and supervised matching at genuine evidence boundary; no fabricated evidence or private rubric in model inputs.",
+  "reuse": "Each already scored same-runtime connected result is used once, no fresh connected repeats for those models. Qwen uses latest fresh replication, not both copies.",
+  "hardware": "Existing local profiles preserved. New models may use recorded CPU offload at native context. Model digests/version pinned.",
+  "ordering": "MiniCheck remains included, scheduled last due earlier non-completion. Reasoning-model thinking=false matches prior comparison settings."
+}

@@ -1,0 +1,155 @@
+{
+  "decision": "The incident involved the R3 delivery carrier beam falling into the mill pit, striking the sled and scaffold. The investigation focuses on mechanical retention and motion mechanisms, preserving evidence limits.",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The initial report (FALL) lacks detailed evidence and investigation targets. This revision aims to establish a clearer understanding of the incident's physical mechanisms and upstream causes.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "reported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The HYD node suggests fluid loss permitted loaded yoke descent, which needs further investigation. This revision aims to clarify the role of incident C17 fluid loss in the incident.",
+      "record": {
+        "id": "HYD",
+        "kind": "node",
+        "scope_key": "HYD",
+        "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The REL node proposes sufficient yoke-down motion could eliminate primary seating, requiring further investigation. This revision aims to clarify the relationship between yoke motion and primary seating.",
+      "record": {
+        "id": "REL",
+        "kind": "node",
+        "scope_key": "REL",
+        "claim": "Sufficient yoke-down motion relative to the carrier could eliminate primary seating.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The KEEP node suggests a dynamic keeper-release path could allow separation after primary seating is lost, requiring further investigation. This revision aims to clarify the potential for keeper release after primary seating loss.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The BLOCK node claims no effective independent positive yoke block was present, requiring further investigation. This revision aims to clarify the absence of an effective positive yoke block.",
+      "record": {
+        "id": "BLOCK",
+        "kind": "node",
+        "scope_key": "BLOCK",
+        "claim": "No effective independent positive yoke block was present.",
+        "status": "candidate",
+        "sources": ["D02", "D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The PROC node supports WP-031 omitted a positive-block instruction and off-center retention-envelope verification, requiring further investigation. This revision aims to establish the omission of a positive-block instruction and off-center retention-envelope verification in WP-031.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The LOAD node supports the incident assembly was parked raised and gravity remained available, requiring further investigation. This revision aims to establish the availability of gravity while the assembly was raised.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "waiting"
+}

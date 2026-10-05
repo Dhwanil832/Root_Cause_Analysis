@@ -1,0 +1,706 @@
+{
+  "description": "At 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold. Investigate the physical mechanism and relevant upstream causes, preserving evidence limits.",
+  "sources": {
+    "D01": {
+      "id": "D01",
+      "title": "R3 delivery carrier beam - initial event notice",
+      "content": "D01.S01 Event\nAt 13:24 on 14 October 2024 the R3 delivery carrier beam fell into the mill pit and struck the sled and scaffold platform. No person was struck. The assembly had been parked raised after backup-roll removal during the outage.\n\nD01.S02 Initial observations\nThe keeper plate was found bolted to the recovered assembly. The beam and yoke were not reported fractured. These are initial condition observations, not a conclusion about the release mechanism.\n\nD01.S03 Available leads\nA motion record, work package, isolation records, inspection photographs and hydraulic records have been retained. Their coverage and applicability must be checked. The cause of the event is not stated in this notice.",
+      "revision": "0",
+      "version": 1,
+      "kind": "record",
+      "request_ids": [],
+      "hash": "d7c93970242e7625b654b3f00393a24b8848989127b2346110ea04a114f742ed",
+      "origin_name": "D01.json"
+    },
+    "D02": {
+      "id": "D02",
+      "title": "R3 raised assembly - functional system description",
+      "content": "D02.S01 Applicability\nThis functional description applies to R3 assembly set CB-3/YK-3 in the maintenance configuration with backup rolls removed. It specifies the equipment model used in this record set. It is not an operating or isolation instruction.\n\nD02.S02 Load and fluid paths\nYoke YK-3 follows support cylinder C17 at a 1:1 vertical displacement ratio. The effective support area is 100 cm2. With no independent mechanical block, loss of support-chamber fluid permits downward yoke travel under load. The isolated test boundary has one chamber-to-return path through valve V17; external leakage and alternate return paths are separately monitored.\n\nD02.S03 Position versus sealing\nThe V17 CLOSED limit switch detects handle position. It does not measure seat leakage. Motor/pump supply being isolated does not prove that the raised assembly is mechanically restrained or that trapped fluid cannot leave the chamber.\n\nD02.S04 Geometry and interference\nThe carrier normally seats on the yoke. Mill post/spreader contact can temporarily hold the carrier vertically while the yoke moves down. Relative vertical withdrawal is yoke downward travel minus carrier downward travel over the same interval. Temporary interference contact is not a designed mechanical block.\n\nD02.S05 Primary and secondary retention\nIn the defined seated starting state, primary vertical seating engagement is 30 mm. Relative downward withdrawal of the yoke of at least 30 mm eliminates that primary seating engagement. This rule does not prove that the keeper is bypassed. Keeper engagement additionally depends on lateral offset and the dynamic path; those conditions require their own evidence.\n\nD02.S06 Energy\nGravity remains available while the assembly is raised. Electrical isolation, hydraulic handle position and positive mechanical restraint are distinct conditions. No rule here states that a leaking valve alone is sufficient to make the carrier fall.",
+      "revision": "C",
+      "version": 1,
+      "kind": "specification",
+      "request_ids": [],
+      "hash": "9d6e5a7b85f27ab6d8bed417456ed9f16ba9c44c46b3dea171a704fc5218b8e5",
+      "origin_name": "D02.json"
+    },
+    "D04": {
+      "id": "D04",
+      "title": "Stripper-box changeout - task isolation package",
+      "content": "D04.S01 Scope\nTask WP-031 covers stripper-box changeout with the balance assembly raised after backup-roll removal. The package calls for electrical supply isolation and hydraulic valve closure. The task text contains no instruction to install a positive yoke block or verify the off-center carrier retention envelope.\n\nD04.S02 Circuit nomenclature\nThe cover calls the supply group B hydraulics. A worksheet calls support-chamber trapped energy A. These names are not circuit identities. Use the tag schedule: C17 support chamber and V17 return-isolation valve belong to the raised balance assembly. Do not substitute unrelated A/B circuit records based on the letter alone.\n\nD04.S03 Interpretation limit\nA procedural omission is distinct from proof of what workers did. Execution records are needed to establish whether a block was actually present. This document does not establish why the procedure omitted that step.",
+      "revision": "3",
+      "version": 1,
+      "kind": "procedure extract",
+      "request_ids": [],
+      "hash": "a5a2cb42b05418153a97e1bb8ffa23d61f1f5d8ebd33227aad18bacd442da5ee",
+      "origin_name": "D04.json"
+    },
+    "D15": {
+      "id": "D15",
+      "title": "Preliminary investigation note - unreviewed",
+      "content": "D15.S01 Draft interpretation\nThe writer suggests that the closed valve indication proves hydraulic isolation and that the installed keeper should have prevented all movement. The writer therefore suspects excess clearance.\n\nD15.S02 Basis and status\nThis note cites only the initial event notice and handle-status entry. It contains no leak measurement, retention-envelope calculation or independent witness account. Status: unreviewed interpretation, not an additional observation.\n\nD15.S03 Source lineage\nThe attached action summary was copied from the initial investigation meeting. Repetition in this note is not independent corroboration.",
+      "revision": "0",
+      "version": 1,
+      "kind": "preliminary memo",
+      "request_ids": [],
+      "hash": "54b0de4652a17c15ec9ec74be89e34bca7751c2ea8bc02a8aef58b9adf14b798",
+      "origin_name": "D15.json"
+    }
+  },
+  "source_revision": 4,
+  "ledger": {
+    "FALL": {
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+        "status": "reported",
+        "sources": [
+          "D01"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "HYD": {
+      "record": {
+        "id": "HYD",
+        "kind": "node",
+        "scope_key": "HYD",
+        "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+        "status": "candidate",
+        "sources": [
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "REL": {
+      "record": {
+        "id": "REL",
+        "kind": "node",
+        "scope_key": "REL",
+        "claim": "Sufficient yoke-down motion relative to the carrier could eliminate primary seating.",
+        "status": "candidate",
+        "sources": [
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "KEEP": {
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "candidate",
+        "sources": [
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "BLOCK": {
+      "record": {
+        "id": "BLOCK",
+        "kind": "node",
+        "scope_key": "BLOCK",
+        "claim": "No effective independent positive yoke block was present.",
+        "status": "candidate",
+        "sources": [
+          "D02",
+          "D04"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D02": 1,
+        "D04": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "PROC": {
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": [
+          "D04"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D04": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    },
+    "LOAD": {
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": [
+          "D01",
+          "D02"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      },
+      "version": 1,
+      "source_versions": {
+        "D01": 1,
+        "D02": 1
+      },
+      "review": "pending_human",
+      "stale": false
+    }
+  },
+  "history": [
+    {
+      "id": "FALL",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "FALL",
+          "kind": "node",
+          "scope_key": "FALL",
+          "claim": "The raised R3 carrier fell into the pit onto the sled/scaffold on 14 October 2024 at about 13:24.",
+          "status": "reported",
+          "sources": [
+            "D01"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": []
+        },
+        "version": 1,
+        "source_versions": {
+          "D01": 1
+        },
+        "review": "pending_human",
+        "stale": false
+      },
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections."
+    },
+    {
+      "id": "HYD",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "HYD",
+          "kind": "node",
+          "scope_key": "HYD",
+          "claim": "Incident C17 fluid loss permitted loaded yoke descent, subject to restraint and applicable load/path conditions.",
+          "status": "candidate",
+          "sources": [
+            "D02"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": []
+        },
+        "version": 1,
+        "source_versions": {
+          "D02": 1
+        },
+        "review": "pending_human",
+        "stale": false
+      },
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections."
+    },
+    {
+      "id": "REL",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "REL",
+          "kind": "node",
+          "scope_key": "REL",
+          "claim": "Sufficient yoke-down motion relative to the carrier could eliminate primary seating.",
+          "status": "candidate",
+          "sources": [
+            "D02"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": []
+        },
+        "version": 1,
+        "source_versions": {
+          "D02": 1
+        },
+        "review": "pending_human",
+        "stale": false
+      },
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections."
+    },
+    {
+      "id": "KEEP",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "KEEP",
+          "kind": "node",
+          "scope_key": "KEEP",
+          "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+          "status": "candidate",
+          "sources": [
+            "D02"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": []
+        },
+        "version": 1,
+        "source_versions": {
+          "D02": 1
+        },
+        "review": "pending_human",
+        "stale": false
+      },
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections."
+    },
+    {
+      "id": "BLOCK",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "BLOCK",
+          "kind": "node",
+          "scope_key": "BLOCK",
+          "claim": "No effective independent positive yoke block was present.",
+          "status": "candidate",
+          "sources": [
+            "D02",
+            "D04"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": []
+        },
+        "version": 1,
+        "source_versions": {
+          "D02": 1,
+          "D04": 1
+        },
+        "review": "pending_human",
+        "stale": false
+      },
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections."
+    },
+    {
+      "id": "PROC",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "PROC",
+          "kind": "node",
+          "scope_key": "PROC",
+          "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+          "status": "supported",
+          "sources": [
+            "D04"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": []
+        },
+        "version": 1,
+        "source_versions": {
+          "D04": 1
+        },
+        "review": "pending_human",
+        "stale": false
+      },
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections."
+    },
+    {
+      "id": "LOAD",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "LOAD",
+          "kind": "node",
+          "scope_key": "LOAD",
+          "claim": "The incident assembly was parked raised and gravity remained available.",
+          "status": "supported",
+          "sources": [
+            "D01",
+            "D02"
+          ],
+          "depends_on": [],
+          "from_ids": [],
+          "to_id": null,
+          "mode": null,
+          "asset": null,
+          "window": null,
+          "fields": []
+        },
+        "version": 1,
+        "source_versions": {
+          "D01": 1,
+          "D02": 1
+        },
+        "review": "pending_human",
+        "stale": false
+      },
+      "reason": "Reviewed preceding-state fixture supported by the supplied record sections."
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "at": "2026-10-01T03:13:26.831502+00:00",
+      "kind": "source_received",
+      "source_id": "D01",
+      "request_id": null,
+      "kind_of_source": "record"
+    },
+    {
+      "seq": 2,
+      "at": "2026-10-01T03:13:26.831553+00:00",
+      "kind": "source_received",
+      "source_id": "D02",
+      "request_id": null,
+      "kind_of_source": "specification"
+    },
+    {
+      "seq": 3,
+      "at": "2026-10-01T03:13:26.831598+00:00",
+      "kind": "source_received",
+      "source_id": "D04",
+      "request_id": null,
+      "kind_of_source": "procedure extract"
+    },
+    {
+      "seq": 4,
+      "at": "2026-10-01T03:13:26.831640+00:00",
+      "kind": "source_received",
+      "source_id": "D15",
+      "request_id": null,
+      "kind_of_source": "preliminary memo"
+    },
+    {
+      "seq": 5,
+      "at": "2026-10-01T03:13:26.831776+00:00",
+      "kind": "controller_commit",
+      "actor": "lead",
+      "operations": 7,
+      "changed_ids": [
+        "BLOCK",
+        "FALL",
+        "HYD",
+        "KEEP",
+        "LOAD",
+        "PROC",
+        "REL"
+      ]
+    },
+    {
+      "seq": 6,
+      "at": "2026-10-05T17:11:46.048614+00:00",
+      "kind": "model_step",
+      "role": "specialist",
+      "job_id": "clean_S02-M",
+      "call_path": "packets/S02-M",
+      "validation": {
+        "accepted": null,
+        "reason": "held_for_lead_review",
+        "operations": 5
+      }
+    }
+  ],
+  "queue": [
+    {
+      "kind": "lead",
+      "tag": "",
+      "focus": "Review completed proposals/evidence, update the board and select the next immediately useful work.",
+      "target_ids": [],
+      "id": "da4e9c078e3e9506"
+    }
+  ],
+  "completed_jobs": [
+    {
+      "kind": "specialist",
+      "tag": "mechanical_retention",
+      "focus": "Investigate candidate mechanical retention/motion mechanisms and useful discriminating evidence.",
+      "target_ids": [
+        "FALL"
+      ],
+      "signature": "6d6502c4a7118f77f13530865b5d4fe6d57d2d9b2005bcba5878579213b3a6a4",
+      "accepted": null,
+      "source_revision": 4,
+      "call_path": "packets/S02-M"
+    }
+  ],
+  "calls": [
+    {
+      "role": "specialist",
+      "job_id": "clean_S02-M",
+      "path": "packets/S02-M",
+      "decision": "Propose targeted acquisition to distinguish between hydraulic leakage, mechanical block absence, and dynamic keeper failure. Do not assume any single mechanism caused the fall without evidence of its operation.",
+      "validation": {
+        "accepted": null,
+        "reason": "held_for_lead_review",
+        "operations": 5
+      }
+    }
+  ],
+  "feedback": {
+    "accepted": null,
+    "reason": "held_for_lead_review",
+    "operations": 5
+  },
+  "phase": "ready",
+  "last_decision": "",
+  "proposals": [
+    {
+      "role": "specialist",
+      "assignment": {
+        "kind": "specialist",
+        "tag": "mechanical_retention",
+        "focus": "Investigate candidate mechanical retention/motion mechanisms and useful discriminating evidence.",
+        "target_ids": [
+          "FALL"
+        ],
+        "id": "clean_S02-M"
+      },
+      "output": {
+        "decision": "Propose targeted acquisition to distinguish between hydraulic leakage, mechanical block absence, and dynamic keeper failure. Do not assume any single mechanism caused the fall without evidence of its operation.",
+        "operations": [
+          {
+            "action": "create",
+            "expected_version": 0,
+            "replaces": null,
+            "reason": "Establish whether the support chamber actually lost fluid pressure during the incident window. D02 states loss of fluid permits descent, but D01 and D15 do not confirm leakage occurred. Need to verify if the valve closed (V17) or if fluid escaped.",
+            "record": {
+              "id": "LEAK",
+              "kind": "node",
+              "scope_key": "LEAK",
+              "claim": "Hydraulic fluid escaped from the support chamber (C17) or return path (V17) during the incident window, reducing pressure below the load threshold.",
+              "status": "candidate",
+              "sources": [],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": "R3 assembly",
+              "window": "2024-10-14T13:20:00Z to 2024-10-14T13:30:00Z",
+              "fields": [
+                "pressure_trace_C17",
+                "valve_V17_position",
+                "external_leakage_evidence"
+              ]
+            }
+          },
+          {
+            "action": "create",
+            "expected_version": 0,
+            "replaces": null,
+            "reason": "Determine if a positive mechanical block was physically installed and engaged. D04 notes omission of instruction, but D01 does not state block presence/absence. Need to verify physical state of any block device.",
+            "record": {
+              "id": "BLOCK_PHYS",
+              "kind": "node",
+              "scope_key": "BLOCK_PHYS",
+              "claim": "A positive mechanical block was installed and engaged on the yoke at the time of the incident, preventing descent even if hydraulic pressure was lost.",
+              "status": "candidate",
+              "sources": [],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": "R3 assembly",
+              "window": "2024-10-14T13:20:00Z to 2024-10-14T13:30:00Z",
+              "fields": [
+                "block_device_installed",
+                "block_engagement_verified"
+              ]
+            }
+          },
+          {
+            "action": "create",
+            "expected_version": 0,
+            "replaces": null,
+            "reason": "Assess whether the keeper plate failed dynamically under load or lateral offset. D01 notes keeper was bolted to recovered assembly, but D02 requires lateral offset and dynamic path evidence. Need to inspect keeper geometry and load path.",
+            "record": {
+              "id": "KEEPER_FAIL",
+              "kind": "node",
+              "scope_key": "KEEPER_FAIL",
+              "claim": "The keeper plate failed to retain the carrier due to dynamic loading, lateral offset, or structural failure during the descent.",
+              "status": "candidate",
+              "sources": [],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": "R3 assembly",
+              "window": "2024-10-14T13:20:00Z to 2024-10-14T13:30:00Z",
+              "fields": [
+                "keeper_lateral_offset",
+                "keeper_structural_integrity",
+                "dynamic_load_path"
+              ]
+            }
+          },
+          {
+            "action": "create",
+            "expected_version": 0,
+            "replaces": null,
+            "reason": "Verify the relative vertical withdrawal between yoke and carrier. D02 states 30 mm withdrawal eliminates primary seating. Need to measure or estimate actual relative motion during the incident.",
+            "record": {
+              "id": "REL_WITHDRAW",
+              "kind": "node",
+              "scope_key": "REL_WITHDRAW",
+              "claim": "Relative downward withdrawal of the yoke exceeded 30 mm relative to the carrier, eliminating primary seating engagement.",
+              "status": "candidate",
+              "sources": [],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": "R3 assembly",
+              "window": "2024-10-14T13:20:00Z to 2024-10-14T13:30:00Z",
+              "fields": [
+                "yoke_position_trace",
+                "carrier_position_trace",
+                "relative_withdrawal_calculation"
+              ]
+            }
+          },
+          {
+            "action": "create",
+            "expected_version": 0,
+            "replaces": null,
+            "reason": "Confirm whether the assembly was parked raised and gravity was available. D01 and D02 support this, but need to verify no external restraint (e.g., cribbing, secondary block) existed.",
+            "record": {
+              "id": "GRAVITY_AVAIL",
+              "kind": "node",
+              "scope_key": "GRAVITY_AVAIL",
+              "claim": "The assembly was parked raised with no external restraint, making gravity available to drive descent if retention failed.",
+              "status": "candidate",
+              "sources": [],
+              "depends_on": [],
+              "from_ids": [],
+              "to_id": null,
+              "mode": null,
+              "asset": "R3 assembly",
+              "window": "2024-10-14T13:20:00Z to 2024-10-14T13:30:00Z",
+              "fields": [
+                "external_restraint_present",
+                "parking_configuration_verified"
+              ]
+            }
+          }
+        ],
+        "next_work": [],
+        "upstream_dispositions": [],
+        "disposition": "continue"
+      },
+      "call_path": "packets/S02-M"
+    }
+  ],
+  "last_update": {
+    "role": "specialist",
+    "decision": "Propose targeted acquisition to distinguish between hydraulic leakage, mechanical block absence, and dynamic keeper failure. Do not assume any single mechanism caused the fall without evidence of its operation.",
+    "accepted": null,
+    "committed": false,
+    "call_path": "packets/S02-M"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "decision": "The requested motion record (R_MOTION) is partially covered. The following fields are answered, remaining, conflicting, or unavailable:",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "The motion record R_MOTION is partially covered. The following fields are answered, remaining, conflicting, or unavailable:\n- 'yoke/carrier vertical displacement': Answered (D01.S03 states the assembly was parked raised, but no specific displacement data is provided.)\n- 'common time window': Remaining (No specific time window data is available in the sources.)\n- 'release timing': Remaining (No specific release timing data is available in the sources.)\n- 'keeper interface and lateral offset coverage': Conflicting (D02 suggests keeper engagement depends on lateral offset, but no specific evidence is provided in the sources.)\n- Other fields not mentioned in the sources or explicitly stated as unavailable are considered remaining.",
+      "record": {
+        "id": "R_MOTION",
+        "kind": "request",
+        "scope_key": "R_MOTION",
+        "claim": "Acquire the incident motion record to assess yoke/carrier movement and coverage. R3 CB-3/YK-3 C17/V17 raised maintenance assembly 14 October 2024 incident and stated relevant record interval yoke/carrier vertical displacement common time window release timing keeper interface and lateral offset coverage",
+        "status": "partial",
+        "sources": ["D01", "D02"],
+        "depends_on": ["REL", "KEEP"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 CB-3/YK-3 C17/V17 raised maintenance assembly",
+        "window": "14 October 2024 incident and stated relevant record interval",
+        "fields": ["yoke/carrier vertical displacement", "common time window", "release timing", "keeper interface and lateral offset coverage"]
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "partial"
+}

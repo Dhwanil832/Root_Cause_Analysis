@@ -1,0 +1,47 @@
+{
+  "required_row_fields": [
+    "arm",
+    "repetition",
+    "criterion_id",
+    "outcome",
+    "exposure",
+    "output_reference",
+    "excerpt_or_absence_reason",
+    "contradiction",
+    "failure_origin"
+  ],
+  "outcomes": [
+    "Present",
+    "Missing",
+    "Not reached",
+    "Harness blocked"
+  ],
+  "exposures": [
+    "Supplied",
+    "Not obtained",
+    "Harness blocked"
+  ],
+  "failure_origins": [
+    "None",
+    "Interpretation",
+    "Acquisition",
+    "Composition",
+    "Retention",
+    "Routing",
+    "Harness",
+    "Transport",
+    "Resource",
+    "Unknown"
+  ],
+  "additional_diagnostics": [
+    "raw-versus-committed loss",
+    "first failure and affected downstream targets",
+    "later recovery outside primary stage window",
+    "unsupported additional claims with exact excerpts",
+    "repeat requests",
+    "wrong valid-proposal rejection",
+    "structural acceptance of unsupported claim",
+    "final report completeness"
+  ],
+  "missing": "Unscored until required fields are populated. No synthetic performance results."
+}

@@ -1,0 +1,73 @@
+{
+  "decision": "The focal event is identified as the R3 delivery carrier beam falling into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold but not causing any personnel injury. The assembly had been parked and raised after backup-roll removal during an outage.",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Initial understanding of the incident based on provided sources.",
+      "record": {
+        "id": "clean_S01-A",
+        "kind": "node",
+        "scope_key": "incident_description",
+        "claim": "The R3 delivery carrier beam fell into the mill pit on 14 October 2024 at 13:24, striking the sled and scaffold without causing personnel injury.",
+        "status": "reported",
+        "sources": [
+          "D01",
+          "D02",
+          "D04"
+        ],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Immediate clarification needs identified.",
+      "record": {
+        "id": "clean_S01-B",
+        "kind": "request",
+        "scope_key": "mechanism_and_upstream_causes",
+        "claim": "Investigate the physical mechanism and relevant upstream causes of the R3 delivery carrier beam falling into the mill pit.",
+        "status": "proposed",
+        "sources": [],
+        "depends_on": ["clean_S01-A"],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": ["motion_record", "work_package", "isolation_records", "inspection_photographs", "hydraulic_records"]
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "specialist",
+      "tag": "mechanical_engineering",
+      "focus": "Investigate the physical mechanism of the R3 delivery carrier beam failure.",
+      "target_ids": ["clean_S01-A"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "hydraulic_systems",
+      "focus": "Analyze hydraulic records and determine if hydraulic fluid leakage contributed to the incident.",
+      "target_ids": ["clean_S01-A"]
+    },
+    {
+      "kind": "specialist",
+      "tag": "maintenance_procedures",
+      "focus": "Review task isolation package (D04) and assess adherence to procedures during the event.",
+      "target_ids": ["clean_S01-A"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "waiting"
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "S01",
+    "name": "Incident understanding",
+    "role": "intake",
+    "evidence_band": "initial",
+    "max_points": 8
+  },
+  {
+    "id": "S02",
+    "name": "Mechanism hypotheses",
+    "role": "specialist",
+    "evidence_band": "initial",
+    "max_points": 8
+  },
+  {
+    "id": "S03",
+    "name": "Hypothesis and request review",
+    "role": "lead",
+    "evidence_band": "initial",
+    "max_points": 8
+  },
+  {
+    "id": "S04",
+    "name": "Search and request coverage",
+    "role": "evidence",
+    "evidence_band": "initial / motion",
+    "max_points": 8
+  },
+  {
+    "id": "S05",
+    "name": "Motion and witness assessment",
+    "role": "assessor",
+    "evidence_band": "motion",
+    "max_points": 8
+  },
+  {
+    "id": "S06",
+    "name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "evidence_band": "physical",
+    "max_points": 8
+  },
+  {
+    "id": "S07",
+    "name": "Physical causal board",
+    "role": "lead",
+    "evidence_band": "physical",
+    "max_points": 8
+  },
+  {
+    "id": "S08",
+    "name": "Upstream hypotheses",
+    "role": "specialist",
+    "evidence_band": "physical",
+    "max_points": 8
+  },
+  {
+    "id": "S09",
+    "name": "Origin and availability evidence",
+    "role": "evidence",
+    "evidence_band": "late",
+    "max_points": 8
+  },
+  {
+    "id": "S10",
+    "name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "evidence_band": "late",
+    "max_points": 8
+  },
+  {
+    "id": "S11",
+    "name": "Requests and stopping review",
+    "role": "lead",
+    "evidence_band": "late",
+    "max_points": 8
+  },
+  {
+    "id": "S12",
+    "name": "Final retained RCA",
+    "role": "lead",
+    "evidence_band": "late",
+    "max_points": 8
+  }
+]

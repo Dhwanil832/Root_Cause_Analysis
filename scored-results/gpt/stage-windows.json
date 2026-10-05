@@ -1,0 +1,307 @@
+{
+  "S01": {
+    "name": "Incident understanding",
+    "start_call": 1,
+    "end_call": 1,
+    "primary_outputs": [
+      "repaired/case/calls/0001_intake/answer.txt"
+    ],
+    "rule": "Initial intake output only.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ]
+  },
+  "S02": {
+    "name": "Mechanism hypotheses",
+    "start_call": 1,
+    "end_call": 9,
+    "primary_outputs": [
+      "repaired/case/calls/0001_intake/answer.txt",
+      "repaired/case/calls/0002_lead/answer.txt",
+      "repaired/case/calls/0003_evidence/answer.txt",
+      "repaired/case/calls/0004_evidence/answer.txt",
+      "repaired/case/calls/0005_evidence/answer.txt",
+      "repaired/case/calls/0006_evidence/answer.txt",
+      "repaired/case/calls/0007_assessor/answer.txt",
+      "repaired/case/calls/0008_lead/answer.txt",
+      "repaired/case/calls/0009_lead/answer.txt"
+    ],
+    "rule": "Initial cycle through the first evidence pause, before any custodian delivery; equivalent hypothesis work by intake/assessor/lead counts.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ]
+  },
+  "S03": {
+    "name": "Hypothesis and request review",
+    "start_call": 1,
+    "end_call": 9,
+    "primary_outputs": [
+      "repaired/case/calls/0001_intake/answer.txt",
+      "repaired/case/calls/0002_lead/answer.txt",
+      "repaired/case/calls/0003_evidence/answer.txt",
+      "repaired/case/calls/0004_evidence/answer.txt",
+      "repaired/case/calls/0005_evidence/answer.txt",
+      "repaired/case/calls/0006_evidence/answer.txt",
+      "repaired/case/calls/0007_assessor/answer.txt",
+      "repaired/case/calls/0008_lead/answer.txt",
+      "repaired/case/calls/0009_lead/answer.txt"
+    ],
+    "rule": "Initial lead review and shared acquisition through first pause. No injected duplicate-hypothesis fixture in connected mode.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D15"
+    ]
+  },
+  "S04": {
+    "name": "Search and request coverage",
+    "start_call": 3,
+    "end_call": 11,
+    "primary_outputs": [
+      "repaired/case/calls/0003_evidence/answer.txt",
+      "repaired/case/calls/0004_evidence/answer.txt",
+      "repaired/case/calls/0005_evidence/answer.txt",
+      "repaired/case/calls/0006_evidence/answer.txt",
+      "repaired/case/calls/0010_assessor/answer.txt",
+      "repaired/case/calls/0011_lead/answer.txt"
+    ],
+    "rule": "First searches plus first completed coverage/assessment/lead cycle after D07 delivery. Different roles may perform equivalent coverage work.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D13",
+      "D14",
+      "D15",
+      "USER_5258a84a5f5b"
+    ]
+  },
+  "S05": {
+    "name": "Motion and witness assessment",
+    "start_call": 10,
+    "end_call": 11,
+    "primary_outputs": [
+      "repaired/case/calls/0010_assessor/answer.txt",
+      "repaired/case/calls/0011_lead/answer.txt"
+    ],
+    "rule": "First completed physical assessment and lead review with D07. D06A/D06B never requested or delivered; witness-specific check has no exposure.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D13",
+      "D14",
+      "D15",
+      "USER_5258a84a5f5b"
+    ]
+  },
+  "S06": {
+    "name": "Hydraulics and execution assessment",
+    "start_call": 10,
+    "end_call": 11,
+    "primary_outputs": [
+      "repaired/case/calls/0010_assessor/answer.txt",
+      "repaired/case/calls/0011_lead/answer.txt"
+    ],
+    "rule": "First completed physical assessment and lead review with D05/D08.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D13",
+      "D14",
+      "D15",
+      "USER_5258a84a5f5b"
+    ]
+  },
+  "S07": {
+    "name": "Physical causal board",
+    "start_call": 11,
+    "end_call": 11,
+    "primary_outputs": [
+      "repaired/case/calls/0011_lead/answer.txt"
+    ],
+    "rule": "First lead board update after physical assessment. Check emitted content and retained committed focal event; provenance cited to original model output.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D13",
+      "D14",
+      "D15",
+      "USER_5258a84a5f5b"
+    ]
+  },
+  "S08": {
+    "name": "Upstream hypotheses",
+    "start_call": 12,
+    "end_call": 15,
+    "primary_outputs": [
+      "repaired/case/calls/0012_specialist/answer.txt",
+      "repaired/case/calls/0013_specialist/answer.txt",
+      "repaired/case/calls/0014_specialist/answer.txt",
+      "repaired/case/calls/0015_lead/answer.txt"
+    ],
+    "rule": "First mechanical, hydraulic-origin and work-control specialist cycle through reviewing lead. No contact-origin cycle occurred anywhere in run.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D13",
+      "D14",
+      "D15",
+      "USER_5258a84a5f5b"
+    ]
+  },
+  "S09": {
+    "name": "Origin and availability evidence",
+    "start_call": 21,
+    "end_call": 22,
+    "primary_outputs": [
+      "repaired/case/calls/0021_assessor/answer.txt",
+      "repaired/case/calls/0022_lead/answer.txt"
+    ],
+    "rule": "First completed assessment/lead cycle with D11/D12.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "USER_445faa931f95",
+      "USER_5258a84a5f5b",
+      "USER_97c40fbbf1d8"
+    ]
+  },
+  "S10": {
+    "name": "Boundaries and scoped negatives",
+    "start_call": 10,
+    "end_call": 11,
+    "primary_outputs": [
+      "repaired/case/calls/0010_assessor/answer.txt",
+      "repaired/case/calls/0011_lead/answer.txt"
+    ],
+    "rule": "First completed assessment/review with D09/D10/D14/D13 delivered together. Later recoveries cannot improve this primary window. D03A/D03C never obtained; D12 arrives later.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D13",
+      "D14",
+      "D15",
+      "USER_5258a84a5f5b"
+    ]
+  },
+  "S11": {
+    "name": "Requests and stopping review",
+    "start_call": 22,
+    "end_call": 23,
+    "primary_outputs": [
+      "repaired/case/calls/0022_lead/answer.txt",
+      "repaired/case/calls/0023_lead/answer.txt"
+    ],
+    "rule": "Final agenda/stopping cycle. Retained request closures are credited using their original committed output provenance, matching prior connected-stage scoring; no credit from untouched input alone.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "USER_445faa931f95",
+      "USER_5258a84a5f5b",
+      "USER_97c40fbbf1d8"
+    ]
+  },
+  "S12": {
+    "name": "Final retained RCA",
+    "start_call": 23,
+    "end_call": 23,
+    "primary_outputs": [
+      "repaired/case/calls/0023_lead/answer.txt"
+    ],
+    "rule": "Final active model-produced ledger plus final account. Credit exact committed output provenance for retained meanings, not arbitrary earlier discarded proposals.",
+    "selected_before_row_grading": true,
+    "source_exposure": [
+      "D01",
+      "D02",
+      "D04",
+      "D05",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "USER_445faa931f95",
+      "USER_5258a84a5f5b",
+      "USER_97c40fbbf1d8"
+    ]
+  }
+}

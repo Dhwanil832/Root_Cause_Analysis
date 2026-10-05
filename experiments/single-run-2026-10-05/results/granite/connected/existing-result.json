@@ -1,0 +1,130 @@
+{
+  "source": "/Users/dhwanilchauhan/Desktop/RCA Try 1/benchmark harness/scored-results/granite",
+  "reused_once": true,
+  "new_model_calls": 0,
+  "runtime_fingerprint": "6023c3e59399c60fe353bbc550d9836c8e87c04568f2e87d727280419c1f7d32",
+  "score": {
+    "denominator": 96,
+    "outcomes": {
+      "Present": 3,
+      "Missing": 19,
+      "Not reached": 74
+    },
+    "presence_score": 3,
+    "consistent_score": 3,
+    "stages": [
+      {
+        "stage": "S01",
+        "denominator": 8,
+        "outcomes": {
+          "Present": 2,
+          "Missing": 6
+        },
+        "presence_score": 2,
+        "consistent_score": 2
+      },
+      {
+        "stage": "S02",
+        "denominator": 8,
+        "outcomes": {
+          "Missing": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S03",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 2,
+          "Missing": 5,
+          "Present": 1
+        },
+        "presence_score": 1,
+        "consistent_score": 1
+      },
+      {
+        "stage": "S04",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S05",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S06",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S07",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S08",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S09",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S10",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S11",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      },
+      {
+        "stage": "S12",
+        "denominator": 8,
+        "outcomes": {
+          "Not reached": 8
+        },
+        "presence_score": 0,
+        "consistent_score": 0
+      }
+    ]
+  },
+  "phase": "needs_attention"
+}

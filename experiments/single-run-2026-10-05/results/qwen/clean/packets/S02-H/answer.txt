@@ -1,0 +1,83 @@
+{
+  "decision": "Propose targeted acquisition to distinguish between hydraulic leakage, mechanical block absence, and dynamic keeper release as the primary mechanism. Reaffirm procedural omission (PROC) as a supported condition but treat its causal contribution as unresolved pending physical evidence.",
+  "operations": [
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Establish a physical evidence request to quantify fluid loss and verify block presence, which are required to adjudicate the hydraulic (HYD) and block (BLOCK) candidate nodes.",
+      "record": {
+        "id": "REQ_HYD_BLOCK",
+        "kind": "request",
+        "scope_key": "HYD_BLOCK_MECH",
+        "claim": "Acquire hydraulic fluid loss data and physical verification of yoke block presence during the incident window.",
+        "status": "proposed",
+        "sources": [],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 assembly CB-3/YK-3",
+        "window": "2024-10-14T13:00:00Z/2024-10-14T14:00:00Z",
+        "fields": [
+          "hydraulic_chamber_C17_fluid_loss_measurement",
+          "yoke_positive_mechanical_block_presence_verification",
+          "keeper_plate_lateral_offset_and_engagement_state"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Acquire motion records to calculate relative yoke-down motion and verify if primary seating was eliminated, addressing the REL candidate node.",
+      "record": {
+        "id": "REQ_REL_MOTION",
+        "kind": "request",
+        "scope_key": "REL_MOTION_CALC",
+        "claim": "Acquire motion records to calculate relative yoke-down motion and verify if primary seating was eliminated.",
+        "status": "proposed",
+        "sources": [],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 assembly CB-3/YK-3",
+        "window": "2024-10-14T13:00:00Z/2024-10-14T13:30:00Z",
+        "fields": [
+          "yoke_vertical_position_time_series",
+          "carrier_vertical_position_time_series",
+          "relative_withdrawal_calculation"
+        ]
+      }
+    },
+    {
+      "action": "create",
+      "expected_version": 0,
+      "replaces": null,
+      "reason": "Acquire inspection photographs and witness accounts to verify keeper release path and dynamic engagement conditions, addressing the KEEP candidate node.",
+      "record": {
+        "id": "REQ_KEEP_DYNAMIC",
+        "kind": "request",
+        "scope_key": "KEEP_DYNAMIC_PATH",
+        "claim": "Acquire inspection photographs and witness accounts to verify keeper release path and dynamic engagement conditions.",
+        "status": "proposed",
+        "sources": [],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": "R3 assembly CB-3/YK-3",
+        "window": "2024-10-14T13:00:00Z/2024-10-14T13:30:00Z",
+        "fields": [
+          "keeper_plate_engagement_state_photograph",
+          "witness_account_of_keeper_release_timing",
+          "lateral_offset_measurement"
+        ]
+      }
+    }
+  ],
+  "next_work": [],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

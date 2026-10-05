@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-05T16:12:08.798237+00:00",
+  "execution_profile": {
+    "provider": "ollama_macos_pilot",
+    "model": "mistral:7b",
+    "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+    "server_version": "0.32.3",
+    "think": false,
+    "thinking_supported": false,
+    "truncate": false,
+    "shift": false,
+    "timeout_seconds": null,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "num_predict": -1,
+      "num_ctx": 32768
+    },
+    "require_full_gpu": true
+  },
+  "transport_endpoint": "http://127.0.0.1:11434/api/chat",
+  "request_hash": "d9beb5d218e033d5d537ec7be25d8be5f1d2f2f55ee63dd08a9d00e4a7114b12",
+  "schema_hash": "774d849dedc7df09f9c9e6fc183ab953d2028aac74a9c3beb54c047d7f678e1a"
+}

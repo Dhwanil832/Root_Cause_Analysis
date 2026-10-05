@@ -1,0 +1,267 @@
+{
+  "decision": "The incident condition (FALL) is supported by the initial event notice (D01). The configuration condition (CONFIG) is supported by the maintenance arrangement register (D03C). The procedural omission (PROC) is supported by the task isolation package (D04). The load condition (LOAD) is supported by D01 and D02. The yoke descent (YOKE) and carrier stability (CARRIER) are supported by CAM-3 (D07). The contact condition (CONTACT) is supported by D02, D05, D07. The withdrawal condition (WITHDRAW) and seating loss (SEAT) are supported by D02 and D07. The leak condition (LEAK) is supported by D08. The lack of positive block (NOBLOCK) is supported by D05 and D08. The keeper-release path hypothesis (KEEP) remains candidate due to lack of lateral/rotation data. No physical cause is refuted; the mechanism involves loss of primary seating due to withdrawal exceeding 30 mm, combined with absence of a positive block and a leaking valve (V17). The keeper bypass mechanism remains unresolved due to missing lateral offset and rotation data. The next justified work is to acquire the missing lateral offset and rotation measurement or a validated retention-envelope analysis to resolve the keeper branch.",
+  "operations": [
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the incident condition (FALL) and configuration (CONFIG) with fresh reasoning based on D01 and D03C. No change to claim or scope.",
+      "record": {
+        "id": "FALL",
+        "kind": "node",
+        "scope_key": "FALL",
+        "claim": "The raised R3 carrier beam fell into the mill pit and struck the sled and scaffold on 14 October 2024 at about 13:24.",
+        "status": "supported",
+        "sources": ["D01"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the procedural omission (PROC) with fresh reasoning based on D04. No change to claim or scope.",
+      "record": {
+        "id": "PROC",
+        "kind": "node",
+        "scope_key": "PROC",
+        "claim": "WP-031 omitted a positive-block instruction and off-center retention-envelope verification.",
+        "status": "supported",
+        "sources": ["D04"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the load condition (LOAD) with fresh reasoning based on D01 and D02. No change to claim or scope.",
+      "record": {
+        "id": "LOAD",
+        "kind": "node",
+        "scope_key": "LOAD",
+        "claim": "The incident assembly was parked raised and gravity remained available.",
+        "status": "supported",
+        "sources": ["D01", "D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the yoke descent (YOKE) with fresh reasoning based on D07. No change to claim or scope.",
+      "record": {
+        "id": "YOKE",
+        "kind": "node",
+        "scope_key": "YOKE",
+        "claim": "YK-3 descended 40 +/- 1 mm during 13:00:00–13:24:00, before release at 13:24:03.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the carrier stability (CARRIER) with fresh reasoning based on D07. No change to claim or scope.",
+      "record": {
+        "id": "CARRIER",
+        "kind": "node",
+        "scope_key": "CARRIER",
+        "claim": "The carrier moved downward 0 +/- 1 mm over that same interval and reference frame.",
+        "status": "supported",
+        "sources": ["D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the contact condition (CONTACT) with fresh reasoning based on D02, D05, D07. No change to claim or scope.",
+      "record": {
+        "id": "CONTACT",
+        "kind": "node",
+        "scope_key": "CONTACT",
+        "claim": "Post/spreader contact was visible through that interval, compatible with temporarily holding the carrier.",
+        "status": "supported",
+        "sources": ["D02", "D05", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the withdrawal condition (WITHDRAW) with fresh reasoning based on D02 and D07. No change to claim or scope.",
+      "record": {
+        "id": "WITHDRAW",
+        "kind": "node",
+        "scope_key": "WITHDRAW",
+        "claim": "Relative yoke-down withdrawal over the measured interval was 38–42 mm.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the seating loss (SEAT) with fresh reasoning based on D02 and D07. No change to claim or scope.",
+      "record": {
+        "id": "SEAT",
+        "kind": "node",
+        "scope_key": "SEAT",
+        "claim": "Relative withdrawal exceeded the defined 30 mm engagement and eliminated primary seating by 13:24:00.",
+        "status": "supported",
+        "sources": ["D02", "D07"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the leak condition (LEAK) with fresh reasoning based on D08. No change to claim or scope.",
+      "record": {
+        "id": "LEAK",
+        "kind": "node",
+        "scope_key": "LEAK",
+        "claim": "0.400 +/- 0.010 L left C17 through V17 despite CLOSED indication over the incident measurement interval.",
+        "status": "supported",
+        "sources": ["D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the lack of positive block (NOBLOCK) with fresh reasoning based on D05 and D08. No change to claim or scope.",
+      "record": {
+        "id": "NOBLOCK",
+        "kind": "node",
+        "scope_key": "NOBLOCK",
+        "claim": "The incident photograph and boundary record show no independent positive block under YK-3.",
+        "status": "supported",
+        "sources": ["D05", "D08"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the supported status of the configuration condition (CONFIG) with fresh reasoning based on D03C. No change to claim or scope.",
+      "record": {
+        "id": "CONFIG",
+        "kind": "node",
+        "scope_key": "CONFIG",
+        "claim": "Current revision C has backup rolls removed, no backup-roll-associated stop and no separate maintenance travel stop.",
+        "status": "supported",
+        "sources": ["D03C"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    },
+    {
+      "action": "revise",
+      "expected_version": 1,
+      "replaces": null,
+      "reason": "Reaffirm the candidate status of the keeper-release path hypothesis (KEEP) with fresh reasoning based on D02. No change to claim or scope.",
+      "record": {
+        "id": "KEEP",
+        "kind": "node",
+        "scope_key": "KEEP",
+        "claim": "A dynamic keeper-release path could allow separation after primary seating is lost.",
+        "status": "candidate",
+        "sources": ["D02"],
+        "depends_on": [],
+        "from_ids": [],
+        "to_id": null,
+        "mode": null,
+        "asset": null,
+        "window": null,
+        "fields": []
+      }
+    }
+  ],
+  "next_work": [
+    {
+      "kind": "assessor",
+      "tag": "keeper_branch",
+      "focus": "Acquire the missing lateral offset and rotation measurement or a validated retention-envelope analysis to resolve the keeper bypass mechanism.",
+      "target_ids": ["KEEP"]
+    }
+  ],
+  "upstream_dispositions": [],
+  "disposition": "continue"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "seconds": 192.275,
+  "usage": {
+    "prompt_eval_count": 10490,
+    "eval_count": 700,
+    "done_reason": "stop"
+  },
+  "model": "granite3.3:8b",
+  "provider": "ollama_macos_pilot",
+  "answer_hash": "0fca456cda31038a1b9ce337b8810e95a1a4280a1c4ddc0990869d5ebb9d2043",
+  "request_hash": "3c3184a9f7c97c29823b354fda3d542868086bfc70880c7f80c47ec16f6e3ba3"
+}

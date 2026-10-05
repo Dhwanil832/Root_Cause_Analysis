@@ -1,0 +1,124 @@
+{
+  "denominator": 96,
+  "outcomes": {
+    "Present": 17,
+    "Missing": 5,
+    "Not reached": 74
+  },
+  "presence_score": 17,
+  "consistent_score": 17,
+  "stages": [
+    {
+      "stage": "S01",
+      "denominator": 8,
+      "outcomes": {
+        "Present": 5,
+        "Missing": 3
+      },
+      "presence_score": 5,
+      "consistent_score": 5
+    },
+    {
+      "stage": "S02",
+      "denominator": 8,
+      "outcomes": {
+        "Present": 7,
+        "Missing": 1
+      },
+      "presence_score": 7,
+      "consistent_score": 7
+    },
+    {
+      "stage": "S03",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 2,
+        "Present": 5,
+        "Missing": 1
+      },
+      "presence_score": 5,
+      "consistent_score": 5
+    },
+    {
+      "stage": "S04",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S05",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S06",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S07",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S08",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S09",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S10",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S11",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    },
+    {
+      "stage": "S12",
+      "denominator": 8,
+      "outcomes": {
+        "Not reached": 8
+      },
+      "presence_score": 0,
+      "consistent_score": 0
+    }
+  ]
+}

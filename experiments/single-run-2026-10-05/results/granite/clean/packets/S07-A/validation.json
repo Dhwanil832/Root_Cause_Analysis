@@ -1,0 +1,22 @@
+{
+  "accepted": false,
+  "operations": 12,
+  "reason": "version_mismatch",
+  "operations_accepted": false,
+  "committed": false,
+  "errors": [
+    {
+      "code": "version_mismatch",
+      "phase": "controller",
+      "operation_index": 0,
+      "record_id": "FALL",
+      "path": "$.operations[0].expected_version",
+      "actual": 2,
+      "expected": 1,
+      "repair": "Correct the identified record using current ledger/source versions and the mechanical contract; resubmit the whole justified batch.",
+      "target_id": "FALL"
+    }
+  ],
+  "validation_scope": "First blocking error; later dependent operations have not been validated.",
+  "repair": "No operations committed. Correct the identified error and resubmit a justified atomic batch."
+}

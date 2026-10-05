@@ -1,0 +1,213 @@
+[
+  {
+    "id": "D01",
+    "title": "R3 delivery carrier beam - initial event notice",
+    "sha256": "53759dd496d5a7e5947107f8d637568b5bab00710a49dc48e29a261d1153f8dc",
+    "sections": [
+      "D01.S01",
+      "D01.S02",
+      "D01.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": true
+  },
+  {
+    "id": "D02",
+    "title": "R3 raised assembly - functional system description",
+    "sha256": "daaeed974f852ed46f12610fd322023a30a57c38ecb84ab717a5120f6265c427",
+    "sections": [
+      "D02.S01",
+      "D02.S02",
+      "D02.S03",
+      "D02.S04",
+      "D02.S05",
+      "D02.S06"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": true
+  },
+  {
+    "id": "D03A",
+    "title": "R3 carrier and yoke - arrangement register",
+    "sha256": "88a163882baef5ce56ba602b8e18ec8800e97f7bdd572ebf927d65505cc0c009",
+    "sections": [
+      "D03A.S01",
+      "D03A.S02",
+      "D03A.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D03C",
+    "title": "R3 carrier and yoke - maintenance arrangement register",
+    "sha256": "42adb63a8c07f48094427da86e1b80baa5f3839bcc2f08e4087be8a239f2f1f5",
+    "sections": [
+      "D03C.S01",
+      "D03C.S02",
+      "D03C.S03",
+      "D03C.S04"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D04",
+    "title": "Stripper-box changeout - task isolation package",
+    "sha256": "88899515e8033788ef9e1660a46aebc037b9d7460862c7948c0c9759e2efe5a7",
+    "sections": [
+      "D04.S01",
+      "D04.S02",
+      "D04.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": true
+  },
+  {
+    "id": "D05",
+    "title": "WP-031 - configuration and isolation execution record",
+    "sha256": "e9f50bba13a9c989c0e757cef2d330f442f6e3e4079b849782d56694c9f12404",
+    "sections": [
+      "D05.S01",
+      "D05.S02",
+      "D05.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D06A",
+    "title": "Witness account W-A - pit-side observation",
+    "sha256": "73726a937540e39ed9112582fdcd83ec6180b518984f63a8423891eae838bc90",
+    "sections": [
+      "D06A.S01",
+      "D06A.S02",
+      "D06A.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D06B",
+    "title": "Witness account W-B - drive-side observation",
+    "sha256": "613665507581b9fa7b8ae6443a3f3c82f3f5d41d1e19a8f3805836a15b56216e",
+    "sections": [
+      "D06B.S01",
+      "D06B.S02",
+      "D06B.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D07",
+    "title": "CAM-3 motion measurement and coverage report",
+    "sha256": "a35d9552f9768f4cc3f1dbcf1c965d34fc893c41d8de8a9dcfc0d93ef06c2821",
+    "sections": [
+      "D07.S01",
+      "D07.S02",
+      "D07.S03",
+      "D07.S04"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D08",
+    "title": "C17 boundary measurements - incident interval",
+    "sha256": "cbc3875fe372ea68b60164147d0488727c21228b1d109335d3e5eef8fa1ae573",
+    "sections": [
+      "D08.S01",
+      "D08.S02",
+      "D08.S03",
+      "D08.S04"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D09",
+    "title": "V17 removed-valve examination and bench test",
+    "sha256": "865798db79be6752dad51ab08141471959259b7ca7843cafd2556080ebd223a8",
+    "sections": [
+      "D09.S01",
+      "D09.S02",
+      "D09.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D10",
+    "title": "CB-3/YK-3 clearance and engagement review",
+    "sha256": "635fc7202e1e11d2c42735a6005908e43ea00a3ff697df80566834d7ee829028",
+    "sections": [
+      "D10.S01",
+      "D10.S02",
+      "D10.S03",
+      "D10.S04"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D11",
+    "title": "V17 maintenance history and inspection policy extract",
+    "sha256": "e8689f56cfa48fb2b211bf7b8e7ca1d4aa8de6ef27bc054bc532c0be02b83419",
+    "sections": [
+      "D11.S01",
+      "D11.S02",
+      "D11.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D12",
+    "title": "Investigation records desk - availability response",
+    "sha256": "ad6efc31a7831ddd12f3b3e35cfe86895d8b9b41901828148963518c1f7dcf0b",
+    "sections": [
+      "D12.S01",
+      "D12.S02",
+      "D12.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D13",
+    "title": "R3 corrective-action proposal register",
+    "sha256": "2419706ce0eead90babae90dd1f832409be0d74c607fd2a7c7e902f8285eef74",
+    "sections": [
+      "D13.S01",
+      "D13.S02",
+      "D13.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D14",
+    "title": "Recovered assembly - condition inspection",
+    "sha256": "a60e65c9fa296a24e878d6d590b7a2d5dd8cbd7a4ca863b44f3c48cc60dd098a",
+    "sections": [
+      "D14.S01",
+      "D14.S02",
+      "D14.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": false
+  },
+  {
+    "id": "D15",
+    "title": "Preliminary investigation note - unreviewed",
+    "sha256": "ebaba8e641fd5092ec5a05c215cb3787d5119caf81428809f486fb0c45c883dc",
+    "sections": [
+      "D15.S01",
+      "D15.S02",
+      "D15.S03"
+    ],
+    "provenance": "Authored synthetic surrounding record; unchanged from R3-INT-01",
+    "initial": true
+  }
+]

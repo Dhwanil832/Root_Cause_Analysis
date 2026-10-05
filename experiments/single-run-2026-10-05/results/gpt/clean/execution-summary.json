@@ -1,0 +1,18 @@
+{
+  "mode": "clean",
+  "packets": [
+    {
+      "task": "S01-A",
+      "stage": "S01",
+      "score": null,
+      "status": "execution_failure",
+      "category": "codex_execution",
+      "detail": "Codex exited 1; preserved stderr/events"
+    }
+  ],
+  "completed_answers": 0,
+  "processed_tasks": 1,
+  "target_tasks": 17,
+  "score": null,
+  "scoring_status": "manual_semantic_review_required"
+}

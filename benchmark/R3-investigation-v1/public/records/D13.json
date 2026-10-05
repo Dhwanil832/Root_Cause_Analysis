@@ -1,0 +1,24 @@
+{
+  "id": "D13",
+  "title": "R3 corrective-action proposal register",
+  "revision": "0",
+  "issued": "2024-10-18 14:00",
+  "kind": "action register",
+  "sections": [
+    {
+      "id": "D13.S01",
+      "heading": "Proposals",
+      "text": "Propose a travel stop for the backup-roll-removed configuration; review keeper coverage through offset travel; evaluate a positive raised-yoke block; replace V17; review stored-energy controls."
+    },
+    {
+      "id": "D13.S02",
+      "heading": "Status",
+      "text": "All entries are Identified. Effectiveness criteria have not been checked and implementation is not documented in this register."
+    },
+    {
+      "id": "D13.S03",
+      "heading": "Limit",
+      "text": "A proposed modification is not evidence that the existing feature was absent, that its absence caused this event, or that the proposed design has been validated."
+    }
+  ]
+}

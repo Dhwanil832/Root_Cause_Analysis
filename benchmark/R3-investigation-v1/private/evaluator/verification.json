@@ -1,0 +1,25 @@
+{
+  "record_count": 17,
+  "record_copies_exact": true,
+  "original_chart_hash_matches": true,
+  "prior_ground_truth_hash_matches": true,
+  "all_criterion_section_refs_exist": true,
+  "arithmetic": {
+    "volume_cm3": [
+      390,
+      410
+    ],
+    "area_cm2": 100,
+    "hydraulic_motion_mm": [
+      39.0,
+      41.0
+    ],
+    "relative_motion_mm": [
+      38,
+      42
+    ],
+    "seat_threshold_mm": 30
+  },
+  "scope": "Internal source consistency and assistant review; no independent engineering certification.",
+  "model_calls_this_preparation": 0
+}

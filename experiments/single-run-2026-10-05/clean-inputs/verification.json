@@ -1,0 +1,223 @@
+[
+  {
+    "task": "S01-A",
+    "original_packet_hash": "4b44ebd6c4e0487b69d94dbd31237a5b47a7eb6dfb353a3a35539f6efd72e0c7",
+    "current_packet_hash": "92498300653b96d3f2acea36b4830bc00ac120c7e651cbdd9d31f3d1bcee37d2",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S02-H",
+    "original_packet_hash": "a75610d3613332c0a0ab8c3e7ca1f43deb59c0e9bcf7ceb24aa14debd1b4005d",
+    "current_packet_hash": "dfce17df39c30b3dc4c25af7c304cc9cd270d81c67056097bb4eb0cdde9573e1",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S02-M",
+    "original_packet_hash": "8de8fb2c60372b1d3fc90c4b4cc4f5414b7eb6ba9550c6e34563c808bbc5696e",
+    "current_packet_hash": "4e608ed1b13a3e2ef5277bbb1386c2f2cf4487443a43a4fbdb2dc0ac9c7719d4",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S03-A",
+    "original_packet_hash": "da2a2bcc7f27e389bc117279789c87ad6e45cb3822e92ea97f06ac9297b6c639",
+    "current_packet_hash": "23a7103ead7776d8e5c13563c3598de30ec50f733ab24d4f32012c230534ff88",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S04-A",
+    "original_packet_hash": "7f741f51e37ed10ffb816971707fbf2404e07411e69572afe67f42acee84e6d2",
+    "current_packet_hash": "e16710eeeb3e5eb708fe8ce438b53c4b136030ab2cd5e611550352398eae35ae",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S04-B",
+    "original_packet_hash": "9e38c5eafda9f8f259cf5b98b790f8441a717a0e47c8740ff1fc20a1e2570b43",
+    "current_packet_hash": "a773f932b1f2043241d462417185a7b70b681f37aba2174a7fe791cd7c7e82b2",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S05-A",
+    "original_packet_hash": "db9f7106dbeb5e07d60fe78d0f3cc284e9ca78e40866d8ca3761a7de55880f6e",
+    "current_packet_hash": "d2f0d1fcb55e36ca59ad3c6bb7b5c0c38c8cb867311965bbafa3cdcea0516183",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S06-A",
+    "original_packet_hash": "ce86da5b961ac6bea2230b5641c695ff95e99dac293c12fd9a3b047a45d01024",
+    "current_packet_hash": "43f43e18947bb61bf168415c7f16a823c925a972d7df7480de31b8fec5c39334",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S07-A",
+    "original_packet_hash": "9e43d2c9516ceba61ce0acdac26755a492608407cb76805fedbdb0cddb54a1ab",
+    "current_packet_hash": "484c417b1f3c6c72202b541296e3b9f103d9503a89d18cb0e7d312833ff3b2c5",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S08-V",
+    "original_packet_hash": "6fa9c0011afb8fdf9d1db8d1e58921a28f588ac1649ccbd59e1d34dc86f64b62",
+    "current_packet_hash": "84c0d2c985a0d4b2933110e9df2ae9eee19f286ad545552c8a9585fd8ca85ff0",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S08-B",
+    "original_packet_hash": "ed855653fc07fcfa5ccd5f808429725a1f175e3070f5cba5d86dd95eac371f5f",
+    "current_packet_hash": "967f5c24605987615f9474f4c633e9df2073088bf0acb9fd74fbb22309dc6d69",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S08-C",
+    "original_packet_hash": "15944967c1529e8b2dec18d9d98a8698f399ddfcede833737e23bcfeb2156288",
+    "current_packet_hash": "35c9649c5b7677d488f78004e946e0abcbe5345ae20bad2ee37078df01a63df3",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S09-V",
+    "original_packet_hash": "e57287cf3c1e289b196203d8b76886d6a8a9acdef5ce4c4f279ad0437854455e",
+    "current_packet_hash": "f5d8c6c5f1eddb826cda4545224c4145f1e80cbb1d9c2bcab8ba41bfc0109c96",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S09-K",
+    "original_packet_hash": "9f69177234ca638ee499cd62d27b7b46faede95a28b23297076b73475b1588d9",
+    "current_packet_hash": "14a91437c972e9fcfba90d2cafecb644ac4763643ccf42213583c73d4658bbb6",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S10-A",
+    "original_packet_hash": "c15af1eb54d381da1d56612921e03767b85a519ab3e1481c710ac270018ea47d",
+    "current_packet_hash": "b1192e42d2eb91e1b3cb9cebec1c7524b8f0c69f239ba3e8dd87e38b9aa58fc0",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S11-A",
+    "original_packet_hash": "495d375c1fed05e786cc3ab7417428cc68b96a7617e22cd80e9e070d7ca49d91",
+    "current_packet_hash": "9fd9542ce6d89199846449e0fcc61894147e0b3ac2e6ffcd3d6e823cd9a817e1",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  },
+  {
+    "task": "S12-A",
+    "original_packet_hash": "8fdb1a744d5a3c7cd3f08800313f855fddf935d5ec9eaa4af4cbbb7389c604fe",
+    "current_packet_hash": "b82cb4787a54ae23145af7981caf682b06307ac9eed9e1444f918675afb2255c",
+    "content_and_assignment_unchanged": true,
+    "added_fields": [
+      "dependency_relations",
+      "reassessment_required",
+      "runtime_contract",
+      "source_changes",
+      "upstream_dispositions"
+    ]
+  }
+]

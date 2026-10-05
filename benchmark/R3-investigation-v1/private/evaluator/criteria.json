@@ -1,0 +1,1538 @@
+[
+  {
+    "id": "S01.01",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Retain the carrier fall into the pit onto sled/scaffold as the focal occurrence",
+    "source_refs": [
+      "D01.S01"
+    ],
+    "not_credit": "Treat a proposed cause as the observed focal event",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S01.02",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Identify the raised, backup-roll-removed maintenance configuration",
+    "source_refs": [
+      "D01.S01",
+      "D02.S01"
+    ],
+    "not_credit": "Use normal rolling configuration without qualification",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S01.03",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Use C17/V17 tags to resolve A/B naming ambiguity",
+    "source_refs": [
+      "D04.S02"
+    ],
+    "not_credit": "Assign a circuit from its A/B nickname alone",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S01.04",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Distinguish CLOSED indication from hydraulic sealing",
+    "source_refs": [
+      "D02.S03"
+    ],
+    "not_credit": "Confirm tight isolation from handle position",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S01.05",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Distinguish electrical isolation from positive mechanical restraint",
+    "source_refs": [
+      "D02.S06"
+    ],
+    "not_credit": "Conclude electrical isolation removed gravity",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S01.06",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Identify D15 as an unreviewed interpretation with no independent corroboration",
+    "source_refs": [
+      "D15.S01",
+      "D15.S02",
+      "D15.S03"
+    ],
+    "not_credit": "Count repeated interpretation as a new observation",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S01.07",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Keep actual block presence unknown from the procedure alone",
+    "source_refs": [
+      "D04.S03"
+    ],
+    "not_credit": "Infer actual no-block execution from the omitted instruction",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S01.08",
+    "stage": "S01",
+    "stage_name": "Incident understanding",
+    "role": "intake",
+    "expected": "Prioritize incident motion and actual isolation/restraint clarification",
+    "source_refs": [
+      "D01.S03",
+      "D02.S04",
+      "D04.S03"
+    ],
+    "not_credit": "Begin with unrelated organizational questions or claim complete causal closure",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S01-A"
+  },
+  {
+    "id": "S02.01",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Propose fluid loss permitting loaded yoke descent as a conditional mechanism",
+    "source_refs": [
+      "D02.S02"
+    ],
+    "not_credit": "Confirm incident leakage before incident records arrive",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-H"
+  },
+  {
+    "id": "S02.02",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Keep V17 seat leakage, external loss and alternate paths as distinguishable hydraulic candidates",
+    "source_refs": [
+      "D02.S02",
+      "D02.S03"
+    ],
+    "not_credit": "Treat every fluid-loss route as the same proposition",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-H"
+  },
+  {
+    "id": "S02.03",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Specify incident flow/boundary evidence that distinguishes hydraulic paths",
+    "source_refs": [
+      "D02.S02",
+      "D01.S03"
+    ],
+    "not_credit": "Ask only whether the valve was CLOSED",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-H"
+  },
+  {
+    "id": "S02.04",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Include restraint/load premises when testing fluid-loss contribution",
+    "source_refs": [
+      "D02.S02",
+      "D02.S06"
+    ],
+    "not_credit": "Treat valve leakage alone as sufficient for the full fall",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-H"
+  },
+  {
+    "id": "S02.05",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Test relative yoke/carrier motion rather than yoke travel alone",
+    "source_refs": [
+      "D02.S04",
+      "D02.S05"
+    ],
+    "not_credit": "Assume a moving yoke necessarily withdraws from a following carrier",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-M"
+  },
+  {
+    "id": "S02.06",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Keep primary seating loss separate from keeper-release mode",
+    "source_refs": [
+      "D02.S05"
+    ],
+    "not_credit": "Equate reaching the primary threshold with proof of keeper bypass",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-M"
+  },
+  {
+    "id": "S02.07",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Propose distinct offset, rotation or deformation/geometry candidates for keeper release",
+    "source_refs": [
+      "D02.S05",
+      "D01.S02"
+    ],
+    "not_credit": "Confirm one release mode from the fall or recovered attachment",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-M"
+  },
+  {
+    "id": "S02.08",
+    "stage": "S02",
+    "stage_name": "Mechanism hypotheses",
+    "role": "specialist",
+    "expected": "Request time/configuration-relevant contact and keeper geometry evidence",
+    "source_refs": [
+      "D02.S04",
+      "D02.S05"
+    ],
+    "not_credit": "Use an intact keeper alone to rule out dynamic release",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S02-M"
+  },
+  {
+    "id": "S03.01",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "Merge two descriptions of the same scoped hydraulic-leak hypothesis without losing either citation",
+    "source_refs": [
+      "D02.S02",
+      "fixture:equivalent_proposals"
+    ],
+    "not_credit": "Keep duplicate hypotheses solely because specialist IDs differ",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S03.02",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "Preserve hydraulic support loss and primary relative withdrawal as distinct steps",
+    "source_refs": [
+      "D02.S02",
+      "D02.S04",
+      "D02.S05"
+    ],
+    "not_credit": "Collapse all mechanisms into one valve-caused-fall claim",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S03.03",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "Preserve keeper release as a distinct unresolved hypothesis",
+    "source_refs": [
+      "D02.S05"
+    ],
+    "not_credit": "Treat keeper mode as answered by the hydraulic hypothesis",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S03.04",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "Combine overlapping motion-evidence requests into shared acquisition",
+    "source_refs": [
+      "fixture:overlapping_requests",
+      "D02.S04"
+    ],
+    "not_credit": "Ask separately for the same clip under two specialist labels",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S03.05",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "Approve requests with incident asset, interval and needed measurement scope",
+    "source_refs": [
+      "D01.S01",
+      "D02.S01",
+      "D04.S02"
+    ],
+    "not_credit": "Approve an unbounded request for all company documents",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S03.06",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "State how requested motion/hydraulic evidence supports or challenges hypotheses",
+    "source_refs": [
+      "D02.S02",
+      "D02.S04",
+      "D02.S05"
+    ],
+    "not_credit": "Request records without a discriminating purpose",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S03.07",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "Retain conditional hypothesis status until occurrence evidence arrives",
+    "source_refs": [
+      "D01.S03",
+      "D02.S05"
+    ],
+    "not_credit": "Promote a plausible specialist explanation to a supported incident cause",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S03.08",
+    "stage": "S03",
+    "stage_name": "Hypothesis and request review",
+    "role": "lead",
+    "expected": "Dispatch useful specialist/evidence work without waiting for complete machine knowledge",
+    "source_refs": [
+      "harness:lead-contract"
+    ],
+    "not_credit": "Stop all branches because one mechanism is unknown",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S03-A"
+  },
+  {
+    "id": "S04.01",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Distinguish documents searched from documents that answer the motion request",
+    "source_refs": [
+      "D01.S03",
+      "D02.S04"
+    ],
+    "not_credit": "Treat a notice saying video exists as the video measurement",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-A"
+  },
+  {
+    "id": "S04.02",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Keep the initial missing motion measurement awaiting user rather than disproven/unavailable",
+    "source_refs": [
+      "D01.S03"
+    ],
+    "not_credit": "Declare the motion route impossible from a search miss",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-A"
+  },
+  {
+    "id": "S04.03",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Ask for the relevant motion interval and both moving objects",
+    "source_refs": [
+      "D02.S04",
+      "D01.S01"
+    ],
+    "not_credit": "Ask only for absolute yoke travel",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-A"
+  },
+  {
+    "id": "S04.04",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Keep evidence-worker output about request coverage rather than causal adjudication",
+    "source_refs": [
+      "harness:evidence-contract"
+    ],
+    "not_credit": "Commit supported causal nodes in an evidence-worker response",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-A"
+  },
+  {
+    "id": "S04.05",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Recognize D07 answers vertical yoke/carrier displacement over the same interval",
+    "source_refs": [
+      "D07.S01",
+      "D07.S02"
+    ],
+    "not_credit": "Leave those delivered fields unacknowledged",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-B"
+  },
+  {
+    "id": "S04.06",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Separate D07 release timing from the displacement measurement endpoint",
+    "source_refs": [
+      "D07.S02",
+      "D07.S03"
+    ],
+    "not_credit": "Claim the displacement interval includes all release motion",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-B"
+  },
+  {
+    "id": "S04.07",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Retain keeper interface/offset as not covered by D07",
+    "source_refs": [
+      "D07.S03"
+    ],
+    "not_credit": "Say receipt of the video resolves keeper mode",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-B"
+  },
+  {
+    "id": "S04.08",
+    "stage": "S04",
+    "stage_name": "Search and request coverage",
+    "role": "evidence",
+    "expected": "Narrow the remaining request fields to genuine uncovered scope",
+    "source_refs": [
+      "D07.S01",
+      "D07.S02",
+      "D07.S03"
+    ],
+    "not_credit": "Request the same already-supplied vertical measurements again",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S04-B"
+  },
+  {
+    "id": "S05.01",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Extract yoke displacement 40 +/- 1 mm",
+    "source_refs": [
+      "D07.S02"
+    ],
+    "not_credit": "Wrong object, unit or magnitude",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S05.02",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Extract carrier displacement 0 +/- 1 mm in the same frame/window",
+    "source_refs": [
+      "D07.S02"
+    ],
+    "not_credit": "Treat the carrier displacement as unmeasured or exactly zero without its bound",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S05.03",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Compute relative withdrawal interval 38-42 mm",
+    "source_refs": [
+      "D02.S04",
+      "D07.S02"
+    ],
+    "not_credit": "Use only 40 mm absolute travel or unjustified independent-error combination",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S05.04",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Conclude the 30 mm primary seat threshold is exceeded by the measured endpoint",
+    "source_refs": [
+      "D02.S05",
+      "D07.S02"
+    ],
+    "not_credit": "Leave primary loss unassessable despite the applicable measurement",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S05.05",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Associate visible contact and stationary carrier with a scoped holding contribution",
+    "source_refs": [
+      "D02.S04",
+      "D07.S02"
+    ],
+    "not_credit": "Assert that yoke descent caused the carrier to remain stationary",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S05.06",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Preserve the 13:24:00 endpoint versus 13:24:03 release distinction",
+    "source_refs": [
+      "D07.S02",
+      "D07.S03"
+    ],
+    "not_credit": "Invent a measured displacement during the unmeasured release interval",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S05.07",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Keep the specific keeper mode unresolved despite primary seating loss",
+    "source_refs": [
+      "D07.S03",
+      "D02.S05"
+    ],
+    "not_credit": "Infer a specific offset or rotation merely because the carrier fell",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S05.08",
+    "stage": "S05",
+    "stage_name": "Motion and witness assessment",
+    "role": "assessor",
+    "expected": "Treat W-A/W-B as compatible, limited observations of different components",
+    "source_refs": [
+      "D06A.S01",
+      "D06A.S02",
+      "D06B.S01",
+      "D06B.S02"
+    ],
+    "not_credit": "Declare contradictory witnesses or use them as calibrated displacement measurements",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S05-A"
+  },
+  {
+    "id": "S06.01",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Use D08 incident evidence to identify flow through the tagged V17 route despite CLOSED indication",
+    "source_refs": [
+      "D08.S01",
+      "D08.S02"
+    ],
+    "not_credit": "Use D09 later testing alone to establish the incident rate",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S06.02",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Convert 0.400 +/- 0.010 L to 390-410 cm3",
+    "source_refs": [
+      "D08.S02"
+    ],
+    "not_credit": "A factor-of-ten or litre-to-volume conversion error",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S06.03",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Apply 100 cm2 area and 1:1 motion to obtain 39-41 mm yoke displacement",
+    "source_refs": [
+      "D02.S02",
+      "D08.S03"
+    ],
+    "not_credit": "Omit area/ratio or give incompatible displacement",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S06.04",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Recognize the hydraulic displacement is consistent with the motion measurement",
+    "source_refs": [
+      "D07.S02",
+      "D08.S02",
+      "D08.S03"
+    ],
+    "not_credit": "Claim the two calibrated ranges conflict",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S06.05",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Establish actual no-block condition from execution/boundary evidence",
+    "source_refs": [
+      "D05.S02",
+      "D08.S03"
+    ],
+    "not_credit": "Use procedure omission alone as proof of actual execution",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S06.06",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Refute sufficient external-loss/alternate-path explanations only within the measured boundary",
+    "source_refs": [
+      "D08.S02",
+      "D08.S03"
+    ],
+    "not_credit": "Universally exclude all hydraulic routes or ignore scope/sensitivity",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S06.07",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Combine fluid loss, raised load and absent positive restraint when explaining descent",
+    "source_refs": [
+      "D02.S02",
+      "D02.S06",
+      "D05.S02",
+      "D08.S02"
+    ],
+    "not_credit": "Say leakage alone caused the entire fall",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S06.08",
+    "stage": "S06",
+    "stage_name": "Hydraulics and execution assessment",
+    "role": "assessor",
+    "expected": "Leave component-defect onset and keeper mode unresolved after hydraulic confirmation",
+    "source_refs": [
+      "D08.S04"
+    ],
+    "not_credit": "Infer contamination age or full release dynamics from the flow meter",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S06-A"
+  },
+  {
+    "id": "S07.01",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Represent the observed fall independently of whether the complete causal path is established",
+    "source_refs": [
+      "D01.S01",
+      "D07.S03"
+    ],
+    "not_credit": "Withdraw the observed fall because a mechanism remains unknown",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S07.02",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Represent fluid loss plus load/no block jointly contributing to yoke descent",
+    "source_refs": [
+      "D02.S02",
+      "D05.S02",
+      "D08.S02"
+    ],
+    "not_credit": "A sufficient leakage-to-fall arrow with missing premises",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S07.03",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Represent both yoke and carrier motion as inputs to relative withdrawal",
+    "source_refs": [
+      "D02.S04",
+      "D07.S02"
+    ],
+    "not_credit": "A causal arrow from yoke descent to stationary carrier",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S07.04",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Represent relative threshold exceedance leading to primary seating loss",
+    "source_refs": [
+      "D02.S05",
+      "D07.S02"
+    ],
+    "not_credit": "Skip the relative measurement/threshold relationship",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S07.05",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Preserve an explicit unresolved keeper bridge before complete fall-path confirmation",
+    "source_refs": [
+      "D02.S05",
+      "D10.S03"
+    ],
+    "not_credit": "Mark the entire release path supported",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S07.06",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Keep actual block absence distinct from procedure omission",
+    "source_refs": [
+      "D04.S03",
+      "D05.S02"
+    ],
+    "not_credit": "Treat the two as an interchangeable node",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S07.07",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Represent procedure-to-absence contribution as unestablished without a decision/execution bridge",
+    "source_refs": [
+      "D04.S03",
+      "D05.S03"
+    ],
+    "not_credit": "Promote omission plus absence into proven procedural causation",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S07.08",
+    "stage": "S07",
+    "stage_name": "Physical causal board",
+    "role": "lead",
+    "expected": "Preserve independent established hydraulic/motion findings while keeper evidence is missing",
+    "source_refs": [
+      "D07.S02",
+      "D08.S02",
+      "D10.S03"
+    ],
+    "not_credit": "Make every physical finding unresolved because keeper mode is unknown",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S07-A"
+  },
+  {
+    "id": "S08.01",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Expand established V17 leakage into competing origin hypotheses",
+    "source_refs": [
+      "D08.S04",
+      "D02.S03"
+    ],
+    "not_credit": "Repeat only whether leakage occurred or assert one origin",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-V"
+  },
+  {
+    "id": "S08.02",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Seek component/maintenance evidence capable of distinguishing valve origins",
+    "source_refs": [
+      "D08.S04",
+      "D01.S03"
+    ],
+    "not_credit": "Request only another handle-position confirmation",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-V"
+  },
+  {
+    "id": "S08.03",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Investigate inspection/detection opportunity without assuming the policy physically caused contamination",
+    "source_refs": [
+      "D08.S04",
+      "D11.S02"
+    ],
+    "not_credit": "Assert maintenance policy created the contamination",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-V"
+  },
+  {
+    "id": "S08.04",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Expand actual block absence into competing procedure, requirement or execution explanations",
+    "source_refs": [
+      "D04.S03",
+      "D05.S02"
+    ],
+    "not_credit": "Treat absent block as the final organizational root cause",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-B"
+  },
+  {
+    "id": "S08.05",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Request relevant procedure approval, hazard review, applicable standards or execution rationale",
+    "source_refs": [
+      "D04.S03",
+      "D05.S03"
+    ],
+    "not_credit": "Ask unrelated broad management questions",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-B"
+  },
+  {
+    "id": "S08.06",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Keep deliberate noncompliance, training and budget origins conditional",
+    "source_refs": [
+      "D05.S03",
+      "D11.S03"
+    ],
+    "not_credit": "Confirm human intent or organizational reasons without evidence",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-B"
+  },
+  {
+    "id": "S08.07",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Investigate contact origins through maintenance configuration versus prior positioning/handling",
+    "source_refs": [
+      "D03C.S02",
+      "D05.S02",
+      "D07.S04"
+    ],
+    "not_credit": "Assume no stop alone explains precisely how contact arose",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-C"
+  },
+  {
+    "id": "S08.08",
+    "stage": "S08",
+    "stage_name": "Upstream hypotheses",
+    "role": "specialist",
+    "expected": "Seek earlier positioning/configuration evidence without re-requesting occluded incident keeper motion",
+    "source_refs": [
+      "D05.S01",
+      "D07.S03",
+      "D07.S04"
+    ],
+    "not_credit": "Recycle a known unavailable keeper view as the only contact-origin route",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S08-C"
+  },
+  {
+    "id": "S09.01",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Identify the retained maintenance practice as no scheduled V17 seat-leak inspection and replacement on reported defect",
+    "source_refs": [
+      "D11.S01"
+    ],
+    "not_credit": "Treat V18/V19 replacements as V17 maintenance",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-V"
+  },
+  {
+    "id": "S09.02",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Keep detectability and physical contamination causation unestablished by that practice",
+    "source_refs": [
+      "D11.S02"
+    ],
+    "not_credit": "Infer the particular defect would necessarily have been found",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-V"
+  },
+  {
+    "id": "S09.03",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Keep leakage/contamination onset undated",
+    "source_refs": [
+      "D11.S03",
+      "D12.S02"
+    ],
+    "not_credit": "Assign a pre-incident contamination age or onset",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-V"
+  },
+  {
+    "id": "S09.04",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Separate delivered history from unresolved origin evidence in request coverage",
+    "source_refs": [
+      "D09.S03",
+      "D11.S01",
+      "D11.S03"
+    ],
+    "not_credit": "Call the entire valve-origin request answered or wholly unanswered",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-V"
+  },
+  {
+    "id": "S09.05",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Mark retained incident offset/dynamic-envelope acquisition as explicitly unavailable",
+    "source_refs": [
+      "D12.S02"
+    ],
+    "not_credit": "Treat explicit unavailability as only an unperformed search",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-K"
+  },
+  {
+    "id": "S09.06",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Keep missing keeper evidence distinct from refuting its physical mechanism",
+    "source_refs": [
+      "D12.S03"
+    ],
+    "not_credit": "Refute keeper bypass because the requested record is unavailable",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-K"
+  },
+  {
+    "id": "S09.07",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Specify a new valid route: validated envelope plus independently bounded incident offset",
+    "source_refs": [
+      "D10.S04",
+      "D12.S03"
+    ],
+    "not_credit": "Reopen from another centered seated measurement alone",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-K"
+  },
+  {
+    "id": "S09.08",
+    "stage": "S09",
+    "stage_name": "Origin and availability evidence",
+    "role": "evidence",
+    "expected": "Keep other supported branches available while this acquisition route is blocked",
+    "source_refs": [
+      "D12.S03",
+      "D07.S02",
+      "D08.S02"
+    ],
+    "not_credit": "Stop or withdraw the entire investigation because one record is unavailable",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S09-K"
+  },
+  {
+    "id": "S10.01",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Use current revision C for the incident and limit superseded A to its normal-rolling configuration",
+    "source_refs": [
+      "D03A.S01",
+      "D03C.S01"
+    ],
+    "not_credit": "Import the backup-roll stop from the superseded normal arrangement",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S10.02",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Recognize centered 8 +/- 1 mm overlap excludes simple rigid centered seated passage only",
+    "source_refs": [
+      "D10.S02"
+    ],
+    "not_credit": "Use seated overlap to rule out all off-center dynamic release",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S10.03",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Refute gross keeper plate/fastener separation or fracture within recovery-inspection scope",
+    "source_refs": [
+      "D14.S01",
+      "D14.S03"
+    ],
+    "not_credit": "Refute every deformation/bypass hypothesis or leave the scoped negative unrecognized",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S10.04",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Keep crane/load-contact refutation limited to the covered time and envelope",
+    "source_refs": [
+      "D07.S04"
+    ],
+    "not_credit": "Exclude earlier handling or every possible external contact",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S10.05",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Use later V17 bench leakage as compatibility evidence with unknown defect timing",
+    "source_refs": [
+      "D09.S02",
+      "D09.S03"
+    ],
+    "not_credit": "Back-date the later rate/contamination automatically",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S10.06",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Keep D13 actions as identified proposals with no demonstrated implementation/effectiveness",
+    "source_refs": [
+      "D13.S01",
+      "D13.S02"
+    ],
+    "not_credit": "Treat a proposed modification as a completed validated control",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S10.07",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Distinguish observed physical conditions from why the procedure/design omitted controls",
+    "source_refs": [
+      "D04.S03",
+      "D03C.S02",
+      "D05.S03"
+    ],
+    "not_credit": "Turn an unanswered why-question into an established origin",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S10.08",
+    "stage": "S10",
+    "stage_name": "Boundaries and scoped negatives",
+    "role": "assessor",
+    "expected": "Treat unavailable analysis/measurements as knowledge limits rather than physical causes",
+    "source_refs": [
+      "D03C.S04",
+      "D12.S03"
+    ],
+    "not_credit": "Put missing documentation itself on the physical causal chain",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S10-A"
+  },
+  {
+    "id": "S11.01",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Close the motion request within the delivered vertical-motion/release scope",
+    "source_refs": [
+      "D07.S01",
+      "D07.S02",
+      "D07.S03"
+    ],
+    "not_credit": "Continue asking for those fulfilled measurements",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S11.02",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Close hydraulic acquisition within the delivered incident-flow/boundary scope",
+    "source_refs": [
+      "D08.S01",
+      "D08.S02",
+      "D08.S03"
+    ],
+    "not_credit": "Leave the supplied incident flow unacknowledged",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S11.03",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Keep valve-origin timing explicitly unresolved or blocked within its unavailable route",
+    "source_refs": [
+      "D09.S03",
+      "D11.S03",
+      "D12.S02"
+    ],
+    "not_credit": "Close origin timing as established",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S11.04",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Keep the unavailable keeper acquisition route visibly separate from open physical hypotheses",
+    "source_refs": [
+      "D10.S03",
+      "D12.S02"
+    ],
+    "not_credit": "Label all keeper candidates refuted or hide the blocked route",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S11.05",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Reuse equivalent requests rather than repeat unchanged completed acquisition",
+    "source_refs": [
+      "harness:lead-contract",
+      "D12.S02"
+    ],
+    "not_credit": "Make duplicate requests without changed evidence or scope",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S11.06",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Account for upstream origins of established valve, no-block and contact conditions",
+    "source_refs": [
+      "D08.S04",
+      "D04.S03",
+      "D05.S02"
+    ],
+    "not_credit": "Stop solely because immediate physical conditions are known",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S11.07",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Preserve useful independent work while a different branch waits",
+    "source_refs": [
+      "harness:lead-contract",
+      "D12.S03"
+    ],
+    "not_credit": "Make a missing keeper record a prerequisite for all upstream work",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S11.08",
+    "stage": "S11",
+    "stage_name": "Requests and stopping review",
+    "role": "lead",
+    "expected": "Declare partial/evidence-boundary status with concrete reopening conditions",
+    "source_refs": [
+      "D12.S02",
+      "D12.S03"
+    ],
+    "not_credit": "Call a resource pause or missing record exhaustive causal closure",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S11-A"
+  },
+  {
+    "id": "S12.01",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain the observed carrier fall as the focal occurrence",
+    "source_refs": [
+      "D01.S01",
+      "D07.S03"
+    ],
+    "not_credit": "Lose the focal event in the final state/report",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  },
+  {
+    "id": "S12.02",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain fluid loss plus raised load and absent block as the joint descent explanation",
+    "source_refs": [
+      "D02.S02",
+      "D05.S02",
+      "D08.S02"
+    ],
+    "not_credit": "Final explanation uses leakage alone as sufficient",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  },
+  {
+    "id": "S12.03",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain both motions/contact holding as the relative-withdrawal explanation",
+    "source_refs": [
+      "D02.S04",
+      "D07.S02"
+    ],
+    "not_credit": "Final explanation substitutes absolute yoke motion or an incorrect serial arrow",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  },
+  {
+    "id": "S12.04",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain relative withdrawal beyond 30 mm as the primary seating-loss explanation",
+    "source_refs": [
+      "D02.S05",
+      "D07.S02"
+    ],
+    "not_credit": "Lose the threshold relationship in the final artifact",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  },
+  {
+    "id": "S12.05",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain the specific keeper-release mechanism as unresolved",
+    "source_refs": [
+      "D07.S03",
+      "D10.S03"
+    ],
+    "not_credit": "Force complete keeper-path confirmation",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  },
+  {
+    "id": "S12.06",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain recovered attachment and centered geometry as limits rather than proof of dynamic retention",
+    "source_refs": [
+      "D14.S01",
+      "D10.S02"
+    ],
+    "not_credit": "Use intact attachment/centered overlap to rule out dynamic release",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  },
+  {
+    "id": "S12.07",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain the crane/contact negative with its time/envelope limits",
+    "source_refs": [
+      "D07.S04"
+    ],
+    "not_credit": "Drop the scoped negative or expand it beyond coverage",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  },
+  {
+    "id": "S12.08",
+    "stage": "S12",
+    "stage_name": "Final retained RCA",
+    "role": "lead",
+    "expected": "Retain gross keeper fracture/separation refutation within inspection scope",
+    "source_refs": [
+      "D14.S01",
+      "D14.S03"
+    ],
+    "not_credit": "Substitute initial beam/yoke no-fracture reporting for the keeper finding",
+    "points": 1,
+    "acceptable": "Equivalent supported meaning with the necessary conditions and scope. No exact wording, node ID or layout requirement.",
+    "contradiction_rule": "Credit presence separately; record any contradictory assertion and its exact location. Do not award a consistent-correct result when contradiction remains.",
+    "clean_packet": "S12-A"
+  }
+]

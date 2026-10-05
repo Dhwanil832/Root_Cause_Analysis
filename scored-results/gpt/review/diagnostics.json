@@ -1,0 +1,109 @@
+{
+  "reviewer": "Single unblinded Codex assistant; no independent adjudicator",
+  "method": "Frozen 96-criterion semantic-presence rubric and preselected logical stage windows. Exact wording/node layout is not required. Missing relations are not inferred by the reviewer.",
+  "chains": [
+    {
+      "id": "procedure_contribution",
+      "finding": "Procedure omission and observed no-block were incorrectly promoted into established causal contribution without a decision/execution bridge.",
+      "first_observable_failure": "repaired/case/calls/0010_assessor/answer.txt#/operations/8",
+      "correct_before_failure": [
+        "repaired/case/calls/0007_assessor/answer.txt#/operations/6",
+        "repaired/case/calls/0008_lead/answer.txt#/operations/6"
+      ],
+      "propagation": [
+        {
+          "reference": "repaired/case/calls/0011_lead/answer.txt#/operations/8",
+          "effect": "Lead commits the unsupported supported edge."
+        },
+        {
+          "reference": "repaired/case/calls/0014_specialist/answer.txt#/operations/4",
+          "effect": "Upstream specialist repeats and rationalizes the same contribution despite missing conduct/rationale evidence."
+        },
+        {
+          "reference": "repaired/case/calls/0015_lead/answer.txt#/operations/11",
+          "effect": "Lead retains the supported edge."
+        },
+        {
+          "reference": "repaired/case/calls/0020_lead/answer.txt#/upstream_dispositions",
+          "effect": "Stopping review treats actual no-block as already explained."
+        },
+        {
+          "reference": "repaired/case/calls/0023_lead/answer.txt#/upstream_dispositions/0",
+          "effect": "Final stopping review preserves the unsupported closure."
+        }
+      ],
+      "affected_criteria": [
+        "S07.07",
+        "S08.04",
+        "S11.06"
+      ],
+      "controller_effect": "All batches were mechanically accepted. Structural acceptance did not validate the claimed causal bridge."
+    },
+    {
+      "id": "contact_holding_and_origin",
+      "finding": "Contact visibility and both motion values were extracted, but contact holding the carrier was not stated as an incident causal contribution. No contact-origin investigation followed.",
+      "first_observable_failure": "repaired/case/calls/0010_assessor/answer.txt#/operations/0/reason",
+      "propagation": [
+        {
+          "reference": "repaired/case/calls/0011_lead/answer.txt#/operations/4",
+          "effect": "Board bundles hydraulic loss and relative withdrawal without the scoped contact-holding explanation."
+        },
+        {
+          "reference": "repaired/case/calls/0011_lead/answer.txt#/next_work",
+          "effect": "Dispatch targets keeper, hydraulic and work-control branches; no contact-origin branch."
+        },
+        {
+          "reference": "repaired/case/calls/0015_lead/answer.txt#/next_work",
+          "effect": "Additional searches still do not investigate earlier positioning/configuration."
+        },
+        {
+          "reference": "repaired/case/calls/0023_lead/answer.txt#/upstream_dispositions",
+          "effect": "Stopping review omits contact origin."
+        }
+      ],
+      "affected_criteria": [
+        "S05.05",
+        "S08.07",
+        "S08.08",
+        "S11.06",
+        "S12.03"
+      ],
+      "controller_effect": "No discarded valid proposal identified. This is an observed omission/routing sequence; chronology alone is not controlled proof of causation."
+    },
+    {
+      "id": "joint_descent_conditions",
+      "finding": "No-block is retained in the unresolved full-fall edge but raised load and lack of restraint are not explicitly combined as conditions of yoke descent.",
+      "first_observable_failure": "repaired/case/calls/0010_assessor/answer.txt#/operations/4",
+      "propagation": [
+        {
+          "reference": "repaired/case/calls/0011_lead/answer.txt#/operations/7",
+          "effect": "No-block joins the full-fall edge rather than the descent explanation."
+        },
+        {
+          "reference": "repaired/case/calls/0015_lead/answer.txt#/operations/4",
+          "effect": "New supported leakage-to-withdrawal edge still omits the load/no-restraint conditioning."
+        },
+        {
+          "reference": "repaired/case/calls/0023_lead/answer.txt#/upstream_dispositions/1",
+          "effect": "Final account calls hydraulic withdrawal explained without restoring those conditions."
+        }
+      ],
+      "affected_criteria": [
+        "S06.07",
+        "S07.02",
+        "S12.02"
+      ],
+      "controller_effect": "No controller rejection or staleness explains the missing relationship."
+    }
+  ],
+  "late_recovery": {
+    "criterion_id": "S10.06",
+    "primary_window": "Calls 10\u201311",
+    "later_correct_output": "repaired/case/calls/0016_evidence/answer.txt#/operations/0/reason",
+    "later_committed_context": "repaired/case/calls/0019_lead/answer.txt#/operations/2/reason",
+    "primary_score_unchanged": true
+  },
+  "request_label_diagnostic": "Three final requests remain partial while their exact coverage reasons explicitly state availability boundaries. The frozen criteria score meaning, not an exact blocked enum, so this alone is not a primary-score failure.",
+  "retention_policy": "Final active request coverage history counts as retained model-produced meaning. Hence scoped crane and keeper-fracture negatives earn S12 credit despite lacking dedicated graph nodes.",
+  "comparability": "One repaired-runtime run. Historical fallback scores used different runtime versions and are not an identical-setting comparison."
+}
