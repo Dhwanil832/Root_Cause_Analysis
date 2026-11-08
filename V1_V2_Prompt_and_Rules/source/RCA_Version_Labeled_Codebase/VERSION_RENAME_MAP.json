@@ -1,0 +1,47 @@
+{
+  "current_default": "v2_full",
+  "roles": {
+    "intake": {
+      "baseline": "v1_basic",
+      "structured_llm": "v2_structured_llm"
+    },
+    "specialist": {
+      "baseline": "v1_basic",
+      "causal_frontier": "v2_causal_frontier",
+      "iris_inspired": "v2_iris_inspired"
+    },
+    "lead": {
+      "baseline": "v1_basic",
+      "causal_guided": "v2_causal_guided",
+      "joint_route_planner": "v2_joint_route_planner"
+    },
+    "evidence_worker": {
+      "baseline": "ablation_no_llm",
+      "prompt_only": "v1_basic",
+      "adaptive_routes": "v2_adaptive_routes"
+    },
+    "assessor": {
+      "baseline": "ablation_no_llm",
+      "prompt_only": "v1_basic",
+      "impact_aware": "v2_impact_aware"
+    }
+  },
+  "config_profiles": {
+    "baseline": "ablation_no_llm",
+    "prompt_only": "v1_basic",
+    "prompts_only": "v2_prompts_only",
+    "methods_only": "v2_methods_only",
+    "full_system": "v2_full",
+    "frontier_only": "ablation_v2_frontier_only",
+    "iris_prompt": "ablation_v2_iris_specialist",
+    "planner_only": "ablation_v2_planner_only",
+    "route_only": "ablation_v2_route_only",
+    "assessor_only": "ablation_v2_assessor_only",
+    "planner_and_routes": "ablation_v2_planner_and_routes",
+    "openrouter_gptoss": "v2_openrouter_gptoss",
+    "openrouter_nemotron": "v2_openrouter_nemotron"
+  },
+  "rename_only": true,
+  "external_model_calls_performed": 0,
+  "kernel_module": "revision/v2/kernel.py"
+}

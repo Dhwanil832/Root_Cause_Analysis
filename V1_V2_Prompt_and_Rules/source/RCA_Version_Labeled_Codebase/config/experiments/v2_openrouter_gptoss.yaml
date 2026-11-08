@@ -1,0 +1,4 @@
+llm:
+  provider: openrouter
+  model: openai/gpt-oss-120b:free
+  response_format: 'off'

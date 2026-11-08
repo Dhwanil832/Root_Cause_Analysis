@@ -1,0 +1,38 @@
+{
+  "IR-01": {
+    "name": "Initial incident report",
+    "owner": "reporter",
+    "release": "initial",
+    "text": "At 10:05 AM, a worker slipped on standing water in the west aisle next to Bottle Filler F-2 and injured a knee. The source of the water was unknown when this report was filed."
+  },
+  "CAM-17": {
+    "name": "Camera review worksheet",
+    "owner": "security",
+    "release": "on_request",
+    "text": "Camera-review worksheet C-17: At 09:50 AM, a cleaner is shown mopping next to the west aisle of Bottle Filler F-2."
+  },
+  "COR-17": {
+    "name": "Unsolicited correction of camera label",
+    "owner": "security",
+    "release": "unsolicited",
+    "text": "Correction to worksheet C-17: The camera feed was mislabeled. The 09:50 AM mopping occurred in the East Annex beside F-4, not the west aisle of F-2."
+  },
+  "MNT-81": {
+    "name": "Maintenance ticket",
+    "owner": "maintenance",
+    "release": "on_request",
+    "text": "Maintenance ticket M-81: At 09:45 AM an operator reported a loose coupling on the F-2 rinse-drain hose. Repair work began at 10:25 AM. The ticket contains no incident-time measurement of water flow."
+  },
+  "OPS-02": {
+    "name": "Equipment function note",
+    "owner": "engineering",
+    "release": "on_request",
+    "text": "Equipment note for F-2: During filling operation, rinse water flows through a flexible drain hose to a floor receptor. If a hose coupling is loose, rinse water may escape onto the surrounding floor. This note describes the intended setup, not the actual incident configuration."
+  },
+  "WIT-06": {
+    "name": "Witness statement",
+    "owner": "shift_supervisor",
+    "release": "on_request",
+    "text": "Witness statement W-6: At approximately 10:01 AM I saw water dripping from the F-2 rinse-drain hose coupling onto the west aisle floor. Water extended into the worker walking path. I did not check when the coupling became loose."
+  }
+}

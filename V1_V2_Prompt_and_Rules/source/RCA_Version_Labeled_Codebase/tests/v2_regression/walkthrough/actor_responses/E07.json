@@ -1,0 +1,114 @@
+{
+  "document": "E07",
+  "actor": "ChatGPT_current_conversation_open_book",
+  "origin_group": "E07",
+  "observations": [
+    {
+      "key": "RB-3|centred_straight_withdrawal_restricted|conditional|centred_baseline",
+      "basis": "conditional_model",
+      "positive": true,
+      "citations": [
+        {
+          "document": "E07",
+          "quote": "At the centred-resting position, the measured condition leaves overlap that prevents the link arm from passing the keeper/yoke interface by the straight withdrawal considered in this worksheet."
+        }
+      ],
+      "requires": []
+    },
+    {
+      "key": "RB-3|offset_release_kinematically_possible|conditional|baseline",
+      "basis": "conditional_model",
+      "positive": true,
+      "citations": [
+        {
+          "document": "E07",
+          "quote": "For a prescribed outward link-arm displacement, the baseline model permits loss of keeper/yoke overlap. Lowering the yoke relative to a carrier held in that offset pose permits disengagement in the idealised check."
+        }
+      ],
+      "requires": []
+    }
+  ],
+  "new_episodes": [
+    {
+      "question": "What establishes the incident offset magnitude and hidden keeper-interface behavior?",
+      "purpose": "The conditional geometry and qualitative image movement do not measure the full release trajectory.",
+      "asset": "RB-3",
+      "scope": "day0",
+      "fields": [
+        "incident_offset_magnitude",
+        "hidden_interface_trajectory"
+      ],
+      "routes": [
+        "engineering_geometry",
+        "video"
+      ],
+      "citations": [
+        {
+          "document": "E07",
+          "quote": "The source CAD model and a full numerical trajectory are not included in this extract."
+        }
+      ],
+      "targets": [
+        "RB-3|partial_offset_release_account|day0|original"
+      ],
+      "importance": 2
+    }
+  ],
+  "rules": [
+    {
+      "id": "qualified_offset_account",
+      "premises": [
+        "RB-3|relative_movement_has_observational_support|day0|original",
+        "RB-3|outward_position_observed|day0|original",
+        "RB-3|offset_release_kinematically_possible|conditional|baseline"
+      ],
+      "conclusion": "RB-3|partial_offset_release_account|day0|original",
+      "warrant": "Qualitative movement and outward-pose observations are consistent with the conditional kinematic pathway. This supports a PARTIAL account only: neither prescribed offset magnitude nor the final hidden interface is established.",
+      "evidence_refs": [
+        {
+          "source": "E07",
+          "version": 1
+        }
+      ],
+      "grade": "conditional_support"
+    }
+  ],
+  "review_note": "Interpreted by the same chat assistant with prior reference and fixture exposure. Not a blinded or independently scored LLM trial.",
+  "coverage": [
+    {
+      "need": "Q004",
+      "fields": [
+        "centred_geometry",
+        "conditional_offset_geometry"
+      ],
+      "refs": [
+        {
+          "source": "E07",
+          "version": 1
+        }
+      ],
+      "route": "engineering_geometry"
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "M_offset_release",
+      "effect": "RB-3|connection_disengagement|day0|original",
+      "causes": [
+        "RB-3|yoke_marker_descended_in_image|day0|original",
+        "RB-3|carrier_marker_approximately_stationary|day0|original",
+        "RB-3|outward_position_observed|day0|original",
+        "RB-3|incident_interface_geometry_permitted_release|day0|original"
+      ],
+      "support_key": "RB-3|partial_offset_release_account|day0|original",
+      "grade": "qualified_partial",
+      "rationale": "Partial model-consistency support only. The actual prescribed offset magnitude and final keeper-interface path remain unresolved.",
+      "citations": [
+        {
+          "document": "E07",
+          "quote": "Lowering the yoke relative to a carrier held in that offset pose permits disengagement in the idealised check."
+        }
+      ]
+    }
+  ]
+}

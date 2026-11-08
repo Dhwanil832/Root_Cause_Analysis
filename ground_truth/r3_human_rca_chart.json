@@ -1,0 +1,74 @@
+{
+  "source": "01 - Original Supplied R3 RCA Chart.pdf (Root Cause Analysis Report 16515, rev 0, 10/14/2024, CauseLink)",
+  "status": "DRAFT transcription for the user to verify. Node text is verbatim from the PDF text layer. Edges were read from a rendering of the PDF's vector drawing, so check them.",
+  "event": {
+    "title": "SIFp-80HSM: R3 Carrier Beam Near Miss 10.14.24",
+    "focal_point": "R3 Delivery Carrier Beam fell into R3 Mill Pit onto Sled & Scaffold Platform",
+    "start": "10/14/2024 13:00", "end": "10/14/2024 13:24", "investigation_start": "10/14/2024 13:01",
+    "unique_timing": "Start of Fall Outage - Mill Shutdown approximately 12 hours prior to incident",
+    "business_unit": "80 HSM - Roughing Mill",
+    "actual_impact": "Damage to equipment, sled, carrier beam, scaffold platform; $50,000",
+    "potential_impact": "Serious Injury or Fatality to Team Members including Visiting Workers"
+  },
+  "nodes": [
+    {"id": "G00", "text": "R3 Delivery Carrier Beam fell into R3 Mill Pit onto Sled & Scaffold Platform", "focal": true},
+    {"id": "G01", "text": "Yoke drifted but carrier beam did not"},
+    {"id": "G02", "text": "R3 Backup Raise \"isolated\""},
+    {"id": "G03", "text": "Keeper installation & location"},
+    {"id": "G04", "text": "No stop for carrier beam without backup rolls installed"},
+    {"id": "G05", "text": "Carrier beam came off of yoke with the keeper plate still intact (bolted)"},
+    {"id": "G06", "text": "Carrier beam wedged on mill spreader and mill posts"},
+    {"id": "G07", "text": "Hydraulics shut off with isolation valve slowly bleeding backwards allowing the cylinder fluid to vacate the pipe"},
+    {"id": "G08", "text": "carrier beam shifted off of yoke when stored in the upright position due to being wedge against mill beam housing with no \"stops\" or back up rolls installed"},
+    {"id": "G09", "text": "NO mechanism to prevent carrier beams from being wedged"},
+    {"id": "G10", "text": "carrier beam shifted"},
+    {"id": "G11", "text": "Excess Clearance????? Measurements do not allow for clearance to get over the yoke \"in resting position\"", "open": true},
+    {"id": "G12", "text": "Original Mill Design"},
+    {"id": "G13", "text": "R3 Hydraulic Isolation valve has slow bleed through"},
+    {"id": "G14", "text": "Isolation valves are not routinely inspected but rather replaced when found defective"},
+    {"id": "G15", "text": "J. Tessling \"not required\""},
+    {"id": "G16", "text": "R3 LOTO- Task Specific Procedure \"Stripper Box Changeout\""},
+    {"id": "G17", "text": "Stored Energy not accounted for \"A\" hydraulics", "open": true},
+    {"id": "G18", "text": "All energy sources (gravity) not accounted for during isolation for task"},
+    {"id": "G19", "text": "Only one keeper installed"},
+    {"id": "G20", "text": "Original Mill Design (keeper)"},
+    {"id": "G21", "text": "Original Mill Design (no stop)"},
+    {"id": "G22", "text": "?", "open": true}
+  ],
+  "edges_effect_caused_by": [
+    ["G00", ["G01", "G02", "G03", "G04"]],
+    ["G01", ["G05", "G06", "G07"]],
+    ["G05", ["G08", "G10", "G11"]],
+    ["G06", ["G09"]],
+    ["G09", ["G12"]],
+    ["G07", ["G13"]],
+    ["G13", ["G14"]],
+    ["G14", ["G15"]],
+    ["G02", ["G16"]],
+    ["G16", ["G17", "G18"]],
+    ["G03", ["G19"]],
+    ["G19", ["G20"]],
+    ["G04", ["G21"]],
+    ["G21", ["G22"]]
+  ],
+  "cross_links": [
+    {"from": "G08", "to": "G09", "note": "'Connects to' marker d"},
+    {"from": "G10", "to": "G01", "note": "'Connects to' marker c"}
+  ],
+  "open_in_chart": [
+    "G11 Excess clearance?????; task: Obtain clearance calculations & drawing for R3 Carrier Beam & Yoke - J. Tessling",
+    "G17 'Why?' unanswered",
+    "G22 '?' unanswered"
+  ],
+  "solutions": [
+    {"id": "SO-0001", "text": "Incorporate design that prevents the carrier beams from raising into it's identified interference points", "attached_to": "G21"},
+    {"id": "SO-0002", "text": "Incorporate carrier beam stops to prevent carrier beams from being wedged on mill spreader and mill posts", "attached_to": "G09"},
+    {"id": "SO-0003", "text": "Replace hydraulic isolation ball valves", "attached_to": "G15"},
+    {"id": "SO-0004", "text": "P. Garza will test & tryout hydraulic isolation valves for R1, R2, R4 & R5", "attached_to": "G15"},
+    {"id": "SO-0005", "text": "J. Tessling will have existing keeper design modified to ensure contact with yoke if link is off center", "attached_to": "G19"},
+    {"id": "SO-0006", "text": "J. Tessling - Implement design to tie link arm together", "attached_to": "G20"},
+    {"id": "SO-0007", "text": "J. Tessling - Design & Implement means of blocking yoke in the up position", "attached_to": "G09"},
+    {"id": "SO-0008", "text": "Contact all HSM on LOTO requirements including accounting for stored energy", "attached_to": "G18"}
+  ],
+  "team": ["Nicole Hanas"]
+}

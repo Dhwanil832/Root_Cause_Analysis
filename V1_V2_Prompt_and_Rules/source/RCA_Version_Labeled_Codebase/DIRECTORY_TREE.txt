@@ -1,0 +1,292 @@
+RCA_Version_Labeled_Codebase/
+├── config/
+│   ├── experiments/
+│   │   ├── ablation_no_llm.yaml
+│   │   ├── ablation_v2_assessor_only.yaml
+│   │   ├── ablation_v2_frontier_only.yaml
+│   │   ├── ablation_v2_iris_specialist.yaml
+│   │   ├── ablation_v2_planner_and_routes.yaml
+│   │   ├── ablation_v2_planner_only.yaml
+│   │   ├── ablation_v2_route_only.yaml
+│   │   ├── README.md
+│   │   ├── v1_basic.yaml
+│   │   ├── v2_full.yaml
+│   │   ├── v2_methods_only.yaml
+│   │   ├── v2_openrouter_gptoss.yaml
+│   │   ├── v2_openrouter_nemotron.yaml
+│   │   └── v2_prompts_only.yaml
+│   └── default.yaml
+├── data/
+│   └── cases/
+│       └── wet_floor/
+│           └── initial_report.md
+├── evaluation/
+│   ├── ablations/
+│   │   ├── __init__.py
+│   │   └── README.md
+│   ├── fixtures/
+│   │   ├── wet_floor/
+│   │   │   ├── __init__.py
+│   │   │   └── documents.json
+│   │   └── __init__.py
+│   ├── metrics/
+│   │   ├── __init__.py
+│   │   ├── basic.py
+│   │   ├── behavioral.py
+│   │   └── reviewer_sheet.py
+│   ├── private_reference/
+│   │   ├── __init__.py
+│   │   ├── fixture_responses_DESIGNER_ONLY.json
+│   │   └── wet_floor_structural_checks.json
+│   ├── __init__.py
+│   ├── run_matrix.py
+│   └── score_run.py
+├── intake/
+│   ├── agents/
+│   │   ├── intake_agent/
+│   │   │   ├── components/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── assertion_validator.py
+│   │   │   │   ├── input_validator.py
+│   │   │   │   └── normalization.py
+│   │   │   ├── implementations/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── v1_basic.py
+│   │   │   │   └── v2_structured_llm.py
+│   │   │   ├── prompts/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── v1_basic.md
+│   │   │   │   └── v2_structured_llm.md
+│   │   │   ├── __init__.py
+│   │   │   └── agent.py
+│   │   └── __init__.py
+│   └── __init__.py
+├── integrations/
+│   ├── evidence_sources/
+│   │   ├── __init__.py
+│   │   ├── local_folder.py
+│   │   └── synthetic_world.py
+│   ├── utilities/
+│   │   ├── __init__.py
+│   │   └── file_reader.py
+│   ├── __init__.py
+│   └── viewer.py
+├── orchestration/
+│   ├── __init__.py
+│   ├── orchestrator.py
+│   ├── scheduler.py
+│   └── state.py
+├── reasoning/
+│   ├── assessor/
+│   │   ├── components/
+│   │   │   ├── __init__.py
+│   │   │   ├── correction_validator.py
+│   │   │   ├── coverage_validator.py
+│   │   │   ├── proposal_review.py
+│   │   │   └── scope_guard.py
+│   │   ├── implementations/
+│   │   │   ├── __init__.py
+│   │   │   ├── ablation_no_llm.py
+│   │   │   ├── v1_basic.py
+│   │   │   └── v2_impact_aware.py
+│   │   ├── prompts/
+│   │   │   ├── __init__.py
+│   │   │   ├── ablation_no_llm.md
+│   │   │   ├── v1_basic.md
+│   │   │   └── v2_impact_aware.md
+│   │   ├── __init__.py
+│   │   └── agent.py
+│   ├── context/
+│   │   ├── __init__.py
+│   │   └── context_builder.py
+│   ├── evidence_worker/
+│   │   ├── components/
+│   │   │   ├── __init__.py
+│   │   │   ├── request_builder.py
+│   │   │   ├── route_decision.py
+│   │   │   ├── route_map.py
+│   │   │   └── source_discovery.py
+│   │   ├── implementations/
+│   │   │   ├── __init__.py
+│   │   │   ├── ablation_no_llm.py
+│   │   │   ├── v1_basic.py
+│   │   │   └── v2_adaptive_routes.py
+│   │   ├── prompts/
+│   │   │   ├── __init__.py
+│   │   │   ├── ablation_no_llm.md
+│   │   │   ├── v1_basic.md
+│   │   │   └── v2_adaptive_routes.md
+│   │   ├── __init__.py
+│   │   └── agent.py
+│   ├── lead/
+│   │   ├── components/
+│   │   │   ├── __init__.py
+│   │   │   ├── action_generator.py
+│   │   │   ├── action_selector.py
+│   │   │   ├── coverage_selection.py
+│   │   │   ├── planning_features.py
+│   │   │   └── priority_scoring.py
+│   │   ├── implementations/
+│   │   │   ├── __init__.py
+│   │   │   ├── v1_basic.py
+│   │   │   ├── v2_causal_guided.py
+│   │   │   └── v2_joint_route_planner.py
+│   │   ├── prompts/
+│   │   │   ├── __init__.py
+│   │   │   ├── v1_basic.md
+│   │   │   ├── v2_causal_guided.md
+│   │   │   └── v2_joint_route_planner.md
+│   │   ├── __init__.py
+│   │   └── agent.py
+│   ├── specialist/
+│   │   ├── components/
+│   │   │   ├── __init__.py
+│   │   │   ├── abductive_questions.py
+│   │   │   ├── frontier_graph.py
+│   │   │   ├── frontier_policy.py
+│   │   │   ├── frontier_validator.py
+│   │   │   ├── hypothesis_matrix.py
+│   │   │   └── missing_variables.py
+│   │   ├── implementations/
+│   │   │   ├── __init__.py
+│   │   │   ├── v1_basic.py
+│   │   │   ├── v2_causal_frontier.py
+│   │   │   └── v2_iris_inspired.py
+│   │   ├── prompts/
+│   │   │   ├── __init__.py
+│   │   │   ├── v1_basic.md
+│   │   │   ├── v2_causal_frontier.md
+│   │   │   └── v2_iris_inspired.md
+│   │   ├── __init__.py
+│   │   └── agent.py
+│   └── __init__.py
+├── revision/
+│   ├── v2/
+│   │   ├── __init__.py
+│   │   ├── broker.py
+│   │   ├── kernel.py
+│   │   └── session.py
+│   ├── __init__.py
+│   └── controller.py
+├── scripts/
+│   ├── __init__.py
+│   ├── replay_investigation.py
+│   ├── run_experiment.py
+│   ├── run_investigation.py
+│   ├── run_live_pilot.sh
+│   ├── summarize_run.py
+│   └── verify_v2_upgrade.py
+├── shared/
+│   ├── contracts/
+│   │   ├── __init__.py
+│   │   ├── agent_inputs.py
+│   │   ├── agent_outputs.py
+│   │   ├── causal_graph.py
+│   │   ├── evidence.py
+│   │   ├── investigation_state.py
+│   │   └── task_validation.py
+│   ├── llm/
+│   │   ├── __init__.py
+│   │   ├── client.py
+│   │   └── fixture.py
+│   ├── __init__.py
+│   ├── config_loader.py
+│   ├── env_loader.py
+│   ├── prompt_loader.py
+│   ├── registry.py
+│   └── validation.py
+├── tests/
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   ├── test_agent_wiring.py
+│   │   ├── test_assessor_methods.py
+│   │   ├── test_context_privacy.py
+│   │   ├── test_evidence_worker_methods.py
+│   │   ├── test_intake_methods.py
+│   │   ├── test_lead_methods.py
+│   │   └── test_specialist_methods.py
+│   ├── contracts/
+│   │   ├── __init__.py
+│   │   ├── test_configuration_safety.py
+│   │   ├── test_registry.py
+│   │   └── test_version_labels.py
+│   ├── evaluation/
+│   │   ├── test_matrix_and_prompts.py
+│   │   └── test_model_payload_receipts.py
+│   ├── intake/
+│   │   └── __init__.py
+│   ├── integration/
+│   │   ├── __init__.py
+│   │   ├── test_fixture_run.py
+│   │   ├── test_local_world.py
+│   │   └── test_provider.py
+│   ├── methods/
+│   │   ├── test_output_contracts.py
+│   │   ├── test_real_v2_algorithms.py
+│   │   └── test_scoped_post_event_distinctions.py
+│   ├── orchestration/
+│   │   └── __init__.py
+│   ├── reasoning/
+│   │   ├── __init__.py
+│   │   ├── test_frontier_graph.py
+│   │   └── test_strategy_swaps.py
+│   ├── revision/
+│   │   └── __init__.py
+│   ├── v2_regression/
+│   │   ├── fixtures/
+│   │   │   ├── evidence/
+│   │   │   │   ├── E01.md
+│   │   │   │   ├── E02.md
+│   │   │   │   ├── E03.md
+│   │   │   │   ├── E04.md
+│   │   │   │   ├── E05.md
+│   │   │   │   ├── E06.md
+│   │   │   │   ├── E07.md
+│   │   │   │   ├── E08.md
+│   │   │   │   ├── E09.md
+│   │   │   │   ├── E10.md
+│   │   │   │   ├── E11.md
+│   │   │   │   ├── E12.md
+│   │   │   │   ├── E13.md
+│   │   │   │   ├── E14.md
+│   │   │   │   ├── E15.md
+│   │   │   │   └── E16.md
+│   │   │   └── variants/
+│   │   │       ├── ALT_E10_after.md
+│   │   │       ├── ALT_E11_unresolved.md
+│   │   │       ├── ALT_E12_no_view.md
+│   │   │       └── ALT_E12_reid.md
+│   │   ├── results/
+│   │   │   ├── scenarios/
+│   │   │   │   └── base/
+│   │   │   │       └── session.json
+│   │   │   └── scenario_summary.json
+│   │   ├── walkthrough/
+│   │   │   └── actor_responses/
+│   │   │       └── E07.json
+│   │   ├── __init__.py
+│   │   ├── test_broker.py
+│   │   ├── test_dual_graph_and_workers.py
+│   │   ├── test_partial_response_regression.py
+│   │   ├── test_runtime.py
+│   │   └── test_scenario_replays.py
+│   └── __init__.py
+├── .env.example
+├── .gitignore
+├── AGENT_IMPLEMENTATION_UPGRADE.md
+├── ARCHITECTURE.md
+├── BEHAVIORAL_EVIDENCE.md
+├── EVALUATION_PROTOCOL.md
+├── LIVE_MODEL_PREFLIGHT.json
+├── main.py
+├── METHODS_AND_CITATIONS.md
+├── NAVIGATION.md
+├── PROMPT_EDITING_GUIDE.md
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+├── RESEARCH_STATUS.md
+├── TEST_REPORT.json
+├── V2_COMPLETION_REPORT.md
+├── VERSION_GUIDE.md
+└── VERSION_RENAME_MAP.json

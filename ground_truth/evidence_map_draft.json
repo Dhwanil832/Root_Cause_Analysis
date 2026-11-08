@@ -1,0 +1,79 @@
+{
+  "status": "DRAFT for the user to correct. Maps the confirmed ground-truth chart (r3_human_rca_chart.json) to the sentences in E01-E16 that bear on each node. Quotes are verbatim. 'relation' is my reading: supports / consistent_with / insufficient / context / conditional. Nothing here has been used by the harness.",
+  "node_evidence": {
+    "G07 hydraulics shut off, valve bleeding back, fluid leaves cylinder": [
+      {"doc": "E10", "quote": "11:10: common B hydraulic supply shut down and isolated for separately planned utility maintenance. The guide-box task is shown in progress on the same outage status sheet.", "relation": "supports", "note": "the shutdown event and its time; arrives misfiled, Day +4 covering note"},
+      {"doc": "E11", "quote": "Local tag IV-RB3-17 feeds the RB-3 lifting circuit from common header B.", "relation": "supports", "note": "connects the B supply to the lifting circuit"}
+    ],
+    "G13 isolation valve has slow bleed through": [
+      {"doc": "E08", "quote": "With the handle at closed and differential pressure applied from the cylinder-side port toward the supply-side port, fluid seepage was observed.", "relation": "supports", "note": "bench test three days after the event; no calibrated rate; no Day 0 condition"},
+      {"doc": "E08", "quote": "The record contains no installed-state pressure trace for Day 0 and no dated record establishing when the observed internal condition developed.", "relation": "insufficient", "note": "limits E08"},
+      {"doc": "E16", "quote": "The valve workshop found seepage with the isolation handle at closed.", "relation": "supports", "note": "NOT independent: derived from E08 (E16 says so); count once"},
+      {"doc": "E03", "quote": "The local valve position is checked \"closed\" at 10:47. The copy does not contain a sealing test result.", "relation": "insufficient", "note": "handle position is not a sealing test; absence of a record is not a result"},
+      {"doc": "E15", "quote": "I did not perform a valve sealing test.", "relation": "consistent_with", "note": "no test was done by this person"},
+      {"doc": "E09", "quote": "No sensor channel measuring flow through IV-RB3-17 was configured in the exported historian set.", "relation": "insufficient", "note": "no Day 0 flow measurement exists in this archive"},
+      {"doc": "E10", "quote": "This sheet does not record the pressure on the isolated cylinder side of that valve.", "relation": "insufficient", "note": "no pressure record"}
+    ],
+    "G01 yoke drifted but carrier beam did not": [
+      {"doc": "E05", "quote": "11:03 | 100 | 210 | 190 / 11:52 | 100 | 238 | 190 / 12:45 | 100 | 272 | 191 / 13:02:58 | 100 | 289 | 190", "relation": "supports", "note": "yoke marker moves 79 px down over about two hours; carrier marker stays near 190; pixels not calibrated"},
+      {"doc": "E12", "quote": "13:02:58: outward displacement remains visible while the lifting yoke is lower than in the 11:03 frame.", "relation": "supports", "note": "second camera agrees"}
+    ],
+    "G06 beam wedged / held on mill spreader and posts; G08 shifted off yoke while wedged": [
+      {"doc": "E05", "quote": "The upper carrier edge contacts the housing in this view.", "relation": "supports", "note": "contact surface not resolved"},
+      {"doc": "E12", "quote": "12:45: carrier remains held at the upper housing; the visible link arm has moved outward relative to that reference.", "relation": "supports", "note": ""},
+      {"doc": "E04", "quote": "The shift observer recorded the carrier at the upper opening.", "relation": "consistent_with", "note": ""}
+    ],
+    "G04 no stop for the beam when backup rolls are out": [
+      {"doc": "E02", "quote": "Outage arrangements may remove components that delimit the normal travel envelope.", "relation": "supports", "note": "indirect: rolls delimit travel"},
+      {"doc": "E04", "quote": "The entry does not identify the final upper-travel limit in the rolls-out configuration.", "relation": "insufficient", "note": ""},
+      {"doc": "E03", "quote": "Entry 10:20: backup-roll removal complete, previous-turn handover accepted.", "relation": "consistent_with", "note": "rolls were out"},
+      {"doc": "E04", "quote": "06:35: backup rolls removed and taken to the roll shop for outage work.", "relation": "consistent_with", "note": ""}
+    ],
+    "G05 beam came off yoke with the keeper plate intact (bolted)": [
+      {"doc": "E06", "quote": "The keeper plate remained bolted to the recovered link arm. No gross fracture or missing portion of that plate was recorded.", "relation": "supports", "note": "a keeper still bolted does not rule out disengagement around it"},
+      {"doc": "E06", "quote": "The report does not contain an incident-time displacement measurement.", "relation": "insufficient", "note": ""}
+    ],
+    "G11 excess clearance? measurements do not allow clearance over the yoke in resting position": [
+      {"doc": "E07", "quote": "At the centred-resting position, the measured condition leaves overlap that prevents the link arm from passing the keeper/yoke interface by the straight withdrawal considered in this worksheet.", "relation": "supports", "note": "matches the chart's statement"},
+      {"doc": "E07", "quote": "For a prescribed outward link-arm displacement, the baseline model permits loss of keeper/yoke overlap.", "relation": "conditional", "note": "worksheet does not establish that this pose occurred on Day 0"},
+      {"doc": "E12", "quote": "12:45: carrier remains held at the upper housing; the visible link arm has moved outward relative to that reference.", "relation": "supports", "note": "outward displacement was observed, not measured"}
+    ],
+    "G19 only one keeper installed": [
+      {"doc": "E02", "quote": "The baseline arrangement has one keeper plate on each link arm.", "relation": "supports", "note": "baseline, not an as-found survey"},
+      {"doc": "E07", "quote": "Worksheet GEO-17 applies to the original connection with one link-arm keeper and no added yoke keeper.", "relation": "supports", "note": ""},
+      {"doc": "E13", "quote": "An additional keeper was welded to the roll-balance yoke as containment.", "relation": "context", "note": "post-incident replacement configuration; not evidence about the original"}
+    ],
+    "G02/G16/G18 backup raise 'isolated' under a task-specific procedure that did not account for all energy (gravity)": [
+      {"doc": "E03", "quote": "There is no separate field on this page identifying a fitted pin, block, or crib.", "relation": "supports", "note": "absence on the page is not proof no block was fitted"},
+      {"doc": "E03", "quote": "The additional-task-precautions attachment is referenced on the cover but is not present in this copy.", "relation": "insufficient", "note": "the attachment may have held the missing precautions"},
+      {"doc": "E15", "quote": "I did not install a pin, block, or crib during my preparation. I cannot say what another team may have done after I left the area.", "relation": "insufficient", "note": "speaks for one person only"},
+      {"doc": "E14", "quote": "Revise guidance for raised hydraulic equipment and communicate to affected crews.", "relation": "consistent_with", "note": "action register, not a mechanism report"}
+    ],
+    "G17 stored energy not accounted for 'A' hydraulics": [
+      {"doc": "E03", "quote": "Local isolation recorded at valve tag IV-RB3-17. The form labels this function \"A hydraulics\".", "relation": "context", "note": ""},
+      {"doc": "E11", "quote": "The guide-box form uses \"A hydraulics\" as a legacy machine-function label for this local lifting circuit.", "relation": "context", "note": "explains the label; the circuit is fed from common header B, which E10 shows was shut down separately"}
+    ],
+    "SO-0002/0006/0007 stops, tie link arm, block the yoke (solutions)": [
+      {"doc": "E14", "quote": "Obtain a budgetary proposal for redesign of the yoke/link connection, tie bar, travel stops and associated safety features. Status: completed.", "relation": "consistent_with", "note": "only a budgetary proposal is complete, not the redesign"}
+    ],
+    "SO-0003/0004 replace and test isolation valves": [
+      {"doc": "E14", "quote": "Replace local RB-3 isolation valves and examine analogous valves. Status: completed.", "relation": "consistent_with", "note": ""}
+    ]
+  },
+  "nodes_with_no_evidence_in_packet": [
+    "G14 Isolation valves are not routinely inspected but rather replaced when found defective",
+    "G15 J. Tessling \"not required\"",
+    "G09/G12/G20/G21 original mill design intent (why no stops, why one keeper)",
+    "G22 '?'"
+  ],
+  "designed_traps": [
+    {"doc": "E16", "trap": "A recap of E08, not a second source. Counting it as independent confirmation is wrong."},
+    {"doc": "E13", "trap": "Describes the replacement configuration. Not evidence about the original keeper arrangement."},
+    {"doc": "E10", "trap": "Critical document (the B-system shutdown at 11:10) that arrives misfiled with a covering note, Day +4, not in answer to a request. Tests unprompted-document handling."},
+    {"doc": "E09", "trap": "Says the requested record cannot be answered from its holdings and points to hydraulic maintenance. A no-match is not proof the record does not exist."},
+    {"doc": "E08", "trap": "Bench seepage three days after the event; no Day 0 trace. Supports a mechanism, does not prove it occurred on Day 0."},
+    {"doc": "E03/E15", "trap": "'No sealing test result' and 'no pin, block or crib' are absences of a record, not findings that the control was absent."},
+    {"doc": "E14", "trap": "An action register, not a mechanism report."},
+    {"doc": "E05/E12", "trap": "Pixel readings, not calibrated displacement; contact surface and offset not resolved."}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "DRAFT. What the fixed custodian holds and when. Topic words are taken from each document's own content, not from the ground-truth chart. Times are on the custodian's clock: one unit per completed role job, plus jumps while the system is idle (time passing while it waits).",
+  "documents": [
+    {"item_id": "E13", "available_at": 10, "unprompted_at": 12,
+     "topics": ["containment", "installation", "completion", "additional keeper", "welded", "replacement carrier", "modification", "MOD-6", "field modification"]},
+    {"item_id": "E07", "available_at": 10, "unprompted_at": 45,
+     "topics": ["geometry", "worksheet", "keeper", "yoke", "overlap", "offset", "link arm", "clearance", "centred", "wear", "disengagement", "kinematic", "GEO-17", "displacement"]},
+    {"item_id": "E15", "available_at": 10, "unprompted_at": 45,
+     "topics": ["interview", "technician", "preparation", "account", "pin", "block", "crib", "restraint", "witness", "statement", "sealing test", "left raised"]},
+    {"item_id": "E08", "available_at": 20, "unprompted_at": 50,
+     "topics": ["valve", "workshop", "seepage", "leak", "leakage", "examination", "bench", "VAL-17", "IV-RB3-17", "removed valve", "handle", "sealing", "hydraulic"]},
+    {"item_id": "E09", "available_at": 30, "unprompted_at": 55,
+     "topics": ["controls", "archive", "historian", "sensor", "channel", "flow", "measurement", "pressure", "trace", "branch", "leakage rate", "operating logs", "hydraulic"]},
+    {"item_id": "E10", "available_at": 30, "unprompted_at": 30,
+     "topics": ["outage", "switching", "sheet", "B hydraulic", "supply", "shutdown", "isolated", "utility", "UT-81", "desk", "coordinator", "common supply", "isolation record", "hydraulic"]},
+    {"item_id": "E11", "available_at": 30, "unprompted_at": 55,
+     "topics": ["system index", "tag", "A hydraulics", "header", "label", "legacy", "identifier", "circuit", "IV-RB3-17", "naming", "feeds", "hydraulic"]},
+    {"item_id": "E12", "available_at": 30, "unprompted_at": 55,
+     "topics": ["oblique", "camera", "O3", "video", "observation", "footage", "housing", "displacement", "link arm", "yoke", "worksheet", "frames"]},
+    {"item_id": "E16", "available_at": 30, "unprompted_at": 32,
+     "topics": ["briefing", "recap", "morning", "workshop summary", "distribution", "communications"]},
+    {"item_id": "E14", "available_at": 60, "unprompted_at": 70,
+     "topics": ["action", "register", "redesign", "status", "tie bar", "travel stops", "corrective", "actions", "completed", "engineering project"]}
+  ],
+  "statements": [
+    {"statement_id": "S1", "topics": ["who", "holds", "owner", "ownership", "which team", "where kept", "records held"],
+     "text": "Engineering records maintains geometry and configuration material. Maintenance records holds work instructions and completed job packs. Shift operations retains handover records. Controls retains available operating logs. Temporary-work and isolation records are held by the outage coordinator."},
+    {"statement_id": "S2", "topics": ["pin", "block", "crib", "restraint", "mechanical support", "supported"],
+     "text": "The preparation technician says they did not install a pin, block, or crib during their preparation, and cannot say what another team may have done after they left the area."},
+    {"statement_id": "S3", "topics": ["sealing test", "valve test", "tested", "leak test", "valve sealing"],
+     "text": "The work pack copy we hold has no sealing test result for the local valve, and the technician says no valve sealing test was performed."},
+    {"statement_id": "S4", "topics": ["flow", "measurement", "historian", "channel", "sensor", "recorded flow"],
+     "text": "The controls archive has no sensor channel for flow through the local valve and no direct measurement of branch-cylinder flow."},
+    {"statement_id": "S5", "topics": ["attachment", "precautions", "additional task", "additional-task"],
+     "text": "The additional-task-precautions attachment is referenced on the work pack cover, but it is not present in the copy we hold."}
+  ],
+  "policy": {"reply_delay": 6, "off_topic_every": 3, "chunk_jobs": 3}
+}

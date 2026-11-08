@@ -1,0 +1,8 @@
+{
+  "note": "AUTHORED SYNTHETIC FIXTURE. Checks are developer expectations for invariants only, not engineering validation or a benchmark score.",
+  "required_delivered_source_ids": ["IR-01", "CAM-17", "COR-17", "MNT-81", "OPS-02", "WIT-06"],
+  "must_remain_supported": ["slip", "water"],
+  "must_not_remain_supported_after_correction": ["mopping_F2"],
+  "must_remain_open": ["upstream"],
+  "must_not_sign_off": true
+}

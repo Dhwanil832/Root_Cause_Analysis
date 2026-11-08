@@ -1,0 +1,17 @@
+# Isolates deterministic V2 modules from advanced prompt changes.
+agents:
+  intake:
+    implementation: v2_structured_llm
+    prompt_implementation: v1_basic
+  specialist:
+    implementation: v2_causal_frontier
+    prompt_implementation: v1_basic
+  lead:
+    implementation: v2_joint_route_planner
+    prompt_implementation: v1_basic
+  evidence_worker:
+    implementation: v2_adaptive_routes
+    prompt_implementation: v1_basic
+  assessor:
+    implementation: v2_impact_aware
+    prompt_implementation: v1_basic

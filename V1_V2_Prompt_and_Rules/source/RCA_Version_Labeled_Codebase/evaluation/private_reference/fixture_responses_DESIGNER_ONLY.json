@@ -1,0 +1,408 @@
+{
+  "IR-01": {
+    "extract": {
+      "assertions": [
+        {
+          "semantic_label": "slip",
+          "subject": "worker",
+          "predicate": "reported_slip_on_wet_floor",
+          "scope": "10:05_incident",
+          "configuration": "reported",
+          "quote": "a worker slipped on standing water in the west aisle next to Bottle Filler F-2",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        },
+        {
+          "semantic_label": "water",
+          "subject": "F2_west_aisle",
+          "predicate": "standing_water_at_incident_reported",
+          "scope": "10:05_incident",
+          "configuration": "reported",
+          "quote": "a worker slipped on standing water in the west aisle next to Bottle Filler F-2",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        }
+      ],
+      "corrections": []
+    },
+    "frontier": {
+      "hypotheses": [
+        {
+          "summary": "Water might have originated from cleaning activity.",
+          "missing_conditions": [
+            "Cleaning occurred at the west aisle before the slip",
+            "Water from that cleaning remained in the walking path"
+          ],
+          "why": "Candidate to be tested, not reported fact.",
+          "tests": [
+            "Location and timing of cleaning",
+            "Alternative water sources"
+          ]
+        },
+        {
+          "summary": "Water might have escaped from equipment near F-2.",
+          "missing_conditions": [
+            "A relevant water path exists",
+            "An incident-time escape occurred",
+            "Water reached walking path"
+          ],
+          "why": "Candidate to be tested, not reported fact.",
+          "tests": [
+            "Equipment records",
+            "Incident observations"
+          ]
+        }
+      ],
+      "new_gaps": [
+        {
+          "semantic_label": "water_origin",
+          "kind": "causal",
+          "question": "What was the source of standing water and what activity preceded the slip at F-2?",
+          "why": "Required to explain the wet floor without presuming its source.",
+          "expected_change": "Direct observations may favor or exclude specific water-source explanations.",
+          "quote": "The source of the water was unknown when this report was filed.",
+          "routes_to_consider": [
+            {
+              "route": "security",
+              "topic": "camera activity next to the west aisle before 10:05",
+              "directness": 3,
+              "burden": 1
+            },
+            {
+              "route": "maintenance",
+              "topic": "dated machine water-leak and repair tickets",
+              "directness": 2,
+              "burden": 1
+            },
+            {
+              "route": "shift_supervisor",
+              "topic": "firsthand witness observations at the west aisle",
+              "directness": 2,
+              "burden": 3
+            }
+          ]
+        },
+        {
+          "semantic_label": "activity_timeline",
+          "kind": "causal",
+          "question": "What happened beside the F-2 west aisle shortly before 10:05?",
+          "why": "Establishes an event sequence without presuming the origin of the water.",
+          "expected_change": "Would supply or challenge a candidate pre-incident activity.",
+          "quote": "At 10:05 AM, a worker slipped on standing water in the west aisle next to Bottle Filler F-2",
+          "routes_to_consider": [
+            {
+              "route": "security",
+              "topic": "archived camera footage and activity at F-2 before the slip",
+              "directness": 3,
+              "burden": 0
+            }
+          ]
+        }
+      ],
+      "resolved_gaps": [],
+      "inferences": []
+    }
+  },
+  "CAM-17": {
+    "extract": {
+      "assertions": [
+        {
+          "semantic_label": "mopping_F2",
+          "subject": "F2_west_aisle",
+          "predicate": "mopping_at_0950_reported_by_camera_review",
+          "scope": "before_10:05",
+          "configuration": "camera_review",
+          "quote": "At 09:50 AM, a cleaner is shown mopping next to the west aisle of Bottle Filler F-2.",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        }
+      ],
+      "corrections": []
+    },
+    "frontier": {
+      "hypotheses": [
+        {
+          "summary": "Cleaning might have contributed water to the west aisle.",
+          "missing_conditions": [
+            "Mopping location verified",
+            "Mopped area overlaps slip position",
+            "Standing water remained at 10:05"
+          ],
+          "why": "Camera review is a reported attribution, not proof that cleaning caused the slip.",
+          "tests": [
+            "Camera label validity",
+            "Area and activity correspondence"
+          ]
+        }
+      ],
+      "new_gaps": [],
+      "resolved_gaps": [
+        {
+          "gap_label": "activity_timeline",
+          "supporting_assertion_labels": [
+            "mopping_F2"
+          ],
+          "reason": "Camera review reports a particular preceding activity (the location remains subject to later verification)."
+        }
+      ],
+      "inferences": []
+    }
+  },
+  "COR-17": {
+    "extract": {
+      "assertions": [
+        {
+          "semantic_label": "mopping_F4",
+          "subject": "F4_east_annex",
+          "predicate": "mopping_at_0950_reported_in_corrected_location",
+          "scope": "before_10:05",
+          "configuration": "camera_corrected",
+          "quote": "The 09:50 AM mopping occurred in the East Annex beside F-4, not the west aisle of F-2.",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        }
+      ],
+      "corrections": [
+        {
+          "target_source": "CAM-17",
+          "target_label": "mopping_F2",
+          "quote": "The camera feed was mislabeled.",
+          "reason": "The earlier reported F-2 mopping location was an incorrect asset/corridor attribution."
+        }
+      ]
+    },
+    "frontier": {
+      "hypotheses": [
+        {
+          "summary": "The camera-review worksheet is not valid evidence of cleaning at F-2.",
+          "missing_conditions": [
+            "Whether other sources establish relevant cleaning"
+          ],
+          "why": "The source corrected location; this does not establish an alternative water source.",
+          "tests": [
+            "Find incident-location camera or witness record"
+          ]
+        }
+      ],
+      "new_gaps": [],
+      "resolved_gaps": [],
+      "inferences": [],
+      "hypothesis_updates": [
+        {
+          "hypothesis_contains": "Cleaning might have contributed water",
+          "status": "needs_reassessment",
+          "reason": "The previously cited mopping location is reidentified as F-4, so this hypothesis no longer has that observation.",
+          "quote": "The 09:50 AM mopping occurred in the East Annex beside F-4, not the west aisle of F-2."
+        }
+      ]
+    }
+  },
+  "MNT-81": {
+    "extract": {
+      "assertions": [
+        {
+          "semantic_label": "loose_hose",
+          "subject": "F2_rinse_drain_hose",
+          "predicate": "operator_reported_loose_coupling_at_0945",
+          "scope": "before_10:05",
+          "configuration": "maintenance_ticket",
+          "quote": "At 09:45 AM an operator reported a loose coupling on the F-2 rinse-drain hose.",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        },
+        {
+          "semantic_label": "repair_later",
+          "subject": "F2_rinse_drain_hose",
+          "predicate": "repair_began_at_1025_reported",
+          "scope": "after_incident",
+          "configuration": "post_incident",
+          "quote": "Repair work began at 10:25 AM.",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        }
+      ],
+      "corrections": []
+    },
+    "frontier": {
+      "hypotheses": [
+        {
+          "summary": "A loose hose coupling might allow water to reach the west aisle.",
+          "missing_conditions": [
+            "Whether hose carries water",
+            "Incident-time leakage",
+            "Path from coupling to aisle"
+          ],
+          "why": "The ticket only reports a loose coupling; it does not establish leakage.",
+          "tests": [
+            "Equipment function note",
+            "Direct witness observation"
+          ]
+        }
+      ],
+      "new_gaps": [
+        {
+          "semantic_label": "hose_function",
+          "kind": "operational",
+          "question": "What does the F-2 rinse-drain hose do, and can a loose coupling cause a floor spill?",
+          "why": "Equipment operation must be understood before proposing a causal connection.",
+          "expected_change": "Applicable operating knowledge determines whether the loose coupling can explain a water path.",
+          "quote": "a loose coupling on the F-2 rinse-drain hose.",
+          "routes_to_consider": [
+            {
+              "route": "engineering",
+              "topic": "equipment function, rinse-drain hose and normal operation of F-2",
+              "directness": 3,
+              "burden": 1
+            }
+          ]
+        }
+      ],
+      "resolved_gaps": [],
+      "inferences": []
+    }
+  },
+  "OPS-02": {
+    "extract": {
+      "assertions": [
+        {
+          "semantic_label": "hose_function",
+          "subject": "F2_rinse_drain_hose",
+          "predicate": "rinse_water_normally_flows_to_receptor",
+          "scope": "general_operation",
+          "configuration": "general",
+          "quote": "During filling operation, rinse water flows through a flexible drain hose to a floor receptor.",
+          "basis": "conditional_model",
+          "polarity": true
+        },
+        {
+          "semantic_label": "loose_can_spill",
+          "subject": "F2_rinse_drain_hose",
+          "predicate": "loose_coupling_can_allow_escape",
+          "scope": "general_operation",
+          "configuration": "general",
+          "quote": "If a hose coupling is loose, rinse water may escape onto the surrounding floor.",
+          "basis": "conditional_model",
+          "polarity": true
+        }
+      ],
+      "corrections": []
+    },
+    "frontier": {
+      "hypotheses": [],
+      "new_gaps": [],
+      "resolved_gaps": [
+        {
+          "gap_label": "hose_function",
+          "supporting_assertion_labels": [
+            "hose_function",
+            "loose_can_spill"
+          ],
+          "reason": "Document describes hose function and conditional spill possibility, not incident-time spill."
+        }
+      ],
+      "inferences": []
+    }
+  },
+  "WIT-06": {
+    "extract": {
+      "assertions": [
+        {
+          "semantic_label": "drip",
+          "subject": "F2_rinse_drain_hose",
+          "predicate": "witness_reported_dripping_1001",
+          "scope": "before_10:05",
+          "configuration": "witness",
+          "quote": "At approximately 10:01 AM I saw water dripping from the F-2 rinse-drain hose coupling onto the west aisle floor.",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        },
+        {
+          "semantic_label": "to_path",
+          "subject": "F2_west_aisle",
+          "predicate": "witness_reported_water_into_walking_path",
+          "scope": "before_10:05",
+          "configuration": "witness",
+          "quote": "Water extended into the worker walking path.",
+          "basis": "assessed_source_assertion",
+          "polarity": true
+        }
+      ],
+      "corrections": []
+    },
+    "frontier": {
+      "hypotheses": [
+        {
+          "summary": "The rinse-drain hose may have contributed water to the incident walking path.",
+          "missing_conditions": [
+            "When coupling became loose",
+            "Why barriers did not prevent the slip"
+          ],
+          "why": "Direct witness account plus applicable conditional note yields only a qualified mechanism account.",
+          "tests": [
+            "Coupling history",
+            "Physical spill route",
+            "Barriers or warning signs"
+          ]
+        }
+      ],
+      "new_gaps": [
+        {
+          "semantic_label": "upstream",
+          "kind": "causal",
+          "question": "Why was the hose coupling loose and what controls were present before the slip?",
+          "why": "A proximate water source does not complete the causal explanation.",
+          "expected_change": "Would identify additional contributing maintenance, control and barrier conditions.",
+          "quote": "I did not check when the coupling became loose.",
+          "routes_to_consider": [
+            {
+              "route": "maintenance",
+              "topic": "maintenance root-cause and coupling inspection history",
+              "directness": 2,
+              "burden": 1
+            },
+            {
+              "route": "shift_supervisor",
+              "topic": "barriers, warnings and incident conditions",
+              "directness": 2,
+              "burden": 1
+            }
+          ]
+        }
+      ],
+      "resolved_gaps": [
+        {
+          "gap_label": "water_origin",
+          "supporting_assertion_labels": [
+            "drip",
+            "to_path"
+          ],
+          "reason": "A witness reported incident-location hose dripping and water reaching the walking path."
+        }
+      ],
+      "inferences": [
+        {
+          "semantic_label": "hose_source_qualified",
+          "subject": "F2_west_aisle",
+          "predicate": "hose_plausible_water_source_qualified",
+          "scope": "10:05_incident",
+          "configuration": "assessed_inference",
+          "premise_labels": [
+            "drip",
+            "to_path",
+            "hose_function"
+          ],
+          "warrant": "The document-reported drain function plus witnessed pre-event drip/path gives a qualified hose-source account; not an independently measured leak rate or established upstream failure.",
+          "warrant_source_ids": [
+            "OPS-02"
+          ],
+          "effect_label": "water",
+          "cause_labels": [
+            "drip",
+            "to_path"
+          ],
+          "quote": "water dripping from the F-2 rinse-drain hose coupling onto the west aisle floor."
+        }
+      ]
+    }
+  }
+}

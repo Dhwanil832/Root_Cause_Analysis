@@ -1,0 +1,235 @@
+{
+  "kind": "controlled_integration_replays_of_saved_open_book_assessments",
+  "not_agent_performance": true,
+  "scenarios": [
+    {
+      "scenario": "base",
+      "kind": "fixed_assistant_interpretation_replay",
+      "live_model_calls": 0,
+      "source_count": 16,
+      "external_ticks": 10,
+      "requests": 8,
+      "fall": "supported",
+      "relative_motion": "supported",
+      "offset_observation": "supported",
+      "partial_offset_account": "supported",
+      "this_shutdown_precedes": "supported",
+      "this_shutdown_excluded": "unknown",
+      "AB_mapping": "supported",
+      "incident_leak_measured": "unknown",
+      "complete_trajectory": "unknown",
+      "incident_extra_keeper": "unknown",
+      "later_keeper": "supported",
+      "budget_proposal": "supported",
+      "complete_redesign": "unknown",
+      "valve_origins": [
+        "VAL-17"
+      ],
+      "motion_need": {
+        "asset": "RB-3",
+        "scope": "day0",
+        "fields": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "covered": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "uncovered": [],
+        "disposition": "covered",
+        "routes": {
+          "video": "answered"
+        },
+        "targets": [],
+        "version": 4,
+        "coverage_invalidated": false
+      },
+      "pending_intake": []
+    },
+    {
+      "scenario": "shutdown_after",
+      "kind": "fixed_assistant_interpretation_replay",
+      "live_model_calls": 0,
+      "source_count": 16,
+      "external_ticks": 10,
+      "requests": 8,
+      "fall": "supported",
+      "relative_motion": "supported",
+      "offset_observation": "supported",
+      "partial_offset_account": "supported",
+      "this_shutdown_precedes": "unknown",
+      "this_shutdown_excluded": "supported",
+      "AB_mapping": "supported",
+      "incident_leak_measured": "unknown",
+      "complete_trajectory": "unknown",
+      "incident_extra_keeper": "unknown",
+      "later_keeper": "supported",
+      "budget_proposal": "supported",
+      "complete_redesign": "unknown",
+      "valve_origins": [
+        "VAL-17"
+      ],
+      "motion_need": {
+        "asset": "RB-3",
+        "scope": "day0",
+        "fields": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "covered": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "uncovered": [],
+        "disposition": "covered",
+        "routes": {
+          "video": "answered"
+        },
+        "targets": [],
+        "version": 4,
+        "coverage_invalidated": false
+      },
+      "pending_intake": []
+    },
+    {
+      "scenario": "no_lateral",
+      "kind": "fixed_assistant_interpretation_replay",
+      "live_model_calls": 0,
+      "source_count": 16,
+      "external_ticks": 10,
+      "requests": 8,
+      "fall": "supported",
+      "relative_motion": "supported",
+      "offset_observation": "unknown",
+      "partial_offset_account": "unknown",
+      "this_shutdown_precedes": "supported",
+      "this_shutdown_excluded": "unknown",
+      "AB_mapping": "supported",
+      "incident_leak_measured": "unknown",
+      "complete_trajectory": "unknown",
+      "incident_extra_keeper": "unknown",
+      "later_keeper": "supported",
+      "budget_proposal": "supported",
+      "complete_redesign": "unknown",
+      "valve_origins": [
+        "VAL-17"
+      ],
+      "motion_need": {
+        "asset": "RB-3",
+        "scope": "day0",
+        "fields": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "covered": [
+          "front_motion_sequence"
+        ],
+        "uncovered": [
+          "lateral_observation"
+        ],
+        "disposition": "evidence_boundary",
+        "routes": {
+          "video": "unavailable"
+        },
+        "targets": [],
+        "version": 4,
+        "coverage_invalidated": false
+      },
+      "pending_intake": []
+    },
+    {
+      "scenario": "unresolved_mapping",
+      "kind": "fixed_assistant_interpretation_replay",
+      "live_model_calls": 0,
+      "source_count": 16,
+      "external_ticks": 10,
+      "requests": 8,
+      "fall": "supported",
+      "relative_motion": "supported",
+      "offset_observation": "supported",
+      "partial_offset_account": "supported",
+      "this_shutdown_precedes": "supported",
+      "this_shutdown_excluded": "unknown",
+      "AB_mapping": "unknown",
+      "incident_leak_measured": "unknown",
+      "complete_trajectory": "unknown",
+      "incident_extra_keeper": "unknown",
+      "later_keeper": "supported",
+      "budget_proposal": "supported",
+      "complete_redesign": "unknown",
+      "valve_origins": [
+        "VAL-17"
+      ],
+      "motion_need": {
+        "asset": "RB-3",
+        "scope": "day0",
+        "fields": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "covered": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "uncovered": [],
+        "disposition": "covered",
+        "routes": {
+          "video": "answered"
+        },
+        "targets": [],
+        "version": 4,
+        "coverage_invalidated": false
+      },
+      "pending_intake": []
+    },
+    {
+      "scenario": "late_correction",
+      "kind": "fixed_assistant_interpretation_replay",
+      "live_model_calls": 0,
+      "source_count": 17,
+      "external_ticks": 10,
+      "requests": 8,
+      "fall": "supported",
+      "relative_motion": "supported",
+      "offset_observation": "unknown",
+      "partial_offset_account": "unknown",
+      "this_shutdown_precedes": "supported",
+      "this_shutdown_excluded": "unknown",
+      "AB_mapping": "supported",
+      "incident_leak_measured": "unknown",
+      "complete_trajectory": "unknown",
+      "incident_extra_keeper": "unknown",
+      "later_keeper": "supported",
+      "budget_proposal": "supported",
+      "complete_redesign": "unknown",
+      "valve_origins": [
+        "VAL-17"
+      ],
+      "motion_need": {
+        "asset": "RB-3",
+        "scope": "day0",
+        "fields": [
+          "front_motion_sequence",
+          "lateral_observation"
+        ],
+        "covered": [
+          "front_motion_sequence"
+        ],
+        "uncovered": [
+          "lateral_observation"
+        ],
+        "disposition": "reassessment_needed",
+        "routes": {
+          "video": "ready"
+        },
+        "targets": [
+          "RB-3|partial_offset_release_account|day0|original"
+        ],
+        "version": 6,
+        "coverage_invalidated": true
+      },
+      "pending_intake": []
+    }
+  ]
+}

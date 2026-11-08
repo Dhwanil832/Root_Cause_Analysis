@@ -1,0 +1,12 @@
+# Fairer five-role LLM V1 comparator: all five roles make explicit model calls.
+agents:
+  intake:
+    implementation: v1_basic
+  specialist:
+    implementation: v1_basic
+  lead:
+    implementation: v1_basic
+  evidence_worker:
+    implementation: v1_basic
+  assessor:
+    implementation: v1_basic

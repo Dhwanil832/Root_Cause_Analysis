@@ -1,0 +1,18 @@
+# Isolates upgraded V2 Markdown prompts from deterministic V2 method additions.
+# Same algorithms as prompt_only, but enhanced prompts for every model role.
+agents:
+  intake:
+    implementation: v1_basic
+    prompt_implementation: v2_structured_llm
+  specialist:
+    implementation: v1_basic
+    prompt_implementation: v2_causal_frontier
+  lead:
+    implementation: v1_basic
+    prompt_implementation: v2_joint_route_planner
+  evidence_worker:
+    implementation: v1_basic
+    prompt_implementation: v2_adaptive_routes
+  assessor:
+    implementation: v1_basic
+    prompt_implementation: v2_impact_aware

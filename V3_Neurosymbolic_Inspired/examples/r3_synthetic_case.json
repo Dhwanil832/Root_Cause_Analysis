@@ -1,0 +1,82 @@
+{
+  "case_id": "FCB-01-synthetic-openrouter",
+  "fixture_notice": "All E01-E16 documents in this example are synthetic research fixtures, not authentic company records. The staged arrival dates reflect fixture coverage labels and are provided for workflow testing.",
+  "initial_submission_id": "r3-initial-intake",
+  "case_packet": {
+    "incident_summary": "A raised RB-3 delivery carrier beam fell into the roughing-stand pit and struck an equipment sled and temporary scaffold at approximately 13:03 on Day 0.",
+    "reported_claims": [
+      {
+        "claim_id": "R3-BEAM-FALL",
+        "text": "A raised RB-3 delivery carrier beam fell into the roughing-stand pit and struck an equipment sled and temporary scaffold at approximately 13:03 on Day 0.",
+        "kind": "incident_event",
+        "source_item_ids": ["E01"]
+      }
+    ]
+  },
+  "specialist_profiles": [
+    {
+      "profile_id": "hydraulic",
+      "cues": ["RB-3", "carrier beam", "hydraulic", "valve"],
+      "direction": "Explore hydraulic support and isolation mechanisms as candidate explanations. Keep unobserved incident conditions hypothetical."
+    },
+    {
+      "profile_id": "mechanical",
+      "cues": ["carrier beam", "keeper", "yoke", "link arm"],
+      "direction": "Explore mechanical engagement, geometry, and support-loss mechanisms as candidate explanations."
+    },
+    {
+      "profile_id": "work_process",
+      "cues": ["carrier beam", "outage", "guide-box", "contractors"],
+      "direction": "Explore work coordination, handover, isolation, and restraint-control mechanisms as candidate explanations."
+    },
+    {
+      "profile_id": "other",
+      "cues": [],
+      "direction": "Search for plausible alternatives outside the named specialist directions."
+    }
+  ],
+  "initial_items": [
+    {"item_id": "E01", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E01.md", "declared_kind": "incident_notification"},
+    {"item_id": "E02", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E02.md", "declared_kind": "engineering_functional_description"},
+    {"item_id": "E03", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E03.md", "declared_kind": "issued_work_pack"},
+    {"item_id": "E04", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E04.md", "declared_kind": "shift_handover_record"},
+    {"item_id": "E05", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E05.md", "declared_kind": "camera_observation_worksheet"},
+    {"item_id": "E06", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E06.md", "declared_kind": "recovered_assembly_inspection"}
+  ],
+  "later_submissions": [
+    {
+      "submission_id": "r3-material-wave-day-plus-2",
+      "sender_id": "case-material-upload",
+      "items": [
+        {"item_id": "E07", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E07.md", "declared_kind": "engineering_geometry_worksheet"},
+        {"item_id": "E13", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E13.md", "declared_kind": "containment_installation_record"},
+        {"item_id": "E15", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E15.md", "declared_kind": "preparation_interview_note"}
+      ]
+    },
+    {
+      "submission_id": "r3-material-wave-day-plus-3",
+      "sender_id": "case-material-upload",
+      "items": [
+        {"item_id": "E08", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E08.md", "declared_kind": "valve_workshop_examination"}
+      ]
+    },
+    {
+      "submission_id": "r3-material-wave-day-plus-4",
+      "sender_id": "case-material-upload",
+      "items": [
+        {"item_id": "E09", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E09.md", "declared_kind": "controls_archive_availability_reply"},
+        {"item_id": "E10", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E10.md", "declared_kind": "outage_switching_record"},
+        {"item_id": "E11", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E11.md", "declared_kind": "engineering_system_index"},
+        {"item_id": "E12", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E12.md", "declared_kind": "camera_observation_worksheet"},
+        {"item_id": "E16", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E16.md", "declared_kind": "shift_briefing_recap"}
+      ]
+    },
+    {
+      "submission_id": "r3-material-wave-day-plus-10",
+      "sender_id": "case-material-upload",
+      "items": [
+        {"item_id": "E14", "path": "../../V1_V2_Prompt_and_Rules/source/RCA_Version_Labeled_Codebase/tests/v2_regression/fixtures/evidence/E14.md", "declared_kind": "engineering_action_register"}
+      ]
+    }
+  ]
+}

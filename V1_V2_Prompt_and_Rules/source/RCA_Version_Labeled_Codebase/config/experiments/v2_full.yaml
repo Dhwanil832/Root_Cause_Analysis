@@ -1,0 +1,12 @@
+# Each profile explicitly declares ALL roles so it is a controlled ablation.
+agents:
+  intake:
+    implementation: v2_structured_llm
+  specialist:
+    implementation: v2_causal_frontier
+  lead:
+    implementation: v2_joint_route_planner
+  evidence_worker:
+    implementation: v2_adaptive_routes
+  assessor:
+    implementation: v2_impact_aware

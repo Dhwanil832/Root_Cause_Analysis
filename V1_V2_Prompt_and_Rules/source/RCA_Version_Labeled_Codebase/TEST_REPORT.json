@@ -1,0 +1,26 @@
+{
+  "build": "V2 prompts, bounded methods, independent-evaluation harness (2026-10-16)",
+  "full_test_suite": {
+    "passed": 170,
+    "failed": 0,
+    "legacy_v2_regressions_included": 95
+  },
+  "fixture_ablation_configs": 4,
+  "fixture_invariant_checks": 6,
+  "fixture_invariants_passed_each": [
+    6,
+    6,
+    6,
+    6
+  ],
+  "actual_provider_http_completions": 0,
+  "blocking_conditions": [
+    "no_openrouter_api_key",
+    "outbound_dns_unavailable"
+  ],
+  "independent_model_validation": "NOT PERFORMED",
+  "independent_engineering_review": "NOT PERFORMED",
+  "latest_comparison": "outputs/v2_factorial/MATRIX_REPORT.json",
+  "execution_source": "authored_response_test_double_for_offline_runs",
+  "note": "Tests validate executable methods and v2 integration; they do not measure LLM semantic accuracy or benchmark generalization"
+}

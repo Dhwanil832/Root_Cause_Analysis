@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-10-16",
+  "type": "environment_preflight_not_model_execution",
+  "configured_api_secret": false,
+  "dns": {
+    "openrouter.ai": "unavailable_gaierror",
+    "api.openai.com": "unavailable_gaierror"
+  },
+  "real_model_http_completions_in_this_build": 0,
+  "next_step": "Configure provider secret on network-enabled machine; run evaluation.run_matrix --mode live. Do not paste keys into chats."
+}
