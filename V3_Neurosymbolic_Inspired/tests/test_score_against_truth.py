@@ -79,10 +79,22 @@ class NodeCoverage(unittest.TestCase):
 
 class KeySentences(unittest.TestCase):
     def test_assessed_sentence_counts_even_with_trailing_punctuation_difference(self):
-        out = sat.score(report([claim("C1", "valve seepage")],
+        out = sat.score(report([claim("C1", "isolation valve slow bleed")],
                                [assess("C1", "m8", SEEPAGE.rstrip("."), "supports")]), TRUTH)
         self.assertEqual(out["key_sentences_assessed"], 1)
         self.assertEqual(out["supports_found"], 1)
+
+    def test_support_on_a_claim_of_another_node_is_not_found_but_listed(self):
+        c = claim("C1", "Only one keeper installed")
+        out = sat.score(report([c], [assess("C1", "m8", SEEPAGE, "supports")]), TRUTH)
+        self.assertEqual(out["supports_found"], 0)
+        self.assertEqual(out["supports_found_any_claim"], 1)
+        self.assertEqual(out["supports_on_other_claims"][0]["claims"], ["C1"])
+
+    def test_support_on_the_matching_claim_is_found(self):
+        c = claim("C1", "Hydraulic isolation valve has slow bleed through")
+        out = sat.score(report([c], [assess("C1", "m8", SEEPAGE, "supports")]), TRUTH)
+        self.assertEqual((out["supports_found"], out["supports_on_other_claims"]), (1, []))
 
     def test_same_sentence_in_the_wrong_document_does_not_count(self):
         out = sat.score(report([claim("C1", "x")], [assess("C1", "m16", SEEPAGE, "supports")]), TRUTH)
@@ -100,6 +112,91 @@ class KeySentences(unittest.TestCase):
         out = sat.score(report([], []), TRUTH)
         self.assertEqual(out["key_sentences_assessed"], 0)
         self.assertEqual(out["key_sentence_recall"], 0.0)
+
+
+def labelled(fits_by_text, source="human"):
+    labels = {sat.normalise(text): {"source": source, "nodes": [{"id": n, "fit": f} for n, f in fits]}
+              for text, fits in fits_by_text.items()}
+    return {**TRUTH, "labels": labels}
+
+
+class Labels(unittest.TestCase):
+    def test_a_label_matches_a_claim_that_shares_too_few_words(self):
+        c = claim("C1", "Valve IV-RB3-17 was not properly sealed")
+        truth = labelled({"Valve IV-RB3-17 was not properly sealed": [("G13", "same")]})
+        out = sat.score(report([c], [assess("C1", "m8", SEEPAGE, "supports")]), truth)
+        self.assertTrue(out["node_matches"]["G13"]["covered"])
+        self.assertEqual((out["supports_found"], out["claim_matching"]), (1, {"human": 1}))
+
+    def test_claims_without_a_label_are_listed_for_labelling(self):
+        known, new = claim("C1", "Valve IV-RB3-17 was not properly sealed"), claim("C2", "Keeper plate cracked")
+        out = sat.score(report([known, new], []), labelled({known["text"]: [("G13", "same")]}))
+        self.assertEqual(out["unlabelled_claims"], ["Keeper plate cracked"])
+
+    def test_a_label_of_no_node_overrides_word_overlap(self):
+        c = claim("C1", "Hydraulic isolation valve has slow bleed through")
+        out = sat.score(report([c], []), labelled({c["text"]: []}))
+        self.assertFalse(out["node_matches"]["G13"]["covered"])
+        self.assertEqual(out["claims_off_chart"], 1)
+
+    def test_support_for_a_node_on_a_claim_denying_it_is_flagged(self):
+        c = claim("C1", "The valve was sealed during the event")
+        truth = labelled({c["text"]: [("G13", "opposite")]})
+        out = sat.score(report([c], [assess("C1", "m8", SEEPAGE, "supports")]), truth)
+        self.assertEqual(out["supports_found"], 0)
+        self.assertEqual(out["supports_on_denying_claims"][0]["claims"], ["C1"])
+        self.assertFalse(out["node_matches"]["G13"]["covered"])
+
+    def test_unlabelled_claims_fall_back_to_word_overlap(self):
+        c = claim("C1", "Hydraulic isolation valve has slow bleed through")
+        out = sat.score(report([c], []), labelled({}))
+        self.assertTrue(out["node_matches"]["G13"]["covered"])
+        self.assertEqual(out["claim_matching"], {"word_overlap": 1})
+
+
+class OffChartClaims(unittest.TestCase):
+    def test_each_off_chart_claim_is_sorted_by_what_backs_it(self):
+        rows = [claim("C1", "Shift handover was verbal"), claim("C2", "Scaffold tag was current"),
+                claim("C3", "Crane was parked nearby")]
+        rows[0]["provenance"] = ["m3"]
+        rows[1]["provenance"] = ["m3"]
+        out = sat.score(report(rows, [assess("C1", "m3", "handover note", "supports")]), TRUTH)
+        self.assertEqual((out["off_chart_with_support"], out["off_chart_citing_only"],
+                          out["off_chart_no_source"]), (1, 1, 1))
+
+
+EDGE_TRUTH = {**TRUTH, "chart": {**TRUTH["chart"], "edges_effect_caused_by": [["G00", ["G13"]]]}}
+VALVE = "Hydraulic isolation valve has slow bleed through"
+
+
+def link(source, target):
+    return {"link_id": f"{source}->{target}", "source_claim_ids": [source], "target_claim_id": target,
+            "status": "candidate"}
+
+
+class ChartEdges(unittest.TestCase):
+    def score_links(self, claims, links):
+        rep = report(claims, [])
+        rep["board"]["causal_links"] = links
+        return sat.score(rep, EDGE_TRUTH)
+
+    def test_direct_link_from_cause_to_effect_is_counted(self):
+        out = self.score_links([claim("C1", VALVE)], [link("C1", "ROOT")])
+        self.assertEqual((out["edges_total"], out["edges_linked_directly"], out["edges_linked_reversed"]), (1, 1, 0))
+        self.assertEqual(out["links_by_status"], {"candidate": 1})
+
+    def test_chain_through_an_off_chart_claim_counts_as_indirect_only(self):
+        out = self.score_links([claim("C1", VALVE), claim("C2", "Yoke lowered slowly")],
+                               [link("C1", "C2"), link("C2", "ROOT")])
+        self.assertEqual((out["edges_linked_directly"], out["edges_linked_via_other_claims"]), (0, 1))
+
+    def test_link_pointing_the_wrong_way_is_reported_as_reversed(self):
+        out = self.score_links([claim("C1", VALVE)], [link("ROOT", "C1")])
+        self.assertEqual((out["edges_linked_directly"], out["edges_linked_reversed"]), (0, 1))
+
+    def test_missing_end_means_the_edge_cannot_be_linked(self):
+        out = self.score_links([], [])
+        self.assertEqual((out["edges_both_ends_on_board"], out["edges_linked_directly"]), (0, 0))
 
 
 class UnresolvedAndTraps(unittest.TestCase):
@@ -138,6 +235,7 @@ class RealGroundTruthFiles(unittest.TestCase):
         self.assertEqual(out["nodes_total"], 22)
         self.assertEqual(out["nodes_covered"], 0)
         self.assertGreater(out["key_sentences_total"], 10)
+        self.assertEqual((out["expected_supports"], out["edges_total"]), (14, 22))
 
 
 if __name__ == "__main__":

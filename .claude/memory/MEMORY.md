@@ -1,0 +1,3 @@
+- [RCA ground truth and goals](rca-ground-truth-and-goals.md) — where the confirmed ground truth lives, the framework goal, and the no-code-changes-until-allowed rule
+- [No Claude attribution in commits](no-claude-attribution-in-commits.md) — no Co-Authored-By trailer; also never name the company or plant in the public repo
+- [Components before the Lead](components-before-lead.md) — v0.5: change Assessor/Specialist/Intake first, wire cferp Lead last

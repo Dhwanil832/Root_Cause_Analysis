@@ -12,8 +12,8 @@ from typing import Any
 STATEMENT_KINDS = ["incident_observation", "reported_event", "incident_causal_statement",
                    "general_mechanism", "procedure", "hypothetical", "other"]
 STATEMENT_MODALITIES = ["asserted", "reported", "measured", "conditional", "possible",
-                        "negated", "inferred", "unclear"]
-FINDING_RELATIONS = ["supports", "weakens", "contradicts", "does_not_address",
+                        "negated", "not_recorded", "inferred", "unclear"]
+FINDING_RELATIONS = ["supports", "consistent_with", "weakens", "contradicts", "does_not_address",
                      "insufficient_or_unclear"]
 _ALIGNMENT = ["match", "mismatch", "unknown"]
 

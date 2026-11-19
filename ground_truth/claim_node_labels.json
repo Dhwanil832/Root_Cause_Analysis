@@ -1,0 +1,2648 @@
+{
+ "status": "DRAFT labels by Claude (not the model under test) for the user to correct. 'fit' is same (the claim states the node), part (it states part of it) or opposite (it denies it). An empty list means the claim matches no chart node. Keyed by claim text.",
+ "labels": [
+  {
+   "claim_text": "Hydraulic pressure in the yokes was low during the outage.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "low yoke pressure is part of hydraulics losing the cylinder fluid",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Local isolation valve IV-RB3-17 was closed during outage",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "the valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Mechanical restraint field missing pin or block in work pack",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    }
+   ],
+   "reason": "no restraint in the work pack: gravity not accounted for in the isolation",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Carrier exceeded its upper travel envelope during the raise.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "going past the upper envelope is how it reached and wedged on the housing; possible because nothing stops it",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic pressure in the yoke system was low at time of raise.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "low yoke pressure is part of hydraulics losing fluid",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Carrier reached upper travel limit during raise.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "reaching the upper limit is the beam held at the housing",
+   "seen_in_runs": [
+    "fix2",
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate engaged with link arm during raise.",
+   "nodes": [
+    {
+     "id": "G03",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper engagement is about keeper installation and location",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate contact surfaces were intact prior to event.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper intact",
+   "seen_in_runs": [
+    "fix2",
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic yokes were not engaged or had lost pressure during the outage.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "yokes lost pressure",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Local isolation valve IV-RB3-17 was recorded closed at 10:47 on Day 0.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve recorded closed is the 'isolated' raise",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Local valve IV-RB3-17 was not properly sealed at the time of the carrier fall.",
+   "nodes": [
+    {
+     "id": "G13",
+     "fit": "same"
+    }
+   ],
+   "reason": "not properly sealed is a slow bleed-through",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate remained attached to link arm after fall",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still attached after the fall",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Carrier was left in a high position for guide-box clearance.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left high is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "A restraint pin, block, or crib intended to limit carrier travel into the pit was absent or failed to restrain the carrier.",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "no pin, block or crib: gravity not accounted for, nothing stopping the carrier",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic isolation valve IV-RB3-17 was closed or sealed during the event.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    },
+    {
+     "id": "G13",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "closed is the 'isolated' raise; sealed denies the bleed-through",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Valve IV-RB3-17 was isolated during the event.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve isolated",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "The isolation handle of valve IV-RB3-17 was in the closed position during the event.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "handle closed is the 'isolated' raise",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate remained bolted to the link arm after recovery.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate remained bolted to the recovered link arm.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The carrier exceeded its upper travel limit before falling.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier was not in a raised position at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "denies the beam being stored raised",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB‑3 delivery carrier left the upper opening at 13:03:02.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier leaving the opening is the beam shifting",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier was not supported by hydraulic lifting yokes during the outage arrangement.",
+   "nodes": [
+    {
+     "id": "G01",
+     "fit": "part"
+    },
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "yoke not holding the carrier; hydraulic support lost",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow",
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "It is uncertain whether the RB‑3 delivery carrier was supported by hydraulic lifting yokes during the outage arrangement.",
+   "nodes": [
+    {
+     "id": "G01",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about whether the yoke held the carrier",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Carrier assembly exceeded its upper travel limit.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate on the link arm was not engaged with the yoke during the event.",
+   "nodes": [
+    {
+     "id": "G03",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper not engaged is keeper installation and location",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier was in a raised position prior to the fall.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "stored raised",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Branch hydraulic pressure was not observed during the event.",
+   "nodes": [],
+   "reason": "a record that pressure was not observed; no chart node",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "The hydraulic isolation valve was closed at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the 'isolated' raise",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate was engaged on the link arm during carrier raise.",
+   "nodes": [
+    {
+     "id": "G03",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper engagement",
+   "seen_in_runs": [
+    "fix2",
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Carrier had no mechanical restraint due to roll removal during raise.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "same"
+    }
+   ],
+   "reason": "no restraint with the rolls out is 'no stop without backup rolls'",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from RB-3 during outage.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Interviewee stated the assembly was left in a raised position.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is stored upright",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Evidence from camera observations indicates the RB‑3 delivery carrier exceeded its upper travel limit during guide‑box preparation.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Isolation checklist for valve IV-RB3-17 was completed before the raise.",
+   "nodes": [
+    {
+     "id": "G16",
+     "fit": "part"
+    }
+   ],
+   "reason": "isolation checklist is the task-specific LOTO procedure",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate was bolted to the link arm at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed at 06:35 on Day 0.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out, with a time",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls removal increased upper travel limit beyond design tolerance.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out lets the carrier travel too far",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate was not engaged on the link arm during carrier raise.",
+   "nodes": [
+    {
+     "id": "G03",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper engagement",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "There was no hydraulic pressure drop in the lifting yokes at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "denies the hydraulic loss",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Oblique camera observation shows the upper carrier against the housing at 11:03, indicating it reached its upper travel limit.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "carrier against the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls removal was documented in handover record.",
+   "nodes": [],
+   "reason": "a record of handover documentation; no chart node",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Work coordination between shift operations and maintenance failed to ensure the carrier remained in a safe position during guide-box preparation.",
+   "nodes": [],
+   "reason": "work coordination failure; the chart has no such node",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "The issued guide-box work pack did not include a field for a fitted pin, block, or crib to restrain the carrier during removal of backup rolls.",
+   "nodes": [
+    {
+     "id": "G16",
+     "fit": "part"
+    },
+    {
+     "id": "G18",
+     "fit": "part"
+    }
+   ],
+   "reason": "task procedure lacked a restraint step: gravity not accounted for",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The interviewee stated that no pin, block, or crib was installed during preparation.",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "no restraint fitted",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier assembly at or before the time of the fall.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Common B hydraulic supply shutdown and isolation during the outage arrangement indicates that hydraulic support was unavailable for the RB‑3 delivery carrier.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "B supply shut down, so the hydraulics were off",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier moved beyond the normal support envelope during outage.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier moving out of its envelope is the beam shifting",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "An outage arrangement may remove components that delimit the normal travel envelope.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "general mechanism behind 'no stop without backup rolls'",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier assembly prior to the top roll balance being raised for guide‑box clearance.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out, ordered with the balance raise",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed during the outage.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate was disengaged from link arm during outage.",
+   "nodes": [
+    {
+     "id": "G03",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper engagement is about keeper installation and location",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Local isolation valve IV-RB3-17 was closed during the outage.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier left the upper opening of the roughing‑stand pit at approximately 13:03.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier leaving the opening is the beam shifting",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "The geometry of the carrier assembly exceeded design tolerances during outage due to removal of components that delimit the normal travel envelope.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    },
+    {
+     "id": "G11",
+     "fit": "part"
+    }
+   ],
+   "reason": "components removed from the envelope (no stop) and geometry outside tolerance (clearance)",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "The yoke was misaligned relative to the link arm during outage, potentially compromising support.",
+   "nodes": [
+    {
+     "id": "G01",
+     "fit": "part"
+    }
+   ],
+   "reason": "yoke out of line with the link arm is the yoke drifting from the carrier",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate on the link arm lost contact with the yoke during outage, removing mechanical restraint.",
+   "nodes": [
+    {
+     "id": "G03",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper engagement is about keeper installation and location",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed during outage",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "baseline",
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Carrier left upper opening of roughing‑stand pit at approximately 13:03",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier leaving the opening is the beam shifting",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Handover entry did not record keeper contact inspection",
+   "nodes": [],
+   "reason": "about an inspection or record of the keeper, not its installation; no chart node",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate lost contact with yoke during outage, removing mechanical restraint.",
+   "nodes": [
+    {
+     "id": "G03",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper engagement is about keeper installation and location",
+   "seen_in_runs": [
+    "baseline"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic pressure in the yoke system was nominal at the time of raise.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "pressure present denies the hydraulic loss",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Carrier was unsecured by hydraulics due to valve isolation and roll removal.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    },
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve isolated, rolls out and no hydraulic hold",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Valve IV-RB3-17 was isolated/closed during the raise.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Keeper plate contact surfaces were inspected prior to raise.",
+   "nodes": [],
+   "reason": "about an inspection or record of the keeper, not its installation; no chart node",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed before the raise.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Upper travel limit not documented in handover record.",
+   "nodes": [],
+   "reason": "about an inspection or record of the keeper, not its installation; no chart node",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Observer did not inspect keeper contact surfaces.",
+   "nodes": [],
+   "reason": "about an inspection or record of the keeper, not its installation; no chart node",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Camera observation indicates carrier exceeded upper travel envelope.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "The handover record does not identify the final upper‑travel limit in the rolls‑out configuration.",
+   "nodes": [],
+   "reason": "about an inspection or record of the keeper, not its installation; no chart node",
+   "seen_in_runs": [
+    "fix2"
+   ]
+  },
+  {
+   "claim_text": "Local isolation recorded at valve tag IV-RB3-17.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix2",
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic isolation checklist was completed for the guide-box work on Day 0.",
+   "nodes": [
+    {
+     "id": "G16",
+     "fit": "part"
+    }
+   ],
+   "reason": "isolation checklist is the task-specific LOTO procedure",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier left the upper opening at approximately 13:03 on Day 0.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier leaving the opening is the beam shifting",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Support structure for the RB-3 delivery carrier was removed or compromised during outage.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Work coordination for the guide-box replacement was incomplete or not performed.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Handover between shift operations and maintenance work team was incomplete.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Restraint control (pin, block or crib) was not installed or failed during the outage.",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "no pin, block or crib: gravity not accounted for, nothing stopping the carrier",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from RB‑3 during the outage.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed before the carrier left the upper opening.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic yokes were engaged at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G01",
+     "fit": "opposite"
+    },
+    {
+     "id": "G07",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "yokes holding the carrier denies the yoke drift and the hydraulic loss",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Support structure for the RB‑3 delivery carrier was intact during the outage.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Restraint control (pin, block or crib) was installed and functioning before the fall.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    },
+    {
+     "id": "G18",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "restraint fitted denies both 'no stop' and gravity unaccounted",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Branch hydraulic pressure was present prior to the fall.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "pressure present denies the hydraulic loss",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Handover between shift operations and maintenance work team was completed before the carrier fell.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic isolation checklist was not completed for the guide-box work on Day 0.",
+   "nodes": [
+    {
+     "id": "G16",
+     "fit": "part"
+    }
+   ],
+   "reason": "isolation checklist is the task-specific LOTO procedure",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Work coordination for the guide-box replacement was performed and documented.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Common B hydraulic supply was shut down and isolated during the outage.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "B supply shut down, so the hydraulics were off",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Handover between shift operations and maintenance work team was completed before the carrier left the upper opening.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix3"
+   ]
+  },
+  {
+   "claim_text": "Isolation valve IV-RB3-17 status unknown at time of fall",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about whether the raise was isolated",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic pressure in carrier lifting system lost at time of fall",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "lost yoke pressure is part of hydraulics losing the cylinder fluid",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Carrier was raised above the upper opening before falling",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Upper travel limit of the carrier was lost due to backup rolls removal",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "general mechanism behind 'no stop without backup rolls'",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Work coordination between shift operations and maintenance was incomplete or ineffective during the outage.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "The handover between previous-turn and day-turn did not include all necessary carrier configuration details.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Isolation valve IV-RB3-17 was not closed or isolated before the carrier was raised.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "valve not closed denies the 'isolated' raise",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Carrier was not raised above the upper opening before falling",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "denies the beam being stored raised",
+   "seen_in_runs": [
+    "retrievalfix"
+   ]
+  },
+  {
+   "claim_text": "Upper carrier edge contacted the housing at the pit opening.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "carrier against the housing",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Status of hydraulic isolation valve IV-RB3-17 during the event is unknown.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about whether the raise was isolated",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic pressure loss in the yoke system occurred during the event.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "lost yoke pressure is part of hydraulics losing the cylinder fluid",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed prior to the event.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pit opening was not restricted by backup rolls or other restraints.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "same"
+    }
+   ],
+   "reason": "nothing stopping the carrier with the rolls out",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "The normal operating arrangement includes the backup rolls.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "general mechanism behind 'no stop without backup rolls'",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pit opening was restricted by backup rolls at the time of the event.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pit opening was restricted by other restraints (e.g., temporary scaffold, equipment sled) during the event.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pit opening was not restricted by backup rolls at the time of the event.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pressure on the isolated cylinder side of valve IV-RB3-17 was not recorded during the event.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Interview statement indicates the carrier was left in a high position for guide-box clearance.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Handover documentation did not capture the removal of backup rolls or the carrier’s high position status at the time of the event.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic isolation valve IV-RB3-17 was not closed or sealed during the event.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "opposite"
+    },
+    {
+     "id": "G13",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve not closed denies the 'isolated' raise",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "The upper carrier edge contacts the housing at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "carrier against the housing",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pit opening was not restricted by other restraints (e.g., temporary scaffold, equipment sled) at the time of the event.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Valve workshop found seepage with the isolation handle at closed.",
+   "nodes": [
+    {
+     "id": "G13",
+     "fit": "same"
+    },
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve workshop seepage at closed handle is the slow bleed-through",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Other restraints (temporary scaffold, equipment sled) were present at the pit opening during the event.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pressure on the isolated cylinder side of valve IV-RB3-17 was measured during the event.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Source documents indicate no pressure record on the isolated cylinder side of valve IV-RB3-17 during the event.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Pressure on the isolated cylinder side of valve IV-RB3-17 was not recorded in any system during the event.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Restraint pin, block, or crib was not installed during preparation.",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "no pin, block or crib: gravity not accounted for, nothing stopping the carrier",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls removal completed at 10:20 on Day 0.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Valve IV-RB3-17 was open during the event.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "valve not closed denies the 'isolated' raise",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were present at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "The beam falling into the pit and striking an equipment sled and temporary scaffold indicates that those restraints were present at the pit opening during the event.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix4_reserve16k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier before the fall.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier at 06:35.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier at 10:20.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier was in a raised position at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Removal of backup rolls allowed the RB-3 delivery carrier to rise beyond its normal travel envelope.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "general mechanism behind 'no stop without backup rolls'",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The status of the keeper plate bolting after recovery is unknown.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate was unbolted from the link arm at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "keeper unbolted or broken denies 'keeper plate still intact'",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "There was a drop in hydraulic pressure in the lifting yokes at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "lost yoke pressure is part of hydraulics losing the cylinder fluid",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "External vibration or movement contributed to carrier displacement.",
+   "nodes": [],
+   "reason": "an outside cause the chart does not name",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The hydraulic isolation valve was not closed at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "valve not closed denies the 'isolated' raise",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "A restraint pin or block was not secured to prevent carrier movement.",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "no pin, block or crib: gravity not accounted for, nothing stopping the carrier",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The handover record did not capture removal of backup rolls before the fall.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The handover record did not accurately capture the removal of backup rolls before the fall.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "A restraint pin or block was unsecured, allowing carrier movement.",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "no pin, block or crib: gravity not accounted for, nothing stopping the carrier",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier was raised at 10:42 on Day 0.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier remained raised until 13:03 on Day 0.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "Camera observation indicates the carrier left its upper opening before falling.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier leaving the opening is the beam shifting",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB‑3 delivery carrier remained in a raised position at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The hydraulic isolation valve status at the time of the fall is unknown.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about whether the raise was isolated",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate remained bolted to the link arm at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB‑3 delivery carrier was at the upper opening of its travel envelope at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The restraint pin, block, or crib was not installed during preparation.",
+   "nodes": [
+    {
+     "id": "G18",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "no pin, block or crib: gravity not accounted for, nothing stopping the carrier",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate was bolted to the link arm at the time of the carrier fall.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The hydraulic isolation valve was checked closed at 10:47 on Day 0.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The hydraulic isolation valve was closed at the time of the carrier fall.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB‑3 delivery carrier left the upper opening before the fall event.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier leaving the opening is the beam shifting",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB‑3 delivery carrier was in a raised position at 13:02:58.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    }
+   ],
+   "reason": "left raised is the beam stored in the upright position",
+   "seen_in_runs": [
+    "fix4_reserve32k"
+   ]
+  },
+  {
+   "claim_text": "The RB-3 delivery carrier was supported by hydraulic lifting yokes during the outage arrangement.",
+   "nodes": [
+    {
+     "id": "G01",
+     "fit": "opposite"
+    },
+    {
+     "id": "G07",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "yokes holding the carrier denies the yoke drift and the hydraulic loss",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier assembly prior to guide-box work.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Local hydraulic isolation was recorded as closed at 10:47 on Day 0.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate remained bolted to the link arm after recovery of the carrier assembly.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The carrier assembly exceeded the upper travel limit during guide‑box preparation.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Mechanical engagement between the carrier and its support was lost due to removal of backup rolls or absence of hydraulic support.",
+   "nodes": [
+    {
+     "id": "G08",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    },
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "carrier losing its support is it shifting off the yoke, through rolls out or hydraulics lost",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier assembly before 10:42 on Day 0.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Lowering the yoke relative to an outward link‑arm offset pose permits loss of mechanical engagement between the carrier and its support.",
+   "nodes": [
+    {
+     "id": "G01",
+     "fit": "part"
+    }
+   ],
+   "reason": "yoke out of line with the link arm is the yoke drifting from the carrier",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Branch hydraulic pressure was not visible on the RB‑3 delivery carrier during the outage arrangement.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The local isolation valve IV-RB3-17 was sealed and closed during the outage arrangement.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    },
+    {
+     "id": "G13",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Work coordination between the outage coordinator, shift supervisor, and maintenance records was incomplete or not documented for the guide-box work on Day 0.",
+   "nodes": [],
+   "reason": "handover or work coordination; the chart has no such node",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The local hydraulic isolation valve IV-RB3-17 was recorded as closed at 10:47, but no sealing test result or pressure verification was performed.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    },
+    {
+     "id": "G17",
+     "fit": "part"
+    }
+   ],
+   "reason": "pressure on the isolated side not checked: stored energy not accounted for",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The local isolation valve IV-RB3-17 was recorded as closed at 10:47, but no sealing test result or pressure verification was performed.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    },
+    {
+     "id": "G17",
+     "fit": "part"
+    }
+   ],
+   "reason": "pressure on the isolated side not checked: stored energy not accounted for",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier assembly prior to 10:42 on Day 0.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The carrier assembly exceeded the upper travel limit during guide‑box preparation, but it is not yet confirmed whether this occurred before or after removal of backup rolls and/or loss of hydraulic support.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "A camera observation at 13:02:58 shows the carrier had not yet exceeded its upper travel limit, contradicting a claim that it did so during guide‑box preparation.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says it had not passed the limit, denying the beam held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Common B hydraulic supply was shut down and isolated during the outage arrangement, indicating that hydraulic support was unavailable for the RB‑3 delivery carrier.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "B supply shut down, so the hydraulics were off",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Branch hydraulic pressure was not measured or recorded during the outage arrangement.",
+   "nodes": [
+    {
+     "id": "G17",
+     "fit": "part"
+    }
+   ],
+   "reason": "pressure on the isolated side not checked: stored energy not accounted for",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The local isolation valve IV-RB3-17 sealing status at the time of the outage arrangement is unverified.",
+   "nodes": [
+    {
+     "id": "G13",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about whether the valve bled through",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The removal of backup rolls occurred prior to 10:42 on Day 0, the time when the top roll balance was raised for guide‑box clearance.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "The removal of backup rolls was verified by inspection or documentation after removal.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k_efflow"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls were removed from the carrier assembly during outage work.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic pressure in the carrier yokes was low or lost at time of fall.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "lost yoke pressure is part of hydraulics losing the cylinder fluid",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Hydraulic isolation valve IV-RB3-17 was closed during guide-box preparation.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Removal of backup rolls eliminated mechanical restraint on the carrier.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "same"
+    }
+   ],
+   "reason": "nothing stopping the carrier with the rolls out",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "No branch hydraulic pressure was visible in camera footage at the time of the fall.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Local hydraulic isolation was performed at valve tag IV-RB3-17 during guide-box preparation.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The hydraulic isolation valve IV-RB3-17 was checked to be closed at 10:47 during guide-box preparation.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "It is uncertain whether hydraulic pressure in the carrier yokes was low or lost at time of fall.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about the hydraulic loss",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "It is uncertain whether the carrier exceeded its upper travel limit at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Support structures for the carrier were compromised or removed prior to the fall.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "rolls out is the condition of G04",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Carrier reached its upper travel limit during the event.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Carrier left the upper opening during the event.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    }
+   ],
+   "reason": "the carrier leaving the opening is the beam shifting",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Carrier moved beyond its upper travel limit during the event.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls removal did not eliminate all mechanical restraint on the carrier because other restraints remained in place.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The cause of hydraulic pressure loss in the carrier yokes at time of fall is unknown.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about the hydraulic loss",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls removal may have partially removed mechanical restraint on the carrier.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "general mechanism behind 'no stop without backup rolls'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate on the link arm may have been broken or displaced at time of fall.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "keeper unbolted or broken denies 'keeper plate still intact'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Carrier left upper opening due to overtravel is uncertain.",
+   "nodes": [
+    {
+     "id": "G10",
+     "fit": "part"
+    },
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "leaving the opening by overtravel: the beam shifting past the limit",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The carrier overtraveled due to loss of support structures.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    },
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "overtravel from lost support: past the limit with no stop",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Low hydraulic pressure in the carrier yokes may cause the carrier to overtravel.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about the hydraulic loss",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Backup rolls provided mechanical restraint on the carrier.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "part"
+    }
+   ],
+   "reason": "general mechanism behind 'no stop without backup rolls'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Other restraints remained on the carrier after backup roll removal.",
+   "nodes": [
+    {
+     "id": "G04",
+     "fit": "opposite"
+    }
+   ],
+   "reason": "says a stop or restraint was there, denying 'no stop'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Geometry worksheet indicates that at the centred‑resting position, overlap prevents the link arm from passing the keeper/yoke interface.",
+   "nodes": [
+    {
+     "id": "G11",
+     "fit": "part"
+    }
+   ],
+   "reason": "the worksheet says the measurements leave no clearance over the yoke at rest",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Carrier exceeded its upper travel limit at the time of the fall.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "past the upper limit, held at the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Upper carrier edge contacts housing during event.",
+   "nodes": [
+    {
+     "id": "G06",
+     "fit": "part"
+    }
+   ],
+   "reason": "carrier against the housing",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "No hydraulic pressure measurement was recorded at the time of the carrier fall.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The sealing condition of valve IV-RB3-17 at the time of the fall is unknown.",
+   "nodes": [
+    {
+     "id": "G13",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about whether the valve bled through",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "No sensor channel measuring flow through valve IV-RB3-17 was configured in the exported historian set at the time of the fall.",
+   "nodes": [],
+   "reason": "a statement about what a record or sensor holds; no chart node",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Camera observation indicates no branch hydraulic pressure visible, suggesting low or lost pressure in carrier yokes.",
+   "nodes": [
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "lost yoke pressure is part of hydraulics losing the cylinder fluid",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Valve IV-RB3-17 sealing condition unknown; lack of evidence for seal may indicate loss of pressure.",
+   "nodes": [
+    {
+     "id": "G13",
+     "fit": "part"
+    },
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "a question about whether the valve bled through",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Local isolation at valve IV-RB3-17 recorded; could have caused loss of hydraulic pressure in carrier yokes.",
+   "nodes": [
+    {
+     "id": "G02",
+     "fit": "part"
+    },
+    {
+     "id": "G07",
+     "fit": "part"
+    }
+   ],
+   "reason": "valve closed is the backup raise being 'isolated'",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Outage switching sheet does not record pressure on isolated cylinder side of valve IV-RB3-17.",
+   "nodes": [
+    {
+     "id": "G17",
+     "fit": "part"
+    }
+   ],
+   "reason": "pressure on the isolated side not checked: stored energy not accounted for",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate was not broken or displaced at the time of the carrier fall.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "Recovered link arm inspection shows keeper plate bolted and no gross fracture.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate remained attached and not fractured at the time of the carrier fall.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  },
+  {
+   "claim_text": "The keeper plate may have been displaced relative to the link arm during the carrier fall, but was not fractured.",
+   "nodes": [
+    {
+     "id": "G05",
+     "fit": "part"
+    }
+   ],
+   "reason": "keeper still bolted or intact",
+   "seen_in_runs": [
+    "fix4_reserve32k_effmedium"
+   ]
+  }
+ ]
+}

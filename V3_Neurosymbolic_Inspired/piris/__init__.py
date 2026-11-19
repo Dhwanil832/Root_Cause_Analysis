@@ -7,6 +7,7 @@ from .contracts import (
     RequestReference, SourceLocation,
 )
 from .engine import IntakeEngine
+from .origins import OriginMap, OriginStatement, case_origins, resolve_origins
 from .proposal import AskIntakeInterpreter
 from .store import InMemoryIntakeStore
 
@@ -15,7 +16,7 @@ __all__ = [
     "IncomingItem", "InMemoryIntakeStore", "InMemoryMaterialIndexer",
     "IntakeAssignment", "IntakeEngine", "IntakeResult", "IntakeState",
     "ItemSuggestion", "LinkBasis", "LinkRecord", "MaterialArrivalEvent",
-    "MaterialRecord", "ParserRouter", "RequestReference", "SourceLocation",
-    "MaterialProcessingUpdate", "TextContentParser",
+    "MaterialRecord", "OriginMap", "OriginStatement", "ParserRouter", "RequestReference", "SourceLocation",
+    "MaterialProcessingUpdate", "TextContentParser", "case_origins", "resolve_origins",
 ]
 

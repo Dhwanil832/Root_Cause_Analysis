@@ -28,6 +28,8 @@ STRICT_SCHEMA: dict[str, Any] = {
                 "kind": {"enum": ["case_claim", "incident_event", "component_state", "system_mechanism", "unknown_term", "unknown_condition"]},
                 "source_refs": {"type": "array", "items": {"$ref": "#/$defs/source_ref"}},
                 "time_scope": {"type": ["string", "null"]},
+                "parts": {"type": "array", "items": {"type": "string"}},
+                "denies": {"type": "array", "items": {"type": "string"}},
             },
         }},
         "proposed_rules": {"type": "array", "items": {
@@ -38,7 +40,9 @@ STRICT_SCHEMA: dict[str, Any] = {
                 "antecedent_ids": {"type": "array", "items": {"type": "string"}},
                 "consequent_id": {"type": "string"},
                 "relation": {"enum": ["may_cause", "contributes_to", "enables", "inhibits", "precedes"]},
-                "modality": {"type": "string"},
+                # A fixed list, so constrained decoding cannot return an empty modality
+                # (the validator rejects one, which drops the whole rule).
+                "modality": {"enum": ["possible", "conditional"]},
                 "conditions": {"type": "array", "items": {"type": "string"}},
                 "time_constraint": {"type": ["string", "null"]},
                 "basis": {"enum": ["source_described", "vetted_domain_rule", "model_proposed"]},
@@ -94,12 +98,16 @@ You propose candidate mechanisms and unresolved conditions; you do not decide wh
 
 Use only proposition and source IDs in the supplied context. For a source-described rule, cite the exact passage and mark whether the causal relation is quoted, paraphrased, or inferred. A source excerpt is provenance, not proof the relation applied in this incident. For a vetted rule, use only a supplied vetted_rule_id. Do not set truth/status, evidence-impact, confidence, support, contradiction, root-cause, or request-approval fields. Keep alternatives and AND-required antecedents explicit. When a term/configuration is unclear, emit a clarification and continue with bounded provisional alternatives. Incident-information gaps state what remains unknown and what information could resolve it; the Lead decides routing.
 
+Give parts only for a proposition that joins several facts that each need their own evidence: copy those phrases word for word, together covering the whole text without overlapping. "Valve IV-RB3-17 was closed at 10:47" has the parts "Valve IV-RB3-17", "was closed" and "at 10:47". Leave parts out for a proposition that states one thing. Give denies only when a proposition says another proposition is false, for example "the carrier was not raised at the fall" against "the carrier was raised at the fall": list that proposition's ID. Otherwise leave denies out.
+
 Propose atomic propositions and rules, not a polished narrative. Return a small set within the supplied budgets. Do not duplicate existing open questions or candidate structures."""
 
 
 # Conservative: hash-heavy JSON tokenizes near 2 characters per token and prose
 # near 3.6, so a typical proposal context is over- rather than under-counted.
 CHARS_PER_TOKEN = 3.0
+# Assessor annotations that say a passage does not bear on the claim; dropped first.
+_NO_EVIDENCE = frozenset({"neutral", "not_relevant"})
 
 
 def estimate_prompt_tokens(context: dict[str, Any], system: str = SYSTEM_INSTRUCTIONS) -> int:
@@ -121,7 +129,7 @@ def _fit_to_budget(context: dict[str, Any], max_prompt_tokens: int) -> list[str]
     cited = {ref["source_id"] for item in (*graph["propositions"], *near_rules)
              if item in near_rules or item["proposition_id"] in targets for ref in item["source_refs"]}
     cited |= {row.get("material_id") for row in context["assessor_annotations"]
-              if row.get("effect") != "neutral"}
+              if row.get("effect") not in _NO_EVIDENCE}
     sources, annotations = context["source_bundle"], context["assessor_annotations"]
 
     def compact_refs():
@@ -146,12 +154,12 @@ def _fit_to_budget(context: dict[str, Any], max_prompt_tokens: int) -> list[str]
     steps += [lambda s=s: drop(sources, s, f"source_bundle document {s['source_id']}")
               for s in reversed(sources) if s["source_id"] not in cited]
     steps += [lambda a=a: drop(annotations, a, f"assessor annotation {a.get('annotation_id')}")
-              for a in annotations if a.get("effect") == "neutral"]
+              for a in annotations if a.get("effect") in _NO_EVIDENCE]
     steps += [distant_graph]
     steps += [lambda s=s: drop(sources, s, f"source_bundle document {s['source_id']}")
               for s in reversed(sources) if s["source_id"] in cited]
     steps += [lambda a=a: drop(annotations, a, f"assessor annotation {a.get('annotation_id')}")
-              for a in annotations if a.get("effect") != "neutral"]
+              for a in annotations if a.get("effect") not in _NO_EVIDENCE]
     for step in steps:
         if estimate_prompt_tokens(context) <= max_prompt_tokens:
             break

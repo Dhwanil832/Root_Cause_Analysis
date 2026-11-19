@@ -50,7 +50,7 @@ class JointFourRoleSmokeTest(unittest.TestCase):
     # Characters of the candidate passage the Assessor leaves out of its quote.
     QUOTE_FROM = 0
 
-    def test_initial_hydraulic_case_returns_neutral_manual_annotation_to_lead(self):
+    def test_initial_hydraulic_case_returns_not_relevant_manual_annotation_to_lead(self):
         workflow, lead_specialist = setup_workflow()
         workflow.start_assignment(lead_specialist.assignment_id)
 
@@ -167,7 +167,7 @@ class JointFourRoleSmokeTest(unittest.TestCase):
         lead_assessment = hera_result_to_cferp(hera_result, hera_task, evidence_assignment)
         workflow.submit_assessor_result(lead_assessment)
         stored = next(iter(workflow.assessments.values()))
-        self.assertEqual(stored.effect.value, "neutral")
+        self.assertEqual(stored.effect.value, "not_relevant")
         # The Lead records the passage it assigned; the Assessor's words ride beside it.
         self.assertEqual((stored.exact_text, stored.quote), (link.exact_text, link.exact_text[self.QUOTE_FROM:]))
         self.assertEqual(workflow.claims[selected_claim].incident_status, "hypothetical")

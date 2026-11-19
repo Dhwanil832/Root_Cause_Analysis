@@ -216,7 +216,7 @@ class JointAdapterTests(unittest.TestCase):
                          [("D1", "supports"), ("D2", "contradicts")])
         self.assertTrue(all(r["claim_id"] == "H1" for r in rows))
 
-    def test_hera_general_or_unclear_result_maps_to_neutral_without_promotion(self):
+    def test_hera_general_or_unclear_result_maps_to_not_relevant_without_promotion(self):
         task = AssessmentTask(
             "1", "t2", "ew-work", "e2", "C1", "case:s1", "1", "evidence_review",
             "evidence_worker", "ew1", materials=(EvidenceMaterial("L1", "D1", "v1", "R1", "General mechanism."),),
@@ -234,9 +234,9 @@ class JointAdapterTests(unittest.TestCase):
             "time_alignment": "match"}]}]}
         result = Hera1Engine(ScriptedModel([extraction, comparison]), Versions()).run(task)
         normalized = hera_result_to_cferp(result, task, cferp_assignment())
-        self.assertEqual(normalized.payload["assessments"][0]["effect"], "neutral")
+        self.assertEqual(normalized.payload["assessments"][0]["effect"], "not_relevant")
 
-    def test_hera_no_extraction_closes_only_as_neutral_for_assigned_passage(self):
+    def test_hera_no_extraction_closes_only_as_not_relevant_for_assigned_passage(self):
         task = AssessmentTask("1", "no-extract", "ew-work", "e3", "C1", "case:s1", "1",
             "evidence_review", "evidence_worker", "ew1",
             materials=(EvidenceMaterial("L1", "D1", "v1", "R1", "unreadable passage", offset_base=12),),
@@ -255,7 +255,7 @@ class JointAdapterTests(unittest.TestCase):
                 "exact_text": "unreadable passage"}})
         normalized = hera_result_to_cferp(result, task, assignment)
         row = normalized.payload["assessments"][0]
-        self.assertEqual((row["material_id"], row["passage_id"], row["effect"]), ("D1", "L1", "neutral"))
+        self.assertEqual((row["material_id"], row["passage_id"], row["effect"]), ("D1", "L1", "not_relevant"))
 
     def request_review_assignment(self, link_count):
         request = SimpleNamespace(request_id="REQ-A", request_kind="document_request",

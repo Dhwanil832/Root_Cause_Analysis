@@ -171,17 +171,40 @@ def check_snapshot(task: AssessmentTask, current: VersionSnapshot) -> None:
             raise StaleInput(f"material_version_changed:{source_id}")
 
 
+_PACKET_IDS = ("material_id", "source_id", "source_version", "representation_id")
+
+
+def _packet_material(row: dict[str, Any], materials: tuple[EvidenceMaterial, ...]) -> EvidenceMaterial | None:
+    """The packet material a citation points at, found by its quote when the copied IDs are off.
+
+    The IDs are long hashes a model can miscopy; the quote is what ties a citation to
+    a source. A citation whose IDs all match is taken as given. Otherwise it is
+    resolved only when exactly one packet material contains the quote, so a
+    citation can never reach outside the packet.
+    """
+    cited = tuple(row.get(k) for k in _PACKET_IDS)
+    for m in materials:
+        if cited == (m.material_id, m.source_id, m.source_version, m.representation_id):
+            return m
+    quote = row.get("quote")
+    if not isinstance(quote, str) or len(quote.strip()) < 4:
+        return None
+    holders = [m for m in materials if quote in m.text]
+    return holders[0] if len(holders) == 1 else None
+
+
 def verify_source_spans(rows: list[dict[str, Any]], materials: tuple[EvidenceMaterial, ...]) -> list[dict[str, Any]]:
-    material_map = {m.material_id: m for m in materials}
     output = []
     for row in rows:
         if not isinstance(row, dict):
             raise ModelOutputError("source reference must be an object")
-        material = material_map.get(row.get("material_id"))
-        if material is None or (row.get("source_id"), row.get("source_version"), row.get("representation_id")) != (
-            material.source_id, material.source_version, material.representation_id
-        ):
+        material = _packet_material(row, materials)
+        if material is None:
             raise ModelOutputError("model cited material outside the assigned packet")
+        packet_ids = dict(zip(_PACKET_IDS, (material.material_id, material.source_id,
+                                            material.source_version, material.representation_id)))
+        if any(row.get(k) != v for k, v in packet_ids.items()):
+            row = {**row, **packet_ids, "ids_filled_from_packet": True}
         quote = row.get("quote")
         start = row.get("start_offset")
         if not isinstance(quote, str) or len(quote.strip()) < 4:
@@ -225,7 +248,8 @@ def validate_statement_batch(raw: dict[str, Any], task: AssessmentTask, config: 
         raise ModelOutputError("statement IDs must be unique nonempty strings")
     kinds = {"incident_observation", "reported_event", "incident_causal_statement",
              "general_mechanism", "procedure", "hypothetical", "other"}
-    modalities = {"asserted", "reported", "measured", "conditional", "possible", "negated", "inferred", "unclear"}
+    modalities = {"asserted", "reported", "measured", "conditional", "possible", "negated", "not_recorded",
+                  "inferred", "unclear"}
     if any(row.get("kind") not in kinds or row.get("modality") not in modalities for row in statements):
         raise ModelOutputError("statement kind or modality is invalid")
     if any(not isinstance(row.get("scope"), str) or not isinstance(row.get("timing"), str)
@@ -246,9 +270,30 @@ def validate_statement_batch(raw: dict[str, Any], task: AssessmentTask, config: 
         if span in seen_spans:
             raise ModelOutputError("the same cited source span cannot be extracted as multiple statements")
         seen_spans.add(span)
-        if _has_clear_negation(row["quote"]):
+        if _says_not_recorded(row["quote"]):
+            row["modality"] = "not_recorded"
+        elif _has_clear_negation(row["quote"]):
             row["modality"] = "negated"
     return statements
+
+
+_NOT_RECORDED = re.compile(
+    r"\b(?:not|never)\s+(?:been\s+)?(?:recorded|visible|measured|logged|configured|captured|documented|"
+    r"observed|stated|shown|available|known)\b"
+    # "No fracture was recorded" is an inspection's finding, so recorded/documented stay out here.
+    r"|\bno\b[^.;]{0,60}?\b(?:is|was|were|are)\s+(?:visible|measured|logged|configured|available)\b"
+    r"|\bno\s+(?:record|reading|measurement|sensor|channel|trace|entry|log)s?\b"
+    r"|\bcannot\s+be\s+(?:determined|told|confirmed|established|seen)\b"
+    r"|\b(?:does|did)\s+not\s+(?:show|record|state|identify|capture)\b",
+    re.IGNORECASE)
+_ABOUT_RECORDS = re.compile(
+    r"\b(?:record|recorded|records|measur\w*|visible|logged|documented|configured|sensor|captured|"
+    r"observed|unknown|uncertain|unverified|not\s+known|undetermined)\b", re.IGNORECASE)
+
+
+def _says_not_recorded(text: str) -> bool:
+    """The source says something was not recorded, seen or measured, rather than that it did not happen."""
+    return bool(_NOT_RECORDED.search(text))
 
 
 def _has_clear_negation(text: str) -> bool:
@@ -277,7 +322,8 @@ def validate_comparison(raw: dict[str, Any], task: AssessmentTask, statements: l
     expected = {p["part_id"] for p in task.hypothesis["parts"]}
     if not isinstance(parts, list) or len(parts) != len(expected):
         raise ModelOutputError("comparison must return each hypothesis part exactly once")
-    allowed = {"supports", "weakens", "contradicts", "does_not_address", "insufficient_or_unclear"}
+    allowed = {"supports", "consistent_with", "weakens", "contradicts", "does_not_address",
+               "insufficient_or_unclear"}
     known_statement_ids = {s["statement_id"] for s in statements}
     for part in parts:
         if not isinstance(part, dict):
@@ -296,14 +342,15 @@ def validate_comparison(raw: dict[str, Any], task: AssessmentTask, statements: l
                     or not isinstance(refs, list) or any(not isinstance(ref, str) for ref in refs)
                     or not set(refs).issubset(known_statement_ids)):
                 raise ModelOutputError("comparison finding has invalid relation or statement reference")
-            if finding["relation"] in {"supports", "weakens", "contradicts"} and not refs:
+            if finding["relation"] in {"supports", "consistent_with", "weakens", "contradicts"} and not refs:
                 raise ModelOutputError("impactful finding requires at least one linked source statement")
             if (not isinstance(finding.get("rationale"), str) or not finding["rationale"].strip()
                     or not isinstance(finding.get("inference_bridge"), str)):
                 raise ModelOutputError("comparison rationale and inference_bridge must be text")
             if finding.get("relevance_status") not in {"direct", "indirect", "unrelated", "uncertain"}:
                 raise ModelOutputError("comparison relevance_status is invalid")
-            if finding["relation"] in {"supports", "weakens", "contradicts"} and not finding["inference_bridge"].strip():
+            if (finding["relation"] in {"supports", "consistent_with", "weakens", "contradicts"}
+                    and not finding["inference_bridge"].strip()):
                 raise ModelOutputError("impactful finding requires an explicit claim-to-source inference bridge")
             for alignment in ("scope_alignment", "time_alignment"):
                 if finding.get(alignment) not in {"match", "mismatch", "unknown"}:
@@ -328,6 +375,15 @@ def validate_comparison(raw: dict[str, Any], task: AssessmentTask, statements: l
                                        else "insufficient_or_unclear")
                 scope_flags.append({"part_id": result["part_id"], "finding_index": finding_index,
                                     "rule": "source_relevance_not_established"})
+            if (finding["relation"] in {"supports", "weakens", "contradicts"}
+                    and any(s["modality"] == "not_recorded" for s in linked)
+                    and not _ABOUT_RECORDS.search(spec["text"])):
+                # "No pressure is visible" does not show that pressure dropped, or that it held;
+                # it settles only a claim that is itself about what was recorded or known.
+                finding["model_relation"] = finding["relation"]
+                finding["relation"] = "insufficient_or_unclear"
+                scope_flags.append({"part_id": result["part_id"], "finding_index": finding_index,
+                                    "rule": "absence_of_record_does_not_settle_the_claim"})
             if any(_clear_time_mismatch(s["quote"], spec["text"]) for s in linked):
                 if finding["relation"] in {"supports", "weakens", "contradicts"}:
                     finding["model_relation"] = finding["relation"]

@@ -11,6 +11,7 @@ from .contracts import (
     MaterialArrivalEvent, MaterialProcessingUpdate, MaterialRecord,
     RequestReference, SubmissionItemRecord,
 )
+from .origins import OriginMap, case_origins
 from .ports import ContentParser, IntakeInterpreter, MaterialIndexer, UnsafeContentError
 from .store import InMemoryIntakeStore
 
@@ -73,6 +74,10 @@ class IntakeEngine:
         except Exception:
             self.store.abandon(assignment.submission_id)
             raise
+
+    def case_origins(self, case_id: str) -> OriginMap:
+        """Where each document in the case says it comes from, matched over the whole case."""
+        return case_origins(self.store.materials_for_case(case_id))
 
     def complete_indexing(self, material_id: str, *, status: str,
                           detail: str = "") -> MaterialProcessingUpdate:

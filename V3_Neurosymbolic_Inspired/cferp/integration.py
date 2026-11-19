@@ -47,6 +47,12 @@ def sahs_sources_from_materials(materials: Iterable[Any]) -> tuple[SourceChunk, 
 # hashes, job IDs) stays on the board; sent along it made each annotation about
 # 3 KB of hash-heavy text and pushed late Specialist prompts past the context.
 MAX_SPECIALIST_ANNOTATIONS = 12
+# Effects that say the passage was looked at and does not bear on the claim.
+NO_EVIDENCE_EFFECTS = frozenset({"neutral", "not_relevant", "rejected_link"})
+# The Assessor's relation for a part, as the Lead records it.
+HERA_EFFECTS = {"supports": "supports", "weakens": "weakens", "contradicts": "contradicts",
+                "consistent_with": "consistent_with", "insufficient_or_unclear": "insufficient",
+                "does_not_address": "not_relevant"}
 MAX_ANNOTATION_RATIONALE_CHARS = 400
 
 
@@ -54,7 +60,7 @@ def specialist_annotations(annotations: Iterable[Any]) -> tuple[dict[str, Any], 
     """Current annotations in compact form: evidence-bearing effects first, then newest."""
     rows = [a for a in annotations if str(_get(a, "status", "current")) == "current"]
     ranked = sorted(enumerate(rows), key=lambda pair: (
-        str(_get(pair[1], "effect", "")) in {"neutral", "rejected_link"}, -pair[0]))
+        str(_get(pair[1], "effect", "")) in NO_EVIDENCE_EFFECTS, -pair[0]))
     kept = sorted(ranked[:MAX_SPECIALIST_ANNOTATIONS], key=lambda pair: pair[0])
     return tuple({
         "annotation_id": str(_get(a, "assessment_id", "")),
@@ -191,11 +197,17 @@ def ew_assignment_from_cferp(assignment: Assignment, workflow: Any, *,
         material_catalog_version=assignment.manifest.material_index_version,
         representation_version=representation_version, expected_source_ids=expected,
         failed_source_ids=failed, pending_source_ids=pending)
+    # A job carries only earlier passages from its own snapshot. A job that waited in
+    # the queue while later passes found passages in newer documents does not get
+    # them: its result comes back stale and the Lead reissues it at current versions,
+    # where those passages are carried.
+    snapshot = {(source_id, version) for source_id, version, _ in assignment.manifest.source_versions}
     prior_link_rows = []
     for need_id in assignment.need_ids:
         packet = workflow.need_packets.get(need_id)
         if packet is not None:
-            prior_link_rows.extend((need_id, row) for row in workflow._candidate_links_from_packet(packet))
+            prior_link_rows.extend((need_id, row) for row in workflow._candidate_links_from_packet(packet)
+                                   if (row["material_id"], row["material_version"]) in snapshot)
     prior_links = [CandidateLink(
         str(row.get("passage_id", "")), need_id, str(row.get("slot_id", "")),
         str(row["material_id"]), str(row["material_version"]),
@@ -265,15 +277,17 @@ def hera_task_from_cferp(assignment: Assignment, workflow: Any | None = None) ->
         cferp_claim_kind = str(getattr(claim, "kind", "other"))
         hera_claim_type = {
             "incident_event": "incident_fact",
+            # States and conditions of this incident's equipment are incident facts, so the
+            # Assessor's checks on negation, procedure, time and scope apply to them.
+            "component_state": "incident_fact",
+            "unknown_condition": "incident_fact",
             "incident_causal_link": "incident_causal_link",
             "causal_link": "incident_causal_link",
             "system_mechanism": "general_mechanism",
             "general_mechanism": "general_mechanism",
         }.get(cferp_claim_kind, "other")
-        hypothesis = {"hypothesis_id": str(link["claim_id"]), "parts": [{
-            "part_id": f"claim:{claim.claim_id}", "board_ids": [claim.claim_id],
-            "claim_type": hera_claim_type,
-            "text": claim.text}]}
+        hypothesis = {"hypothesis_id": str(link["claim_id"]),
+                      "parts": claim_parts_for_hera(claim, hera_claim_type)}
         return AssessmentTask(**base, materials=(evidence,), hypothesis=hypothesis,
             context={"task_kind": kind, "claim_id": claim.claim_id,
                      "candidate_link": dict(link), "packet_id": assignment.context.get("packet_id")})
@@ -349,6 +363,22 @@ def hera_task_from_cferp(assignment: Assignment, workflow: Any | None = None) ->
     raise IntegrationError(f"automated HERA builder does not yet support task kind {kind}")
 
 
+def claim_parts_for_hera(claim: Any, claim_type: str) -> list[dict[str, Any]]:
+    """One Assessor part per listed claim part, or one for the whole claim.
+
+    Each part carries the whole claim as ``claim_text`` so the Assessor knows what
+    "at 10:47" refers to, and ``claim_part`` so the Lead can record which part an
+    effect is about.
+    """
+    parts = tuple(getattr(claim, "parts", ()) or ())
+    if len(parts) < 2:
+        return [{"part_id": f"claim:{claim.claim_id}", "board_ids": [claim.claim_id],
+                 "claim_type": claim_type, "text": claim.text}]
+    return [{"part_id": f"claim:{claim.claim_id}:part:{i}", "board_ids": [claim.claim_id],
+             "claim_type": claim_type, "text": part, "claim_text": claim.text, "claim_part": part}
+            for i, part in enumerate(parts, 1)]
+
+
 def sahs_result_to_cferp(result: Any, assignment: Assignment,
                          *, result_id: str | None = None) -> RoleResult:
     """Normalize an SAHS delta for the Lead's CFERP commit gate.
@@ -401,6 +431,8 @@ def sahs_result_to_cferp(result: Any, assignment: Assignment,
         "parent_claim_ids": tuple(_get(prop, "parent_claim_ids", ()) or assignment.target_ids),
         "dependency_ids": tuple(_get(prop, "dependency_ids", ()) or ()),
         "provenance": tuple(_get(ref, "source_id") for ref in (_get(prop, "source_refs", ()) or ())),
+        "parts": tuple(_get(prop, "parts", ()) or ()),
+        "denies": tuple(_get(prop, "denies", ()) or ()),
     } for prop in props]
     links = []
     link_ids_by_rule: dict[str, list[str]] = {}
@@ -608,7 +640,8 @@ def hera_result_to_cferp(result: Any, task: Any, assignment: Assignment,
     """Translate a completed HERA result without collapsing source-level findings.
 
     Evidence findings become one CFERP annotation per cited claim/source passage.
-    General/unclear/non-addressing findings map to ``neutral``. Mixed findings
+    Relations keep their meaning (``consistent_with``, ``insufficient``,
+    ``not_relevant``), and each row names the claim part it is about. Mixed findings
     remain separate rows. Request and clarification outcomes retain their own
     Lead-facing task kinds and statuses.
     """
@@ -676,14 +709,15 @@ def _evidence_rows(payload: dict[str, Any], task: Any, assignment: Assignment) -
              if isinstance(part, dict) and part.get("part_id")}
     if not payload.get("parts"):
         # HERA may complete an evidence task with no extractable statement.
-        # Return neutral for the exact assigned passage so CFERP can close the
+        # Return not_relevant for the exact assigned passage so CFERP can close the
         # review without treating retrieval failure as contradiction.
         rows = []
         for part in parts.values():
             claim_ids = tuple(dict.fromkeys(part.get("board_ids", ())))
             if not claim_ids or set(claim_ids) - set(assignment.target_ids):
                 raise IntegrationError("HERA no-extraction result exceeds assigned claim scope")
-            rows.extend(_neutral_assigned_row(task, assignment, claim_id, len(rows))
+            rows.extend(_unrelated_assigned_row(task, assignment, claim_id, len(rows),
+                                                part=str(part.get("claim_part", "")))
                         for claim_id in claim_ids)
         return rows
     allowed_claims = set(assignment.target_ids)
@@ -698,25 +732,27 @@ def _evidence_rows(payload: dict[str, Any], task: Any, assignment: Assignment) -
         claim_ids = tuple(dict.fromkeys(source_part.get("board_ids", ())))
         if not claim_ids or set(claim_ids) - allowed_claims:
             raise IntegrationError("Lead assignment does not authorize the HERA claim target")
+        part_text = str(source_part.get("claim_part", ""))
         findings = assessed_part.get("findings", ()) or ()
         if not findings:
             for claim_id in claim_ids:
-                rows.append(_neutral_assigned_row(task, assignment, claim_id, index,
-                    str(assessed_part.get("reason", "No relevant source statement was extracted."))))
+                rows.append(_unrelated_assigned_row(task, assignment, claim_id, index,
+                    str(assessed_part.get("reason", "No relevant source statement was extracted.")),
+                    part=part_text))
                 index += 1
             continue
         for finding in findings:
             relation = finding.get("relation")
-            effect = {"supports": "supports", "weakens": "weakens", "contradicts": "contradicts",
-                      "does_not_address": "neutral", "insufficient_or_unclear": "neutral"}.get(relation)
+            effect = HERA_EFFECTS.get(relation)
             if effect is None:
                 raise IntegrationError(f"unsupported HERA evidence relation: {relation!r}")
             statement_ids = finding.get("statement_ids", ())
             if not statement_ids:
-                if effect == "neutral":
+                if effect not in {"supports", "weakens", "contradicts"}:
                     for claim_id in claim_ids:
-                        rows.append(_neutral_assigned_row(task, assignment, claim_id, index,
-                                                           str(finding.get("rationale", "No cited finding."))))
+                        rows.append(_unrelated_assigned_row(task, assignment, claim_id, index,
+                                                            str(finding.get("rationale", "No cited finding.")),
+                                                            effect=effect, part=part_text))
                         index += 1
                 continue
             for statement_id in statement_ids:
@@ -756,14 +792,16 @@ def _evidence_rows(payload: dict[str, Any], task: Any, assignment: Assignment) -
                         **span,
                         "quote": quote,
                         "effect": effect,
+                        "part": part_text,
                         "rationale": str(finding.get("rationale", "")),
                     })
                     index += 1
     return rows
 
 
-def _neutral_assigned_row(task: Any, assignment: Assignment, claim_id: str, index: int,
-                          rationale: str = "No relevant source statement was extracted.") -> dict[str, Any]:
+def _unrelated_assigned_row(task: Any, assignment: Assignment, claim_id: str, index: int,
+                            rationale: str = "No relevant source statement was extracted.", *,
+                            effect: str = "not_relevant", part: str = "") -> dict[str, Any]:
     link = assignment.context.get("candidate_link", {})
     passage_id = link.get("passage_id")
     material_id = link.get("material_id")
@@ -786,7 +824,7 @@ def _neutral_assigned_row(task: Any, assignment: Assignment, claim_id: str, inde
         "assessment_id": f"hera:{_get(task, 'task_id')}:{index}",
         "claim_id": claim_id, "material_id": material_id, "material_version": version,
         "passage_id": passage_id, "start_offset": start, "end_offset": end,
-        "exact_text": exact_text, "effect": "neutral", "rationale": rationale,
+        "exact_text": exact_text, "effect": effect, "rationale": rationale, "part": part,
     }
 
 

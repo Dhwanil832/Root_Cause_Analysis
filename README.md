@@ -53,7 +53,7 @@ own. A missing record is treated as a gap, not as a finding.
 `ground_truth/` holds what runs are scored against:
 
 - `r3_human_rca_chart.json`: a transcription of the human RCA chart for the case
-  (23 cause nodes, 14 cause links, open questions and proposed solutions).
+  (the incident plus 22 cause nodes, 22 cause-and-effect pairs, open questions and proposed solutions).
 - `evidence_map_draft.json`: which sentences in E01–E16 bear on each chart node, plus
   designed traps such as passages that look relevant but settle nothing.
 - `custodian_holdings.json`: which documents the simulated custodian holds and when it
@@ -61,8 +61,10 @@ own. A missing record is treated as a gap, not as a finding.
 
 `V3_Neurosymbolic_Inspired/scripts/score_against_truth.py` reports how many chart
 nodes the board covers, whether the key sentences were assessed with a sensible
-stance, and whether the traps were avoided. Node matching is by word overlap, so it
-lists every match for you to check.
+stance, and whether the traps were avoided. Which chart node a claim is about comes
+from `ground_truth/claim_node_labels.json`, labels written outside the model under
+test; claims with no label fall back to word overlap, and `--unlabelled` lists them so
+they can be labelled.
 
 ## Results so far
 

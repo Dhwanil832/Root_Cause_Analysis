@@ -37,6 +37,10 @@ class Proposition:
     case_status: str
     source_refs: tuple[SourceReference, ...] = ()
     time_scope: Optional[str] = None
+    # Phrases of ``text`` that each need their own evidence; empty means the whole text is one part.
+    parts: tuple[str, ...] = ()
+    # Propositions this one says are false; a passage supporting both sides is a conflict to review.
+    denies: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)

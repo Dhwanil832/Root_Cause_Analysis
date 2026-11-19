@@ -69,7 +69,10 @@ class AssessmentEffect(StrEnum):
     SUPPORTS = "supports"
     WEAKENS = "weakens"
     CONTRADICTS = "contradicts"
-    NEUTRAL = "neutral"
+    CONSISTENT_WITH = "consistent_with"
+    INSUFFICIENT = "insufficient"
+    NOT_RELEVANT = "not_relevant"
+    NEUTRAL = "neutral"  # boards before v0.5, which folded the three above into one
     REJECTED_LINK = "rejected_link"
 
 
@@ -90,6 +93,8 @@ class Claim:
     parent_claim_ids: tuple[str, ...] = ()
     dependency_ids: tuple[str, ...] = ()
     provenance: tuple[str, ...] = ()
+    parts: tuple[str, ...] = ()   # phrases of the text; a support must cover every one
+    denies: tuple[str, ...] = ()  # claims this one says are false
 
 
 @dataclass(frozen=True, slots=True)
@@ -173,6 +178,7 @@ class AssessmentRecord:
     prior_assessment_ids: tuple[str, ...] = ()
     status: str = "current"
     quote: str = ""  # the Assessor's words from exact_text, when it quoted only part
+    part: str = ""   # the claim part this effect is about; empty means the whole claim
 
 
 @dataclass(frozen=True, slots=True)
@@ -280,6 +286,7 @@ class CFERPWorkflow:
         # A proposed claim that restates a board claim is folded into it: claim_id -> board claim_id.
         # A proposed need asking what an open need already asks is folded the same way.
         self.claim_aliases: dict[str, str] = {}
+        self.claim_statuses: dict[str, str] = {}  # last status recorded per claim (v0.5 Step 1)
         self.need_aliases: dict[str, str] = {}
         self.reassessment_queue: set[tuple[str, str, str]] = set()
         self.match_suggestions: dict[str, tuple[str, ...]] = {}
@@ -429,6 +436,7 @@ class CFERPWorkflow:
         self.result_archive[result.result_id] = deepcopy(result)
         payload = self._fold_duplicates(result.result_id, result.payload)
         causal_link_count_before = len(self.causal_links)
+        batch_ids = {str(row["claim_id"]) for row in payload.get("claims", ())}
         new_claims = []
         for row in payload.get("claims", ()):
             claim_id = str(row["claim_id"])
@@ -444,6 +452,9 @@ class CFERPWorkflow:
                 tuple(row.get("parent_claim_ids", assignment.target_ids)),
                 tuple(row.get("dependency_ids", assignment.dependencies)),
                 tuple(row.get("provenance", ())),
+                tuple(str(p) for p in row.get("parts", ()) or ()),
+                tuple(d for d in dict.fromkeys(str(d) for d in row.get("denies", ()) or ())
+                      if d != claim_id and (d in self.claims or d in batch_ids)),
             )
             self.claims[claim_id] = claim
             new_claims.append(claim)
@@ -577,7 +588,7 @@ class CFERPWorkflow:
         for row in payload.get("claims", ()):
             if str(row["claim_id"]) in aliases:
                 continue
-            row = renamed(row, "parent_claim_ids", "dependency_ids")
+            row = renamed(row, "parent_claim_ids", "dependency_ids", "denies")
             if "parent_claim_ids" in row:
                 row["parent_claim_ids"] = [p for p in row["parent_claim_ids"] if p != str(row["claim_id"])]
             claims.append(row)
@@ -1166,15 +1177,12 @@ class CFERPWorkflow:
                     prior = self.assessments.get(prior_id)
                     if prior is None or (prior.claim_id, prior.material_id) != (claim_id, material_id):
                         raise CFERPError("reassessment must cite a prior assessment for the same claim/material pair")
-                    self.assessments[prior_id] = AssessmentRecord(
-                        prior.assessment_id, prior.claim_id, prior.material_id, prior.material_version,
-                        prior.passage_id, prior.exact_text, prior.effect, prior.rationale,
-                        prior.assignment_id, prior.manifest, prior.prior_assessment_ids, "superseded_by_reassessment")
+                    self.assessments[prior_id] = replace(prior, status="superseded_by_reassessment")
                 record = AssessmentRecord(
                     assessment_id, claim_id, material_id, version, str(row.get("passage_id", "")),
                     str(row.get("exact_text", "")), effect, str(row.get("rationale", "")),
                     assignment.assignment_id, result.manifest, prior_ids,
-                    quote=str(row.get("quote", "")),
+                    quote=str(row.get("quote", "")), part=str(row.get("part", "")),
                 )
                 if assessment_id in self.assessments:
                     raise CFERPError("duplicate assessment_id")
@@ -1228,9 +1236,57 @@ class CFERPWorkflow:
                     a for a in self.assessments.values() if a.claim_id in affected_claims
                 ), "source_catalog": tuple(self.materials.values())}, priority_tier=2,
             ))
+        if payload.get("task_kind") not in {"request_review", "clarification_review"}:
+            self._record_claim_statuses(affected_claims, result.result_id)
         self._queue_available()
         self._settle_source_worker(assignment.context.get("source_work_item_id"))
         return tuple(self.assignments[aid] for aid in self.assignments if aid not in before)
+
+    def origins(self) -> dict[str, str]:
+        """Which material was prepared from which, by Intake's rule on the materials' text."""
+        from .status import material_origins
+        return material_origins({"material_id": m.material_id, "content": m.content}
+                                for m in self.materials.values())
+
+    def claim_status(self, claim_id: str) -> dict[str, Any]:
+        """The claim's status by the fixed rules in ``cferp.status``."""
+        from .status import claim_status
+        claim = self.claims[claim_id]
+        rows = [{"effect": a.effect.value, "status": a.status, "material_id": a.material_id,
+                 "part": a.part} for a in self.assessments.values() if a.claim_id == claim_id]
+        return claim_status({"claim_id": claim_id, "kind": claim.kind,
+                             "incident_status": claim.incident_status, "parts": claim.parts},
+                            rows, self.origins())
+
+    def _record_claim_statuses(self, claim_ids: Iterable[str], result_id: str) -> None:
+        """Record each status change as a Lead event, and open a need for each missing part.
+
+        A claim that is ``partly shown`` has some parts supported and others not;
+        each missing part gets its own need, so the next search looks for that part.
+        Need IDs come from the claim and part, so the same need is never opened twice.
+        """
+        for claim_id in claim_ids:
+            if claim_id not in self.claims:
+                continue
+            row = self.claim_status(claim_id)
+            before = self.claim_statuses.get(claim_id)
+            if row["status"] != before:
+                self.claim_statuses[claim_id] = row["status"]
+                self._event(f"claim-status:{result_id}:{claim_id}", "claim_status_changed", {
+                    "claim_id": claim_id, "from": before, "to": row["status"],
+                    "missing_parts": tuple(row["missing_parts"]),
+                    "independent_sources": row["independent_sources"],
+                    "sources_assumed_independent": row["sources_assumed_independent"]})
+            if row["status"] != "partly shown":
+                continue
+            claim = self.claims[claim_id]
+            for part in row["missing_parts"]:
+                need_id = f"part:{claim_id}:{claim.parts.index(part) + 1}"
+                if need_id in self.lead.needs:
+                    continue
+                self.lead.add_need(Need(need_id, "missing_claim_part", claim_id, (claim_id,), (
+                    InformationSlot(f"{need_id}:slot",
+                                    f'Evidence that "{part}" holds, in the claim "{claim.text}"'),)))
 
     def _supersede_pending_revisits(self, claim_ids: tuple[str, ...], result_ref: str) -> None:
         """Retire earlier revisit jobs for the same claims before queuing the newest.

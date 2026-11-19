@@ -105,7 +105,7 @@ class OutputRetryTests(unittest.TestCase):
         from hera1.prompts import COMPARE_STATEMENTS
 
         flat = " ".join(COMPARE_STATEMENTS.split())
-        self.assertIn("`inference_bridge` (for supports, weakens, or contradicts: one nonempty sentence", flat)
+        self.assertIn("`inference_bridge` (for supports, consistent_with, weakens, or contradicts: one nonempty sentence", flat)
         self.assertIn("for any other relation: an empty string", flat)
 
     def test_negative_retry_count_is_refused(self):

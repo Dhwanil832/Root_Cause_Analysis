@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import replace
+import re
 from typing import Any
 
 from .engine_contracts import (
@@ -28,7 +29,11 @@ TOP_FIELDS = {
     "schema_version", "proposed_propositions", "proposed_rules",
     "clarification_items", "information_gaps",
 }
-PROP_FIELDS = {"proposition_id", "text", "kind", "source_refs", "time_scope"}
+PROP_REQUIRED = {"proposition_id", "text", "kind", "source_refs", "time_scope"}
+PROP_FIELDS = PROP_REQUIRED | {"parts", "denies"}
+MAX_PARTS = 6
+_STOPWORDS = frozenset("""a an the of to in on at by for from with and or as is was were be been being it its
+this that these those there their into onto than then so such which who whom whose when while during""".split())
 RULE_FIELDS = {
     "rule_id", "antecedent_ids", "consequent_id", "relation", "modality",
     "conditions", "time_constraint", "basis", "source_refs", "source_relation",
@@ -116,7 +121,7 @@ def _refs(value: Any, assignment: SpecialistAssignment, name: str) -> tuple[Sour
 
 
 def _proposition(value: Any, assignment: SpecialistAssignment) -> Proposition:
-    raw = _fields(value, PROP_FIELDS, PROP_FIELDS, "proposition")
+    raw = _fields(value, PROP_REQUIRED, PROP_FIELDS, "proposition")
     proposition_id = _text(raw["proposition_id"], "proposition_id", 160)
     text = _text(raw["text"], "proposition text")
     kind = raw["kind"]
@@ -134,6 +139,45 @@ def _proposition(value: Any, assignment: SpecialistAssignment) -> Proposition:
     else:
         status = "hypothetical"
     return Proposition(proposition_id, text, kind, status, refs, time_scope)
+
+
+def _norm(text: str) -> str:
+    return " ".join(text.casefold().split())
+
+
+def _content_words(text: str) -> set[str]:
+    words = (w.strip(".:-") for w in re.findall(r"[\w:.\-]+", _norm(text)))
+    return {w for w in words if w and w not in _STOPWORDS}
+
+
+def claim_parts(text: str, parts: Any) -> tuple[str, ...]:
+    """Check a proposition's parts: each is a phrase of its text, and together they cover it.
+
+    Returns the parts, or () when only one part is given (that is the whole claim).
+    Raises when the parts are not phrases of the text, overlap, or leave a content
+    word of the text in no part, since a support for the parts would then not
+    cover the whole claim.
+    """
+    if not isinstance(parts, list) or len(parts) > MAX_PARTS:
+        raise ProposalValidationError(f"parts must be an array of at most {MAX_PARTS} phrases")
+    phrases = [_text(p, "part", 400) for p in parts]
+    if len(phrases) <= 1:
+        return ()
+    claim = _norm(text)
+    spans = []
+    for phrase in phrases:
+        start = claim.find(_norm(phrase))
+        if start < 0:
+            raise ProposalValidationError(f"part {phrase!r} is not a phrase of the proposition text")
+        spans.append((start, start + len(_norm(phrase))))
+    spans.sort()
+    if any(a_end > b_start for (_, a_end), (b_start, _) in zip(spans, spans[1:])):
+        raise ProposalValidationError("parts overlap")
+    covered = set().union(*(_content_words(p) for p in phrases))
+    left_out = _content_words(text) - covered
+    if left_out:
+        raise ProposalValidationError("parts leave out: " + ", ".join(sorted(left_out)))
+    return tuple(phrases)
 
 
 def _rule(
@@ -271,16 +315,33 @@ def validate_proposal_batch(raw: Any, assignment: SpecialistAssignment) -> Propo
     existing_rules = assignment.relevant_graph.rule_map()
     prop_ids = set(existing_props)
     rule_ids = set(existing_rules)
+    raw_denies: dict[str, Any] = {}
     for raw_prop in top["proposed_propositions"]:
         fragment_id = raw_prop.get("proposition_id") if isinstance(raw_prop, dict) else None
         try:
             prop = _proposition(raw_prop, assignment)
             if prop.proposition_id in prop_ids:
                 raise ProposalValidationError("duplicate proposition ID")
+            try:
+                prop = replace(prop, parts=claim_parts(prop.text, raw_prop.get("parts", [])))
+            except ProposalValidationError as exc:
+                # Bad parts do not cost the claim: it falls back to one part, the strictest reading.
+                rejected.append(RejectedFragment("proposition_parts", fragment_id, str(exc)))
+            raw_denies[prop.proposition_id] = raw_prop.get("denies", [])
             prop_ids.add(prop.proposition_id)
             new_props.append(prop)
         except (ProposalValidationError, TypeError, KeyError) as exc:
             rejected.append(RejectedFragment("proposition", fragment_id, str(exc)))
+    for index, prop in enumerate(new_props):
+        try:
+            denies = _string_list(raw_denies[prop.proposition_id], "denies", 8)
+            unknown = set(denies) - prop_ids
+            if prop.proposition_id in denies or unknown:
+                raise ProposalValidationError("denies must name other known propositions"
+                                              + (": " + ", ".join(sorted(unknown)) if unknown else ""))
+            new_props[index] = replace(prop, denies=denies)
+        except ProposalValidationError as exc:
+            rejected.append(RejectedFragment("proposition_denies", prop.proposition_id, str(exc)))
 
     for raw_rule in top["proposed_rules"]:
         fragment_id = raw_rule.get("rule_id") if isinstance(raw_rule, dict) else None

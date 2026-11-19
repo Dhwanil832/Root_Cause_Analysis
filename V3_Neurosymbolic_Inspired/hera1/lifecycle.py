@@ -23,6 +23,8 @@ def aggregate_relations(parts: list[dict]) -> str:
         return "supportive"
     if "weakens" in labels:
         return "weakening"
+    if "consistent_with" in labels:
+        return "consistent"
     return "insufficient"
 
 
@@ -39,6 +41,8 @@ def aggregate_part_findings(findings: list[dict]) -> str:
         return "supports"
     if "weakens" in labels:
         return "weakens"
+    if "consistent_with" in labels:
+        return "consistent_with"
     if "does_not_address" in labels:
         return "does_not_address"
     return "insufficient_or_unclear"

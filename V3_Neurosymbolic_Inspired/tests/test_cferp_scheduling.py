@@ -1,6 +1,7 @@
 """Concurrency-aware scheduling and bounded revisit work in the Lead workflow."""
 from __future__ import annotations
 
+from dataclasses import replace
 from types import SimpleNamespace
 import unittest
 
@@ -56,6 +57,19 @@ class PriorPacketTests(unittest.TestCase):
 
         link, = typed.prior_candidate_links
         self.assertEqual((link.need_id, link.source_id, link.exact_text), ("N1", "DOC-1", TEXT))
+
+    def test_a_job_from_an_older_snapshot_does_not_carry_passages_from_newer_documents(self):
+        # A job queued before DOC-1 arrived must not be handed DOC-1 passages found
+        # by a later pass: its own snapshot check would reject them before the Lead
+        # could mark the result stale and reissue it.
+        wf, specialist = setup_workflow()
+        _evidence_round(wf, specialist, need_id="N1", slot_id="s1", passage_id="p1",
+                        start=0, end=51, result_id="1")
+        ew = next(a for a in wf.assignments.values() if a.role == Role.EVIDENCE_WORKER)
+        old = replace(ew, manifest=replace(ew.manifest, source_versions=tuple(
+            item for item in ew.manifest.source_versions if item[0] != "DOC-1")))
+
+        self.assertEqual(ew_assignment_from_cferp(old, wf).prior_candidate_links, ())
 
 
 class CanStartTests(unittest.TestCase):
