@@ -63,3 +63,6 @@ EWV3 = Evidence Worker, HERA1 = Assessor. All 501 unit tests pass.
    `model_calls`).
 4. **The user mentioned new things they want to integrate.** Ask what they are before starting
    any of the above.
+
+## Earlier conversation logs
+`.claude/transcripts/` holds the two Claude Code session logs (main session and its fork), with the company, plant, address, email and screenshots removed. Search them for detail; HANDOFF.md above is the summary.
